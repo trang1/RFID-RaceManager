@@ -64,14 +64,14 @@ namespace RaceManager.UI
             reader.SendCallback = SendData;
 
             //Set the validity of interface element.
-            gbRS232.Enabled = false;
+            //gbRS232.Enabled = false;
             gbTcpIp.Enabled = false;
             SetFormEnable(false);
-            rdbRS232.Checked = true;
+            //rdbRS232.Checked = true;
 
             //Initialization connect the default configuration of reader.
-            cmbComPort.SelectedIndex = 0;
-            cmbBaudrate.SelectedIndex = 1;
+            //cmbComPort.SelectedIndex = 0;
+            //cmbBaudrate.SelectedIndex = 1;
             ipIpServer.IpAddressStr = "192.168.0.178";
             txtTcpPort.Text = "4001";
 
@@ -92,6 +92,10 @@ namespace RaceManager.UI
                 groupBox21.Enabled = true;
                 groupBox23.Enabled = false;
             };
+
+            rdbTcpIp_CheckedChanged(this, e);
+            tabCtrMain.TabPages.Remove(PagTranDataLog);
+            tabCtrMain.TabPages.Remove(PagISO18000);
         }
 
         private void ReceiveData(byte[] btAryReceiveData)
@@ -704,7 +708,7 @@ namespace RaceManager.UI
             }
             else
             {
-                htxtReadId.Text = string.Format("{0:X2}", m_curSetting.btReadId);
+                //htxtReadId.Text = string.Format("{0:X2}", m_curSetting.btReadId);
                 switch(btCmd)
                 {
                     case 0x6A:
@@ -1072,7 +1076,7 @@ namespace RaceManager.UI
             }
         }
 
-        private void rdbRS232_CheckedChanged(object sender, EventArgs e)
+     /*   private void rdbRS232_CheckedChanged(object sender, EventArgs e)
         {
             if (rdbRS232.Checked)
             {
@@ -1089,25 +1093,25 @@ namespace RaceManager.UI
                 
                 gbTcpIp.Enabled = false;
             }
-        }
+        }*/
 
         private void rdbTcpIp_CheckedChanged(object sender, EventArgs e)
         {
-            if (rdbTcpIp.Checked)
-            {
+            //if (rdbTcpIp.Checked)
+            //{
                 gbTcpIp.Enabled = true;
                 btnDisconnectTcp.Enabled = false;
 
                 //Set button font color
                 btnConnectTcp.ForeColor = Color.Indigo;
-                if (btnConnectRs232.Font.Bold)
-                {
-                    SetButtonBold(btnConnectRs232);
-                }                
+              //  if (btnConnectRs232.Font.Bold)
+              //  {
+              //      SetButtonBold(btnConnectRs232);
+              //  }                
                 SetButtonBold(btnConnectTcp);
                 
-                gbRS232.Enabled = false;
-            }
+              //  gbRS232.Enabled = false;
+            //}
         }
 
         private void SetButtonBold(Button btnBold)
@@ -1126,8 +1130,8 @@ namespace RaceManager.UI
 
         private void SetFormEnable(bool bIsEnable)
         {
-            gbConnectType.Enabled = (!bIsEnable);
-            gbCmdReaderAddress.Enabled = bIsEnable;
+            //gbConnectType.Enabled = (!bIsEnable);
+            //gbCmdReaderAddress.Enabled = bIsEnable;
             gbCmdVersion.Enabled = bIsEnable;
             gbCmdBaudrate.Enabled = bIsEnable;
             gbCmdTemperature.Enabled = bIsEnable;
@@ -1156,15 +1160,15 @@ namespace RaceManager.UI
             tabEpcTest.Enabled = bIsEnable;
 
             gbMonza.Enabled = bIsEnable;
-            lbChangeBaudrate.Enabled = bIsEnable;
-            cmbSetBaudrate.Enabled = bIsEnable;
-            btnSetUartBaudrate.Enabled = bIsEnable;
+            //lbChangeBaudrate.Enabled = bIsEnable;
+            //cmbSetBaudrate.Enabled = bIsEnable;
+            //btnSetUartBaudrate.Enabled = bIsEnable;
             btReaderSetupRefresh.Enabled = bIsEnable;
 
             btRfSetup.Enabled = bIsEnable;
         }
 
-        private void btnConnectRs232_Click(object sender, EventArgs e)
+     /*   private void btnConnectRs232_Click(object sender, EventArgs e)
         {
             //Processing serial port to connect reader.
             string strException = string.Empty;
@@ -1214,7 +1218,7 @@ namespace RaceManager.UI
             btnDisconnectRs232.ForeColor = Color.Black;
             SetButtonBold(btnConnectRs232);
             SetButtonBold(btnDisconnectRs232);
-        }
+        }*/
 
         private void btnConnectTcp_Click(object sender, EventArgs e)
         {
@@ -1289,7 +1293,7 @@ namespace RaceManager.UI
             }
         }
 
-        private void btnSetReadAddress_Click(object sender, EventArgs e)
+    /*    private void btnSetReadAddress_Click(object sender, EventArgs e)
         {
             try
             {
@@ -1305,7 +1309,7 @@ namespace RaceManager.UI
                 MessageBox.Show(ex.Message);
             }
             
-        }
+        }*/
 
         private void ProcessSetReadAddress(Reader.MessageTran msgTran)
         {
@@ -1368,14 +1372,14 @@ namespace RaceManager.UI
             WriteLog(lrtxtLog, strLog, 1);
         }
 
-        private void btnSetUartBaudrate_Click(object sender, EventArgs e)
+   /*     private void btnSetUartBaudrate_Click(object sender, EventArgs e)
         {
             if (cmbSetBaudrate.SelectedIndex != -1)
             {
                 reader.SetUartBaudrate(m_curSetting.btReadId, cmbSetBaudrate.SelectedIndex + 3);
                 m_curSetting.btIndexBaudrate = Convert.ToByte(cmbSetBaudrate.SelectedIndex);
             }            
-        }
+        }*/
 
         private void ProcessSetUartBaudrate(Reader.MessageTran msgTran)
         {
@@ -4688,7 +4692,7 @@ namespace RaceManager.UI
         private void button7_Click(object sender, EventArgs e)
         {
             txtFirmwareVersion.Text = "";
-            htxtReadId.Text = "";
+            //htxtReadId.Text = "";
             htbSetIdentifier.Text = "";
             txtReaderTemperature.Text = "";
             txtOutputPower.Text = "";
@@ -4760,7 +4764,7 @@ namespace RaceManager.UI
 
         private void btReaderSetupRefresh_Click(object sender, EventArgs e)
         {
-            htxtReadId.Text = "";
+           // htxtReadId.Text = "";
             htbGetIdentifier.Text = "";
             htbSetIdentifier.Text = "";
             txtFirmwareVersion.Text = "";
@@ -4778,7 +4782,7 @@ namespace RaceManager.UI
             rdbBeeperModeInventory.Checked = false;
             rdbBeeperModeTag.Checked = false;
 
-            cmbSetBaudrate.SelectedIndex = -1;
+          //  cmbSetBaudrate.SelectedIndex = -1;
         }
 
         private void btRfSetup_Click(object sender, EventArgs e)
