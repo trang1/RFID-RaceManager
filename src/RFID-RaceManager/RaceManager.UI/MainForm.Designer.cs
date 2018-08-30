@@ -1,6 +1,6 @@
 ﻿namespace RaceManager.UI
 {
-    partial class R2000UartDemo
+    partial class MainForm
     {
         /// <summary>
         /// The necessary designer variables.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(R2000UartDemo));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.tabCtrMain = new System.Windows.Forms.TabControl();
             this.PagReaderSetting = new System.Windows.Forms.TabPage();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -154,6 +154,91 @@
             this.label9 = new System.Windows.Forms.Label();
             this.pageEpcTest = new System.Windows.Forms.TabPage();
             this.tabEpcTest = new System.Windows.Forms.TabControl();
+            this.tabRace = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.tbPilot4Nick = new System.Windows.Forms.TextBox();
+            this.label123 = new System.Windows.Forms.Label();
+            this.tbPilot4Name = new System.Windows.Forms.TextBox();
+            this.label124 = new System.Windows.Forms.Label();
+            this.tbPilot4Tag = new System.Windows.Forms.TextBox();
+            this.label125 = new System.Windows.Forms.Label();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.tbPilot3Nick = new System.Windows.Forms.TextBox();
+            this.label120 = new System.Windows.Forms.Label();
+            this.tbPilot3Name = new System.Windows.Forms.TextBox();
+            this.label121 = new System.Windows.Forms.Label();
+            this.tbPilot3Tag = new System.Windows.Forms.TextBox();
+            this.label122 = new System.Windows.Forms.Label();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.tbPilot2Nick = new System.Windows.Forms.TextBox();
+            this.label117 = new System.Windows.Forms.Label();
+            this.tbPilot2Name = new System.Windows.Forms.TextBox();
+            this.label118 = new System.Windows.Forms.Label();
+            this.tbPilot2Tag = new System.Windows.Forms.TextBox();
+            this.label119 = new System.Windows.Forms.Label();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label114 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label115 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label116 = new System.Windows.Forms.Label();
+            this.gvPilot1 = new System.Windows.Forms.DataGridView();
+            this.tbPilot1Nick = new System.Windows.Forms.TextBox();
+            this.label113 = new System.Windows.Forms.Label();
+            this.tbPilot1Name = new System.Windows.Forms.TextBox();
+            this.label112 = new System.Windows.Forms.Label();
+            this.tbPilot1Tag = new System.Windows.Forms.TextBox();
+            this.label111 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.groupBox24 = new System.Windows.Forms.GroupBox();
+            this.tbRaceRPC = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.btnRaceReset = new System.Windows.Forms.Button();
+            this.btnRaceStop = new System.Windows.Forms.Button();
+            this.btnRaceStart = new System.Windows.Forms.Button();
+            this.groupBox25 = new System.Windows.Forms.GroupBox();
+            this.label71 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.lblRaceMilliSeconds = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.lblRaceSeconds = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.lblRaceMinutes = new System.Windows.Forms.Label();
+            this.groupBox26 = new System.Windows.Forms.GroupBox();
+            this.dtpRaceDate = new System.Windows.Forms.DateTimePicker();
+            this.label102 = new System.Windows.Forms.Label();
+            this.tbRaceLocation = new System.Windows.Forms.TextBox();
+            this.label101 = new System.Windows.Forms.Label();
+            this.tbRaceName = new System.Windows.Forms.TextBox();
+            this.label100 = new System.Windows.Forms.Label();
+            this.tbRaceMinLapTime = new System.Windows.Forms.TextBox();
+            this.label99 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.tbRaceMaxRssi = new System.Windows.Forms.TextBox();
+            this.tbRaceMinRssi = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cbRaceAnt1 = new System.Windows.Forms.CheckBox();
+            this.cbRaceAnt4 = new System.Windows.Forms.CheckBox();
+            this.cbRaceAnt2 = new System.Windows.Forms.CheckBox();
+            this.cbRaceAnt3 = new System.Windows.Forms.CheckBox();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.cmbRaceRound = new System.Windows.Forms.ComboBox();
+            this.cbRaceUserDefineSession = new System.Windows.Forms.CheckBox();
+            this.groupBox22 = new System.Windows.Forms.GroupBox();
+            this.btnRaceExport = new System.Windows.Forms.Button();
             this.pageRealMode = new System.Windows.Forms.TabPage();
             this.groupBox20 = new System.Windows.Forms.GroupBox();
             this.cbRealWorkant1 = new System.Windows.Forms.CheckBox();
@@ -462,6 +547,26 @@
             this.gbCmdOutputPower.SuspendLayout();
             this.pageEpcTest.SuspendLayout();
             this.tabEpcTest.SuspendLayout();
+            this.tabRace.SuspendLayout();
+            this.tableLayoutPanel7.SuspendLayout();
+            this.panel15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            this.panel14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            this.panel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.panel11.SuspendLayout();
+            this.panel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvPilot1)).BeginInit();
+            this.tableLayoutPanel6.SuspendLayout();
+            this.groupBox24.SuspendLayout();
+            this.groupBox25.SuspendLayout();
+            this.groupBox26.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
+            this.groupBox9.SuspendLayout();
+            this.groupBox12.SuspendLayout();
+            this.groupBox22.SuspendLayout();
             this.pageRealMode.SuspendLayout();
             this.groupBox20.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -2061,29 +2166,930 @@
             this.pageEpcTest.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pageEpcTest.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pageEpcTest.Controls.Add(this.tabEpcTest);
-            this.pageEpcTest.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.pageEpcTest.ForeColor = System.Drawing.SystemColors.Desktop;
             this.pageEpcTest.Location = new System.Drawing.Point(4, 25);
             this.pageEpcTest.Margin = new System.Windows.Forms.Padding(4);
             this.pageEpcTest.Name = "pageEpcTest";
             this.pageEpcTest.Size = new System.Drawing.Size(1266, 746);
             this.pageEpcTest.TabIndex = 5;
-            this.pageEpcTest.Text = "18000-6C Tag Test";
+            this.pageEpcTest.Text = "Race management";
             // 
             // tabEpcTest
             // 
+            this.tabEpcTest.Controls.Add(this.tabRace);
             this.tabEpcTest.Controls.Add(this.pageRealMode);
             this.tabEpcTest.Controls.Add(this.pageBufferedMode);
             this.tabEpcTest.Controls.Add(this.pageFast4AntMode);
             this.tabEpcTest.Controls.Add(this.pageAcessTag);
             this.tabEpcTest.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tabEpcTest.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.tabEpcTest.Location = new System.Drawing.Point(0, 13);
             this.tabEpcTest.Margin = new System.Windows.Forms.Padding(4);
             this.tabEpcTest.Name = "tabEpcTest";
             this.tabEpcTest.SelectedIndex = 0;
             this.tabEpcTest.Size = new System.Drawing.Size(1264, 731);
             this.tabEpcTest.TabIndex = 0;
+            // 
+            // tabRace
+            // 
+            this.tabRace.Controls.Add(this.tableLayoutPanel7);
+            this.tabRace.Controls.Add(this.tableLayoutPanel6);
+            this.tabRace.Controls.Add(this.tableLayoutPanel5);
+            this.tabRace.Location = new System.Drawing.Point(4, 25);
+            this.tabRace.Name = "tabRace";
+            this.tabRace.Padding = new System.Windows.Forms.Padding(3);
+            this.tabRace.Size = new System.Drawing.Size(1256, 702);
+            this.tabRace.TabIndex = 4;
+            this.tabRace.Text = "Race";
+            this.tabRace.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel7
+            // 
+            this.tableLayoutPanel7.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.tableLayoutPanel7.ColumnCount = 1;
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel7.Controls.Add(this.panel15, 0, 3);
+            this.tableLayoutPanel7.Controls.Add(this.panel14, 0, 2);
+            this.tableLayoutPanel7.Controls.Add(this.panel13, 0, 1);
+            this.tableLayoutPanel7.Controls.Add(this.panel11, 0, 0);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 241);
+            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
+            this.tableLayoutPanel7.RowCount = 4;
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(1253, 458);
+            this.tableLayoutPanel7.TabIndex = 2;
+            // 
+            // panel15
+            // 
+            this.panel15.Controls.Add(this.dataGridView4);
+            this.panel15.Controls.Add(this.tbPilot4Nick);
+            this.panel15.Controls.Add(this.label123);
+            this.panel15.Controls.Add(this.tbPilot4Name);
+            this.panel15.Controls.Add(this.label124);
+            this.panel15.Controls.Add(this.tbPilot4Tag);
+            this.panel15.Controls.Add(this.label125);
+            this.panel15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel15.Location = new System.Drawing.Point(4, 346);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(1245, 108);
+            this.panel15.TabIndex = 4;
+            // 
+            // dataGridView4
+            // 
+            this.dataGridView4.AllowUserToAddRows = false;
+            this.dataGridView4.AllowUserToDeleteRows = false;
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Location = new System.Drawing.Point(7, 41);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.ReadOnly = true;
+            this.dataGridView4.RowTemplate.Height = 24;
+            this.dataGridView4.Size = new System.Drawing.Size(1235, 63);
+            this.dataGridView4.TabIndex = 6;
+            // 
+            // tbPilot4Nick
+            // 
+            this.tbPilot4Nick.Location = new System.Drawing.Point(565, 8);
+            this.tbPilot4Nick.Name = "tbPilot4Nick";
+            this.tbPilot4Nick.Size = new System.Drawing.Size(140, 22);
+            this.tbPilot4Nick.TabIndex = 5;
+            // 
+            // label123
+            // 
+            this.label123.AutoSize = true;
+            this.label123.Location = new System.Drawing.Point(481, 11);
+            this.label123.Name = "label123";
+            this.label123.Size = new System.Drawing.Size(78, 17);
+            this.label123.TabIndex = 4;
+            this.label123.Text = "NICKNAME";
+            // 
+            // tbPilot4Name
+            // 
+            this.tbPilot4Name.Location = new System.Drawing.Point(300, 8);
+            this.tbPilot4Name.Name = "tbPilot4Name";
+            this.tbPilot4Name.Size = new System.Drawing.Size(140, 22);
+            this.tbPilot4Name.TabIndex = 3;
+            // 
+            // label124
+            // 
+            this.label124.AutoSize = true;
+            this.label124.Location = new System.Drawing.Point(247, 11);
+            this.label124.Name = "label124";
+            this.label124.Size = new System.Drawing.Size(47, 17);
+            this.label124.TabIndex = 2;
+            this.label124.Text = "NAME";
+            // 
+            // tbPilot4Tag
+            // 
+            this.tbPilot4Tag.Location = new System.Drawing.Point(116, 8);
+            this.tbPilot4Tag.Name = "tbPilot4Tag";
+            this.tbPilot4Tag.Size = new System.Drawing.Size(100, 22);
+            this.tbPilot4Tag.TabIndex = 1;
+            // 
+            // label125
+            // 
+            this.label125.AutoSize = true;
+            this.label125.Location = new System.Drawing.Point(9, 11);
+            this.label125.Name = "label125";
+            this.label125.Size = new System.Drawing.Size(101, 17);
+            this.label125.TabIndex = 0;
+            this.label125.Text = "PILOT #4 TAG";
+            // 
+            // panel14
+            // 
+            this.panel14.Controls.Add(this.dataGridView3);
+            this.panel14.Controls.Add(this.tbPilot3Nick);
+            this.panel14.Controls.Add(this.label120);
+            this.panel14.Controls.Add(this.tbPilot3Name);
+            this.panel14.Controls.Add(this.label121);
+            this.panel14.Controls.Add(this.tbPilot3Tag);
+            this.panel14.Controls.Add(this.label122);
+            this.panel14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel14.Location = new System.Drawing.Point(4, 232);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(1245, 107);
+            this.panel14.TabIndex = 3;
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.AllowUserToAddRows = false;
+            this.dataGridView3.AllowUserToDeleteRows = false;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(7, 41);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.ReadOnly = true;
+            this.dataGridView3.RowTemplate.Height = 24;
+            this.dataGridView3.Size = new System.Drawing.Size(1235, 63);
+            this.dataGridView3.TabIndex = 6;
+            // 
+            // tbPilot3Nick
+            // 
+            this.tbPilot3Nick.Location = new System.Drawing.Point(565, 8);
+            this.tbPilot3Nick.Name = "tbPilot3Nick";
+            this.tbPilot3Nick.Size = new System.Drawing.Size(140, 22);
+            this.tbPilot3Nick.TabIndex = 5;
+            // 
+            // label120
+            // 
+            this.label120.AutoSize = true;
+            this.label120.Location = new System.Drawing.Point(481, 11);
+            this.label120.Name = "label120";
+            this.label120.Size = new System.Drawing.Size(78, 17);
+            this.label120.TabIndex = 4;
+            this.label120.Text = "NICKNAME";
+            // 
+            // tbPilot3Name
+            // 
+            this.tbPilot3Name.Location = new System.Drawing.Point(300, 8);
+            this.tbPilot3Name.Name = "tbPilot3Name";
+            this.tbPilot3Name.Size = new System.Drawing.Size(140, 22);
+            this.tbPilot3Name.TabIndex = 3;
+            // 
+            // label121
+            // 
+            this.label121.AutoSize = true;
+            this.label121.Location = new System.Drawing.Point(247, 11);
+            this.label121.Name = "label121";
+            this.label121.Size = new System.Drawing.Size(47, 17);
+            this.label121.TabIndex = 2;
+            this.label121.Text = "NAME";
+            // 
+            // tbPilot3Tag
+            // 
+            this.tbPilot3Tag.Location = new System.Drawing.Point(116, 8);
+            this.tbPilot3Tag.Name = "tbPilot3Tag";
+            this.tbPilot3Tag.Size = new System.Drawing.Size(100, 22);
+            this.tbPilot3Tag.TabIndex = 1;
+            // 
+            // label122
+            // 
+            this.label122.AutoSize = true;
+            this.label122.Location = new System.Drawing.Point(9, 11);
+            this.label122.Name = "label122";
+            this.label122.Size = new System.Drawing.Size(101, 17);
+            this.label122.TabIndex = 0;
+            this.label122.Text = "PILOT #3 TAG";
+            // 
+            // panel13
+            // 
+            this.panel13.Controls.Add(this.dataGridView2);
+            this.panel13.Controls.Add(this.tbPilot2Nick);
+            this.panel13.Controls.Add(this.label117);
+            this.panel13.Controls.Add(this.tbPilot2Name);
+            this.panel13.Controls.Add(this.label118);
+            this.panel13.Controls.Add(this.tbPilot2Tag);
+            this.panel13.Controls.Add(this.label119);
+            this.panel13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel13.Location = new System.Drawing.Point(4, 118);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(1245, 107);
+            this.panel13.TabIndex = 2;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.AllowUserToDeleteRows = false;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(7, 41);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.ReadOnly = true;
+            this.dataGridView2.RowTemplate.Height = 24;
+            this.dataGridView2.Size = new System.Drawing.Size(1235, 63);
+            this.dataGridView2.TabIndex = 6;
+            // 
+            // tbPilot2Nick
+            // 
+            this.tbPilot2Nick.Location = new System.Drawing.Point(565, 8);
+            this.tbPilot2Nick.Name = "tbPilot2Nick";
+            this.tbPilot2Nick.Size = new System.Drawing.Size(140, 22);
+            this.tbPilot2Nick.TabIndex = 5;
+            // 
+            // label117
+            // 
+            this.label117.AutoSize = true;
+            this.label117.Location = new System.Drawing.Point(481, 11);
+            this.label117.Name = "label117";
+            this.label117.Size = new System.Drawing.Size(78, 17);
+            this.label117.TabIndex = 4;
+            this.label117.Text = "NICKNAME";
+            // 
+            // tbPilot2Name
+            // 
+            this.tbPilot2Name.Location = new System.Drawing.Point(300, 8);
+            this.tbPilot2Name.Name = "tbPilot2Name";
+            this.tbPilot2Name.Size = new System.Drawing.Size(140, 22);
+            this.tbPilot2Name.TabIndex = 3;
+            // 
+            // label118
+            // 
+            this.label118.AutoSize = true;
+            this.label118.Location = new System.Drawing.Point(247, 11);
+            this.label118.Name = "label118";
+            this.label118.Size = new System.Drawing.Size(47, 17);
+            this.label118.TabIndex = 2;
+            this.label118.Text = "NAME";
+            // 
+            // tbPilot2Tag
+            // 
+            this.tbPilot2Tag.Location = new System.Drawing.Point(116, 8);
+            this.tbPilot2Tag.Name = "tbPilot2Tag";
+            this.tbPilot2Tag.Size = new System.Drawing.Size(100, 22);
+            this.tbPilot2Tag.TabIndex = 1;
+            // 
+            // label119
+            // 
+            this.label119.AutoSize = true;
+            this.label119.Location = new System.Drawing.Point(9, 11);
+            this.label119.Name = "label119";
+            this.label119.Size = new System.Drawing.Size(101, 17);
+            this.label119.TabIndex = 0;
+            this.label119.Text = "PILOT #2 TAG";
+            // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.panel12);
+            this.panel11.Controls.Add(this.gvPilot1);
+            this.panel11.Controls.Add(this.tbPilot1Nick);
+            this.panel11.Controls.Add(this.label113);
+            this.panel11.Controls.Add(this.tbPilot1Name);
+            this.panel11.Controls.Add(this.label112);
+            this.panel11.Controls.Add(this.tbPilot1Tag);
+            this.panel11.Controls.Add(this.label111);
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel11.Location = new System.Drawing.Point(4, 4);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(1245, 107);
+            this.panel11.TabIndex = 1;
+            // 
+            // panel12
+            // 
+            this.panel12.Controls.Add(this.dataGridView1);
+            this.panel12.Controls.Add(this.textBox1);
+            this.panel12.Controls.Add(this.label114);
+            this.panel12.Controls.Add(this.textBox2);
+            this.panel12.Controls.Add(this.label115);
+            this.panel12.Controls.Add(this.textBox3);
+            this.panel12.Controls.Add(this.label116);
+            this.panel12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel12.Location = new System.Drawing.Point(0, 0);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(1245, 107);
+            this.panel12.TabIndex = 7;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(7, 41);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(1235, 63);
+            this.dataGridView1.TabIndex = 6;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(565, 8);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(140, 22);
+            this.textBox1.TabIndex = 5;
+            // 
+            // label114
+            // 
+            this.label114.AutoSize = true;
+            this.label114.Location = new System.Drawing.Point(481, 11);
+            this.label114.Name = "label114";
+            this.label114.Size = new System.Drawing.Size(78, 17);
+            this.label114.TabIndex = 4;
+            this.label114.Text = "NICKNAME";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(300, 8);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(140, 22);
+            this.textBox2.TabIndex = 3;
+            // 
+            // label115
+            // 
+            this.label115.AutoSize = true;
+            this.label115.Location = new System.Drawing.Point(247, 11);
+            this.label115.Name = "label115";
+            this.label115.Size = new System.Drawing.Size(47, 17);
+            this.label115.TabIndex = 2;
+            this.label115.Text = "NAME";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(116, 8);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 22);
+            this.textBox3.TabIndex = 1;
+            // 
+            // label116
+            // 
+            this.label116.AutoSize = true;
+            this.label116.Location = new System.Drawing.Point(9, 11);
+            this.label116.Name = "label116";
+            this.label116.Size = new System.Drawing.Size(101, 17);
+            this.label116.TabIndex = 0;
+            this.label116.Text = "PILOT #1 TAG";
+            // 
+            // gvPilot1
+            // 
+            this.gvPilot1.AllowUserToAddRows = false;
+            this.gvPilot1.AllowUserToDeleteRows = false;
+            this.gvPilot1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvPilot1.Location = new System.Drawing.Point(7, 41);
+            this.gvPilot1.Name = "gvPilot1";
+            this.gvPilot1.ReadOnly = true;
+            this.gvPilot1.RowTemplate.Height = 24;
+            this.gvPilot1.Size = new System.Drawing.Size(1235, 63);
+            this.gvPilot1.TabIndex = 6;
+            // 
+            // tbPilot1Nick
+            // 
+            this.tbPilot1Nick.Location = new System.Drawing.Point(565, 8);
+            this.tbPilot1Nick.Name = "tbPilot1Nick";
+            this.tbPilot1Nick.Size = new System.Drawing.Size(140, 22);
+            this.tbPilot1Nick.TabIndex = 5;
+            // 
+            // label113
+            // 
+            this.label113.AutoSize = true;
+            this.label113.Location = new System.Drawing.Point(481, 11);
+            this.label113.Name = "label113";
+            this.label113.Size = new System.Drawing.Size(78, 17);
+            this.label113.TabIndex = 4;
+            this.label113.Text = "NICKNAME";
+            // 
+            // tbPilot1Name
+            // 
+            this.tbPilot1Name.Location = new System.Drawing.Point(300, 8);
+            this.tbPilot1Name.Name = "tbPilot1Name";
+            this.tbPilot1Name.Size = new System.Drawing.Size(140, 22);
+            this.tbPilot1Name.TabIndex = 3;
+            // 
+            // label112
+            // 
+            this.label112.AutoSize = true;
+            this.label112.Location = new System.Drawing.Point(247, 11);
+            this.label112.Name = "label112";
+            this.label112.Size = new System.Drawing.Size(47, 17);
+            this.label112.TabIndex = 2;
+            this.label112.Text = "NAME";
+            // 
+            // tbPilot1Tag
+            // 
+            this.tbPilot1Tag.Location = new System.Drawing.Point(116, 8);
+            this.tbPilot1Tag.Name = "tbPilot1Tag";
+            this.tbPilot1Tag.Size = new System.Drawing.Size(100, 22);
+            this.tbPilot1Tag.TabIndex = 1;
+            // 
+            // label111
+            // 
+            this.label111.AutoSize = true;
+            this.label111.Location = new System.Drawing.Point(9, 11);
+            this.label111.Name = "label111";
+            this.label111.Size = new System.Drawing.Size(101, 17);
+            this.label111.TabIndex = 0;
+            this.label111.Text = "PILOT #1 TAG";
+            // 
+            // tableLayoutPanel6
+            // 
+            this.tableLayoutPanel6.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.tableLayoutPanel6.ColumnCount = 3;
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel6.Controls.Add(this.groupBox24, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.groupBox25, 1, 0);
+            this.tableLayoutPanel6.Controls.Add(this.groupBox26, 2, 0);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 110);
+            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
+            this.tableLayoutPanel6.RowCount = 1;
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 127F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(1250, 128);
+            this.tableLayoutPanel6.TabIndex = 1;
+            // 
+            // groupBox24
+            // 
+            this.groupBox24.Controls.Add(this.tbRaceRPC);
+            this.groupBox24.Controls.Add(this.label20);
+            this.groupBox24.Controls.Add(this.btnRaceReset);
+            this.groupBox24.Controls.Add(this.btnRaceStop);
+            this.groupBox24.Controls.Add(this.btnRaceStart);
+            this.groupBox24.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox24.Location = new System.Drawing.Point(4, 4);
+            this.groupBox24.Name = "groupBox24";
+            this.groupBox24.Size = new System.Drawing.Size(342, 120);
+            this.groupBox24.TabIndex = 0;
+            this.groupBox24.TabStop = false;
+            this.groupBox24.Text = "Race Control";
+            // 
+            // tbRaceRPC
+            // 
+            this.tbRaceRPC.Location = new System.Drawing.Point(161, 84);
+            this.tbRaceRPC.Name = "tbRaceRPC";
+            this.tbRaceRPC.Size = new System.Drawing.Size(40, 22);
+            this.tbRaceRPC.TabIndex = 4;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(7, 84);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(147, 17);
+            this.label20.TabIndex = 3;
+            this.label20.Text = "Repeat Per Command";
+            // 
+            // btnRaceReset
+            // 
+            this.btnRaceReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.btnRaceReset.Location = new System.Drawing.Point(219, 73);
+            this.btnRaceReset.Name = "btnRaceReset";
+            this.btnRaceReset.Size = new System.Drawing.Size(117, 36);
+            this.btnRaceReset.TabIndex = 2;
+            this.btnRaceReset.Text = "RESET";
+            this.btnRaceReset.UseVisualStyleBackColor = true;
+            this.btnRaceReset.Click += new System.EventHandler(this.btnRaceReset_Click);
+            // 
+            // btnRaceStop
+            // 
+            this.btnRaceStop.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.btnRaceStop.Location = new System.Drawing.Point(219, 22);
+            this.btnRaceStop.Name = "btnRaceStop";
+            this.btnRaceStop.Size = new System.Drawing.Size(117, 36);
+            this.btnRaceStop.TabIndex = 1;
+            this.btnRaceStop.Text = "STOP";
+            this.btnRaceStop.UseVisualStyleBackColor = true;
+            this.btnRaceStop.Click += new System.EventHandler(this.btnRaceStop_Click);
+            // 
+            // btnRaceStart
+            // 
+            this.btnRaceStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.btnRaceStart.Location = new System.Drawing.Point(7, 22);
+            this.btnRaceStart.Name = "btnRaceStart";
+            this.btnRaceStart.Size = new System.Drawing.Size(194, 55);
+            this.btnRaceStart.TabIndex = 0;
+            this.btnRaceStart.Text = "START";
+            this.btnRaceStart.UseVisualStyleBackColor = true;
+            this.btnRaceStart.Click += new System.EventHandler(this.btnRaceStart_Click);
+            // 
+            // groupBox25
+            // 
+            this.groupBox25.Controls.Add(this.label71);
+            this.groupBox25.Controls.Add(this.label38);
+            this.groupBox25.Controls.Add(this.label21);
+            this.groupBox25.Controls.Add(this.lblRaceMilliSeconds);
+            this.groupBox25.Controls.Add(this.label39);
+            this.groupBox25.Controls.Add(this.lblRaceSeconds);
+            this.groupBox25.Controls.Add(this.label34);
+            this.groupBox25.Controls.Add(this.lblRaceMinutes);
+            this.groupBox25.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox25.Location = new System.Drawing.Point(353, 4);
+            this.groupBox25.Name = "groupBox25";
+            this.groupBox25.Size = new System.Drawing.Size(276, 120);
+            this.groupBox25.TabIndex = 1;
+            this.groupBox25.TabStop = false;
+            this.groupBox25.Text = "Race Time";
+            // 
+            // label71
+            // 
+            this.label71.AutoSize = true;
+            this.label71.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
+            this.label71.Location = new System.Drawing.Point(189, 89);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(62, 13);
+            this.label71.TabIndex = 7;
+            this.label71.Text = "milliseconds";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
+            this.label38.Location = new System.Drawing.Point(99, 89);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(46, 13);
+            this.label38.TabIndex = 6;
+            this.label38.Text = "seconds";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
+            this.label21.Location = new System.Drawing.Point(14, 89);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(43, 13);
+            this.label21.TabIndex = 5;
+            this.label21.Text = "minutes";
+            // 
+            // lblRaceMilliSeconds
+            // 
+            this.lblRaceMilliSeconds.AutoSize = true;
+            this.lblRaceMilliSeconds.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.lblRaceMilliSeconds.Location = new System.Drawing.Point(185, 40);
+            this.lblRaceMilliSeconds.Name = "lblRaceMilliSeconds";
+            this.lblRaceMilliSeconds.Size = new System.Drawing.Size(74, 39);
+            this.lblRaceMilliSeconds.TabIndex = 4;
+            this.lblRaceMilliSeconds.Text = "000";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.label39.Location = new System.Drawing.Point(156, 40);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(23, 36);
+            this.label39.TabIndex = 3;
+            this.label39.Text = ":";
+            // 
+            // lblRaceSeconds
+            // 
+            this.lblRaceSeconds.AutoSize = true;
+            this.lblRaceSeconds.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.lblRaceSeconds.Location = new System.Drawing.Point(95, 40);
+            this.lblRaceSeconds.Name = "lblRaceSeconds";
+            this.lblRaceSeconds.Size = new System.Drawing.Size(55, 39);
+            this.lblRaceSeconds.TabIndex = 2;
+            this.lblRaceSeconds.Text = "00";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.label34.Location = new System.Drawing.Point(66, 40);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(23, 36);
+            this.label34.TabIndex = 1;
+            this.label34.Text = ":";
+            // 
+            // lblRaceMinutes
+            // 
+            this.lblRaceMinutes.AutoSize = true;
+            this.lblRaceMinutes.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.lblRaceMinutes.Location = new System.Drawing.Point(10, 40);
+            this.lblRaceMinutes.Name = "lblRaceMinutes";
+            this.lblRaceMinutes.Size = new System.Drawing.Size(55, 39);
+            this.lblRaceMinutes.TabIndex = 0;
+            this.lblRaceMinutes.Text = "00";
+            // 
+            // groupBox26
+            // 
+            this.groupBox26.Controls.Add(this.dtpRaceDate);
+            this.groupBox26.Controls.Add(this.label102);
+            this.groupBox26.Controls.Add(this.tbRaceLocation);
+            this.groupBox26.Controls.Add(this.label101);
+            this.groupBox26.Controls.Add(this.tbRaceName);
+            this.groupBox26.Controls.Add(this.label100);
+            this.groupBox26.Controls.Add(this.tbRaceMinLapTime);
+            this.groupBox26.Controls.Add(this.label99);
+            this.groupBox26.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox26.Location = new System.Drawing.Point(636, 4);
+            this.groupBox26.Name = "groupBox26";
+            this.groupBox26.Size = new System.Drawing.Size(611, 120);
+            this.groupBox26.TabIndex = 2;
+            this.groupBox26.TabStop = false;
+            this.groupBox26.Text = "Race Properties";
+            // 
+            // dtpRaceDate
+            // 
+            this.dtpRaceDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpRaceDate.Location = new System.Drawing.Point(291, 79);
+            this.dtpRaceDate.Name = "dtpRaceDate";
+            this.dtpRaceDate.Size = new System.Drawing.Size(200, 22);
+            this.dtpRaceDate.TabIndex = 8;
+            // 
+            // label102
+            // 
+            this.label102.AutoSize = true;
+            this.label102.Location = new System.Drawing.Point(243, 82);
+            this.label102.Name = "label102";
+            this.label102.Size = new System.Drawing.Size(42, 17);
+            this.label102.TabIndex = 6;
+            this.label102.Text = "Date:";
+            // 
+            // tbRaceLocation
+            // 
+            this.tbRaceLocation.Location = new System.Drawing.Point(103, 79);
+            this.tbRaceLocation.Name = "tbRaceLocation";
+            this.tbRaceLocation.Size = new System.Drawing.Size(134, 22);
+            this.tbRaceLocation.TabIndex = 5;
+            // 
+            // label101
+            // 
+            this.label101.AutoSize = true;
+            this.label101.Location = new System.Drawing.Point(31, 82);
+            this.label101.Name = "label101";
+            this.label101.Size = new System.Drawing.Size(66, 17);
+            this.label101.TabIndex = 4;
+            this.label101.Text = "Location:";
+            // 
+            // tbRaceName
+            // 
+            this.tbRaceName.Location = new System.Drawing.Point(103, 45);
+            this.tbRaceName.Name = "tbRaceName";
+            this.tbRaceName.Size = new System.Drawing.Size(388, 22);
+            this.tbRaceName.TabIndex = 3;
+            // 
+            // label100
+            // 
+            this.label100.AutoSize = true;
+            this.label100.Location = new System.Drawing.Point(8, 48);
+            this.label100.Name = "label100";
+            this.label100.Size = new System.Drawing.Size(89, 17);
+            this.label100.TabIndex = 2;
+            this.label100.Text = "Event Name:";
+            // 
+            // tbRaceMinLapTime
+            // 
+            this.tbRaceMinLapTime.Location = new System.Drawing.Point(178, 19);
+            this.tbRaceMinLapTime.Name = "tbRaceMinLapTime";
+            this.tbRaceMinLapTime.Size = new System.Drawing.Size(42, 22);
+            this.tbRaceMinLapTime.TabIndex = 1;
+            this.tbRaceMinLapTime.Text = "5";
+            // 
+            // label99
+            // 
+            this.label99.AutoSize = true;
+            this.label99.Location = new System.Drawing.Point(6, 22);
+            this.label99.Name = "label99";
+            this.label99.Size = new System.Drawing.Size(166, 17);
+            this.label99.TabIndex = 0;
+            this.label99.Text = "Minimum Lap Time (sec):";
+            // 
+            // tableLayoutPanel5
+            // 
+            this.tableLayoutPanel5.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.tableLayoutPanel5.ColumnCount = 3;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel5.Controls.Add(this.groupBox9, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.groupBox12, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.groupBox22, 2, 0);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 1;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 103F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(1250, 104);
+            this.tableLayoutPanel5.TabIndex = 0;
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.tbRaceMaxRssi);
+            this.groupBox9.Controls.Add(this.tbRaceMinRssi);
+            this.groupBox9.Controls.Add(this.label1);
+            this.groupBox9.Controls.Add(this.label2);
+            this.groupBox9.Controls.Add(this.cbRaceAnt1);
+            this.groupBox9.Controls.Add(this.cbRaceAnt4);
+            this.groupBox9.Controls.Add(this.cbRaceAnt2);
+            this.groupBox9.Controls.Add(this.cbRaceAnt3);
+            this.groupBox9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox9.Location = new System.Drawing.Point(4, 4);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(454, 96);
+            this.groupBox9.TabIndex = 0;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "Antenna Selection";
+            // 
+            // tbRaceMaxRssi
+            // 
+            this.tbRaceMaxRssi.Location = new System.Drawing.Point(360, 60);
+            this.tbRaceMaxRssi.Margin = new System.Windows.Forms.Padding(4);
+            this.tbRaceMaxRssi.Name = "tbRaceMaxRssi";
+            this.tbRaceMaxRssi.ReadOnly = true;
+            this.tbRaceMaxRssi.Size = new System.Drawing.Size(81, 22);
+            this.tbRaceMaxRssi.TabIndex = 44;
+            this.tbRaceMaxRssi.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // tbRaceMinRssi
+            // 
+            this.tbRaceMinRssi.Location = new System.Drawing.Point(360, 18);
+            this.tbRaceMinRssi.Margin = new System.Windows.Forms.Padding(4);
+            this.tbRaceMinRssi.Name = "tbRaceMinRssi";
+            this.tbRaceMinRssi.ReadOnly = true;
+            this.tbRaceMinRssi.Size = new System.Drawing.Size(81, 22);
+            this.tbRaceMinRssi.TabIndex = 45;
+            this.tbRaceMinRssi.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label1.Location = new System.Drawing.Point(281, 63);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(72, 17);
+            this.label1.TabIndex = 42;
+            this.label1.Text = "Max RSSI:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label2.Location = new System.Drawing.Point(283, 21);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(69, 17);
+            this.label2.TabIndex = 43;
+            this.label2.Text = "Min RSSI:";
+            // 
+            // cbRaceAnt1
+            // 
+            this.cbRaceAnt1.AutoSize = true;
+            this.cbRaceAnt1.Checked = true;
+            this.cbRaceAnt1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbRaceAnt1.Location = new System.Drawing.Point(7, 40);
+            this.cbRaceAnt1.Margin = new System.Windows.Forms.Padding(4);
+            this.cbRaceAnt1.Name = "cbRaceAnt1";
+            this.cbRaceAnt1.Size = new System.Drawing.Size(59, 21);
+            this.cbRaceAnt1.TabIndex = 15;
+            this.cbRaceAnt1.Text = "Ant1";
+            this.cbRaceAnt1.UseVisualStyleBackColor = true;
+            // 
+            // cbRaceAnt4
+            // 
+            this.cbRaceAnt4.AutoSize = true;
+            this.cbRaceAnt4.Location = new System.Drawing.Point(214, 40);
+            this.cbRaceAnt4.Margin = new System.Windows.Forms.Padding(4);
+            this.cbRaceAnt4.Name = "cbRaceAnt4";
+            this.cbRaceAnt4.Size = new System.Drawing.Size(59, 21);
+            this.cbRaceAnt4.TabIndex = 14;
+            this.cbRaceAnt4.Text = "Ant4";
+            this.cbRaceAnt4.UseVisualStyleBackColor = true;
+            // 
+            // cbRaceAnt2
+            // 
+            this.cbRaceAnt2.AutoSize = true;
+            this.cbRaceAnt2.Location = new System.Drawing.Point(76, 40);
+            this.cbRaceAnt2.Margin = new System.Windows.Forms.Padding(4);
+            this.cbRaceAnt2.Name = "cbRaceAnt2";
+            this.cbRaceAnt2.Size = new System.Drawing.Size(59, 21);
+            this.cbRaceAnt2.TabIndex = 12;
+            this.cbRaceAnt2.Text = "Ant2";
+            this.cbRaceAnt2.UseVisualStyleBackColor = true;
+            // 
+            // cbRaceAnt3
+            // 
+            this.cbRaceAnt3.AutoSize = true;
+            this.cbRaceAnt3.Location = new System.Drawing.Point(145, 40);
+            this.cbRaceAnt3.Margin = new System.Windows.Forms.Padding(4);
+            this.cbRaceAnt3.Name = "cbRaceAnt3";
+            this.cbRaceAnt3.Size = new System.Drawing.Size(59, 21);
+            this.cbRaceAnt3.TabIndex = 13;
+            this.cbRaceAnt3.Text = "Ant3";
+            this.cbRaceAnt3.UseVisualStyleBackColor = true;
+            // 
+            // groupBox12
+            // 
+            this.groupBox12.Controls.Add(this.label18);
+            this.groupBox12.Controls.Add(this.comboBox2);
+            this.groupBox12.Controls.Add(this.label15);
+            this.groupBox12.Controls.Add(this.cmbRaceRound);
+            this.groupBox12.Controls.Add(this.cbRaceUserDefineSession);
+            this.groupBox12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox12.Location = new System.Drawing.Point(465, 4);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.Size = new System.Drawing.Size(579, 96);
+            this.groupBox12.TabIndex = 1;
+            this.groupBox12.TabStop = false;
+            this.groupBox12.Text = "Event Round";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(385, 41);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(48, 17);
+            this.label18.TabIndex = 4;
+            this.label18.Text = "Group";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "G1",
+            "G2",
+            "G3",
+            "G4",
+            "G5",
+            "G6",
+            "G7",
+            "G8",
+            "G9",
+            "G10"});
+            this.comboBox2.Location = new System.Drawing.Point(441, 38);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 24);
+            this.comboBox2.TabIndex = 3;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(180, 41);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(50, 17);
+            this.label15.TabIndex = 2;
+            this.label15.Text = "Round";
+            // 
+            // cmbRaceRound
+            // 
+            this.cmbRaceRound.FormattingEnabled = true;
+            this.cmbRaceRound.Items.AddRange(new object[] {
+            "Q1",
+            "Q2",
+            "Q3",
+            "Q4",
+            "Q5",
+            "R1",
+            "R2",
+            "R3",
+            "SF",
+            "BF"});
+            this.cmbRaceRound.Location = new System.Drawing.Point(236, 38);
+            this.cmbRaceRound.Name = "cmbRaceRound";
+            this.cmbRaceRound.Size = new System.Drawing.Size(121, 24);
+            this.cmbRaceRound.TabIndex = 1;
+            // 
+            // cbRaceUserDefineSession
+            // 
+            this.cbRaceUserDefineSession.AutoSize = true;
+            this.cbRaceUserDefineSession.Location = new System.Drawing.Point(6, 40);
+            this.cbRaceUserDefineSession.Name = "cbRaceUserDefineSession";
+            this.cbRaceUserDefineSession.Size = new System.Drawing.Size(159, 21);
+            this.cbRaceUserDefineSession.TabIndex = 0;
+            this.cbRaceUserDefineSession.Text = "User Define Session";
+            this.cbRaceUserDefineSession.UseVisualStyleBackColor = true;
+            // 
+            // groupBox22
+            // 
+            this.groupBox22.Controls.Add(this.btnRaceExport);
+            this.groupBox22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox22.Location = new System.Drawing.Point(1051, 4);
+            this.groupBox22.Name = "groupBox22";
+            this.groupBox22.Size = new System.Drawing.Size(200, 96);
+            this.groupBox22.TabIndex = 2;
+            this.groupBox22.TabStop = false;
+            this.groupBox22.Text = "Export Data";
+            // 
+            // btnRaceExport
+            // 
+            this.btnRaceExport.Location = new System.Drawing.Point(42, 28);
+            this.btnRaceExport.Name = "btnRaceExport";
+            this.btnRaceExport.Size = new System.Drawing.Size(128, 42);
+            this.btnRaceExport.TabIndex = 0;
+            this.btnRaceExport.Text = "Export to Excel";
+            this.btnRaceExport.UseVisualStyleBackColor = true;
             // 
             // pageRealMode
             // 
@@ -2686,7 +3692,7 @@
             this.pageBufferedMode.Location = new System.Drawing.Point(4, 25);
             this.pageBufferedMode.Margin = new System.Windows.Forms.Padding(4);
             this.pageBufferedMode.Name = "pageBufferedMode";
-            this.pageBufferedMode.Size = new System.Drawing.Size(1339, 702);
+            this.pageBufferedMode.Size = new System.Drawing.Size(1256, 702);
             this.pageBufferedMode.TabIndex = 2;
             this.pageBufferedMode.Text = "Tag Inventory(Buffer Mode)";
             // 
@@ -2696,7 +3702,7 @@
             this.tableLayoutPanel4.ColumnCount = 3;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.22422F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.77578F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 458F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 466F));
             this.tableLayoutPanel4.Controls.Add(this.panel9, 2, 0);
             this.tableLayoutPanel4.Controls.Add(this.panel10, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.panel8, 1, 0);
@@ -2706,7 +3712,7 @@
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(1339, 109);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(1256, 109);
             this.tableLayoutPanel4.TabIndex = 58;
             // 
             // panel9
@@ -2716,10 +3722,10 @@
             this.panel9.Controls.Add(this.btGetClearBuffer);
             this.panel9.Controls.Add(this.btGetBuffer);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel9.Location = new System.Drawing.Point(883, 5);
+            this.panel9.Location = new System.Drawing.Point(792, 5);
             this.panel9.Margin = new System.Windows.Forms.Padding(4);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(451, 99);
+            this.panel9.Size = new System.Drawing.Size(459, 99);
             this.panel9.TabIndex = 1;
             // 
             // btClearBuffer
@@ -2783,7 +3789,7 @@
             this.panel10.Location = new System.Drawing.Point(5, 5);
             this.panel10.Margin = new System.Windows.Forms.Padding(4);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(432, 99);
+            this.panel10.Size = new System.Drawing.Size(386, 99);
             this.panel10.TabIndex = 0;
             // 
             // btBufferInventory
@@ -2828,10 +3834,10 @@
             this.panel8.Controls.Add(this.cbBufferWorkant2);
             this.panel8.Controls.Add(this.cbBufferWorkant3);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(446, 5);
+            this.panel8.Location = new System.Drawing.Point(400, 5);
             this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(428, 99);
+            this.panel8.Size = new System.Drawing.Size(383, 99);
             this.panel8.TabIndex = 0;
             // 
             // cbBufferWorkant1
@@ -3141,7 +4147,7 @@
             this.lvBufferList.Location = new System.Drawing.Point(0, 386);
             this.lvBufferList.Margin = new System.Windows.Forms.Padding(4);
             this.lvBufferList.Name = "lvBufferList";
-            this.lvBufferList.Size = new System.Drawing.Size(1339, 316);
+            this.lvBufferList.Size = new System.Drawing.Size(1256, 316);
             this.lvBufferList.TabIndex = 48;
             this.lvBufferList.UseCompatibleStateImageBehavior = false;
             this.lvBufferList.View = System.Windows.Forms.View.Details;
@@ -3204,7 +4210,7 @@
             this.pageFast4AntMode.Margin = new System.Windows.Forms.Padding(4);
             this.pageFast4AntMode.Name = "pageFast4AntMode";
             this.pageFast4AntMode.Padding = new System.Windows.Forms.Padding(4);
-            this.pageFast4AntMode.Size = new System.Drawing.Size(1339, 702);
+            this.pageFast4AntMode.Size = new System.Drawing.Size(1256, 702);
             this.pageFast4AntMode.TabIndex = 0;
             this.pageFast4AntMode.Text = "Tag Inventory(Fast Switch Antenna Mode)";
             this.pageFast4AntMode.Enter += new System.EventHandler(this.pageFast4AntMode_Enter);
@@ -3229,7 +4235,7 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(1331, 216);
+            this.groupBox2.Size = new System.Drawing.Size(1248, 216);
             this.groupBox2.TabIndex = 42;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Tag Data";
@@ -3464,7 +4470,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.20588F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.79412F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 370F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 382F));
             this.tableLayoutPanel2.Controls.Add(this.panel2, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel3, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel4, 2, 0);
@@ -3475,7 +4481,7 @@
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 103F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1331, 105);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1248, 105);
             this.tableLayoutPanel2.TabIndex = 25;
             // 
             // panel2
@@ -3497,10 +4503,10 @@
             this.panel2.Controls.Add(this.label59);
             this.panel2.Controls.Add(this.label48);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(267, 6);
+            this.panel2.Location = new System.Drawing.Point(241, 6);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(685, 93);
+            this.panel2.Size = new System.Drawing.Size(616, 93);
             this.panel2.TabIndex = 0;
             // 
             // txtDStay
@@ -3509,7 +4515,7 @@
             this.txtDStay.Location = new System.Drawing.Point(625, 36);
             this.txtDStay.Margin = new System.Windows.Forms.Padding(4);
             this.txtDStay.Name = "txtDStay";
-            this.txtDStay.Size = new System.Drawing.Size(55, 25);
+            this.txtDStay.Size = new System.Drawing.Size(55, 22);
             this.txtDStay.TabIndex = 59;
             this.txtDStay.Text = "1";
             this.txtDStay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3519,7 +4525,7 @@
             this.txtCStay.Location = new System.Drawing.Point(448, 36);
             this.txtCStay.Margin = new System.Windows.Forms.Padding(4);
             this.txtCStay.Name = "txtCStay";
-            this.txtCStay.Size = new System.Drawing.Size(55, 25);
+            this.txtCStay.Size = new System.Drawing.Size(55, 22);
             this.txtCStay.TabIndex = 58;
             this.txtCStay.Text = "1";
             this.txtCStay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3529,7 +4535,7 @@
             this.txtBStay.Location = new System.Drawing.Point(271, 36);
             this.txtBStay.Margin = new System.Windows.Forms.Padding(4);
             this.txtBStay.Name = "txtBStay";
-            this.txtBStay.Size = new System.Drawing.Size(55, 25);
+            this.txtBStay.Size = new System.Drawing.Size(55, 22);
             this.txtBStay.TabIndex = 57;
             this.txtBStay.Text = "1";
             this.txtBStay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3539,7 +4545,7 @@
             this.txtAStay.Location = new System.Drawing.Point(92, 36);
             this.txtAStay.Margin = new System.Windows.Forms.Padding(4);
             this.txtAStay.Name = "txtAStay";
-            this.txtAStay.Size = new System.Drawing.Size(55, 25);
+            this.txtAStay.Size = new System.Drawing.Size(55, 22);
             this.txtAStay.TabIndex = 56;
             this.txtAStay.Text = "1";
             this.txtAStay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3719,7 +4725,7 @@
             this.panel3.Location = new System.Drawing.Point(6, 6);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(251, 93);
+            this.panel3.Size = new System.Drawing.Size(225, 93);
             this.panel3.TabIndex = 1;
             // 
             // btFastInventory
@@ -3742,10 +4748,10 @@
             this.panel4.Controls.Add(this.label73);
             this.panel4.Controls.Add(this.label72);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(962, 6);
+            this.panel4.Location = new System.Drawing.Point(867, 6);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(363, 93);
+            this.panel4.Size = new System.Drawing.Size(375, 93);
             this.panel4.TabIndex = 2;
             // 
             // txtRepeat
@@ -3753,7 +4759,7 @@
             this.txtRepeat.Location = new System.Drawing.Point(249, 35);
             this.txtRepeat.Margin = new System.Windows.Forms.Padding(4);
             this.txtRepeat.Name = "txtRepeat";
-            this.txtRepeat.Size = new System.Drawing.Size(55, 25);
+            this.txtRepeat.Size = new System.Drawing.Size(55, 22);
             this.txtRepeat.TabIndex = 58;
             this.txtRepeat.Text = "10";
             this.txtRepeat.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3763,7 +4769,7 @@
             this.txtInterval.Location = new System.Drawing.Point(87, 35);
             this.txtInterval.Margin = new System.Windows.Forms.Padding(4);
             this.txtInterval.Name = "txtInterval";
-            this.txtInterval.Size = new System.Drawing.Size(55, 25);
+            this.txtInterval.Size = new System.Drawing.Size(55, 22);
             this.txtInterval.TabIndex = 57;
             this.txtInterval.Text = "0";
             this.txtInterval.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3819,7 +4825,7 @@
             this.lvFastList.Location = new System.Drawing.Point(4, 378);
             this.lvFastList.Margin = new System.Windows.Forms.Padding(4);
             this.lvFastList.Name = "lvFastList";
-            this.lvFastList.Size = new System.Drawing.Size(1331, 320);
+            this.lvFastList.Size = new System.Drawing.Size(1248, 320);
             this.lvFastList.TabIndex = 24;
             this.lvFastList.UseCompatibleStateImageBehavior = false;
             this.lvFastList.View = System.Windows.Forms.View.Details;
@@ -3891,7 +4897,7 @@
             this.pageAcessTag.Location = new System.Drawing.Point(4, 25);
             this.pageAcessTag.Margin = new System.Windows.Forms.Padding(4);
             this.pageAcessTag.Name = "pageAcessTag";
-            this.pageAcessTag.Size = new System.Drawing.Size(1339, 702);
+            this.pageAcessTag.Size = new System.Drawing.Size(1256, 702);
             this.pageAcessTag.TabIndex = 3;
             this.pageAcessTag.Text = "Access Tag";
             this.pageAcessTag.UseVisualStyleBackColor = true;
@@ -3913,7 +4919,7 @@
             this.ltvOperate.Location = new System.Drawing.Point(0, 428);
             this.ltvOperate.Margin = new System.Windows.Forms.Padding(4);
             this.ltvOperate.Name = "ltvOperate";
-            this.ltvOperate.Size = new System.Drawing.Size(1339, 274);
+            this.ltvOperate.Size = new System.Drawing.Size(1256, 274);
             this.ltvOperate.TabIndex = 10;
             this.ltvOperate.UseCompatibleStateImageBehavior = false;
             this.ltvOperate.View = System.Windows.Forms.View.Details;
@@ -3975,7 +4981,7 @@
             this.gbCmdOperateTag.Margin = new System.Windows.Forms.Padding(4);
             this.gbCmdOperateTag.Name = "gbCmdOperateTag";
             this.gbCmdOperateTag.Padding = new System.Windows.Forms.Padding(4);
-            this.gbCmdOperateTag.Size = new System.Drawing.Size(1339, 428);
+            this.gbCmdOperateTag.Size = new System.Drawing.Size(1256, 428);
             this.gbCmdOperateTag.TabIndex = 8;
             this.gbCmdOperateTag.TabStop = false;
             this.gbCmdOperateTag.Text = "Tag Access";
@@ -3990,7 +4996,7 @@
             this.groupBox16.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox16.Name = "groupBox16";
             this.groupBox16.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox16.Size = new System.Drawing.Size(1331, 67);
+            this.groupBox16.Size = new System.Drawing.Size(1248, 67);
             this.groupBox16.TabIndex = 4;
             this.groupBox16.TabStop = false;
             this.groupBox16.Text = "Kill Tag";
@@ -4036,7 +5042,7 @@
             this.groupBox15.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox15.Name = "groupBox15";
             this.groupBox15.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox15.Size = new System.Drawing.Size(1331, 127);
+            this.groupBox15.Size = new System.Drawing.Size(1248, 127);
             this.groupBox15.TabIndex = 3;
             this.groupBox15.TabStop = false;
             this.groupBox15.Text = "Lock Tag";
@@ -4225,7 +5231,7 @@
             this.groupBox14.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox14.Name = "groupBox14";
             this.groupBox14.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox14.Size = new System.Drawing.Size(1331, 127);
+            this.groupBox14.Size = new System.Drawing.Size(1248, 127);
             this.groupBox14.TabIndex = 2;
             this.groupBox14.TabStop = false;
             this.groupBox14.Text = "Read/Write Tag";
@@ -4398,7 +5404,7 @@
             this.groupBox13.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox13.Name = "groupBox13";
             this.groupBox13.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox13.Size = new System.Drawing.Size(1331, 67);
+            this.groupBox13.Size = new System.Drawing.Size(1248, 67);
             this.groupBox13.TabIndex = 1;
             this.groupBox13.TabStop = false;
             this.groupBox13.Text = "Tag Selection";
@@ -5170,7 +6176,7 @@
             "不选"});
             this.comboBox9.Location = new System.Drawing.Point(-165, 111);
             this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(55, 24);
+            this.comboBox9.Size = new System.Drawing.Size(55, 25);
             this.comboBox9.TabIndex = 39;
             // 
             // lxLedControl9
@@ -5584,7 +6590,7 @@
             this.timerInventory.Interval = 500;
             this.timerInventory.Tick += new System.EventHandler(this.timerInventory_Tick);
             // 
-            // R2000UartDemo
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -5600,7 +6606,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
-            this.Name = "R2000UartDemo";
+            this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RFID Chrono Timing System v1.0";
             this.Load += new System.EventHandler(this.R2000UartDemo_Load);
@@ -5652,6 +6658,36 @@
             this.gbCmdOutputPower.PerformLayout();
             this.pageEpcTest.ResumeLayout(false);
             this.tabEpcTest.ResumeLayout(false);
+            this.tabRace.ResumeLayout(false);
+            this.tableLayoutPanel7.ResumeLayout(false);
+            this.panel15.ResumeLayout(false);
+            this.panel15.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            this.panel14.ResumeLayout(false);
+            this.panel14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            this.panel13.ResumeLayout(false);
+            this.panel13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvPilot1)).EndInit();
+            this.tableLayoutPanel6.ResumeLayout(false);
+            this.groupBox24.ResumeLayout(false);
+            this.groupBox24.PerformLayout();
+            this.groupBox25.ResumeLayout(false);
+            this.groupBox25.PerformLayout();
+            this.groupBox26.ResumeLayout(false);
+            this.groupBox26.PerformLayout();
+            this.tableLayoutPanel5.ResumeLayout(false);
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
+            this.groupBox12.ResumeLayout(false);
+            this.groupBox12.PerformLayout();
+            this.groupBox22.ResumeLayout(false);
             this.pageRealMode.ResumeLayout(false);
             this.pageRealMode.PerformLayout();
             this.groupBox20.ResumeLayout(false);
@@ -6149,6 +7185,91 @@
         private System.Windows.Forms.CheckBox ckClearOperationRec;
         private System.Windows.Forms.CheckBox cbUserDefineFreq;
         private System.Windows.Forms.Timer timerInventory;
+        private System.Windows.Forms.TabPage tabRace;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.CheckBox cbRaceAnt3;
+        private System.Windows.Forms.CheckBox cbRaceAnt2;
+        private System.Windows.Forms.CheckBox cbRaceAnt4;
+        private System.Windows.Forms.CheckBox cbRaceAnt1;
+        private System.Windows.Forms.TextBox tbRaceMinRssi;
+        private System.Windows.Forms.TextBox tbRaceMaxRssi;
+        private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private System.Windows.Forms.GroupBox groupBox12;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.ComboBox cmbRaceRound;
+        private System.Windows.Forms.CheckBox cbRaceUserDefineSession;
+        private System.Windows.Forms.GroupBox groupBox22;
+        private System.Windows.Forms.Button btnRaceExport;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
+        private System.Windows.Forms.GroupBox groupBox24;
+        private System.Windows.Forms.TextBox tbRaceRPC;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Button btnRaceReset;
+        private System.Windows.Forms.Button btnRaceStop;
+        private System.Windows.Forms.Button btnRaceStart;
+        private System.Windows.Forms.GroupBox groupBox25;
+        private System.Windows.Forms.Label label71;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label lblRaceMilliSeconds;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label lblRaceSeconds;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label lblRaceMinutes;
+        private System.Windows.Forms.GroupBox groupBox26;
+        private System.Windows.Forms.DateTimePicker dtpRaceDate;
+        private System.Windows.Forms.Label label102;
+        private System.Windows.Forms.TextBox tbRaceLocation;
+        private System.Windows.Forms.Label label101;
+        private System.Windows.Forms.TextBox tbRaceName;
+        private System.Windows.Forms.Label label100;
+        private System.Windows.Forms.TextBox tbRaceMinLapTime;
+        private System.Windows.Forms.Label label99;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.DataGridView gvPilot1;
+        private System.Windows.Forms.TextBox tbPilot1Nick;
+        private System.Windows.Forms.Label label113;
+        private System.Windows.Forms.TextBox tbPilot1Name;
+        private System.Windows.Forms.Label label112;
+        private System.Windows.Forms.TextBox tbPilot1Tag;
+        private System.Windows.Forms.Label label111;
+        private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.TextBox tbPilot4Nick;
+        private System.Windows.Forms.Label label123;
+        private System.Windows.Forms.TextBox tbPilot4Name;
+        private System.Windows.Forms.Label label124;
+        private System.Windows.Forms.TextBox tbPilot4Tag;
+        private System.Windows.Forms.Label label125;
+        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.TextBox tbPilot3Nick;
+        private System.Windows.Forms.Label label120;
+        private System.Windows.Forms.TextBox tbPilot3Name;
+        private System.Windows.Forms.Label label121;
+        private System.Windows.Forms.TextBox tbPilot3Tag;
+        private System.Windows.Forms.Label label122;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.TextBox tbPilot2Nick;
+        private System.Windows.Forms.Label label117;
+        private System.Windows.Forms.TextBox tbPilot2Name;
+        private System.Windows.Forms.Label label118;
+        private System.Windows.Forms.TextBox tbPilot2Tag;
+        private System.Windows.Forms.Label label119;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label114;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label115;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label116;
     }
 }
 

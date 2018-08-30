@@ -15,7 +15,7 @@ namespace RaceManager.UI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new R2000UartDemo());
+            Application.Run(new MainForm());
         }
     }
 }
