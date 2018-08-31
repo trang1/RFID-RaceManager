@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -48,9 +49,15 @@ namespace RaceManager.UI
 
         private int m_nReceiveFlag = 0;
 
+        // Race times
+        TimeSpan _raceTime;
+        HighResolutionTimer _timer = new HighResolutionTimer();
+
         public MainForm()
         {
             InitializeComponent();
+            
+            _timer.Elapsed += _timer_Elapsed;
         }
 
         private void R2000UartDemo_Load(object sender, EventArgs e)
@@ -66,7 +73,9 @@ namespace RaceManager.UI
             //Set the validity of interface element.
             //gbRS232.Enabled = false;
             gbTcpIp.Enabled = false;
-            SetFormEnable(false);
+
+            if(!Debugger.IsAttached)
+                SetFormEnable(false);
             //rdbRS232.Checked = true;
 
             //Initialization connect the default configuration of reader.
@@ -74,7 +83,6 @@ namespace RaceManager.UI
             //cmbBaudrate.SelectedIndex = 1;
             ipIpServer.IpAddressStr = "192.168.0.178";
             txtTcpPort.Text = "4001";
-
 
             
             rdbInventoryRealTag_CheckedChanged(sender, e);
@@ -100,6 +108,8 @@ namespace RaceManager.UI
             tabEpcTest.Controls.Remove(pageRealMode);
             tabEpcTest.Controls.Remove(pageBufferedMode);
             tabEpcTest.Controls.Remove(pageFast4AntMode);
+
+            btnRaceStop.Enabled = false;
         }
 
         private void ReceiveData(byte[] btAryReceiveData)
@@ -3819,7 +3829,7 @@ namespace RaceManager.UI
             return tempStr.Replace('\n', ' ');
         }
 
-
+        #region ISO18000
         private void ProcessWriteTagISO18000(Reader.MessageTran msgTran)
         {
             string strCmd = "Write Tag";
@@ -3986,6 +3996,8 @@ namespace RaceManager.UI
             }
         }
 
+        #endregion
+
         private void htxtSendData_Leave(object sender, EventArgs e)
         {
             if (htxtSendData.TextLength == 0)
@@ -4046,6 +4058,7 @@ namespace RaceManager.UI
             }
         }
 
+        #region Serial
         private void txtTcpPort_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = true;
@@ -4090,6 +4103,7 @@ namespace RaceManager.UI
                 e.Handled = false;
             }
         }
+        #endregion  
 
         private void cmbSetAccessEpcMatch_DropDown(object sender, EventArgs e)
         {
@@ -4917,39 +4931,119 @@ namespace RaceManager.UI
 
 
         #region Race !!!
-
-        TimeSpan _raceTime;
-        HighResolutionTimer _timer = new HighResolutionTimer();
-
+        
         private void btnRaceStart_Click(object sender, EventArgs e)
         {
+            if (!RaceValidation())
+            {
+                MessageBox.Show("Some fields are not filled or filled unproperly.");
+                return;
+            }
+
+            if (_raceTime.TotalMilliseconds > 1)
+            {
+                MessageBox.Show("You should reset the timer before starting new race.");
+                return;
+            }
+
+            var race = new Race();
+            FillRaceInfo(race);
             _timer.Start();
-            _timer.Elapsed += _timer_Elapsed;
+
+           EnableDisableRaceControls(false);
         }
+
+        
 
         private void _timer_Elapsed(object sender, HighResolutionTimerElapsedEventArgs e)
         {
-            _raceTime = _raceTime.Add(new TimeSpan(0,0,0,0,1));
-            BeginInvoke(new Action(() =>
-            {
-                lblRaceMilliSeconds.Text = _raceTime.Milliseconds.ToString();
-                lblRaceSeconds.Text = _raceTime.Seconds.ToString();
-                lblRaceMinutes.Text = _raceTime.Minutes.ToString();
-            }));
+            _raceTime = _raceTime.Add(TimeSpan.FromMilliseconds(1));
+            BeginInvoke(new Action(ShowRaceTime));
+        }
+
+        private void ShowRaceTime()
+        {
+            lblRaceMilliSeconds.Text = _raceTime.Milliseconds.ToString("D3");
+            lblRaceSeconds.Text = _raceTime.Seconds.ToString("D2");
+            lblRaceMinutes.Text = _raceTime.Minutes.ToString("D2");
         }
 
         private void btnRaceStop_Click(object sender, EventArgs e)
         {
             _timer.Stop();
+
+            EnableDisableRaceControls(true);
         }
 
         private void btnRaceReset_Click(object sender, EventArgs e)
         {
-
+            if (MessageBox.Show("Do you really want to reset time?", "Question", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                _raceTime = TimeSpan.Zero;
+                ShowRaceTime();
+            }
         }
-        
-        #endregion
+        private void FillRaceInfo(Race race)
+        {
+            race.Name = tbRaceName.Text;
+            race.Date = dtpRaceDate.Value;
+            race.Location = tbRaceLocation.Text;
+            race.MinLapTime = Convert.ToInt32(tbRaceMinLapTime.Text);
 
+            race.Pilot1 = new PilotInfo
+            {
+                Name = tbPilot1Name.Text,
+                Nickname = tbPilot1Nick.Text,
+                Tag = tbPilot1Tag.Text
+            };
+            race.Pilot2 = new PilotInfo
+            {
+                Name = tbPilot2Name.Text,
+                Nickname = tbPilot2Nick.Text,
+                Tag = tbPilot2Tag.Text
+            };
+            race.Pilot3 = new PilotInfo
+            {
+                Name = tbPilot3Name.Text,
+                Nickname = tbPilot3Nick.Text,
+                Tag = tbPilot3Tag.Text
+            };
+            race.Pilot4 = new PilotInfo
+            {
+                Name = tbPilot4Name.Text,
+                Nickname = tbPilot4Nick.Text,
+                Tag = tbPilot4Tag.Text
+            };
+        }
+
+        private bool RaceValidation()
+        {
+            int i = 0;
+            return !string.IsNullOrEmpty(tbRaceName.Text) && !string.IsNullOrEmpty(tbRaceMinLapTime.Text) &&
+                            int.TryParse(tbRaceMinLapTime.Text, out i) &&
+                           !string.IsNullOrEmpty(tbRaceLocation.Text) && !string.IsNullOrEmpty(dtpRaceDate.Text) &&
+                           !string.IsNullOrEmpty(tbPilot1Tag.Text) && !string.IsNullOrEmpty(tbPilot1Name.Text) &&
+                           !string.IsNullOrEmpty(tbPilot2Tag.Text) && !string.IsNullOrEmpty(tbPilot2Name.Text) &&
+                           !string.IsNullOrEmpty(tbPilot3Tag.Text) && !string.IsNullOrEmpty(tbPilot3Name.Text) &&
+                           !string.IsNullOrEmpty(tbPilot4Tag.Text) && !string.IsNullOrEmpty(tbPilot4Name.Text);
+        }
+
+        private void EnableDisableRaceControls(bool enable)
+        {
+            btnRaceStart.Enabled = enable;
+            btnRaceStop.Enabled = !enable;
+
+            groupBox9.Enabled = enable;
+            groupBox12.Enabled = enable;
+            groupBox26.Enabled = enable;
+
+            tbPilot1Tag.Enabled = enable;
+            tbPilot2Tag.Enabled = enable;
+            tbPilot3Tag.Enabled = enable;
+            tbPilot4Tag.Enabled = enable;
+        }
+
+        #endregion
         
     }
 }
