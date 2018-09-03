@@ -143,6 +143,9 @@
     </Compile>
     <Compile Include="RaceData.cs" />
     <Compile Include="ReaderSetting.cs" />
+    <None Include="races.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CustomControl\CustomControl.csproj">

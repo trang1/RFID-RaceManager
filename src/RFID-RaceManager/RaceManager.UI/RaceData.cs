@@ -7,6 +7,8 @@ namespace RaceManager.UI
 {
     public class Race
     {
+        public int Id { get; set; }
+
         /// <summary>
         /// Minimum lap time, sec
         /// </summary>
@@ -15,14 +17,28 @@ namespace RaceManager.UI
         public string Name { get; set; }
         public string Location { get; set; }
         public DateTime Date { get; set; }
-        public PilotInfo Pilot1 { get; set; }
-        public PilotInfo Pilot2 { get; set; }
-        public PilotInfo Pilot3 { get; set; }
-        public PilotInfo Pilot4 { get; set; }
+        public int NumberOfLaps { get; set; }
+ 
+        /// <summary>
+        /// Number of qualification rounds
+        /// </summary>
+        public int NumberOfQualRounds { get; set; }
+        public int NumberOfFinals { get; set; }
+
+        public IList<string> Groups { get; set; } 
     }
 
+    public class RaceEvent
+    {
+        public int Id { get; set; }
+        public int RaceId { get; set; }
+        public string Name { get; set; }
+        public string Group { get; set; }
+        public IList<PilotInfo> Pilots { get; set; } 
+    }
     public class PilotInfo
     {
+        public int Id { get; set; }
         public string Tag { get; set; }
         public string Name { get; set; }
         public string Nickname { get; set; }
@@ -39,6 +55,8 @@ namespace RaceManager.UI
 
     public class LapInfo
     {
+        public int PilotId { get; set; }
+        public int RaceEventId { get; set; }
         public int Number { get; set; }
         public string Epc { get; set; }
         public string Pc { get; set; }

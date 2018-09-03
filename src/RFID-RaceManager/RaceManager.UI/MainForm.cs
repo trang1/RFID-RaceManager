@@ -4990,7 +4990,7 @@ namespace RaceManager.UI
             race.Location = tbRaceLocation.Text;
             race.MinLapTime = Convert.ToInt32(tbRaceMinLapTime.Text);
 
-            race.Pilot1 = new PilotInfo
+      /*      race.Pilot1 = new PilotInfo
             {
                 Name = tbPilot1Name.Text,
                 Nickname = tbPilot1Nick.Text,
@@ -5013,7 +5013,7 @@ namespace RaceManager.UI
                 Name = tbPilot4Name.Text,
                 Nickname = tbPilot4Nick.Text,
                 Tag = tbPilot4Tag.Text
-            };
+            };*/
         }
 
         private bool RaceValidation()
