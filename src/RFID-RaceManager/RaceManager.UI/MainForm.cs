@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
@@ -9,6 +10,8 @@ using System.Text;
 using System.Windows.Forms;
 using System.Net;
 using System.Threading;
+using RaceManager.Data;
+using ApplicationContext = RaceManager.Data.ApplicationContext;
 
 namespace RaceManager.UI
 {
@@ -53,11 +56,15 @@ namespace RaceManager.UI
         TimeSpan _raceTime;
         HighResolutionTimer _timer = new HighResolutionTimer();
 
+        ApplicationContext _db;
+
         public MainForm()
         {
             InitializeComponent();
             
             _timer.Elapsed += _timer_Elapsed;
+
+            _db = new ApplicationContext();
         }
 
         private void R2000UartDemo_Load(object sender, EventArgs e)
@@ -110,6 +117,8 @@ namespace RaceManager.UI
             tabEpcTest.Controls.Remove(pageFast4AntMode);
 
             btnRaceStop.Enabled = false;
+
+            _db.Races.Load();
         }
 
         private void ReceiveData(byte[] btAryReceiveData)

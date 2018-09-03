@@ -6715,7 +6715,7 @@
             // bindingSource4
             // 
             this.bindingSource4.DataMember = "Laps";
-            this.bindingSource4.DataSource = typeof(RaceManager.UI.PilotInfo);
+            this.bindingSource4.DataSource = typeof(RaceManager.Data.Pilot);
             // 
             // numberDataGridViewTextBoxColumn2
             // 
@@ -6770,7 +6770,7 @@
             // bindingSource3
             // 
             this.bindingSource3.DataMember = "Laps";
-            this.bindingSource3.DataSource = typeof(RaceManager.UI.PilotInfo);
+            this.bindingSource3.DataSource = typeof(RaceManager.Data.Pilot);
             // 
             // numberDataGridViewTextBoxColumn1
             // 
@@ -6825,7 +6825,7 @@
             // bindingSource2
             // 
             this.bindingSource2.DataMember = "Laps";
-            this.bindingSource2.DataSource = typeof(RaceManager.UI.PilotInfo);
+            this.bindingSource2.DataSource = typeof(RaceManager.Data.Pilot);
             // 
             // numberDataGridViewTextBoxColumn
             // 
@@ -6880,7 +6880,7 @@
             // bindingSource1
             // 
             this.bindingSource1.DataMember = "Laps";
-            this.bindingSource1.DataSource = typeof(RaceManager.UI.PilotInfo);
+            this.bindingSource1.DataSource = typeof(RaceManager.Data.Pilot);
             // 
             // MainForm
             // 

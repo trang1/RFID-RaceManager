@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace RaceManager.UI
+namespace RaceManager.Data
 {
     public class Race
     {
@@ -18,14 +18,14 @@ namespace RaceManager.UI
         public string Location { get; set; }
         public DateTime Date { get; set; }
         public int NumberOfLaps { get; set; }
- 
+
         /// <summary>
         /// Number of qualification rounds
         /// </summary>
         public int NumberOfQualRounds { get; set; }
         public int NumberOfFinals { get; set; }
 
-        public IList<string> Groups { get; set; } 
+        public IList<string> Groups { get; set; }
     }
 
     public class RaceEvent
@@ -34,9 +34,9 @@ namespace RaceManager.UI
         public int RaceId { get; set; }
         public string Name { get; set; }
         public string Group { get; set; }
-        public IList<PilotInfo> Pilots { get; set; } 
+        public IList<Pilot> Pilots { get; set; }
     }
-    public class PilotInfo
+    public class Pilot
     {
         public int Id { get; set; }
         public string Tag { get; set; }
@@ -47,7 +47,7 @@ namespace RaceManager.UI
 
         public List<LapInfo> Laps { get; set; }
 
-        public PilotInfo()
+        public Pilot()
         {
             Laps = new List<LapInfo>();
         }
