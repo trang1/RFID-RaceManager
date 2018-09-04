@@ -12,7 +12,7 @@ namespace RaceManager.Data
         /// <summary>
         /// Minimum lap time, sec
         /// </summary>
-        public int MinLapTime { get; set; }
+        //public int MinLapTime { get; set; }
 
         public string Name { get; set; }
         public string Location { get; set; }
@@ -42,8 +42,8 @@ namespace RaceManager.Data
         public string Tag { get; set; }
         public string Name { get; set; }
         public string Nickname { get; set; }
-        public TimeSpan BestLapTime { get; set; }
-        public TimeSpan AvgLapTime { get; set; }
+        public string BestLapTime { get; set; }
+        public string AvgLapTime { get; set; }
 
         public List<LapInfo> Laps { get; set; }
 
@@ -55,6 +55,7 @@ namespace RaceManager.Data
 
     public class LapInfo
     {
+        public int Id { get; set; }
         public int PilotId { get; set; }
         public int RaceEventId { get; set; }
         public int Number { get; set; }
@@ -63,6 +64,6 @@ namespace RaceManager.Data
         public int IdentCount { get; set; }
         public string Rssi { get; set; }
         public decimal CarrFrequency { get; set; }
-        public TimeSpan Time { get; set; }
+        public string Time { get; set; }
     }
 }

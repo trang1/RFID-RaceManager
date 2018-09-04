@@ -106,7 +106,7 @@ namespace RaceManager.UI
             {
                 groupBox21.Enabled = true;
                 groupBox23.Enabled = false;
-            };
+            }
 
             rdbTcpIp_CheckedChanged(this, e);
             tabCtrMain.TabPages.Remove(PagTranDataLog);
@@ -4997,7 +4997,7 @@ namespace RaceManager.UI
             race.Name = tbRaceName.Text;
             race.Date = dtpRaceDate.Value;
             race.Location = tbRaceLocation.Text;
-            race.MinLapTime = Convert.ToInt32(tbRaceMinLapTime.Text);
+          //  race.MinLapTime = Convert.ToInt32(tbRaceMinLapTime.Text);
 
       /*      race.Pilot1 = new PilotInfo
             {

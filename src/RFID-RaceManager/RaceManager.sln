@@ -1,9 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaceManager.UI", "RaceManager.UI\RaceManager.UI.csproj", "{B4C43E72-D42C-4E5F-A4C9-189651BDCAB1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{15CB284A-5B11-448F-B31C-F17DD860F729} = {15CB284A-5B11-448F-B31C-F17DD860F729}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomControl", "CustomControl\CustomControl.csproj", "{3022476E-CEF0-48D4-B76D-5AA42F4DD121}"
 EndProject
