@@ -39,11 +39,14 @@ namespace RaceManager.Data
     public class Pilot
     {
         public int Id { get; set; }
+        public int OrderNumber { get; set; }
         public string Tag { get; set; }
         public string Name { get; set; }
         public string Nickname { get; set; }
         public string BestLapTime { get; set; }
         public string AvgLapTime { get; set; }
+        public string Team { get; set; }
+        public string Email { get; set; }
 
         public List<LapInfo> Laps { get; set; }
 

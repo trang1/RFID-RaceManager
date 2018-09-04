@@ -156,6 +156,7 @@
     </Compile>
     <None Include="app.config" />
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\RaceManager.Data.Pilot.datasource" />
     <None Include="Properties\DataSources\RaceManager.UI.PilotInfo.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

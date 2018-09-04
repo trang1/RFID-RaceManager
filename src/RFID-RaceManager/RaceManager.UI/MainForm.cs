@@ -4998,31 +4998,7 @@ namespace RaceManager.UI
             race.Date = dtpRaceDate.Value;
             race.Location = tbRaceLocation.Text;
           //  race.MinLapTime = Convert.ToInt32(tbRaceMinLapTime.Text);
-
-      /*      race.Pilot1 = new PilotInfo
-            {
-                Name = tbPilot1Name.Text,
-                Nickname = tbPilot1Nick.Text,
-                Tag = tbPilot1Tag.Text
-            };
-            race.Pilot2 = new PilotInfo
-            {
-                Name = tbPilot2Name.Text,
-                Nickname = tbPilot2Nick.Text,
-                Tag = tbPilot2Tag.Text
-            };
-            race.Pilot3 = new PilotInfo
-            {
-                Name = tbPilot3Name.Text,
-                Nickname = tbPilot3Nick.Text,
-                Tag = tbPilot3Tag.Text
-            };
-            race.Pilot4 = new PilotInfo
-            {
-                Name = tbPilot4Name.Text,
-                Nickname = tbPilot4Nick.Text,
-                Tag = tbPilot4Tag.Text
-            };*/
+          
         }
 
         private bool RaceValidation()
@@ -5030,11 +5006,7 @@ namespace RaceManager.UI
             int i = 0;
             return !string.IsNullOrEmpty(tbRaceName.Text) && !string.IsNullOrEmpty(tbRaceMinLapTime.Text) &&
                             int.TryParse(tbRaceMinLapTime.Text, out i) &&
-                           !string.IsNullOrEmpty(tbRaceLocation.Text) && !string.IsNullOrEmpty(dtpRaceDate.Text) &&
-                           !string.IsNullOrEmpty(tbPilot1Tag.Text) && !string.IsNullOrEmpty(tbPilot1Name.Text) &&
-                           !string.IsNullOrEmpty(tbPilot2Tag.Text) && !string.IsNullOrEmpty(tbPilot2Name.Text) &&
-                           !string.IsNullOrEmpty(tbPilot3Tag.Text) && !string.IsNullOrEmpty(tbPilot3Name.Text) &&
-                           !string.IsNullOrEmpty(tbPilot4Tag.Text) && !string.IsNullOrEmpty(tbPilot4Name.Text);
+                           !string.IsNullOrEmpty(tbRaceLocation.Text) && !string.IsNullOrEmpty(dtpRaceDate.Text) ;
         }
 
         private void EnableDisableRaceControls(bool enable)
@@ -5045,14 +5017,38 @@ namespace RaceManager.UI
             groupBox9.Enabled = enable;
             groupBox12.Enabled = enable;
             groupBox26.Enabled = enable;
-
-            tbPilot1Tag.Enabled = enable;
-            tbPilot2Tag.Enabled = enable;
-            tbPilot3Tag.Enabled = enable;
-            tbPilot4Tag.Enabled = enable;
+            
         }
 
         #endregion
-        
+
+        #region Pilot Management
+
+        List<Pilot> Pilots = new List<Pilot>();
+
+        private void btnAddPilot_Click(object sender, EventArgs e)
+        {
+            var pilot = new Pilot();
+            pilot.Tag = tbPilotTag.Text;
+            pilot.Name = tbPilotName.Text;
+            pilot.Nickname = tbPilotNickname.Text;
+            pilot.Team = tbPilotTeam.Text;
+            pilot.Email = tbPilotEmail.Text;
+
+            Pilots.Add(pilot);
+            pilot.OrderNumber = Pilots.IndexOf(pilot);
+
+            gvPilots.DataSource = Pilots;
+            gvPilots.Refresh();
+
+        }
+
+        private void btnAddPilotFromDb_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        #endregion
     }
 }
