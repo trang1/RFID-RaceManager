@@ -172,6 +172,13 @@
             this.label126 = new System.Windows.Forms.Label();
             this.groupBox28 = new System.Windows.Forms.GroupBox();
             this.gvPilots = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nicknameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.teamDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tagDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bindingSourcePilots = new System.Windows.Forms.BindingSource(this.components);
             this.tabRace = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox24 = new System.Windows.Forms.GroupBox();
@@ -500,13 +507,49 @@
             this.lxLedControl17 = new LxControl.LxLedControl();
             this.lxLedControl18 = new LxControl.LxLedControl();
             this.timerInventory = new System.Windows.Forms.Timer(this.components);
-            this.bindingSourcePilots = new System.Windows.Forms.BindingSource(this.components);
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nicknameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.teamDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tagDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.groupBox29 = new System.Windows.Forms.GroupBox();
+            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.label111 = new System.Windows.Forms.Label();
+            this.tbPilotsPerGroup = new System.Windows.Forms.TextBox();
+            this.btnAddPilotsToGroups = new System.Windows.Forms.Button();
+            this.pageGroupA = new System.Windows.Forms.TabPage();
+            this.pageGroupB = new System.Windows.Forms.TabPage();
+            this.pageGroupC = new System.Windows.Forms.TabPage();
+            this.pageGroupD = new System.Windows.Forms.TabPage();
+            this.pageGroupE = new System.Windows.Forms.TabPage();
+            this.pageGroupF = new System.Windows.Forms.TabPage();
+            this.pageGroupG = new System.Windows.Forms.TabPage();
+            this.pageGroupH = new System.Windows.Forms.TabPage();
+            this.pageGroupI = new System.Windows.Forms.TabPage();
+            this.pageGroupJ = new System.Windows.Forms.TabPage();
+            this.pageGroupK = new System.Windows.Forms.TabPage();
+            this.pageGroupL = new System.Windows.Forms.TabPage();
+            this.pageGroupM = new System.Windows.Forms.TabPage();
+            this.pageGroupN = new System.Windows.Forms.TabPage();
+            this.pageGroupO = new System.Windows.Forms.TabPage();
+            this.gvGroupA = new System.Windows.Forms.DataGridView();
+            this.gvGroupB = new System.Windows.Forms.DataGridView();
+            this.gvGroupC = new System.Windows.Forms.DataGridView();
+            this.gvGroupD = new System.Windows.Forms.DataGridView();
+            this.gvGroupE = new System.Windows.Forms.DataGridView();
+            this.gvGroupF = new System.Windows.Forms.DataGridView();
+            this.gvGroupG = new System.Windows.Forms.DataGridView();
+            this.gvGroupH = new System.Windows.Forms.DataGridView();
+            this.gvGroupI = new System.Windows.Forms.DataGridView();
+            this.gvGroupJ = new System.Windows.Forms.DataGridView();
+            this.gvGroupK = new System.Windows.Forms.DataGridView();
+            this.gvGroupL = new System.Windows.Forms.DataGridView();
+            this.gvGroupM = new System.Windows.Forms.DataGridView();
+            this.gvGroupN = new System.Windows.Forms.DataGridView();
+            this.gvGroupO = new System.Windows.Forms.DataGridView();
+            this.groupBox30 = new System.Windows.Forms.GroupBox();
+            this.label112 = new System.Windows.Forms.Label();
+            this.tbNumOfLaps = new System.Windows.Forms.TextBox();
+            this.label113 = new System.Windows.Forms.Label();
+            this.tbNumOfQualRounds = new System.Windows.Forms.TextBox();
+            this.label117 = new System.Windows.Forms.Label();
+            this.tbNumberOfFinals = new System.Windows.Forms.TextBox();
             this.tabCtrMain.SuspendLayout();
             this.PagReaderSetting.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -541,6 +584,7 @@
             this.groupBox27.SuspendLayout();
             this.groupBox28.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvPilots)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourcePilots)).BeginInit();
             this.tabRace.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.groupBox24.SuspendLayout();
@@ -613,7 +657,40 @@
             ((System.ComponentModel.ISupportInitialize)(this.lxLedControl16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lxLedControl17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lxLedControl18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourcePilots)).BeginInit();
+            this.tableLayoutPanel7.SuspendLayout();
+            this.groupBox29.SuspendLayout();
+            this.tabControl2.SuspendLayout();
+            this.pageGroupA.SuspendLayout();
+            this.pageGroupB.SuspendLayout();
+            this.pageGroupC.SuspendLayout();
+            this.pageGroupD.SuspendLayout();
+            this.pageGroupE.SuspendLayout();
+            this.pageGroupF.SuspendLayout();
+            this.pageGroupG.SuspendLayout();
+            this.pageGroupH.SuspendLayout();
+            this.pageGroupI.SuspendLayout();
+            this.pageGroupJ.SuspendLayout();
+            this.pageGroupK.SuspendLayout();
+            this.pageGroupL.SuspendLayout();
+            this.pageGroupM.SuspendLayout();
+            this.pageGroupN.SuspendLayout();
+            this.pageGroupO.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupC)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupD)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupE)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupF)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupH)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupI)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupJ)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupK)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupL)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupM)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupO)).BeginInit();
+            this.groupBox30.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabCtrMain
@@ -2178,6 +2255,8 @@
             // 
             // tabPilots
             // 
+            this.tabPilots.Controls.Add(this.groupBox30);
+            this.tabPilots.Controls.Add(this.tableLayoutPanel7);
             this.tabPilots.Controls.Add(this.tableLayoutPanel8);
             this.tabPilots.Location = new System.Drawing.Point(4, 25);
             this.tabPilots.Name = "tabPilots";
@@ -2369,6 +2448,47 @@
             this.gvPilots.RowTemplate.Height = 24;
             this.gvPilots.Size = new System.Drawing.Size(781, 252);
             this.gvPilots.TabIndex = 0;
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "OrderNumber";
+            this.Column1.HeaderText = "#";
+            this.Column1.Name = "Column1";
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            // 
+            // nicknameDataGridViewTextBoxColumn
+            // 
+            this.nicknameDataGridViewTextBoxColumn.DataPropertyName = "Nickname";
+            this.nicknameDataGridViewTextBoxColumn.HeaderText = "Nickname";
+            this.nicknameDataGridViewTextBoxColumn.Name = "nicknameDataGridViewTextBoxColumn";
+            // 
+            // teamDataGridViewTextBoxColumn
+            // 
+            this.teamDataGridViewTextBoxColumn.DataPropertyName = "Team";
+            this.teamDataGridViewTextBoxColumn.HeaderText = "Team";
+            this.teamDataGridViewTextBoxColumn.Name = "teamDataGridViewTextBoxColumn";
+            // 
+            // tagDataGridViewTextBoxColumn
+            // 
+            this.tagDataGridViewTextBoxColumn.DataPropertyName = "Tag";
+            this.tagDataGridViewTextBoxColumn.HeaderText = "TAG ID";
+            this.tagDataGridViewTextBoxColumn.Name = "tagDataGridViewTextBoxColumn";
+            this.tagDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "E-Mail";
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            // 
+            // bindingSourcePilots
+            // 
+            this.bindingSourcePilots.DataSource = typeof(RaceManager.Data.Pilot);
             // 
             // tabRace
             // 
@@ -3509,7 +3629,7 @@
             this.tableLayoutPanel4.ColumnCount = 3;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.22422F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.77578F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 485F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 487F));
             this.tableLayoutPanel4.Controls.Add(this.panel9, 2, 0);
             this.tableLayoutPanel4.Controls.Add(this.panel10, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.panel8, 1, 0);
@@ -3529,10 +3649,10 @@
             this.panel9.Controls.Add(this.btGetClearBuffer);
             this.panel9.Controls.Add(this.btGetBuffer);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel9.Location = new System.Drawing.Point(773, 5);
+            this.panel9.Location = new System.Drawing.Point(771, 5);
             this.panel9.Margin = new System.Windows.Forms.Padding(4);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(478, 100);
+            this.panel9.Size = new System.Drawing.Size(480, 100);
             this.panel9.TabIndex = 1;
             // 
             // btClearBuffer
@@ -3596,7 +3716,7 @@
             this.panel10.Location = new System.Drawing.Point(5, 5);
             this.panel10.Margin = new System.Windows.Forms.Padding(4);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(377, 100);
+            this.panel10.Size = new System.Drawing.Size(376, 100);
             this.panel10.TabIndex = 0;
             // 
             // btBufferInventory
@@ -3641,10 +3761,10 @@
             this.panel8.Controls.Add(this.cbBufferWorkant2);
             this.panel8.Controls.Add(this.cbBufferWorkant3);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(391, 5);
+            this.panel8.Location = new System.Drawing.Point(390, 5);
             this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(373, 100);
+            this.panel8.Size = new System.Drawing.Size(372, 100);
             this.panel8.TabIndex = 0;
             // 
             // cbBufferWorkant1
@@ -4277,7 +4397,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.20588F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.79412F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 411F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 414F));
             this.tableLayoutPanel2.Controls.Add(this.panel2, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel3, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel4, 2, 0);
@@ -4310,10 +4430,10 @@
             this.panel2.Controls.Add(this.label59);
             this.panel2.Controls.Add(this.label48);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(233, 6);
+            this.panel2.Location = new System.Drawing.Point(232, 6);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(595, 93);
+            this.panel2.Size = new System.Drawing.Size(593, 93);
             this.panel2.TabIndex = 0;
             // 
             // txtDStay
@@ -4532,7 +4652,7 @@
             this.panel3.Location = new System.Drawing.Point(6, 6);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(217, 93);
+            this.panel3.Size = new System.Drawing.Size(216, 93);
             this.panel3.TabIndex = 1;
             // 
             // btFastInventory
@@ -4555,10 +4675,10 @@
             this.panel4.Controls.Add(this.label73);
             this.panel4.Controls.Add(this.label72);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(838, 6);
+            this.panel4.Location = new System.Drawing.Point(835, 6);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(404, 93);
+            this.panel4.Size = new System.Drawing.Size(407, 93);
             this.panel4.TabIndex = 2;
             // 
             // txtRepeat
@@ -6259,7 +6379,7 @@
             "不选"});
             this.comboBox10.Location = new System.Drawing.Point(-165, 111);
             this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(55, 24);
+            this.comboBox10.Size = new System.Drawing.Size(55, 25);
             this.comboBox10.TabIndex = 39;
             // 
             // label87
@@ -6448,46 +6568,505 @@
             this.timerInventory.Interval = 500;
             this.timerInventory.Tick += new System.EventHandler(this.timerInventory_Tick);
             // 
-            // bindingSourcePilots
+            // tableLayoutPanel7
             // 
-            this.bindingSourcePilots.DataSource = typeof(RaceManager.Data.Pilot);
+            this.tableLayoutPanel7.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.tableLayoutPanel7.ColumnCount = 2;
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.4359F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 77.5641F));
+            this.tableLayoutPanel7.Controls.Add(this.groupBox29, 0, 0);
+            this.tableLayoutPanel7.Controls.Add(this.tabControl2, 1, 0);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(4, 288);
+            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
+            this.tableLayoutPanel7.RowCount = 1;
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(1249, 151);
+            this.tableLayoutPanel7.TabIndex = 1;
             // 
-            // Column1
+            // groupBox29
             // 
-            this.Column1.DataPropertyName = "OrderNumber";
-            this.Column1.HeaderText = "#";
-            this.Column1.Name = "Column1";
+            this.groupBox29.Controls.Add(this.btnAddPilotsToGroups);
+            this.groupBox29.Controls.Add(this.tbPilotsPerGroup);
+            this.groupBox29.Controls.Add(this.label111);
+            this.groupBox29.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox29.Location = new System.Drawing.Point(4, 4);
+            this.groupBox29.Name = "groupBox29";
+            this.groupBox29.Size = new System.Drawing.Size(273, 143);
+            this.groupBox29.TabIndex = 0;
+            this.groupBox29.TabStop = false;
+            this.groupBox29.Text = "Group Management";
             // 
-            // nameDataGridViewTextBoxColumn
+            // tabControl2
             // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.tabControl2.Controls.Add(this.pageGroupA);
+            this.tabControl2.Controls.Add(this.pageGroupB);
+            this.tabControl2.Controls.Add(this.pageGroupC);
+            this.tabControl2.Controls.Add(this.pageGroupD);
+            this.tabControl2.Controls.Add(this.pageGroupE);
+            this.tabControl2.Controls.Add(this.pageGroupF);
+            this.tabControl2.Controls.Add(this.pageGroupG);
+            this.tabControl2.Controls.Add(this.pageGroupH);
+            this.tabControl2.Controls.Add(this.pageGroupI);
+            this.tabControl2.Controls.Add(this.pageGroupJ);
+            this.tabControl2.Controls.Add(this.pageGroupK);
+            this.tabControl2.Controls.Add(this.pageGroupL);
+            this.tabControl2.Controls.Add(this.pageGroupM);
+            this.tabControl2.Controls.Add(this.pageGroupN);
+            this.tabControl2.Controls.Add(this.pageGroupO);
+            this.tabControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl2.Location = new System.Drawing.Point(284, 4);
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.SelectedIndex = 0;
+            this.tabControl2.Size = new System.Drawing.Size(961, 143);
+            this.tabControl2.TabIndex = 1;
             // 
-            // nicknameDataGridViewTextBoxColumn
+            // label111
             // 
-            this.nicknameDataGridViewTextBoxColumn.DataPropertyName = "Nickname";
-            this.nicknameDataGridViewTextBoxColumn.HeaderText = "Nickname";
-            this.nicknameDataGridViewTextBoxColumn.Name = "nicknameDataGridViewTextBoxColumn";
+            this.label111.AutoSize = true;
+            this.label111.Location = new System.Drawing.Point(10, 37);
+            this.label111.Name = "label111";
+            this.label111.Size = new System.Drawing.Size(181, 17);
+            this.label111.TabIndex = 0;
+            this.label111.Text = "Number of Pilots per Group";
             // 
-            // teamDataGridViewTextBoxColumn
+            // tbPilotsPerGroup
             // 
-            this.teamDataGridViewTextBoxColumn.DataPropertyName = "Team";
-            this.teamDataGridViewTextBoxColumn.HeaderText = "Team";
-            this.teamDataGridViewTextBoxColumn.Name = "teamDataGridViewTextBoxColumn";
+            this.tbPilotsPerGroup.Location = new System.Drawing.Point(197, 34);
+            this.tbPilotsPerGroup.Name = "tbPilotsPerGroup";
+            this.tbPilotsPerGroup.Size = new System.Drawing.Size(65, 22);
+            this.tbPilotsPerGroup.TabIndex = 1;
             // 
-            // tagDataGridViewTextBoxColumn
+            // btnAddPilotsToGroups
             // 
-            this.tagDataGridViewTextBoxColumn.DataPropertyName = "Tag";
-            this.tagDataGridViewTextBoxColumn.HeaderText = "TAG ID";
-            this.tagDataGridViewTextBoxColumn.Name = "tagDataGridViewTextBoxColumn";
-            this.tagDataGridViewTextBoxColumn.Width = 200;
+            this.btnAddPilotsToGroups.Location = new System.Drawing.Point(29, 79);
+            this.btnAddPilotsToGroups.Name = "btnAddPilotsToGroups";
+            this.btnAddPilotsToGroups.Size = new System.Drawing.Size(206, 44);
+            this.btnAddPilotsToGroups.TabIndex = 2;
+            this.btnAddPilotsToGroups.Text = "ADD PILOTS TO GROUPS";
+            this.btnAddPilotsToGroups.UseVisualStyleBackColor = true;
+            this.btnAddPilotsToGroups.Click += new System.EventHandler(this.btnAddPilotsToGroups_Click);
             // 
-            // emailDataGridViewTextBoxColumn
+            // pageGroupA
             // 
-            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
-            this.emailDataGridViewTextBoxColumn.HeaderText = "E-Mail";
-            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            this.pageGroupA.Controls.Add(this.gvGroupA);
+            this.pageGroupA.Location = new System.Drawing.Point(4, 25);
+            this.pageGroupA.Name = "pageGroupA";
+            this.pageGroupA.Padding = new System.Windows.Forms.Padding(3);
+            this.pageGroupA.Size = new System.Drawing.Size(953, 114);
+            this.pageGroupA.TabIndex = 0;
+            this.pageGroupA.Text = "Group A";
+            this.pageGroupA.UseVisualStyleBackColor = true;
+            // 
+            // pageGroupB
+            // 
+            this.pageGroupB.Controls.Add(this.gvGroupB);
+            this.pageGroupB.Location = new System.Drawing.Point(4, 25);
+            this.pageGroupB.Name = "pageGroupB";
+            this.pageGroupB.Padding = new System.Windows.Forms.Padding(3);
+            this.pageGroupB.Size = new System.Drawing.Size(953, 114);
+            this.pageGroupB.TabIndex = 1;
+            this.pageGroupB.Text = "Group B";
+            this.pageGroupB.UseVisualStyleBackColor = true;
+            // 
+            // pageGroupC
+            // 
+            this.pageGroupC.Controls.Add(this.gvGroupC);
+            this.pageGroupC.Location = new System.Drawing.Point(4, 25);
+            this.pageGroupC.Name = "pageGroupC";
+            this.pageGroupC.Padding = new System.Windows.Forms.Padding(3);
+            this.pageGroupC.Size = new System.Drawing.Size(953, 114);
+            this.pageGroupC.TabIndex = 2;
+            this.pageGroupC.Text = "Group C";
+            this.pageGroupC.UseVisualStyleBackColor = true;
+            // 
+            // pageGroupD
+            // 
+            this.pageGroupD.Controls.Add(this.gvGroupD);
+            this.pageGroupD.Location = new System.Drawing.Point(4, 25);
+            this.pageGroupD.Name = "pageGroupD";
+            this.pageGroupD.Padding = new System.Windows.Forms.Padding(3);
+            this.pageGroupD.Size = new System.Drawing.Size(953, 114);
+            this.pageGroupD.TabIndex = 3;
+            this.pageGroupD.Text = "Group D";
+            this.pageGroupD.UseVisualStyleBackColor = true;
+            // 
+            // pageGroupE
+            // 
+            this.pageGroupE.Controls.Add(this.gvGroupE);
+            this.pageGroupE.Location = new System.Drawing.Point(4, 25);
+            this.pageGroupE.Name = "pageGroupE";
+            this.pageGroupE.Padding = new System.Windows.Forms.Padding(3);
+            this.pageGroupE.Size = new System.Drawing.Size(953, 114);
+            this.pageGroupE.TabIndex = 4;
+            this.pageGroupE.Text = "Group E";
+            this.pageGroupE.UseVisualStyleBackColor = true;
+            // 
+            // pageGroupF
+            // 
+            this.pageGroupF.Controls.Add(this.gvGroupF);
+            this.pageGroupF.Location = new System.Drawing.Point(4, 25);
+            this.pageGroupF.Name = "pageGroupF";
+            this.pageGroupF.Padding = new System.Windows.Forms.Padding(3);
+            this.pageGroupF.Size = new System.Drawing.Size(953, 114);
+            this.pageGroupF.TabIndex = 5;
+            this.pageGroupF.Text = "GroupF";
+            this.pageGroupF.UseVisualStyleBackColor = true;
+            // 
+            // pageGroupG
+            // 
+            this.pageGroupG.Controls.Add(this.gvGroupG);
+            this.pageGroupG.Location = new System.Drawing.Point(4, 25);
+            this.pageGroupG.Name = "pageGroupG";
+            this.pageGroupG.Padding = new System.Windows.Forms.Padding(3);
+            this.pageGroupG.Size = new System.Drawing.Size(953, 114);
+            this.pageGroupG.TabIndex = 6;
+            this.pageGroupG.Text = "Group G";
+            this.pageGroupG.UseVisualStyleBackColor = true;
+            // 
+            // pageGroupH
+            // 
+            this.pageGroupH.Controls.Add(this.gvGroupH);
+            this.pageGroupH.Location = new System.Drawing.Point(4, 25);
+            this.pageGroupH.Name = "pageGroupH";
+            this.pageGroupH.Padding = new System.Windows.Forms.Padding(3);
+            this.pageGroupH.Size = new System.Drawing.Size(953, 114);
+            this.pageGroupH.TabIndex = 7;
+            this.pageGroupH.Text = "Group H";
+            this.pageGroupH.UseVisualStyleBackColor = true;
+            // 
+            // pageGroupI
+            // 
+            this.pageGroupI.Controls.Add(this.gvGroupI);
+            this.pageGroupI.Location = new System.Drawing.Point(4, 25);
+            this.pageGroupI.Name = "pageGroupI";
+            this.pageGroupI.Padding = new System.Windows.Forms.Padding(3);
+            this.pageGroupI.Size = new System.Drawing.Size(953, 114);
+            this.pageGroupI.TabIndex = 8;
+            this.pageGroupI.Text = "Group I";
+            this.pageGroupI.UseVisualStyleBackColor = true;
+            // 
+            // pageGroupJ
+            // 
+            this.pageGroupJ.Controls.Add(this.gvGroupJ);
+            this.pageGroupJ.Location = new System.Drawing.Point(4, 25);
+            this.pageGroupJ.Name = "pageGroupJ";
+            this.pageGroupJ.Padding = new System.Windows.Forms.Padding(3);
+            this.pageGroupJ.Size = new System.Drawing.Size(953, 114);
+            this.pageGroupJ.TabIndex = 9;
+            this.pageGroupJ.Text = "Group J";
+            this.pageGroupJ.UseVisualStyleBackColor = true;
+            // 
+            // pageGroupK
+            // 
+            this.pageGroupK.Controls.Add(this.gvGroupK);
+            this.pageGroupK.Location = new System.Drawing.Point(4, 25);
+            this.pageGroupK.Name = "pageGroupK";
+            this.pageGroupK.Padding = new System.Windows.Forms.Padding(3);
+            this.pageGroupK.Size = new System.Drawing.Size(953, 114);
+            this.pageGroupK.TabIndex = 10;
+            this.pageGroupK.Text = "Group K";
+            this.pageGroupK.UseVisualStyleBackColor = true;
+            // 
+            // pageGroupL
+            // 
+            this.pageGroupL.Controls.Add(this.gvGroupL);
+            this.pageGroupL.Location = new System.Drawing.Point(4, 25);
+            this.pageGroupL.Name = "pageGroupL";
+            this.pageGroupL.Padding = new System.Windows.Forms.Padding(3);
+            this.pageGroupL.Size = new System.Drawing.Size(953, 114);
+            this.pageGroupL.TabIndex = 11;
+            this.pageGroupL.Text = "Group L";
+            this.pageGroupL.UseVisualStyleBackColor = true;
+            // 
+            // pageGroupM
+            // 
+            this.pageGroupM.Controls.Add(this.gvGroupM);
+            this.pageGroupM.Location = new System.Drawing.Point(4, 25);
+            this.pageGroupM.Name = "pageGroupM";
+            this.pageGroupM.Padding = new System.Windows.Forms.Padding(3);
+            this.pageGroupM.Size = new System.Drawing.Size(953, 114);
+            this.pageGroupM.TabIndex = 12;
+            this.pageGroupM.Text = "Group M";
+            this.pageGroupM.UseVisualStyleBackColor = true;
+            // 
+            // pageGroupN
+            // 
+            this.pageGroupN.Controls.Add(this.gvGroupN);
+            this.pageGroupN.Location = new System.Drawing.Point(4, 25);
+            this.pageGroupN.Name = "pageGroupN";
+            this.pageGroupN.Size = new System.Drawing.Size(953, 114);
+            this.pageGroupN.TabIndex = 13;
+            this.pageGroupN.Text = "Group N";
+            this.pageGroupN.UseVisualStyleBackColor = true;
+            // 
+            // pageGroupO
+            // 
+            this.pageGroupO.Controls.Add(this.gvGroupO);
+            this.pageGroupO.Location = new System.Drawing.Point(4, 25);
+            this.pageGroupO.Name = "pageGroupO";
+            this.pageGroupO.Size = new System.Drawing.Size(953, 114);
+            this.pageGroupO.TabIndex = 14;
+            this.pageGroupO.Text = "Group O";
+            this.pageGroupO.UseVisualStyleBackColor = true;
+            // 
+            // gvGroupA
+            // 
+            this.gvGroupA.AllowUserToAddRows = false;
+            this.gvGroupA.AllowUserToDeleteRows = false;
+            this.gvGroupA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvGroupA.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvGroupA.Location = new System.Drawing.Point(3, 3);
+            this.gvGroupA.Name = "gvGroupA";
+            this.gvGroupA.ReadOnly = true;
+            this.gvGroupA.RowTemplate.Height = 24;
+            this.gvGroupA.Size = new System.Drawing.Size(947, 108);
+            this.gvGroupA.TabIndex = 0;
+            // 
+            // gvGroupB
+            // 
+            this.gvGroupB.AllowUserToAddRows = false;
+            this.gvGroupB.AllowUserToDeleteRows = false;
+            this.gvGroupB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvGroupB.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvGroupB.Location = new System.Drawing.Point(3, 3);
+            this.gvGroupB.Name = "gvGroupB";
+            this.gvGroupB.ReadOnly = true;
+            this.gvGroupB.RowTemplate.Height = 24;
+            this.gvGroupB.Size = new System.Drawing.Size(947, 108);
+            this.gvGroupB.TabIndex = 1;
+            // 
+            // gvGroupC
+            // 
+            this.gvGroupC.AllowUserToAddRows = false;
+            this.gvGroupC.AllowUserToDeleteRows = false;
+            this.gvGroupC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvGroupC.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvGroupC.Location = new System.Drawing.Point(3, 3);
+            this.gvGroupC.Name = "gvGroupC";
+            this.gvGroupC.ReadOnly = true;
+            this.gvGroupC.RowTemplate.Height = 24;
+            this.gvGroupC.Size = new System.Drawing.Size(947, 108);
+            this.gvGroupC.TabIndex = 1;
+            // 
+            // gvGroupD
+            // 
+            this.gvGroupD.AllowUserToAddRows = false;
+            this.gvGroupD.AllowUserToDeleteRows = false;
+            this.gvGroupD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvGroupD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvGroupD.Location = new System.Drawing.Point(3, 3);
+            this.gvGroupD.Name = "gvGroupD";
+            this.gvGroupD.ReadOnly = true;
+            this.gvGroupD.RowTemplate.Height = 24;
+            this.gvGroupD.Size = new System.Drawing.Size(947, 108);
+            this.gvGroupD.TabIndex = 1;
+            // 
+            // gvGroupE
+            // 
+            this.gvGroupE.AllowUserToAddRows = false;
+            this.gvGroupE.AllowUserToDeleteRows = false;
+            this.gvGroupE.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvGroupE.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvGroupE.Location = new System.Drawing.Point(3, 3);
+            this.gvGroupE.Name = "gvGroupE";
+            this.gvGroupE.ReadOnly = true;
+            this.gvGroupE.RowTemplate.Height = 24;
+            this.gvGroupE.Size = new System.Drawing.Size(947, 108);
+            this.gvGroupE.TabIndex = 1;
+            // 
+            // gvGroupF
+            // 
+            this.gvGroupF.AllowUserToAddRows = false;
+            this.gvGroupF.AllowUserToDeleteRows = false;
+            this.gvGroupF.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvGroupF.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvGroupF.Location = new System.Drawing.Point(3, 3);
+            this.gvGroupF.Name = "gvGroupF";
+            this.gvGroupF.ReadOnly = true;
+            this.gvGroupF.RowTemplate.Height = 24;
+            this.gvGroupF.Size = new System.Drawing.Size(947, 108);
+            this.gvGroupF.TabIndex = 1;
+            // 
+            // gvGroupG
+            // 
+            this.gvGroupG.AllowUserToAddRows = false;
+            this.gvGroupG.AllowUserToDeleteRows = false;
+            this.gvGroupG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvGroupG.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvGroupG.Location = new System.Drawing.Point(3, 3);
+            this.gvGroupG.Name = "gvGroupG";
+            this.gvGroupG.ReadOnly = true;
+            this.gvGroupG.RowTemplate.Height = 24;
+            this.gvGroupG.Size = new System.Drawing.Size(947, 108);
+            this.gvGroupG.TabIndex = 1;
+            // 
+            // gvGroupH
+            // 
+            this.gvGroupH.AllowUserToAddRows = false;
+            this.gvGroupH.AllowUserToDeleteRows = false;
+            this.gvGroupH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvGroupH.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvGroupH.Location = new System.Drawing.Point(3, 3);
+            this.gvGroupH.Name = "gvGroupH";
+            this.gvGroupH.ReadOnly = true;
+            this.gvGroupH.RowTemplate.Height = 24;
+            this.gvGroupH.Size = new System.Drawing.Size(947, 108);
+            this.gvGroupH.TabIndex = 1;
+            // 
+            // gvGroupI
+            // 
+            this.gvGroupI.AllowUserToAddRows = false;
+            this.gvGroupI.AllowUserToDeleteRows = false;
+            this.gvGroupI.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvGroupI.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvGroupI.Location = new System.Drawing.Point(3, 3);
+            this.gvGroupI.Name = "gvGroupI";
+            this.gvGroupI.ReadOnly = true;
+            this.gvGroupI.RowTemplate.Height = 24;
+            this.gvGroupI.Size = new System.Drawing.Size(947, 108);
+            this.gvGroupI.TabIndex = 1;
+            // 
+            // gvGroupJ
+            // 
+            this.gvGroupJ.AllowUserToAddRows = false;
+            this.gvGroupJ.AllowUserToDeleteRows = false;
+            this.gvGroupJ.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvGroupJ.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvGroupJ.Location = new System.Drawing.Point(3, 3);
+            this.gvGroupJ.Name = "gvGroupJ";
+            this.gvGroupJ.ReadOnly = true;
+            this.gvGroupJ.RowTemplate.Height = 24;
+            this.gvGroupJ.Size = new System.Drawing.Size(947, 108);
+            this.gvGroupJ.TabIndex = 1;
+            // 
+            // gvGroupK
+            // 
+            this.gvGroupK.AllowUserToAddRows = false;
+            this.gvGroupK.AllowUserToDeleteRows = false;
+            this.gvGroupK.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvGroupK.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvGroupK.Location = new System.Drawing.Point(3, 3);
+            this.gvGroupK.Name = "gvGroupK";
+            this.gvGroupK.ReadOnly = true;
+            this.gvGroupK.RowTemplate.Height = 24;
+            this.gvGroupK.Size = new System.Drawing.Size(947, 108);
+            this.gvGroupK.TabIndex = 1;
+            // 
+            // gvGroupL
+            // 
+            this.gvGroupL.AllowUserToAddRows = false;
+            this.gvGroupL.AllowUserToDeleteRows = false;
+            this.gvGroupL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvGroupL.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvGroupL.Location = new System.Drawing.Point(3, 3);
+            this.gvGroupL.Name = "gvGroupL";
+            this.gvGroupL.ReadOnly = true;
+            this.gvGroupL.RowTemplate.Height = 24;
+            this.gvGroupL.Size = new System.Drawing.Size(947, 108);
+            this.gvGroupL.TabIndex = 1;
+            // 
+            // gvGroupM
+            // 
+            this.gvGroupM.AllowUserToAddRows = false;
+            this.gvGroupM.AllowUserToDeleteRows = false;
+            this.gvGroupM.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvGroupM.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvGroupM.Location = new System.Drawing.Point(3, 3);
+            this.gvGroupM.Name = "gvGroupM";
+            this.gvGroupM.ReadOnly = true;
+            this.gvGroupM.RowTemplate.Height = 24;
+            this.gvGroupM.Size = new System.Drawing.Size(947, 108);
+            this.gvGroupM.TabIndex = 1;
+            // 
+            // gvGroupN
+            // 
+            this.gvGroupN.AllowUserToAddRows = false;
+            this.gvGroupN.AllowUserToDeleteRows = false;
+            this.gvGroupN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvGroupN.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvGroupN.Location = new System.Drawing.Point(0, 0);
+            this.gvGroupN.Name = "gvGroupN";
+            this.gvGroupN.ReadOnly = true;
+            this.gvGroupN.RowTemplate.Height = 24;
+            this.gvGroupN.Size = new System.Drawing.Size(953, 114);
+            this.gvGroupN.TabIndex = 1;
+            // 
+            // gvGroupO
+            // 
+            this.gvGroupO.AllowUserToAddRows = false;
+            this.gvGroupO.AllowUserToDeleteRows = false;
+            this.gvGroupO.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvGroupO.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvGroupO.Location = new System.Drawing.Point(0, 0);
+            this.gvGroupO.Name = "gvGroupO";
+            this.gvGroupO.ReadOnly = true;
+            this.gvGroupO.RowTemplate.Height = 24;
+            this.gvGroupO.Size = new System.Drawing.Size(953, 114);
+            this.gvGroupO.TabIndex = 1;
+            // 
+            // groupBox30
+            // 
+            this.groupBox30.Controls.Add(this.tbNumberOfFinals);
+            this.groupBox30.Controls.Add(this.label117);
+            this.groupBox30.Controls.Add(this.tbNumOfQualRounds);
+            this.groupBox30.Controls.Add(this.label113);
+            this.groupBox30.Controls.Add(this.tbNumOfLaps);
+            this.groupBox30.Controls.Add(this.label112);
+            this.groupBox30.Location = new System.Drawing.Point(7, 446);
+            this.groupBox30.Name = "groupBox30";
+            this.groupBox30.Size = new System.Drawing.Size(1246, 100);
+            this.groupBox30.TabIndex = 2;
+            this.groupBox30.TabStop = false;
+            this.groupBox30.Text = "Stage Management";
+            // 
+            // label112
+            // 
+            this.label112.AutoSize = true;
+            this.label112.Location = new System.Drawing.Point(11, 33);
+            this.label112.Name = "label112";
+            this.label112.Size = new System.Drawing.Size(109, 17);
+            this.label112.TabIndex = 0;
+            this.label112.Text = "Number of Laps";
+            // 
+            // tbNumOfLaps
+            // 
+            this.tbNumOfLaps.Location = new System.Drawing.Point(126, 30);
+            this.tbNumOfLaps.Name = "tbNumOfLaps";
+            this.tbNumOfLaps.Size = new System.Drawing.Size(70, 22);
+            this.tbNumOfLaps.TabIndex = 1;
+            // 
+            // label113
+            // 
+            this.label113.AutoSize = true;
+            this.label113.Location = new System.Drawing.Point(245, 33);
+            this.label113.Name = "label113";
+            this.label113.Size = new System.Drawing.Size(209, 17);
+            this.label113.TabIndex = 2;
+            this.label113.Text = "Number of Qualification Rounds";
+            // 
+            // tbNumOfQualRounds
+            // 
+            this.tbNumOfQualRounds.Location = new System.Drawing.Point(460, 30);
+            this.tbNumOfQualRounds.Name = "tbNumOfQualRounds";
+            this.tbNumOfQualRounds.Size = new System.Drawing.Size(70, 22);
+            this.tbNumOfQualRounds.TabIndex = 3;
+            // 
+            // label117
+            // 
+            this.label117.AutoSize = true;
+            this.label117.Location = new System.Drawing.Point(577, 33);
+            this.label117.Name = "label117";
+            this.label117.Size = new System.Drawing.Size(115, 17);
+            this.label117.TabIndex = 4;
+            this.label117.Text = "Number of Finals";
+            // 
+            // tbNumberOfFinals
+            // 
+            this.tbNumberOfFinals.Location = new System.Drawing.Point(698, 30);
+            this.tbNumberOfFinals.Name = "tbNumberOfFinals";
+            this.tbNumberOfFinals.Size = new System.Drawing.Size(70, 22);
+            this.tbNumberOfFinals.TabIndex = 5;
             // 
             // MainForm
             // 
@@ -6563,6 +7142,7 @@
             this.groupBox27.PerformLayout();
             this.groupBox28.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gvPilots)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourcePilots)).EndInit();
             this.tabRace.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.groupBox24.ResumeLayout(false);
@@ -6667,7 +7247,42 @@
             ((System.ComponentModel.ISupportInitialize)(this.lxLedControl16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lxLedControl17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lxLedControl18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourcePilots)).EndInit();
+            this.tableLayoutPanel7.ResumeLayout(false);
+            this.groupBox29.ResumeLayout(false);
+            this.groupBox29.PerformLayout();
+            this.tabControl2.ResumeLayout(false);
+            this.pageGroupA.ResumeLayout(false);
+            this.pageGroupB.ResumeLayout(false);
+            this.pageGroupC.ResumeLayout(false);
+            this.pageGroupD.ResumeLayout(false);
+            this.pageGroupE.ResumeLayout(false);
+            this.pageGroupF.ResumeLayout(false);
+            this.pageGroupG.ResumeLayout(false);
+            this.pageGroupH.ResumeLayout(false);
+            this.pageGroupI.ResumeLayout(false);
+            this.pageGroupJ.ResumeLayout(false);
+            this.pageGroupK.ResumeLayout(false);
+            this.pageGroupL.ResumeLayout(false);
+            this.pageGroupM.ResumeLayout(false);
+            this.pageGroupN.ResumeLayout(false);
+            this.pageGroupO.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupC)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupD)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupE)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupF)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupH)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupI)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupJ)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupK)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupL)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupM)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupO)).EndInit();
+            this.groupBox30.ResumeLayout(false);
+            this.groupBox30.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -7152,6 +7767,49 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn teamDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tagDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
+        private System.Windows.Forms.GroupBox groupBox30;
+        private System.Windows.Forms.TextBox tbNumberOfFinals;
+        private System.Windows.Forms.Label label117;
+        private System.Windows.Forms.TextBox tbNumOfQualRounds;
+        private System.Windows.Forms.Label label113;
+        private System.Windows.Forms.TextBox tbNumOfLaps;
+        private System.Windows.Forms.Label label112;
+        private System.Windows.Forms.Button btnAddPilotsToGroups;
+        private System.Windows.Forms.TextBox tbPilotsPerGroup;
+        private System.Windows.Forms.Label label111;
+        private System.Windows.Forms.TabControl tabControl2;
+        private System.Windows.Forms.TabPage pageGroupA;
+        private System.Windows.Forms.DataGridView gvGroupA;
+        private System.Windows.Forms.TabPage pageGroupB;
+        private System.Windows.Forms.DataGridView gvGroupB;
+        private System.Windows.Forms.TabPage pageGroupC;
+        private System.Windows.Forms.DataGridView gvGroupC;
+        private System.Windows.Forms.TabPage pageGroupD;
+        private System.Windows.Forms.DataGridView gvGroupD;
+        private System.Windows.Forms.TabPage pageGroupE;
+        private System.Windows.Forms.DataGridView gvGroupE;
+        private System.Windows.Forms.TabPage pageGroupF;
+        private System.Windows.Forms.DataGridView gvGroupF;
+        private System.Windows.Forms.TabPage pageGroupG;
+        private System.Windows.Forms.DataGridView gvGroupG;
+        private System.Windows.Forms.TabPage pageGroupH;
+        private System.Windows.Forms.DataGridView gvGroupH;
+        private System.Windows.Forms.TabPage pageGroupI;
+        private System.Windows.Forms.DataGridView gvGroupI;
+        private System.Windows.Forms.TabPage pageGroupJ;
+        private System.Windows.Forms.DataGridView gvGroupJ;
+        private System.Windows.Forms.TabPage pageGroupK;
+        private System.Windows.Forms.DataGridView gvGroupK;
+        private System.Windows.Forms.TabPage pageGroupL;
+        private System.Windows.Forms.DataGridView gvGroupL;
+        private System.Windows.Forms.TabPage pageGroupM;
+        private System.Windows.Forms.DataGridView gvGroupM;
+        private System.Windows.Forms.TabPage pageGroupN;
+        private System.Windows.Forms.DataGridView gvGroupN;
+        private System.Windows.Forms.TabPage pageGroupO;
+        private System.Windows.Forms.DataGridView gvGroupO;
+        private System.Windows.Forms.GroupBox groupBox29;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
     }
 }
 

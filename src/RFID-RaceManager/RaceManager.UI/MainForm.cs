@@ -5048,7 +5048,12 @@ namespace RaceManager.UI
 
         }
 
+        private void btnAddPilotsToGroups_Click(object sender, EventArgs e)
+        {
+
+        }
 
         #endregion
+
     }
 }
