@@ -25,7 +25,13 @@ namespace RaceManager.Data
         public int NumberOfQualRounds { get; set; }
         public int NumberOfFinals { get; set; }
 
-        public IList<string> Groups { get; set; }
+        public IList<Group> Groups { get; set; }
+    }
+
+    public class Group
+    {
+        public string Name { get; set; }
+        public IList<Pilot> Pilots { get; set; } 
     }
 
     public class RaceEvent
@@ -33,8 +39,7 @@ namespace RaceManager.Data
         public int Id { get; set; }
         public int RaceId { get; set; }
         public string Name { get; set; }
-        public string Group { get; set; }
-        public IList<Pilot> Pilots { get; set; }
+        public Group Group { get; set; }
     }
     public class Pilot
     {
@@ -47,13 +52,16 @@ namespace RaceManager.Data
         public string AvgLapTime { get; set; }
         public string Team { get; set; }
         public string Email { get; set; }
+        public bool Confirmation { get; set; }
 
-        public List<LapInfo> Laps { get; set; }
+        public string ConfirmationString => Confirmation ? "Yes" : "No";
 
-        public Pilot()
-        {
-            Laps = new List<LapInfo>();
-        }
+      //  public List<LapInfo> Laps { get; set; }
+
+        //public Pilot()
+        //{
+        //    Laps = new List<LapInfo>();
+        //}
     }
 
     public class LapInfo

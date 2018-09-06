@@ -57,6 +57,7 @@ namespace RaceManager.UI
         HighResolutionTimer _timer = new HighResolutionTimer();
 
         ApplicationContext _db;
+        Race _race;
 
         public MainForm()
         {
@@ -65,6 +66,7 @@ namespace RaceManager.UI
             _timer.Elapsed += _timer_Elapsed;
 
             _db = new ApplicationContext();
+            _race = new Race();
         }
 
         private void R2000UartDemo_Load(object sender, EventArgs e)
@@ -4955,8 +4957,7 @@ namespace RaceManager.UI
                 return;
             }
 
-            var race = new Race();
-            FillRaceInfo(race);
+            FillRaceInfo(_race);
             _timer.Start();
 
            EnableDisableRaceControls(false);
@@ -5034,23 +5035,191 @@ namespace RaceManager.UI
             pilot.Nickname = tbPilotNickname.Text;
             pilot.Team = tbPilotTeam.Text;
             pilot.Email = tbPilotEmail.Text;
+            pilot.Confirmation = cbPilotConfirmation.Checked;
 
             Pilots.Add(pilot);
-            pilot.OrderNumber = Pilots.IndexOf(pilot);
+            pilot.OrderNumber = Pilots.IndexOf(pilot) + 1;
 
-            gvPilots.DataSource = Pilots;
-            gvPilots.Refresh();
+            //if(bindingSourcePilots1.DataSource == null)
+                bindingSourcePilots1.DataSource = Pilots;
 
+            bindingSourcePilots1.ResetBindings(false);
+            //gvPilots.Refresh();
         }
 
         private void btnAddPilotFromDb_Click(object sender, EventArgs e)
         {
-
+           
         }
 
         private void btnAddPilotsToGroups_Click(object sender, EventArgs e)
         {
+            _race.Groups = new List<Group>();
+            // shuffle pilots
+            Pilots = Pilots.OrderBy(a => Guid.NewGuid()).ToList();
+            // get "pilots per group" value
+            var ppg = (int) nudPilotsPerGroup.Value;
+            var group = new Group
+            {
+                Name = "Group A",
+                Pilots = Pilots.Take(ppg).ToList()
+            };
+            gvGroupA.DataSource = group.Pilots;
+            _race.Groups.Add(group);
 
+            if (Pilots.Count > ppg)
+            {
+                var gr = new Group
+                {
+                    Name = "Group B",
+                    Pilots = Pilots.GetRange(ppg, 2*ppg > Pilots.Count ? Pilots.Count - ppg :  ppg)
+                };
+                gvGroupB.DataSource = gr.Pilots;
+                _race.Groups.Add(gr);
+            }
+
+            if (Pilots.Count > ppg*2)
+            {
+                var gr = new Group
+                {
+                    Name = "Group C",
+                    Pilots = Pilots.GetRange(2*ppg, 3 * ppg > Pilots.Count ? Pilots.Count - 2*ppg : ppg)
+                };
+                gvGroupC.DataSource = gr.Pilots;
+                _race.Groups.Add(gr);
+            }
+
+            if (Pilots.Count > ppg * 3)
+            {
+                var gr = new Group
+                {
+                    Name = "Group D",
+                    Pilots = Pilots.GetRange(3 * ppg, 4 * ppg > Pilots.Count ? Pilots.Count - 3 * ppg : ppg)
+                };
+                gvGroupD.DataSource = gr.Pilots;
+                _race.Groups.Add(gr);
+            }
+
+            if (Pilots.Count > ppg * 4)
+            {
+                var gr = new Group
+                {
+                    Name = "Group E",
+                    Pilots = Pilots.GetRange(4 * ppg, 5 * ppg > Pilots.Count ? Pilots.Count - 4 * ppg : ppg)
+                };
+                gvGroupE.DataSource = gr.Pilots;
+                _race.Groups.Add(gr);
+            }
+
+            if (Pilots.Count > ppg * 5)
+            {
+                var gr = new Group
+                {
+                    Name = "Group F",
+                    Pilots = Pilots.GetRange(5 * ppg, 6 * ppg > Pilots.Count ? Pilots.Count - 5 * ppg : ppg)
+                };
+                gvGroupF.DataSource = gr.Pilots;
+                _race.Groups.Add(gr);
+            }
+
+            if (Pilots.Count > ppg * 6)
+            {
+                var gr = new Group
+                {
+                    Name = "Group G",
+                    Pilots = Pilots.GetRange(6 * ppg, 7 * ppg > Pilots.Count ? Pilots.Count - 6 * ppg : ppg)
+                };
+                gvGroupG.DataSource = gr.Pilots;
+                _race.Groups.Add(gr);
+            }
+
+            if (Pilots.Count > ppg * 7)
+            {
+                var gr = new Group
+                {
+                    Name = "Group H",
+                    Pilots = Pilots.GetRange(7 * ppg, 8 * ppg > Pilots.Count ? Pilots.Count - 7 * ppg : ppg)
+                };
+                gvGroupH.DataSource = gr.Pilots;
+                _race.Groups.Add(gr);
+            }
+
+            if (Pilots.Count > ppg * 8)
+            {
+                var gr = new Group
+                {
+                    Name = "Group I",
+                    Pilots = Pilots.GetRange(8 * ppg, 9 * ppg > Pilots.Count ? Pilots.Count - 8 * ppg : ppg)
+                };
+                gvGroupI.DataSource = gr.Pilots;
+                _race.Groups.Add(gr);
+            }
+
+            if (Pilots.Count > ppg * 9)
+            {
+                var gr = new Group
+                {
+                    Name = "Group J",
+                    Pilots = Pilots.GetRange(9 * ppg, 10 * ppg > Pilots.Count ? Pilots.Count - 9 * ppg : ppg)
+                };
+                gvGroupJ.DataSource = gr.Pilots;
+                _race.Groups.Add(gr);
+            }
+
+            if (Pilots.Count > ppg * 10)
+            {
+                var gr = new Group
+                {
+                    Name = "Group K",
+                    Pilots = Pilots.GetRange(10 * ppg, 11 * ppg > Pilots.Count ? Pilots.Count - 10 * ppg : ppg)
+                };
+                gvGroupK.DataSource = gr.Pilots;
+                _race.Groups.Add(gr);
+            }
+
+            if (Pilots.Count > ppg * 11)
+            {
+                var gr = new Group
+                {
+                    Name = "Group L",
+                    Pilots = Pilots.GetRange(11 * ppg, 12 * ppg > Pilots.Count ? Pilots.Count - 11 * ppg : ppg)
+                };
+                gvGroupL.DataSource = gr.Pilots;
+                _race.Groups.Add(gr);
+            }
+
+            if (Pilots.Count > ppg * 12)
+            {
+                var gr = new Group
+                {
+                    Name = "Group M",
+                    Pilots = Pilots.GetRange(12 * ppg, 13 * ppg > Pilots.Count ? Pilots.Count - 12 * ppg : ppg)
+                };
+                gvGroupM.DataSource = gr.Pilots;
+                _race.Groups.Add(gr);
+            }
+
+            if (Pilots.Count > ppg * 13)
+            {
+                var gr = new Group
+                {
+                    Name = "Group N",
+                    Pilots = Pilots.GetRange(13 * ppg, 14 * ppg > Pilots.Count ? Pilots.Count - 13 * ppg : ppg)
+                };
+                gvGroupN.DataSource = gr.Pilots;
+                _race.Groups.Add(gr);
+            }
+
+            if (Pilots.Count > ppg * 14)
+            {
+                var gr = new Group
+                {
+                    Name = "Group O",
+                    Pilots = Pilots.GetRange(14 * ppg, 15 * ppg > Pilots.Count ? Pilots.Count - 14 * ppg : ppg)
+                };
+                gvGroupO.DataSource = gr.Pilots;
+                _race.Groups.Add(gr);
+            }
         }
 
         #endregion
