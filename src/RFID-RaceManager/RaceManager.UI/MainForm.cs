@@ -5220,6 +5220,22 @@ namespace RaceManager.UI
                 gvGroupO.DataSource = gr.Pilots;
                 _race.Groups.Add(gr);
             }
+
+            cmbRaceGroup.Items.Clear();
+            _race.Groups.ForEach(i => cmbRaceGroup.Items.Add(i.Name));
+
+            cmbRaceRound.Items.Clear();
+            var numberOfQual = (int)nudNumberOfQualRounds.Value;
+            for (int i = 1; i <= numberOfQual; i++)
+            {
+                cmbRaceRound.Items.Add("Q" + i);
+            }
+
+            var numberOfFinals = (int)nudNumberOfFinals.Value;
+            for (int i = 1; i <= numberOfFinals; i++)
+            {
+                cmbRaceRound.Items.Add("S" + i);
+            }
         }
 
         #endregion

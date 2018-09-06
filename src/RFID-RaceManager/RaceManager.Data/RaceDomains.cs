@@ -25,11 +25,12 @@ namespace RaceManager.Data
         public int NumberOfQualRounds { get; set; }
         public int NumberOfFinals { get; set; }
 
-        public IList<Group> Groups { get; set; }
+        public List<Group> Groups { get; set; }
     }
 
     public class Group
     {
+        public int Id { get; set; }
         public string Name { get; set; }
         public IList<Pilot> Pilots { get; set; } 
     }
