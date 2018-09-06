@@ -4,3 +4,4 @@ _UpgradeReport_Files
 temp
 *.suo
 *.user
+/src/RFID-RaceManager/packages
