@@ -5025,7 +5025,6 @@ namespace RaceManager.UI
             groupBox9.Enabled = enable;
             groupBox12.Enabled = enable;
             groupBox26.Enabled = enable;
-            
         }
 
         private void cmbRaceRound_SelectedIndexChanged(object sender, EventArgs e)
@@ -5070,6 +5069,15 @@ namespace RaceManager.UI
                 bindingSourceRace.DataSource = raceEvent.Laps;
                 bindingSourceRace.ResetBindings(false);
                 _selectedRaceEvent = raceEvent;
+
+                // hide laps columns if not needed
+                var numOfLaps = nudNumOfLaps.Value;
+                if (numOfLaps < 6)
+                    Lap6.Visible = false;
+                if (numOfLaps < 5)
+                    Lap5.Visible = false;
+                if (numOfLaps < 4)
+                    Lap4.Visible = false;
             }
         }
 
