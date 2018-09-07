@@ -4942,7 +4942,8 @@ namespace RaceManager.UI
 
 
         #region Race !!!
-        
+
+        RaceEvent _selectedRaceEvent;
         private void btnRaceStart_Click(object sender, EventArgs e)
         {
             if (!RaceValidation())
@@ -4957,6 +4958,11 @@ namespace RaceManager.UI
                 return;
             }
 
+            if (_selectedRaceEvent == null || _selectedRaceEvent.Finished)
+            {
+                MessageBox.Show("Event is not selected or has finished yet.");
+                return;
+            }
             FillRaceInfo(_race);
             _timer.Start();
 
@@ -5004,10 +5010,11 @@ namespace RaceManager.UI
 
         private bool RaceValidation()
         {
-            int i = 0;
+            int i;
             return !string.IsNullOrEmpty(tbRaceName.Text) && !string.IsNullOrEmpty(tbRaceMinLapTime.Text) &&
                             int.TryParse(tbRaceMinLapTime.Text, out i) &&
-                           !string.IsNullOrEmpty(tbRaceLocation.Text) && !string.IsNullOrEmpty(dtpRaceDate.Text) ;
+                           !string.IsNullOrEmpty(tbRaceLocation.Text) && !string.IsNullOrEmpty(dtpRaceDate.Text) &&
+                           !string.IsNullOrEmpty(tbCurEvGroup.Text) && !string.IsNullOrEmpty(tbCurEvRound.Text) ;
         }
 
         private void EnableDisableRaceControls(bool enable)
@@ -5021,6 +5028,56 @@ namespace RaceManager.UI
             
         }
 
+        private void cmbRaceRound_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbCurEvRound.Text = cmbRaceRound.SelectedItem?.ToString();
+            ShowPilots();
+        }
+
+        private void ShowPilots()
+        {
+            _selectedRaceEvent = null;
+            if(cmbRaceGroup.SelectedItem == null || cmbRaceRound.SelectedItem == null) return;
+
+            var group = _race.Groups.FirstOrDefault(g => g.Name == cmbRaceGroup.SelectedItem.ToString());
+            var round = cmbRaceRound.SelectedItem.ToString();
+            if (group != null)
+            {
+                //find existing race event
+                var raceEvent = _race.RaceEvents.FirstOrDefault(r => r.Group.Name == group.Name && r.Round == round);
+                if (raceEvent == null)
+                {
+                    raceEvent = new RaceEvent();
+                    raceEvent.RaceId = _race.Id;
+                    raceEvent.Group = group;
+                    raceEvent.Round = round;
+                    _race.RaceEvents.Add(raceEvent);
+                }
+
+                if (raceEvent.Laps.Count == 0)
+                {
+                    foreach (var pilot in group.Pilots)
+                    {
+                        var lapsInfo = new LapsInfo();
+                        lapsInfo.PilotId = pilot.Id;
+                        lapsInfo.RaceEventId = raceEvent.Id;
+                        lapsInfo.LapsTime = new List<TimeSpan?>();
+                        lapsInfo.PilotName = pilot.Name;
+                        lapsInfo.OrderNumber = pilot.OrderNumber;
+                        raceEvent.Laps.Add(lapsInfo);
+                    }
+                }
+                bindingSourceRace.DataSource = raceEvent.Laps;
+                bindingSourceRace.ResetBindings(false);
+                _selectedRaceEvent = raceEvent;
+            }
+        }
+
+        private void cmbRaceGroup_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbCurEvGroup.Text = cmbRaceGroup.SelectedItem?.ToString();
+            ShowPilots();
+        }
         #endregion
 
         #region Pilot Management
@@ -5240,5 +5297,6 @@ namespace RaceManager.UI
 
         #endregion
 
+       
     }
 }

@@ -1,4 +1,7 @@
-﻿using System.Data.Entity;
+﻿using System;
+using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
 
 namespace RaceManager.Data
 {
@@ -7,10 +10,28 @@ namespace RaceManager.Data
         public ApplicationContext() : base("DefaultConnection")
         {
         }
+
         public DbSet<Race> Races { get; set; }
 
         public DbSet<RaceEvent> RaceEvents { get; set; }
 
         public DbSet<Pilot> Pilots { get; set; }
+    }
+
+
+    public static class ExtMethods
+    {
+        public static T ElementAtOrDefault<T>(this List<T> list, int index, T def)
+        {
+            try
+            {
+                return list.ElementAt(index);
+            }
+            catch (Exception)
+            {
+                return def;
+            }
+        }
+
     }
 }
