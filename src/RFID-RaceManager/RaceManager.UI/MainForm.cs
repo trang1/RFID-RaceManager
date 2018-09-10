@@ -69,7 +69,7 @@ namespace RaceManager.UI
             _race = new Race();
         }
 
-        private void R2000UartDemo_Load(object sender, EventArgs e)
+        private void MainForm_Load(object sender, EventArgs e)
         {
             //The real example of accessing reader initialization.
             reader = new Reader.ReaderMethod();
@@ -114,7 +114,7 @@ namespace RaceManager.UI
             tabCtrMain.TabPages.Remove(PagTranDataLog);
             tabCtrMain.TabPages.Remove(PagISO18000);
 
-            tabEpcTest.Controls.Remove(pageRealMode);
+          //  tabEpcTest.Controls.Remove(pageRealMode);
             tabEpcTest.Controls.Remove(pageBufferedMode);
             tabEpcTest.Controls.Remove(pageFast4AntMode);
 

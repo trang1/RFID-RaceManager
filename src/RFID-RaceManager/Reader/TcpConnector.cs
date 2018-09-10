@@ -9,7 +9,7 @@ using System.Threading;
 
 namespace Reader
 {
-    public class Talker:ITalker
+    public class TcpConnector:IConnector
     {
         public event MessageReceivedEventHandler MessageReceived;
 

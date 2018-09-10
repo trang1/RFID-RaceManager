@@ -15,8 +15,8 @@ namespace Reader
 
     public class ReaderMethod
     {
-        private ITalker italker;
-        private SerialPort iSerialPort;
+        private readonly IConnector _connector;
+        private readonly SerialPort _serialPort;
         private int m_nType = -1; 
 
         public ReciveDataCallback ReceiveCallback;
@@ -30,30 +30,30 @@ namespace Reader
 
         public ReaderMethod()
         {
-            this.italker = new Talker();
+            this._connector = new TcpConnector();
 
-            italker.MessageReceived += new MessageReceivedEventHandler(ReceivedTcpData);
+            _connector.MessageReceived += new MessageReceivedEventHandler(ReceivedTcpData);
 
-            iSerialPort = new SerialPort();
+            _serialPort = new SerialPort();
 
-            iSerialPort.DataReceived+=new SerialDataReceivedEventHandler(ReceivedComData);
+            _serialPort.DataReceived+=new SerialDataReceivedEventHandler(ReceivedComData);
         }
 
         public int OpenCom(string strPort, int nBaudrate, out string strException)
         {
             strException = string.Empty;
 
-            if (iSerialPort.IsOpen)
+            if (_serialPort.IsOpen)
             {
-                iSerialPort.Close();
+                _serialPort.Close();
             }
 
             try
             {
-                iSerialPort.PortName = strPort;
-                iSerialPort.BaudRate = nBaudrate;
-                iSerialPort.ReadTimeout = 200;
-                iSerialPort.Open();
+                _serialPort.PortName = strPort;
+                _serialPort.BaudRate = nBaudrate;
+                _serialPort.ReadTimeout = 200;
+                _serialPort.Open();
             }
             catch (System.Exception ex)
             {
@@ -67,9 +67,9 @@ namespace Reader
 
         public void CloseCom()
         {
-            if (iSerialPort.IsOpen)
+            if (_serialPort.IsOpen)
             {
-                iSerialPort.Close();
+                _serialPort.Close();
             }
 
             m_nType = -1;
@@ -79,7 +79,7 @@ namespace Reader
         {
             strException = string.Empty;
 
-            if (!italker.Connect(ipAddress, nPort, out strException))
+            if (!_connector.Connect(ipAddress, nPort, out strException))
             {
                 return -1;
             }
@@ -90,7 +90,7 @@ namespace Reader
 
         public void SignOut()
         {
-            italker.SignOut();
+            _connector.SignOut();
             m_nType = -1;
         }
 
@@ -103,14 +103,14 @@ namespace Reader
         {
             try
             {
-                int nCount = iSerialPort.BytesToRead;
+                int nCount = _serialPort.BytesToRead;
                 if (nCount == 0)
                 {
                     return;
                 }
 
                 byte[] btAryBuffer = new byte[nCount];
-                iSerialPort.Read(btAryBuffer, 0, nCount);
+                _serialPort.Read(btAryBuffer, 0, nCount);
 
                 RunReceiveDataCallback(btAryBuffer);
             }
@@ -197,12 +197,12 @@ namespace Reader
             //Serial Connection
             if (m_nType == 0)
             {
-                if (!iSerialPort.IsOpen)
+                if (!_serialPort.IsOpen)
                 {
                     return -1;
                 }
 
-                iSerialPort.Write(btArySenderData, 0, btArySenderData.Length);
+                _serialPort.Write(btArySenderData, 0, btArySenderData.Length);
 
                 if (SendCallback != null)
                 {
@@ -214,12 +214,12 @@ namespace Reader
             //Tcp Connection
             else if (m_nType == 1)
             {
-                if (!italker.IsConnect())
+                if (!_connector.IsConnect())
                 {
                     return -1;
                 }
 
-                if (italker.SendMessage(btArySenderData))
+                if (_connector.SendMessage(btArySenderData))
                 {
                     if (SendCallback != null)
                     {

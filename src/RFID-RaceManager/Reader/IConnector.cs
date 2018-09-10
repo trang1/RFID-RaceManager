@@ -9,7 +9,7 @@ namespace Reader
 {
     public delegate void MessageReceivedEventHandler(byte[] btAryBuffer);
 
-    interface ITalker
+    interface IConnector
     {
         event MessageReceivedEventHandler MessageReceived;    // Received the message sent
         bool Connect(IPAddress ip, int port, out string strException);                 // Connect to the server

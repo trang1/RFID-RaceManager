@@ -8159,7 +8159,7 @@
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RFID Chrono Timing System v1.0";
-            this.Load += new System.EventHandler(this.R2000UartDemo_Load);
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.tabCtrMain.ResumeLayout(false);
             this.PagReaderSetting.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
