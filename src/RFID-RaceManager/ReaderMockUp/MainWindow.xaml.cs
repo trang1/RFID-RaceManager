@@ -3,35 +3,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace ReaderMockUp
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    ///     Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
-        TcpListener _listener;
-        bool _cancelled;
+        private bool _cancelled;
+        private TcpListener _listener;
+
         public MainWindow()
         {
             InitializeComponent();
 
-            IPHostEntry ipHostInfo = Dns.GetHostEntry(Dns.GetHostName());
-            cmbIps.ItemsSource = ipHostInfo.AddressList.Where(i => !i.IsIPv6LinkLocal).Select(i => i.ToString()).ToList();
-
+            var ipHostInfo = Dns.GetHostEntry(Dns.GetHostName());
+            cmbIps.ItemsSource =
+                ipHostInfo.AddressList.Where(i => !i.IsIPv6LinkLocal).Select(i => i.ToString()).ToList();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -48,23 +40,42 @@ namespace ReaderMockUp
             var seconds = int.Parse(tbMps.Text);
             Task.Factory.StartNew(() =>
             {
-
-                TcpClient client = _listener.AcceptTcpClient();
+                var client = _listener.AcceptTcpClient();
                 while (!_cancelled)
                 {
                     try
                     {
                         for (var i = 1; i < seconds; i++)
                         {
-                            NetworkStream stream = client.GetStream();
+                            var stream = client.GetStream();
                             //var ut = (long)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalMilliseconds; ;
                             //string response = "\xA0"+tag+"," + ut * 1000 + ",-52\r\n";
-                            byte[] data = new byte[]
+                            var data = new List<byte>
                             {
-                                160, 11, 1, 137, 1,2,3,4,5,6,7,8,167
+                                160,
+                                19,
+                                1,
+                                137,
+                                1,
+                                2,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                (byte) i,
+                                8
                             };
 
-                            stream.Write(data, 0, data.Length);
+                            data.Add(CheckSum(data.ToArray(), 0, data.Count));
+                            stream.Write(data.ToArray(), 0, data.Count);
 
                             //client.Close();
                         }
@@ -84,6 +95,18 @@ namespace ReaderMockUp
             btnStart.IsEnabled = true;
             btnStop.IsEnabled = false;
             _cancelled = true;
+        }
+
+        public byte CheckSum(byte[] btAryBuffer, int nStartPos, int nLen)
+        {
+            byte btSum = 0x00;
+
+            for (var nloop = nStartPos; nloop < nStartPos + nLen; nloop++)
+            {
+                btSum += btAryBuffer[nloop];
+            }
+
+            return Convert.ToByte((~btSum + 1) & 0xFF);
         }
     }
 }
