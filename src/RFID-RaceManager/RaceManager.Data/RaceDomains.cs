@@ -88,11 +88,11 @@ namespace RaceManager.Data
         public decimal CarrFrequency { get; set; }
         public List<TimeSpan?> LapsTime { get; set; }
         public TimeSpan? Lap1 => LapsTime?.ElementAtOrDefault(0, null);
-        public TimeSpan? Lap2 => LapsTime?.ElementAtOrDefault(1, null);
-        public TimeSpan? Lap3 => LapsTime?.ElementAtOrDefault(2, null);
-        public TimeSpan? Lap4 => LapsTime?.ElementAtOrDefault(3, null);
-        public TimeSpan? Lap5 => LapsTime?.ElementAtOrDefault(4, null);
-        public TimeSpan? Lap6 => LapsTime?.ElementAtOrDefault(5, null);
+        public TimeSpan? Lap2 => LapsTime?.ElementAtOrDefault(1, null) - LapsTime?.ElementAtOrDefault(0, null);
+        public TimeSpan? Lap3 => LapsTime?.ElementAtOrDefault(2, null) - LapsTime?.ElementAtOrDefault(1, null);
+        public TimeSpan? Lap4 => LapsTime?.ElementAtOrDefault(3, null) - LapsTime?.ElementAtOrDefault(2, null);
+        public TimeSpan? Lap5 => LapsTime?.ElementAtOrDefault(4, null) - LapsTime?.ElementAtOrDefault(3, null);
+        public TimeSpan? Lap6 => LapsTime?.ElementAtOrDefault(5, null) - LapsTime?.ElementAtOrDefault(4, null);
 
         public TimeSpan? BestLapTime
         {

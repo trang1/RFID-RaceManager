@@ -1,17 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Data.Entity;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Windows.Forms;
 using System.Net;
 using System.Threading;
+using System.Threading.Tasks;
 using RaceManager.Data;
 using ApplicationContext = RaceManager.Data.ApplicationContext;
+using Color = System.Drawing.Color;
 
 namespace RaceManager.UI
 {
@@ -544,6 +549,10 @@ namespace RaceManager.UI
                                 }
                             }
 
+                            if (_timer.IsRunning)
+                            {
+                                RegisterTag();
+                            }
                             //if (ltvInventoryEpc.SelectedIndices.Count != 0)
                             //{
                             //    int nDetailCount = ltvInventoryTag.Items.Count;
@@ -4944,6 +4953,7 @@ namespace RaceManager.UI
         #region Race !!!
 
         RaceEvent _selectedRaceEvent;
+
         private void btnRaceStart_Click(object sender, EventArgs e)
         {
             if (!RaceValidation())
@@ -4966,10 +4976,141 @@ namespace RaceManager.UI
             FillRaceInfo(_race);
             _timer.Start();
 
-           EnableDisableRaceControls(false);
+            var file = ConfigurationManager.AppSettings["StartSoundFile"];
+            if (File.Exists(file))
+            {
+                var player = new SoundPlayer();
+                player.SoundLocation = file;
+                player.Play();
+            }
+            else
+            {
+                SystemSounds.Exclamation.Play();
+            }
+
+            EnableDisableRaceControls(false);
+            StartStopInventory();
         }
 
-        
+        private void StartStopInventory()
+        {
+            try
+            {
+                m_curInventoryBuffer.ClearInventoryPar();
+                m_curInventoryBuffer.btRepeat = 1;
+                m_curInventoryBuffer.bLoopCustomizedSession = false;
+
+                if (cbRaceAnt1.Checked)
+                {
+                    m_curInventoryBuffer.lAntenna.Add(0x00);
+                }
+                if (cbRaceAnt2.Checked)
+                {
+                    m_curInventoryBuffer.lAntenna.Add(0x01);
+                }
+                if (cbRaceAnt3.Checked)
+                {
+                    m_curInventoryBuffer.lAntenna.Add(0x02);
+                }
+                if (cbRaceAnt4.Checked)
+                {
+                    m_curInventoryBuffer.lAntenna.Add(0x03);
+                }
+                if (m_curInventoryBuffer.lAntenna.Count == 0)
+                {
+                    MessageBox.Show("One antenna must be selected");
+                    return;
+                }
+                //Default cycle to send commands
+                if (m_curInventoryBuffer.bLoopInventory)
+                {
+                    m_bInventory = false;
+                    m_curInventoryBuffer.bLoopInventory = false;
+                    timerInventory.Enabled = false;
+                    return;
+                }
+
+                m_bInventory = true;
+                m_curInventoryBuffer.bLoopInventory = true;
+                m_curInventoryBuffer.bLoopInventoryReal = true;
+
+                m_curInventoryBuffer.ClearInventoryRealResult();
+                lvRealList.Items.Clear();
+                tbRaceMaxRssi.Text = "0";
+                tbRaceMinRssi.Text = "0";
+                m_nTotal = 0;
+
+                byte btWorkAntenna = m_curInventoryBuffer.lAntenna[m_curInventoryBuffer.nIndexAntenna];
+                reader.SetWorkAntenna(m_curSetting.btReadId, btWorkAntenna);
+                m_curSetting.btWorkAntenna = btWorkAntenna;
+
+                timerInventory.Enabled = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void RegisterTag()
+        {
+            tbRaceMaxRssi.Text = $"{m_curInventoryBuffer.nMaxRSSI - 129} dBm";
+            tbRaceMinRssi.Text = $"{m_curInventoryBuffer.nMinRSSI - 129} dBm";
+
+            var count = m_curInventoryBuffer.dtTagTable.Rows.Count - 1;
+            if (count <= 0) return;
+
+            var row = m_curInventoryBuffer.dtTagTable.Rows[count-1];
+            var tag = row[2].ToString();
+            tag = CleanTag(tag);
+            var lap = _selectedRaceEvent.Laps.FirstOrDefault(l => l.Epc == tag);
+
+            if (lap == null) return;
+
+            lap.LapsTime.Add(_raceTime);
+
+            var file = ConfigurationManager.AppSettings["TagReadSoundFile"];
+            if (File.Exists(file))
+            {
+                var player = new SoundPlayer();
+                player.SoundLocation = file;
+                player.Play();
+            }
+            else
+            {
+                SystemSounds.Question.Play();
+            }
+
+            bindingSourceRace.ResetBindings(false);
+            //row1[0] = strPC;
+            //row1[2] = strEPC;
+            //row1[4] = strRSSI;
+
+
+            //Update the number of read time in list.
+            //if (m_nTotal % m_nRealRate == 1)
+            //{
+            //    int nIndex = 0;
+            //    foreach (DataRow row in m_curInventoryBuffer.dtTagTable.Rows)
+            //    {
+            //        ListViewItem item;
+            //        item = lvRealList.Items[nIndex];
+            //        item.SubItems[3].Text = row[5].ToString();
+            //        item.SubItems[4].Text = (Convert.ToInt32(row[4]) - 129).ToString() + "dBm";
+            //        item.SubItems[5].Text = row[6].ToString();
+
+            //        nIndex++;
+            //    }
+            //}
+        }
+
+        private string CleanTag(string tag)
+        {
+            int i;
+            if (int.TryParse(tag.Replace(" ", ""), out i))
+                return i.ToString();
+            return tag;
+        }
 
         private void _timer_Elapsed(object sender, HighResolutionTimerElapsedEventArgs e)
         {
@@ -4989,6 +5130,7 @@ namespace RaceManager.UI
             _timer.Stop();
 
             EnableDisableRaceControls(true);
+            StartStopInventory();
         }
 
         private void btnRaceReset_Click(object sender, EventArgs e)
@@ -5059,6 +5201,7 @@ namespace RaceManager.UI
                     {
                         var lapsInfo = new LapsInfo();
                         lapsInfo.PilotId = pilot.Id;
+                        lapsInfo.Epc = pilot.Tag;
                         lapsInfo.RaceEventId = raceEvent.Id;
                         lapsInfo.LapsTime = new List<TimeSpan?>();
                         lapsInfo.PilotName = pilot.Name;
