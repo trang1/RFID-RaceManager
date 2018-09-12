@@ -5057,7 +5057,7 @@ namespace RaceManager.UI
             tbRaceMaxRssi.Text = $"{m_curInventoryBuffer.nMaxRSSI - 129} dBm";
             tbRaceMinRssi.Text = $"{m_curInventoryBuffer.nMinRSSI - 129} dBm";
 
-            var count = m_curInventoryBuffer.dtTagTable.Rows.Count - 1;
+            var count = m_curInventoryBuffer.dtTagTable.Rows.Count;
             if (count <= 0) return;
 
             var row = m_curInventoryBuffer.dtTagTable.Rows[count-1];
