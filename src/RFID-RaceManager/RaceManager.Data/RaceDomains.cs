@@ -86,13 +86,13 @@ namespace RaceManager.Data
         public int IdentCount { get; set; }
         public string Rssi { get; set; }
         public decimal CarrFrequency { get; set; }
-        public List<TimeSpan?> LapsTime { get; set; }
+        private List<TimeSpan?> LapsTime { get; set; }
         public string Lap1 => LapsTime?.ElementAtOrDefault(0, null)?.ToString("g");
-        public string Lap2 => (LapsTime?.ElementAtOrDefault(1, null) - LapsTime?.ElementAtOrDefault(0, null))?.ToString("g");
-        public string Lap3 => (LapsTime?.ElementAtOrDefault(2, null) - LapsTime?.ElementAtOrDefault(1, null))?.ToString("g");
-        public string Lap4 => (LapsTime?.ElementAtOrDefault(3, null) - LapsTime?.ElementAtOrDefault(2, null))?.ToString("g");
-        public string Lap5 => (LapsTime?.ElementAtOrDefault(4, null) - LapsTime?.ElementAtOrDefault(3, null))?.ToString("g");
-        public string Lap6 => (LapsTime?.ElementAtOrDefault(5, null) - LapsTime?.ElementAtOrDefault(4, null))?.ToString("g");
+        public string Lap2 => LapsTime?.ElementAtOrDefault(1, null)?.ToString("g");
+        public string Lap3 => LapsTime?.ElementAtOrDefault(2, null)?.ToString("g");
+        public string Lap4 => LapsTime?.ElementAtOrDefault(3, null)?.ToString("g");
+        public string Lap5 => LapsTime?.ElementAtOrDefault(4, null)?.ToString("g");
+        public string Lap6 => LapsTime?.ElementAtOrDefault(5, null)?.ToString("g");
 
         public TimeSpan? BestLapTime
         {
@@ -109,6 +109,8 @@ namespace RaceManager.Data
             }
         }
 
+        public string BestLapTimeString => BestLapTime?.ToString("g");
+
         public TimeSpan? AvgLapTime
         {
             get
@@ -121,6 +123,21 @@ namespace RaceManager.Data
                 {
                     return null;
                 }
+            }
+        }
+        public string AvgLapTimeString => AvgLapTime?.ToString("g");
+
+        public void RegisterLapTime(TimeSpan raceTime)
+        {
+            if(LapsTime == null) LapsTime = new List<TimeSpan?>();
+
+            if(LapsTime.Count == 0) 
+                LapsTime.Add(raceTime);
+
+            else
+            {
+                var prevLap = LapsTime.Last();
+                LapsTime.Add(raceTime - prevLap);
             }
         }
     }

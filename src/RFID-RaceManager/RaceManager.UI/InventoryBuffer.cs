@@ -30,6 +30,7 @@ namespace RaceManager.UI
         public int nMinRSSI;
         public DataTable dtTagTable;
         public DataTable dtTagDetailTable;
+        public DataRow drLastTag; // Last read tag
 
         public InventoryBuffer()
         {
@@ -88,6 +89,7 @@ namespace RaceManager.UI
             nMaxRSSI = 0;
             nMinRSSI = 0;
             dtTagTable.Rows.Clear();
+            drLastTag = null;
         }
 
         public void ClearInventoryRealResult()
@@ -101,6 +103,7 @@ namespace RaceManager.UI
             nMinRSSI = 0;
             dtTagTable.Rows.Clear();
             dtTagDetailTable.Clear();
+            drLastTag = null;
         }
     }
 }

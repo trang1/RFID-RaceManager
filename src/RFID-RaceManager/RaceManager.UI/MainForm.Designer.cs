@@ -156,10 +156,8 @@
             this.tabEpcTest = new System.Windows.Forms.TabControl();
             this.tabPilots = new System.Windows.Forms.TabPage();
             this.groupBox30 = new System.Windows.Forms.GroupBox();
-            this.nudNumberOfFinals = new System.Windows.Forms.NumericUpDown();
             this.nudNumberOfQualRounds = new System.Windows.Forms.NumericUpDown();
             this.nudNumOfLaps = new System.Windows.Forms.NumericUpDown();
-            this.label117 = new System.Windows.Forms.Label();
             this.label113 = new System.Windows.Forms.Label();
             this.label112 = new System.Windows.Forms.Label();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
@@ -714,7 +712,6 @@
             this.tabEpcTest.SuspendLayout();
             this.tabPilots.SuspendLayout();
             this.groupBox30.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudNumberOfFinals)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudNumberOfQualRounds)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudNumOfLaps)).BeginInit();
             this.tableLayoutPanel7.SuspendLayout();
@@ -2267,10 +2264,8 @@
             // 
             // groupBox30
             // 
-            this.groupBox30.Controls.Add(this.nudNumberOfFinals);
             this.groupBox30.Controls.Add(this.nudNumberOfQualRounds);
             this.groupBox30.Controls.Add(this.nudNumOfLaps);
-            this.groupBox30.Controls.Add(this.label117);
             this.groupBox30.Controls.Add(this.label113);
             this.groupBox30.Controls.Add(this.label112);
             this.groupBox30.Location = new System.Drawing.Point(5, 412);
@@ -2281,28 +2276,6 @@
             this.groupBox30.TabIndex = 2;
             this.groupBox30.TabStop = false;
             this.groupBox30.Text = "Stage Management";
-            // 
-            // nudNumberOfFinals
-            // 
-            this.nudNumberOfFinals.Location = new System.Drawing.Point(524, 25);
-            this.nudNumberOfFinals.Maximum = new decimal(new int[] {
-            6,
-            0,
-            0,
-            0});
-            this.nudNumberOfFinals.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nudNumberOfFinals.Name = "nudNumberOfFinals";
-            this.nudNumberOfFinals.Size = new System.Drawing.Size(51, 20);
-            this.nudNumberOfFinals.TabIndex = 6;
-            this.nudNumberOfFinals.Value = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
             // 
             // nudNumberOfQualRounds
             // 
@@ -2330,7 +2303,7 @@
             // 
             this.nudNumOfLaps.Location = new System.Drawing.Point(95, 25);
             this.nudNumOfLaps.Maximum = new decimal(new int[] {
-            5,
+            6,
             0,
             0,
             0});
@@ -2347,16 +2320,6 @@
             0,
             0,
             0});
-            // 
-            // label117
-            // 
-            this.label117.AutoSize = true;
-            this.label117.Location = new System.Drawing.Point(433, 27);
-            this.label117.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label117.Name = "label117";
-            this.label117.Size = new System.Drawing.Size(86, 13);
-            this.label117.TabIndex = 4;
-            this.label117.Text = "Number of Finals";
             // 
             // label113
             // 
@@ -4210,14 +4173,14 @@
             // 
             // BestLapTime
             // 
-            this.BestLapTime.DataPropertyName = "BestLapTime";
+            this.BestLapTime.DataPropertyName = "BestLapTimeString";
             this.BestLapTime.HeaderText = "Best Lap";
             this.BestLapTime.Name = "BestLapTime";
             this.BestLapTime.ReadOnly = true;
             // 
             // avgLapTimeDataGridViewTextBoxColumn
             // 
-            this.avgLapTimeDataGridViewTextBoxColumn.DataPropertyName = "AvgLapTime";
+            this.avgLapTimeDataGridViewTextBoxColumn.DataPropertyName = "AvgLapTimeString";
             this.avgLapTimeDataGridViewTextBoxColumn.HeaderText = "Average";
             this.avgLapTimeDataGridViewTextBoxColumn.Name = "avgLapTimeDataGridViewTextBoxColumn";
             this.avgLapTimeDataGridViewTextBoxColumn.ReadOnly = true;
@@ -5380,7 +5343,7 @@
             this.tableLayoutPanel4.ColumnCount = 3;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.22422F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.77578F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 392F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 394F));
             this.tableLayoutPanel4.Controls.Add(this.panel9, 2, 0);
             this.tableLayoutPanel4.Controls.Add(this.panel10, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.panel8, 1, 0);
@@ -5399,9 +5362,9 @@
             this.panel9.Controls.Add(this.btGetClearBuffer);
             this.panel9.Controls.Add(this.btGetBuffer);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel9.Location = new System.Drawing.Point(940, 4);
+            this.panel9.Location = new System.Drawing.Point(938, 4);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(387, 81);
+            this.panel9.Size = new System.Drawing.Size(389, 81);
             this.panel9.TabIndex = 1;
             // 
             // btClearBuffer
@@ -5460,7 +5423,7 @@
             this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel10.Location = new System.Drawing.Point(4, 4);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(463, 81);
+            this.panel10.Size = new System.Drawing.Size(462, 81);
             this.panel10.TabIndex = 0;
             // 
             // btBufferInventory
@@ -5502,9 +5465,9 @@
             this.panel8.Controls.Add(this.cbBufferWorkant2);
             this.panel8.Controls.Add(this.cbBufferWorkant3);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(474, 4);
+            this.panel8.Location = new System.Drawing.Point(473, 4);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(459, 81);
+            this.panel8.Size = new System.Drawing.Size(458, 81);
             this.panel8.TabIndex = 0;
             // 
             // cbBufferWorkant1
@@ -6100,7 +6063,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.20588F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.79412F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 351F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 354F));
             this.tableLayoutPanel2.Controls.Add(this.panel2, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel3, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel4, 2, 0);
@@ -6132,9 +6095,9 @@
             this.panel2.Controls.Add(this.label59);
             this.panel2.Controls.Add(this.label48);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(269, 5);
+            this.panel2.Location = new System.Drawing.Point(268, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(697, 75);
+            this.panel2.Size = new System.Drawing.Size(695, 75);
             this.panel2.TabIndex = 0;
             // 
             // txtDStay
@@ -6336,7 +6299,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(5, 5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(256, 75);
+            this.panel3.Size = new System.Drawing.Size(255, 75);
             this.panel3.TabIndex = 1;
             // 
             // btFastInventory
@@ -6358,9 +6321,9 @@
             this.panel4.Controls.Add(this.label73);
             this.panel4.Controls.Add(this.label72);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(974, 5);
+            this.panel4.Location = new System.Drawing.Point(971, 5);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(346, 75);
+            this.panel4.Size = new System.Drawing.Size(349, 75);
             this.panel4.TabIndex = 2;
             // 
             // txtRepeat
@@ -8211,7 +8174,6 @@
             this.tabPilots.ResumeLayout(false);
             this.groupBox30.ResumeLayout(false);
             this.groupBox30.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudNumberOfFinals)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudNumberOfQualRounds)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudNumOfLaps)).EndInit();
             this.tableLayoutPanel7.ResumeLayout(false);
@@ -8844,7 +8806,6 @@
         private System.Windows.Forms.DataGridView gvPilots;
         private System.Windows.Forms.BindingSource bindingSourcePilots;
         private System.Windows.Forms.GroupBox groupBox30;
-        private System.Windows.Forms.Label label117;
         private System.Windows.Forms.Label label113;
         private System.Windows.Forms.Label label112;
         private System.Windows.Forms.Button btnAddPilotsToGroups;
@@ -8884,7 +8845,6 @@
         private System.Windows.Forms.DataGridView gvGroupN;
         private System.Windows.Forms.DataGridView gvGroupO;
         private System.Windows.Forms.BindingSource bindingSourcePilots1;
-        private System.Windows.Forms.NumericUpDown nudNumberOfFinals;
         private System.Windows.Forms.NumericUpDown nudNumberOfQualRounds;
         private System.Windows.Forms.NumericUpDown nudNumOfLaps;
         private System.Windows.Forms.DataGridViewTextBoxColumn orderNumberDataGridViewTextBoxColumn;

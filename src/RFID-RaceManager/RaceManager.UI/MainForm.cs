@@ -2756,6 +2756,8 @@ namespace RaceManager.UI
         private void ProcessInventoryReal(Reader.MessageTran msgTran)
         {
             string strCmd = "";
+            m_curInventoryBuffer.drLastTag = null;
+            
             if (msgTran.Cmd == 0x89)
             {
                 strCmd = "Real time inventory";
@@ -2807,11 +2809,13 @@ namespace RaceManager.UI
                 byte btFreq = (byte)(btTemp >> 2);
                 string strFreq = GetFreqString(btFreq);
                 
-                //DataRow row = m_curInventoryBuffer.dtTagDetailTable.NewRow();
-                //row[0] = strEPC;
-                //row[1] = strRSSI;
-                //row[2] = strAntId;
-                //row[3] = strFreq;
+                var row = m_curInventoryBuffer.dtTagDetailTable.NewRow();
+                row[0] = strEPC;
+                row[1] = strRSSI;
+                row[2] = strAntId;
+                row[3] = strFreq;
+                Debug.WriteLine(row[0] + "\r\n" + row[1] + "\r\n");
+                m_curInventoryBuffer.drLastTag = row;
 
                 //m_curInventoryBuffer.dtTagDetailTable.Rows.Add(row);
                 //m_curInventoryBuffer.dtTagDetailTable.AcceptChanges();
@@ -4360,13 +4364,12 @@ namespace RaceManager.UI
             catch (System.Exception ex)
             {
                 MessageBox.Show(ex.Message);
-            }  
-           
-           
+            }
         }
 
         private void btRealFresh_Click(object sender, EventArgs e)
         {
+            SystemSounds.Asterisk.Play();
             m_curInventoryBuffer.ClearInventoryRealResult();
             
             lvRealList.Items.Clear();
@@ -5056,18 +5059,18 @@ namespace RaceManager.UI
         {
             tbRaceMaxRssi.Text = $"{m_curInventoryBuffer.nMaxRSSI - 129} dBm";
             tbRaceMinRssi.Text = $"{m_curInventoryBuffer.nMinRSSI - 129} dBm";
+            
+            var row = m_curInventoryBuffer.drLastTag;
+            if(row == null) return;
 
-            var count = m_curInventoryBuffer.dtTagTable.Rows.Count;
-            if (count <= 0) return;
-
-            var row = m_curInventoryBuffer.dtTagTable.Rows[count-1];
-            var tag = row[2].ToString();
+            var tag = row[0].ToString();
             tag = CleanTag(tag);
             var lap = _selectedRaceEvent.Laps.FirstOrDefault(l => l.Epc == tag);
 
             if (lap == null) return;
+            Debug.WriteLine("tag = " + tag + ", lap = "+lap.OrderNumber+", time = " + _raceTime);
 
-            lap.LapsTime.Add(_raceTime);
+            lap.RegisterLapTime(_raceTime);
 
             var file = ConfigurationManager.AppSettings["TagReadSoundFile"];
             if (File.Exists(file))
@@ -5078,7 +5081,7 @@ namespace RaceManager.UI
             }
             else
             {
-                SystemSounds.Question.Play();
+                SystemSounds.Asterisk.Play();
             }
 
             bindingSourceRace.ResetBindings(false);
@@ -5199,13 +5202,14 @@ namespace RaceManager.UI
                 {
                     foreach (var pilot in group.Pilots)
                     {
-                        var lapsInfo = new LapsInfo();
-                        lapsInfo.PilotId = pilot.Id;
-                        lapsInfo.Epc = pilot.Tag;
-                        lapsInfo.RaceEventId = raceEvent.Id;
-                        lapsInfo.LapsTime = new List<TimeSpan?>();
-                        lapsInfo.PilotName = pilot.Name;
-                        lapsInfo.OrderNumber = pilot.OrderNumber;
+                        var lapsInfo = new LapsInfo
+                        {
+                            PilotId = pilot.Id,
+                            Epc = pilot.Tag,
+                            RaceEventId = raceEvent.Id,
+                            PilotName = pilot.Name,
+                            OrderNumber = pilot.OrderNumber
+                        };
                         raceEvent.Laps.Add(lapsInfo);
                     }
                 }
@@ -5439,10 +5443,24 @@ namespace RaceManager.UI
                 cmbRaceRound.Items.Add("Q" + i);
             }
 
-            var numberOfFinals = (int)nudNumberOfFinals.Value;
-            for (int i = 1; i <= numberOfFinals; i++)
+            //var numberOfFinals = (int)nudNumberOfFinals.Value;
+
+            // 1/4 finals
+            for (int i = 1; i <= 4; i++)      
+            {
+                cmbRaceRound.Items.Add("R" + i);
+            }
+
+            // Semi final rounds
+            for (int i = 1; i <= 2; i++)
             {
                 cmbRaceRound.Items.Add("S" + i);
+            }
+
+            // Final rounds
+            for (int i = 1; i <= 2; i++)
+            {
+                cmbRaceRound.Items.Add("F" + i);
             }
         }
 
