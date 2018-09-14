@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 
@@ -127,18 +128,23 @@ namespace RaceManager.Data
         }
         public string AvgLapTimeString => AvgLapTime?.ToString("g");
 
-        public void RegisterLapTime(TimeSpan raceTime)
+        private TimeSpan _prevRaceTime = TimeSpan.Zero;
+
+        public void RegisterLapTime(TimeSpan raceTime, double minLapTime)
         {
-            if(LapsTime == null) LapsTime = new List<TimeSpan?>();
+            if (LapsTime == null) LapsTime = new List<TimeSpan?>();
 
-            if(LapsTime.Count == 0) 
-                LapsTime.Add(raceTime);
+            var diff = raceTime - _prevRaceTime;
 
+            if (diff.TotalSeconds >= minLapTime)
+                LapsTime.Add(diff);
             else
             {
-                var prevLap = LapsTime.Last();
-                LapsTime.Add(raceTime - prevLap);
+                Debug.WriteLine("Tag = " + Epc + ", diff = " + diff.TotalSeconds + ", skipping");
+                return;
             }
+
+            _prevRaceTime = raceTime;
         }
     }
 }

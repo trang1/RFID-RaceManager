@@ -5063,14 +5063,14 @@ namespace RaceManager.UI
             var row = m_curInventoryBuffer.drLastTag;
             if(row == null) return;
 
-            var tag = row[0].ToString();
+            var tag = row[0].ToString().Trim();
             tag = CleanTag(tag);
             var lap = _selectedRaceEvent.Laps.FirstOrDefault(l => l.Epc == tag);
 
             if (lap == null) return;
             Debug.WriteLine("tag = " + tag + ", lap = "+lap.OrderNumber+", time = " + _raceTime);
 
-            lap.RegisterLapTime(_raceTime);
+            lap.RegisterLapTime(_raceTime, (double) nudMinLapTime.Value);
 
             var file = ConfigurationManager.AppSettings["TagReadSoundFile"];
             if (File.Exists(file))
@@ -5118,7 +5118,12 @@ namespace RaceManager.UI
         private void _timer_Elapsed(object sender, HighResolutionTimerElapsedEventArgs e)
         {
             _raceTime = _raceTime.Add(TimeSpan.FromMilliseconds(1));
-            BeginInvoke(new Action(ShowRaceTime));
+
+            // Improving perfomance
+            if (_raceTime.Milliseconds%5 == 0)
+            {
+                BeginInvoke(new Action(ShowRaceTime));
+            }
         }
 
         private void ShowRaceTime()
@@ -5132,6 +5137,7 @@ namespace RaceManager.UI
         {
             _timer.Stop();
 
+            ShowRaceTime();
             EnableDisableRaceControls(true);
             StartStopInventory();
         }
@@ -5155,9 +5161,7 @@ namespace RaceManager.UI
 
         private bool RaceValidation()
         {
-            int i;
-            return !string.IsNullOrEmpty(tbRaceName.Text) && !string.IsNullOrEmpty(tbRaceMinLapTime.Text) &&
-                            int.TryParse(tbRaceMinLapTime.Text, out i) &&
+            return !string.IsNullOrEmpty(tbRaceName.Text) && 
                            !string.IsNullOrEmpty(tbRaceLocation.Text) && !string.IsNullOrEmpty(dtpRaceDate.Text) &&
                            !string.IsNullOrEmpty(tbCurEvGroup.Text) && !string.IsNullOrEmpty(tbCurEvRound.Text) ;
         }
@@ -5464,8 +5468,21 @@ namespace RaceManager.UI
             }
         }
 
+
         #endregion
 
-       
+        private void cmbDisplayRanking_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Best lap ranking
+            if (cmbDisplayRanking.SelectedIndex == 0)
+            {
+                
+            }
+            // Average lap ranking
+            if (cmbDisplayRanking.SelectedIndex == 1)
+            {
+                
+            }
+        }
     }
 }
