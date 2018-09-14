@@ -5085,6 +5085,9 @@ namespace RaceManager.UI
             }
 
             bindingSourceRace.ResetBindings(false);
+
+            UpdateRankings();
+            bindingSourceRanking.ResetBindings(false);
             //row1[0] = strPC;
             //row1[2] = strEPC;
             //row1[4] = strRSSI;
@@ -5473,15 +5476,64 @@ namespace RaceManager.UI
 
         private void cmbDisplayRanking_SelectedIndexChanged(object sender, EventArgs e)
         {
+            UpdateRankings();
+        }
+
+        private void UpdateRankings()
+        {
             // Best lap ranking
             if (cmbDisplayRanking.SelectedIndex == 0)
             {
-                
+                var source = new List<LapsInfo>();
+                foreach (var raceEvent in _race.RaceEvents)
+                {
+                    foreach (var lap in raceEvent.Laps)
+                    {
+                        var existingLap = source.FirstOrDefault(s => s.Epc == lap.Epc);
+                        if (existingLap == null)
+                            source.Add(lap);
+
+                        else
+                        {
+                            if (existingLap.BestLapTime > lap.BestLapTime)
+                                source[source.IndexOf(existingLap)] = lap;
+                        }
+                    }
+                }
+
+                var orderedList =  source.OrderBy(s => s.BestLapTime).ToList();
+                orderedList.ForEach(l=>l.RankNumber = orderedList.IndexOf(l) + 1);
+                bindingSourceRanking.DataSource = orderedList;
+
+                avgLapTimeStringDataGridViewTextBoxColumn.Visible = false;
+                bestLapTimeStringDataGridViewTextBoxColumn.Visible = true;
             }
             // Average lap ranking
             if (cmbDisplayRanking.SelectedIndex == 1)
             {
-                
+                var source = new List<LapsInfo>();
+                foreach (var raceEvent in _race.RaceEvents)
+                {
+                    foreach (var lap in raceEvent.Laps)
+                    {
+                        var existingLap = source.FirstOrDefault(s => s.Epc == lap.Epc);
+                        if (existingLap == null)
+                            source.Add(lap);
+
+                        else
+                        {
+                            if (existingLap.AvgLapTime > lap.AvgLapTime)
+                                source[source.IndexOf(existingLap)] = lap;
+                        }
+                    }
+                }
+
+                var orderedList = source.OrderBy(s => s.AvgLapTime).ToList();
+                orderedList.ForEach(l => l.RankNumber = orderedList.IndexOf(l) + 1);
+                bindingSourceRanking.DataSource = orderedList;
+
+                avgLapTimeStringDataGridViewTextBoxColumn.Visible = true;
+                bestLapTimeStringDataGridViewTextBoxColumn.Visible = false;
             }
         }
     }

@@ -684,6 +684,7 @@
             this.pilotNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bestLapTimeStringDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.avgLapTimeStringDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rankNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabCtrMain.SuspendLayout();
             this.PagReaderSetting.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -3383,6 +3384,7 @@
             this.gvRanking.BackgroundColor = System.Drawing.SystemColors.Control;
             this.gvRanking.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvRanking.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.rankNumberDataGridViewTextBoxColumn,
             this.pilotNameDataGridViewTextBoxColumn,
             this.bestLapTimeStringDataGridViewTextBoxColumn,
             this.avgLapTimeStringDataGridViewTextBoxColumn});
@@ -8134,6 +8136,7 @@
             this.pilotNameDataGridViewTextBoxColumn.HeaderText = "Name";
             this.pilotNameDataGridViewTextBoxColumn.Name = "pilotNameDataGridViewTextBoxColumn";
             this.pilotNameDataGridViewTextBoxColumn.ReadOnly = true;
+            this.pilotNameDataGridViewTextBoxColumn.Width = 200;
             // 
             // bestLapTimeStringDataGridViewTextBoxColumn
             // 
@@ -8148,6 +8151,14 @@
             this.avgLapTimeStringDataGridViewTextBoxColumn.HeaderText = "Average Lap";
             this.avgLapTimeStringDataGridViewTextBoxColumn.Name = "avgLapTimeStringDataGridViewTextBoxColumn";
             this.avgLapTimeStringDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // rankNumberDataGridViewTextBoxColumn
+            // 
+            this.rankNumberDataGridViewTextBoxColumn.DataPropertyName = "RankNumber";
+            this.rankNumberDataGridViewTextBoxColumn.HeaderText = "#";
+            this.rankNumberDataGridViewTextBoxColumn.Name = "rankNumberDataGridViewTextBoxColumn";
+            this.rankNumberDataGridViewTextBoxColumn.ReadOnly = true;
+            this.rankNumberDataGridViewTextBoxColumn.Width = 50;
             // 
             // MainForm
             // 
@@ -9033,6 +9044,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn BestLapTime;
         private System.Windows.Forms.DataGridViewTextBoxColumn avgLapTimeDataGridViewTextBoxColumn;
         private System.Windows.Forms.NumericUpDown nudMinLapTime;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rankNumberDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pilotNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn bestLapTimeStringDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn avgLapTimeStringDataGridViewTextBoxColumn;

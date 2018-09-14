@@ -82,6 +82,7 @@ namespace RaceManager.Data
         public string PilotName { get; set; }
         public int RaceEventId { get; set; }
         public int OrderNumber { get; set; }
+        public int RankNumber { get; set; }
         public string Epc { get; set; }
         public string Pc { get; set; }
         public int IdentCount { get; set; }
