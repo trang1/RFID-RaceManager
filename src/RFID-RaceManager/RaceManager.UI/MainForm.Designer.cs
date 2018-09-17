@@ -233,7 +233,6 @@
             this.BestLapTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox35 = new System.Windows.Forms.GroupBox();
             this.gvRanking = new System.Windows.Forms.DataGridView();
-            this.bindingSourceRanking = new System.Windows.Forms.BindingSource(this.components);
             this.cmbDisplayRanking = new System.Windows.Forms.ComboBox();
             this.label20 = new System.Windows.Forms.Label();
             this.groupBox34 = new System.Windows.Forms.GroupBox();
@@ -257,6 +256,9 @@
             this.label34 = new System.Windows.Forms.Label();
             this.lblRaceMinutes = new System.Windows.Forms.Label();
             this.groupBox26 = new System.Windows.Forms.GroupBox();
+            this.nudMinLapTime = new System.Windows.Forms.NumericUpDown();
+            this.label117 = new System.Windows.Forms.Label();
+            this.nudMinFirstLapTime = new System.Windows.Forms.NumericUpDown();
             this.dtpRaceDate = new System.Windows.Forms.DateTimePicker();
             this.label102 = new System.Windows.Forms.Label();
             this.tbRaceLocation = new System.Windows.Forms.TextBox();
@@ -279,7 +281,6 @@
             this.cmbRaceGroup = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
             this.cmbRaceRound = new System.Windows.Forms.ComboBox();
-            this.cbRaceUserDefineSession = new System.Windows.Forms.CheckBox();
             this.groupBox22 = new System.Windows.Forms.GroupBox();
             this.btnRaceExport = new System.Windows.Forms.Button();
             this.pageRealMode = new System.Windows.Forms.TabPage();
@@ -566,7 +567,8 @@
             this.lxLedControl17 = new LxControl.LxLedControl();
             this.lxLedControl18 = new LxControl.LxLedControl();
             this.timerInventory = new System.Windows.Forms.Timer(this.components);
-            this.nudMinLapTime = new System.Windows.Forms.NumericUpDown();
+            this.cmbRaceMode = new System.Windows.Forms.ComboBox();
+            this.label118 = new System.Windows.Forms.Label();
             this.orderNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nicknameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -684,7 +686,7 @@
             this.pilotNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bestLapTimeStringDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.avgLapTimeStringDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rankNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bindingSourceRanking = new System.Windows.Forms.BindingSource(this.components);
             this.tabCtrMain.SuspendLayout();
             this.PagReaderSetting.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -760,12 +762,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.gvRace)).BeginInit();
             this.groupBox35.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvRanking)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceRanking)).BeginInit();
             this.groupBox31.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.groupBox24.SuspendLayout();
             this.groupBox25.SuspendLayout();
             this.groupBox26.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudMinLapTime)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudMinFirstLapTime)).BeginInit();
             this.tableLayoutPanel5.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.groupBox12.SuspendLayout();
@@ -833,10 +836,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.lxLedControl16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lxLedControl17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lxLedControl18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudMinLapTime)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourcePilots)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourcePilots1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceRace)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceRanking)).BeginInit();
             this.SuspendLayout();
             // 
             // tabCtrMain
@@ -3384,7 +3387,6 @@
             this.gvRanking.BackgroundColor = System.Drawing.SystemColors.Control;
             this.gvRanking.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvRanking.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.rankNumberDataGridViewTextBoxColumn,
             this.pilotNameDataGridViewTextBoxColumn,
             this.bestLapTimeStringDataGridViewTextBoxColumn,
             this.avgLapTimeStringDataGridViewTextBoxColumn});
@@ -3395,10 +3397,6 @@
             this.gvRanking.ReadOnly = true;
             this.gvRanking.Size = new System.Drawing.Size(319, 401);
             this.gvRanking.TabIndex = 7;
-            // 
-            // bindingSourceRanking
-            // 
-            this.bindingSourceRanking.DataSource = typeof(RaceManager.Data.LapsInfo);
             // 
             // cmbDisplayRanking
             // 
@@ -3659,6 +3657,8 @@
             // groupBox26
             // 
             this.groupBox26.Controls.Add(this.nudMinLapTime);
+            this.groupBox26.Controls.Add(this.label117);
+            this.groupBox26.Controls.Add(this.nudMinFirstLapTime);
             this.groupBox26.Controls.Add(this.dtpRaceDate);
             this.groupBox26.Controls.Add(this.label102);
             this.groupBox26.Controls.Add(this.tbRaceLocation);
@@ -3676,10 +3676,54 @@
             this.groupBox26.TabStop = false;
             this.groupBox26.Text = "Race Properties";
             // 
+            // nudMinLapTime
+            // 
+            this.nudMinLapTime.Location = new System.Drawing.Point(348, 16);
+            this.nudMinLapTime.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nudMinLapTime.Name = "nudMinLapTime";
+            this.nudMinLapTime.Size = new System.Drawing.Size(46, 20);
+            this.nudMinLapTime.TabIndex = 11;
+            this.nudMinLapTime.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            // 
+            // label117
+            // 
+            this.label117.AutoSize = true;
+            this.label117.Location = new System.Drawing.Point(215, 18);
+            this.label117.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label117.Name = "label117";
+            this.label117.Size = new System.Drawing.Size(124, 13);
+            this.label117.TabIndex = 10;
+            this.label117.Text = "Minimum Lap Time (sec):";
+            // 
+            // nudMinFirstLapTime
+            // 
+            this.nudMinFirstLapTime.Location = new System.Drawing.Point(155, 16);
+            this.nudMinFirstLapTime.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nudMinFirstLapTime.Name = "nudMinFirstLapTime";
+            this.nudMinFirstLapTime.Size = new System.Drawing.Size(46, 20);
+            this.nudMinFirstLapTime.TabIndex = 9;
+            this.nudMinFirstLapTime.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            // 
             // dtpRaceDate
             // 
             this.dtpRaceDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpRaceDate.Location = new System.Drawing.Point(218, 68);
+            this.dtpRaceDate.Location = new System.Drawing.Point(243, 68);
             this.dtpRaceDate.Margin = new System.Windows.Forms.Padding(2);
             this.dtpRaceDate.Name = "dtpRaceDate";
             this.dtpRaceDate.Size = new System.Drawing.Size(151, 20);
@@ -3688,7 +3732,7 @@
             // label102
             // 
             this.label102.AutoSize = true;
-            this.label102.Location = new System.Drawing.Point(182, 71);
+            this.label102.Location = new System.Drawing.Point(206, 72);
             this.label102.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label102.Name = "label102";
             this.label102.Size = new System.Drawing.Size(33, 13);
@@ -3700,7 +3744,7 @@
             this.tbRaceLocation.Location = new System.Drawing.Point(76, 68);
             this.tbRaceLocation.Margin = new System.Windows.Forms.Padding(2);
             this.tbRaceLocation.Name = "tbRaceLocation";
-            this.tbRaceLocation.Size = new System.Drawing.Size(102, 20);
+            this.tbRaceLocation.Size = new System.Drawing.Size(125, 20);
             this.tbRaceLocation.TabIndex = 5;
             // 
             // label101
@@ -3718,7 +3762,7 @@
             this.tbRaceName.Location = new System.Drawing.Point(76, 41);
             this.tbRaceName.Margin = new System.Windows.Forms.Padding(2);
             this.tbRaceName.Name = "tbRaceName";
-            this.tbRaceName.Size = new System.Drawing.Size(292, 20);
+            this.tbRaceName.Size = new System.Drawing.Size(318, 20);
             this.tbRaceName.TabIndex = 3;
             // 
             // label100
@@ -3737,16 +3781,16 @@
             this.label99.Location = new System.Drawing.Point(4, 18);
             this.label99.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label99.Name = "label99";
-            this.label99.Size = new System.Drawing.Size(124, 13);
+            this.label99.Size = new System.Drawing.Size(146, 13);
             this.label99.TabIndex = 0;
-            this.label99.Text = "Minimum Lap Time (sec):";
+            this.label99.Text = "Minimum First Lap Time (sec):";
             // 
             // tableLayoutPanel5
             // 
             this.tableLayoutPanel5.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel5.ColumnCount = 3;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.23624F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.84484F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.64965F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.23123F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.01902F));
             this.tableLayoutPanel5.Controls.Add(this.groupBox9, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.groupBox12, 1, 0);
@@ -3761,6 +3805,8 @@
             // 
             // groupBox9
             // 
+            this.groupBox9.Controls.Add(this.label118);
+            this.groupBox9.Controls.Add(this.cmbRaceMode);
             this.groupBox9.Controls.Add(this.tbRaceMaxRssi);
             this.groupBox9.Controls.Add(this.tbRaceMinRssi);
             this.groupBox9.Controls.Add(this.label1);
@@ -3774,7 +3820,7 @@
             this.groupBox9.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox9.Size = new System.Drawing.Size(356, 78);
+            this.groupBox9.Size = new System.Drawing.Size(491, 78);
             this.groupBox9.TabIndex = 0;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Antenna Selection";
@@ -3865,13 +3911,12 @@
             this.groupBox12.Controls.Add(this.cmbRaceGroup);
             this.groupBox12.Controls.Add(this.label15);
             this.groupBox12.Controls.Add(this.cmbRaceRound);
-            this.groupBox12.Controls.Add(this.cbRaceUserDefineSession);
             this.groupBox12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox12.Location = new System.Drawing.Point(364, 3);
+            this.groupBox12.Location = new System.Drawing.Point(499, 3);
             this.groupBox12.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox12.Name = "groupBox12";
             this.groupBox12.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox12.Size = new System.Drawing.Size(442, 78);
+            this.groupBox12.Size = new System.Drawing.Size(307, 78);
             this.groupBox12.TabIndex = 1;
             this.groupBox12.TabStop = false;
             this.groupBox12.Text = "Event Round";
@@ -3879,17 +3924,18 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(289, 33);
+            this.label18.Location = new System.Drawing.Point(144, 30);
             this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(36, 13);
             this.label18.TabIndex = 4;
             this.label18.Text = "Group";
+            this.label18.Click += new System.EventHandler(this.label18_Click);
             // 
             // cmbRaceGroup
             // 
             this.cmbRaceGroup.FormattingEnabled = true;
-            this.cmbRaceGroup.Location = new System.Drawing.Point(331, 31);
+            this.cmbRaceGroup.Location = new System.Drawing.Point(184, 27);
             this.cmbRaceGroup.Margin = new System.Windows.Forms.Padding(2);
             this.cmbRaceGroup.Name = "cmbRaceGroup";
             this.cmbRaceGroup.Size = new System.Drawing.Size(92, 21);
@@ -3899,7 +3945,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(135, 33);
+            this.label15.Location = new System.Drawing.Point(4, 30);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(39, 13);
@@ -3909,23 +3955,12 @@
             // cmbRaceRound
             // 
             this.cmbRaceRound.FormattingEnabled = true;
-            this.cmbRaceRound.Location = new System.Drawing.Point(177, 31);
+            this.cmbRaceRound.Location = new System.Drawing.Point(42, 27);
             this.cmbRaceRound.Margin = new System.Windows.Forms.Padding(2);
             this.cmbRaceRound.Name = "cmbRaceRound";
             this.cmbRaceRound.Size = new System.Drawing.Size(92, 21);
             this.cmbRaceRound.TabIndex = 1;
             this.cmbRaceRound.SelectedIndexChanged += new System.EventHandler(this.cmbRaceRound_SelectedIndexChanged);
-            // 
-            // cbRaceUserDefineSession
-            // 
-            this.cbRaceUserDefineSession.AutoSize = true;
-            this.cbRaceUserDefineSession.Location = new System.Drawing.Point(4, 32);
-            this.cbRaceUserDefineSession.Margin = new System.Windows.Forms.Padding(2);
-            this.cbRaceUserDefineSession.Name = "cbRaceUserDefineSession";
-            this.cbRaceUserDefineSession.Size = new System.Drawing.Size(122, 17);
-            this.cbRaceUserDefineSession.TabIndex = 0;
-            this.cbRaceUserDefineSession.Text = "User Define Session";
-            this.cbRaceUserDefineSession.UseVisualStyleBackColor = true;
             // 
             // groupBox22
             // 
@@ -4521,7 +4556,7 @@
             this.tableLayoutPanel4.ColumnCount = 3;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.22422F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.77578F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 404F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 410F));
             this.tableLayoutPanel4.Controls.Add(this.panel9, 2, 0);
             this.tableLayoutPanel4.Controls.Add(this.panel10, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.panel8, 1, 0);
@@ -4540,9 +4575,9 @@
             this.panel9.Controls.Add(this.btGetClearBuffer);
             this.panel9.Controls.Add(this.btGetBuffer);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel9.Location = new System.Drawing.Point(928, 4);
+            this.panel9.Location = new System.Drawing.Point(922, 4);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(399, 81);
+            this.panel9.Size = new System.Drawing.Size(405, 81);
             this.panel9.TabIndex = 1;
             // 
             // btClearBuffer
@@ -4601,7 +4636,7 @@
             this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel10.Location = new System.Drawing.Point(4, 4);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(457, 81);
+            this.panel10.Size = new System.Drawing.Size(454, 81);
             this.panel10.TabIndex = 0;
             // 
             // btBufferInventory
@@ -4643,9 +4678,9 @@
             this.panel8.Controls.Add(this.cbBufferWorkant2);
             this.panel8.Controls.Add(this.cbBufferWorkant3);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(468, 4);
+            this.panel8.Location = new System.Drawing.Point(465, 4);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(453, 81);
+            this.panel8.Size = new System.Drawing.Size(450, 81);
             this.panel8.TabIndex = 0;
             // 
             // cbBufferWorkant1
@@ -5041,7 +5076,7 @@
             this.ledFast4.RoundCorner = true;
             this.ledFast4.SegmentIntervalRatio = 50;
             this.ledFast4.ShowHighlight = true;
-            this.ledFast4.Size = new System.Drawing.Size(183, 38);
+            this.ledFast4.Size = new System.Drawing.Size(199, 38);
             this.ledFast4.TabIndex = 40;
             this.ledFast4.Text = "0";
             this.ledFast4.TextAlignment = LxControl.LxLedControl.Alignment.Right;
@@ -5079,7 +5114,7 @@
             this.ledFast5.RoundCorner = true;
             this.ledFast5.SegmentIntervalRatio = 50;
             this.ledFast5.ShowHighlight = true;
-            this.ledFast5.Size = new System.Drawing.Size(183, 38);
+            this.ledFast5.Size = new System.Drawing.Size(199, 38);
             this.ledFast5.TabIndex = 35;
             this.ledFast5.Text = "0";
             this.ledFast5.TextAlignment = LxControl.LxLedControl.Alignment.Right;
@@ -5101,7 +5136,7 @@
             this.ledFast2.RoundCorner = true;
             this.ledFast2.SegmentIntervalRatio = 50;
             this.ledFast2.ShowHighlight = true;
-            this.ledFast2.Size = new System.Drawing.Size(162, 54);
+            this.ledFast2.Size = new System.Drawing.Size(173, 54);
             this.ledFast2.TabIndex = 34;
             this.ledFast2.Text = "0";
             this.ledFast2.TextAlignment = LxControl.LxLedControl.Alignment.Right;
@@ -5123,7 +5158,7 @@
             this.ledFast3.RoundCorner = true;
             this.ledFast3.SegmentIntervalRatio = 50;
             this.ledFast3.ShowHighlight = true;
-            this.ledFast3.Size = new System.Drawing.Size(161, 54);
+            this.ledFast3.Size = new System.Drawing.Size(172, 54);
             this.ledFast3.TabIndex = 33;
             this.ledFast3.Text = "0";
             this.ledFast3.TextAlignment = LxControl.LxLedControl.Alignment.Right;
@@ -5167,7 +5202,7 @@
             this.label57.AutoSize = true;
             this.label57.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label57.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label57.Location = new System.Drawing.Point(700, 38);
+            this.label57.Location = new System.Drawing.Point(717, 19);
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(149, 12);
             this.label57.TabIndex = 27;
@@ -5201,7 +5236,7 @@
             this.ledFast1.RoundCorner = true;
             this.ledFast1.SegmentIntervalRatio = 50;
             this.ledFast1.ShowHighlight = true;
-            this.ledFast1.Size = new System.Drawing.Size(310, 128);
+            this.ledFast1.Size = new System.Drawing.Size(328, 128);
             this.ledFast1.TabIndex = 21;
             this.ledFast1.Text = "0";
             this.ledFast1.TextAlignment = LxControl.LxLedControl.Alignment.Right;
@@ -5241,7 +5276,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.20588F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.79412F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 369F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 378F));
             this.tableLayoutPanel2.Controls.Add(this.panel2, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel3, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel4, 2, 0);
@@ -5273,9 +5308,9 @@
             this.panel2.Controls.Add(this.label59);
             this.panel2.Controls.Add(this.label48);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(264, 5);
+            this.panel2.Location = new System.Drawing.Point(262, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(684, 75);
+            this.panel2.Size = new System.Drawing.Size(677, 75);
             this.panel2.TabIndex = 0;
             // 
             // txtDStay
@@ -5477,7 +5512,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(5, 5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(251, 75);
+            this.panel3.Size = new System.Drawing.Size(249, 75);
             this.panel3.TabIndex = 1;
             // 
             // btFastInventory
@@ -5499,9 +5534,9 @@
             this.panel4.Controls.Add(this.label73);
             this.panel4.Controls.Add(this.label72);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(956, 5);
+            this.panel4.Location = new System.Drawing.Point(947, 5);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(364, 75);
+            this.panel4.Size = new System.Drawing.Size(373, 75);
             this.panel4.TabIndex = 2;
             // 
             // txtRepeat
@@ -5567,9 +5602,9 @@
             this.lvFastList.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.lvFastList.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lvFastList.GridLines = true;
-            this.lvFastList.Location = new System.Drawing.Point(3, 204);
+            this.lvFastList.Location = new System.Drawing.Point(3, 302);
             this.lvFastList.Name = "lvFastList";
-            this.lvFastList.Size = new System.Drawing.Size(1325, 261);
+            this.lvFastList.Size = new System.Drawing.Size(1325, 163);
             this.lvFastList.TabIndex = 24;
             this.lvFastList.UseCompatibleStateImageBehavior = false;
             this.lvFastList.View = System.Windows.Forms.View.Details;
@@ -7282,22 +7317,25 @@
             this.timerInventory.Interval = 500;
             this.timerInventory.Tick += new System.EventHandler(this.timerInventory_Tick);
             // 
-            // nudMinLapTime
+            // cmbRaceMode
             // 
-            this.nudMinLapTime.Location = new System.Drawing.Point(133, 16);
-            this.nudMinLapTime.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nudMinLapTime.Name = "nudMinLapTime";
-            this.nudMinLapTime.Size = new System.Drawing.Size(46, 20);
-            this.nudMinLapTime.TabIndex = 9;
-            this.nudMinLapTime.Value = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
+            this.cmbRaceMode.FormattingEnabled = true;
+            this.cmbRaceMode.Items.AddRange(new object[] {
+            "Real Time",
+            "Fast Switch Antenna"});
+            this.cmbRaceMode.Location = new System.Drawing.Point(362, 36);
+            this.cmbRaceMode.Name = "cmbRaceMode";
+            this.cmbRaceMode.Size = new System.Drawing.Size(121, 21);
+            this.cmbRaceMode.TabIndex = 46;
+            // 
+            // label118
+            // 
+            this.label118.AutoSize = true;
+            this.label118.Location = new System.Drawing.Point(359, 17);
+            this.label118.Name = "label118";
+            this.label118.Size = new System.Drawing.Size(34, 13);
+            this.label118.TabIndex = 47;
+            this.label118.Text = "Mode";
             // 
             // orderNumberDataGridViewTextBoxColumn
             // 
@@ -8152,13 +8190,9 @@
             this.avgLapTimeStringDataGridViewTextBoxColumn.Name = "avgLapTimeStringDataGridViewTextBoxColumn";
             this.avgLapTimeStringDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // rankNumberDataGridViewTextBoxColumn
+            // bindingSourceRanking
             // 
-            this.rankNumberDataGridViewTextBoxColumn.DataPropertyName = "RankNumber";
-            this.rankNumberDataGridViewTextBoxColumn.HeaderText = "#";
-            this.rankNumberDataGridViewTextBoxColumn.Name = "rankNumberDataGridViewTextBoxColumn";
-            this.rankNumberDataGridViewTextBoxColumn.ReadOnly = true;
-            this.rankNumberDataGridViewTextBoxColumn.Width = 50;
+            this.bindingSourceRanking.DataSource = typeof(RaceManager.Data.LapsInfo);
             // 
             // MainForm
             // 
@@ -8277,7 +8311,6 @@
             this.groupBox35.ResumeLayout(false);
             this.groupBox35.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvRanking)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceRanking)).EndInit();
             this.groupBox31.ResumeLayout(false);
             this.groupBox31.PerformLayout();
             this.tableLayoutPanel6.ResumeLayout(false);
@@ -8286,6 +8319,8 @@
             this.groupBox25.PerformLayout();
             this.groupBox26.ResumeLayout(false);
             this.groupBox26.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudMinLapTime)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudMinFirstLapTime)).EndInit();
             this.tableLayoutPanel5.ResumeLayout(false);
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
@@ -8382,10 +8417,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.lxLedControl16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lxLedControl17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lxLedControl18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudMinLapTime)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourcePilots)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourcePilots1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceRace)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceRanking)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -8812,7 +8847,6 @@
         private System.Windows.Forms.ComboBox cmbRaceGroup;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.ComboBox cmbRaceRound;
-        private System.Windows.Forms.CheckBox cbRaceUserDefineSession;
         private System.Windows.Forms.GroupBox groupBox22;
         private System.Windows.Forms.Button btnRaceExport;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
@@ -9043,11 +9077,15 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Lap6;
         private System.Windows.Forms.DataGridViewTextBoxColumn BestLapTime;
         private System.Windows.Forms.DataGridViewTextBoxColumn avgLapTimeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.NumericUpDown nudMinLapTime;
+        private System.Windows.Forms.NumericUpDown nudMinFirstLapTime;
         private System.Windows.Forms.DataGridViewTextBoxColumn rankNumberDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pilotNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn bestLapTimeStringDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn avgLapTimeStringDataGridViewTextBoxColumn;
+        private System.Windows.Forms.NumericUpDown nudMinLapTime;
+        private System.Windows.Forms.Label label117;
+        private System.Windows.Forms.Label label118;
+        private System.Windows.Forms.ComboBox cmbRaceMode;
     }
 }
 

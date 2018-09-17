@@ -67,11 +67,13 @@ namespace RaceManager.UI
         public MainForm()
         {
             InitializeComponent();
-            
+
             _timer.Elapsed += _timer_Elapsed;
 
             _db = new ApplicationContext();
             _race = new Race();
+
+            cmbRaceMode.SelectedIndex = 0;
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -103,11 +105,10 @@ namespace RaceManager.UI
             cmbSession.SelectedIndex = 0;
             cmbTarget.SelectedIndex = 0;
             cmbReturnLossFreq.SelectedIndex = 33;
-            if (cbUserDefineFreq.Checked == true)
+            if (cbUserDefineFreq.Checked)
             {
                 groupBox21.Enabled = false;
                 groupBox23.Enabled = true;
-
             }
             else
             {
@@ -121,7 +122,7 @@ namespace RaceManager.UI
 
           //  tabEpcTest.Controls.Remove(pageRealMode);
             tabEpcTest.Controls.Remove(pageBufferedMode);
-            tabEpcTest.Controls.Remove(pageFast4AntMode);
+           // tabEpcTest.Controls.Remove(pageFast4AntMode);
 
             btnRaceStop.Enabled = false;
 
@@ -4992,10 +4993,20 @@ namespace RaceManager.UI
             }
 
             EnableDisableRaceControls(false);
-            StartStopInventory();
+
+            if (cmbRaceMode.SelectedIndex == 0)
+                StartStopInventoryReal();
+
+            if (cmbRaceMode.SelectedIndex == 1)
+                StartStopInventoryFastSwitch();
         }
 
-        private void StartStopInventory()
+        private void StartStopInventoryFastSwitch()
+        {
+            MessageBox.Show("The selected mode is not implemented yet.");
+        }
+
+        private void StartStopInventoryReal()
         {
             try
             {
@@ -5070,7 +5081,8 @@ namespace RaceManager.UI
             if (lap == null) return;
             Debug.WriteLine("tag = " + tag + ", lap = "+lap.OrderNumber+", time = " + _raceTime);
 
-            lap.RegisterLapTime(_raceTime, (double) nudMinLapTime.Value);
+            var success = lap.RegisterLapTime(_raceTime, (double) nudMinFirstLapTime.Value, (double)nudMinLapTime.Value);
+            if (!success) return;
 
             var file = ConfigurationManager.AppSettings["TagReadSoundFile"];
             if (File.Exists(file))
@@ -5142,7 +5154,7 @@ namespace RaceManager.UI
 
             ShowRaceTime();
             EnableDisableRaceControls(true);
-            StartStopInventory();
+            StartStopInventoryReal();
         }
 
         private void btnRaceReset_Click(object sender, EventArgs e)
@@ -5535,6 +5547,11 @@ namespace RaceManager.UI
                 avgLapTimeStringDataGridViewTextBoxColumn.Visible = true;
                 bestLapTimeStringDataGridViewTextBoxColumn.Visible = false;
             }
+        }
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -88,6 +88,7 @@ namespace RaceManager.Data
         public int IdentCount { get; set; }
         public string Rssi { get; set; }
         public decimal CarrFrequency { get; set; }
+        public TimeSpan? StartTime { get; set; }
         private List<TimeSpan?> LapsTime { get; set; }
         public string Lap1 => LapsTime?.ElementAtOrDefault(0, null)?.ToString("g");
         public string Lap2 => LapsTime?.ElementAtOrDefault(1, null)?.ToString("g");
@@ -131,21 +132,36 @@ namespace RaceManager.Data
 
         private TimeSpan _prevRaceTime = TimeSpan.Zero;
 
-        public void RegisterLapTime(TimeSpan raceTime, double minLapTime)
+        public bool RegisterLapTime(TimeSpan raceTime, double minFirstLapTime, double minLapTime)
         {
             if (LapsTime == null) LapsTime = new List<TimeSpan?>();
-
+            
             var diff = raceTime - _prevRaceTime;
 
-            if (diff.TotalSeconds >= minLapTime)
-                LapsTime.Add(diff);
+            // For the first lap we need to compare time with another variable than next laps
+            if (!StartTime.HasValue)
+            {
+                if (diff.TotalSeconds >= minFirstLapTime)
+                    StartTime = diff;
+                else
+                {
+                    Debug.WriteLine("Tag = " + Epc + ", diff = " + diff.TotalSeconds + ", skipping the first lap");
+                    return false;
+                }
+            }
             else
             {
-                Debug.WriteLine("Tag = " + Epc + ", diff = " + diff.TotalSeconds + ", skipping");
-                return;
+                if (diff.TotalSeconds >= minLapTime)
+                    LapsTime.Add(diff);
+                else
+                {
+                    Debug.WriteLine("Tag = " + Epc + ", diff = " + diff.TotalSeconds + ", skipping");
+                    return false;
+                }
             }
 
             _prevRaceTime = raceTime;
+            return true;
         }
     }
 }
