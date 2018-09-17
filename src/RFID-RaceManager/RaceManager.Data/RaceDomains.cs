@@ -85,7 +85,7 @@ namespace RaceManager.Data
         public int RankNumber { get; set; }
         public string Epc { get; set; }
         public string Pc { get; set; }
-        public int IdentCount { get; set; }
+        public int IdCount { get; set; }
         public string Rssi { get; set; }
         public decimal CarrFrequency { get; set; }
         public TimeSpan? StartTime { get; set; }
@@ -161,6 +161,7 @@ namespace RaceManager.Data
             }
 
             _prevRaceTime = raceTime;
+            IdCount++;
             return true;
         }
     }

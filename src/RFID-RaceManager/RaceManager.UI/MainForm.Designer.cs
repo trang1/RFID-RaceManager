@@ -3287,9 +3287,9 @@
             this.Pc.ReadOnly = true;
             this.Pc.Width = 50;
             // 
-            // IdentCount
+            // IdCount
             // 
-            this.IdentCount.DataPropertyName = "IdentCount";
+            this.IdentCount.DataPropertyName = "IdCount";
             this.IdentCount.HeaderText = "ID Count";
             this.IdentCount.Name = "IdentCount";
             this.IdentCount.ReadOnly = true;

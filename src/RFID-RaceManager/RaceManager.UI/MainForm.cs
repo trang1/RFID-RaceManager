@@ -126,7 +126,7 @@ namespace RaceManager.UI
 
             btnRaceStop.Enabled = false;
 
-            _db.Races.Load();
+            //_db.Races.Load();
         }
 
         private void ReceiveData(byte[] btAryReceiveData)
@@ -5154,7 +5154,12 @@ namespace RaceManager.UI
 
             ShowRaceTime();
             EnableDisableRaceControls(true);
-            StartStopInventoryReal();
+
+            if (cmbRaceMode.SelectedIndex == 0)
+                StartStopInventoryReal();
+
+            if (cmbRaceMode.SelectedIndex == 1)
+                StartStopInventoryFastSwitch();
         }
 
         private void btnRaceReset_Click(object sender, EventArgs e)
