@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -89,13 +90,52 @@ namespace RaceManager.Data
         public string Rssi { get; set; }
         public decimal CarrFrequency { get; set; }
         public TimeSpan? StartTime { get; set; }
-        private List<TimeSpan?> LapsTime { get; set; }
-        public string Lap1 => LapsTime?.ElementAtOrDefault(0, null)?.ToString("g");
-        public string Lap2 => LapsTime?.ElementAtOrDefault(1, null)?.ToString("g");
-        public string Lap3 => LapsTime?.ElementAtOrDefault(2, null)?.ToString("g");
-        public string Lap4 => LapsTime?.ElementAtOrDefault(3, null)?.ToString("g");
-        public string Lap5 => LapsTime?.ElementAtOrDefault(4, null)?.ToString("g");
-        public string Lap6 => LapsTime?.ElementAtOrDefault(5, null)?.ToString("g");
+
+        private TimeSpan?[] _lapsTime = {null, null, null, null, null, null};
+        public int LapsCount => _lapsTime.Count(l => l.HasValue);
+
+        public string Lap1
+        {
+            get { return _lapsTime[0]?.ToString("g"); }
+            set { SetLapTime(0, value); }
+        }
+
+        public string Lap2
+        {
+            get { return _lapsTime[1]?.ToString("g"); }
+            set { SetLapTime(1, value); }
+        }
+        public string Lap3
+        {
+            get { return _lapsTime[2]?.ToString("g"); }
+            set { SetLapTime(2, value); }
+        }
+        public string Lap4
+        {
+            get { return _lapsTime[3]?.ToString("g"); }
+            set { SetLapTime(3, value); }
+        }
+        public string Lap5
+        {
+            get { return _lapsTime[4]?.ToString("g"); }
+            set { SetLapTime(4, value); }
+        }
+        public string Lap6
+        {
+            get { return _lapsTime[5]?.ToString("g"); }
+            set { SetLapTime(5, value); }
+        }
+
+        private void SetLapTime(int index, string value)
+        {
+            TimeSpan ts;
+            if (TimeSpan.TryParse(value, out ts))
+            {
+                _lapsTime[index] = ts;
+            }
+            else
+                _lapsTime[index] = null;
+        }
 
         public TimeSpan? BestLapTime
         {
@@ -103,7 +143,7 @@ namespace RaceManager.Data
             {
                 try
                 {
-                    return LapsTime.Min();
+                    return _lapsTime.Min();
                 }
                 catch
                 {
@@ -120,7 +160,8 @@ namespace RaceManager.Data
             {
                 try
                 {
-                    return TimeSpan.FromMilliseconds(LapsTime.Average(l => l.Value.TotalMilliseconds));
+                    return
+                        TimeSpan.FromMilliseconds(_lapsTime.Where(l => l.HasValue).Average(l => l.Value.TotalMilliseconds));
                 }
                 catch
                 {
@@ -134,9 +175,10 @@ namespace RaceManager.Data
 
         public bool RegisterLapTime(TimeSpan raceTime, double minFirstLapTime, double minLapTime)
         {
-            if (LapsTime == null) LapsTime = new List<TimeSpan?>();
+            //if (_lapsTime == null) _lapsTime = new List<TimeSpan?>();
             
             var diff = raceTime - _prevRaceTime;
+            IdCount++;
 
             // For the first lap we need to compare time with another variable than next laps
             if (!StartTime.HasValue)
@@ -152,7 +194,10 @@ namespace RaceManager.Data
             else
             {
                 if (diff.TotalSeconds >= minLapTime)
-                    LapsTime.Add(diff);
+                {
+                    var prev = Array.IndexOf(_lapsTime, null);
+                    _lapsTime[prev] = diff;
+                }
                 else
                 {
                     Debug.WriteLine("Tag = " + Epc + ", diff = " + diff.TotalSeconds + ", skipping");
@@ -161,7 +206,6 @@ namespace RaceManager.Data
             }
 
             _prevRaceTime = raceTime;
-            IdCount++;
             return true;
         }
     }

@@ -5078,7 +5078,7 @@ namespace RaceManager.UI
             tag = CleanTag(tag);
             var lap = _selectedRaceEvent.Laps.FirstOrDefault(l => l.Epc == tag);
 
-            if (lap == null) return;
+            if (lap == null || lap.LapsCount >= nudNumOfLaps.Value) return;
             Debug.WriteLine("tag = " + tag + ", lap = "+lap.OrderNumber+", time = " + _raceTime);
 
             var success = lap.RegisterLapTime(_raceTime, (double) nudMinFirstLapTime.Value, (double)nudMinLapTime.Value);
