@@ -713,6 +713,10 @@ namespace RaceManager.UI
                                 }
                             }
 
+                            if (_timer.IsRunning)
+                            {
+                                RegisterTag();
+                            }
                         }
                         break;
                     case 0x01:
@@ -2593,6 +2597,7 @@ namespace RaceManager.UI
         {
             string strCmd = "Real time inventory with fast ant switch";
             string strErrorCode = string.Empty;
+            m_curInventoryBuffer.drLastTag = null;
 
             if (msgTran.AryData.Length == 1)
             {
@@ -2695,6 +2700,14 @@ namespace RaceManager.UI
 
                     m_curInventoryBuffer.dtTagTable.Rows.Add(row1);
                     m_curInventoryBuffer.dtTagTable.AcceptChanges();
+
+                    var row = m_curInventoryBuffer.dtTagDetailTable.NewRow();
+                    row[0] = strEPC;
+                    row[1] = strRSSI;
+                    row[2] = strAntId;
+                    row[3] = strFreq;
+                    Debug.WriteLine(row[0] + "\r\n" + row[1] + "\r\n");
+                    m_curInventoryBuffer.drLastTag = row;
                 }
                 else
                 {
@@ -4981,7 +4994,8 @@ namespace RaceManager.UI
             _timer.Start();
 
             var file = ConfigurationManager.AppSettings["StartSoundFile"];
-            if (File.Exists(file))
+            var path = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), file);
+            if (File.Exists(path))
             {
                 var player = new SoundPlayer();
                 player.SoundLocation = file;
@@ -5003,13 +5017,123 @@ namespace RaceManager.UI
 
         private void StartStopInventoryFastSwitch()
         {
-            MessageBox.Show("The selected mode is not implemented yet.");
+            short antASelection = 1;
+            short antBSelection = 1;
+            short antCSelection = 1;
+            short antDSelection = 1;
+
+            //Default cycle to send commands
+            if (m_curInventoryBuffer.bLoopInventory)
+            {
+                m_bInventory = false;
+                m_curInventoryBuffer.bLoopInventory = false;
+                return;
+            }
+            
+            m_bInventory = true;
+            m_curInventoryBuffer.bLoopInventory = true;
+
+            try
+            {
+                m_curInventoryBuffer.bLoopInventoryReal = true;
+
+                m_curInventoryBuffer.ClearInventoryRealResult();
+                lvFastList.Items.Clear();
+
+                m_nTotal = 0;
+
+                if (!cbRaceAnt1.Checked)
+                {
+                    m_btAryData[0] = 0xFF;
+                }
+                else
+                {
+                    m_btAryData[0] = 0;
+                }
+                
+                m_btAryData[1] = 1;
+
+                if (!cbRaceAnt2.Checked)
+                {
+                    m_btAryData[2] = 0xFF;
+                }
+                else
+                {
+                    m_btAryData[2] = 1;
+                }
+                m_btAryData[3] = 1;
+
+                if (!cbRaceAnt3.Checked)
+                {
+                    m_btAryData[4] = 0xFF;
+                }
+                else
+                {
+                    m_btAryData[4] = 2;
+                }
+                m_btAryData[5] = 1;
+
+                if (!cbRaceAnt4.Checked)
+                {
+                    m_btAryData[6] = 0xFF;
+                }
+                else
+                {
+                    m_btAryData[6] = 3;
+                }
+                m_btAryData[7] = 1;
+                
+                m_btAryData[8] = 1; // Interval
+                m_btAryData[9] = Convert.ToByte("10"); // Number of repeats
+                
+                if (m_btAryData[0] > 3)
+                {
+                    antASelection = 0;
+                }
+                if (m_btAryData[2] > 3)
+                {
+                    antBSelection = 0;
+                }
+                if (m_btAryData[4] > 3)
+                {
+                    antCSelection = 0;
+                }
+                if (m_btAryData[6] > 3)
+                {
+                    antDSelection = 0;
+                }
+
+                if ((antASelection * m_btAryData[1] + antBSelection * m_btAryData[3] + antCSelection * m_btAryData[5] + antDSelection * m_btAryData[7]) * m_btAryData[9] == 0)
+                {
+                    MessageBox.Show("One antenna must be selected.");
+                    m_bInventory = false;
+                    m_curInventoryBuffer.bLoopInventory = false;
+                    return;
+                }
+
+                m_nSwitchTotal = 0;
+                m_nSwitchTime = 0;
+                reader.FastSwitchInventory(m_curSetting.btReadId, m_btAryData);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void StartStopInventoryReal()
         {
             try
             {
+                //Default cycle to send commands
+                if (m_curInventoryBuffer.bLoopInventory)
+                {
+                    m_bInventory = false;
+                    m_curInventoryBuffer.bLoopInventory = false;
+                    timerInventory.Enabled = false;
+                    return;
+                }
+
                 m_curInventoryBuffer.ClearInventoryPar();
                 m_curInventoryBuffer.btRepeat = 1;
                 m_curInventoryBuffer.bLoopCustomizedSession = false;
@@ -5033,14 +5157,6 @@ namespace RaceManager.UI
                 if (m_curInventoryBuffer.lAntenna.Count == 0)
                 {
                     MessageBox.Show("One antenna must be selected");
-                    return;
-                }
-                //Default cycle to send commands
-                if (m_curInventoryBuffer.bLoopInventory)
-                {
-                    m_bInventory = false;
-                    m_curInventoryBuffer.bLoopInventory = false;
-                    timerInventory.Enabled = false;
                     return;
                 }
 
@@ -5085,7 +5201,8 @@ namespace RaceManager.UI
             if (!success) return;
 
             var file = ConfigurationManager.AppSettings["TagReadSoundFile"];
-            if (File.Exists(file))
+            var path = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), file);
+            if (File.Exists(path))
             {
                 var player = new SoundPlayer();
                 player.SoundLocation = file;
@@ -5100,26 +5217,6 @@ namespace RaceManager.UI
 
             UpdateRankings();
             bindingSourceRanking.ResetBindings(false);
-            //row1[0] = strPC;
-            //row1[2] = strEPC;
-            //row1[4] = strRSSI;
-
-
-            //Update the number of read time in list.
-            //if (m_nTotal % m_nRealRate == 1)
-            //{
-            //    int nIndex = 0;
-            //    foreach (DataRow row in m_curInventoryBuffer.dtTagTable.Rows)
-            //    {
-            //        ListViewItem item;
-            //        item = lvRealList.Items[nIndex];
-            //        item.SubItems[3].Text = row[5].ToString();
-            //        item.SubItems[4].Text = (Convert.ToInt32(row[4]) - 129).ToString() + "dBm";
-            //        item.SubItems[5].Text = row[6].ToString();
-
-            //        nIndex++;
-            //    }
-            //}
         }
 
         private string CleanTag(string tag)
