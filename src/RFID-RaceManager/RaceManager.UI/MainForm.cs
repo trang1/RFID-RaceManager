@@ -126,7 +126,7 @@ namespace RaceManager.UI
 
             btnRaceStop.Enabled = false;
 
-            //_db.Races.Load();
+            _db.Races.Load();
         }
 
         private void ReceiveData(byte[] btAryReceiveData)
