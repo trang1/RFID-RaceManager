@@ -73,7 +73,17 @@ namespace RaceManager.Data
         public string Email { get; set; }
         public bool Confirmation { get; set; }
 
-        public string ConfirmationString => Confirmation ? "Yes" : "No";
+        public string ConfirmationString
+        {
+            get { return Confirmation ? "Yes" : "No"; }
+            set
+            {
+                if(string.IsNullOrEmpty(value)) return;
+
+                if (value.ToLower() == "yes") Confirmation = true;
+                if (value.ToLower() == "no") Confirmation = false;
+            }
+        }
     }
 
     public class LapsInfo
@@ -160,8 +170,8 @@ namespace RaceManager.Data
             {
                 try
                 {
-                    return
-                        TimeSpan.FromMilliseconds(_lapsTime.Where(l => l.HasValue).Average(l => l.Value.TotalMilliseconds));
+                    var bestLapTimes = _lapsTime.OrderBy(l => l.GetValueOrDefault(TimeSpan.MaxValue));
+                    return TimeSpan.FromMilliseconds(bestLapTimes.Take(3).Where(l => l.HasValue).Average(l => l.Value.TotalMilliseconds));
                 }
                 catch
                 {

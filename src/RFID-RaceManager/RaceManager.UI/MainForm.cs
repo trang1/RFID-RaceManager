@@ -550,7 +550,7 @@ namespace RaceManager.UI
                                 }
                             }
 
-                            if (_timer.IsRunning)
+                            if (_timer.IsRunning && cmbRaceMode.SelectedIndex == 0)
                             {
                                 RegisterTag();
                             }
@@ -713,7 +713,7 @@ namespace RaceManager.UI
                                 }
                             }
 
-                            if (_timer.IsRunning)
+                            if (_timer.IsRunning && cmbRaceMode.SelectedIndex == 1)
                             {
                                 RegisterTag();
                             }
@@ -2618,8 +2618,11 @@ namespace RaceManager.UI
 
             else if (msgTran.AryData.Length == 7)
             {
-                m_nSwitchTotal = Convert.ToInt32(msgTran.AryData[0]) * 255 * 255  + Convert.ToInt32(msgTran.AryData[1]) * 255  + Convert.ToInt32(msgTran.AryData[2]);
-                m_nSwitchTime = Convert.ToInt32(msgTran.AryData[3]) * 255 * 255 * 255 + Convert.ToInt32(msgTran.AryData[4]) * 255 * 255 + Convert.ToInt32(msgTran.AryData[5]) * 255 + Convert.ToInt32(msgTran.AryData[6]);
+                m_nSwitchTotal = Convert.ToInt32(msgTran.AryData[0])*255*255 + Convert.ToInt32(msgTran.AryData[1])*255 +
+                                 Convert.ToInt32(msgTran.AryData[2]);
+                m_nSwitchTime = Convert.ToInt32(msgTran.AryData[3])*255*255*255 +
+                                Convert.ToInt32(msgTran.AryData[4])*255*255 + Convert.ToInt32(msgTran.AryData[5])*255 +
+                                Convert.ToInt32(msgTran.AryData[6]);
 
                 m_curInventoryBuffer.nDataCount = m_nSwitchTotal;
                 m_curInventoryBuffer.nCommandDuration = m_nSwitchTime;
@@ -2647,16 +2650,16 @@ namespace RaceManager.UI
                 int nEpcLength = nLength - 4;
 
                 //Add inventory list
-                string strEPC = CCommondMethod.ByteArrayToString(msgTran.AryData, 3, nEpcLength);                
+                string strEPC = CCommondMethod.ByteArrayToString(msgTran.AryData, 3, nEpcLength);
                 string strPC = CCommondMethod.ByteArrayToString(msgTran.AryData, 1, 2);
                 string strRSSI = msgTran.AryData[nLength - 1].ToString();
                 SetMaxMinRSSI(Convert.ToInt32(msgTran.AryData[nLength - 1]));
                 byte btTemp = msgTran.AryData[0];
-                byte btAntId = (byte)((btTemp & 0x03) + 1);
-                m_curInventoryBuffer.nCurrentAnt = (int)btAntId;
+                byte btAntId = (byte) ((btTemp & 0x03) + 1);
+                m_curInventoryBuffer.nCurrentAnt = (int) btAntId;
                 string strAntId = btAntId.ToString();
-                byte btFreq = (byte)(btTemp >> 2);
-                
+                byte btFreq = (byte) (btTemp >> 2);
+
                 string strFreq = GetFreqString(btFreq);
 
                 DataRow[] drs = m_curInventoryBuffer.dtTagTable.Select(string.Format("COLEPC = '{0}'", strEPC));
@@ -2672,27 +2675,27 @@ namespace RaceManager.UI
                     row1[8] = "0";
                     row1[9] = "0";
                     row1[10] = "0";
-                    switch(btAntId)
+                    switch (btAntId)
                     {
                         case 0x01:
-                            {
-                                row1[7] = "1";
-                            }
+                        {
+                            row1[7] = "1";
+                        }
                             break;
                         case 0x02:
-                            {
-                                row1[8] = "1";
-                            }
+                        {
+                            row1[8] = "1";
+                        }
                             break;
                         case 0x03:
-                            {
-                                row1[9] = "1";
-                            }
+                        {
+                            row1[9] = "1";
+                        }
                             break;
                         case 0x04:
-                            {
-                                row1[10] = "1";
-                            }
+                        {
+                            row1[10] = "1";
+                        }
                             break;
                         default:
                             break;
@@ -2701,13 +2704,7 @@ namespace RaceManager.UI
                     m_curInventoryBuffer.dtTagTable.Rows.Add(row1);
                     m_curInventoryBuffer.dtTagTable.AcceptChanges();
 
-                    var row = m_curInventoryBuffer.dtTagDetailTable.NewRow();
-                    row[0] = strEPC;
-                    row[1] = strRSSI;
-                    row[2] = strAntId;
-                    row[3] = strFreq;
-                    Debug.WriteLine(row[0] + "\r\n" + row[1] + "\r\n");
-                    m_curInventoryBuffer.drLastTag = row;
+
                 }
                 else
                 {
@@ -2722,35 +2719,35 @@ namespace RaceManager.UI
                         dr[5] = (nTemp + 1).ToString();
                         dr[6] = strFreq;
 
-                        switch(btAntId)
+                        switch (btAntId)
                         {
                             case 0x01:
-                                {
-                                    //dr[7] = (Convert.ToInt32(dr[7]) + 1).ToString();
-                                    nTemp = Convert.ToInt32(dr[7]);
-                                    dr[7] = (nTemp + 1).ToString();
-                                }
+                            {
+                                //dr[7] = (Convert.ToInt32(dr[7]) + 1).ToString();
+                                nTemp = Convert.ToInt32(dr[7]);
+                                dr[7] = (nTemp + 1).ToString();
+                            }
                                 break;
                             case 0x02:
-                                {
-                                    //dr[8] = (Convert.ToInt32(dr[8]) + 1).ToString();
-                                    nTemp = Convert.ToInt32(dr[8]);
-                                    dr[8] = (nTemp + 1).ToString();
-                                }
+                            {
+                                //dr[8] = (Convert.ToInt32(dr[8]) + 1).ToString();
+                                nTemp = Convert.ToInt32(dr[8]);
+                                dr[8] = (nTemp + 1).ToString();
+                            }
                                 break;
                             case 0x03:
-                                {
-                                    //dr[9] = (Convert.ToInt32(dr[9]) + 1).ToString();
-                                    nTemp = Convert.ToInt32(dr[9]);
-                                    dr[9] = (nTemp + 1).ToString();
-                                }
+                            {
+                                //dr[9] = (Convert.ToInt32(dr[9]) + 1).ToString();
+                                nTemp = Convert.ToInt32(dr[9]);
+                                dr[9] = (nTemp + 1).ToString();
+                            }
                                 break;
                             case 0x04:
-                                {
-                                    //dr[10] = (Convert.ToInt32(dr[10]) + 1).ToString();
-                                    nTemp = Convert.ToInt32(dr[10]);
-                                    dr[10] = (nTemp + 1).ToString();
-                                }
+                            {
+                                //dr[10] = (Convert.ToInt32(dr[10]) + 1).ToString();
+                                nTemp = Convert.ToInt32(dr[10]);
+                                dr[10] = (nTemp + 1).ToString();
+                            }
                                 break;
                             default:
                                 break;
@@ -2761,10 +2758,17 @@ namespace RaceManager.UI
                     m_curInventoryBuffer.dtTagTable.AcceptChanges();
                 }
 
+                var row = m_curInventoryBuffer.dtTagDetailTable.NewRow();
+                row[0] = strEPC;
+                row[1] = strRSSI;
+                row[2] = strAntId;
+                row[3] = strFreq;
+                Debug.WriteLine(row[0] + "\r\n" + row[1] + "\r\n" + row[2] + "\r\n" + row[3] + "\r\n");
+                m_curInventoryBuffer.drLastTag = row;
+
                 m_curInventoryBuffer.dtEndInventory = DateTime.Now;
                 RefreshFastSwitch(0x00);
             }
-
         }
 
         private void ProcessInventoryReal(Reader.MessageTran msgTran)
@@ -4714,7 +4718,6 @@ namespace RaceManager.UI
         {
             m_curInventoryBuffer.ClearInventoryRealResult();
             lvFastList.Items.Clear();
-            lvFastList.Items.Clear();
             ledFast1.Text = "0";
             ledFast2.Text = "0";
             ledFast3.Text = "0";
@@ -4741,7 +4744,7 @@ namespace RaceManager.UI
 
         private void pageFast4AntMode_Enter(object sender, EventArgs e)
         {
-            buttonFastFresh_Click(sender, e);
+           // buttonFastFresh_Click(sender, e);
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -5221,10 +5224,12 @@ namespace RaceManager.UI
 
         private string CleanTag(string tag)
         {
-            int i;
-            if (int.TryParse(tag.Replace(" ", ""), out i))
-                return i.ToString();
-            return tag;
+            return new string(tag.Skip(tag.Length - 2).ToArray());
+
+            //int i;
+            //if (int.TryParse(tag.Replace(" ", ""), out i))
+            //    return i.ToString();
+            //return tag;
         }
 
         private void _timer_Elapsed(object sender, HighResolutionTimerElapsedEventArgs e)
@@ -5232,7 +5237,7 @@ namespace RaceManager.UI
             _raceTime = _raceTime.Add(TimeSpan.FromMilliseconds(1));
 
             // Improving perfomance
-            if (_raceTime.Milliseconds%5 == 0)
+            if (_raceTime.Milliseconds%5 == 0 && !Disposing)
             {
                 BeginInvoke(new Action(ShowRaceTime));
             }
@@ -5388,8 +5393,12 @@ namespace RaceManager.UI
         private void btnAddPilotsToGroups_Click(object sender, EventArgs e)
         {
             _race.Groups = new List<Group>();
+
             // shuffle pilots
-            Pilots = Pilots.OrderBy(a => Guid.NewGuid()).ToList();
+            //Pilots = Pilots.OrderBy(a => Guid.NewGuid()).ToList(); 
+            // 20.09.2018 - do NOT shuffle pilots
+            
+            
             // get "pilots per group" value
             var ppg = (int) nudPilotsPerGroup.Value;
             var group = new Group
