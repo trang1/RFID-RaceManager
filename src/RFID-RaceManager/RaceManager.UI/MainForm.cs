@@ -4872,7 +4872,7 @@ namespace RaceManager.UI
         }
         private void cbRealSession_CheckedChanged(object sender, EventArgs e)
         {
-            if (cbRealSession.Checked == true)
+            if (cbRealSession.Checked)
             {
                 label97.Enabled = true;
                 label98.Enabled = true;
@@ -4898,7 +4898,7 @@ namespace RaceManager.UI
 
         private void cbUserDefineFreq_CheckedChanged(object sender, EventArgs e)
         {
-            if (cbUserDefineFreq.Checked == true)
+            if (cbUserDefineFreq.Checked)
             {
                 groupBox21.Enabled = false;
                 groupBox23.Enabled = true;
@@ -5218,7 +5218,7 @@ namespace RaceManager.UI
 
             bindingSourceRace.ResetBindings(false);
 
-            UpdateRankings();
+            UpdateRanking();
             bindingSourceRanking.ResetBindings(false);
         }
 
@@ -5389,6 +5389,12 @@ namespace RaceManager.UI
         {
            
         }
+
+
+        #endregion
+
+        #region Round Management
+
 
         private void btnAddPilotsToGroups_Click(object sender, EventArgs e)
         {
@@ -5594,15 +5600,30 @@ namespace RaceManager.UI
             }
         }
 
+        private void btnAddPilotsToQF_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAddPilotsToGroupsSF_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAddPilotsToGroupsF_Click(object sender, EventArgs e)
+        {
+
+        }
 
         #endregion
 
+        #region Ranking
         private void cmbDisplayRanking_SelectedIndexChanged(object sender, EventArgs e)
         {
-            UpdateRankings();
+            UpdateRanking();
         }
 
-        private void UpdateRankings()
+        private void UpdateRanking()
         {
             // Best lap ranking
             if (cmbDisplayRanking.SelectedIndex == 0)
@@ -5659,10 +5680,6 @@ namespace RaceManager.UI
                 bestLapTimeStringDataGridViewTextBoxColumn.Visible = false;
             }
         }
-
-        private void label18_Click(object sender, EventArgs e)
-        {
-
-        }
+    #endregion
     }
 }

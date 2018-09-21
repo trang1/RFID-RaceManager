@@ -34,6 +34,10 @@
             this.PagReaderSetting = new System.Windows.Forms.TabPage();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.ckClearOperationRec = new System.Windows.Forms.CheckBox();
+            this.ckDisplayLog = new System.Windows.Forms.CheckBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.lrtxtLog = new CustomControl.LogRichTextBox();
             this.btReaderSetupRefresh = new System.Windows.Forms.Button();
             this.gbCmdReadGpio = new System.Windows.Forms.GroupBox();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
@@ -160,148 +164,6 @@
             this.nudNumOfLaps = new System.Windows.Forms.NumericUpDown();
             this.label113 = new System.Windows.Forms.Label();
             this.label112 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.groupBox29 = new System.Windows.Forms.GroupBox();
-            this.nudPilotsPerGroup = new System.Windows.Forms.NumericUpDown();
-            this.btnAddPilotsToGroups = new System.Windows.Forms.Button();
-            this.label111 = new System.Windows.Forms.Label();
-            this.tabControl2 = new System.Windows.Forms.TabControl();
-            this.pageGroupA = new System.Windows.Forms.TabPage();
-            this.gvGroupA = new System.Windows.Forms.DataGridView();
-            this.orderNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nicknameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.teamDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tagDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.confirmationStringDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bindingSourcePilots = new System.Windows.Forms.BindingSource(this.components);
-            this.pageGroupB = new System.Windows.Forms.TabPage();
-            this.gvGroupB = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pageGroupC = new System.Windows.Forms.TabPage();
-            this.gvGroupC = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pageGroupD = new System.Windows.Forms.TabPage();
-            this.gvGroupD = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pageGroupE = new System.Windows.Forms.TabPage();
-            this.gvGroupE = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pageGroupF = new System.Windows.Forms.TabPage();
-            this.gvGroupF = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pageGroupG = new System.Windows.Forms.TabPage();
-            this.gvGroupG = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn40 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn42 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pageGroupH = new System.Windows.Forms.TabPage();
-            this.gvGroupH = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn43 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn44 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn45 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn46 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn47 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn48 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn49 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pageGroupI = new System.Windows.Forms.TabPage();
-            this.gvGroupI = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn50 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn51 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn52 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn53 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn54 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn55 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn56 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pageGroupJ = new System.Windows.Forms.TabPage();
-            this.gvGroupJ = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn57 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn58 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn59 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn60 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn61 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn62 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn63 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pageGroupK = new System.Windows.Forms.TabPage();
-            this.gvGroupK = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn64 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn65 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn66 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn67 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn68 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn69 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn70 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pageGroupL = new System.Windows.Forms.TabPage();
-            this.gvGroupL = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn71 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn72 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn73 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn74 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn75 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn76 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn77 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pageGroupM = new System.Windows.Forms.TabPage();
-            this.gvGroupM = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn78 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn79 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn80 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn81 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn82 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn83 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn84 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pageGroupN = new System.Windows.Forms.TabPage();
-            this.gvGroupN = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn85 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn86 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn87 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn88 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn89 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn90 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn91 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pageGroupO = new System.Windows.Forms.TabPage();
-            this.gvGroupO = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn92 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn93 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn94 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn95 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn96 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn97 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn98 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox27 = new System.Windows.Forms.GroupBox();
             this.btnAddPilotFromDb = new System.Windows.Forms.Button();
@@ -319,12 +181,38 @@
             this.label126 = new System.Windows.Forms.Label();
             this.groupBox28 = new System.Windows.Forms.GroupBox();
             this.gvPilots = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nicknameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.teamDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tagDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bindingSourcePilots1 = new System.Windows.Forms.BindingSource(this.components);
             this.tabRace = new System.Windows.Forms.TabPage();
             this.gvRace = new System.Windows.Forms.DataGridView();
+            this.OrderNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PilotName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Epc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Pc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IdentCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Rssi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CarrFrequency = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Lap1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Lap2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Lap3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Lap4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Lap5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Lap6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BestLapTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.avgLapTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bindingSourceRace = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox35 = new System.Windows.Forms.GroupBox();
             this.gvRanking = new System.Windows.Forms.DataGridView();
+            this.RankNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pilotNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bestLapTimeStringDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.avgLapTimeStringDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bindingSourceRanking = new System.Windows.Forms.BindingSource(this.components);
             this.cmbDisplayRanking = new System.Windows.Forms.ComboBox();
             this.label20 = new System.Windows.Forms.Label();
@@ -562,6 +450,233 @@
             this.cmbSetAccessEpcMatch = new System.Windows.Forms.ComboBox();
             this.txtAccessEpcMatch = new System.Windows.Forms.TextBox();
             this.ckAccessEpcMatch = new System.Windows.Forms.CheckBox();
+            this.tabRounds = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
+            this.groupBox38 = new System.Windows.Forms.GroupBox();
+            this.btnAddPilotsToGroupsF = new System.Windows.Forms.Button();
+            this.tabControl5 = new System.Windows.Forms.TabControl();
+            this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.gvGroupAF = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn141 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn142 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn143 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn144 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn145 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn146 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn147 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bindingSourcePilots = new System.Windows.Forms.BindingSource(this.components);
+            this.tabPage10 = new System.Windows.Forms.TabPage();
+            this.gvGroupBF = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn148 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn149 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn150 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn151 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn152 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn153 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn154 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
+            this.groupBox37 = new System.Windows.Forms.GroupBox();
+            this.btnAddPilotsToGroupsSF = new System.Windows.Forms.Button();
+            this.tabControl4 = new System.Windows.Forms.TabControl();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.gvGroupAS = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn127 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn128 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn129 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn130 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn131 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn132 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn133 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.gvGroupBS = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn134 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn135 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn136 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn137 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn138 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn139 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn140 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
+            this.groupBox36 = new System.Windows.Forms.GroupBox();
+            this.btnAddPilotsToQF = new System.Windows.Forms.Button();
+            this.tabControl3 = new System.Windows.Forms.TabControl();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.gvGroupAQ = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn99 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn100 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn101 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn102 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn103 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn104 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn105 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.gvGroupBQ = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn106 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn107 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn108 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn109 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn110 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn111 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn112 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.gvGroupCQ = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn113 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn114 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn115 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn116 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn117 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn118 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn119 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.gvGroupDQ = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn120 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn121 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn122 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn123 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn124 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn125 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn126 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.groupBox29 = new System.Windows.Forms.GroupBox();
+            this.nudPilotsPerGroup = new System.Windows.Forms.NumericUpDown();
+            this.btnAddPilotsToGroups = new System.Windows.Forms.Button();
+            this.label111 = new System.Windows.Forms.Label();
+            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.pageGroupA = new System.Windows.Forms.TabPage();
+            this.gvGroupA = new System.Windows.Forms.DataGridView();
+            this.orderNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nicknameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.teamDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tagDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.confirmationStringDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pageGroupB = new System.Windows.Forms.TabPage();
+            this.gvGroupB = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pageGroupC = new System.Windows.Forms.TabPage();
+            this.gvGroupC = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pageGroupD = new System.Windows.Forms.TabPage();
+            this.gvGroupD = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pageGroupE = new System.Windows.Forms.TabPage();
+            this.gvGroupE = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pageGroupF = new System.Windows.Forms.TabPage();
+            this.gvGroupF = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pageGroupG = new System.Windows.Forms.TabPage();
+            this.gvGroupG = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn40 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn42 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pageGroupH = new System.Windows.Forms.TabPage();
+            this.gvGroupH = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn43 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn44 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn45 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn46 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn47 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn48 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn49 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pageGroupI = new System.Windows.Forms.TabPage();
+            this.gvGroupI = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn50 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn51 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn52 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn53 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn54 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn55 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn56 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pageGroupJ = new System.Windows.Forms.TabPage();
+            this.gvGroupJ = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn57 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn58 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn59 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn60 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn61 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn62 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn63 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pageGroupK = new System.Windows.Forms.TabPage();
+            this.gvGroupK = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn64 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn65 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn66 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn67 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn68 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn69 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn70 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pageGroupL = new System.Windows.Forms.TabPage();
+            this.gvGroupL = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn71 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn72 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn73 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn74 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn75 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn76 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn77 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pageGroupM = new System.Windows.Forms.TabPage();
+            this.gvGroupM = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn78 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn79 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn80 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn81 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn82 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn83 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn84 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pageGroupN = new System.Windows.Forms.TabPage();
+            this.gvGroupN = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn85 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn86 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn87 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn88 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn89 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn90 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn91 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pageGroupO = new System.Windows.Forms.TabPage();
+            this.gvGroupO = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn92 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn93 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn94 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn95 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn96 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn97 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn98 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PagISO18000 = new System.Windows.Forms.TabPage();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnInventoryISO18000 = new System.Windows.Forms.Button();
@@ -613,8 +728,6 @@
             this.label115 = new System.Windows.Forms.Label();
             this.label116 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label35 = new System.Windows.Forms.Label();
-            this.ckDisplayLog = new System.Windows.Forms.CheckBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
@@ -654,40 +767,12 @@
             this.label89 = new System.Windows.Forms.Label();
             this.label90 = new System.Windows.Forms.Label();
             this.label91 = new System.Windows.Forms.Label();
-            this.ckClearOperationRec = new System.Windows.Forms.CheckBox();
-            this.lrtxtLog = new CustomControl.LogRichTextBox();
             this.lxLedControl14 = new LxControl.LxLedControl();
             this.lxLedControl15 = new LxControl.LxLedControl();
             this.lxLedControl16 = new LxControl.LxLedControl();
             this.lxLedControl17 = new LxControl.LxLedControl();
             this.lxLedControl18 = new LxControl.LxLedControl();
             this.timerInventory = new System.Windows.Forms.Timer(this.components);
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nicknameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.teamDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tagDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OrderNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PilotName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Epc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Pc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IdentCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Rssi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CarrFrequency = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Lap1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Lap2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Lap3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Lap4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Lap5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Lap6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BestLapTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.avgLapTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RankNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pilotNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bestLapTimeStringDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.avgLapTimeStringDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabCtrMain.SuspendLayout();
             this.PagReaderSetting.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -721,41 +806,6 @@
             this.groupBox30.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudNumberOfQualRounds)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudNumOfLaps)).BeginInit();
-            this.tableLayoutPanel7.SuspendLayout();
-            this.groupBox29.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudPilotsPerGroup)).BeginInit();
-            this.tabControl2.SuspendLayout();
-            this.pageGroupA.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupA)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourcePilots)).BeginInit();
-            this.pageGroupB.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupB)).BeginInit();
-            this.pageGroupC.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupC)).BeginInit();
-            this.pageGroupD.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupD)).BeginInit();
-            this.pageGroupE.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupE)).BeginInit();
-            this.pageGroupF.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupF)).BeginInit();
-            this.pageGroupG.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupG)).BeginInit();
-            this.pageGroupH.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupH)).BeginInit();
-            this.pageGroupI.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupI)).BeginInit();
-            this.pageGroupJ.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupJ)).BeginInit();
-            this.pageGroupK.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupK)).BeginInit();
-            this.pageGroupL.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupL)).BeginInit();
-            this.pageGroupM.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupM)).BeginInit();
-            this.pageGroupN.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupN)).BeginInit();
-            this.pageGroupO.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupO)).BeginInit();
             this.tableLayoutPanel8.SuspendLayout();
             this.groupBox27.SuspendLayout();
             this.groupBox28.SuspendLayout();
@@ -820,6 +870,67 @@
             this.groupBox14.SuspendLayout();
             this.groupBox17.SuspendLayout();
             this.groupBox13.SuspendLayout();
+            this.tabRounds.SuspendLayout();
+            this.tableLayoutPanel11.SuspendLayout();
+            this.groupBox38.SuspendLayout();
+            this.tabControl5.SuspendLayout();
+            this.tabPage9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupAF)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourcePilots)).BeginInit();
+            this.tabPage10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupBF)).BeginInit();
+            this.tableLayoutPanel10.SuspendLayout();
+            this.groupBox37.SuspendLayout();
+            this.tabControl4.SuspendLayout();
+            this.tabPage7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupAS)).BeginInit();
+            this.tabPage8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupBS)).BeginInit();
+            this.tableLayoutPanel9.SuspendLayout();
+            this.groupBox36.SuspendLayout();
+            this.tabControl3.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupAQ)).BeginInit();
+            this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupBQ)).BeginInit();
+            this.tabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupCQ)).BeginInit();
+            this.tabPage6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupDQ)).BeginInit();
+            this.tableLayoutPanel7.SuspendLayout();
+            this.groupBox29.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPilotsPerGroup)).BeginInit();
+            this.tabControl2.SuspendLayout();
+            this.pageGroupA.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupA)).BeginInit();
+            this.pageGroupB.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupB)).BeginInit();
+            this.pageGroupC.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupC)).BeginInit();
+            this.pageGroupD.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupD)).BeginInit();
+            this.pageGroupE.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupE)).BeginInit();
+            this.pageGroupF.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupF)).BeginInit();
+            this.pageGroupG.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupG)).BeginInit();
+            this.pageGroupH.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupH)).BeginInit();
+            this.pageGroupI.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupI)).BeginInit();
+            this.pageGroupJ.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupJ)).BeginInit();
+            this.pageGroupK.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupK)).BeginInit();
+            this.pageGroupL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupL)).BeginInit();
+            this.pageGroupM.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupM)).BeginInit();
+            this.pageGroupN.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupN)).BeginInit();
+            this.pageGroupO.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupO)).BeginInit();
             this.PagISO18000.SuspendLayout();
             this.gbISO1800LockQuery.SuspendLayout();
             this.gbISO1800ReadWrite.SuspendLayout();
@@ -853,7 +964,7 @@
             this.tabCtrMain.Location = new System.Drawing.Point(0, 0);
             this.tabCtrMain.Name = "tabCtrMain";
             this.tabCtrMain.SelectedIndex = 0;
-            this.tabCtrMain.Size = new System.Drawing.Size(1349, 530);
+            this.tabCtrMain.Size = new System.Drawing.Size(1349, 681);
             this.tabCtrMain.TabIndex = 0;
             this.tabCtrMain.SelectedIndexChanged += new System.EventHandler(this.tabCtrMain_SelectedIndexChanged);
             this.tabCtrMain.Click += new System.EventHandler(this.tabCtrMain_Click);
@@ -865,7 +976,7 @@
             this.PagReaderSetting.Location = new System.Drawing.Point(4, 22);
             this.PagReaderSetting.Name = "PagReaderSetting";
             this.PagReaderSetting.Padding = new System.Windows.Forms.Padding(3);
-            this.PagReaderSetting.Size = new System.Drawing.Size(1341, 504);
+            this.PagReaderSetting.Size = new System.Drawing.Size(1341, 655);
             this.PagReaderSetting.TabIndex = 0;
             this.PagReaderSetting.Text = "Reader Setup";
             // 
@@ -877,12 +988,16 @@
             this.tabControl1.Location = new System.Drawing.Point(3, 3);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1335, 498);
+            this.tabControl1.Size = new System.Drawing.Size(1335, 649);
             this.tabControl1.TabIndex = 15;
             // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPage1.Controls.Add(this.ckClearOperationRec);
+            this.tabPage1.Controls.Add(this.ckDisplayLog);
+            this.tabPage1.Controls.Add(this.label35);
+            this.tabPage1.Controls.Add(this.lrtxtLog);
             this.tabPage1.Controls.Add(this.btReaderSetupRefresh);
             this.tabPage1.Controls.Add(this.gbCmdReadGpio);
             this.tabPage1.Controls.Add(this.gbCmdBeeper);
@@ -894,13 +1009,55 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1327, 472);
+            this.tabPage1.Size = new System.Drawing.Size(1327, 623);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Basic Setup";
             // 
+            // ckClearOperationRec
+            // 
+            this.ckClearOperationRec.AutoSize = true;
+            this.ckClearOperationRec.Checked = true;
+            this.ckClearOperationRec.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.ckClearOperationRec.Location = new System.Drawing.Point(152, 453);
+            this.ckClearOperationRec.Name = "ckClearOperationRec";
+            this.ckClearOperationRec.Size = new System.Drawing.Size(75, 17);
+            this.ckClearOperationRec.TabIndex = 21;
+            this.ckClearOperationRec.Text = "Auto Clear";
+            this.ckClearOperationRec.UseVisualStyleBackColor = true;
+            // 
+            // ckDisplayLog
+            // 
+            this.ckDisplayLog.AutoSize = true;
+            this.ckDisplayLog.ForeColor = System.Drawing.Color.Indigo;
+            this.ckDisplayLog.Location = new System.Drawing.Point(817, 453);
+            this.ckDisplayLog.Name = "ckDisplayLog";
+            this.ckDisplayLog.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ckDisplayLog.Size = new System.Drawing.Size(154, 17);
+            this.ckDisplayLog.TabIndex = 20;
+            this.ckDisplayLog.Text = "Activate Serial Port Monitor";
+            this.ckDisplayLog.UseVisualStyleBackColor = true;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(14, 453);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(91, 13);
+            this.label35.TabIndex = 19;
+            this.label35.Text = "Operation History:";
+            // 
+            // lrtxtLog
+            // 
+            this.lrtxtLog.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lrtxtLog.Location = new System.Drawing.Point(3, 476);
+            this.lrtxtLog.Name = "lrtxtLog";
+            this.lrtxtLog.Size = new System.Drawing.Size(1321, 144);
+            this.lrtxtLog.TabIndex = 18;
+            this.lrtxtLog.Text = "";
+            // 
             // btReaderSetupRefresh
             // 
-            this.btReaderSetupRefresh.Location = new System.Drawing.Point(525, 402);
+            this.btReaderSetupRefresh.Location = new System.Drawing.Point(524, 388);
             this.btReaderSetupRefresh.Name = "btReaderSetupRefresh";
             this.btReaderSetupRefresh.Size = new System.Drawing.Size(375, 45);
             this.btReaderSetupRefresh.TabIndex = 15;
@@ -1268,7 +1425,7 @@
             // 
             // btnResetReader
             // 
-            this.btnResetReader.Location = new System.Drawing.Point(41, 402);
+            this.btnResetReader.Location = new System.Drawing.Point(41, 388);
             this.btnResetReader.Name = "btnResetReader";
             this.btnResetReader.Size = new System.Drawing.Size(375, 45);
             this.btnResetReader.TabIndex = 8;
@@ -1414,7 +1571,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1327, 472);
+            this.tabPage2.Size = new System.Drawing.Size(1327, 623);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "RF Setup";
             // 
@@ -2238,35 +2395,35 @@
             this.pageEpcTest.ForeColor = System.Drawing.SystemColors.Desktop;
             this.pageEpcTest.Location = new System.Drawing.Point(4, 22);
             this.pageEpcTest.Name = "pageEpcTest";
-            this.pageEpcTest.Size = new System.Drawing.Size(1341, 504);
+            this.pageEpcTest.Size = new System.Drawing.Size(1341, 655);
             this.pageEpcTest.TabIndex = 5;
             this.pageEpcTest.Text = "Race management";
             // 
             // tabEpcTest
             // 
             this.tabEpcTest.Controls.Add(this.tabPilots);
+            this.tabEpcTest.Controls.Add(this.tabRounds);
             this.tabEpcTest.Controls.Add(this.tabRace);
             this.tabEpcTest.Controls.Add(this.pageRealMode);
             this.tabEpcTest.Controls.Add(this.pageBufferedMode);
             this.tabEpcTest.Controls.Add(this.pageFast4AntMode);
             this.tabEpcTest.Controls.Add(this.pageAcessTag);
-            this.tabEpcTest.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tabEpcTest.Location = new System.Drawing.Point(0, 8);
+            this.tabEpcTest.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabEpcTest.Location = new System.Drawing.Point(0, 0);
             this.tabEpcTest.Name = "tabEpcTest";
             this.tabEpcTest.SelectedIndex = 0;
-            this.tabEpcTest.Size = new System.Drawing.Size(1339, 494);
+            this.tabEpcTest.Size = new System.Drawing.Size(1339, 653);
             this.tabEpcTest.TabIndex = 0;
             // 
             // tabPilots
             // 
             this.tabPilots.Controls.Add(this.groupBox30);
-            this.tabPilots.Controls.Add(this.tableLayoutPanel7);
             this.tabPilots.Controls.Add(this.tableLayoutPanel8);
             this.tabPilots.Location = new System.Drawing.Point(4, 22);
             this.tabPilots.Margin = new System.Windows.Forms.Padding(2);
             this.tabPilots.Name = "tabPilots";
             this.tabPilots.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPilots.Size = new System.Drawing.Size(1331, 468);
+            this.tabPilots.Size = new System.Drawing.Size(1331, 627);
             this.tabPilots.TabIndex = 5;
             this.tabPilots.Text = "Pilot Management";
             this.tabPilots.UseVisualStyleBackColor = true;
@@ -2277,7 +2434,7 @@
             this.groupBox30.Controls.Add(this.nudNumOfLaps);
             this.groupBox30.Controls.Add(this.label113);
             this.groupBox30.Controls.Add(this.label112);
-            this.groupBox30.Location = new System.Drawing.Point(5, 412);
+            this.groupBox30.Location = new System.Drawing.Point(2, 571);
             this.groupBox30.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox30.Name = "groupBox30";
             this.groupBox30.Padding = new System.Windows.Forms.Padding(2);
@@ -2350,6 +2507,4177 @@
             this.label112.TabIndex = 0;
             this.label112.Text = "Number of Laps";
             // 
+            // tableLayoutPanel8
+            // 
+            this.tableLayoutPanel8.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.tableLayoutPanel8.ColumnCount = 2;
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.79245F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 73.20755F));
+            this.tableLayoutPanel8.Controls.Add(this.groupBox27, 0, 0);
+            this.tableLayoutPanel8.Controls.Add(this.groupBox28, 1, 0);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
+            this.tableLayoutPanel8.RowCount = 1;
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 404F));
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(1326, 564);
+            this.tableLayoutPanel8.TabIndex = 0;
+            // 
+            // groupBox27
+            // 
+            this.groupBox27.Controls.Add(this.btnAddPilotFromDb);
+            this.groupBox27.Controls.Add(this.btnAddPilot);
+            this.groupBox27.Controls.Add(this.cbPilotConfirmation);
+            this.groupBox27.Controls.Add(this.tbPilotEmail);
+            this.groupBox27.Controls.Add(this.label130);
+            this.groupBox27.Controls.Add(this.tbPilotTeam);
+            this.groupBox27.Controls.Add(this.label129);
+            this.groupBox27.Controls.Add(this.tbPilotNickname);
+            this.groupBox27.Controls.Add(this.label128);
+            this.groupBox27.Controls.Add(this.tbPilotName);
+            this.groupBox27.Controls.Add(this.tbPilotTag);
+            this.groupBox27.Controls.Add(this.label127);
+            this.groupBox27.Controls.Add(this.label126);
+            this.groupBox27.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox27.Location = new System.Drawing.Point(3, 3);
+            this.groupBox27.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox27.Name = "groupBox27";
+            this.groupBox27.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox27.Size = new System.Drawing.Size(350, 558);
+            this.groupBox27.TabIndex = 0;
+            this.groupBox27.TabStop = false;
+            this.groupBox27.Text = "Pilot Registration";
+            // 
+            // btnAddPilotFromDb
+            // 
+            this.btnAddPilotFromDb.Enabled = false;
+            this.btnAddPilotFromDb.Location = new System.Drawing.Point(199, 198);
+            this.btnAddPilotFromDb.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddPilotFromDb.Name = "btnAddPilotFromDb";
+            this.btnAddPilotFromDb.Size = new System.Drawing.Size(92, 37);
+            this.btnAddPilotFromDb.TabIndex = 12;
+            this.btnAddPilotFromDb.Text = "Add from DB";
+            this.btnAddPilotFromDb.UseVisualStyleBackColor = true;
+            this.btnAddPilotFromDb.Click += new System.EventHandler(this.btnAddPilotFromDb_Click);
+            // 
+            // btnAddPilot
+            // 
+            this.btnAddPilot.Location = new System.Drawing.Point(93, 198);
+            this.btnAddPilot.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddPilot.Name = "btnAddPilot";
+            this.btnAddPilot.Size = new System.Drawing.Size(92, 37);
+            this.btnAddPilot.TabIndex = 11;
+            this.btnAddPilot.Text = "Add Pilot";
+            this.btnAddPilot.UseVisualStyleBackColor = true;
+            this.btnAddPilot.Click += new System.EventHandler(this.btnAddPilot_Click);
+            // 
+            // cbPilotConfirmation
+            // 
+            this.cbPilotConfirmation.AutoSize = true;
+            this.cbPilotConfirmation.Location = new System.Drawing.Point(61, 161);
+            this.cbPilotConfirmation.Margin = new System.Windows.Forms.Padding(2);
+            this.cbPilotConfirmation.Name = "cbPilotConfirmation";
+            this.cbPilotConfirmation.Size = new System.Drawing.Size(84, 17);
+            this.cbPilotConfirmation.TabIndex = 10;
+            this.cbPilotConfirmation.Text = "Confirmation";
+            this.cbPilotConfirmation.UseVisualStyleBackColor = true;
+            // 
+            // tbPilotEmail
+            // 
+            this.tbPilotEmail.Location = new System.Drawing.Point(61, 128);
+            this.tbPilotEmail.Margin = new System.Windows.Forms.Padding(2);
+            this.tbPilotEmail.Name = "tbPilotEmail";
+            this.tbPilotEmail.Size = new System.Drawing.Size(260, 20);
+            this.tbPilotEmail.TabIndex = 9;
+            // 
+            // label130
+            // 
+            this.label130.AutoSize = true;
+            this.label130.Location = new System.Drawing.Point(20, 131);
+            this.label130.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label130.Name = "label130";
+            this.label130.Size = new System.Drawing.Size(35, 13);
+            this.label130.TabIndex = 8;
+            this.label130.Text = "E-mail";
+            // 
+            // tbPilotTeam
+            // 
+            this.tbPilotTeam.Location = new System.Drawing.Point(61, 101);
+            this.tbPilotTeam.Margin = new System.Windows.Forms.Padding(2);
+            this.tbPilotTeam.Name = "tbPilotTeam";
+            this.tbPilotTeam.Size = new System.Drawing.Size(260, 20);
+            this.tbPilotTeam.TabIndex = 7;
+            // 
+            // label129
+            // 
+            this.label129.AutoSize = true;
+            this.label129.Location = new System.Drawing.Point(22, 103);
+            this.label129.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label129.Name = "label129";
+            this.label129.Size = new System.Drawing.Size(34, 13);
+            this.label129.TabIndex = 6;
+            this.label129.Text = "Team";
+            // 
+            // tbPilotNickname
+            // 
+            this.tbPilotNickname.Location = new System.Drawing.Point(61, 73);
+            this.tbPilotNickname.Margin = new System.Windows.Forms.Padding(2);
+            this.tbPilotNickname.Name = "tbPilotNickname";
+            this.tbPilotNickname.Size = new System.Drawing.Size(260, 20);
+            this.tbPilotNickname.TabIndex = 5;
+            // 
+            // label128
+            // 
+            this.label128.AutoSize = true;
+            this.label128.Location = new System.Drawing.Point(2, 76);
+            this.label128.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label128.Name = "label128";
+            this.label128.Size = new System.Drawing.Size(55, 13);
+            this.label128.TabIndex = 4;
+            this.label128.Text = "Nickname";
+            // 
+            // tbPilotName
+            // 
+            this.tbPilotName.Location = new System.Drawing.Point(61, 46);
+            this.tbPilotName.Margin = new System.Windows.Forms.Padding(2);
+            this.tbPilotName.Name = "tbPilotName";
+            this.tbPilotName.Size = new System.Drawing.Size(260, 20);
+            this.tbPilotName.TabIndex = 3;
+            // 
+            // tbPilotTag
+            // 
+            this.tbPilotTag.Location = new System.Drawing.Point(61, 20);
+            this.tbPilotTag.Margin = new System.Windows.Forms.Padding(2);
+            this.tbPilotTag.Name = "tbPilotTag";
+            this.tbPilotTag.Size = new System.Drawing.Size(260, 20);
+            this.tbPilotTag.TabIndex = 2;
+            // 
+            // label127
+            // 
+            this.label127.AutoSize = true;
+            this.label127.Location = new System.Drawing.Point(21, 49);
+            this.label127.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label127.Name = "label127";
+            this.label127.Size = new System.Drawing.Size(35, 13);
+            this.label127.TabIndex = 1;
+            this.label127.Text = "Name";
+            // 
+            // label126
+            // 
+            this.label126.AutoSize = true;
+            this.label126.Location = new System.Drawing.Point(14, 23);
+            this.label126.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label126.Name = "label126";
+            this.label126.Size = new System.Drawing.Size(43, 13);
+            this.label126.TabIndex = 0;
+            this.label126.Text = "TAG ID";
+            // 
+            // groupBox28
+            // 
+            this.groupBox28.Controls.Add(this.gvPilots);
+            this.groupBox28.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox28.Location = new System.Drawing.Point(358, 3);
+            this.groupBox28.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox28.Name = "groupBox28";
+            this.groupBox28.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox28.Size = new System.Drawing.Size(965, 558);
+            this.groupBox28.TabIndex = 1;
+            this.groupBox28.TabStop = false;
+            this.groupBox28.Text = "Pilot List";
+            // 
+            // gvPilots
+            // 
+            this.gvPilots.AllowUserToAddRows = false;
+            this.gvPilots.AllowUserToOrderColumns = true;
+            this.gvPilots.AutoGenerateColumns = false;
+            this.gvPilots.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.gvPilots.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvPilots.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.nameDataGridViewTextBoxColumn,
+            this.nicknameDataGridViewTextBoxColumn,
+            this.teamDataGridViewTextBoxColumn,
+            this.tagDataGridViewTextBoxColumn,
+            this.emailDataGridViewTextBoxColumn,
+            this.Email});
+            this.gvPilots.DataSource = this.bindingSourcePilots1;
+            this.gvPilots.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvPilots.GridColor = System.Drawing.SystemColors.Control;
+            this.gvPilots.Location = new System.Drawing.Point(2, 15);
+            this.gvPilots.Margin = new System.Windows.Forms.Padding(2);
+            this.gvPilots.Name = "gvPilots";
+            this.gvPilots.RowTemplate.Height = 24;
+            this.gvPilots.Size = new System.Drawing.Size(961, 541);
+            this.gvPilots.TabIndex = 0;
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "OrderNumber";
+            this.Column1.HeaderText = "#";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 60;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // nicknameDataGridViewTextBoxColumn
+            // 
+            this.nicknameDataGridViewTextBoxColumn.DataPropertyName = "Nickname";
+            this.nicknameDataGridViewTextBoxColumn.HeaderText = "Nickname";
+            this.nicknameDataGridViewTextBoxColumn.Name = "nicknameDataGridViewTextBoxColumn";
+            // 
+            // teamDataGridViewTextBoxColumn
+            // 
+            this.teamDataGridViewTextBoxColumn.DataPropertyName = "Team";
+            this.teamDataGridViewTextBoxColumn.HeaderText = "Team";
+            this.teamDataGridViewTextBoxColumn.Name = "teamDataGridViewTextBoxColumn";
+            // 
+            // tagDataGridViewTextBoxColumn
+            // 
+            this.tagDataGridViewTextBoxColumn.DataPropertyName = "Tag";
+            this.tagDataGridViewTextBoxColumn.HeaderText = "TAG ID";
+            this.tagDataGridViewTextBoxColumn.Name = "tagDataGridViewTextBoxColumn";
+            this.tagDataGridViewTextBoxColumn.Width = 250;
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "E-Mail";
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            // 
+            // Email
+            // 
+            this.Email.DataPropertyName = "ConfirmationString";
+            this.Email.HeaderText = "Confirmation";
+            this.Email.Name = "Email";
+            // 
+            // bindingSourcePilots1
+            // 
+            this.bindingSourcePilots1.DataSource = typeof(RaceManager.Data.Pilot);
+            // 
+            // tabRace
+            // 
+            this.tabRace.Controls.Add(this.gvRace);
+            this.tabRace.Controls.Add(this.groupBox35);
+            this.tabRace.Controls.Add(this.groupBox34);
+            this.tabRace.Controls.Add(this.groupBox33);
+            this.tabRace.Controls.Add(this.groupBox32);
+            this.tabRace.Controls.Add(this.groupBox31);
+            this.tabRace.Controls.Add(this.tableLayoutPanel6);
+            this.tabRace.Controls.Add(this.tableLayoutPanel5);
+            this.tabRace.Location = new System.Drawing.Point(4, 22);
+            this.tabRace.Margin = new System.Windows.Forms.Padding(2);
+            this.tabRace.Name = "tabRace";
+            this.tabRace.Padding = new System.Windows.Forms.Padding(2);
+            this.tabRace.Size = new System.Drawing.Size(1331, 627);
+            this.tabRace.TabIndex = 4;
+            this.tabRace.Text = "Race";
+            this.tabRace.UseVisualStyleBackColor = true;
+            // 
+            // gvRace
+            // 
+            this.gvRace.AllowUserToAddRows = false;
+            this.gvRace.AllowUserToDeleteRows = false;
+            this.gvRace.AutoGenerateColumns = false;
+            this.gvRace.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.gvRace.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvRace.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.OrderNumber,
+            this.PilotName,
+            this.Epc,
+            this.Pc,
+            this.IdentCount,
+            this.Rssi,
+            this.CarrFrequency,
+            this.Lap1,
+            this.Lap2,
+            this.Lap3,
+            this.Lap4,
+            this.Lap5,
+            this.Lap6,
+            this.BestLapTime,
+            this.avgLapTimeDataGridViewTextBoxColumn});
+            this.gvRace.DataSource = this.bindingSourceRace;
+            this.gvRace.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.gvRace.Location = new System.Drawing.Point(2, 305);
+            this.gvRace.Name = "gvRace";
+            this.gvRace.Size = new System.Drawing.Size(1002, 320);
+            this.gvRace.TabIndex = 7;
+            // 
+            // OrderNumber
+            // 
+            this.OrderNumber.DataPropertyName = "OrderNumber";
+            this.OrderNumber.HeaderText = "#";
+            this.OrderNumber.Name = "OrderNumber";
+            this.OrderNumber.Width = 40;
+            // 
+            // PilotName
+            // 
+            this.PilotName.DataPropertyName = "PilotName";
+            this.PilotName.HeaderText = "Name";
+            this.PilotName.Name = "PilotName";
+            this.PilotName.Width = 150;
+            // 
+            // Epc
+            // 
+            this.Epc.DataPropertyName = "Epc";
+            this.Epc.HeaderText = "TAG ID - EPC";
+            this.Epc.Name = "Epc";
+            this.Epc.Width = 200;
+            // 
+            // Pc
+            // 
+            this.Pc.DataPropertyName = "Pc";
+            this.Pc.HeaderText = "PC";
+            this.Pc.Name = "Pc";
+            this.Pc.Width = 50;
+            // 
+            // IdentCount
+            // 
+            this.IdentCount.DataPropertyName = "IdCount";
+            this.IdentCount.HeaderText = "ID Count";
+            this.IdentCount.Name = "IdentCount";
+            this.IdentCount.Width = 80;
+            // 
+            // Rssi
+            // 
+            this.Rssi.DataPropertyName = "Rssi";
+            this.Rssi.HeaderText = "RSSI";
+            this.Rssi.Name = "Rssi";
+            this.Rssi.Width = 50;
+            // 
+            // CarrFrequency
+            // 
+            this.CarrFrequency.DataPropertyName = "CarrFrequency";
+            this.CarrFrequency.HeaderText = "Freq.";
+            this.CarrFrequency.Name = "CarrFrequency";
+            this.CarrFrequency.Width = 60;
+            // 
+            // Lap1
+            // 
+            this.Lap1.DataPropertyName = "Lap1";
+            this.Lap1.HeaderText = "LAP1";
+            this.Lap1.Name = "Lap1";
+            this.Lap1.Width = 70;
+            // 
+            // Lap2
+            // 
+            this.Lap2.DataPropertyName = "Lap2";
+            this.Lap2.HeaderText = "LAP2";
+            this.Lap2.Name = "Lap2";
+            this.Lap2.Width = 70;
+            // 
+            // Lap3
+            // 
+            this.Lap3.DataPropertyName = "Lap3";
+            this.Lap3.HeaderText = "LAP3";
+            this.Lap3.Name = "Lap3";
+            this.Lap3.Width = 70;
+            // 
+            // Lap4
+            // 
+            this.Lap4.DataPropertyName = "Lap4";
+            this.Lap4.HeaderText = "LAP4";
+            this.Lap4.Name = "Lap4";
+            this.Lap4.Width = 70;
+            // 
+            // Lap5
+            // 
+            this.Lap5.DataPropertyName = "Lap5";
+            this.Lap5.HeaderText = "LAP5";
+            this.Lap5.Name = "Lap5";
+            this.Lap5.Width = 70;
+            // 
+            // Lap6
+            // 
+            this.Lap6.DataPropertyName = "Lap6";
+            this.Lap6.HeaderText = "LAP6";
+            this.Lap6.Name = "Lap6";
+            this.Lap6.Width = 70;
+            // 
+            // BestLapTime
+            // 
+            this.BestLapTime.DataPropertyName = "BestLapTimeString";
+            this.BestLapTime.HeaderText = "Best Lap";
+            this.BestLapTime.Name = "BestLapTime";
+            this.BestLapTime.ReadOnly = true;
+            // 
+            // avgLapTimeDataGridViewTextBoxColumn
+            // 
+            this.avgLapTimeDataGridViewTextBoxColumn.DataPropertyName = "AvgLapTimeString";
+            this.avgLapTimeDataGridViewTextBoxColumn.HeaderText = "Average";
+            this.avgLapTimeDataGridViewTextBoxColumn.Name = "avgLapTimeDataGridViewTextBoxColumn";
+            this.avgLapTimeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // bindingSourceRace
+            // 
+            this.bindingSourceRace.DataSource = typeof(RaceManager.Data.LapsInfo);
+            // 
+            // groupBox35
+            // 
+            this.groupBox35.Controls.Add(this.gvRanking);
+            this.groupBox35.Controls.Add(this.cmbDisplayRanking);
+            this.groupBox35.Controls.Add(this.label20);
+            this.groupBox35.Dock = System.Windows.Forms.DockStyle.Right;
+            this.groupBox35.Location = new System.Drawing.Point(1004, 2);
+            this.groupBox35.Name = "groupBox35";
+            this.groupBox35.Size = new System.Drawing.Size(325, 623);
+            this.groupBox35.TabIndex = 6;
+            this.groupBox35.TabStop = false;
+            this.groupBox35.Text = "Race Ranking";
+            // 
+            // gvRanking
+            // 
+            this.gvRanking.AllowUserToAddRows = false;
+            this.gvRanking.AllowUserToDeleteRows = false;
+            this.gvRanking.AutoGenerateColumns = false;
+            this.gvRanking.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.gvRanking.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvRanking.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.RankNumber,
+            this.pilotNameDataGridViewTextBoxColumn,
+            this.bestLapTimeStringDataGridViewTextBoxColumn,
+            this.avgLapTimeStringDataGridViewTextBoxColumn});
+            this.gvRanking.DataSource = this.bindingSourceRanking;
+            this.gvRanking.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.gvRanking.Location = new System.Drawing.Point(3, 60);
+            this.gvRanking.Name = "gvRanking";
+            this.gvRanking.ReadOnly = true;
+            this.gvRanking.Size = new System.Drawing.Size(319, 560);
+            this.gvRanking.TabIndex = 7;
+            // 
+            // RankNumber
+            // 
+            this.RankNumber.DataPropertyName = "RankNumber";
+            this.RankNumber.HeaderText = "#";
+            this.RankNumber.Name = "RankNumber";
+            this.RankNumber.ReadOnly = true;
+            this.RankNumber.Width = 40;
+            // 
+            // pilotNameDataGridViewTextBoxColumn
+            // 
+            this.pilotNameDataGridViewTextBoxColumn.DataPropertyName = "PilotName";
+            this.pilotNameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.pilotNameDataGridViewTextBoxColumn.Name = "pilotNameDataGridViewTextBoxColumn";
+            this.pilotNameDataGridViewTextBoxColumn.ReadOnly = true;
+            this.pilotNameDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // bestLapTimeStringDataGridViewTextBoxColumn
+            // 
+            this.bestLapTimeStringDataGridViewTextBoxColumn.DataPropertyName = "BestLapTimeString";
+            this.bestLapTimeStringDataGridViewTextBoxColumn.HeaderText = "Best Lap";
+            this.bestLapTimeStringDataGridViewTextBoxColumn.Name = "bestLapTimeStringDataGridViewTextBoxColumn";
+            this.bestLapTimeStringDataGridViewTextBoxColumn.ReadOnly = true;
+            this.bestLapTimeStringDataGridViewTextBoxColumn.Width = 90;
+            // 
+            // avgLapTimeStringDataGridViewTextBoxColumn
+            // 
+            this.avgLapTimeStringDataGridViewTextBoxColumn.DataPropertyName = "AvgLapTimeString";
+            this.avgLapTimeStringDataGridViewTextBoxColumn.HeaderText = "Average Lap";
+            this.avgLapTimeStringDataGridViewTextBoxColumn.Name = "avgLapTimeStringDataGridViewTextBoxColumn";
+            this.avgLapTimeStringDataGridViewTextBoxColumn.ReadOnly = true;
+            this.avgLapTimeStringDataGridViewTextBoxColumn.Width = 90;
+            // 
+            // bindingSourceRanking
+            // 
+            this.bindingSourceRanking.DataSource = typeof(RaceManager.Data.LapsInfo);
+            // 
+            // cmbDisplayRanking
+            // 
+            this.cmbDisplayRanking.FormattingEnabled = true;
+            this.cmbDisplayRanking.Items.AddRange(new object[] {
+            "Best Lap Times",
+            "Average Time"});
+            this.cmbDisplayRanking.Location = new System.Drawing.Point(110, 33);
+            this.cmbDisplayRanking.Name = "cmbDisplayRanking";
+            this.cmbDisplayRanking.Size = new System.Drawing.Size(209, 21);
+            this.cmbDisplayRanking.TabIndex = 7;
+            this.cmbDisplayRanking.SelectedIndexChanged += new System.EventHandler(this.cmbDisplayRanking_SelectedIndexChanged);
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(6, 36);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(98, 13);
+            this.label20.TabIndex = 7;
+            this.label20.Text = "Display Ranking by";
+            // 
+            // groupBox34
+            // 
+            this.groupBox34.Location = new System.Drawing.Point(-32, -98);
+            this.groupBox34.Name = "groupBox34";
+            this.groupBox34.Size = new System.Drawing.Size(200, 100);
+            this.groupBox34.TabIndex = 5;
+            this.groupBox34.TabStop = false;
+            this.groupBox34.Text = "groupBox34";
+            // 
+            // groupBox33
+            // 
+            this.groupBox33.Location = new System.Drawing.Point(-32, -98);
+            this.groupBox33.Name = "groupBox33";
+            this.groupBox33.Size = new System.Drawing.Size(200, 100);
+            this.groupBox33.TabIndex = 4;
+            this.groupBox33.TabStop = false;
+            this.groupBox33.Text = "groupBox33";
+            // 
+            // groupBox32
+            // 
+            this.groupBox32.Location = new System.Drawing.Point(-32, -98);
+            this.groupBox32.Name = "groupBox32";
+            this.groupBox32.Size = new System.Drawing.Size(200, 100);
+            this.groupBox32.TabIndex = 3;
+            this.groupBox32.TabStop = false;
+            this.groupBox32.Text = "groupBox32";
+            // 
+            // groupBox31
+            // 
+            this.groupBox31.Controls.Add(this.tbCurEvGroup);
+            this.groupBox31.Controls.Add(this.tbCurEvRound);
+            this.groupBox31.Location = new System.Drawing.Point(2, 199);
+            this.groupBox31.Name = "groupBox31";
+            this.groupBox31.Size = new System.Drawing.Size(1000, 100);
+            this.groupBox31.TabIndex = 2;
+            this.groupBox31.TabStop = false;
+            this.groupBox31.Text = "Current Event";
+            // 
+            // tbCurEvGroup
+            // 
+            this.tbCurEvGroup.Enabled = false;
+            this.tbCurEvGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.tbCurEvGroup.Location = new System.Drawing.Point(253, 38);
+            this.tbCurEvGroup.Name = "tbCurEvGroup";
+            this.tbCurEvGroup.Size = new System.Drawing.Size(176, 35);
+            this.tbCurEvGroup.TabIndex = 1;
+            this.tbCurEvGroup.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // tbCurEvRound
+            // 
+            this.tbCurEvRound.Enabled = false;
+            this.tbCurEvRound.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.tbCurEvRound.Location = new System.Drawing.Point(26, 38);
+            this.tbCurEvRound.Name = "tbCurEvRound";
+            this.tbCurEvRound.Size = new System.Drawing.Size(176, 35);
+            this.tbCurEvRound.TabIndex = 0;
+            this.tbCurEvRound.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // tableLayoutPanel6
+            // 
+            this.tableLayoutPanel6.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.tableLayoutPanel6.ColumnCount = 3;
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.02803F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.02603F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.94595F));
+            this.tableLayoutPanel6.Controls.Add(this.groupBox24, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.groupBox25, 1, 0);
+            this.tableLayoutPanel6.Controls.Add(this.groupBox26, 2, 0);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(2, 89);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
+            this.tableLayoutPanel6.RowCount = 1;
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(1000, 104);
+            this.tableLayoutPanel6.TabIndex = 1;
+            // 
+            // groupBox24
+            // 
+            this.groupBox24.Controls.Add(this.btnRaceReset);
+            this.groupBox24.Controls.Add(this.btnRaceStop);
+            this.groupBox24.Controls.Add(this.btnRaceStart);
+            this.groupBox24.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox24.Location = new System.Drawing.Point(3, 3);
+            this.groupBox24.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox24.Name = "groupBox24";
+            this.groupBox24.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox24.Size = new System.Drawing.Size(275, 98);
+            this.groupBox24.TabIndex = 0;
+            this.groupBox24.TabStop = false;
+            this.groupBox24.Text = "Race Control";
+            // 
+            // btnRaceReset
+            // 
+            this.btnRaceReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.btnRaceReset.Location = new System.Drawing.Point(164, 59);
+            this.btnRaceReset.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRaceReset.Name = "btnRaceReset";
+            this.btnRaceReset.Size = new System.Drawing.Size(88, 29);
+            this.btnRaceReset.TabIndex = 2;
+            this.btnRaceReset.Text = "RESET";
+            this.btnRaceReset.UseVisualStyleBackColor = true;
+            this.btnRaceReset.Click += new System.EventHandler(this.btnRaceReset_Click);
+            // 
+            // btnRaceStop
+            // 
+            this.btnRaceStop.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.btnRaceStop.Location = new System.Drawing.Point(164, 18);
+            this.btnRaceStop.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRaceStop.Name = "btnRaceStop";
+            this.btnRaceStop.Size = new System.Drawing.Size(88, 29);
+            this.btnRaceStop.TabIndex = 1;
+            this.btnRaceStop.Text = "STOP";
+            this.btnRaceStop.UseVisualStyleBackColor = true;
+            this.btnRaceStop.Click += new System.EventHandler(this.btnRaceStop_Click);
+            // 
+            // btnRaceStart
+            // 
+            this.btnRaceStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.btnRaceStart.Location = new System.Drawing.Point(5, 18);
+            this.btnRaceStart.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRaceStart.Name = "btnRaceStart";
+            this.btnRaceStart.Size = new System.Drawing.Size(146, 70);
+            this.btnRaceStart.TabIndex = 0;
+            this.btnRaceStart.Text = "START";
+            this.btnRaceStart.UseVisualStyleBackColor = true;
+            this.btnRaceStart.Click += new System.EventHandler(this.btnRaceStart_Click);
+            // 
+            // groupBox25
+            // 
+            this.groupBox25.Controls.Add(this.label71);
+            this.groupBox25.Controls.Add(this.label38);
+            this.groupBox25.Controls.Add(this.label21);
+            this.groupBox25.Controls.Add(this.lblRaceMilliSeconds);
+            this.groupBox25.Controls.Add(this.label39);
+            this.groupBox25.Controls.Add(this.lblRaceSeconds);
+            this.groupBox25.Controls.Add(this.label34);
+            this.groupBox25.Controls.Add(this.lblRaceMinutes);
+            this.groupBox25.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox25.Location = new System.Drawing.Point(283, 3);
+            this.groupBox25.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox25.Name = "groupBox25";
+            this.groupBox25.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox25.Size = new System.Drawing.Size(255, 98);
+            this.groupBox25.TabIndex = 1;
+            this.groupBox25.TabStop = false;
+            this.groupBox25.Text = "Race Time";
+            // 
+            // label71
+            // 
+            this.label71.AutoSize = true;
+            this.label71.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
+            this.label71.Location = new System.Drawing.Point(148, 72);
+            this.label71.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(48, 9);
+            this.label71.TabIndex = 7;
+            this.label71.Text = "milliseconds";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
+            this.label38.Location = new System.Drawing.Point(80, 72);
+            this.label38.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(33, 9);
+            this.label38.TabIndex = 6;
+            this.label38.Text = "seconds";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
+            this.label21.Location = new System.Drawing.Point(19, 72);
+            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(32, 9);
+            this.label21.TabIndex = 5;
+            this.label21.Text = "minutes";
+            // 
+            // lblRaceMilliSeconds
+            // 
+            this.lblRaceMilliSeconds.AutoSize = true;
+            this.lblRaceMilliSeconds.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
+            this.lblRaceMilliSeconds.Location = new System.Drawing.Point(139, 32);
+            this.lblRaceMilliSeconds.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblRaceMilliSeconds.Name = "lblRaceMilliSeconds";
+            this.lblRaceMilliSeconds.Size = new System.Drawing.Size(71, 37);
+            this.lblRaceMilliSeconds.TabIndex = 4;
+            this.lblRaceMilliSeconds.Text = "000";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.label39.Location = new System.Drawing.Point(117, 32);
+            this.label39.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(19, 29);
+            this.label39.TabIndex = 3;
+            this.label39.Text = ":";
+            // 
+            // lblRaceSeconds
+            // 
+            this.lblRaceSeconds.AutoSize = true;
+            this.lblRaceSeconds.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
+            this.lblRaceSeconds.Location = new System.Drawing.Point(71, 32);
+            this.lblRaceSeconds.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblRaceSeconds.Name = "lblRaceSeconds";
+            this.lblRaceSeconds.Size = new System.Drawing.Size(53, 37);
+            this.lblRaceSeconds.TabIndex = 2;
+            this.lblRaceSeconds.Text = "00";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.label34.Location = new System.Drawing.Point(50, 32);
+            this.label34.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(19, 29);
+            this.label34.TabIndex = 1;
+            this.label34.Text = ":";
+            // 
+            // lblRaceMinutes
+            // 
+            this.lblRaceMinutes.AutoSize = true;
+            this.lblRaceMinutes.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
+            this.lblRaceMinutes.Location = new System.Drawing.Point(8, 32);
+            this.lblRaceMinutes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblRaceMinutes.Name = "lblRaceMinutes";
+            this.lblRaceMinutes.Size = new System.Drawing.Size(53, 37);
+            this.lblRaceMinutes.TabIndex = 0;
+            this.lblRaceMinutes.Text = "00";
+            // 
+            // groupBox26
+            // 
+            this.groupBox26.Controls.Add(this.nudMinLapTime);
+            this.groupBox26.Controls.Add(this.label117);
+            this.groupBox26.Controls.Add(this.nudMinFirstLapTime);
+            this.groupBox26.Controls.Add(this.dtpRaceDate);
+            this.groupBox26.Controls.Add(this.label102);
+            this.groupBox26.Controls.Add(this.tbRaceLocation);
+            this.groupBox26.Controls.Add(this.label101);
+            this.groupBox26.Controls.Add(this.tbRaceName);
+            this.groupBox26.Controls.Add(this.label100);
+            this.groupBox26.Controls.Add(this.label99);
+            this.groupBox26.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox26.Location = new System.Drawing.Point(543, 3);
+            this.groupBox26.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox26.Name = "groupBox26";
+            this.groupBox26.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox26.Size = new System.Drawing.Size(454, 98);
+            this.groupBox26.TabIndex = 2;
+            this.groupBox26.TabStop = false;
+            this.groupBox26.Text = "Race Properties";
+            // 
+            // nudMinLapTime
+            // 
+            this.nudMinLapTime.Location = new System.Drawing.Point(348, 16);
+            this.nudMinLapTime.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nudMinLapTime.Name = "nudMinLapTime";
+            this.nudMinLapTime.Size = new System.Drawing.Size(46, 20);
+            this.nudMinLapTime.TabIndex = 11;
+            this.nudMinLapTime.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            // 
+            // label117
+            // 
+            this.label117.AutoSize = true;
+            this.label117.Location = new System.Drawing.Point(215, 18);
+            this.label117.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label117.Name = "label117";
+            this.label117.Size = new System.Drawing.Size(124, 13);
+            this.label117.TabIndex = 10;
+            this.label117.Text = "Minimum Lap Time (sec):";
+            // 
+            // nudMinFirstLapTime
+            // 
+            this.nudMinFirstLapTime.Location = new System.Drawing.Point(155, 16);
+            this.nudMinFirstLapTime.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nudMinFirstLapTime.Name = "nudMinFirstLapTime";
+            this.nudMinFirstLapTime.Size = new System.Drawing.Size(46, 20);
+            this.nudMinFirstLapTime.TabIndex = 9;
+            this.nudMinFirstLapTime.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            // 
+            // dtpRaceDate
+            // 
+            this.dtpRaceDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpRaceDate.Location = new System.Drawing.Point(243, 68);
+            this.dtpRaceDate.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpRaceDate.Name = "dtpRaceDate";
+            this.dtpRaceDate.Size = new System.Drawing.Size(151, 20);
+            this.dtpRaceDate.TabIndex = 8;
+            // 
+            // label102
+            // 
+            this.label102.AutoSize = true;
+            this.label102.Location = new System.Drawing.Point(206, 72);
+            this.label102.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label102.Name = "label102";
+            this.label102.Size = new System.Drawing.Size(33, 13);
+            this.label102.TabIndex = 6;
+            this.label102.Text = "Date:";
+            // 
+            // tbRaceLocation
+            // 
+            this.tbRaceLocation.Location = new System.Drawing.Point(76, 68);
+            this.tbRaceLocation.Margin = new System.Windows.Forms.Padding(2);
+            this.tbRaceLocation.Name = "tbRaceLocation";
+            this.tbRaceLocation.Size = new System.Drawing.Size(125, 20);
+            this.tbRaceLocation.TabIndex = 5;
+            // 
+            // label101
+            // 
+            this.label101.AutoSize = true;
+            this.label101.Location = new System.Drawing.Point(21, 72);
+            this.label101.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label101.Name = "label101";
+            this.label101.Size = new System.Drawing.Size(51, 13);
+            this.label101.TabIndex = 4;
+            this.label101.Text = "Location:";
+            // 
+            // tbRaceName
+            // 
+            this.tbRaceName.Location = new System.Drawing.Point(76, 41);
+            this.tbRaceName.Margin = new System.Windows.Forms.Padding(2);
+            this.tbRaceName.Name = "tbRaceName";
+            this.tbRaceName.Size = new System.Drawing.Size(318, 20);
+            this.tbRaceName.TabIndex = 3;
+            // 
+            // label100
+            // 
+            this.label100.AutoSize = true;
+            this.label100.Location = new System.Drawing.Point(4, 44);
+            this.label100.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label100.Name = "label100";
+            this.label100.Size = new System.Drawing.Size(69, 13);
+            this.label100.TabIndex = 2;
+            this.label100.Text = "Event Name:";
+            // 
+            // label99
+            // 
+            this.label99.AutoSize = true;
+            this.label99.Location = new System.Drawing.Point(4, 18);
+            this.label99.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label99.Name = "label99";
+            this.label99.Size = new System.Drawing.Size(146, 13);
+            this.label99.TabIndex = 0;
+            this.label99.Text = "Minimum First Lap Time (sec):";
+            // 
+            // tableLayoutPanel5
+            // 
+            this.tableLayoutPanel5.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.tableLayoutPanel5.ColumnCount = 3;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.64965F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.23123F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.01902F));
+            this.tableLayoutPanel5.Controls.Add(this.groupBox9, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.groupBox12, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.groupBox22, 2, 0);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(2, 2);
+            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 1;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(1000, 84);
+            this.tableLayoutPanel5.TabIndex = 0;
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.label118);
+            this.groupBox9.Controls.Add(this.cmbRaceMode);
+            this.groupBox9.Controls.Add(this.tbRaceMaxRssi);
+            this.groupBox9.Controls.Add(this.tbRaceMinRssi);
+            this.groupBox9.Controls.Add(this.label1);
+            this.groupBox9.Controls.Add(this.label2);
+            this.groupBox9.Controls.Add(this.cbRaceAnt1);
+            this.groupBox9.Controls.Add(this.cbRaceAnt4);
+            this.groupBox9.Controls.Add(this.cbRaceAnt2);
+            this.groupBox9.Controls.Add(this.cbRaceAnt3);
+            this.groupBox9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox9.Location = new System.Drawing.Point(3, 3);
+            this.groupBox9.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox9.Size = new System.Drawing.Size(491, 78);
+            this.groupBox9.TabIndex = 0;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "Antenna Selection";
+            // 
+            // label118
+            // 
+            this.label118.AutoSize = true;
+            this.label118.Location = new System.Drawing.Point(359, 17);
+            this.label118.Name = "label118";
+            this.label118.Size = new System.Drawing.Size(34, 13);
+            this.label118.TabIndex = 47;
+            this.label118.Text = "Mode";
+            // 
+            // cmbRaceMode
+            // 
+            this.cmbRaceMode.FormattingEnabled = true;
+            this.cmbRaceMode.Items.AddRange(new object[] {
+            "Real Time",
+            "Fast Switch Antenna"});
+            this.cmbRaceMode.Location = new System.Drawing.Point(362, 36);
+            this.cmbRaceMode.Name = "cmbRaceMode";
+            this.cmbRaceMode.Size = new System.Drawing.Size(121, 21);
+            this.cmbRaceMode.TabIndex = 46;
+            // 
+            // tbRaceMaxRssi
+            // 
+            this.tbRaceMaxRssi.Location = new System.Drawing.Point(270, 49);
+            this.tbRaceMaxRssi.Name = "tbRaceMaxRssi";
+            this.tbRaceMaxRssi.ReadOnly = true;
+            this.tbRaceMaxRssi.Size = new System.Drawing.Size(62, 20);
+            this.tbRaceMaxRssi.TabIndex = 44;
+            this.tbRaceMaxRssi.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // tbRaceMinRssi
+            // 
+            this.tbRaceMinRssi.Location = new System.Drawing.Point(270, 15);
+            this.tbRaceMinRssi.Name = "tbRaceMinRssi";
+            this.tbRaceMinRssi.ReadOnly = true;
+            this.tbRaceMinRssi.Size = new System.Drawing.Size(62, 20);
+            this.tbRaceMinRssi.TabIndex = 45;
+            this.tbRaceMinRssi.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label1.Location = new System.Drawing.Point(211, 51);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(58, 13);
+            this.label1.TabIndex = 42;
+            this.label1.Text = "Max RSSI:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label2.Location = new System.Drawing.Point(212, 17);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(55, 13);
+            this.label2.TabIndex = 43;
+            this.label2.Text = "Min RSSI:";
+            // 
+            // cbRaceAnt1
+            // 
+            this.cbRaceAnt1.AutoSize = true;
+            this.cbRaceAnt1.Checked = true;
+            this.cbRaceAnt1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbRaceAnt1.Location = new System.Drawing.Point(5, 32);
+            this.cbRaceAnt1.Name = "cbRaceAnt1";
+            this.cbRaceAnt1.Size = new System.Drawing.Size(48, 17);
+            this.cbRaceAnt1.TabIndex = 15;
+            this.cbRaceAnt1.Text = "Ant1";
+            this.cbRaceAnt1.UseVisualStyleBackColor = true;
+            // 
+            // cbRaceAnt4
+            // 
+            this.cbRaceAnt4.AutoSize = true;
+            this.cbRaceAnt4.Location = new System.Drawing.Point(160, 32);
+            this.cbRaceAnt4.Name = "cbRaceAnt4";
+            this.cbRaceAnt4.Size = new System.Drawing.Size(48, 17);
+            this.cbRaceAnt4.TabIndex = 14;
+            this.cbRaceAnt4.Text = "Ant4";
+            this.cbRaceAnt4.UseVisualStyleBackColor = true;
+            // 
+            // cbRaceAnt2
+            // 
+            this.cbRaceAnt2.AutoSize = true;
+            this.cbRaceAnt2.Location = new System.Drawing.Point(57, 32);
+            this.cbRaceAnt2.Name = "cbRaceAnt2";
+            this.cbRaceAnt2.Size = new System.Drawing.Size(48, 17);
+            this.cbRaceAnt2.TabIndex = 12;
+            this.cbRaceAnt2.Text = "Ant2";
+            this.cbRaceAnt2.UseVisualStyleBackColor = true;
+            // 
+            // cbRaceAnt3
+            // 
+            this.cbRaceAnt3.AutoSize = true;
+            this.cbRaceAnt3.Location = new System.Drawing.Point(109, 32);
+            this.cbRaceAnt3.Name = "cbRaceAnt3";
+            this.cbRaceAnt3.Size = new System.Drawing.Size(48, 17);
+            this.cbRaceAnt3.TabIndex = 13;
+            this.cbRaceAnt3.Text = "Ant3";
+            this.cbRaceAnt3.UseVisualStyleBackColor = true;
+            // 
+            // groupBox12
+            // 
+            this.groupBox12.Controls.Add(this.label18);
+            this.groupBox12.Controls.Add(this.cmbRaceGroup);
+            this.groupBox12.Controls.Add(this.label15);
+            this.groupBox12.Controls.Add(this.cmbRaceRound);
+            this.groupBox12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox12.Location = new System.Drawing.Point(499, 3);
+            this.groupBox12.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox12.Size = new System.Drawing.Size(307, 78);
+            this.groupBox12.TabIndex = 1;
+            this.groupBox12.TabStop = false;
+            this.groupBox12.Text = "Event Round";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(144, 30);
+            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(36, 13);
+            this.label18.TabIndex = 4;
+            this.label18.Text = "Group";
+            // 
+            // cmbRaceGroup
+            // 
+            this.cmbRaceGroup.FormattingEnabled = true;
+            this.cmbRaceGroup.Location = new System.Drawing.Point(184, 27);
+            this.cmbRaceGroup.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbRaceGroup.Name = "cmbRaceGroup";
+            this.cmbRaceGroup.Size = new System.Drawing.Size(92, 21);
+            this.cmbRaceGroup.TabIndex = 3;
+            this.cmbRaceGroup.SelectedIndexChanged += new System.EventHandler(this.cmbRaceGroup_SelectedIndexChanged);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(4, 30);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(39, 13);
+            this.label15.TabIndex = 2;
+            this.label15.Text = "Round";
+            // 
+            // cmbRaceRound
+            // 
+            this.cmbRaceRound.FormattingEnabled = true;
+            this.cmbRaceRound.Location = new System.Drawing.Point(42, 27);
+            this.cmbRaceRound.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbRaceRound.Name = "cmbRaceRound";
+            this.cmbRaceRound.Size = new System.Drawing.Size(92, 21);
+            this.cmbRaceRound.TabIndex = 1;
+            this.cmbRaceRound.SelectedIndexChanged += new System.EventHandler(this.cmbRaceRound_SelectedIndexChanged);
+            // 
+            // groupBox22
+            // 
+            this.groupBox22.Controls.Add(this.btnRaceExport);
+            this.groupBox22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox22.Location = new System.Drawing.Point(811, 3);
+            this.groupBox22.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox22.Name = "groupBox22";
+            this.groupBox22.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox22.Size = new System.Drawing.Size(186, 78);
+            this.groupBox22.TabIndex = 2;
+            this.groupBox22.TabStop = false;
+            this.groupBox22.Text = "Export Data";
+            // 
+            // btnRaceExport
+            // 
+            this.btnRaceExport.Location = new System.Drawing.Point(32, 23);
+            this.btnRaceExport.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRaceExport.Name = "btnRaceExport";
+            this.btnRaceExport.Size = new System.Drawing.Size(96, 34);
+            this.btnRaceExport.TabIndex = 0;
+            this.btnRaceExport.Text = "Export to Excel";
+            this.btnRaceExport.UseVisualStyleBackColor = true;
+            // 
+            // pageRealMode
+            // 
+            this.pageRealMode.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pageRealMode.Controls.Add(this.groupBox20);
+            this.pageRealMode.Controls.Add(this.tableLayoutPanel1);
+            this.pageRealMode.Controls.Add(this.tbRealMinRssi);
+            this.pageRealMode.Controls.Add(this.tbRealMaxRssi);
+            this.pageRealMode.Controls.Add(this.btRealFresh);
+            this.pageRealMode.Controls.Add(this.label70);
+            this.pageRealMode.Controls.Add(this.label74);
+            this.pageRealMode.Controls.Add(this.lbRealTagCount);
+            this.pageRealMode.Controls.Add(this.groupBox1);
+            this.pageRealMode.Controls.Add(this.lvRealList);
+            this.pageRealMode.Font = new System.Drawing.Font("SimSun", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.pageRealMode.Location = new System.Drawing.Point(4, 22);
+            this.pageRealMode.Name = "pageRealMode";
+            this.pageRealMode.Padding = new System.Windows.Forms.Padding(3);
+            this.pageRealMode.Size = new System.Drawing.Size(1331, 627);
+            this.pageRealMode.TabIndex = 1;
+            this.pageRealMode.Text = "Tag Inventory(Real Time Mode)";
+            // 
+            // groupBox20
+            // 
+            this.groupBox20.Controls.Add(this.cbRealWorkant1);
+            this.groupBox20.Controls.Add(this.cbRealWorkant4);
+            this.groupBox20.Controls.Add(this.cbRealWorkant3);
+            this.groupBox20.Controls.Add(this.cbRealWorkant2);
+            this.groupBox20.Controls.Add(this.label19);
+            this.groupBox20.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.groupBox20.ForeColor = System.Drawing.Color.Black;
+            this.groupBox20.Location = new System.Drawing.Point(1005, 64);
+            this.groupBox20.Name = "groupBox20";
+            this.groupBox20.Size = new System.Drawing.Size(134, 176);
+            this.groupBox20.TabIndex = 49;
+            this.groupBox20.TabStop = false;
+            this.groupBox20.Text = "Antenna Selection";
+            // 
+            // cbRealWorkant1
+            // 
+            this.cbRealWorkant1.AutoSize = true;
+            this.cbRealWorkant1.Checked = true;
+            this.cbRealWorkant1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbRealWorkant1.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cbRealWorkant1.Location = new System.Drawing.Point(32, 24);
+            this.cbRealWorkant1.Name = "cbRealWorkant1";
+            this.cbRealWorkant1.Size = new System.Drawing.Size(48, 16);
+            this.cbRealWorkant1.TabIndex = 68;
+            this.cbRealWorkant1.Text = "Ant1";
+            this.cbRealWorkant1.UseVisualStyleBackColor = true;
+            // 
+            // cbRealWorkant4
+            // 
+            this.cbRealWorkant4.AutoSize = true;
+            this.cbRealWorkant4.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cbRealWorkant4.Location = new System.Drawing.Point(31, 90);
+            this.cbRealWorkant4.Name = "cbRealWorkant4";
+            this.cbRealWorkant4.Size = new System.Drawing.Size(48, 16);
+            this.cbRealWorkant4.TabIndex = 67;
+            this.cbRealWorkant4.Text = "Ant4";
+            this.cbRealWorkant4.UseVisualStyleBackColor = true;
+            // 
+            // cbRealWorkant3
+            // 
+            this.cbRealWorkant3.AutoSize = true;
+            this.cbRealWorkant3.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cbRealWorkant3.Location = new System.Drawing.Point(32, 68);
+            this.cbRealWorkant3.Name = "cbRealWorkant3";
+            this.cbRealWorkant3.Size = new System.Drawing.Size(48, 16);
+            this.cbRealWorkant3.TabIndex = 66;
+            this.cbRealWorkant3.Text = "Ant3";
+            this.cbRealWorkant3.UseVisualStyleBackColor = true;
+            // 
+            // cbRealWorkant2
+            // 
+            this.cbRealWorkant2.AutoSize = true;
+            this.cbRealWorkant2.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cbRealWorkant2.Location = new System.Drawing.Point(32, 46);
+            this.cbRealWorkant2.Name = "cbRealWorkant2";
+            this.cbRealWorkant2.Size = new System.Drawing.Size(48, 16);
+            this.cbRealWorkant2.TabIndex = 65;
+            this.cbRealWorkant2.Text = "Ant2";
+            this.cbRealWorkant2.UseVisualStyleBackColor = true;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(51, 20);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(0, 12);
+            this.label19.TabIndex = 0;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.7996F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.2004F));
+            this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel5, 1, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1325, 59);
+            this.tableLayoutPanel1.TabIndex = 48;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.textRealRound);
+            this.panel1.Controls.Add(this.label84);
+            this.panel1.Controls.Add(this.btRealTimeInventory);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(4, 4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(559, 51);
+            this.panel1.TabIndex = 0;
+            // 
+            // textRealRound
+            // 
+            this.textRealRound.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.textRealRound.Location = new System.Drawing.Point(354, 16);
+            this.textRealRound.Name = "textRealRound";
+            this.textRealRound.Size = new System.Drawing.Size(28, 21);
+            this.textRealRound.TabIndex = 48;
+            this.textRealRound.Text = "1";
+            this.textRealRound.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label84
+            // 
+            this.label84.AutoSize = true;
+            this.label84.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label84.Location = new System.Drawing.Point(231, 20);
+            this.label84.Name = "label84";
+            this.label84.Size = new System.Drawing.Size(119, 12);
+            this.label84.TabIndex = 2;
+            this.label84.Text = "Repeat Per Command:";
+            // 
+            // btRealTimeInventory
+            // 
+            this.btRealTimeInventory.Font = new System.Drawing.Font("SimSun", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btRealTimeInventory.ForeColor = System.Drawing.Color.DarkBlue;
+            this.btRealTimeInventory.Location = new System.Drawing.Point(75, 6);
+            this.btRealTimeInventory.Name = "btRealTimeInventory";
+            this.btRealTimeInventory.Size = new System.Drawing.Size(144, 41);
+            this.btRealTimeInventory.TabIndex = 1;
+            this.btRealTimeInventory.Text = "Inventory";
+            this.btRealTimeInventory.UseVisualStyleBackColor = true;
+            this.btRealTimeInventory.Click += new System.EventHandler(this.btRealTimeInventory_Click);
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.cbRealSession);
+            this.panel5.Controls.Add(this.cmbTarget);
+            this.panel5.Controls.Add(this.label98);
+            this.panel5.Controls.Add(this.cmbSession);
+            this.panel5.Controls.Add(this.label97);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(570, 4);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(751, 51);
+            this.panel5.TabIndex = 1;
+            // 
+            // cbRealSession
+            // 
+            this.cbRealSession.AutoSize = true;
+            this.cbRealSession.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cbRealSession.Location = new System.Drawing.Point(29, 19);
+            this.cbRealSession.Name = "cbRealSession";
+            this.cbRealSession.Size = new System.Drawing.Size(138, 16);
+            this.cbRealSession.TabIndex = 55;
+            this.cbRealSession.Text = "User Define Session";
+            this.cbRealSession.UseVisualStyleBackColor = true;
+            this.cbRealSession.CheckedChanged += new System.EventHandler(this.cbRealSession_CheckedChanged);
+            // 
+            // cmbTarget
+            // 
+            this.cmbTarget.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTarget.Enabled = false;
+            this.cmbTarget.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cmbTarget.FormattingEnabled = true;
+            this.cmbTarget.Items.AddRange(new object[] {
+            "A",
+            "B"});
+            this.cmbTarget.Location = new System.Drawing.Point(472, 16);
+            this.cmbTarget.Name = "cmbTarget";
+            this.cmbTarget.Size = new System.Drawing.Size(62, 20);
+            this.cmbTarget.TabIndex = 54;
+            // 
+            // label98
+            // 
+            this.label98.AutoSize = true;
+            this.label98.Enabled = false;
+            this.label98.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label98.Location = new System.Drawing.Point(359, 20);
+            this.label98.Name = "label98";
+            this.label98.Size = new System.Drawing.Size(107, 12);
+            this.label98.TabIndex = 53;
+            this.label98.Text = "Inventoried Flag:";
+            // 
+            // cmbSession
+            // 
+            this.cmbSession.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSession.Enabled = false;
+            this.cmbSession.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cmbSession.FormattingEnabled = true;
+            this.cmbSession.Items.AddRange(new object[] {
+            "S0",
+            "S1",
+            "S2",
+            "S3"});
+            this.cmbSession.Location = new System.Drawing.Point(273, 16);
+            this.cmbSession.Name = "cmbSession";
+            this.cmbSession.Size = new System.Drawing.Size(62, 20);
+            this.cmbSession.TabIndex = 52;
+            // 
+            // label97
+            // 
+            this.label97.AutoSize = true;
+            this.label97.Enabled = false;
+            this.label97.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label97.Location = new System.Drawing.Point(196, 20);
+            this.label97.Name = "label97";
+            this.label97.Size = new System.Drawing.Size(71, 12);
+            this.label97.TabIndex = 51;
+            this.label97.Text = "Session ID:";
+            // 
+            // tbRealMinRssi
+            // 
+            this.tbRealMinRssi.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.tbRealMinRssi.Location = new System.Drawing.Point(482, 240);
+            this.tbRealMinRssi.Name = "tbRealMinRssi";
+            this.tbRealMinRssi.ReadOnly = true;
+            this.tbRealMinRssi.Size = new System.Drawing.Size(62, 21);
+            this.tbRealMinRssi.TabIndex = 46;
+            this.tbRealMinRssi.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // tbRealMaxRssi
+            // 
+            this.tbRealMaxRssi.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.tbRealMaxRssi.Location = new System.Drawing.Point(667, 240);
+            this.tbRealMaxRssi.Name = "tbRealMaxRssi";
+            this.tbRealMaxRssi.ReadOnly = true;
+            this.tbRealMaxRssi.Size = new System.Drawing.Size(62, 21);
+            this.tbRealMaxRssi.TabIndex = 47;
+            this.tbRealMaxRssi.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btRealFresh
+            // 
+            this.btRealFresh.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btRealFresh.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.btRealFresh.Location = new System.Drawing.Point(771, 240);
+            this.btRealFresh.Name = "btRealFresh";
+            this.btRealFresh.Size = new System.Drawing.Size(89, 25);
+            this.btRealFresh.TabIndex = 45;
+            this.btRealFresh.Text = "Refresh";
+            this.btRealFresh.UseVisualStyleBackColor = true;
+            this.btRealFresh.Click += new System.EventHandler(this.btRealFresh_Click);
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label70.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label70.Location = new System.Drawing.Point(602, 243);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(59, 12);
+            this.label70.TabIndex = 43;
+            this.label70.Text = "Max RSSI:";
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label74.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label74.Location = new System.Drawing.Point(417, 243);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(59, 12);
+            this.label74.TabIndex = 44;
+            this.label74.Text = "Min RSSI:";
+            // 
+            // lbRealTagCount
+            // 
+            this.lbRealTagCount.AutoSize = true;
+            this.lbRealTagCount.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lbRealTagCount.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.lbRealTagCount.Location = new System.Drawing.Point(6, 243);
+            this.lbRealTagCount.Name = "lbRealTagCount";
+            this.lbRealTagCount.Size = new System.Drawing.Size(59, 12);
+            this.lbRealTagCount.TabIndex = 42;
+            this.lbRealTagCount.Text = "Tag List:";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.ledReal3);
+            this.groupBox1.Controls.Add(this.comboBox6);
+            this.groupBox1.Controls.Add(this.ledReal5);
+            this.groupBox1.Controls.Add(this.ledReal2);
+            this.groupBox1.Controls.Add(this.ledReal4);
+            this.groupBox1.Controls.Add(this.label53);
+            this.groupBox1.Controls.Add(this.label66);
+            this.groupBox1.Controls.Add(this.label67);
+            this.groupBox1.Controls.Add(this.label68);
+            this.groupBox1.Controls.Add(this.label69);
+            this.groupBox1.Controls.Add(this.ledReal1);
+            this.groupBox1.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.groupBox1.Location = new System.Drawing.Point(3, 64);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(996, 176);
+            this.groupBox1.TabIndex = 24;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Tag Data";
+            // 
+            // ledReal3
+            // 
+            this.ledReal3.BackColor = System.Drawing.Color.Transparent;
+            this.ledReal3.BackColor_1 = System.Drawing.Color.Transparent;
+            this.ledReal3.BackColor_2 = System.Drawing.Color.DarkRed;
+            this.ledReal3.BevelRate = 0.1F;
+            this.ledReal3.BorderColor = System.Drawing.Color.Lavender;
+            this.ledReal3.FadedColor = System.Drawing.SystemColors.ControlLight;
+            this.ledReal3.FocusedBorderColor = System.Drawing.Color.LightCoral;
+            this.ledReal3.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.ledReal3.HighlightOpaque = ((byte)(20));
+            this.ledReal3.Location = new System.Drawing.Point(702, 54);
+            this.ledReal3.Name = "ledReal3";
+            this.ledReal3.RoundCorner = true;
+            this.ledReal3.SegmentIntervalRatio = 50;
+            this.ledReal3.ShowHighlight = true;
+            this.ledReal3.Size = new System.Drawing.Size(210, 38);
+            this.ledReal3.TabIndex = 40;
+            this.ledReal3.Text = "0";
+            this.ledReal3.TextAlignment = LxControl.LxLedControl.Alignment.Right;
+            this.ledReal3.TotalCharCount = 10;
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox6.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Items.AddRange(new object[] {
+            "天线1",
+            "天线2",
+            "天线3",
+            "天线4",
+            "不选"});
+            this.comboBox6.Location = new System.Drawing.Point(-165, 120);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(55, 20);
+            this.comboBox6.TabIndex = 39;
+            // 
+            // ledReal5
+            // 
+            this.ledReal5.BackColor = System.Drawing.Color.Transparent;
+            this.ledReal5.BackColor_1 = System.Drawing.Color.Transparent;
+            this.ledReal5.BackColor_2 = System.Drawing.Color.DarkRed;
+            this.ledReal5.BevelRate = 0.1F;
+            this.ledReal5.BorderColor = System.Drawing.Color.Lavender;
+            this.ledReal5.FadedColor = System.Drawing.SystemColors.ControlLight;
+            this.ledReal5.FocusedBorderColor = System.Drawing.Color.LightCoral;
+            this.ledReal5.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.ledReal5.HighlightOpaque = ((byte)(20));
+            this.ledReal5.Location = new System.Drawing.Point(702, 128);
+            this.ledReal5.Name = "ledReal5";
+            this.ledReal5.RoundCorner = true;
+            this.ledReal5.SegmentIntervalRatio = 50;
+            this.ledReal5.ShowHighlight = true;
+            this.ledReal5.Size = new System.Drawing.Size(210, 38);
+            this.ledReal5.TabIndex = 35;
+            this.ledReal5.Text = "0";
+            this.ledReal5.TextAlignment = LxControl.LxLedControl.Alignment.Right;
+            this.ledReal5.TotalCharCount = 10;
+            // 
+            // ledReal2
+            // 
+            this.ledReal2.BackColor = System.Drawing.Color.Transparent;
+            this.ledReal2.BackColor_1 = System.Drawing.Color.Transparent;
+            this.ledReal2.BackColor_2 = System.Drawing.Color.DarkRed;
+            this.ledReal2.BevelRate = 0.1F;
+            this.ledReal2.BorderColor = System.Drawing.Color.Lavender;
+            this.ledReal2.FadedColor = System.Drawing.SystemColors.ControlLight;
+            this.ledReal2.FocusedBorderColor = System.Drawing.Color.LightCoral;
+            this.ledReal2.ForeColor = System.Drawing.Color.Purple;
+            this.ledReal2.HighlightOpaque = ((byte)(20));
+            this.ledReal2.Location = new System.Drawing.Point(496, 38);
+            this.ledReal2.Name = "ledReal2";
+            this.ledReal2.RoundCorner = true;
+            this.ledReal2.SegmentIntervalRatio = 50;
+            this.ledReal2.ShowHighlight = true;
+            this.ledReal2.Size = new System.Drawing.Size(180, 54);
+            this.ledReal2.TabIndex = 34;
+            this.ledReal2.Text = "0";
+            this.ledReal2.TextAlignment = LxControl.LxLedControl.Alignment.Right;
+            this.ledReal2.TotalCharCount = 6;
+            // 
+            // ledReal4
+            // 
+            this.ledReal4.BackColor = System.Drawing.Color.Transparent;
+            this.ledReal4.BackColor_1 = System.Drawing.Color.Transparent;
+            this.ledReal4.BackColor_2 = System.Drawing.Color.DarkRed;
+            this.ledReal4.BevelRate = 0.1F;
+            this.ledReal4.BorderColor = System.Drawing.Color.Lavender;
+            this.ledReal4.FadedColor = System.Drawing.SystemColors.ControlLight;
+            this.ledReal4.FocusedBorderColor = System.Drawing.Color.LightCoral;
+            this.ledReal4.ForeColor = System.Drawing.Color.Purple;
+            this.ledReal4.HighlightOpaque = ((byte)(20));
+            this.ledReal4.Location = new System.Drawing.Point(497, 111);
+            this.ledReal4.Name = "ledReal4";
+            this.ledReal4.RoundCorner = true;
+            this.ledReal4.SegmentIntervalRatio = 50;
+            this.ledReal4.ShowHighlight = true;
+            this.ledReal4.Size = new System.Drawing.Size(179, 54);
+            this.ledReal4.TabIndex = 33;
+            this.ledReal4.Text = "0";
+            this.ledReal4.TextAlignment = LxControl.LxLedControl.Alignment.Right;
+            this.ledReal4.TotalCharCount = 6;
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label53.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label53.Location = new System.Drawing.Point(700, 111);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(179, 12);
+            this.label53.TabIndex = 30;
+            this.label53.Text = "Total Inventory Duration(mS):";
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label66.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label66.Location = new System.Drawing.Point(495, 19);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(95, 12);
+            this.label66.TabIndex = 29;
+            this.label66.Text = "Speed(Tag/Sec):";
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label67.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label67.Location = new System.Drawing.Point(498, 95);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(131, 12);
+            this.label67.TabIndex = 28;
+            this.label67.Text = "Command Duration(mS):";
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label68.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label68.Location = new System.Drawing.Point(700, 38);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(149, 12);
+            this.label68.TabIndex = 27;
+            this.label68.Text = "Total Tag Communication:";
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label69.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label69.Location = new System.Drawing.Point(104, 19);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(131, 12);
+            this.label69.TabIndex = 26;
+            this.label69.Text = "Inventoried Quantity:";
+            // 
+            // ledReal1
+            // 
+            this.ledReal1.BackColor = System.Drawing.Color.Transparent;
+            this.ledReal1.BackColor_1 = System.Drawing.Color.Transparent;
+            this.ledReal1.BackColor_2 = System.Drawing.Color.DarkRed;
+            this.ledReal1.BevelRate = 0.1F;
+            this.ledReal1.BorderColor = System.Drawing.Color.Lavender;
+            this.ledReal1.BorderWidth = 3;
+            this.ledReal1.FadedColor = System.Drawing.SystemColors.ControlLight;
+            this.ledReal1.FocusedBorderColor = System.Drawing.Color.LightCoral;
+            this.ledReal1.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.ledReal1.HighlightOpaque = ((byte)(20));
+            this.ledReal1.Location = new System.Drawing.Point(106, 38);
+            this.ledReal1.Name = "ledReal1";
+            this.ledReal1.RoundCorner = true;
+            this.ledReal1.SegmentIntervalRatio = 50;
+            this.ledReal1.ShowHighlight = true;
+            this.ledReal1.Size = new System.Drawing.Size(327, 128);
+            this.ledReal1.TabIndex = 21;
+            this.ledReal1.Text = "0";
+            this.ledReal1.TextAlignment = LxControl.LxLedControl.Alignment.Right;
+            // 
+            // lvRealList
+            // 
+            this.lvRealList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader37,
+            this.columnHeader38,
+            this.columnHeader39,
+            this.columnHeader40,
+            this.columnHeader41,
+            this.columnHeader42});
+            this.lvRealList.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lvRealList.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lvRealList.GridLines = true;
+            this.lvRealList.Location = new System.Drawing.Point(3, 267);
+            this.lvRealList.Name = "lvRealList";
+            this.lvRealList.Size = new System.Drawing.Size(1325, 357);
+            this.lvRealList.TabIndex = 23;
+            this.lvRealList.UseCompatibleStateImageBehavior = false;
+            this.lvRealList.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader37
+            // 
+            this.columnHeader37.Text = "ID";
+            this.columnHeader37.Width = 56;
+            // 
+            // columnHeader38
+            // 
+            this.columnHeader38.Text = "EPC";
+            this.columnHeader38.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader38.Width = 486;
+            // 
+            // columnHeader39
+            // 
+            this.columnHeader39.Text = "PC";
+            this.columnHeader39.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader39.Width = 83;
+            // 
+            // columnHeader40
+            // 
+            this.columnHeader40.Text = "Identification Count";
+            this.columnHeader40.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader40.Width = 149;
+            // 
+            // columnHeader41
+            // 
+            this.columnHeader41.Text = "RSSI";
+            this.columnHeader41.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader41.Width = 95;
+            // 
+            // columnHeader42
+            // 
+            this.columnHeader42.Text = "Carrier Frequency";
+            this.columnHeader42.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader42.Width = 114;
+            // 
+            // pageBufferedMode
+            // 
+            this.pageBufferedMode.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pageBufferedMode.Controls.Add(this.tableLayoutPanel4);
+            this.pageBufferedMode.Controls.Add(this.groupBox3);
+            this.pageBufferedMode.Controls.Add(this.btBufferFresh);
+            this.pageBufferedMode.Controls.Add(this.labelBufferTagCount);
+            this.pageBufferedMode.Controls.Add(this.lvBufferList);
+            this.pageBufferedMode.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.pageBufferedMode.Location = new System.Drawing.Point(4, 22);
+            this.pageBufferedMode.Name = "pageBufferedMode";
+            this.pageBufferedMode.Size = new System.Drawing.Size(1331, 627);
+            this.pageBufferedMode.TabIndex = 2;
+            this.pageBufferedMode.Text = "Tag Inventory(Buffer Mode)";
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.tableLayoutPanel4.ColumnCount = 3;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.22422F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.77578F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 418F));
+            this.tableLayoutPanel4.Controls.Add(this.panel9, 2, 0);
+            this.tableLayoutPanel4.Controls.Add(this.panel10, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.panel8, 1, 0);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 1;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(1331, 89);
+            this.tableLayoutPanel4.TabIndex = 58;
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.btClearBuffer);
+            this.panel9.Controls.Add(this.btQueryBuffer);
+            this.panel9.Controls.Add(this.btGetClearBuffer);
+            this.panel9.Controls.Add(this.btGetBuffer);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel9.Location = new System.Drawing.Point(914, 4);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(413, 81);
+            this.panel9.TabIndex = 1;
+            // 
+            // btClearBuffer
+            // 
+            this.btClearBuffer.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btClearBuffer.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btClearBuffer.Location = new System.Drawing.Point(15, 45);
+            this.btClearBuffer.Name = "btClearBuffer";
+            this.btClearBuffer.Size = new System.Drawing.Size(135, 27);
+            this.btClearBuffer.TabIndex = 8;
+            this.btClearBuffer.Text = "Clear Buffer";
+            this.btClearBuffer.UseVisualStyleBackColor = true;
+            this.btClearBuffer.Click += new System.EventHandler(this.btClearBuffer_Click);
+            // 
+            // btQueryBuffer
+            // 
+            this.btQueryBuffer.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btQueryBuffer.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btQueryBuffer.Location = new System.Drawing.Point(167, 45);
+            this.btQueryBuffer.Name = "btQueryBuffer";
+            this.btQueryBuffer.Size = new System.Drawing.Size(135, 27);
+            this.btQueryBuffer.TabIndex = 7;
+            this.btQueryBuffer.Text = "Query Tag Quantity";
+            this.btQueryBuffer.UseVisualStyleBackColor = true;
+            this.btQueryBuffer.Click += new System.EventHandler(this.btQueryBuffer_Click);
+            // 
+            // btGetClearBuffer
+            // 
+            this.btGetClearBuffer.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btGetClearBuffer.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btGetClearBuffer.Location = new System.Drawing.Point(167, 11);
+            this.btGetClearBuffer.Name = "btGetClearBuffer";
+            this.btGetClearBuffer.Size = new System.Drawing.Size(135, 27);
+            this.btGetClearBuffer.TabIndex = 6;
+            this.btGetClearBuffer.Text = "Get and Clear Buffer";
+            this.btGetClearBuffer.UseVisualStyleBackColor = true;
+            this.btGetClearBuffer.Click += new System.EventHandler(this.btGetClearBuffer_Click);
+            // 
+            // btGetBuffer
+            // 
+            this.btGetBuffer.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btGetBuffer.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btGetBuffer.Location = new System.Drawing.Point(15, 11);
+            this.btGetBuffer.Name = "btGetBuffer";
+            this.btGetBuffer.Size = new System.Drawing.Size(135, 27);
+            this.btGetBuffer.TabIndex = 5;
+            this.btGetBuffer.Text = "Get Buffer";
+            this.btGetBuffer.UseVisualStyleBackColor = true;
+            this.btGetBuffer.Click += new System.EventHandler(this.btGetBuffer_Click);
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.btBufferInventory);
+            this.panel10.Controls.Add(this.label85);
+            this.panel10.Controls.Add(this.textReadRoundBuffer);
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel10.Location = new System.Drawing.Point(4, 4);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(450, 81);
+            this.panel10.TabIndex = 0;
+            // 
+            // btBufferInventory
+            // 
+            this.btBufferInventory.Font = new System.Drawing.Font("SimSun", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btBufferInventory.ForeColor = System.Drawing.Color.DarkBlue;
+            this.btBufferInventory.Location = new System.Drawing.Point(7, 15);
+            this.btBufferInventory.Name = "btBufferInventory";
+            this.btBufferInventory.Size = new System.Drawing.Size(144, 41);
+            this.btBufferInventory.TabIndex = 51;
+            this.btBufferInventory.Text = "Inventory";
+            this.btBufferInventory.UseVisualStyleBackColor = true;
+            this.btBufferInventory.Click += new System.EventHandler(this.btBufferInventory_Click);
+            // 
+            // label85
+            // 
+            this.label85.AutoSize = true;
+            this.label85.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label85.Location = new System.Drawing.Point(163, 32);
+            this.label85.Name = "label85";
+            this.label85.Size = new System.Drawing.Size(119, 12);
+            this.label85.TabIndex = 49;
+            this.label85.Text = "Repeat Per Command:";
+            // 
+            // textReadRoundBuffer
+            // 
+            this.textReadRoundBuffer.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.textReadRoundBuffer.Location = new System.Drawing.Point(288, 28);
+            this.textReadRoundBuffer.Name = "textReadRoundBuffer";
+            this.textReadRoundBuffer.Size = new System.Drawing.Size(28, 21);
+            this.textReadRoundBuffer.TabIndex = 50;
+            this.textReadRoundBuffer.Text = "1";
+            this.textReadRoundBuffer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.cbBufferWorkant1);
+            this.panel8.Controls.Add(this.cbBufferWorkant4);
+            this.panel8.Controls.Add(this.cbBufferWorkant2);
+            this.panel8.Controls.Add(this.cbBufferWorkant3);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel8.Location = new System.Drawing.Point(461, 4);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(446, 81);
+            this.panel8.TabIndex = 0;
+            // 
+            // cbBufferWorkant1
+            // 
+            this.cbBufferWorkant1.AutoSize = true;
+            this.cbBufferWorkant1.Checked = true;
+            this.cbBufferWorkant1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbBufferWorkant1.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cbBufferWorkant1.Location = new System.Drawing.Point(28, 30);
+            this.cbBufferWorkant1.Name = "cbBufferWorkant1";
+            this.cbBufferWorkant1.Size = new System.Drawing.Size(48, 16);
+            this.cbBufferWorkant1.TabIndex = 11;
+            this.cbBufferWorkant1.Text = "Ant1";
+            this.cbBufferWorkant1.UseVisualStyleBackColor = true;
+            // 
+            // cbBufferWorkant4
+            // 
+            this.cbBufferWorkant4.AutoSize = true;
+            this.cbBufferWorkant4.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cbBufferWorkant4.Location = new System.Drawing.Point(253, 32);
+            this.cbBufferWorkant4.Name = "cbBufferWorkant4";
+            this.cbBufferWorkant4.Size = new System.Drawing.Size(48, 16);
+            this.cbBufferWorkant4.TabIndex = 10;
+            this.cbBufferWorkant4.Text = "Ant4";
+            this.cbBufferWorkant4.UseVisualStyleBackColor = true;
+            // 
+            // cbBufferWorkant2
+            // 
+            this.cbBufferWorkant2.AutoSize = true;
+            this.cbBufferWorkant2.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cbBufferWorkant2.Location = new System.Drawing.Point(103, 32);
+            this.cbBufferWorkant2.Name = "cbBufferWorkant2";
+            this.cbBufferWorkant2.Size = new System.Drawing.Size(48, 16);
+            this.cbBufferWorkant2.TabIndex = 8;
+            this.cbBufferWorkant2.Text = "Ant2";
+            this.cbBufferWorkant2.UseVisualStyleBackColor = true;
+            // 
+            // cbBufferWorkant3
+            // 
+            this.cbBufferWorkant3.AutoSize = true;
+            this.cbBufferWorkant3.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cbBufferWorkant3.Location = new System.Drawing.Point(178, 32);
+            this.cbBufferWorkant3.Name = "cbBufferWorkant3";
+            this.cbBufferWorkant3.Size = new System.Drawing.Size(48, 16);
+            this.cbBufferWorkant3.TabIndex = 9;
+            this.cbBufferWorkant3.Text = "Ant3";
+            this.cbBufferWorkant3.UseVisualStyleBackColor = true;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.ledBuffer4);
+            this.groupBox3.Controls.Add(this.comboBox11);
+            this.groupBox3.Controls.Add(this.ledBuffer5);
+            this.groupBox3.Controls.Add(this.ledBuffer2);
+            this.groupBox3.Controls.Add(this.ledBuffer3);
+            this.groupBox3.Controls.Add(this.label92);
+            this.groupBox3.Controls.Add(this.label93);
+            this.groupBox3.Controls.Add(this.label94);
+            this.groupBox3.Controls.Add(this.label95);
+            this.groupBox3.Controls.Add(this.label96);
+            this.groupBox3.Controls.Add(this.ledBuffer1);
+            this.groupBox3.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.groupBox3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.groupBox3.Location = new System.Drawing.Point(0, 95);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(996, 176);
+            this.groupBox3.TabIndex = 57;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Tag Data";
+            // 
+            // ledBuffer4
+            // 
+            this.ledBuffer4.BackColor = System.Drawing.Color.Transparent;
+            this.ledBuffer4.BackColor_1 = System.Drawing.Color.Transparent;
+            this.ledBuffer4.BackColor_2 = System.Drawing.Color.DarkRed;
+            this.ledBuffer4.BevelRate = 0.1F;
+            this.ledBuffer4.BorderColor = System.Drawing.Color.Lavender;
+            this.ledBuffer4.FadedColor = System.Drawing.SystemColors.ControlLight;
+            this.ledBuffer4.FocusedBorderColor = System.Drawing.Color.LightCoral;
+            this.ledBuffer4.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.ledBuffer4.HighlightOpaque = ((byte)(20));
+            this.ledBuffer4.Location = new System.Drawing.Point(702, 54);
+            this.ledBuffer4.Name = "ledBuffer4";
+            this.ledBuffer4.RoundCorner = true;
+            this.ledBuffer4.SegmentIntervalRatio = 50;
+            this.ledBuffer4.ShowHighlight = true;
+            this.ledBuffer4.Size = new System.Drawing.Size(183, 38);
+            this.ledBuffer4.TabIndex = 40;
+            this.ledBuffer4.Text = "0";
+            this.ledBuffer4.TextAlignment = LxControl.LxLedControl.Alignment.Right;
+            this.ledBuffer4.TotalCharCount = 10;
+            // 
+            // comboBox11
+            // 
+            this.comboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox11.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.comboBox11.FormattingEnabled = true;
+            this.comboBox11.Items.AddRange(new object[] {
+            "天线1",
+            "天线2",
+            "天线3",
+            "天线4",
+            "不选"});
+            this.comboBox11.Location = new System.Drawing.Point(-165, 120);
+            this.comboBox11.Name = "comboBox11";
+            this.comboBox11.Size = new System.Drawing.Size(55, 20);
+            this.comboBox11.TabIndex = 39;
+            // 
+            // ledBuffer5
+            // 
+            this.ledBuffer5.BackColor = System.Drawing.Color.Transparent;
+            this.ledBuffer5.BackColor_1 = System.Drawing.Color.Transparent;
+            this.ledBuffer5.BackColor_2 = System.Drawing.Color.DarkRed;
+            this.ledBuffer5.BevelRate = 0.1F;
+            this.ledBuffer5.BorderColor = System.Drawing.Color.Lavender;
+            this.ledBuffer5.FadedColor = System.Drawing.SystemColors.ControlLight;
+            this.ledBuffer5.FocusedBorderColor = System.Drawing.Color.LightCoral;
+            this.ledBuffer5.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.ledBuffer5.HighlightOpaque = ((byte)(20));
+            this.ledBuffer5.Location = new System.Drawing.Point(702, 128);
+            this.ledBuffer5.Name = "ledBuffer5";
+            this.ledBuffer5.RoundCorner = true;
+            this.ledBuffer5.SegmentIntervalRatio = 50;
+            this.ledBuffer5.ShowHighlight = true;
+            this.ledBuffer5.Size = new System.Drawing.Size(183, 38);
+            this.ledBuffer5.TabIndex = 35;
+            this.ledBuffer5.Text = "0";
+            this.ledBuffer5.TextAlignment = LxControl.LxLedControl.Alignment.Right;
+            this.ledBuffer5.TotalCharCount = 10;
+            // 
+            // ledBuffer2
+            // 
+            this.ledBuffer2.BackColor = System.Drawing.Color.Transparent;
+            this.ledBuffer2.BackColor_1 = System.Drawing.Color.Transparent;
+            this.ledBuffer2.BackColor_2 = System.Drawing.Color.DarkRed;
+            this.ledBuffer2.BevelRate = 0.1F;
+            this.ledBuffer2.BorderColor = System.Drawing.Color.Lavender;
+            this.ledBuffer2.FadedColor = System.Drawing.SystemColors.ControlLight;
+            this.ledBuffer2.FocusedBorderColor = System.Drawing.Color.LightCoral;
+            this.ledBuffer2.ForeColor = System.Drawing.Color.Purple;
+            this.ledBuffer2.HighlightOpaque = ((byte)(20));
+            this.ledBuffer2.Location = new System.Drawing.Point(496, 38);
+            this.ledBuffer2.Name = "ledBuffer2";
+            this.ledBuffer2.RoundCorner = true;
+            this.ledBuffer2.SegmentIntervalRatio = 50;
+            this.ledBuffer2.ShowHighlight = true;
+            this.ledBuffer2.Size = new System.Drawing.Size(162, 54);
+            this.ledBuffer2.TabIndex = 34;
+            this.ledBuffer2.Text = "0";
+            this.ledBuffer2.TextAlignment = LxControl.LxLedControl.Alignment.Right;
+            this.ledBuffer2.TotalCharCount = 6;
+            // 
+            // ledBuffer3
+            // 
+            this.ledBuffer3.BackColor = System.Drawing.Color.Transparent;
+            this.ledBuffer3.BackColor_1 = System.Drawing.Color.Transparent;
+            this.ledBuffer3.BackColor_2 = System.Drawing.Color.DarkRed;
+            this.ledBuffer3.BevelRate = 0.1F;
+            this.ledBuffer3.BorderColor = System.Drawing.Color.Lavender;
+            this.ledBuffer3.FadedColor = System.Drawing.SystemColors.ControlLight;
+            this.ledBuffer3.FocusedBorderColor = System.Drawing.Color.LightCoral;
+            this.ledBuffer3.ForeColor = System.Drawing.Color.Purple;
+            this.ledBuffer3.HighlightOpaque = ((byte)(20));
+            this.ledBuffer3.Location = new System.Drawing.Point(497, 111);
+            this.ledBuffer3.Name = "ledBuffer3";
+            this.ledBuffer3.RoundCorner = true;
+            this.ledBuffer3.SegmentIntervalRatio = 50;
+            this.ledBuffer3.ShowHighlight = true;
+            this.ledBuffer3.Size = new System.Drawing.Size(161, 54);
+            this.ledBuffer3.TabIndex = 33;
+            this.ledBuffer3.Text = "0";
+            this.ledBuffer3.TextAlignment = LxControl.LxLedControl.Alignment.Right;
+            this.ledBuffer3.TotalCharCount = 6;
+            // 
+            // label92
+            // 
+            this.label92.AutoSize = true;
+            this.label92.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label92.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label92.Location = new System.Drawing.Point(700, 111);
+            this.label92.Name = "label92";
+            this.label92.Size = new System.Drawing.Size(179, 12);
+            this.label92.TabIndex = 30;
+            this.label92.Text = "Total Inventory Duration(mS):";
+            // 
+            // label93
+            // 
+            this.label93.AutoSize = true;
+            this.label93.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label93.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label93.Location = new System.Drawing.Point(495, 19);
+            this.label93.Name = "label93";
+            this.label93.Size = new System.Drawing.Size(95, 12);
+            this.label93.TabIndex = 29;
+            this.label93.Text = "Speed(Tag/Sec):";
+            // 
+            // label94
+            // 
+            this.label94.AutoSize = true;
+            this.label94.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label94.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label94.Location = new System.Drawing.Point(498, 95);
+            this.label94.Name = "label94";
+            this.label94.Size = new System.Drawing.Size(131, 12);
+            this.label94.TabIndex = 28;
+            this.label94.Text = "Command Duration(mS):";
+            // 
+            // label95
+            // 
+            this.label95.AutoSize = true;
+            this.label95.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label95.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label95.Location = new System.Drawing.Point(700, 38);
+            this.label95.Name = "label95";
+            this.label95.Size = new System.Drawing.Size(149, 12);
+            this.label95.TabIndex = 27;
+            this.label95.Text = "Total Tag Communication:";
+            // 
+            // label96
+            // 
+            this.label96.AutoSize = true;
+            this.label96.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label96.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label96.Location = new System.Drawing.Point(104, 19);
+            this.label96.Name = "label96";
+            this.label96.Size = new System.Drawing.Size(131, 12);
+            this.label96.TabIndex = 26;
+            this.label96.Text = "Inventoried Quantity:";
+            // 
+            // ledBuffer1
+            // 
+            this.ledBuffer1.BackColor = System.Drawing.Color.Transparent;
+            this.ledBuffer1.BackColor_1 = System.Drawing.Color.Transparent;
+            this.ledBuffer1.BackColor_2 = System.Drawing.Color.DarkRed;
+            this.ledBuffer1.BevelRate = 0.1F;
+            this.ledBuffer1.BorderColor = System.Drawing.Color.Lavender;
+            this.ledBuffer1.BorderWidth = 3;
+            this.ledBuffer1.FadedColor = System.Drawing.SystemColors.ControlLight;
+            this.ledBuffer1.FocusedBorderColor = System.Drawing.Color.LightCoral;
+            this.ledBuffer1.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.ledBuffer1.HighlightOpaque = ((byte)(20));
+            this.ledBuffer1.Location = new System.Drawing.Point(106, 38);
+            this.ledBuffer1.Name = "ledBuffer1";
+            this.ledBuffer1.RoundCorner = true;
+            this.ledBuffer1.SegmentIntervalRatio = 50;
+            this.ledBuffer1.ShowHighlight = true;
+            this.ledBuffer1.Size = new System.Drawing.Size(310, 128);
+            this.ledBuffer1.TabIndex = 21;
+            this.ledBuffer1.Text = "0";
+            this.ledBuffer1.TextAlignment = LxControl.LxLedControl.Alignment.Right;
+            // 
+            // btBufferFresh
+            // 
+            this.btBufferFresh.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btBufferFresh.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.btBufferFresh.Location = new System.Drawing.Point(907, 277);
+            this.btBufferFresh.Name = "btBufferFresh";
+            this.btBufferFresh.Size = new System.Drawing.Size(89, 25);
+            this.btBufferFresh.TabIndex = 52;
+            this.btBufferFresh.Text = "Refresh";
+            this.btBufferFresh.UseVisualStyleBackColor = true;
+            this.btBufferFresh.Click += new System.EventHandler(this.btBufferFresh_Click);
+            // 
+            // labelBufferTagCount
+            // 
+            this.labelBufferTagCount.AutoSize = true;
+            this.labelBufferTagCount.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelBufferTagCount.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.labelBufferTagCount.Location = new System.Drawing.Point(6, 283);
+            this.labelBufferTagCount.Name = "labelBufferTagCount";
+            this.labelBufferTagCount.Size = new System.Drawing.Size(59, 12);
+            this.labelBufferTagCount.TabIndex = 49;
+            this.labelBufferTagCount.Text = "Tag List:";
+            // 
+            // lvBufferList
+            // 
+            this.lvBufferList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader49,
+            this.columnHeader50,
+            this.columnHeader51,
+            this.columnHeader52,
+            this.columnHeader53,
+            this.columnHeader54,
+            this.columnHeader16});
+            this.lvBufferList.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lvBufferList.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lvBufferList.GridLines = true;
+            this.lvBufferList.Location = new System.Drawing.Point(0, 369);
+            this.lvBufferList.Name = "lvBufferList";
+            this.lvBufferList.Size = new System.Drawing.Size(1331, 258);
+            this.lvBufferList.TabIndex = 48;
+            this.lvBufferList.UseCompatibleStateImageBehavior = false;
+            this.lvBufferList.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader49
+            // 
+            this.columnHeader49.Text = "ID";
+            this.columnHeader49.Width = 56;
+            // 
+            // columnHeader50
+            // 
+            this.columnHeader50.Text = "PC";
+            this.columnHeader50.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader50.Width = 64;
+            // 
+            // columnHeader51
+            // 
+            this.columnHeader51.Text = "CRC";
+            this.columnHeader51.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader51.Width = 74;
+            // 
+            // columnHeader52
+            // 
+            this.columnHeader52.Text = "EPC";
+            this.columnHeader52.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader52.Width = 492;
+            // 
+            // columnHeader53
+            // 
+            this.columnHeader53.Text = "Ant ID";
+            this.columnHeader53.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader53.Width = 95;
+            // 
+            // columnHeader54
+            // 
+            this.columnHeader54.Text = "RSSI";
+            this.columnHeader54.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader54.Width = 71;
+            // 
+            // columnHeader16
+            // 
+            this.columnHeader16.Text = "Identification Count";
+            this.columnHeader16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader16.Width = 135;
+            // 
+            // pageFast4AntMode
+            // 
+            this.pageFast4AntMode.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pageFast4AntMode.Controls.Add(this.groupBox2);
+            this.pageFast4AntMode.Controls.Add(this.txtFastMaxRssi);
+            this.pageFast4AntMode.Controls.Add(this.txtFastMinRssi);
+            this.pageFast4AntMode.Controls.Add(this.buttonFastFresh);
+            this.pageFast4AntMode.Controls.Add(this.tableLayoutPanel2);
+            this.pageFast4AntMode.Controls.Add(this.label22);
+            this.pageFast4AntMode.Controls.Add(this.lvFastList);
+            this.pageFast4AntMode.Controls.Add(this.label49);
+            this.pageFast4AntMode.Controls.Add(this.txtFastTagList);
+            this.pageFast4AntMode.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.pageFast4AntMode.Location = new System.Drawing.Point(4, 22);
+            this.pageFast4AntMode.Name = "pageFast4AntMode";
+            this.pageFast4AntMode.Padding = new System.Windows.Forms.Padding(3);
+            this.pageFast4AntMode.Size = new System.Drawing.Size(1331, 627);
+            this.pageFast4AntMode.TabIndex = 0;
+            this.pageFast4AntMode.Text = "Tag Inventory(Fast Switch Antenna Mode)";
+            this.pageFast4AntMode.Enter += new System.EventHandler(this.pageFast4AntMode_Enter);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.ledFast4);
+            this.groupBox2.Controls.Add(this.comboBox7);
+            this.groupBox2.Controls.Add(this.ledFast5);
+            this.groupBox2.Controls.Add(this.ledFast2);
+            this.groupBox2.Controls.Add(this.ledFast3);
+            this.groupBox2.Controls.Add(this.label54);
+            this.groupBox2.Controls.Add(this.label55);
+            this.groupBox2.Controls.Add(this.label56);
+            this.groupBox2.Controls.Add(this.label57);
+            this.groupBox2.Controls.Add(this.label58);
+            this.groupBox2.Controls.Add(this.ledFast1);
+            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox2.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.groupBox2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.groupBox2.Location = new System.Drawing.Point(3, 88);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(1325, 176);
+            this.groupBox2.TabIndex = 42;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Tag Data";
+            // 
+            // ledFast4
+            // 
+            this.ledFast4.BackColor = System.Drawing.Color.Transparent;
+            this.ledFast4.BackColor_1 = System.Drawing.Color.Transparent;
+            this.ledFast4.BackColor_2 = System.Drawing.Color.DarkRed;
+            this.ledFast4.BevelRate = 0.1F;
+            this.ledFast4.BorderColor = System.Drawing.Color.Lavender;
+            this.ledFast4.FadedColor = System.Drawing.SystemColors.ControlLight;
+            this.ledFast4.FocusedBorderColor = System.Drawing.Color.LightCoral;
+            this.ledFast4.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.ledFast4.HighlightOpaque = ((byte)(20));
+            this.ledFast4.Location = new System.Drawing.Point(702, 54);
+            this.ledFast4.Name = "ledFast4";
+            this.ledFast4.RoundCorner = true;
+            this.ledFast4.SegmentIntervalRatio = 50;
+            this.ledFast4.ShowHighlight = true;
+            this.ledFast4.Size = new System.Drawing.Size(199, 38);
+            this.ledFast4.TabIndex = 40;
+            this.ledFast4.Text = "0";
+            this.ledFast4.TextAlignment = LxControl.LxLedControl.Alignment.Right;
+            this.ledFast4.TotalCharCount = 10;
+            // 
+            // comboBox7
+            // 
+            this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox7.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.comboBox7.FormattingEnabled = true;
+            this.comboBox7.Items.AddRange(new object[] {
+            "天线1",
+            "天线2",
+            "天线3",
+            "天线4",
+            "不选"});
+            this.comboBox7.Location = new System.Drawing.Point(-165, 120);
+            this.comboBox7.Name = "comboBox7";
+            this.comboBox7.Size = new System.Drawing.Size(55, 20);
+            this.comboBox7.TabIndex = 39;
+            // 
+            // ledFast5
+            // 
+            this.ledFast5.BackColor = System.Drawing.Color.Transparent;
+            this.ledFast5.BackColor_1 = System.Drawing.Color.Transparent;
+            this.ledFast5.BackColor_2 = System.Drawing.Color.DarkRed;
+            this.ledFast5.BevelRate = 0.1F;
+            this.ledFast5.BorderColor = System.Drawing.Color.Lavender;
+            this.ledFast5.FadedColor = System.Drawing.SystemColors.ControlLight;
+            this.ledFast5.FocusedBorderColor = System.Drawing.Color.LightCoral;
+            this.ledFast5.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.ledFast5.HighlightOpaque = ((byte)(20));
+            this.ledFast5.Location = new System.Drawing.Point(702, 128);
+            this.ledFast5.Name = "ledFast5";
+            this.ledFast5.RoundCorner = true;
+            this.ledFast5.SegmentIntervalRatio = 50;
+            this.ledFast5.ShowHighlight = true;
+            this.ledFast5.Size = new System.Drawing.Size(199, 38);
+            this.ledFast5.TabIndex = 35;
+            this.ledFast5.Text = "0";
+            this.ledFast5.TextAlignment = LxControl.LxLedControl.Alignment.Right;
+            this.ledFast5.TotalCharCount = 10;
+            // 
+            // ledFast2
+            // 
+            this.ledFast2.BackColor = System.Drawing.Color.Transparent;
+            this.ledFast2.BackColor_1 = System.Drawing.Color.Transparent;
+            this.ledFast2.BackColor_2 = System.Drawing.Color.DarkRed;
+            this.ledFast2.BevelRate = 0.1F;
+            this.ledFast2.BorderColor = System.Drawing.Color.Lavender;
+            this.ledFast2.FadedColor = System.Drawing.SystemColors.ControlLight;
+            this.ledFast2.FocusedBorderColor = System.Drawing.Color.LightCoral;
+            this.ledFast2.ForeColor = System.Drawing.Color.Purple;
+            this.ledFast2.HighlightOpaque = ((byte)(20));
+            this.ledFast2.Location = new System.Drawing.Point(496, 38);
+            this.ledFast2.Name = "ledFast2";
+            this.ledFast2.RoundCorner = true;
+            this.ledFast2.SegmentIntervalRatio = 50;
+            this.ledFast2.ShowHighlight = true;
+            this.ledFast2.Size = new System.Drawing.Size(173, 54);
+            this.ledFast2.TabIndex = 34;
+            this.ledFast2.Text = "0";
+            this.ledFast2.TextAlignment = LxControl.LxLedControl.Alignment.Right;
+            this.ledFast2.TotalCharCount = 6;
+            // 
+            // ledFast3
+            // 
+            this.ledFast3.BackColor = System.Drawing.Color.Transparent;
+            this.ledFast3.BackColor_1 = System.Drawing.Color.Transparent;
+            this.ledFast3.BackColor_2 = System.Drawing.Color.DarkRed;
+            this.ledFast3.BevelRate = 0.1F;
+            this.ledFast3.BorderColor = System.Drawing.Color.Lavender;
+            this.ledFast3.FadedColor = System.Drawing.SystemColors.ControlLight;
+            this.ledFast3.FocusedBorderColor = System.Drawing.Color.LightCoral;
+            this.ledFast3.ForeColor = System.Drawing.Color.Purple;
+            this.ledFast3.HighlightOpaque = ((byte)(20));
+            this.ledFast3.Location = new System.Drawing.Point(497, 111);
+            this.ledFast3.Name = "ledFast3";
+            this.ledFast3.RoundCorner = true;
+            this.ledFast3.SegmentIntervalRatio = 50;
+            this.ledFast3.ShowHighlight = true;
+            this.ledFast3.Size = new System.Drawing.Size(172, 54);
+            this.ledFast3.TabIndex = 33;
+            this.ledFast3.Text = "0";
+            this.ledFast3.TextAlignment = LxControl.LxLedControl.Alignment.Right;
+            this.ledFast3.TotalCharCount = 6;
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label54.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label54.Location = new System.Drawing.Point(700, 111);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(179, 12);
+            this.label54.TabIndex = 30;
+            this.label54.Text = "Total Inventory Duration(mS):";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label55.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label55.Location = new System.Drawing.Point(495, 19);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(95, 12);
+            this.label55.TabIndex = 29;
+            this.label55.Text = "Speed(Tag/Sec):";
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label56.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label56.Location = new System.Drawing.Point(498, 95);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(131, 12);
+            this.label56.TabIndex = 28;
+            this.label56.Text = "Command Duration(mS):";
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label57.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label57.Location = new System.Drawing.Point(717, 19);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(149, 12);
+            this.label57.TabIndex = 27;
+            this.label57.Text = "Total Tag Communication:";
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label58.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label58.Location = new System.Drawing.Point(104, 19);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(125, 12);
+            this.label58.TabIndex = 26;
+            this.label58.Text = "Inventoried Quantity";
+            // 
+            // ledFast1
+            // 
+            this.ledFast1.BackColor = System.Drawing.Color.Transparent;
+            this.ledFast1.BackColor_1 = System.Drawing.Color.Transparent;
+            this.ledFast1.BackColor_2 = System.Drawing.Color.DarkRed;
+            this.ledFast1.BevelRate = 0.1F;
+            this.ledFast1.BorderColor = System.Drawing.Color.Lavender;
+            this.ledFast1.BorderWidth = 3;
+            this.ledFast1.FadedColor = System.Drawing.SystemColors.ControlLight;
+            this.ledFast1.FocusedBorderColor = System.Drawing.Color.LightCoral;
+            this.ledFast1.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.ledFast1.HighlightOpaque = ((byte)(20));
+            this.ledFast1.Location = new System.Drawing.Point(106, 38);
+            this.ledFast1.Name = "ledFast1";
+            this.ledFast1.RoundCorner = true;
+            this.ledFast1.SegmentIntervalRatio = 50;
+            this.ledFast1.ShowHighlight = true;
+            this.ledFast1.Size = new System.Drawing.Size(328, 128);
+            this.ledFast1.TabIndex = 21;
+            this.ledFast1.Text = "0";
+            this.ledFast1.TextAlignment = LxControl.LxLedControl.Alignment.Right;
+            // 
+            // txtFastMaxRssi
+            // 
+            this.txtFastMaxRssi.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtFastMaxRssi.Location = new System.Drawing.Point(705, 271);
+            this.txtFastMaxRssi.Name = "txtFastMaxRssi";
+            this.txtFastMaxRssi.Size = new System.Drawing.Size(62, 21);
+            this.txtFastMaxRssi.TabIndex = 40;
+            // 
+            // txtFastMinRssi
+            // 
+            this.txtFastMinRssi.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtFastMinRssi.Location = new System.Drawing.Point(499, 271);
+            this.txtFastMinRssi.Name = "txtFastMinRssi";
+            this.txtFastMinRssi.Size = new System.Drawing.Size(62, 21);
+            this.txtFastMinRssi.TabIndex = 41;
+            // 
+            // buttonFastFresh
+            // 
+            this.buttonFastFresh.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.buttonFastFresh.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.buttonFastFresh.Location = new System.Drawing.Point(905, 271);
+            this.buttonFastFresh.Name = "buttonFastFresh";
+            this.buttonFastFresh.Size = new System.Drawing.Size(89, 25);
+            this.buttonFastFresh.TabIndex = 28;
+            this.buttonFastFresh.Text = "Refresh";
+            this.buttonFastFresh.UseVisualStyleBackColor = true;
+            this.buttonFastFresh.Click += new System.EventHandler(this.buttonFastFresh_Click);
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tableLayoutPanel2.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
+            this.tableLayoutPanel2.ColumnCount = 3;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.20588F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.79412F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 390F));
+            this.tableLayoutPanel2.Controls.Add(this.panel2, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.panel3, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.panel4, 2, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 83F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1325, 85);
+            this.tableLayoutPanel2.TabIndex = 25;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.txtDStay);
+            this.panel2.Controls.Add(this.txtCStay);
+            this.panel2.Controls.Add(this.txtBStay);
+            this.panel2.Controls.Add(this.txtAStay);
+            this.panel2.Controls.Add(this.label64);
+            this.panel2.Controls.Add(this.label65);
+            this.panel2.Controls.Add(this.cmbAntSelect1);
+            this.panel2.Controls.Add(this.label62);
+            this.panel2.Controls.Add(this.cmbAntSelect2);
+            this.panel2.Controls.Add(this.label63);
+            this.panel2.Controls.Add(this.cmbAntSelect3);
+            this.panel2.Controls.Add(this.label60);
+            this.panel2.Controls.Add(this.cmbAntSelect4);
+            this.panel2.Controls.Add(this.label61);
+            this.panel2.Controls.Add(this.label59);
+            this.panel2.Controls.Add(this.label48);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(259, 5);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(668, 75);
+            this.panel2.TabIndex = 0;
+            // 
+            // txtDStay
+            // 
+            this.txtDStay.AcceptsReturn = true;
+            this.txtDStay.Location = new System.Drawing.Point(469, 29);
+            this.txtDStay.Name = "txtDStay";
+            this.txtDStay.Size = new System.Drawing.Size(42, 20);
+            this.txtDStay.TabIndex = 59;
+            this.txtDStay.Text = "1";
+            this.txtDStay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtCStay
+            // 
+            this.txtCStay.Location = new System.Drawing.Point(336, 29);
+            this.txtCStay.Name = "txtCStay";
+            this.txtCStay.Size = new System.Drawing.Size(42, 20);
+            this.txtCStay.TabIndex = 58;
+            this.txtCStay.Text = "1";
+            this.txtCStay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtBStay
+            // 
+            this.txtBStay.Location = new System.Drawing.Point(203, 29);
+            this.txtBStay.Name = "txtBStay";
+            this.txtBStay.Size = new System.Drawing.Size(42, 20);
+            this.txtBStay.TabIndex = 57;
+            this.txtBStay.Text = "1";
+            this.txtBStay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtAStay
+            // 
+            this.txtAStay.Location = new System.Drawing.Point(69, 29);
+            this.txtAStay.Name = "txtAStay";
+            this.txtAStay.Size = new System.Drawing.Size(42, 20);
+            this.txtAStay.TabIndex = 56;
+            this.txtAStay.Text = "1";
+            this.txtAStay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label64.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label64.Location = new System.Drawing.Point(467, 13);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(35, 12);
+            this.label64.TabIndex = 39;
+            this.label64.Text = "Round";
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label65.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label65.Location = new System.Drawing.Point(431, 13);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(11, 12);
+            this.label65.TabIndex = 38;
+            this.label65.Text = "D";
+            // 
+            // cmbAntSelect1
+            // 
+            this.cmbAntSelect1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAntSelect1.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cmbAntSelect1.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.cmbAntSelect1.FormattingEnabled = true;
+            this.cmbAntSelect1.Items.AddRange(new object[] {
+            "天线1",
+            "天线2",
+            "天线3",
+            "天线4",
+            "不选"});
+            this.cmbAntSelect1.Location = new System.Drawing.Point(8, 29);
+            this.cmbAntSelect1.Name = "cmbAntSelect1";
+            this.cmbAntSelect1.Size = new System.Drawing.Size(55, 20);
+            this.cmbAntSelect1.TabIndex = 13;
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label62.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label62.Location = new System.Drawing.Point(334, 13);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(35, 12);
+            this.label62.TabIndex = 37;
+            this.label62.Text = "Round";
+            // 
+            // cmbAntSelect2
+            // 
+            this.cmbAntSelect2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAntSelect2.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cmbAntSelect2.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.cmbAntSelect2.FormattingEnabled = true;
+            this.cmbAntSelect2.Items.AddRange(new object[] {
+            "天线1",
+            "天线2",
+            "天线3",
+            "天线4",
+            "不选"});
+            this.cmbAntSelect2.Location = new System.Drawing.Point(140, 29);
+            this.cmbAntSelect2.Name = "cmbAntSelect2";
+            this.cmbAntSelect2.Size = new System.Drawing.Size(55, 20);
+            this.cmbAntSelect2.TabIndex = 14;
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label63.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label63.Location = new System.Drawing.Point(297, 13);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(11, 12);
+            this.label63.TabIndex = 36;
+            this.label63.Text = "C";
+            // 
+            // cmbAntSelect3
+            // 
+            this.cmbAntSelect3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAntSelect3.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cmbAntSelect3.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.cmbAntSelect3.FormattingEnabled = true;
+            this.cmbAntSelect3.Items.AddRange(new object[] {
+            "天线1",
+            "天线2",
+            "天线3",
+            "天线4",
+            "不选"});
+            this.cmbAntSelect3.Location = new System.Drawing.Point(275, 29);
+            this.cmbAntSelect3.Name = "cmbAntSelect3";
+            this.cmbAntSelect3.Size = new System.Drawing.Size(55, 20);
+            this.cmbAntSelect3.TabIndex = 15;
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label60.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label60.Location = new System.Drawing.Point(201, 13);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(35, 12);
+            this.label60.TabIndex = 35;
+            this.label60.Text = "Round";
+            // 
+            // cmbAntSelect4
+            // 
+            this.cmbAntSelect4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAntSelect4.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cmbAntSelect4.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.cmbAntSelect4.FormattingEnabled = true;
+            this.cmbAntSelect4.Items.AddRange(new object[] {
+            "天线1",
+            "天线2",
+            "天线3",
+            "天线4",
+            "不选"});
+            this.cmbAntSelect4.Location = new System.Drawing.Point(408, 29);
+            this.cmbAntSelect4.Name = "cmbAntSelect4";
+            this.cmbAntSelect4.Size = new System.Drawing.Size(55, 20);
+            this.cmbAntSelect4.TabIndex = 16;
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label61.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label61.Location = new System.Drawing.Point(161, 13);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(11, 12);
+            this.label61.TabIndex = 34;
+            this.label61.Text = "B";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label59.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label59.Location = new System.Drawing.Point(67, 13);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(35, 12);
+            this.label59.TabIndex = 33;
+            this.label59.Text = "Round";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label48.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label48.Location = new System.Drawing.Point(27, 13);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(11, 12);
+            this.label48.TabIndex = 32;
+            this.label48.Text = "A";
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.btFastInventory);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(5, 5);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(246, 75);
+            this.panel3.TabIndex = 1;
+            // 
+            // btFastInventory
+            // 
+            this.btFastInventory.Font = new System.Drawing.Font("SimSun", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btFastInventory.ForeColor = System.Drawing.Color.DarkBlue;
+            this.btFastInventory.Location = new System.Drawing.Point(28, 17);
+            this.btFastInventory.Name = "btFastInventory";
+            this.btFastInventory.Size = new System.Drawing.Size(144, 41);
+            this.btFastInventory.TabIndex = 52;
+            this.btFastInventory.Text = "Inventory";
+            this.btFastInventory.UseVisualStyleBackColor = true;
+            this.btFastInventory.Click += new System.EventHandler(this.btFastInventory_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.txtRepeat);
+            this.panel4.Controls.Add(this.txtInterval);
+            this.panel4.Controls.Add(this.label73);
+            this.panel4.Controls.Add(this.label72);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(935, 5);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(385, 75);
+            this.panel4.TabIndex = 2;
+            // 
+            // txtRepeat
+            // 
+            this.txtRepeat.Location = new System.Drawing.Point(187, 28);
+            this.txtRepeat.Name = "txtRepeat";
+            this.txtRepeat.Size = new System.Drawing.Size(42, 20);
+            this.txtRepeat.TabIndex = 58;
+            this.txtRepeat.Text = "10";
+            this.txtRepeat.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtInterval
+            // 
+            this.txtInterval.Location = new System.Drawing.Point(65, 28);
+            this.txtInterval.Name = "txtInterval";
+            this.txtInterval.Size = new System.Drawing.Size(42, 20);
+            this.txtInterval.TabIndex = 57;
+            this.txtInterval.Text = "0";
+            this.txtInterval.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label73
+            // 
+            this.label73.AutoSize = true;
+            this.label73.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label73.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label73.Location = new System.Drawing.Point(11, 13);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(149, 12);
+            this.label73.TabIndex = 36;
+            this.label73.Text = "Interval Between Ant(mS)";
+            // 
+            // label72
+            // 
+            this.label72.AutoSize = true;
+            this.label72.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label72.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label72.Location = new System.Drawing.Point(188, 13);
+            this.label72.Name = "label72";
+            this.label72.Size = new System.Drawing.Size(41, 12);
+            this.label72.TabIndex = 37;
+            this.label72.Text = "Repeat";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label22.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label22.Location = new System.Drawing.Point(634, 276);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(59, 12);
+            this.label22.TabIndex = 26;
+            this.label22.Text = "Max RSSI:";
+            // 
+            // lvFastList
+            // 
+            this.lvFastList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader31,
+            this.columnHeader32,
+            this.columnHeader33,
+            this.columnHeader34,
+            this.columnHeader35,
+            this.columnHeader36});
+            this.lvFastList.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lvFastList.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lvFastList.GridLines = true;
+            this.lvFastList.Location = new System.Drawing.Point(3, 298);
+            this.lvFastList.Name = "lvFastList";
+            this.lvFastList.Size = new System.Drawing.Size(1325, 326);
+            this.lvFastList.TabIndex = 24;
+            this.lvFastList.UseCompatibleStateImageBehavior = false;
+            this.lvFastList.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader31
+            // 
+            this.columnHeader31.Text = "ID";
+            this.columnHeader31.Width = 52;
+            // 
+            // columnHeader32
+            // 
+            this.columnHeader32.Text = "EPC";
+            this.columnHeader32.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader32.Width = 428;
+            // 
+            // columnHeader33
+            // 
+            this.columnHeader33.Text = "PC";
+            this.columnHeader33.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader33.Width = 65;
+            // 
+            // columnHeader34
+            // 
+            this.columnHeader34.Text = "Identification Count(ANT1/ANT2/ANT3/ANT4)";
+            this.columnHeader34.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader34.Width = 261;
+            // 
+            // columnHeader35
+            // 
+            this.columnHeader35.Text = "RSSI";
+            this.columnHeader35.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader35.Width = 86;
+            // 
+            // columnHeader36
+            // 
+            this.columnHeader36.Text = "Carrier Freq";
+            this.columnHeader36.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader36.Width = 92;
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label49.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label49.Location = new System.Drawing.Point(428, 276);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(59, 12);
+            this.label49.TabIndex = 27;
+            this.label49.Text = "Min RSSI:";
+            // 
+            // txtFastTagList
+            // 
+            this.txtFastTagList.AutoSize = true;
+            this.txtFastTagList.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtFastTagList.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.txtFastTagList.Location = new System.Drawing.Point(6, 276);
+            this.txtFastTagList.Name = "txtFastTagList";
+            this.txtFastTagList.Size = new System.Drawing.Size(59, 12);
+            this.txtFastTagList.TabIndex = 23;
+            this.txtFastTagList.Text = "Tag List:";
+            // 
+            // pageAcessTag
+            // 
+            this.pageAcessTag.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pageAcessTag.Controls.Add(this.ltvOperate);
+            this.pageAcessTag.Controls.Add(this.gbCmdOperateTag);
+            this.pageAcessTag.Location = new System.Drawing.Point(4, 22);
+            this.pageAcessTag.Name = "pageAcessTag";
+            this.pageAcessTag.Size = new System.Drawing.Size(1331, 627);
+            this.pageAcessTag.TabIndex = 3;
+            this.pageAcessTag.Text = "Access Tag";
+            this.pageAcessTag.UseVisualStyleBackColor = true;
+            // 
+            // ltvOperate
+            // 
+            this.ltvOperate.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader5,
+            this.columnHeader9,
+            this.columnHeader10,
+            this.columnHeader11,
+            this.columnHeader12,
+            this.columnHeader13,
+            this.columnHeader14,
+            this.columnHeader15});
+            this.ltvOperate.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ltvOperate.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ltvOperate.GridLines = true;
+            this.ltvOperate.Location = new System.Drawing.Point(0, 348);
+            this.ltvOperate.Name = "ltvOperate";
+            this.ltvOperate.Size = new System.Drawing.Size(1331, 279);
+            this.ltvOperate.TabIndex = 10;
+            this.ltvOperate.UseCompatibleStateImageBehavior = false;
+            this.ltvOperate.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "ID";
+            this.columnHeader5.Width = 50;
+            // 
+            // columnHeader9
+            // 
+            this.columnHeader9.Text = "PC";
+            this.columnHeader9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // columnHeader10
+            // 
+            this.columnHeader10.Text = "CRC";
+            this.columnHeader10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // columnHeader11
+            // 
+            this.columnHeader11.Text = "EPC";
+            this.columnHeader11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader11.Width = 260;
+            // 
+            // columnHeader12
+            // 
+            this.columnHeader12.Text = "Data";
+            this.columnHeader12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader12.Width = 334;
+            // 
+            // columnHeader13
+            // 
+            this.columnHeader13.Text = "Data Len";
+            this.columnHeader13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader13.Width = 73;
+            // 
+            // columnHeader14
+            // 
+            this.columnHeader14.Text = "Ant ID";
+            this.columnHeader14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader14.Width = 49;
+            // 
+            // columnHeader15
+            // 
+            this.columnHeader15.Text = "Operated Count";
+            this.columnHeader15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader15.Width = 98;
+            // 
+            // gbCmdOperateTag
+            // 
+            this.gbCmdOperateTag.Controls.Add(this.groupBox16);
+            this.gbCmdOperateTag.Controls.Add(this.groupBox15);
+            this.gbCmdOperateTag.Controls.Add(this.groupBox14);
+            this.gbCmdOperateTag.Controls.Add(this.groupBox13);
+            this.gbCmdOperateTag.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gbCmdOperateTag.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.gbCmdOperateTag.Location = new System.Drawing.Point(0, 0);
+            this.gbCmdOperateTag.Name = "gbCmdOperateTag";
+            this.gbCmdOperateTag.Size = new System.Drawing.Size(1331, 348);
+            this.gbCmdOperateTag.TabIndex = 8;
+            this.gbCmdOperateTag.TabStop = false;
+            this.gbCmdOperateTag.Text = "Tag Access";
+            // 
+            // groupBox16
+            // 
+            this.groupBox16.Controls.Add(this.btnKillTag);
+            this.groupBox16.Controls.Add(this.htxtKillPwd);
+            this.groupBox16.Controls.Add(this.label29);
+            this.groupBox16.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox16.Location = new System.Drawing.Point(3, 277);
+            this.groupBox16.Name = "groupBox16";
+            this.groupBox16.Size = new System.Drawing.Size(1325, 54);
+            this.groupBox16.TabIndex = 4;
+            this.groupBox16.TabStop = false;
+            this.groupBox16.Text = "Kill Tag";
+            // 
+            // btnKillTag
+            // 
+            this.btnKillTag.Location = new System.Drawing.Point(888, 20);
+            this.btnKillTag.Name = "btnKillTag";
+            this.btnKillTag.Size = new System.Drawing.Size(90, 25);
+            this.btnKillTag.TabIndex = 14;
+            this.btnKillTag.Text = "Kill";
+            this.btnKillTag.UseVisualStyleBackColor = true;
+            this.btnKillTag.Click += new System.EventHandler(this.btnKillTag_Click);
+            // 
+            // htxtKillPwd
+            // 
+            this.htxtKillPwd.Location = new System.Drawing.Point(402, 23);
+            this.htxtKillPwd.Name = "htxtKillPwd";
+            this.htxtKillPwd.Size = new System.Drawing.Size(120, 21);
+            this.htxtKillPwd.TabIndex = 13;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(307, 27);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(119, 12);
+            this.label29.TabIndex = 13;
+            this.label29.Text = "Kill Password(HEX):";
+            // 
+            // groupBox15
+            // 
+            this.groupBox15.Controls.Add(this.htxtLockPwd);
+            this.groupBox15.Controls.Add(this.label28);
+            this.groupBox15.Controls.Add(this.groupBox19);
+            this.groupBox15.Controls.Add(this.groupBox18);
+            this.groupBox15.Controls.Add(this.btnLockTag);
+            this.groupBox15.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox15.Location = new System.Drawing.Point(3, 174);
+            this.groupBox15.Name = "groupBox15";
+            this.groupBox15.Size = new System.Drawing.Size(1325, 103);
+            this.groupBox15.TabIndex = 3;
+            this.groupBox15.TabStop = false;
+            this.groupBox15.Text = "Lock Tag";
+            // 
+            // htxtLockPwd
+            // 
+            this.htxtLockPwd.Location = new System.Drawing.Point(742, 49);
+            this.htxtLockPwd.Name = "htxtLockPwd";
+            this.htxtLockPwd.Size = new System.Drawing.Size(114, 21);
+            this.htxtLockPwd.TabIndex = 12;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(606, 53);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(131, 12);
+            this.label28.TabIndex = 12;
+            this.label28.Text = "Access Password(HEX):";
+            // 
+            // groupBox19
+            // 
+            this.groupBox19.Controls.Add(this.rdbUserMemory);
+            this.groupBox19.Controls.Add(this.rdbTidMemory);
+            this.groupBox19.Controls.Add(this.rdbEpcMermory);
+            this.groupBox19.Controls.Add(this.rdbKillPwd);
+            this.groupBox19.Controls.Add(this.rdbAccessPwd);
+            this.groupBox19.Location = new System.Drawing.Point(16, 15);
+            this.groupBox19.Name = "groupBox19";
+            this.groupBox19.Size = new System.Drawing.Size(578, 43);
+            this.groupBox19.TabIndex = 2;
+            this.groupBox19.TabStop = false;
+            // 
+            // rdbUserMemory
+            // 
+            this.rdbUserMemory.AutoSize = true;
+            this.rdbUserMemory.Location = new System.Drawing.Point(464, 16);
+            this.rdbUserMemory.Name = "rdbUserMemory";
+            this.rdbUserMemory.Size = new System.Drawing.Size(47, 16);
+            this.rdbUserMemory.TabIndex = 4;
+            this.rdbUserMemory.TabStop = true;
+            this.rdbUserMemory.Text = "USER";
+            this.rdbUserMemory.UseVisualStyleBackColor = true;
+            // 
+            // rdbTidMemory
+            // 
+            this.rdbTidMemory.AutoSize = true;
+            this.rdbTidMemory.Location = new System.Drawing.Point(375, 16);
+            this.rdbTidMemory.Name = "rdbTidMemory";
+            this.rdbTidMemory.Size = new System.Drawing.Size(41, 16);
+            this.rdbTidMemory.TabIndex = 3;
+            this.rdbTidMemory.TabStop = true;
+            this.rdbTidMemory.Text = "TID";
+            this.rdbTidMemory.UseVisualStyleBackColor = true;
+            // 
+            // rdbEpcMermory
+            // 
+            this.rdbEpcMermory.AutoSize = true;
+            this.rdbEpcMermory.Location = new System.Drawing.Point(269, 16);
+            this.rdbEpcMermory.Name = "rdbEpcMermory";
+            this.rdbEpcMermory.Size = new System.Drawing.Size(41, 16);
+            this.rdbEpcMermory.TabIndex = 2;
+            this.rdbEpcMermory.TabStop = true;
+            this.rdbEpcMermory.Text = "EPC";
+            this.rdbEpcMermory.UseVisualStyleBackColor = true;
+            // 
+            // rdbKillPwd
+            // 
+            this.rdbKillPwd.AutoSize = true;
+            this.rdbKillPwd.Location = new System.Drawing.Point(142, 16);
+            this.rdbKillPwd.Name = "rdbKillPwd";
+            this.rdbKillPwd.Size = new System.Drawing.Size(101, 16);
+            this.rdbKillPwd.TabIndex = 1;
+            this.rdbKillPwd.TabStop = true;
+            this.rdbKillPwd.Text = "Kill Password";
+            this.rdbKillPwd.UseVisualStyleBackColor = true;
+            // 
+            // rdbAccessPwd
+            // 
+            this.rdbAccessPwd.AutoSize = true;
+            this.rdbAccessPwd.Location = new System.Drawing.Point(9, 16);
+            this.rdbAccessPwd.Name = "rdbAccessPwd";
+            this.rdbAccessPwd.Size = new System.Drawing.Size(113, 16);
+            this.rdbAccessPwd.TabIndex = 0;
+            this.rdbAccessPwd.TabStop = true;
+            this.rdbAccessPwd.Text = "Access Password";
+            this.rdbAccessPwd.UseVisualStyleBackColor = true;
+            // 
+            // groupBox18
+            // 
+            this.groupBox18.Controls.Add(this.rdbLockEver);
+            this.groupBox18.Controls.Add(this.rdbFreeEver);
+            this.groupBox18.Controls.Add(this.rdbLock);
+            this.groupBox18.Controls.Add(this.rdbFree);
+            this.groupBox18.Location = new System.Drawing.Point(16, 55);
+            this.groupBox18.Name = "groupBox18";
+            this.groupBox18.Size = new System.Drawing.Size(578, 43);
+            this.groupBox18.TabIndex = 1;
+            this.groupBox18.TabStop = false;
+            // 
+            // rdbLockEver
+            // 
+            this.rdbLockEver.AutoSize = true;
+            this.rdbLockEver.Location = new System.Drawing.Point(464, 15);
+            this.rdbLockEver.Name = "rdbLockEver";
+            this.rdbLockEver.Size = new System.Drawing.Size(107, 16);
+            this.rdbLockEver.TabIndex = 3;
+            this.rdbLockEver.TabStop = true;
+            this.rdbLockEver.Text = "Permanent Lock";
+            this.rdbLockEver.UseVisualStyleBackColor = true;
+            // 
+            // rdbFreeEver
+            // 
+            this.rdbFreeEver.AutoSize = true;
+            this.rdbFreeEver.Location = new System.Drawing.Point(293, 15);
+            this.rdbFreeEver.Name = "rdbFreeEver";
+            this.rdbFreeEver.Size = new System.Drawing.Size(107, 16);
+            this.rdbFreeEver.TabIndex = 2;
+            this.rdbFreeEver.TabStop = true;
+            this.rdbFreeEver.Text = "Permanent Open";
+            this.rdbFreeEver.UseVisualStyleBackColor = true;
+            // 
+            // rdbLock
+            // 
+            this.rdbLock.AutoSize = true;
+            this.rdbLock.Location = new System.Drawing.Point(144, 15);
+            this.rdbLock.Name = "rdbLock";
+            this.rdbLock.Size = new System.Drawing.Size(47, 16);
+            this.rdbLock.TabIndex = 1;
+            this.rdbLock.TabStop = true;
+            this.rdbLock.Text = "Lock";
+            this.rdbLock.UseVisualStyleBackColor = true;
+            // 
+            // rdbFree
+            // 
+            this.rdbFree.AutoSize = true;
+            this.rdbFree.Location = new System.Drawing.Point(9, 15);
+            this.rdbFree.Name = "rdbFree";
+            this.rdbFree.Size = new System.Drawing.Size(47, 16);
+            this.rdbFree.TabIndex = 0;
+            this.rdbFree.TabStop = true;
+            this.rdbFree.Text = "Open";
+            this.rdbFree.UseVisualStyleBackColor = true;
+            // 
+            // btnLockTag
+            // 
+            this.btnLockTag.Location = new System.Drawing.Point(888, 48);
+            this.btnLockTag.Name = "btnLockTag";
+            this.btnLockTag.Size = new System.Drawing.Size(90, 25);
+            this.btnLockTag.TabIndex = 0;
+            this.btnLockTag.Text = "Lock";
+            this.btnLockTag.UseVisualStyleBackColor = true;
+            this.btnLockTag.Click += new System.EventHandler(this.btnLockTag_Click);
+            // 
+            // groupBox14
+            // 
+            this.groupBox14.Controls.Add(this.htxtWriteData);
+            this.groupBox14.Controls.Add(this.txtWordCnt);
+            this.groupBox14.Controls.Add(this.label27);
+            this.groupBox14.Controls.Add(this.btnWriteTag);
+            this.groupBox14.Controls.Add(this.btnReadTag);
+            this.groupBox14.Controls.Add(this.txtWordAdd);
+            this.groupBox14.Controls.Add(this.label26);
+            this.groupBox14.Controls.Add(this.htxtReadAndWritePwd);
+            this.groupBox14.Controls.Add(this.label25);
+            this.groupBox14.Controls.Add(this.groupBox17);
+            this.groupBox14.Controls.Add(this.label24);
+            this.groupBox14.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox14.Location = new System.Drawing.Point(3, 71);
+            this.groupBox14.Name = "groupBox14";
+            this.groupBox14.Size = new System.Drawing.Size(1325, 103);
+            this.groupBox14.TabIndex = 2;
+            this.groupBox14.TabStop = false;
+            this.groupBox14.Text = "Read/Write Tag";
+            // 
+            // htxtWriteData
+            // 
+            this.htxtWriteData.Location = new System.Drawing.Point(171, 74);
+            this.htxtWriteData.Name = "htxtWriteData";
+            this.htxtWriteData.Size = new System.Drawing.Size(685, 21);
+            this.htxtWriteData.TabIndex = 10;
+            // 
+            // txtWordCnt
+            // 
+            this.txtWordCnt.Location = new System.Drawing.Point(808, 25);
+            this.txtWordCnt.Name = "txtWordCnt";
+            this.txtWordCnt.Size = new System.Drawing.Size(48, 21);
+            this.txtWordCnt.TabIndex = 9;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(719, 29);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(83, 12);
+            this.label27.TabIndex = 8;
+            this.label27.Text = "Length(WORD):";
+            // 
+            // btnWriteTag
+            // 
+            this.btnWriteTag.Location = new System.Drawing.Point(888, 72);
+            this.btnWriteTag.Name = "btnWriteTag";
+            this.btnWriteTag.Size = new System.Drawing.Size(90, 25);
+            this.btnWriteTag.TabIndex = 7;
+            this.btnWriteTag.Text = "Write";
+            this.btnWriteTag.UseVisualStyleBackColor = true;
+            this.btnWriteTag.Click += new System.EventHandler(this.btnWriteTag_Click);
+            // 
+            // btnReadTag
+            // 
+            this.btnReadTag.Location = new System.Drawing.Point(888, 24);
+            this.btnReadTag.Name = "btnReadTag";
+            this.btnReadTag.Size = new System.Drawing.Size(90, 25);
+            this.btnReadTag.TabIndex = 6;
+            this.btnReadTag.Text = "Read";
+            this.btnReadTag.UseVisualStyleBackColor = true;
+            this.btnReadTag.Click += new System.EventHandler(this.btnReadTag_Click);
+            // 
+            // txtWordAdd
+            // 
+            this.txtWordAdd.Location = new System.Drawing.Point(655, 25);
+            this.txtWordAdd.Name = "txtWordAdd";
+            this.txtWordAdd.Size = new System.Drawing.Size(48, 21);
+            this.txtWordAdd.TabIndex = 5;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(548, 29);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(101, 12);
+            this.label26.TabIndex = 4;
+            this.label26.Text = "Start Add(WORD):";
+            // 
+            // htxtReadAndWritePwd
+            // 
+            this.htxtReadAndWritePwd.Location = new System.Drawing.Point(410, 25);
+            this.htxtReadAndWritePwd.Name = "htxtReadAndWritePwd";
+            this.htxtReadAndWritePwd.Size = new System.Drawing.Size(120, 21);
+            this.htxtReadAndWritePwd.TabIndex = 3;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(273, 29);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(131, 12);
+            this.label25.TabIndex = 2;
+            this.label25.Text = "Access Password(HEX):";
+            // 
+            // groupBox17
+            // 
+            this.groupBox17.Controls.Add(this.rdbUser);
+            this.groupBox17.Controls.Add(this.rdbTid);
+            this.groupBox17.Controls.Add(this.rdbEpc);
+            this.groupBox17.Controls.Add(this.rdbReserved);
+            this.groupBox17.Location = new System.Drawing.Point(18, 13);
+            this.groupBox17.Name = "groupBox17";
+            this.groupBox17.Size = new System.Drawing.Size(242, 43);
+            this.groupBox17.TabIndex = 1;
+            this.groupBox17.TabStop = false;
+            // 
+            // rdbUser
+            // 
+            this.rdbUser.AutoSize = true;
+            this.rdbUser.Location = new System.Drawing.Point(189, 14);
+            this.rdbUser.Name = "rdbUser";
+            this.rdbUser.Size = new System.Drawing.Size(47, 16);
+            this.rdbUser.TabIndex = 3;
+            this.rdbUser.TabStop = true;
+            this.rdbUser.Text = "USER";
+            this.rdbUser.UseVisualStyleBackColor = true;
+            // 
+            // rdbTid
+            // 
+            this.rdbTid.AutoSize = true;
+            this.rdbTid.Location = new System.Drawing.Point(130, 14);
+            this.rdbTid.Name = "rdbTid";
+            this.rdbTid.Size = new System.Drawing.Size(41, 16);
+            this.rdbTid.TabIndex = 2;
+            this.rdbTid.TabStop = true;
+            this.rdbTid.Text = "TID";
+            this.rdbTid.UseVisualStyleBackColor = true;
+            // 
+            // rdbEpc
+            // 
+            this.rdbEpc.AutoSize = true;
+            this.rdbEpc.Location = new System.Drawing.Point(83, 14);
+            this.rdbEpc.Name = "rdbEpc";
+            this.rdbEpc.Size = new System.Drawing.Size(41, 16);
+            this.rdbEpc.TabIndex = 1;
+            this.rdbEpc.TabStop = true;
+            this.rdbEpc.Text = "EPC";
+            this.rdbEpc.UseVisualStyleBackColor = true;
+            // 
+            // rdbReserved
+            // 
+            this.rdbReserved.AutoSize = true;
+            this.rdbReserved.Location = new System.Drawing.Point(6, 14);
+            this.rdbReserved.Name = "rdbReserved";
+            this.rdbReserved.Size = new System.Drawing.Size(71, 16);
+            this.rdbReserved.TabIndex = 0;
+            this.rdbReserved.TabStop = true;
+            this.rdbReserved.Text = "Password";
+            this.rdbReserved.UseVisualStyleBackColor = true;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(16, 78);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(149, 12);
+            this.label24.TabIndex = 0;
+            this.label24.Text = "Data to be written(HEX):";
+            // 
+            // groupBox13
+            // 
+            this.groupBox13.Controls.Add(this.label23);
+            this.groupBox13.Controls.Add(this.btnSetAccessEpcMatch);
+            this.groupBox13.Controls.Add(this.cmbSetAccessEpcMatch);
+            this.groupBox13.Controls.Add(this.txtAccessEpcMatch);
+            this.groupBox13.Controls.Add(this.ckAccessEpcMatch);
+            this.groupBox13.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox13.Location = new System.Drawing.Point(3, 17);
+            this.groupBox13.Name = "groupBox13";
+            this.groupBox13.Size = new System.Drawing.Size(1325, 54);
+            this.groupBox13.TabIndex = 1;
+            this.groupBox13.TabStop = false;
+            this.groupBox13.Text = "Tag Selection";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(468, 24);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(59, 12);
+            this.label23.TabIndex = 4;
+            this.label23.Text = "Tag List:";
+            // 
+            // btnSetAccessEpcMatch
+            // 
+            this.btnSetAccessEpcMatch.Location = new System.Drawing.Point(888, 19);
+            this.btnSetAccessEpcMatch.Name = "btnSetAccessEpcMatch";
+            this.btnSetAccessEpcMatch.Size = new System.Drawing.Size(90, 25);
+            this.btnSetAccessEpcMatch.TabIndex = 3;
+            this.btnSetAccessEpcMatch.Text = "Select";
+            this.btnSetAccessEpcMatch.UseVisualStyleBackColor = true;
+            this.btnSetAccessEpcMatch.Click += new System.EventHandler(this.btnSetAccessEpcMatch_Click);
+            // 
+            // cmbSetAccessEpcMatch
+            // 
+            this.cmbSetAccessEpcMatch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSetAccessEpcMatch.FormattingEnabled = true;
+            this.cmbSetAccessEpcMatch.Location = new System.Drawing.Point(533, 20);
+            this.cmbSetAccessEpcMatch.Name = "cmbSetAccessEpcMatch";
+            this.cmbSetAccessEpcMatch.Size = new System.Drawing.Size(323, 20);
+            this.cmbSetAccessEpcMatch.TabIndex = 2;
+            this.cmbSetAccessEpcMatch.DropDown += new System.EventHandler(this.cmbSetAccessEpcMatch_DropDown);
+            // 
+            // txtAccessEpcMatch
+            // 
+            this.txtAccessEpcMatch.Location = new System.Drawing.Point(123, 19);
+            this.txtAccessEpcMatch.Name = "txtAccessEpcMatch";
+            this.txtAccessEpcMatch.ReadOnly = true;
+            this.txtAccessEpcMatch.Size = new System.Drawing.Size(320, 21);
+            this.txtAccessEpcMatch.TabIndex = 1;
+            // 
+            // ckAccessEpcMatch
+            // 
+            this.ckAccessEpcMatch.AutoSize = true;
+            this.ckAccessEpcMatch.Location = new System.Drawing.Point(16, 22);
+            this.ckAccessEpcMatch.Name = "ckAccessEpcMatch";
+            this.ckAccessEpcMatch.Size = new System.Drawing.Size(102, 16);
+            this.ckAccessEpcMatch.TabIndex = 0;
+            this.ckAccessEpcMatch.Text = "Selected Tag:";
+            this.ckAccessEpcMatch.UseVisualStyleBackColor = true;
+            this.ckAccessEpcMatch.CheckedChanged += new System.EventHandler(this.cbAccessEpcMatch_CheckedChanged);
+            // 
+            // tabRounds
+            // 
+            this.tabRounds.Controls.Add(this.tableLayoutPanel11);
+            this.tabRounds.Controls.Add(this.tableLayoutPanel10);
+            this.tabRounds.Controls.Add(this.tableLayoutPanel9);
+            this.tabRounds.Controls.Add(this.tableLayoutPanel7);
+            this.tabRounds.Location = new System.Drawing.Point(4, 22);
+            this.tabRounds.Name = "tabRounds";
+            this.tabRounds.Padding = new System.Windows.Forms.Padding(3);
+            this.tabRounds.Size = new System.Drawing.Size(1331, 627);
+            this.tabRounds.TabIndex = 6;
+            this.tabRounds.Text = "Round Management";
+            this.tabRounds.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel11
+            // 
+            this.tableLayoutPanel11.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.tableLayoutPanel11.ColumnCount = 2;
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.4359F));
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 77.5641F));
+            this.tableLayoutPanel11.Controls.Add(this.groupBox38, 0, 0);
+            this.tableLayoutPanel11.Controls.Add(this.tabControl5, 1, 0);
+            this.tableLayoutPanel11.Location = new System.Drawing.Point(2, 466);
+            this.tableLayoutPanel11.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanel11.Name = "tableLayoutPanel11";
+            this.tableLayoutPanel11.RowCount = 1;
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 155F));
+            this.tableLayoutPanel11.Size = new System.Drawing.Size(1324, 156);
+            this.tableLayoutPanel11.TabIndex = 5;
+            // 
+            // groupBox38
+            // 
+            this.groupBox38.Controls.Add(this.btnAddPilotsToGroupsF);
+            this.groupBox38.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox38.Location = new System.Drawing.Point(3, 3);
+            this.groupBox38.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox38.Name = "groupBox38";
+            this.groupBox38.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox38.Size = new System.Drawing.Size(292, 150);
+            this.groupBox38.TabIndex = 0;
+            this.groupBox38.TabStop = false;
+            this.groupBox38.Text = "FINAL";
+            // 
+            // btnAddPilotsToGroupsF
+            // 
+            this.btnAddPilotsToGroupsF.Location = new System.Drawing.Point(23, 55);
+            this.btnAddPilotsToGroupsF.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddPilotsToGroupsF.Name = "btnAddPilotsToGroupsF";
+            this.btnAddPilotsToGroupsF.Size = new System.Drawing.Size(176, 36);
+            this.btnAddPilotsToGroupsF.TabIndex = 2;
+            this.btnAddPilotsToGroupsF.Text = "Add Pilots to Final Round";
+            this.btnAddPilotsToGroupsF.UseVisualStyleBackColor = true;
+            this.btnAddPilotsToGroupsF.Click += new System.EventHandler(this.btnAddPilotsToGroupsF_Click);
+            // 
+            // tabControl5
+            // 
+            this.tabControl5.Controls.Add(this.tabPage9);
+            this.tabControl5.Controls.Add(this.tabPage10);
+            this.tabControl5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl5.Location = new System.Drawing.Point(300, 3);
+            this.tabControl5.Margin = new System.Windows.Forms.Padding(2);
+            this.tabControl5.Name = "tabControl5";
+            this.tabControl5.SelectedIndex = 0;
+            this.tabControl5.Size = new System.Drawing.Size(1021, 150);
+            this.tabControl5.TabIndex = 1;
+            // 
+            // tabPage9
+            // 
+            this.tabPage9.Controls.Add(this.gvGroupAF);
+            this.tabPage9.Location = new System.Drawing.Point(4, 22);
+            this.tabPage9.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage9.Size = new System.Drawing.Size(1013, 124);
+            this.tabPage9.TabIndex = 0;
+            this.tabPage9.Text = "Group A";
+            this.tabPage9.UseVisualStyleBackColor = true;
+            // 
+            // gvGroupAF
+            // 
+            this.gvGroupAF.AllowUserToAddRows = false;
+            this.gvGroupAF.AllowUserToDeleteRows = false;
+            this.gvGroupAF.AutoGenerateColumns = false;
+            this.gvGroupAF.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvGroupAF.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn141,
+            this.dataGridViewTextBoxColumn142,
+            this.dataGridViewTextBoxColumn143,
+            this.dataGridViewTextBoxColumn144,
+            this.dataGridViewTextBoxColumn145,
+            this.dataGridViewTextBoxColumn146,
+            this.dataGridViewTextBoxColumn147});
+            this.gvGroupAF.DataSource = this.bindingSourcePilots;
+            this.gvGroupAF.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvGroupAF.Location = new System.Drawing.Point(2, 2);
+            this.gvGroupAF.Margin = new System.Windows.Forms.Padding(2);
+            this.gvGroupAF.Name = "gvGroupAF";
+            this.gvGroupAF.ReadOnly = true;
+            this.gvGroupAF.RowTemplate.Height = 24;
+            this.gvGroupAF.Size = new System.Drawing.Size(1009, 120);
+            this.gvGroupAF.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn141
+            // 
+            this.dataGridViewTextBoxColumn141.DataPropertyName = "OrderNumber";
+            this.dataGridViewTextBoxColumn141.HeaderText = "#";
+            this.dataGridViewTextBoxColumn141.Name = "dataGridViewTextBoxColumn141";
+            this.dataGridViewTextBoxColumn141.ReadOnly = true;
+            this.dataGridViewTextBoxColumn141.Width = 60;
+            // 
+            // dataGridViewTextBoxColumn142
+            // 
+            this.dataGridViewTextBoxColumn142.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn142.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn142.Name = "dataGridViewTextBoxColumn142";
+            this.dataGridViewTextBoxColumn142.ReadOnly = true;
+            this.dataGridViewTextBoxColumn142.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn143
+            // 
+            this.dataGridViewTextBoxColumn143.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn143.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn143.Name = "dataGridViewTextBoxColumn143";
+            this.dataGridViewTextBoxColumn143.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn144
+            // 
+            this.dataGridViewTextBoxColumn144.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn144.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn144.Name = "dataGridViewTextBoxColumn144";
+            this.dataGridViewTextBoxColumn144.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn145
+            // 
+            this.dataGridViewTextBoxColumn145.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn145.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn145.Name = "dataGridViewTextBoxColumn145";
+            this.dataGridViewTextBoxColumn145.ReadOnly = true;
+            this.dataGridViewTextBoxColumn145.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn146
+            // 
+            this.dataGridViewTextBoxColumn146.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn146.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn146.Name = "dataGridViewTextBoxColumn146";
+            this.dataGridViewTextBoxColumn146.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn147
+            // 
+            this.dataGridViewTextBoxColumn147.DataPropertyName = "ConfirmationString";
+            this.dataGridViewTextBoxColumn147.HeaderText = "Confirmation";
+            this.dataGridViewTextBoxColumn147.Name = "dataGridViewTextBoxColumn147";
+            this.dataGridViewTextBoxColumn147.ReadOnly = true;
+            // 
+            // bindingSourcePilots
+            // 
+            this.bindingSourcePilots.DataSource = typeof(RaceManager.Data.Pilot);
+            // 
+            // tabPage10
+            // 
+            this.tabPage10.Controls.Add(this.gvGroupBF);
+            this.tabPage10.Location = new System.Drawing.Point(4, 22);
+            this.tabPage10.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage10.Name = "tabPage10";
+            this.tabPage10.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage10.Size = new System.Drawing.Size(1013, 124);
+            this.tabPage10.TabIndex = 1;
+            this.tabPage10.Text = "Group B";
+            this.tabPage10.UseVisualStyleBackColor = true;
+            // 
+            // gvGroupBF
+            // 
+            this.gvGroupBF.AllowUserToAddRows = false;
+            this.gvGroupBF.AllowUserToDeleteRows = false;
+            this.gvGroupBF.AutoGenerateColumns = false;
+            this.gvGroupBF.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvGroupBF.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn148,
+            this.dataGridViewTextBoxColumn149,
+            this.dataGridViewTextBoxColumn150,
+            this.dataGridViewTextBoxColumn151,
+            this.dataGridViewTextBoxColumn152,
+            this.dataGridViewTextBoxColumn153,
+            this.dataGridViewTextBoxColumn154});
+            this.gvGroupBF.DataSource = this.bindingSourcePilots;
+            this.gvGroupBF.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvGroupBF.Location = new System.Drawing.Point(2, 2);
+            this.gvGroupBF.Margin = new System.Windows.Forms.Padding(2);
+            this.gvGroupBF.Name = "gvGroupBF";
+            this.gvGroupBF.ReadOnly = true;
+            this.gvGroupBF.RowTemplate.Height = 24;
+            this.gvGroupBF.Size = new System.Drawing.Size(1009, 120);
+            this.gvGroupBF.TabIndex = 1;
+            // 
+            // dataGridViewTextBoxColumn148
+            // 
+            this.dataGridViewTextBoxColumn148.DataPropertyName = "OrderNumber";
+            this.dataGridViewTextBoxColumn148.HeaderText = "#";
+            this.dataGridViewTextBoxColumn148.Name = "dataGridViewTextBoxColumn148";
+            this.dataGridViewTextBoxColumn148.ReadOnly = true;
+            this.dataGridViewTextBoxColumn148.Width = 60;
+            // 
+            // dataGridViewTextBoxColumn149
+            // 
+            this.dataGridViewTextBoxColumn149.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn149.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn149.Name = "dataGridViewTextBoxColumn149";
+            this.dataGridViewTextBoxColumn149.ReadOnly = true;
+            this.dataGridViewTextBoxColumn149.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn150
+            // 
+            this.dataGridViewTextBoxColumn150.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn150.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn150.Name = "dataGridViewTextBoxColumn150";
+            this.dataGridViewTextBoxColumn150.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn151
+            // 
+            this.dataGridViewTextBoxColumn151.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn151.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn151.Name = "dataGridViewTextBoxColumn151";
+            this.dataGridViewTextBoxColumn151.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn152
+            // 
+            this.dataGridViewTextBoxColumn152.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn152.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn152.Name = "dataGridViewTextBoxColumn152";
+            this.dataGridViewTextBoxColumn152.ReadOnly = true;
+            this.dataGridViewTextBoxColumn152.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn153
+            // 
+            this.dataGridViewTextBoxColumn153.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn153.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn153.Name = "dataGridViewTextBoxColumn153";
+            this.dataGridViewTextBoxColumn153.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn154
+            // 
+            this.dataGridViewTextBoxColumn154.DataPropertyName = "ConfirmationString";
+            this.dataGridViewTextBoxColumn154.HeaderText = "Confirmation";
+            this.dataGridViewTextBoxColumn154.Name = "dataGridViewTextBoxColumn154";
+            this.dataGridViewTextBoxColumn154.ReadOnly = true;
+            // 
+            // tableLayoutPanel10
+            // 
+            this.tableLayoutPanel10.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.tableLayoutPanel10.ColumnCount = 2;
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.4359F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 77.5641F));
+            this.tableLayoutPanel10.Controls.Add(this.groupBox37, 0, 0);
+            this.tableLayoutPanel10.Controls.Add(this.tabControl4, 1, 0);
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(2, 309);
+            this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanel10.Name = "tableLayoutPanel10";
+            this.tableLayoutPanel10.RowCount = 1;
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 155F));
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(1324, 156);
+            this.tableLayoutPanel10.TabIndex = 4;
+            // 
+            // groupBox37
+            // 
+            this.groupBox37.Controls.Add(this.btnAddPilotsToGroupsSF);
+            this.groupBox37.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox37.Location = new System.Drawing.Point(3, 3);
+            this.groupBox37.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox37.Name = "groupBox37";
+            this.groupBox37.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox37.Size = new System.Drawing.Size(292, 150);
+            this.groupBox37.TabIndex = 0;
+            this.groupBox37.TabStop = false;
+            this.groupBox37.Text = "SEMI FINAL";
+            // 
+            // btnAddPilotsToGroupsSF
+            // 
+            this.btnAddPilotsToGroupsSF.Location = new System.Drawing.Point(23, 55);
+            this.btnAddPilotsToGroupsSF.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddPilotsToGroupsSF.Name = "btnAddPilotsToGroupsSF";
+            this.btnAddPilotsToGroupsSF.Size = new System.Drawing.Size(176, 36);
+            this.btnAddPilotsToGroupsSF.TabIndex = 2;
+            this.btnAddPilotsToGroupsSF.Text = "Add Pilots to Semi Final";
+            this.btnAddPilotsToGroupsSF.UseVisualStyleBackColor = true;
+            this.btnAddPilotsToGroupsSF.Click += new System.EventHandler(this.btnAddPilotsToGroupsSF_Click);
+            // 
+            // tabControl4
+            // 
+            this.tabControl4.Controls.Add(this.tabPage7);
+            this.tabControl4.Controls.Add(this.tabPage8);
+            this.tabControl4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl4.Location = new System.Drawing.Point(300, 3);
+            this.tabControl4.Margin = new System.Windows.Forms.Padding(2);
+            this.tabControl4.Name = "tabControl4";
+            this.tabControl4.SelectedIndex = 0;
+            this.tabControl4.Size = new System.Drawing.Size(1021, 150);
+            this.tabControl4.TabIndex = 1;
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.Controls.Add(this.gvGroupAS);
+            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage7.Size = new System.Drawing.Size(1013, 124);
+            this.tabPage7.TabIndex = 0;
+            this.tabPage7.Text = "Group A";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // gvGroupAS
+            // 
+            this.gvGroupAS.AllowUserToAddRows = false;
+            this.gvGroupAS.AllowUserToDeleteRows = false;
+            this.gvGroupAS.AutoGenerateColumns = false;
+            this.gvGroupAS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvGroupAS.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn127,
+            this.dataGridViewTextBoxColumn128,
+            this.dataGridViewTextBoxColumn129,
+            this.dataGridViewTextBoxColumn130,
+            this.dataGridViewTextBoxColumn131,
+            this.dataGridViewTextBoxColumn132,
+            this.dataGridViewTextBoxColumn133});
+            this.gvGroupAS.DataSource = this.bindingSourcePilots;
+            this.gvGroupAS.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvGroupAS.Location = new System.Drawing.Point(2, 2);
+            this.gvGroupAS.Margin = new System.Windows.Forms.Padding(2);
+            this.gvGroupAS.Name = "gvGroupAS";
+            this.gvGroupAS.ReadOnly = true;
+            this.gvGroupAS.RowTemplate.Height = 24;
+            this.gvGroupAS.Size = new System.Drawing.Size(1009, 120);
+            this.gvGroupAS.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn127
+            // 
+            this.dataGridViewTextBoxColumn127.DataPropertyName = "OrderNumber";
+            this.dataGridViewTextBoxColumn127.HeaderText = "#";
+            this.dataGridViewTextBoxColumn127.Name = "dataGridViewTextBoxColumn127";
+            this.dataGridViewTextBoxColumn127.ReadOnly = true;
+            this.dataGridViewTextBoxColumn127.Width = 60;
+            // 
+            // dataGridViewTextBoxColumn128
+            // 
+            this.dataGridViewTextBoxColumn128.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn128.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn128.Name = "dataGridViewTextBoxColumn128";
+            this.dataGridViewTextBoxColumn128.ReadOnly = true;
+            this.dataGridViewTextBoxColumn128.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn129
+            // 
+            this.dataGridViewTextBoxColumn129.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn129.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn129.Name = "dataGridViewTextBoxColumn129";
+            this.dataGridViewTextBoxColumn129.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn130
+            // 
+            this.dataGridViewTextBoxColumn130.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn130.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn130.Name = "dataGridViewTextBoxColumn130";
+            this.dataGridViewTextBoxColumn130.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn131
+            // 
+            this.dataGridViewTextBoxColumn131.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn131.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn131.Name = "dataGridViewTextBoxColumn131";
+            this.dataGridViewTextBoxColumn131.ReadOnly = true;
+            this.dataGridViewTextBoxColumn131.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn132
+            // 
+            this.dataGridViewTextBoxColumn132.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn132.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn132.Name = "dataGridViewTextBoxColumn132";
+            this.dataGridViewTextBoxColumn132.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn133
+            // 
+            this.dataGridViewTextBoxColumn133.DataPropertyName = "ConfirmationString";
+            this.dataGridViewTextBoxColumn133.HeaderText = "Confirmation";
+            this.dataGridViewTextBoxColumn133.Name = "dataGridViewTextBoxColumn133";
+            this.dataGridViewTextBoxColumn133.ReadOnly = true;
+            // 
+            // tabPage8
+            // 
+            this.tabPage8.Controls.Add(this.gvGroupBS);
+            this.tabPage8.Location = new System.Drawing.Point(4, 22);
+            this.tabPage8.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage8.Size = new System.Drawing.Size(1013, 124);
+            this.tabPage8.TabIndex = 1;
+            this.tabPage8.Text = "Group B";
+            this.tabPage8.UseVisualStyleBackColor = true;
+            // 
+            // gvGroupBS
+            // 
+            this.gvGroupBS.AllowUserToAddRows = false;
+            this.gvGroupBS.AllowUserToDeleteRows = false;
+            this.gvGroupBS.AutoGenerateColumns = false;
+            this.gvGroupBS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvGroupBS.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn134,
+            this.dataGridViewTextBoxColumn135,
+            this.dataGridViewTextBoxColumn136,
+            this.dataGridViewTextBoxColumn137,
+            this.dataGridViewTextBoxColumn138,
+            this.dataGridViewTextBoxColumn139,
+            this.dataGridViewTextBoxColumn140});
+            this.gvGroupBS.DataSource = this.bindingSourcePilots;
+            this.gvGroupBS.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvGroupBS.Location = new System.Drawing.Point(2, 2);
+            this.gvGroupBS.Margin = new System.Windows.Forms.Padding(2);
+            this.gvGroupBS.Name = "gvGroupBS";
+            this.gvGroupBS.ReadOnly = true;
+            this.gvGroupBS.RowTemplate.Height = 24;
+            this.gvGroupBS.Size = new System.Drawing.Size(1009, 120);
+            this.gvGroupBS.TabIndex = 1;
+            // 
+            // dataGridViewTextBoxColumn134
+            // 
+            this.dataGridViewTextBoxColumn134.DataPropertyName = "OrderNumber";
+            this.dataGridViewTextBoxColumn134.HeaderText = "#";
+            this.dataGridViewTextBoxColumn134.Name = "dataGridViewTextBoxColumn134";
+            this.dataGridViewTextBoxColumn134.ReadOnly = true;
+            this.dataGridViewTextBoxColumn134.Width = 60;
+            // 
+            // dataGridViewTextBoxColumn135
+            // 
+            this.dataGridViewTextBoxColumn135.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn135.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn135.Name = "dataGridViewTextBoxColumn135";
+            this.dataGridViewTextBoxColumn135.ReadOnly = true;
+            this.dataGridViewTextBoxColumn135.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn136
+            // 
+            this.dataGridViewTextBoxColumn136.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn136.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn136.Name = "dataGridViewTextBoxColumn136";
+            this.dataGridViewTextBoxColumn136.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn137
+            // 
+            this.dataGridViewTextBoxColumn137.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn137.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn137.Name = "dataGridViewTextBoxColumn137";
+            this.dataGridViewTextBoxColumn137.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn138
+            // 
+            this.dataGridViewTextBoxColumn138.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn138.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn138.Name = "dataGridViewTextBoxColumn138";
+            this.dataGridViewTextBoxColumn138.ReadOnly = true;
+            this.dataGridViewTextBoxColumn138.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn139
+            // 
+            this.dataGridViewTextBoxColumn139.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn139.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn139.Name = "dataGridViewTextBoxColumn139";
+            this.dataGridViewTextBoxColumn139.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn140
+            // 
+            this.dataGridViewTextBoxColumn140.DataPropertyName = "ConfirmationString";
+            this.dataGridViewTextBoxColumn140.HeaderText = "Confirmation";
+            this.dataGridViewTextBoxColumn140.Name = "dataGridViewTextBoxColumn140";
+            this.dataGridViewTextBoxColumn140.ReadOnly = true;
+            // 
+            // tableLayoutPanel9
+            // 
+            this.tableLayoutPanel9.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.tableLayoutPanel9.ColumnCount = 2;
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.4359F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 77.5641F));
+            this.tableLayoutPanel9.Controls.Add(this.groupBox36, 0, 0);
+            this.tableLayoutPanel9.Controls.Add(this.tabControl3, 1, 0);
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(2, 156);
+            this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanel9.Name = "tableLayoutPanel9";
+            this.tableLayoutPanel9.RowCount = 1;
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 155F));
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(1324, 156);
+            this.tableLayoutPanel9.TabIndex = 3;
+            // 
+            // groupBox36
+            // 
+            this.groupBox36.Controls.Add(this.btnAddPilotsToQF);
+            this.groupBox36.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox36.Location = new System.Drawing.Point(3, 3);
+            this.groupBox36.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox36.Name = "groupBox36";
+            this.groupBox36.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox36.Size = new System.Drawing.Size(292, 150);
+            this.groupBox36.TabIndex = 0;
+            this.groupBox36.TabStop = false;
+            this.groupBox36.Text = "1 / 4   ROUND";
+            // 
+            // btnAddPilotsToQF
+            // 
+            this.btnAddPilotsToQF.Location = new System.Drawing.Point(22, 46);
+            this.btnAddPilotsToQF.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddPilotsToQF.Name = "btnAddPilotsToQF";
+            this.btnAddPilotsToQF.Size = new System.Drawing.Size(176, 36);
+            this.btnAddPilotsToQF.TabIndex = 2;
+            this.btnAddPilotsToQF.Text = "Add Pilots to 1/4 round";
+            this.btnAddPilotsToQF.UseVisualStyleBackColor = true;
+            this.btnAddPilotsToQF.Click += new System.EventHandler(this.btnAddPilotsToQF_Click);
+            // 
+            // tabControl3
+            // 
+            this.tabControl3.Controls.Add(this.tabPage3);
+            this.tabControl3.Controls.Add(this.tabPage4);
+            this.tabControl3.Controls.Add(this.tabPage5);
+            this.tabControl3.Controls.Add(this.tabPage6);
+            this.tabControl3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl3.Location = new System.Drawing.Point(300, 3);
+            this.tabControl3.Margin = new System.Windows.Forms.Padding(2);
+            this.tabControl3.Name = "tabControl3";
+            this.tabControl3.SelectedIndex = 0;
+            this.tabControl3.Size = new System.Drawing.Size(1021, 150);
+            this.tabControl3.TabIndex = 1;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.gvGroupAQ);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage3.Size = new System.Drawing.Size(1013, 124);
+            this.tabPage3.TabIndex = 0;
+            this.tabPage3.Text = "Group A";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // gvGroupAQ
+            // 
+            this.gvGroupAQ.AllowUserToAddRows = false;
+            this.gvGroupAQ.AllowUserToDeleteRows = false;
+            this.gvGroupAQ.AutoGenerateColumns = false;
+            this.gvGroupAQ.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvGroupAQ.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn99,
+            this.dataGridViewTextBoxColumn100,
+            this.dataGridViewTextBoxColumn101,
+            this.dataGridViewTextBoxColumn102,
+            this.dataGridViewTextBoxColumn103,
+            this.dataGridViewTextBoxColumn104,
+            this.dataGridViewTextBoxColumn105});
+            this.gvGroupAQ.DataSource = this.bindingSourcePilots;
+            this.gvGroupAQ.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvGroupAQ.Location = new System.Drawing.Point(2, 2);
+            this.gvGroupAQ.Margin = new System.Windows.Forms.Padding(2);
+            this.gvGroupAQ.Name = "gvGroupAQ";
+            this.gvGroupAQ.ReadOnly = true;
+            this.gvGroupAQ.RowTemplate.Height = 24;
+            this.gvGroupAQ.Size = new System.Drawing.Size(1009, 120);
+            this.gvGroupAQ.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn99
+            // 
+            this.dataGridViewTextBoxColumn99.DataPropertyName = "OrderNumber";
+            this.dataGridViewTextBoxColumn99.HeaderText = "#";
+            this.dataGridViewTextBoxColumn99.Name = "dataGridViewTextBoxColumn99";
+            this.dataGridViewTextBoxColumn99.ReadOnly = true;
+            this.dataGridViewTextBoxColumn99.Width = 60;
+            // 
+            // dataGridViewTextBoxColumn100
+            // 
+            this.dataGridViewTextBoxColumn100.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn100.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn100.Name = "dataGridViewTextBoxColumn100";
+            this.dataGridViewTextBoxColumn100.ReadOnly = true;
+            this.dataGridViewTextBoxColumn100.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn101
+            // 
+            this.dataGridViewTextBoxColumn101.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn101.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn101.Name = "dataGridViewTextBoxColumn101";
+            this.dataGridViewTextBoxColumn101.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn102
+            // 
+            this.dataGridViewTextBoxColumn102.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn102.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn102.Name = "dataGridViewTextBoxColumn102";
+            this.dataGridViewTextBoxColumn102.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn103
+            // 
+            this.dataGridViewTextBoxColumn103.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn103.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn103.Name = "dataGridViewTextBoxColumn103";
+            this.dataGridViewTextBoxColumn103.ReadOnly = true;
+            this.dataGridViewTextBoxColumn103.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn104
+            // 
+            this.dataGridViewTextBoxColumn104.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn104.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn104.Name = "dataGridViewTextBoxColumn104";
+            this.dataGridViewTextBoxColumn104.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn105
+            // 
+            this.dataGridViewTextBoxColumn105.DataPropertyName = "ConfirmationString";
+            this.dataGridViewTextBoxColumn105.HeaderText = "Confirmation";
+            this.dataGridViewTextBoxColumn105.Name = "dataGridViewTextBoxColumn105";
+            this.dataGridViewTextBoxColumn105.ReadOnly = true;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.gvGroupBQ);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage4.Size = new System.Drawing.Size(1013, 124);
+            this.tabPage4.TabIndex = 1;
+            this.tabPage4.Text = "Group B";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // gvGroupBQ
+            // 
+            this.gvGroupBQ.AllowUserToAddRows = false;
+            this.gvGroupBQ.AllowUserToDeleteRows = false;
+            this.gvGroupBQ.AutoGenerateColumns = false;
+            this.gvGroupBQ.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvGroupBQ.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn106,
+            this.dataGridViewTextBoxColumn107,
+            this.dataGridViewTextBoxColumn108,
+            this.dataGridViewTextBoxColumn109,
+            this.dataGridViewTextBoxColumn110,
+            this.dataGridViewTextBoxColumn111,
+            this.dataGridViewTextBoxColumn112});
+            this.gvGroupBQ.DataSource = this.bindingSourcePilots;
+            this.gvGroupBQ.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvGroupBQ.Location = new System.Drawing.Point(2, 2);
+            this.gvGroupBQ.Margin = new System.Windows.Forms.Padding(2);
+            this.gvGroupBQ.Name = "gvGroupBQ";
+            this.gvGroupBQ.ReadOnly = true;
+            this.gvGroupBQ.RowTemplate.Height = 24;
+            this.gvGroupBQ.Size = new System.Drawing.Size(1009, 120);
+            this.gvGroupBQ.TabIndex = 1;
+            // 
+            // dataGridViewTextBoxColumn106
+            // 
+            this.dataGridViewTextBoxColumn106.DataPropertyName = "OrderNumber";
+            this.dataGridViewTextBoxColumn106.HeaderText = "#";
+            this.dataGridViewTextBoxColumn106.Name = "dataGridViewTextBoxColumn106";
+            this.dataGridViewTextBoxColumn106.ReadOnly = true;
+            this.dataGridViewTextBoxColumn106.Width = 60;
+            // 
+            // dataGridViewTextBoxColumn107
+            // 
+            this.dataGridViewTextBoxColumn107.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn107.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn107.Name = "dataGridViewTextBoxColumn107";
+            this.dataGridViewTextBoxColumn107.ReadOnly = true;
+            this.dataGridViewTextBoxColumn107.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn108
+            // 
+            this.dataGridViewTextBoxColumn108.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn108.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn108.Name = "dataGridViewTextBoxColumn108";
+            this.dataGridViewTextBoxColumn108.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn109
+            // 
+            this.dataGridViewTextBoxColumn109.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn109.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn109.Name = "dataGridViewTextBoxColumn109";
+            this.dataGridViewTextBoxColumn109.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn110
+            // 
+            this.dataGridViewTextBoxColumn110.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn110.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn110.Name = "dataGridViewTextBoxColumn110";
+            this.dataGridViewTextBoxColumn110.ReadOnly = true;
+            this.dataGridViewTextBoxColumn110.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn111
+            // 
+            this.dataGridViewTextBoxColumn111.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn111.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn111.Name = "dataGridViewTextBoxColumn111";
+            this.dataGridViewTextBoxColumn111.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn112
+            // 
+            this.dataGridViewTextBoxColumn112.DataPropertyName = "ConfirmationString";
+            this.dataGridViewTextBoxColumn112.HeaderText = "Confirmation";
+            this.dataGridViewTextBoxColumn112.Name = "dataGridViewTextBoxColumn112";
+            this.dataGridViewTextBoxColumn112.ReadOnly = true;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.gvGroupCQ);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage5.Size = new System.Drawing.Size(1013, 124);
+            this.tabPage5.TabIndex = 2;
+            this.tabPage5.Text = "Group C";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // gvGroupCQ
+            // 
+            this.gvGroupCQ.AllowUserToAddRows = false;
+            this.gvGroupCQ.AllowUserToDeleteRows = false;
+            this.gvGroupCQ.AutoGenerateColumns = false;
+            this.gvGroupCQ.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvGroupCQ.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn113,
+            this.dataGridViewTextBoxColumn114,
+            this.dataGridViewTextBoxColumn115,
+            this.dataGridViewTextBoxColumn116,
+            this.dataGridViewTextBoxColumn117,
+            this.dataGridViewTextBoxColumn118,
+            this.dataGridViewTextBoxColumn119});
+            this.gvGroupCQ.DataSource = this.bindingSourcePilots;
+            this.gvGroupCQ.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvGroupCQ.Location = new System.Drawing.Point(2, 2);
+            this.gvGroupCQ.Margin = new System.Windows.Forms.Padding(2);
+            this.gvGroupCQ.Name = "gvGroupCQ";
+            this.gvGroupCQ.ReadOnly = true;
+            this.gvGroupCQ.RowTemplate.Height = 24;
+            this.gvGroupCQ.Size = new System.Drawing.Size(1009, 120);
+            this.gvGroupCQ.TabIndex = 1;
+            // 
+            // dataGridViewTextBoxColumn113
+            // 
+            this.dataGridViewTextBoxColumn113.DataPropertyName = "OrderNumber";
+            this.dataGridViewTextBoxColumn113.HeaderText = "#";
+            this.dataGridViewTextBoxColumn113.Name = "dataGridViewTextBoxColumn113";
+            this.dataGridViewTextBoxColumn113.ReadOnly = true;
+            this.dataGridViewTextBoxColumn113.Width = 60;
+            // 
+            // dataGridViewTextBoxColumn114
+            // 
+            this.dataGridViewTextBoxColumn114.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn114.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn114.Name = "dataGridViewTextBoxColumn114";
+            this.dataGridViewTextBoxColumn114.ReadOnly = true;
+            this.dataGridViewTextBoxColumn114.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn115
+            // 
+            this.dataGridViewTextBoxColumn115.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn115.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn115.Name = "dataGridViewTextBoxColumn115";
+            this.dataGridViewTextBoxColumn115.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn116
+            // 
+            this.dataGridViewTextBoxColumn116.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn116.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn116.Name = "dataGridViewTextBoxColumn116";
+            this.dataGridViewTextBoxColumn116.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn117
+            // 
+            this.dataGridViewTextBoxColumn117.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn117.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn117.Name = "dataGridViewTextBoxColumn117";
+            this.dataGridViewTextBoxColumn117.ReadOnly = true;
+            this.dataGridViewTextBoxColumn117.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn118
+            // 
+            this.dataGridViewTextBoxColumn118.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn118.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn118.Name = "dataGridViewTextBoxColumn118";
+            this.dataGridViewTextBoxColumn118.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn119
+            // 
+            this.dataGridViewTextBoxColumn119.DataPropertyName = "ConfirmationString";
+            this.dataGridViewTextBoxColumn119.HeaderText = "Confirmation";
+            this.dataGridViewTextBoxColumn119.Name = "dataGridViewTextBoxColumn119";
+            this.dataGridViewTextBoxColumn119.ReadOnly = true;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.Controls.Add(this.gvGroupDQ);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage6.Size = new System.Drawing.Size(1013, 124);
+            this.tabPage6.TabIndex = 3;
+            this.tabPage6.Text = "Group D";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // gvGroupDQ
+            // 
+            this.gvGroupDQ.AllowUserToAddRows = false;
+            this.gvGroupDQ.AllowUserToDeleteRows = false;
+            this.gvGroupDQ.AutoGenerateColumns = false;
+            this.gvGroupDQ.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvGroupDQ.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn120,
+            this.dataGridViewTextBoxColumn121,
+            this.dataGridViewTextBoxColumn122,
+            this.dataGridViewTextBoxColumn123,
+            this.dataGridViewTextBoxColumn124,
+            this.dataGridViewTextBoxColumn125,
+            this.dataGridViewTextBoxColumn126});
+            this.gvGroupDQ.DataSource = this.bindingSourcePilots;
+            this.gvGroupDQ.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvGroupDQ.Location = new System.Drawing.Point(2, 2);
+            this.gvGroupDQ.Margin = new System.Windows.Forms.Padding(2);
+            this.gvGroupDQ.Name = "gvGroupDQ";
+            this.gvGroupDQ.ReadOnly = true;
+            this.gvGroupDQ.RowTemplate.Height = 24;
+            this.gvGroupDQ.Size = new System.Drawing.Size(1009, 120);
+            this.gvGroupDQ.TabIndex = 1;
+            // 
+            // dataGridViewTextBoxColumn120
+            // 
+            this.dataGridViewTextBoxColumn120.DataPropertyName = "OrderNumber";
+            this.dataGridViewTextBoxColumn120.HeaderText = "#";
+            this.dataGridViewTextBoxColumn120.Name = "dataGridViewTextBoxColumn120";
+            this.dataGridViewTextBoxColumn120.ReadOnly = true;
+            this.dataGridViewTextBoxColumn120.Width = 60;
+            // 
+            // dataGridViewTextBoxColumn121
+            // 
+            this.dataGridViewTextBoxColumn121.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn121.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn121.Name = "dataGridViewTextBoxColumn121";
+            this.dataGridViewTextBoxColumn121.ReadOnly = true;
+            this.dataGridViewTextBoxColumn121.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn122
+            // 
+            this.dataGridViewTextBoxColumn122.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn122.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn122.Name = "dataGridViewTextBoxColumn122";
+            this.dataGridViewTextBoxColumn122.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn123
+            // 
+            this.dataGridViewTextBoxColumn123.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn123.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn123.Name = "dataGridViewTextBoxColumn123";
+            this.dataGridViewTextBoxColumn123.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn124
+            // 
+            this.dataGridViewTextBoxColumn124.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn124.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn124.Name = "dataGridViewTextBoxColumn124";
+            this.dataGridViewTextBoxColumn124.ReadOnly = true;
+            this.dataGridViewTextBoxColumn124.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn125
+            // 
+            this.dataGridViewTextBoxColumn125.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn125.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn125.Name = "dataGridViewTextBoxColumn125";
+            this.dataGridViewTextBoxColumn125.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn126
+            // 
+            this.dataGridViewTextBoxColumn126.DataPropertyName = "ConfirmationString";
+            this.dataGridViewTextBoxColumn126.HeaderText = "Confirmation";
+            this.dataGridViewTextBoxColumn126.Name = "dataGridViewTextBoxColumn126";
+            this.dataGridViewTextBoxColumn126.ReadOnly = true;
+            // 
             // tableLayoutPanel7
             // 
             this.tableLayoutPanel7.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
@@ -2358,14 +6686,14 @@
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 77.5641F));
             this.tableLayoutPanel7.Controls.Add(this.groupBox29, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.tabControl2, 1, 0);
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(2, 252);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(2, 2);
             this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 1;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 155F));
             this.tableLayoutPanel7.Size = new System.Drawing.Size(1324, 156);
-            this.tableLayoutPanel7.TabIndex = 1;
+            this.tableLayoutPanel7.TabIndex = 2;
             // 
             // groupBox29
             // 
@@ -2380,7 +6708,7 @@
             this.groupBox29.Size = new System.Drawing.Size(292, 150);
             this.groupBox29.TabIndex = 0;
             this.groupBox29.TabStop = false;
-            this.groupBox29.Text = "Group Management";
+            this.groupBox29.Text = "QUALIFICATION ROUND";
             // 
             // nudPilotsPerGroup
             // 
@@ -2411,7 +6739,7 @@
             this.btnAddPilotsToGroups.Name = "btnAddPilotsToGroups";
             this.btnAddPilotsToGroups.Size = new System.Drawing.Size(176, 36);
             this.btnAddPilotsToGroups.TabIndex = 2;
-            this.btnAddPilotsToGroups.Text = "ADD PILOTS TO GROUPS";
+            this.btnAddPilotsToGroups.Text = "Add Pilots to Qualification Round";
             this.btnAddPilotsToGroups.UseVisualStyleBackColor = true;
             this.btnAddPilotsToGroups.Click += new System.EventHandler(this.btnAddPilotsToGroups_Click);
             // 
@@ -2537,10 +6865,6 @@
             this.confirmationStringDataGridViewTextBoxColumn.HeaderText = "Confirmation";
             this.confirmationStringDataGridViewTextBoxColumn.Name = "confirmationStringDataGridViewTextBoxColumn";
             this.confirmationStringDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // bindingSourcePilots
-            // 
-            this.bindingSourcePilots.DataSource = typeof(RaceManager.Data.Pilot);
             // 
             // pageGroupB
             // 
@@ -3772,3113 +8096,6 @@
             this.dataGridViewTextBoxColumn98.Name = "dataGridViewTextBoxColumn98";
             this.dataGridViewTextBoxColumn98.ReadOnly = true;
             // 
-            // tableLayoutPanel8
-            // 
-            this.tableLayoutPanel8.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.tableLayoutPanel8.ColumnCount = 2;
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.79245F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 73.20755F));
-            this.tableLayoutPanel8.Controls.Add(this.groupBox27, 0, 0);
-            this.tableLayoutPanel8.Controls.Add(this.groupBox28, 1, 0);
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(2);
-            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
-            this.tableLayoutPanel8.RowCount = 1;
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 247F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(1326, 248);
-            this.tableLayoutPanel8.TabIndex = 0;
-            // 
-            // groupBox27
-            // 
-            this.groupBox27.Controls.Add(this.btnAddPilotFromDb);
-            this.groupBox27.Controls.Add(this.btnAddPilot);
-            this.groupBox27.Controls.Add(this.cbPilotConfirmation);
-            this.groupBox27.Controls.Add(this.tbPilotEmail);
-            this.groupBox27.Controls.Add(this.label130);
-            this.groupBox27.Controls.Add(this.tbPilotTeam);
-            this.groupBox27.Controls.Add(this.label129);
-            this.groupBox27.Controls.Add(this.tbPilotNickname);
-            this.groupBox27.Controls.Add(this.label128);
-            this.groupBox27.Controls.Add(this.tbPilotName);
-            this.groupBox27.Controls.Add(this.tbPilotTag);
-            this.groupBox27.Controls.Add(this.label127);
-            this.groupBox27.Controls.Add(this.label126);
-            this.groupBox27.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox27.Location = new System.Drawing.Point(3, 3);
-            this.groupBox27.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox27.Name = "groupBox27";
-            this.groupBox27.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox27.Size = new System.Drawing.Size(350, 242);
-            this.groupBox27.TabIndex = 0;
-            this.groupBox27.TabStop = false;
-            this.groupBox27.Text = "Pilot Registration";
-            // 
-            // btnAddPilotFromDb
-            // 
-            this.btnAddPilotFromDb.Enabled = false;
-            this.btnAddPilotFromDb.Location = new System.Drawing.Point(199, 198);
-            this.btnAddPilotFromDb.Margin = new System.Windows.Forms.Padding(2);
-            this.btnAddPilotFromDb.Name = "btnAddPilotFromDb";
-            this.btnAddPilotFromDb.Size = new System.Drawing.Size(92, 37);
-            this.btnAddPilotFromDb.TabIndex = 12;
-            this.btnAddPilotFromDb.Text = "Add From DB";
-            this.btnAddPilotFromDb.UseVisualStyleBackColor = true;
-            this.btnAddPilotFromDb.Click += new System.EventHandler(this.btnAddPilotFromDb_Click);
-            // 
-            // btnAddPilot
-            // 
-            this.btnAddPilot.Location = new System.Drawing.Point(93, 198);
-            this.btnAddPilot.Margin = new System.Windows.Forms.Padding(2);
-            this.btnAddPilot.Name = "btnAddPilot";
-            this.btnAddPilot.Size = new System.Drawing.Size(92, 37);
-            this.btnAddPilot.TabIndex = 11;
-            this.btnAddPilot.Text = "Add Pilot";
-            this.btnAddPilot.UseVisualStyleBackColor = true;
-            this.btnAddPilot.Click += new System.EventHandler(this.btnAddPilot_Click);
-            // 
-            // cbPilotConfirmation
-            // 
-            this.cbPilotConfirmation.AutoSize = true;
-            this.cbPilotConfirmation.Location = new System.Drawing.Point(61, 161);
-            this.cbPilotConfirmation.Margin = new System.Windows.Forms.Padding(2);
-            this.cbPilotConfirmation.Name = "cbPilotConfirmation";
-            this.cbPilotConfirmation.Size = new System.Drawing.Size(84, 17);
-            this.cbPilotConfirmation.TabIndex = 10;
-            this.cbPilotConfirmation.Text = "Confirmation";
-            this.cbPilotConfirmation.UseVisualStyleBackColor = true;
-            // 
-            // tbPilotEmail
-            // 
-            this.tbPilotEmail.Location = new System.Drawing.Point(61, 128);
-            this.tbPilotEmail.Margin = new System.Windows.Forms.Padding(2);
-            this.tbPilotEmail.Name = "tbPilotEmail";
-            this.tbPilotEmail.Size = new System.Drawing.Size(260, 20);
-            this.tbPilotEmail.TabIndex = 9;
-            // 
-            // label130
-            // 
-            this.label130.AutoSize = true;
-            this.label130.Location = new System.Drawing.Point(20, 131);
-            this.label130.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label130.Name = "label130";
-            this.label130.Size = new System.Drawing.Size(35, 13);
-            this.label130.TabIndex = 8;
-            this.label130.Text = "E-mail";
-            // 
-            // tbPilotTeam
-            // 
-            this.tbPilotTeam.Location = new System.Drawing.Point(61, 101);
-            this.tbPilotTeam.Margin = new System.Windows.Forms.Padding(2);
-            this.tbPilotTeam.Name = "tbPilotTeam";
-            this.tbPilotTeam.Size = new System.Drawing.Size(260, 20);
-            this.tbPilotTeam.TabIndex = 7;
-            // 
-            // label129
-            // 
-            this.label129.AutoSize = true;
-            this.label129.Location = new System.Drawing.Point(22, 103);
-            this.label129.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label129.Name = "label129";
-            this.label129.Size = new System.Drawing.Size(34, 13);
-            this.label129.TabIndex = 6;
-            this.label129.Text = "Team";
-            // 
-            // tbPilotNickname
-            // 
-            this.tbPilotNickname.Location = new System.Drawing.Point(61, 73);
-            this.tbPilotNickname.Margin = new System.Windows.Forms.Padding(2);
-            this.tbPilotNickname.Name = "tbPilotNickname";
-            this.tbPilotNickname.Size = new System.Drawing.Size(260, 20);
-            this.tbPilotNickname.TabIndex = 5;
-            // 
-            // label128
-            // 
-            this.label128.AutoSize = true;
-            this.label128.Location = new System.Drawing.Point(2, 76);
-            this.label128.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label128.Name = "label128";
-            this.label128.Size = new System.Drawing.Size(55, 13);
-            this.label128.TabIndex = 4;
-            this.label128.Text = "Nickname";
-            // 
-            // tbPilotName
-            // 
-            this.tbPilotName.Location = new System.Drawing.Point(61, 46);
-            this.tbPilotName.Margin = new System.Windows.Forms.Padding(2);
-            this.tbPilotName.Name = "tbPilotName";
-            this.tbPilotName.Size = new System.Drawing.Size(260, 20);
-            this.tbPilotName.TabIndex = 3;
-            // 
-            // tbPilotTag
-            // 
-            this.tbPilotTag.Location = new System.Drawing.Point(61, 20);
-            this.tbPilotTag.Margin = new System.Windows.Forms.Padding(2);
-            this.tbPilotTag.Name = "tbPilotTag";
-            this.tbPilotTag.Size = new System.Drawing.Size(260, 20);
-            this.tbPilotTag.TabIndex = 2;
-            // 
-            // label127
-            // 
-            this.label127.AutoSize = true;
-            this.label127.Location = new System.Drawing.Point(21, 49);
-            this.label127.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label127.Name = "label127";
-            this.label127.Size = new System.Drawing.Size(35, 13);
-            this.label127.TabIndex = 1;
-            this.label127.Text = "Name";
-            // 
-            // label126
-            // 
-            this.label126.AutoSize = true;
-            this.label126.Location = new System.Drawing.Point(14, 23);
-            this.label126.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label126.Name = "label126";
-            this.label126.Size = new System.Drawing.Size(43, 13);
-            this.label126.TabIndex = 0;
-            this.label126.Text = "TAG ID";
-            // 
-            // groupBox28
-            // 
-            this.groupBox28.Controls.Add(this.gvPilots);
-            this.groupBox28.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox28.Location = new System.Drawing.Point(358, 3);
-            this.groupBox28.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox28.Name = "groupBox28";
-            this.groupBox28.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox28.Size = new System.Drawing.Size(965, 242);
-            this.groupBox28.TabIndex = 1;
-            this.groupBox28.TabStop = false;
-            this.groupBox28.Text = "Pilot List";
-            // 
-            // gvPilots
-            // 
-            this.gvPilots.AllowUserToAddRows = false;
-            this.gvPilots.AllowUserToOrderColumns = true;
-            this.gvPilots.AutoGenerateColumns = false;
-            this.gvPilots.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.gvPilots.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvPilots.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.nameDataGridViewTextBoxColumn,
-            this.nicknameDataGridViewTextBoxColumn,
-            this.teamDataGridViewTextBoxColumn,
-            this.tagDataGridViewTextBoxColumn,
-            this.emailDataGridViewTextBoxColumn,
-            this.Email});
-            this.gvPilots.DataSource = this.bindingSourcePilots1;
-            this.gvPilots.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gvPilots.GridColor = System.Drawing.SystemColors.Control;
-            this.gvPilots.Location = new System.Drawing.Point(2, 15);
-            this.gvPilots.Margin = new System.Windows.Forms.Padding(2);
-            this.gvPilots.Name = "gvPilots";
-            this.gvPilots.RowTemplate.Height = 24;
-            this.gvPilots.Size = new System.Drawing.Size(961, 225);
-            this.gvPilots.TabIndex = 0;
-            // 
-            // bindingSourcePilots1
-            // 
-            this.bindingSourcePilots1.DataSource = typeof(RaceManager.Data.Pilot);
-            // 
-            // tabRace
-            // 
-            this.tabRace.Controls.Add(this.gvRace);
-            this.tabRace.Controls.Add(this.groupBox35);
-            this.tabRace.Controls.Add(this.groupBox34);
-            this.tabRace.Controls.Add(this.groupBox33);
-            this.tabRace.Controls.Add(this.groupBox32);
-            this.tabRace.Controls.Add(this.groupBox31);
-            this.tabRace.Controls.Add(this.tableLayoutPanel6);
-            this.tabRace.Controls.Add(this.tableLayoutPanel5);
-            this.tabRace.Location = new System.Drawing.Point(4, 22);
-            this.tabRace.Margin = new System.Windows.Forms.Padding(2);
-            this.tabRace.Name = "tabRace";
-            this.tabRace.Padding = new System.Windows.Forms.Padding(2);
-            this.tabRace.Size = new System.Drawing.Size(1331, 468);
-            this.tabRace.TabIndex = 4;
-            this.tabRace.Text = "Race";
-            this.tabRace.UseVisualStyleBackColor = true;
-            // 
-            // gvRace
-            // 
-            this.gvRace.AllowUserToAddRows = false;
-            this.gvRace.AllowUserToDeleteRows = false;
-            this.gvRace.AutoGenerateColumns = false;
-            this.gvRace.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.gvRace.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvRace.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.OrderNumber,
-            this.PilotName,
-            this.Epc,
-            this.Pc,
-            this.IdentCount,
-            this.Rssi,
-            this.CarrFrequency,
-            this.Lap1,
-            this.Lap2,
-            this.Lap3,
-            this.Lap4,
-            this.Lap5,
-            this.Lap6,
-            this.BestLapTime,
-            this.avgLapTimeDataGridViewTextBoxColumn});
-            this.gvRace.DataSource = this.bindingSourceRace;
-            this.gvRace.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.gvRace.Location = new System.Drawing.Point(2, 305);
-            this.gvRace.Name = "gvRace";
-            this.gvRace.Size = new System.Drawing.Size(1002, 161);
-            this.gvRace.TabIndex = 7;
-            // 
-            // bindingSourceRace
-            // 
-            this.bindingSourceRace.DataSource = typeof(RaceManager.Data.LapsInfo);
-            // 
-            // groupBox35
-            // 
-            this.groupBox35.Controls.Add(this.gvRanking);
-            this.groupBox35.Controls.Add(this.cmbDisplayRanking);
-            this.groupBox35.Controls.Add(this.label20);
-            this.groupBox35.Dock = System.Windows.Forms.DockStyle.Right;
-            this.groupBox35.Location = new System.Drawing.Point(1004, 2);
-            this.groupBox35.Name = "groupBox35";
-            this.groupBox35.Size = new System.Drawing.Size(325, 464);
-            this.groupBox35.TabIndex = 6;
-            this.groupBox35.TabStop = false;
-            this.groupBox35.Text = "Race Ranking";
-            // 
-            // gvRanking
-            // 
-            this.gvRanking.AllowUserToAddRows = false;
-            this.gvRanking.AllowUserToDeleteRows = false;
-            this.gvRanking.AutoGenerateColumns = false;
-            this.gvRanking.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.gvRanking.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvRanking.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.RankNumber,
-            this.pilotNameDataGridViewTextBoxColumn,
-            this.bestLapTimeStringDataGridViewTextBoxColumn,
-            this.avgLapTimeStringDataGridViewTextBoxColumn});
-            this.gvRanking.DataSource = this.bindingSourceRanking;
-            this.gvRanking.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.gvRanking.Location = new System.Drawing.Point(3, 60);
-            this.gvRanking.Name = "gvRanking";
-            this.gvRanking.ReadOnly = true;
-            this.gvRanking.Size = new System.Drawing.Size(319, 401);
-            this.gvRanking.TabIndex = 7;
-            // 
-            // bindingSourceRanking
-            // 
-            this.bindingSourceRanking.DataSource = typeof(RaceManager.Data.LapsInfo);
-            // 
-            // cmbDisplayRanking
-            // 
-            this.cmbDisplayRanking.FormattingEnabled = true;
-            this.cmbDisplayRanking.Items.AddRange(new object[] {
-            "Best Lap Times",
-            "Average Time"});
-            this.cmbDisplayRanking.Location = new System.Drawing.Point(110, 33);
-            this.cmbDisplayRanking.Name = "cmbDisplayRanking";
-            this.cmbDisplayRanking.Size = new System.Drawing.Size(209, 21);
-            this.cmbDisplayRanking.TabIndex = 7;
-            this.cmbDisplayRanking.SelectedIndexChanged += new System.EventHandler(this.cmbDisplayRanking_SelectedIndexChanged);
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(6, 36);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(98, 13);
-            this.label20.TabIndex = 7;
-            this.label20.Text = "Display Ranking by";
-            // 
-            // groupBox34
-            // 
-            this.groupBox34.Location = new System.Drawing.Point(-32, -98);
-            this.groupBox34.Name = "groupBox34";
-            this.groupBox34.Size = new System.Drawing.Size(200, 100);
-            this.groupBox34.TabIndex = 5;
-            this.groupBox34.TabStop = false;
-            this.groupBox34.Text = "groupBox34";
-            // 
-            // groupBox33
-            // 
-            this.groupBox33.Location = new System.Drawing.Point(-32, -98);
-            this.groupBox33.Name = "groupBox33";
-            this.groupBox33.Size = new System.Drawing.Size(200, 100);
-            this.groupBox33.TabIndex = 4;
-            this.groupBox33.TabStop = false;
-            this.groupBox33.Text = "groupBox33";
-            // 
-            // groupBox32
-            // 
-            this.groupBox32.Location = new System.Drawing.Point(-32, -98);
-            this.groupBox32.Name = "groupBox32";
-            this.groupBox32.Size = new System.Drawing.Size(200, 100);
-            this.groupBox32.TabIndex = 3;
-            this.groupBox32.TabStop = false;
-            this.groupBox32.Text = "groupBox32";
-            // 
-            // groupBox31
-            // 
-            this.groupBox31.Controls.Add(this.tbCurEvGroup);
-            this.groupBox31.Controls.Add(this.tbCurEvRound);
-            this.groupBox31.Location = new System.Drawing.Point(2, 199);
-            this.groupBox31.Name = "groupBox31";
-            this.groupBox31.Size = new System.Drawing.Size(1000, 100);
-            this.groupBox31.TabIndex = 2;
-            this.groupBox31.TabStop = false;
-            this.groupBox31.Text = "Current Event";
-            // 
-            // tbCurEvGroup
-            // 
-            this.tbCurEvGroup.Enabled = false;
-            this.tbCurEvGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.tbCurEvGroup.Location = new System.Drawing.Point(253, 38);
-            this.tbCurEvGroup.Name = "tbCurEvGroup";
-            this.tbCurEvGroup.Size = new System.Drawing.Size(176, 35);
-            this.tbCurEvGroup.TabIndex = 1;
-            this.tbCurEvGroup.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // tbCurEvRound
-            // 
-            this.tbCurEvRound.Enabled = false;
-            this.tbCurEvRound.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.tbCurEvRound.Location = new System.Drawing.Point(26, 38);
-            this.tbCurEvRound.Name = "tbCurEvRound";
-            this.tbCurEvRound.Size = new System.Drawing.Size(176, 35);
-            this.tbCurEvRound.TabIndex = 0;
-            this.tbCurEvRound.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // tableLayoutPanel6
-            // 
-            this.tableLayoutPanel6.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.tableLayoutPanel6.ColumnCount = 3;
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.02803F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.02603F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.94595F));
-            this.tableLayoutPanel6.Controls.Add(this.groupBox24, 0, 0);
-            this.tableLayoutPanel6.Controls.Add(this.groupBox25, 1, 0);
-            this.tableLayoutPanel6.Controls.Add(this.groupBox26, 2, 0);
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(2, 89);
-            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(2);
-            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
-            this.tableLayoutPanel6.RowCount = 1;
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(1000, 104);
-            this.tableLayoutPanel6.TabIndex = 1;
-            // 
-            // groupBox24
-            // 
-            this.groupBox24.Controls.Add(this.btnRaceReset);
-            this.groupBox24.Controls.Add(this.btnRaceStop);
-            this.groupBox24.Controls.Add(this.btnRaceStart);
-            this.groupBox24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox24.Location = new System.Drawing.Point(3, 3);
-            this.groupBox24.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox24.Name = "groupBox24";
-            this.groupBox24.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox24.Size = new System.Drawing.Size(275, 98);
-            this.groupBox24.TabIndex = 0;
-            this.groupBox24.TabStop = false;
-            this.groupBox24.Text = "Race Control";
-            // 
-            // btnRaceReset
-            // 
-            this.btnRaceReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.btnRaceReset.Location = new System.Drawing.Point(164, 59);
-            this.btnRaceReset.Margin = new System.Windows.Forms.Padding(2);
-            this.btnRaceReset.Name = "btnRaceReset";
-            this.btnRaceReset.Size = new System.Drawing.Size(88, 29);
-            this.btnRaceReset.TabIndex = 2;
-            this.btnRaceReset.Text = "RESET";
-            this.btnRaceReset.UseVisualStyleBackColor = true;
-            this.btnRaceReset.Click += new System.EventHandler(this.btnRaceReset_Click);
-            // 
-            // btnRaceStop
-            // 
-            this.btnRaceStop.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.btnRaceStop.Location = new System.Drawing.Point(164, 18);
-            this.btnRaceStop.Margin = new System.Windows.Forms.Padding(2);
-            this.btnRaceStop.Name = "btnRaceStop";
-            this.btnRaceStop.Size = new System.Drawing.Size(88, 29);
-            this.btnRaceStop.TabIndex = 1;
-            this.btnRaceStop.Text = "STOP";
-            this.btnRaceStop.UseVisualStyleBackColor = true;
-            this.btnRaceStop.Click += new System.EventHandler(this.btnRaceStop_Click);
-            // 
-            // btnRaceStart
-            // 
-            this.btnRaceStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.btnRaceStart.Location = new System.Drawing.Point(5, 18);
-            this.btnRaceStart.Margin = new System.Windows.Forms.Padding(2);
-            this.btnRaceStart.Name = "btnRaceStart";
-            this.btnRaceStart.Size = new System.Drawing.Size(146, 70);
-            this.btnRaceStart.TabIndex = 0;
-            this.btnRaceStart.Text = "START";
-            this.btnRaceStart.UseVisualStyleBackColor = true;
-            this.btnRaceStart.Click += new System.EventHandler(this.btnRaceStart_Click);
-            // 
-            // groupBox25
-            // 
-            this.groupBox25.Controls.Add(this.label71);
-            this.groupBox25.Controls.Add(this.label38);
-            this.groupBox25.Controls.Add(this.label21);
-            this.groupBox25.Controls.Add(this.lblRaceMilliSeconds);
-            this.groupBox25.Controls.Add(this.label39);
-            this.groupBox25.Controls.Add(this.lblRaceSeconds);
-            this.groupBox25.Controls.Add(this.label34);
-            this.groupBox25.Controls.Add(this.lblRaceMinutes);
-            this.groupBox25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox25.Location = new System.Drawing.Point(283, 3);
-            this.groupBox25.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox25.Name = "groupBox25";
-            this.groupBox25.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox25.Size = new System.Drawing.Size(255, 98);
-            this.groupBox25.TabIndex = 1;
-            this.groupBox25.TabStop = false;
-            this.groupBox25.Text = "Race Time";
-            // 
-            // label71
-            // 
-            this.label71.AutoSize = true;
-            this.label71.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
-            this.label71.Location = new System.Drawing.Point(148, 72);
-            this.label71.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(48, 9);
-            this.label71.TabIndex = 7;
-            this.label71.Text = "milliseconds";
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
-            this.label38.Location = new System.Drawing.Point(80, 72);
-            this.label38.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(33, 9);
-            this.label38.TabIndex = 6;
-            this.label38.Text = "seconds";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
-            this.label21.Location = new System.Drawing.Point(19, 72);
-            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(32, 9);
-            this.label21.TabIndex = 5;
-            this.label21.Text = "minutes";
-            // 
-            // lblRaceMilliSeconds
-            // 
-            this.lblRaceMilliSeconds.AutoSize = true;
-            this.lblRaceMilliSeconds.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
-            this.lblRaceMilliSeconds.Location = new System.Drawing.Point(139, 32);
-            this.lblRaceMilliSeconds.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblRaceMilliSeconds.Name = "lblRaceMilliSeconds";
-            this.lblRaceMilliSeconds.Size = new System.Drawing.Size(71, 37);
-            this.lblRaceMilliSeconds.TabIndex = 4;
-            this.lblRaceMilliSeconds.Text = "000";
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.label39.Location = new System.Drawing.Point(117, 32);
-            this.label39.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(19, 29);
-            this.label39.TabIndex = 3;
-            this.label39.Text = ":";
-            // 
-            // lblRaceSeconds
-            // 
-            this.lblRaceSeconds.AutoSize = true;
-            this.lblRaceSeconds.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
-            this.lblRaceSeconds.Location = new System.Drawing.Point(71, 32);
-            this.lblRaceSeconds.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblRaceSeconds.Name = "lblRaceSeconds";
-            this.lblRaceSeconds.Size = new System.Drawing.Size(53, 37);
-            this.lblRaceSeconds.TabIndex = 2;
-            this.lblRaceSeconds.Text = "00";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.label34.Location = new System.Drawing.Point(50, 32);
-            this.label34.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(19, 29);
-            this.label34.TabIndex = 1;
-            this.label34.Text = ":";
-            // 
-            // lblRaceMinutes
-            // 
-            this.lblRaceMinutes.AutoSize = true;
-            this.lblRaceMinutes.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
-            this.lblRaceMinutes.Location = new System.Drawing.Point(8, 32);
-            this.lblRaceMinutes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblRaceMinutes.Name = "lblRaceMinutes";
-            this.lblRaceMinutes.Size = new System.Drawing.Size(53, 37);
-            this.lblRaceMinutes.TabIndex = 0;
-            this.lblRaceMinutes.Text = "00";
-            // 
-            // groupBox26
-            // 
-            this.groupBox26.Controls.Add(this.nudMinLapTime);
-            this.groupBox26.Controls.Add(this.label117);
-            this.groupBox26.Controls.Add(this.nudMinFirstLapTime);
-            this.groupBox26.Controls.Add(this.dtpRaceDate);
-            this.groupBox26.Controls.Add(this.label102);
-            this.groupBox26.Controls.Add(this.tbRaceLocation);
-            this.groupBox26.Controls.Add(this.label101);
-            this.groupBox26.Controls.Add(this.tbRaceName);
-            this.groupBox26.Controls.Add(this.label100);
-            this.groupBox26.Controls.Add(this.label99);
-            this.groupBox26.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox26.Location = new System.Drawing.Point(543, 3);
-            this.groupBox26.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox26.Name = "groupBox26";
-            this.groupBox26.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox26.Size = new System.Drawing.Size(454, 98);
-            this.groupBox26.TabIndex = 2;
-            this.groupBox26.TabStop = false;
-            this.groupBox26.Text = "Race Properties";
-            // 
-            // nudMinLapTime
-            // 
-            this.nudMinLapTime.Location = new System.Drawing.Point(348, 16);
-            this.nudMinLapTime.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nudMinLapTime.Name = "nudMinLapTime";
-            this.nudMinLapTime.Size = new System.Drawing.Size(46, 20);
-            this.nudMinLapTime.TabIndex = 11;
-            this.nudMinLapTime.Value = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            // 
-            // label117
-            // 
-            this.label117.AutoSize = true;
-            this.label117.Location = new System.Drawing.Point(215, 18);
-            this.label117.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label117.Name = "label117";
-            this.label117.Size = new System.Drawing.Size(124, 13);
-            this.label117.TabIndex = 10;
-            this.label117.Text = "Minimum Lap Time (sec):";
-            // 
-            // nudMinFirstLapTime
-            // 
-            this.nudMinFirstLapTime.Location = new System.Drawing.Point(155, 16);
-            this.nudMinFirstLapTime.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nudMinFirstLapTime.Name = "nudMinFirstLapTime";
-            this.nudMinFirstLapTime.Size = new System.Drawing.Size(46, 20);
-            this.nudMinFirstLapTime.TabIndex = 9;
-            this.nudMinFirstLapTime.Value = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            // 
-            // dtpRaceDate
-            // 
-            this.dtpRaceDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpRaceDate.Location = new System.Drawing.Point(243, 68);
-            this.dtpRaceDate.Margin = new System.Windows.Forms.Padding(2);
-            this.dtpRaceDate.Name = "dtpRaceDate";
-            this.dtpRaceDate.Size = new System.Drawing.Size(151, 20);
-            this.dtpRaceDate.TabIndex = 8;
-            // 
-            // label102
-            // 
-            this.label102.AutoSize = true;
-            this.label102.Location = new System.Drawing.Point(206, 72);
-            this.label102.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label102.Name = "label102";
-            this.label102.Size = new System.Drawing.Size(33, 13);
-            this.label102.TabIndex = 6;
-            this.label102.Text = "Date:";
-            // 
-            // tbRaceLocation
-            // 
-            this.tbRaceLocation.Location = new System.Drawing.Point(76, 68);
-            this.tbRaceLocation.Margin = new System.Windows.Forms.Padding(2);
-            this.tbRaceLocation.Name = "tbRaceLocation";
-            this.tbRaceLocation.Size = new System.Drawing.Size(125, 20);
-            this.tbRaceLocation.TabIndex = 5;
-            // 
-            // label101
-            // 
-            this.label101.AutoSize = true;
-            this.label101.Location = new System.Drawing.Point(21, 72);
-            this.label101.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label101.Name = "label101";
-            this.label101.Size = new System.Drawing.Size(51, 13);
-            this.label101.TabIndex = 4;
-            this.label101.Text = "Location:";
-            // 
-            // tbRaceName
-            // 
-            this.tbRaceName.Location = new System.Drawing.Point(76, 41);
-            this.tbRaceName.Margin = new System.Windows.Forms.Padding(2);
-            this.tbRaceName.Name = "tbRaceName";
-            this.tbRaceName.Size = new System.Drawing.Size(318, 20);
-            this.tbRaceName.TabIndex = 3;
-            // 
-            // label100
-            // 
-            this.label100.AutoSize = true;
-            this.label100.Location = new System.Drawing.Point(4, 44);
-            this.label100.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label100.Name = "label100";
-            this.label100.Size = new System.Drawing.Size(69, 13);
-            this.label100.TabIndex = 2;
-            this.label100.Text = "Event Name:";
-            // 
-            // label99
-            // 
-            this.label99.AutoSize = true;
-            this.label99.Location = new System.Drawing.Point(4, 18);
-            this.label99.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label99.Name = "label99";
-            this.label99.Size = new System.Drawing.Size(146, 13);
-            this.label99.TabIndex = 0;
-            this.label99.Text = "Minimum First Lap Time (sec):";
-            // 
-            // tableLayoutPanel5
-            // 
-            this.tableLayoutPanel5.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.tableLayoutPanel5.ColumnCount = 3;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.64965F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.23123F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.01902F));
-            this.tableLayoutPanel5.Controls.Add(this.groupBox9, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.groupBox12, 1, 0);
-            this.tableLayoutPanel5.Controls.Add(this.groupBox22, 2, 0);
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(2, 2);
-            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(2);
-            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.RowCount = 1;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(1000, 84);
-            this.tableLayoutPanel5.TabIndex = 0;
-            // 
-            // groupBox9
-            // 
-            this.groupBox9.Controls.Add(this.label118);
-            this.groupBox9.Controls.Add(this.cmbRaceMode);
-            this.groupBox9.Controls.Add(this.tbRaceMaxRssi);
-            this.groupBox9.Controls.Add(this.tbRaceMinRssi);
-            this.groupBox9.Controls.Add(this.label1);
-            this.groupBox9.Controls.Add(this.label2);
-            this.groupBox9.Controls.Add(this.cbRaceAnt1);
-            this.groupBox9.Controls.Add(this.cbRaceAnt4);
-            this.groupBox9.Controls.Add(this.cbRaceAnt2);
-            this.groupBox9.Controls.Add(this.cbRaceAnt3);
-            this.groupBox9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox9.Location = new System.Drawing.Point(3, 3);
-            this.groupBox9.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox9.Size = new System.Drawing.Size(491, 78);
-            this.groupBox9.TabIndex = 0;
-            this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "Antenna Selection";
-            // 
-            // label118
-            // 
-            this.label118.AutoSize = true;
-            this.label118.Location = new System.Drawing.Point(359, 17);
-            this.label118.Name = "label118";
-            this.label118.Size = new System.Drawing.Size(34, 13);
-            this.label118.TabIndex = 47;
-            this.label118.Text = "Mode";
-            // 
-            // cmbRaceMode
-            // 
-            this.cmbRaceMode.FormattingEnabled = true;
-            this.cmbRaceMode.Items.AddRange(new object[] {
-            "Real Time",
-            "Fast Switch Antenna"});
-            this.cmbRaceMode.Location = new System.Drawing.Point(362, 36);
-            this.cmbRaceMode.Name = "cmbRaceMode";
-            this.cmbRaceMode.Size = new System.Drawing.Size(121, 21);
-            this.cmbRaceMode.TabIndex = 46;
-            // 
-            // tbRaceMaxRssi
-            // 
-            this.tbRaceMaxRssi.Location = new System.Drawing.Point(270, 49);
-            this.tbRaceMaxRssi.Name = "tbRaceMaxRssi";
-            this.tbRaceMaxRssi.ReadOnly = true;
-            this.tbRaceMaxRssi.Size = new System.Drawing.Size(62, 20);
-            this.tbRaceMaxRssi.TabIndex = 44;
-            this.tbRaceMaxRssi.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // tbRaceMinRssi
-            // 
-            this.tbRaceMinRssi.Location = new System.Drawing.Point(270, 15);
-            this.tbRaceMinRssi.Name = "tbRaceMinRssi";
-            this.tbRaceMinRssi.ReadOnly = true;
-            this.tbRaceMinRssi.Size = new System.Drawing.Size(62, 20);
-            this.tbRaceMinRssi.TabIndex = 45;
-            this.tbRaceMinRssi.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(211, 51);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 13);
-            this.label1.TabIndex = 42;
-            this.label1.Text = "Max RSSI:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(212, 17);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 13);
-            this.label2.TabIndex = 43;
-            this.label2.Text = "Min RSSI:";
-            // 
-            // cbRaceAnt1
-            // 
-            this.cbRaceAnt1.AutoSize = true;
-            this.cbRaceAnt1.Checked = true;
-            this.cbRaceAnt1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbRaceAnt1.Location = new System.Drawing.Point(5, 32);
-            this.cbRaceAnt1.Name = "cbRaceAnt1";
-            this.cbRaceAnt1.Size = new System.Drawing.Size(48, 17);
-            this.cbRaceAnt1.TabIndex = 15;
-            this.cbRaceAnt1.Text = "Ant1";
-            this.cbRaceAnt1.UseVisualStyleBackColor = true;
-            // 
-            // cbRaceAnt4
-            // 
-            this.cbRaceAnt4.AutoSize = true;
-            this.cbRaceAnt4.Location = new System.Drawing.Point(160, 32);
-            this.cbRaceAnt4.Name = "cbRaceAnt4";
-            this.cbRaceAnt4.Size = new System.Drawing.Size(48, 17);
-            this.cbRaceAnt4.TabIndex = 14;
-            this.cbRaceAnt4.Text = "Ant4";
-            this.cbRaceAnt4.UseVisualStyleBackColor = true;
-            // 
-            // cbRaceAnt2
-            // 
-            this.cbRaceAnt2.AutoSize = true;
-            this.cbRaceAnt2.Location = new System.Drawing.Point(57, 32);
-            this.cbRaceAnt2.Name = "cbRaceAnt2";
-            this.cbRaceAnt2.Size = new System.Drawing.Size(48, 17);
-            this.cbRaceAnt2.TabIndex = 12;
-            this.cbRaceAnt2.Text = "Ant2";
-            this.cbRaceAnt2.UseVisualStyleBackColor = true;
-            // 
-            // cbRaceAnt3
-            // 
-            this.cbRaceAnt3.AutoSize = true;
-            this.cbRaceAnt3.Location = new System.Drawing.Point(109, 32);
-            this.cbRaceAnt3.Name = "cbRaceAnt3";
-            this.cbRaceAnt3.Size = new System.Drawing.Size(48, 17);
-            this.cbRaceAnt3.TabIndex = 13;
-            this.cbRaceAnt3.Text = "Ant3";
-            this.cbRaceAnt3.UseVisualStyleBackColor = true;
-            // 
-            // groupBox12
-            // 
-            this.groupBox12.Controls.Add(this.label18);
-            this.groupBox12.Controls.Add(this.cmbRaceGroup);
-            this.groupBox12.Controls.Add(this.label15);
-            this.groupBox12.Controls.Add(this.cmbRaceRound);
-            this.groupBox12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox12.Location = new System.Drawing.Point(499, 3);
-            this.groupBox12.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox12.Size = new System.Drawing.Size(307, 78);
-            this.groupBox12.TabIndex = 1;
-            this.groupBox12.TabStop = false;
-            this.groupBox12.Text = "Event Round";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(144, 30);
-            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(36, 13);
-            this.label18.TabIndex = 4;
-            this.label18.Text = "Group";
-            this.label18.Click += new System.EventHandler(this.label18_Click);
-            // 
-            // cmbRaceGroup
-            // 
-            this.cmbRaceGroup.FormattingEnabled = true;
-            this.cmbRaceGroup.Location = new System.Drawing.Point(184, 27);
-            this.cmbRaceGroup.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbRaceGroup.Name = "cmbRaceGroup";
-            this.cmbRaceGroup.Size = new System.Drawing.Size(92, 21);
-            this.cmbRaceGroup.TabIndex = 3;
-            this.cmbRaceGroup.SelectedIndexChanged += new System.EventHandler(this.cmbRaceGroup_SelectedIndexChanged);
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(4, 30);
-            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(39, 13);
-            this.label15.TabIndex = 2;
-            this.label15.Text = "Round";
-            // 
-            // cmbRaceRound
-            // 
-            this.cmbRaceRound.FormattingEnabled = true;
-            this.cmbRaceRound.Location = new System.Drawing.Point(42, 27);
-            this.cmbRaceRound.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbRaceRound.Name = "cmbRaceRound";
-            this.cmbRaceRound.Size = new System.Drawing.Size(92, 21);
-            this.cmbRaceRound.TabIndex = 1;
-            this.cmbRaceRound.SelectedIndexChanged += new System.EventHandler(this.cmbRaceRound_SelectedIndexChanged);
-            // 
-            // groupBox22
-            // 
-            this.groupBox22.Controls.Add(this.btnRaceExport);
-            this.groupBox22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox22.Location = new System.Drawing.Point(811, 3);
-            this.groupBox22.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox22.Name = "groupBox22";
-            this.groupBox22.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox22.Size = new System.Drawing.Size(186, 78);
-            this.groupBox22.TabIndex = 2;
-            this.groupBox22.TabStop = false;
-            this.groupBox22.Text = "Export Data";
-            // 
-            // btnRaceExport
-            // 
-            this.btnRaceExport.Location = new System.Drawing.Point(32, 23);
-            this.btnRaceExport.Margin = new System.Windows.Forms.Padding(2);
-            this.btnRaceExport.Name = "btnRaceExport";
-            this.btnRaceExport.Size = new System.Drawing.Size(96, 34);
-            this.btnRaceExport.TabIndex = 0;
-            this.btnRaceExport.Text = "Export to Excel";
-            this.btnRaceExport.UseVisualStyleBackColor = true;
-            // 
-            // pageRealMode
-            // 
-            this.pageRealMode.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pageRealMode.Controls.Add(this.groupBox20);
-            this.pageRealMode.Controls.Add(this.tableLayoutPanel1);
-            this.pageRealMode.Controls.Add(this.tbRealMinRssi);
-            this.pageRealMode.Controls.Add(this.tbRealMaxRssi);
-            this.pageRealMode.Controls.Add(this.btRealFresh);
-            this.pageRealMode.Controls.Add(this.label70);
-            this.pageRealMode.Controls.Add(this.label74);
-            this.pageRealMode.Controls.Add(this.lbRealTagCount);
-            this.pageRealMode.Controls.Add(this.groupBox1);
-            this.pageRealMode.Controls.Add(this.lvRealList);
-            this.pageRealMode.Font = new System.Drawing.Font("SimSun", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.pageRealMode.Location = new System.Drawing.Point(4, 22);
-            this.pageRealMode.Name = "pageRealMode";
-            this.pageRealMode.Padding = new System.Windows.Forms.Padding(3);
-            this.pageRealMode.Size = new System.Drawing.Size(1331, 468);
-            this.pageRealMode.TabIndex = 1;
-            this.pageRealMode.Text = "Tag Inventory(Real Time Mode)";
-            // 
-            // groupBox20
-            // 
-            this.groupBox20.Controls.Add(this.cbRealWorkant1);
-            this.groupBox20.Controls.Add(this.cbRealWorkant4);
-            this.groupBox20.Controls.Add(this.cbRealWorkant3);
-            this.groupBox20.Controls.Add(this.cbRealWorkant2);
-            this.groupBox20.Controls.Add(this.label19);
-            this.groupBox20.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox20.ForeColor = System.Drawing.Color.Black;
-            this.groupBox20.Location = new System.Drawing.Point(1005, 64);
-            this.groupBox20.Name = "groupBox20";
-            this.groupBox20.Size = new System.Drawing.Size(134, 176);
-            this.groupBox20.TabIndex = 49;
-            this.groupBox20.TabStop = false;
-            this.groupBox20.Text = "Antenna Selection";
-            // 
-            // cbRealWorkant1
-            // 
-            this.cbRealWorkant1.AutoSize = true;
-            this.cbRealWorkant1.Checked = true;
-            this.cbRealWorkant1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbRealWorkant1.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.cbRealWorkant1.Location = new System.Drawing.Point(32, 24);
-            this.cbRealWorkant1.Name = "cbRealWorkant1";
-            this.cbRealWorkant1.Size = new System.Drawing.Size(48, 16);
-            this.cbRealWorkant1.TabIndex = 68;
-            this.cbRealWorkant1.Text = "Ant1";
-            this.cbRealWorkant1.UseVisualStyleBackColor = true;
-            // 
-            // cbRealWorkant4
-            // 
-            this.cbRealWorkant4.AutoSize = true;
-            this.cbRealWorkant4.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.cbRealWorkant4.Location = new System.Drawing.Point(31, 90);
-            this.cbRealWorkant4.Name = "cbRealWorkant4";
-            this.cbRealWorkant4.Size = new System.Drawing.Size(48, 16);
-            this.cbRealWorkant4.TabIndex = 67;
-            this.cbRealWorkant4.Text = "Ant4";
-            this.cbRealWorkant4.UseVisualStyleBackColor = true;
-            // 
-            // cbRealWorkant3
-            // 
-            this.cbRealWorkant3.AutoSize = true;
-            this.cbRealWorkant3.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.cbRealWorkant3.Location = new System.Drawing.Point(32, 68);
-            this.cbRealWorkant3.Name = "cbRealWorkant3";
-            this.cbRealWorkant3.Size = new System.Drawing.Size(48, 16);
-            this.cbRealWorkant3.TabIndex = 66;
-            this.cbRealWorkant3.Text = "Ant3";
-            this.cbRealWorkant3.UseVisualStyleBackColor = true;
-            // 
-            // cbRealWorkant2
-            // 
-            this.cbRealWorkant2.AutoSize = true;
-            this.cbRealWorkant2.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.cbRealWorkant2.Location = new System.Drawing.Point(32, 46);
-            this.cbRealWorkant2.Name = "cbRealWorkant2";
-            this.cbRealWorkant2.Size = new System.Drawing.Size(48, 16);
-            this.cbRealWorkant2.TabIndex = 65;
-            this.cbRealWorkant2.Text = "Ant2";
-            this.cbRealWorkant2.UseVisualStyleBackColor = true;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(51, 20);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(0, 12);
-            this.label19.TabIndex = 0;
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.7996F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.2004F));
-            this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.panel5, 1, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1325, 59);
-            this.tableLayoutPanel1.TabIndex = 48;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.textRealRound);
-            this.panel1.Controls.Add(this.label84);
-            this.panel1.Controls.Add(this.btRealTimeInventory);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(4, 4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(559, 51);
-            this.panel1.TabIndex = 0;
-            // 
-            // textRealRound
-            // 
-            this.textRealRound.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textRealRound.Location = new System.Drawing.Point(354, 16);
-            this.textRealRound.Name = "textRealRound";
-            this.textRealRound.Size = new System.Drawing.Size(28, 21);
-            this.textRealRound.TabIndex = 48;
-            this.textRealRound.Text = "1";
-            this.textRealRound.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label84
-            // 
-            this.label84.AutoSize = true;
-            this.label84.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label84.Location = new System.Drawing.Point(231, 20);
-            this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(119, 12);
-            this.label84.TabIndex = 2;
-            this.label84.Text = "Repeat Per Command:";
-            // 
-            // btRealTimeInventory
-            // 
-            this.btRealTimeInventory.Font = new System.Drawing.Font("SimSun", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btRealTimeInventory.ForeColor = System.Drawing.Color.DarkBlue;
-            this.btRealTimeInventory.Location = new System.Drawing.Point(75, 6);
-            this.btRealTimeInventory.Name = "btRealTimeInventory";
-            this.btRealTimeInventory.Size = new System.Drawing.Size(144, 41);
-            this.btRealTimeInventory.TabIndex = 1;
-            this.btRealTimeInventory.Text = "Inventory";
-            this.btRealTimeInventory.UseVisualStyleBackColor = true;
-            this.btRealTimeInventory.Click += new System.EventHandler(this.btRealTimeInventory_Click);
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.cbRealSession);
-            this.panel5.Controls.Add(this.cmbTarget);
-            this.panel5.Controls.Add(this.label98);
-            this.panel5.Controls.Add(this.cmbSession);
-            this.panel5.Controls.Add(this.label97);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(570, 4);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(751, 51);
-            this.panel5.TabIndex = 1;
-            // 
-            // cbRealSession
-            // 
-            this.cbRealSession.AutoSize = true;
-            this.cbRealSession.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.cbRealSession.Location = new System.Drawing.Point(29, 19);
-            this.cbRealSession.Name = "cbRealSession";
-            this.cbRealSession.Size = new System.Drawing.Size(138, 16);
-            this.cbRealSession.TabIndex = 55;
-            this.cbRealSession.Text = "User Define Session";
-            this.cbRealSession.UseVisualStyleBackColor = true;
-            this.cbRealSession.CheckedChanged += new System.EventHandler(this.cbRealSession_CheckedChanged);
-            // 
-            // cmbTarget
-            // 
-            this.cmbTarget.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbTarget.Enabled = false;
-            this.cmbTarget.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.cmbTarget.FormattingEnabled = true;
-            this.cmbTarget.Items.AddRange(new object[] {
-            "A",
-            "B"});
-            this.cmbTarget.Location = new System.Drawing.Point(472, 16);
-            this.cmbTarget.Name = "cmbTarget";
-            this.cmbTarget.Size = new System.Drawing.Size(62, 20);
-            this.cmbTarget.TabIndex = 54;
-            // 
-            // label98
-            // 
-            this.label98.AutoSize = true;
-            this.label98.Enabled = false;
-            this.label98.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label98.Location = new System.Drawing.Point(359, 20);
-            this.label98.Name = "label98";
-            this.label98.Size = new System.Drawing.Size(107, 12);
-            this.label98.TabIndex = 53;
-            this.label98.Text = "Inventoried Flag:";
-            // 
-            // cmbSession
-            // 
-            this.cmbSession.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbSession.Enabled = false;
-            this.cmbSession.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.cmbSession.FormattingEnabled = true;
-            this.cmbSession.Items.AddRange(new object[] {
-            "S0",
-            "S1",
-            "S2",
-            "S3"});
-            this.cmbSession.Location = new System.Drawing.Point(273, 16);
-            this.cmbSession.Name = "cmbSession";
-            this.cmbSession.Size = new System.Drawing.Size(62, 20);
-            this.cmbSession.TabIndex = 52;
-            // 
-            // label97
-            // 
-            this.label97.AutoSize = true;
-            this.label97.Enabled = false;
-            this.label97.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label97.Location = new System.Drawing.Point(196, 20);
-            this.label97.Name = "label97";
-            this.label97.Size = new System.Drawing.Size(71, 12);
-            this.label97.TabIndex = 51;
-            this.label97.Text = "Session ID:";
-            // 
-            // tbRealMinRssi
-            // 
-            this.tbRealMinRssi.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.tbRealMinRssi.Location = new System.Drawing.Point(482, 240);
-            this.tbRealMinRssi.Name = "tbRealMinRssi";
-            this.tbRealMinRssi.ReadOnly = true;
-            this.tbRealMinRssi.Size = new System.Drawing.Size(62, 21);
-            this.tbRealMinRssi.TabIndex = 46;
-            this.tbRealMinRssi.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // tbRealMaxRssi
-            // 
-            this.tbRealMaxRssi.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.tbRealMaxRssi.Location = new System.Drawing.Point(667, 240);
-            this.tbRealMaxRssi.Name = "tbRealMaxRssi";
-            this.tbRealMaxRssi.ReadOnly = true;
-            this.tbRealMaxRssi.Size = new System.Drawing.Size(62, 21);
-            this.tbRealMaxRssi.TabIndex = 47;
-            this.tbRealMaxRssi.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // btRealFresh
-            // 
-            this.btRealFresh.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btRealFresh.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btRealFresh.Location = new System.Drawing.Point(771, 240);
-            this.btRealFresh.Name = "btRealFresh";
-            this.btRealFresh.Size = new System.Drawing.Size(89, 25);
-            this.btRealFresh.TabIndex = 45;
-            this.btRealFresh.Text = "Refresh";
-            this.btRealFresh.UseVisualStyleBackColor = true;
-            this.btRealFresh.Click += new System.EventHandler(this.btRealFresh_Click);
-            // 
-            // label70
-            // 
-            this.label70.AutoSize = true;
-            this.label70.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label70.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label70.Location = new System.Drawing.Point(602, 243);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(59, 12);
-            this.label70.TabIndex = 43;
-            this.label70.Text = "Max RSSI:";
-            // 
-            // label74
-            // 
-            this.label74.AutoSize = true;
-            this.label74.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label74.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label74.Location = new System.Drawing.Point(417, 243);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(59, 12);
-            this.label74.TabIndex = 44;
-            this.label74.Text = "Min RSSI:";
-            // 
-            // lbRealTagCount
-            // 
-            this.lbRealTagCount.AutoSize = true;
-            this.lbRealTagCount.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lbRealTagCount.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.lbRealTagCount.Location = new System.Drawing.Point(6, 243);
-            this.lbRealTagCount.Name = "lbRealTagCount";
-            this.lbRealTagCount.Size = new System.Drawing.Size(59, 12);
-            this.lbRealTagCount.TabIndex = 42;
-            this.lbRealTagCount.Text = "Tag List:";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.ledReal3);
-            this.groupBox1.Controls.Add(this.comboBox6);
-            this.groupBox1.Controls.Add(this.ledReal5);
-            this.groupBox1.Controls.Add(this.ledReal2);
-            this.groupBox1.Controls.Add(this.ledReal4);
-            this.groupBox1.Controls.Add(this.label53);
-            this.groupBox1.Controls.Add(this.label66);
-            this.groupBox1.Controls.Add(this.label67);
-            this.groupBox1.Controls.Add(this.label68);
-            this.groupBox1.Controls.Add(this.label69);
-            this.groupBox1.Controls.Add(this.ledReal1);
-            this.groupBox1.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.groupBox1.Location = new System.Drawing.Point(3, 64);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(996, 176);
-            this.groupBox1.TabIndex = 24;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Tag Data";
-            // 
-            // ledReal3
-            // 
-            this.ledReal3.BackColor = System.Drawing.Color.Transparent;
-            this.ledReal3.BackColor_1 = System.Drawing.Color.Transparent;
-            this.ledReal3.BackColor_2 = System.Drawing.Color.DarkRed;
-            this.ledReal3.BevelRate = 0.1F;
-            this.ledReal3.BorderColor = System.Drawing.Color.Lavender;
-            this.ledReal3.FadedColor = System.Drawing.SystemColors.ControlLight;
-            this.ledReal3.FocusedBorderColor = System.Drawing.Color.LightCoral;
-            this.ledReal3.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.ledReal3.HighlightOpaque = ((byte)(20));
-            this.ledReal3.Location = new System.Drawing.Point(702, 54);
-            this.ledReal3.Name = "ledReal3";
-            this.ledReal3.RoundCorner = true;
-            this.ledReal3.SegmentIntervalRatio = 50;
-            this.ledReal3.ShowHighlight = true;
-            this.ledReal3.Size = new System.Drawing.Size(210, 38);
-            this.ledReal3.TabIndex = 40;
-            this.ledReal3.Text = "0";
-            this.ledReal3.TextAlignment = LxControl.LxLedControl.Alignment.Right;
-            this.ledReal3.TotalCharCount = 10;
-            // 
-            // comboBox6
-            // 
-            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox6.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
-            "天线1",
-            "天线2",
-            "天线3",
-            "天线4",
-            "不选"});
-            this.comboBox6.Location = new System.Drawing.Point(-165, 120);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(55, 20);
-            this.comboBox6.TabIndex = 39;
-            // 
-            // ledReal5
-            // 
-            this.ledReal5.BackColor = System.Drawing.Color.Transparent;
-            this.ledReal5.BackColor_1 = System.Drawing.Color.Transparent;
-            this.ledReal5.BackColor_2 = System.Drawing.Color.DarkRed;
-            this.ledReal5.BevelRate = 0.1F;
-            this.ledReal5.BorderColor = System.Drawing.Color.Lavender;
-            this.ledReal5.FadedColor = System.Drawing.SystemColors.ControlLight;
-            this.ledReal5.FocusedBorderColor = System.Drawing.Color.LightCoral;
-            this.ledReal5.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.ledReal5.HighlightOpaque = ((byte)(20));
-            this.ledReal5.Location = new System.Drawing.Point(702, 128);
-            this.ledReal5.Name = "ledReal5";
-            this.ledReal5.RoundCorner = true;
-            this.ledReal5.SegmentIntervalRatio = 50;
-            this.ledReal5.ShowHighlight = true;
-            this.ledReal5.Size = new System.Drawing.Size(210, 38);
-            this.ledReal5.TabIndex = 35;
-            this.ledReal5.Text = "0";
-            this.ledReal5.TextAlignment = LxControl.LxLedControl.Alignment.Right;
-            this.ledReal5.TotalCharCount = 10;
-            // 
-            // ledReal2
-            // 
-            this.ledReal2.BackColor = System.Drawing.Color.Transparent;
-            this.ledReal2.BackColor_1 = System.Drawing.Color.Transparent;
-            this.ledReal2.BackColor_2 = System.Drawing.Color.DarkRed;
-            this.ledReal2.BevelRate = 0.1F;
-            this.ledReal2.BorderColor = System.Drawing.Color.Lavender;
-            this.ledReal2.FadedColor = System.Drawing.SystemColors.ControlLight;
-            this.ledReal2.FocusedBorderColor = System.Drawing.Color.LightCoral;
-            this.ledReal2.ForeColor = System.Drawing.Color.Purple;
-            this.ledReal2.HighlightOpaque = ((byte)(20));
-            this.ledReal2.Location = new System.Drawing.Point(496, 38);
-            this.ledReal2.Name = "ledReal2";
-            this.ledReal2.RoundCorner = true;
-            this.ledReal2.SegmentIntervalRatio = 50;
-            this.ledReal2.ShowHighlight = true;
-            this.ledReal2.Size = new System.Drawing.Size(180, 54);
-            this.ledReal2.TabIndex = 34;
-            this.ledReal2.Text = "0";
-            this.ledReal2.TextAlignment = LxControl.LxLedControl.Alignment.Right;
-            this.ledReal2.TotalCharCount = 6;
-            // 
-            // ledReal4
-            // 
-            this.ledReal4.BackColor = System.Drawing.Color.Transparent;
-            this.ledReal4.BackColor_1 = System.Drawing.Color.Transparent;
-            this.ledReal4.BackColor_2 = System.Drawing.Color.DarkRed;
-            this.ledReal4.BevelRate = 0.1F;
-            this.ledReal4.BorderColor = System.Drawing.Color.Lavender;
-            this.ledReal4.FadedColor = System.Drawing.SystemColors.ControlLight;
-            this.ledReal4.FocusedBorderColor = System.Drawing.Color.LightCoral;
-            this.ledReal4.ForeColor = System.Drawing.Color.Purple;
-            this.ledReal4.HighlightOpaque = ((byte)(20));
-            this.ledReal4.Location = new System.Drawing.Point(497, 111);
-            this.ledReal4.Name = "ledReal4";
-            this.ledReal4.RoundCorner = true;
-            this.ledReal4.SegmentIntervalRatio = 50;
-            this.ledReal4.ShowHighlight = true;
-            this.ledReal4.Size = new System.Drawing.Size(179, 54);
-            this.ledReal4.TabIndex = 33;
-            this.ledReal4.Text = "0";
-            this.ledReal4.TextAlignment = LxControl.LxLedControl.Alignment.Right;
-            this.ledReal4.TotalCharCount = 6;
-            // 
-            // label53
-            // 
-            this.label53.AutoSize = true;
-            this.label53.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label53.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label53.Location = new System.Drawing.Point(700, 111);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(179, 12);
-            this.label53.TabIndex = 30;
-            this.label53.Text = "Total Inventory Duration(mS):";
-            // 
-            // label66
-            // 
-            this.label66.AutoSize = true;
-            this.label66.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label66.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label66.Location = new System.Drawing.Point(495, 19);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(95, 12);
-            this.label66.TabIndex = 29;
-            this.label66.Text = "Speed(Tag/Sec):";
-            // 
-            // label67
-            // 
-            this.label67.AutoSize = true;
-            this.label67.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label67.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label67.Location = new System.Drawing.Point(498, 95);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(131, 12);
-            this.label67.TabIndex = 28;
-            this.label67.Text = "Command Duration(mS):";
-            // 
-            // label68
-            // 
-            this.label68.AutoSize = true;
-            this.label68.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label68.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label68.Location = new System.Drawing.Point(700, 38);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(149, 12);
-            this.label68.TabIndex = 27;
-            this.label68.Text = "Total Tag Communication:";
-            // 
-            // label69
-            // 
-            this.label69.AutoSize = true;
-            this.label69.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label69.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label69.Location = new System.Drawing.Point(104, 19);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(131, 12);
-            this.label69.TabIndex = 26;
-            this.label69.Text = "Inventoried Quantity:";
-            // 
-            // ledReal1
-            // 
-            this.ledReal1.BackColor = System.Drawing.Color.Transparent;
-            this.ledReal1.BackColor_1 = System.Drawing.Color.Transparent;
-            this.ledReal1.BackColor_2 = System.Drawing.Color.DarkRed;
-            this.ledReal1.BevelRate = 0.1F;
-            this.ledReal1.BorderColor = System.Drawing.Color.Lavender;
-            this.ledReal1.BorderWidth = 3;
-            this.ledReal1.FadedColor = System.Drawing.SystemColors.ControlLight;
-            this.ledReal1.FocusedBorderColor = System.Drawing.Color.LightCoral;
-            this.ledReal1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.ledReal1.HighlightOpaque = ((byte)(20));
-            this.ledReal1.Location = new System.Drawing.Point(106, 38);
-            this.ledReal1.Name = "ledReal1";
-            this.ledReal1.RoundCorner = true;
-            this.ledReal1.SegmentIntervalRatio = 50;
-            this.ledReal1.ShowHighlight = true;
-            this.ledReal1.Size = new System.Drawing.Size(327, 128);
-            this.ledReal1.TabIndex = 21;
-            this.ledReal1.Text = "0";
-            this.ledReal1.TextAlignment = LxControl.LxLedControl.Alignment.Right;
-            // 
-            // lvRealList
-            // 
-            this.lvRealList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader37,
-            this.columnHeader38,
-            this.columnHeader39,
-            this.columnHeader40,
-            this.columnHeader41,
-            this.columnHeader42});
-            this.lvRealList.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lvRealList.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lvRealList.GridLines = true;
-            this.lvRealList.Location = new System.Drawing.Point(3, 271);
-            this.lvRealList.Name = "lvRealList";
-            this.lvRealList.Size = new System.Drawing.Size(1325, 194);
-            this.lvRealList.TabIndex = 23;
-            this.lvRealList.UseCompatibleStateImageBehavior = false;
-            this.lvRealList.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader37
-            // 
-            this.columnHeader37.Text = "ID";
-            this.columnHeader37.Width = 56;
-            // 
-            // columnHeader38
-            // 
-            this.columnHeader38.Text = "EPC";
-            this.columnHeader38.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader38.Width = 486;
-            // 
-            // columnHeader39
-            // 
-            this.columnHeader39.Text = "PC";
-            this.columnHeader39.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader39.Width = 83;
-            // 
-            // columnHeader40
-            // 
-            this.columnHeader40.Text = "Identification Count";
-            this.columnHeader40.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader40.Width = 149;
-            // 
-            // columnHeader41
-            // 
-            this.columnHeader41.Text = "RSSI";
-            this.columnHeader41.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader41.Width = 95;
-            // 
-            // columnHeader42
-            // 
-            this.columnHeader42.Text = "Carrier Frequency";
-            this.columnHeader42.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader42.Width = 114;
-            // 
-            // pageBufferedMode
-            // 
-            this.pageBufferedMode.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pageBufferedMode.Controls.Add(this.tableLayoutPanel4);
-            this.pageBufferedMode.Controls.Add(this.groupBox3);
-            this.pageBufferedMode.Controls.Add(this.btBufferFresh);
-            this.pageBufferedMode.Controls.Add(this.labelBufferTagCount);
-            this.pageBufferedMode.Controls.Add(this.lvBufferList);
-            this.pageBufferedMode.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.pageBufferedMode.Location = new System.Drawing.Point(4, 22);
-            this.pageBufferedMode.Name = "pageBufferedMode";
-            this.pageBufferedMode.Size = new System.Drawing.Size(1331, 468);
-            this.pageBufferedMode.TabIndex = 2;
-            this.pageBufferedMode.Text = "Tag Inventory(Buffer Mode)";
-            // 
-            // tableLayoutPanel4
-            // 
-            this.tableLayoutPanel4.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.tableLayoutPanel4.ColumnCount = 3;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.22422F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.77578F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 414F));
-            this.tableLayoutPanel4.Controls.Add(this.panel9, 2, 0);
-            this.tableLayoutPanel4.Controls.Add(this.panel10, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.panel8, 1, 0);
-            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 1;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(1331, 89);
-            this.tableLayoutPanel4.TabIndex = 58;
-            // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.btClearBuffer);
-            this.panel9.Controls.Add(this.btQueryBuffer);
-            this.panel9.Controls.Add(this.btGetClearBuffer);
-            this.panel9.Controls.Add(this.btGetBuffer);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel9.Location = new System.Drawing.Point(918, 4);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(409, 81);
-            this.panel9.TabIndex = 1;
-            // 
-            // btClearBuffer
-            // 
-            this.btClearBuffer.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btClearBuffer.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btClearBuffer.Location = new System.Drawing.Point(15, 45);
-            this.btClearBuffer.Name = "btClearBuffer";
-            this.btClearBuffer.Size = new System.Drawing.Size(135, 27);
-            this.btClearBuffer.TabIndex = 8;
-            this.btClearBuffer.Text = "Clear Buffer";
-            this.btClearBuffer.UseVisualStyleBackColor = true;
-            this.btClearBuffer.Click += new System.EventHandler(this.btClearBuffer_Click);
-            // 
-            // btQueryBuffer
-            // 
-            this.btQueryBuffer.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btQueryBuffer.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btQueryBuffer.Location = new System.Drawing.Point(167, 45);
-            this.btQueryBuffer.Name = "btQueryBuffer";
-            this.btQueryBuffer.Size = new System.Drawing.Size(135, 27);
-            this.btQueryBuffer.TabIndex = 7;
-            this.btQueryBuffer.Text = "Query Tag Quantity";
-            this.btQueryBuffer.UseVisualStyleBackColor = true;
-            this.btQueryBuffer.Click += new System.EventHandler(this.btQueryBuffer_Click);
-            // 
-            // btGetClearBuffer
-            // 
-            this.btGetClearBuffer.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btGetClearBuffer.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btGetClearBuffer.Location = new System.Drawing.Point(167, 11);
-            this.btGetClearBuffer.Name = "btGetClearBuffer";
-            this.btGetClearBuffer.Size = new System.Drawing.Size(135, 27);
-            this.btGetClearBuffer.TabIndex = 6;
-            this.btGetClearBuffer.Text = "Get and Clear Buffer";
-            this.btGetClearBuffer.UseVisualStyleBackColor = true;
-            this.btGetClearBuffer.Click += new System.EventHandler(this.btGetClearBuffer_Click);
-            // 
-            // btGetBuffer
-            // 
-            this.btGetBuffer.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btGetBuffer.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btGetBuffer.Location = new System.Drawing.Point(15, 11);
-            this.btGetBuffer.Name = "btGetBuffer";
-            this.btGetBuffer.Size = new System.Drawing.Size(135, 27);
-            this.btGetBuffer.TabIndex = 5;
-            this.btGetBuffer.Text = "Get Buffer";
-            this.btGetBuffer.UseVisualStyleBackColor = true;
-            this.btGetBuffer.Click += new System.EventHandler(this.btGetBuffer_Click);
-            // 
-            // panel10
-            // 
-            this.panel10.Controls.Add(this.btBufferInventory);
-            this.panel10.Controls.Add(this.label85);
-            this.panel10.Controls.Add(this.textReadRoundBuffer);
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel10.Location = new System.Drawing.Point(4, 4);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(452, 81);
-            this.panel10.TabIndex = 0;
-            // 
-            // btBufferInventory
-            // 
-            this.btBufferInventory.Font = new System.Drawing.Font("SimSun", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btBufferInventory.ForeColor = System.Drawing.Color.DarkBlue;
-            this.btBufferInventory.Location = new System.Drawing.Point(7, 15);
-            this.btBufferInventory.Name = "btBufferInventory";
-            this.btBufferInventory.Size = new System.Drawing.Size(144, 41);
-            this.btBufferInventory.TabIndex = 51;
-            this.btBufferInventory.Text = "Inventory";
-            this.btBufferInventory.UseVisualStyleBackColor = true;
-            this.btBufferInventory.Click += new System.EventHandler(this.btBufferInventory_Click);
-            // 
-            // label85
-            // 
-            this.label85.AutoSize = true;
-            this.label85.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label85.Location = new System.Drawing.Point(163, 32);
-            this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(119, 12);
-            this.label85.TabIndex = 49;
-            this.label85.Text = "Repeat Per Command:";
-            // 
-            // textReadRoundBuffer
-            // 
-            this.textReadRoundBuffer.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textReadRoundBuffer.Location = new System.Drawing.Point(288, 28);
-            this.textReadRoundBuffer.Name = "textReadRoundBuffer";
-            this.textReadRoundBuffer.Size = new System.Drawing.Size(28, 21);
-            this.textReadRoundBuffer.TabIndex = 50;
-            this.textReadRoundBuffer.Text = "1";
-            this.textReadRoundBuffer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.cbBufferWorkant1);
-            this.panel8.Controls.Add(this.cbBufferWorkant4);
-            this.panel8.Controls.Add(this.cbBufferWorkant2);
-            this.panel8.Controls.Add(this.cbBufferWorkant3);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(463, 4);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(448, 81);
-            this.panel8.TabIndex = 0;
-            // 
-            // cbBufferWorkant1
-            // 
-            this.cbBufferWorkant1.AutoSize = true;
-            this.cbBufferWorkant1.Checked = true;
-            this.cbBufferWorkant1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbBufferWorkant1.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.cbBufferWorkant1.Location = new System.Drawing.Point(28, 30);
-            this.cbBufferWorkant1.Name = "cbBufferWorkant1";
-            this.cbBufferWorkant1.Size = new System.Drawing.Size(48, 16);
-            this.cbBufferWorkant1.TabIndex = 11;
-            this.cbBufferWorkant1.Text = "Ant1";
-            this.cbBufferWorkant1.UseVisualStyleBackColor = true;
-            // 
-            // cbBufferWorkant4
-            // 
-            this.cbBufferWorkant4.AutoSize = true;
-            this.cbBufferWorkant4.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.cbBufferWorkant4.Location = new System.Drawing.Point(253, 32);
-            this.cbBufferWorkant4.Name = "cbBufferWorkant4";
-            this.cbBufferWorkant4.Size = new System.Drawing.Size(48, 16);
-            this.cbBufferWorkant4.TabIndex = 10;
-            this.cbBufferWorkant4.Text = "Ant4";
-            this.cbBufferWorkant4.UseVisualStyleBackColor = true;
-            // 
-            // cbBufferWorkant2
-            // 
-            this.cbBufferWorkant2.AutoSize = true;
-            this.cbBufferWorkant2.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.cbBufferWorkant2.Location = new System.Drawing.Point(103, 32);
-            this.cbBufferWorkant2.Name = "cbBufferWorkant2";
-            this.cbBufferWorkant2.Size = new System.Drawing.Size(48, 16);
-            this.cbBufferWorkant2.TabIndex = 8;
-            this.cbBufferWorkant2.Text = "Ant2";
-            this.cbBufferWorkant2.UseVisualStyleBackColor = true;
-            // 
-            // cbBufferWorkant3
-            // 
-            this.cbBufferWorkant3.AutoSize = true;
-            this.cbBufferWorkant3.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.cbBufferWorkant3.Location = new System.Drawing.Point(178, 32);
-            this.cbBufferWorkant3.Name = "cbBufferWorkant3";
-            this.cbBufferWorkant3.Size = new System.Drawing.Size(48, 16);
-            this.cbBufferWorkant3.TabIndex = 9;
-            this.cbBufferWorkant3.Text = "Ant3";
-            this.cbBufferWorkant3.UseVisualStyleBackColor = true;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.ledBuffer4);
-            this.groupBox3.Controls.Add(this.comboBox11);
-            this.groupBox3.Controls.Add(this.ledBuffer5);
-            this.groupBox3.Controls.Add(this.ledBuffer2);
-            this.groupBox3.Controls.Add(this.ledBuffer3);
-            this.groupBox3.Controls.Add(this.label92);
-            this.groupBox3.Controls.Add(this.label93);
-            this.groupBox3.Controls.Add(this.label94);
-            this.groupBox3.Controls.Add(this.label95);
-            this.groupBox3.Controls.Add(this.label96);
-            this.groupBox3.Controls.Add(this.ledBuffer1);
-            this.groupBox3.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.groupBox3.Location = new System.Drawing.Point(0, 95);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(996, 176);
-            this.groupBox3.TabIndex = 57;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Tag Data";
-            // 
-            // ledBuffer4
-            // 
-            this.ledBuffer4.BackColor = System.Drawing.Color.Transparent;
-            this.ledBuffer4.BackColor_1 = System.Drawing.Color.Transparent;
-            this.ledBuffer4.BackColor_2 = System.Drawing.Color.DarkRed;
-            this.ledBuffer4.BevelRate = 0.1F;
-            this.ledBuffer4.BorderColor = System.Drawing.Color.Lavender;
-            this.ledBuffer4.FadedColor = System.Drawing.SystemColors.ControlLight;
-            this.ledBuffer4.FocusedBorderColor = System.Drawing.Color.LightCoral;
-            this.ledBuffer4.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.ledBuffer4.HighlightOpaque = ((byte)(20));
-            this.ledBuffer4.Location = new System.Drawing.Point(702, 54);
-            this.ledBuffer4.Name = "ledBuffer4";
-            this.ledBuffer4.RoundCorner = true;
-            this.ledBuffer4.SegmentIntervalRatio = 50;
-            this.ledBuffer4.ShowHighlight = true;
-            this.ledBuffer4.Size = new System.Drawing.Size(183, 38);
-            this.ledBuffer4.TabIndex = 40;
-            this.ledBuffer4.Text = "0";
-            this.ledBuffer4.TextAlignment = LxControl.LxLedControl.Alignment.Right;
-            this.ledBuffer4.TotalCharCount = 10;
-            // 
-            // comboBox11
-            // 
-            this.comboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox11.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Items.AddRange(new object[] {
-            "天线1",
-            "天线2",
-            "天线3",
-            "天线4",
-            "不选"});
-            this.comboBox11.Location = new System.Drawing.Point(-165, 120);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(55, 20);
-            this.comboBox11.TabIndex = 39;
-            // 
-            // ledBuffer5
-            // 
-            this.ledBuffer5.BackColor = System.Drawing.Color.Transparent;
-            this.ledBuffer5.BackColor_1 = System.Drawing.Color.Transparent;
-            this.ledBuffer5.BackColor_2 = System.Drawing.Color.DarkRed;
-            this.ledBuffer5.BevelRate = 0.1F;
-            this.ledBuffer5.BorderColor = System.Drawing.Color.Lavender;
-            this.ledBuffer5.FadedColor = System.Drawing.SystemColors.ControlLight;
-            this.ledBuffer5.FocusedBorderColor = System.Drawing.Color.LightCoral;
-            this.ledBuffer5.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.ledBuffer5.HighlightOpaque = ((byte)(20));
-            this.ledBuffer5.Location = new System.Drawing.Point(702, 128);
-            this.ledBuffer5.Name = "ledBuffer5";
-            this.ledBuffer5.RoundCorner = true;
-            this.ledBuffer5.SegmentIntervalRatio = 50;
-            this.ledBuffer5.ShowHighlight = true;
-            this.ledBuffer5.Size = new System.Drawing.Size(183, 38);
-            this.ledBuffer5.TabIndex = 35;
-            this.ledBuffer5.Text = "0";
-            this.ledBuffer5.TextAlignment = LxControl.LxLedControl.Alignment.Right;
-            this.ledBuffer5.TotalCharCount = 10;
-            // 
-            // ledBuffer2
-            // 
-            this.ledBuffer2.BackColor = System.Drawing.Color.Transparent;
-            this.ledBuffer2.BackColor_1 = System.Drawing.Color.Transparent;
-            this.ledBuffer2.BackColor_2 = System.Drawing.Color.DarkRed;
-            this.ledBuffer2.BevelRate = 0.1F;
-            this.ledBuffer2.BorderColor = System.Drawing.Color.Lavender;
-            this.ledBuffer2.FadedColor = System.Drawing.SystemColors.ControlLight;
-            this.ledBuffer2.FocusedBorderColor = System.Drawing.Color.LightCoral;
-            this.ledBuffer2.ForeColor = System.Drawing.Color.Purple;
-            this.ledBuffer2.HighlightOpaque = ((byte)(20));
-            this.ledBuffer2.Location = new System.Drawing.Point(496, 38);
-            this.ledBuffer2.Name = "ledBuffer2";
-            this.ledBuffer2.RoundCorner = true;
-            this.ledBuffer2.SegmentIntervalRatio = 50;
-            this.ledBuffer2.ShowHighlight = true;
-            this.ledBuffer2.Size = new System.Drawing.Size(162, 54);
-            this.ledBuffer2.TabIndex = 34;
-            this.ledBuffer2.Text = "0";
-            this.ledBuffer2.TextAlignment = LxControl.LxLedControl.Alignment.Right;
-            this.ledBuffer2.TotalCharCount = 6;
-            // 
-            // ledBuffer3
-            // 
-            this.ledBuffer3.BackColor = System.Drawing.Color.Transparent;
-            this.ledBuffer3.BackColor_1 = System.Drawing.Color.Transparent;
-            this.ledBuffer3.BackColor_2 = System.Drawing.Color.DarkRed;
-            this.ledBuffer3.BevelRate = 0.1F;
-            this.ledBuffer3.BorderColor = System.Drawing.Color.Lavender;
-            this.ledBuffer3.FadedColor = System.Drawing.SystemColors.ControlLight;
-            this.ledBuffer3.FocusedBorderColor = System.Drawing.Color.LightCoral;
-            this.ledBuffer3.ForeColor = System.Drawing.Color.Purple;
-            this.ledBuffer3.HighlightOpaque = ((byte)(20));
-            this.ledBuffer3.Location = new System.Drawing.Point(497, 111);
-            this.ledBuffer3.Name = "ledBuffer3";
-            this.ledBuffer3.RoundCorner = true;
-            this.ledBuffer3.SegmentIntervalRatio = 50;
-            this.ledBuffer3.ShowHighlight = true;
-            this.ledBuffer3.Size = new System.Drawing.Size(161, 54);
-            this.ledBuffer3.TabIndex = 33;
-            this.ledBuffer3.Text = "0";
-            this.ledBuffer3.TextAlignment = LxControl.LxLedControl.Alignment.Right;
-            this.ledBuffer3.TotalCharCount = 6;
-            // 
-            // label92
-            // 
-            this.label92.AutoSize = true;
-            this.label92.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label92.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label92.Location = new System.Drawing.Point(700, 111);
-            this.label92.Name = "label92";
-            this.label92.Size = new System.Drawing.Size(179, 12);
-            this.label92.TabIndex = 30;
-            this.label92.Text = "Total Inventory Duration(mS):";
-            // 
-            // label93
-            // 
-            this.label93.AutoSize = true;
-            this.label93.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label93.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label93.Location = new System.Drawing.Point(495, 19);
-            this.label93.Name = "label93";
-            this.label93.Size = new System.Drawing.Size(95, 12);
-            this.label93.TabIndex = 29;
-            this.label93.Text = "Speed(Tag/Sec):";
-            // 
-            // label94
-            // 
-            this.label94.AutoSize = true;
-            this.label94.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label94.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label94.Location = new System.Drawing.Point(498, 95);
-            this.label94.Name = "label94";
-            this.label94.Size = new System.Drawing.Size(131, 12);
-            this.label94.TabIndex = 28;
-            this.label94.Text = "Command Duration(mS):";
-            // 
-            // label95
-            // 
-            this.label95.AutoSize = true;
-            this.label95.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label95.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label95.Location = new System.Drawing.Point(700, 38);
-            this.label95.Name = "label95";
-            this.label95.Size = new System.Drawing.Size(149, 12);
-            this.label95.TabIndex = 27;
-            this.label95.Text = "Total Tag Communication:";
-            // 
-            // label96
-            // 
-            this.label96.AutoSize = true;
-            this.label96.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label96.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label96.Location = new System.Drawing.Point(104, 19);
-            this.label96.Name = "label96";
-            this.label96.Size = new System.Drawing.Size(131, 12);
-            this.label96.TabIndex = 26;
-            this.label96.Text = "Inventoried Quantity:";
-            // 
-            // ledBuffer1
-            // 
-            this.ledBuffer1.BackColor = System.Drawing.Color.Transparent;
-            this.ledBuffer1.BackColor_1 = System.Drawing.Color.Transparent;
-            this.ledBuffer1.BackColor_2 = System.Drawing.Color.DarkRed;
-            this.ledBuffer1.BevelRate = 0.1F;
-            this.ledBuffer1.BorderColor = System.Drawing.Color.Lavender;
-            this.ledBuffer1.BorderWidth = 3;
-            this.ledBuffer1.FadedColor = System.Drawing.SystemColors.ControlLight;
-            this.ledBuffer1.FocusedBorderColor = System.Drawing.Color.LightCoral;
-            this.ledBuffer1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.ledBuffer1.HighlightOpaque = ((byte)(20));
-            this.ledBuffer1.Location = new System.Drawing.Point(106, 38);
-            this.ledBuffer1.Name = "ledBuffer1";
-            this.ledBuffer1.RoundCorner = true;
-            this.ledBuffer1.SegmentIntervalRatio = 50;
-            this.ledBuffer1.ShowHighlight = true;
-            this.ledBuffer1.Size = new System.Drawing.Size(310, 128);
-            this.ledBuffer1.TabIndex = 21;
-            this.ledBuffer1.Text = "0";
-            this.ledBuffer1.TextAlignment = LxControl.LxLedControl.Alignment.Right;
-            // 
-            // btBufferFresh
-            // 
-            this.btBufferFresh.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btBufferFresh.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btBufferFresh.Location = new System.Drawing.Point(907, 277);
-            this.btBufferFresh.Name = "btBufferFresh";
-            this.btBufferFresh.Size = new System.Drawing.Size(89, 25);
-            this.btBufferFresh.TabIndex = 52;
-            this.btBufferFresh.Text = "Refresh";
-            this.btBufferFresh.UseVisualStyleBackColor = true;
-            this.btBufferFresh.Click += new System.EventHandler(this.btBufferFresh_Click);
-            // 
-            // labelBufferTagCount
-            // 
-            this.labelBufferTagCount.AutoSize = true;
-            this.labelBufferTagCount.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelBufferTagCount.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.labelBufferTagCount.Location = new System.Drawing.Point(6, 283);
-            this.labelBufferTagCount.Name = "labelBufferTagCount";
-            this.labelBufferTagCount.Size = new System.Drawing.Size(59, 12);
-            this.labelBufferTagCount.TabIndex = 49;
-            this.labelBufferTagCount.Text = "Tag List:";
-            // 
-            // lvBufferList
-            // 
-            this.lvBufferList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader49,
-            this.columnHeader50,
-            this.columnHeader51,
-            this.columnHeader52,
-            this.columnHeader53,
-            this.columnHeader54,
-            this.columnHeader16});
-            this.lvBufferList.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lvBufferList.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lvBufferList.GridLines = true;
-            this.lvBufferList.Location = new System.Drawing.Point(0, 210);
-            this.lvBufferList.Name = "lvBufferList";
-            this.lvBufferList.Size = new System.Drawing.Size(1331, 258);
-            this.lvBufferList.TabIndex = 48;
-            this.lvBufferList.UseCompatibleStateImageBehavior = false;
-            this.lvBufferList.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader49
-            // 
-            this.columnHeader49.Text = "ID";
-            this.columnHeader49.Width = 56;
-            // 
-            // columnHeader50
-            // 
-            this.columnHeader50.Text = "PC";
-            this.columnHeader50.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader50.Width = 64;
-            // 
-            // columnHeader51
-            // 
-            this.columnHeader51.Text = "CRC";
-            this.columnHeader51.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader51.Width = 74;
-            // 
-            // columnHeader52
-            // 
-            this.columnHeader52.Text = "EPC";
-            this.columnHeader52.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader52.Width = 492;
-            // 
-            // columnHeader53
-            // 
-            this.columnHeader53.Text = "Ant ID";
-            this.columnHeader53.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader53.Width = 95;
-            // 
-            // columnHeader54
-            // 
-            this.columnHeader54.Text = "RSSI";
-            this.columnHeader54.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader54.Width = 71;
-            // 
-            // columnHeader16
-            // 
-            this.columnHeader16.Text = "Identification Count";
-            this.columnHeader16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader16.Width = 135;
-            // 
-            // pageFast4AntMode
-            // 
-            this.pageFast4AntMode.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pageFast4AntMode.Controls.Add(this.groupBox2);
-            this.pageFast4AntMode.Controls.Add(this.txtFastMaxRssi);
-            this.pageFast4AntMode.Controls.Add(this.txtFastMinRssi);
-            this.pageFast4AntMode.Controls.Add(this.buttonFastFresh);
-            this.pageFast4AntMode.Controls.Add(this.tableLayoutPanel2);
-            this.pageFast4AntMode.Controls.Add(this.label22);
-            this.pageFast4AntMode.Controls.Add(this.lvFastList);
-            this.pageFast4AntMode.Controls.Add(this.label49);
-            this.pageFast4AntMode.Controls.Add(this.txtFastTagList);
-            this.pageFast4AntMode.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.pageFast4AntMode.Location = new System.Drawing.Point(4, 22);
-            this.pageFast4AntMode.Name = "pageFast4AntMode";
-            this.pageFast4AntMode.Padding = new System.Windows.Forms.Padding(3);
-            this.pageFast4AntMode.Size = new System.Drawing.Size(1331, 468);
-            this.pageFast4AntMode.TabIndex = 0;
-            this.pageFast4AntMode.Text = "Tag Inventory(Fast Switch Antenna Mode)";
-            this.pageFast4AntMode.Enter += new System.EventHandler(this.pageFast4AntMode_Enter);
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.ledFast4);
-            this.groupBox2.Controls.Add(this.comboBox7);
-            this.groupBox2.Controls.Add(this.ledFast5);
-            this.groupBox2.Controls.Add(this.ledFast2);
-            this.groupBox2.Controls.Add(this.ledFast3);
-            this.groupBox2.Controls.Add(this.label54);
-            this.groupBox2.Controls.Add(this.label55);
-            this.groupBox2.Controls.Add(this.label56);
-            this.groupBox2.Controls.Add(this.label57);
-            this.groupBox2.Controls.Add(this.label58);
-            this.groupBox2.Controls.Add(this.ledFast1);
-            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox2.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.groupBox2.Location = new System.Drawing.Point(3, 88);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1325, 176);
-            this.groupBox2.TabIndex = 42;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Tag Data";
-            // 
-            // ledFast4
-            // 
-            this.ledFast4.BackColor = System.Drawing.Color.Transparent;
-            this.ledFast4.BackColor_1 = System.Drawing.Color.Transparent;
-            this.ledFast4.BackColor_2 = System.Drawing.Color.DarkRed;
-            this.ledFast4.BevelRate = 0.1F;
-            this.ledFast4.BorderColor = System.Drawing.Color.Lavender;
-            this.ledFast4.FadedColor = System.Drawing.SystemColors.ControlLight;
-            this.ledFast4.FocusedBorderColor = System.Drawing.Color.LightCoral;
-            this.ledFast4.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.ledFast4.HighlightOpaque = ((byte)(20));
-            this.ledFast4.Location = new System.Drawing.Point(702, 54);
-            this.ledFast4.Name = "ledFast4";
-            this.ledFast4.RoundCorner = true;
-            this.ledFast4.SegmentIntervalRatio = 50;
-            this.ledFast4.ShowHighlight = true;
-            this.ledFast4.Size = new System.Drawing.Size(199, 38);
-            this.ledFast4.TabIndex = 40;
-            this.ledFast4.Text = "0";
-            this.ledFast4.TextAlignment = LxControl.LxLedControl.Alignment.Right;
-            this.ledFast4.TotalCharCount = 10;
-            // 
-            // comboBox7
-            // 
-            this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox7.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Items.AddRange(new object[] {
-            "天线1",
-            "天线2",
-            "天线3",
-            "天线4",
-            "不选"});
-            this.comboBox7.Location = new System.Drawing.Point(-165, 120);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(55, 20);
-            this.comboBox7.TabIndex = 39;
-            // 
-            // ledFast5
-            // 
-            this.ledFast5.BackColor = System.Drawing.Color.Transparent;
-            this.ledFast5.BackColor_1 = System.Drawing.Color.Transparent;
-            this.ledFast5.BackColor_2 = System.Drawing.Color.DarkRed;
-            this.ledFast5.BevelRate = 0.1F;
-            this.ledFast5.BorderColor = System.Drawing.Color.Lavender;
-            this.ledFast5.FadedColor = System.Drawing.SystemColors.ControlLight;
-            this.ledFast5.FocusedBorderColor = System.Drawing.Color.LightCoral;
-            this.ledFast5.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.ledFast5.HighlightOpaque = ((byte)(20));
-            this.ledFast5.Location = new System.Drawing.Point(702, 128);
-            this.ledFast5.Name = "ledFast5";
-            this.ledFast5.RoundCorner = true;
-            this.ledFast5.SegmentIntervalRatio = 50;
-            this.ledFast5.ShowHighlight = true;
-            this.ledFast5.Size = new System.Drawing.Size(199, 38);
-            this.ledFast5.TabIndex = 35;
-            this.ledFast5.Text = "0";
-            this.ledFast5.TextAlignment = LxControl.LxLedControl.Alignment.Right;
-            this.ledFast5.TotalCharCount = 10;
-            // 
-            // ledFast2
-            // 
-            this.ledFast2.BackColor = System.Drawing.Color.Transparent;
-            this.ledFast2.BackColor_1 = System.Drawing.Color.Transparent;
-            this.ledFast2.BackColor_2 = System.Drawing.Color.DarkRed;
-            this.ledFast2.BevelRate = 0.1F;
-            this.ledFast2.BorderColor = System.Drawing.Color.Lavender;
-            this.ledFast2.FadedColor = System.Drawing.SystemColors.ControlLight;
-            this.ledFast2.FocusedBorderColor = System.Drawing.Color.LightCoral;
-            this.ledFast2.ForeColor = System.Drawing.Color.Purple;
-            this.ledFast2.HighlightOpaque = ((byte)(20));
-            this.ledFast2.Location = new System.Drawing.Point(496, 38);
-            this.ledFast2.Name = "ledFast2";
-            this.ledFast2.RoundCorner = true;
-            this.ledFast2.SegmentIntervalRatio = 50;
-            this.ledFast2.ShowHighlight = true;
-            this.ledFast2.Size = new System.Drawing.Size(173, 54);
-            this.ledFast2.TabIndex = 34;
-            this.ledFast2.Text = "0";
-            this.ledFast2.TextAlignment = LxControl.LxLedControl.Alignment.Right;
-            this.ledFast2.TotalCharCount = 6;
-            // 
-            // ledFast3
-            // 
-            this.ledFast3.BackColor = System.Drawing.Color.Transparent;
-            this.ledFast3.BackColor_1 = System.Drawing.Color.Transparent;
-            this.ledFast3.BackColor_2 = System.Drawing.Color.DarkRed;
-            this.ledFast3.BevelRate = 0.1F;
-            this.ledFast3.BorderColor = System.Drawing.Color.Lavender;
-            this.ledFast3.FadedColor = System.Drawing.SystemColors.ControlLight;
-            this.ledFast3.FocusedBorderColor = System.Drawing.Color.LightCoral;
-            this.ledFast3.ForeColor = System.Drawing.Color.Purple;
-            this.ledFast3.HighlightOpaque = ((byte)(20));
-            this.ledFast3.Location = new System.Drawing.Point(497, 111);
-            this.ledFast3.Name = "ledFast3";
-            this.ledFast3.RoundCorner = true;
-            this.ledFast3.SegmentIntervalRatio = 50;
-            this.ledFast3.ShowHighlight = true;
-            this.ledFast3.Size = new System.Drawing.Size(172, 54);
-            this.ledFast3.TabIndex = 33;
-            this.ledFast3.Text = "0";
-            this.ledFast3.TextAlignment = LxControl.LxLedControl.Alignment.Right;
-            this.ledFast3.TotalCharCount = 6;
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label54.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label54.Location = new System.Drawing.Point(700, 111);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(179, 12);
-            this.label54.TabIndex = 30;
-            this.label54.Text = "Total Inventory Duration(mS):";
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label55.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label55.Location = new System.Drawing.Point(495, 19);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(95, 12);
-            this.label55.TabIndex = 29;
-            this.label55.Text = "Speed(Tag/Sec):";
-            // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label56.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label56.Location = new System.Drawing.Point(498, 95);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(131, 12);
-            this.label56.TabIndex = 28;
-            this.label56.Text = "Command Duration(mS):";
-            // 
-            // label57
-            // 
-            this.label57.AutoSize = true;
-            this.label57.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label57.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label57.Location = new System.Drawing.Point(717, 19);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(149, 12);
-            this.label57.TabIndex = 27;
-            this.label57.Text = "Total Tag Communication:";
-            // 
-            // label58
-            // 
-            this.label58.AutoSize = true;
-            this.label58.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label58.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label58.Location = new System.Drawing.Point(104, 19);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(125, 12);
-            this.label58.TabIndex = 26;
-            this.label58.Text = "Inventoried Quantity";
-            // 
-            // ledFast1
-            // 
-            this.ledFast1.BackColor = System.Drawing.Color.Transparent;
-            this.ledFast1.BackColor_1 = System.Drawing.Color.Transparent;
-            this.ledFast1.BackColor_2 = System.Drawing.Color.DarkRed;
-            this.ledFast1.BevelRate = 0.1F;
-            this.ledFast1.BorderColor = System.Drawing.Color.Lavender;
-            this.ledFast1.BorderWidth = 3;
-            this.ledFast1.FadedColor = System.Drawing.SystemColors.ControlLight;
-            this.ledFast1.FocusedBorderColor = System.Drawing.Color.LightCoral;
-            this.ledFast1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.ledFast1.HighlightOpaque = ((byte)(20));
-            this.ledFast1.Location = new System.Drawing.Point(106, 38);
-            this.ledFast1.Name = "ledFast1";
-            this.ledFast1.RoundCorner = true;
-            this.ledFast1.SegmentIntervalRatio = 50;
-            this.ledFast1.ShowHighlight = true;
-            this.ledFast1.Size = new System.Drawing.Size(328, 128);
-            this.ledFast1.TabIndex = 21;
-            this.ledFast1.Text = "0";
-            this.ledFast1.TextAlignment = LxControl.LxLedControl.Alignment.Right;
-            // 
-            // txtFastMaxRssi
-            // 
-            this.txtFastMaxRssi.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtFastMaxRssi.Location = new System.Drawing.Point(705, 271);
-            this.txtFastMaxRssi.Name = "txtFastMaxRssi";
-            this.txtFastMaxRssi.Size = new System.Drawing.Size(62, 21);
-            this.txtFastMaxRssi.TabIndex = 40;
-            // 
-            // txtFastMinRssi
-            // 
-            this.txtFastMinRssi.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtFastMinRssi.Location = new System.Drawing.Point(499, 271);
-            this.txtFastMinRssi.Name = "txtFastMinRssi";
-            this.txtFastMinRssi.Size = new System.Drawing.Size(62, 21);
-            this.txtFastMinRssi.TabIndex = 41;
-            // 
-            // buttonFastFresh
-            // 
-            this.buttonFastFresh.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.buttonFastFresh.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.buttonFastFresh.Location = new System.Drawing.Point(905, 271);
-            this.buttonFastFresh.Name = "buttonFastFresh";
-            this.buttonFastFresh.Size = new System.Drawing.Size(89, 25);
-            this.buttonFastFresh.TabIndex = 28;
-            this.buttonFastFresh.Text = "Refresh";
-            this.buttonFastFresh.UseVisualStyleBackColor = true;
-            this.buttonFastFresh.Click += new System.EventHandler(this.buttonFastFresh_Click);
-            // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tableLayoutPanel2.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
-            this.tableLayoutPanel2.ColumnCount = 3;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.20588F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.79412F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 384F));
-            this.tableLayoutPanel2.Controls.Add(this.panel2, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.panel3, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.panel4, 2, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 83F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1325, 85);
-            this.tableLayoutPanel2.TabIndex = 25;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.txtDStay);
-            this.panel2.Controls.Add(this.txtCStay);
-            this.panel2.Controls.Add(this.txtBStay);
-            this.panel2.Controls.Add(this.txtAStay);
-            this.panel2.Controls.Add(this.label64);
-            this.panel2.Controls.Add(this.label65);
-            this.panel2.Controls.Add(this.cmbAntSelect1);
-            this.panel2.Controls.Add(this.label62);
-            this.panel2.Controls.Add(this.cmbAntSelect2);
-            this.panel2.Controls.Add(this.label63);
-            this.panel2.Controls.Add(this.cmbAntSelect3);
-            this.panel2.Controls.Add(this.label60);
-            this.panel2.Controls.Add(this.cmbAntSelect4);
-            this.panel2.Controls.Add(this.label61);
-            this.panel2.Controls.Add(this.label59);
-            this.panel2.Controls.Add(this.label48);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(260, 5);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(673, 75);
-            this.panel2.TabIndex = 0;
-            // 
-            // txtDStay
-            // 
-            this.txtDStay.AcceptsReturn = true;
-            this.txtDStay.Location = new System.Drawing.Point(469, 29);
-            this.txtDStay.Name = "txtDStay";
-            this.txtDStay.Size = new System.Drawing.Size(42, 20);
-            this.txtDStay.TabIndex = 59;
-            this.txtDStay.Text = "1";
-            this.txtDStay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtCStay
-            // 
-            this.txtCStay.Location = new System.Drawing.Point(336, 29);
-            this.txtCStay.Name = "txtCStay";
-            this.txtCStay.Size = new System.Drawing.Size(42, 20);
-            this.txtCStay.TabIndex = 58;
-            this.txtCStay.Text = "1";
-            this.txtCStay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtBStay
-            // 
-            this.txtBStay.Location = new System.Drawing.Point(203, 29);
-            this.txtBStay.Name = "txtBStay";
-            this.txtBStay.Size = new System.Drawing.Size(42, 20);
-            this.txtBStay.TabIndex = 57;
-            this.txtBStay.Text = "1";
-            this.txtBStay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtAStay
-            // 
-            this.txtAStay.Location = new System.Drawing.Point(69, 29);
-            this.txtAStay.Name = "txtAStay";
-            this.txtAStay.Size = new System.Drawing.Size(42, 20);
-            this.txtAStay.TabIndex = 56;
-            this.txtAStay.Text = "1";
-            this.txtAStay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label64
-            // 
-            this.label64.AutoSize = true;
-            this.label64.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label64.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label64.Location = new System.Drawing.Point(467, 13);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(35, 12);
-            this.label64.TabIndex = 39;
-            this.label64.Text = "Round";
-            // 
-            // label65
-            // 
-            this.label65.AutoSize = true;
-            this.label65.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label65.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label65.Location = new System.Drawing.Point(431, 13);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(11, 12);
-            this.label65.TabIndex = 38;
-            this.label65.Text = "D";
-            // 
-            // cmbAntSelect1
-            // 
-            this.cmbAntSelect1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbAntSelect1.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.cmbAntSelect1.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.cmbAntSelect1.FormattingEnabled = true;
-            this.cmbAntSelect1.Items.AddRange(new object[] {
-            "天线1",
-            "天线2",
-            "天线3",
-            "天线4",
-            "不选"});
-            this.cmbAntSelect1.Location = new System.Drawing.Point(8, 29);
-            this.cmbAntSelect1.Name = "cmbAntSelect1";
-            this.cmbAntSelect1.Size = new System.Drawing.Size(55, 20);
-            this.cmbAntSelect1.TabIndex = 13;
-            // 
-            // label62
-            // 
-            this.label62.AutoSize = true;
-            this.label62.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label62.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label62.Location = new System.Drawing.Point(334, 13);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(35, 12);
-            this.label62.TabIndex = 37;
-            this.label62.Text = "Round";
-            // 
-            // cmbAntSelect2
-            // 
-            this.cmbAntSelect2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbAntSelect2.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.cmbAntSelect2.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.cmbAntSelect2.FormattingEnabled = true;
-            this.cmbAntSelect2.Items.AddRange(new object[] {
-            "天线1",
-            "天线2",
-            "天线3",
-            "天线4",
-            "不选"});
-            this.cmbAntSelect2.Location = new System.Drawing.Point(140, 29);
-            this.cmbAntSelect2.Name = "cmbAntSelect2";
-            this.cmbAntSelect2.Size = new System.Drawing.Size(55, 20);
-            this.cmbAntSelect2.TabIndex = 14;
-            // 
-            // label63
-            // 
-            this.label63.AutoSize = true;
-            this.label63.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label63.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label63.Location = new System.Drawing.Point(297, 13);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(11, 12);
-            this.label63.TabIndex = 36;
-            this.label63.Text = "C";
-            // 
-            // cmbAntSelect3
-            // 
-            this.cmbAntSelect3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbAntSelect3.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.cmbAntSelect3.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.cmbAntSelect3.FormattingEnabled = true;
-            this.cmbAntSelect3.Items.AddRange(new object[] {
-            "天线1",
-            "天线2",
-            "天线3",
-            "天线4",
-            "不选"});
-            this.cmbAntSelect3.Location = new System.Drawing.Point(275, 29);
-            this.cmbAntSelect3.Name = "cmbAntSelect3";
-            this.cmbAntSelect3.Size = new System.Drawing.Size(55, 20);
-            this.cmbAntSelect3.TabIndex = 15;
-            // 
-            // label60
-            // 
-            this.label60.AutoSize = true;
-            this.label60.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label60.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label60.Location = new System.Drawing.Point(201, 13);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(35, 12);
-            this.label60.TabIndex = 35;
-            this.label60.Text = "Round";
-            // 
-            // cmbAntSelect4
-            // 
-            this.cmbAntSelect4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbAntSelect4.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.cmbAntSelect4.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.cmbAntSelect4.FormattingEnabled = true;
-            this.cmbAntSelect4.Items.AddRange(new object[] {
-            "天线1",
-            "天线2",
-            "天线3",
-            "天线4",
-            "不选"});
-            this.cmbAntSelect4.Location = new System.Drawing.Point(408, 29);
-            this.cmbAntSelect4.Name = "cmbAntSelect4";
-            this.cmbAntSelect4.Size = new System.Drawing.Size(55, 20);
-            this.cmbAntSelect4.TabIndex = 16;
-            // 
-            // label61
-            // 
-            this.label61.AutoSize = true;
-            this.label61.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label61.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label61.Location = new System.Drawing.Point(161, 13);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(11, 12);
-            this.label61.TabIndex = 34;
-            this.label61.Text = "B";
-            // 
-            // label59
-            // 
-            this.label59.AutoSize = true;
-            this.label59.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label59.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label59.Location = new System.Drawing.Point(67, 13);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(35, 12);
-            this.label59.TabIndex = 33;
-            this.label59.Text = "Round";
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label48.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label48.Location = new System.Drawing.Point(27, 13);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(11, 12);
-            this.label48.TabIndex = 32;
-            this.label48.Text = "A";
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.btFastInventory);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(5, 5);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(247, 75);
-            this.panel3.TabIndex = 1;
-            // 
-            // btFastInventory
-            // 
-            this.btFastInventory.Font = new System.Drawing.Font("SimSun", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btFastInventory.ForeColor = System.Drawing.Color.DarkBlue;
-            this.btFastInventory.Location = new System.Drawing.Point(28, 17);
-            this.btFastInventory.Name = "btFastInventory";
-            this.btFastInventory.Size = new System.Drawing.Size(144, 41);
-            this.btFastInventory.TabIndex = 52;
-            this.btFastInventory.Text = "Inventory";
-            this.btFastInventory.UseVisualStyleBackColor = true;
-            this.btFastInventory.Click += new System.EventHandler(this.btFastInventory_Click);
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.txtRepeat);
-            this.panel4.Controls.Add(this.txtInterval);
-            this.panel4.Controls.Add(this.label73);
-            this.panel4.Controls.Add(this.label72);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(941, 5);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(379, 75);
-            this.panel4.TabIndex = 2;
-            // 
-            // txtRepeat
-            // 
-            this.txtRepeat.Location = new System.Drawing.Point(187, 28);
-            this.txtRepeat.Name = "txtRepeat";
-            this.txtRepeat.Size = new System.Drawing.Size(42, 20);
-            this.txtRepeat.TabIndex = 58;
-            this.txtRepeat.Text = "10";
-            this.txtRepeat.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtInterval
-            // 
-            this.txtInterval.Location = new System.Drawing.Point(65, 28);
-            this.txtInterval.Name = "txtInterval";
-            this.txtInterval.Size = new System.Drawing.Size(42, 20);
-            this.txtInterval.TabIndex = 57;
-            this.txtInterval.Text = "0";
-            this.txtInterval.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label73
-            // 
-            this.label73.AutoSize = true;
-            this.label73.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label73.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label73.Location = new System.Drawing.Point(11, 13);
-            this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(149, 12);
-            this.label73.TabIndex = 36;
-            this.label73.Text = "Interval Between Ant(mS)";
-            // 
-            // label72
-            // 
-            this.label72.AutoSize = true;
-            this.label72.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label72.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label72.Location = new System.Drawing.Point(188, 13);
-            this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(41, 12);
-            this.label72.TabIndex = 37;
-            this.label72.Text = "Repeat";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label22.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label22.Location = new System.Drawing.Point(634, 276);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(59, 12);
-            this.label22.TabIndex = 26;
-            this.label22.Text = "Max RSSI:";
-            // 
-            // lvFastList
-            // 
-            this.lvFastList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader31,
-            this.columnHeader32,
-            this.columnHeader33,
-            this.columnHeader34,
-            this.columnHeader35,
-            this.columnHeader36});
-            this.lvFastList.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lvFastList.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lvFastList.GridLines = true;
-            this.lvFastList.Location = new System.Drawing.Point(3, 302);
-            this.lvFastList.Name = "lvFastList";
-            this.lvFastList.Size = new System.Drawing.Size(1325, 163);
-            this.lvFastList.TabIndex = 24;
-            this.lvFastList.UseCompatibleStateImageBehavior = false;
-            this.lvFastList.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader31
-            // 
-            this.columnHeader31.Text = "ID";
-            this.columnHeader31.Width = 52;
-            // 
-            // columnHeader32
-            // 
-            this.columnHeader32.Text = "EPC";
-            this.columnHeader32.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader32.Width = 428;
-            // 
-            // columnHeader33
-            // 
-            this.columnHeader33.Text = "PC";
-            this.columnHeader33.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader33.Width = 65;
-            // 
-            // columnHeader34
-            // 
-            this.columnHeader34.Text = "Identification Count(ANT1/ANT2/ANT3/ANT4)";
-            this.columnHeader34.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader34.Width = 261;
-            // 
-            // columnHeader35
-            // 
-            this.columnHeader35.Text = "RSSI";
-            this.columnHeader35.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader35.Width = 86;
-            // 
-            // columnHeader36
-            // 
-            this.columnHeader36.Text = "Carrier Freq";
-            this.columnHeader36.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader36.Width = 92;
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label49.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label49.Location = new System.Drawing.Point(428, 276);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(59, 12);
-            this.label49.TabIndex = 27;
-            this.label49.Text = "Min RSSI:";
-            // 
-            // txtFastTagList
-            // 
-            this.txtFastTagList.AutoSize = true;
-            this.txtFastTagList.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtFastTagList.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.txtFastTagList.Location = new System.Drawing.Point(6, 276);
-            this.txtFastTagList.Name = "txtFastTagList";
-            this.txtFastTagList.Size = new System.Drawing.Size(59, 12);
-            this.txtFastTagList.TabIndex = 23;
-            this.txtFastTagList.Text = "Tag List:";
-            // 
-            // pageAcessTag
-            // 
-            this.pageAcessTag.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pageAcessTag.Controls.Add(this.ltvOperate);
-            this.pageAcessTag.Controls.Add(this.gbCmdOperateTag);
-            this.pageAcessTag.Location = new System.Drawing.Point(4, 22);
-            this.pageAcessTag.Name = "pageAcessTag";
-            this.pageAcessTag.Size = new System.Drawing.Size(1331, 468);
-            this.pageAcessTag.TabIndex = 3;
-            this.pageAcessTag.Text = "Access Tag";
-            this.pageAcessTag.UseVisualStyleBackColor = true;
-            // 
-            // ltvOperate
-            // 
-            this.ltvOperate.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader5,
-            this.columnHeader9,
-            this.columnHeader10,
-            this.columnHeader11,
-            this.columnHeader12,
-            this.columnHeader13,
-            this.columnHeader14,
-            this.columnHeader15});
-            this.ltvOperate.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ltvOperate.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ltvOperate.GridLines = true;
-            this.ltvOperate.Location = new System.Drawing.Point(0, 348);
-            this.ltvOperate.Name = "ltvOperate";
-            this.ltvOperate.Size = new System.Drawing.Size(1331, 120);
-            this.ltvOperate.TabIndex = 10;
-            this.ltvOperate.UseCompatibleStateImageBehavior = false;
-            this.ltvOperate.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "ID";
-            this.columnHeader5.Width = 50;
-            // 
-            // columnHeader9
-            // 
-            this.columnHeader9.Text = "PC";
-            this.columnHeader9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // columnHeader10
-            // 
-            this.columnHeader10.Text = "CRC";
-            this.columnHeader10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // columnHeader11
-            // 
-            this.columnHeader11.Text = "EPC";
-            this.columnHeader11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader11.Width = 260;
-            // 
-            // columnHeader12
-            // 
-            this.columnHeader12.Text = "Data";
-            this.columnHeader12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader12.Width = 334;
-            // 
-            // columnHeader13
-            // 
-            this.columnHeader13.Text = "Data Len";
-            this.columnHeader13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader13.Width = 73;
-            // 
-            // columnHeader14
-            // 
-            this.columnHeader14.Text = "Ant ID";
-            this.columnHeader14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader14.Width = 49;
-            // 
-            // columnHeader15
-            // 
-            this.columnHeader15.Text = "Operated Count";
-            this.columnHeader15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader15.Width = 98;
-            // 
-            // gbCmdOperateTag
-            // 
-            this.gbCmdOperateTag.Controls.Add(this.groupBox16);
-            this.gbCmdOperateTag.Controls.Add(this.groupBox15);
-            this.gbCmdOperateTag.Controls.Add(this.groupBox14);
-            this.gbCmdOperateTag.Controls.Add(this.groupBox13);
-            this.gbCmdOperateTag.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gbCmdOperateTag.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.gbCmdOperateTag.Location = new System.Drawing.Point(0, 0);
-            this.gbCmdOperateTag.Name = "gbCmdOperateTag";
-            this.gbCmdOperateTag.Size = new System.Drawing.Size(1331, 348);
-            this.gbCmdOperateTag.TabIndex = 8;
-            this.gbCmdOperateTag.TabStop = false;
-            this.gbCmdOperateTag.Text = "Tag Access";
-            // 
-            // groupBox16
-            // 
-            this.groupBox16.Controls.Add(this.btnKillTag);
-            this.groupBox16.Controls.Add(this.htxtKillPwd);
-            this.groupBox16.Controls.Add(this.label29);
-            this.groupBox16.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox16.Location = new System.Drawing.Point(3, 277);
-            this.groupBox16.Name = "groupBox16";
-            this.groupBox16.Size = new System.Drawing.Size(1325, 54);
-            this.groupBox16.TabIndex = 4;
-            this.groupBox16.TabStop = false;
-            this.groupBox16.Text = "Kill Tag";
-            // 
-            // btnKillTag
-            // 
-            this.btnKillTag.Location = new System.Drawing.Point(888, 20);
-            this.btnKillTag.Name = "btnKillTag";
-            this.btnKillTag.Size = new System.Drawing.Size(90, 25);
-            this.btnKillTag.TabIndex = 14;
-            this.btnKillTag.Text = "Kill";
-            this.btnKillTag.UseVisualStyleBackColor = true;
-            this.btnKillTag.Click += new System.EventHandler(this.btnKillTag_Click);
-            // 
-            // htxtKillPwd
-            // 
-            this.htxtKillPwd.Location = new System.Drawing.Point(402, 23);
-            this.htxtKillPwd.Name = "htxtKillPwd";
-            this.htxtKillPwd.Size = new System.Drawing.Size(120, 21);
-            this.htxtKillPwd.TabIndex = 13;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(307, 27);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(119, 12);
-            this.label29.TabIndex = 13;
-            this.label29.Text = "Kill Password(HEX):";
-            // 
-            // groupBox15
-            // 
-            this.groupBox15.Controls.Add(this.htxtLockPwd);
-            this.groupBox15.Controls.Add(this.label28);
-            this.groupBox15.Controls.Add(this.groupBox19);
-            this.groupBox15.Controls.Add(this.groupBox18);
-            this.groupBox15.Controls.Add(this.btnLockTag);
-            this.groupBox15.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox15.Location = new System.Drawing.Point(3, 174);
-            this.groupBox15.Name = "groupBox15";
-            this.groupBox15.Size = new System.Drawing.Size(1325, 103);
-            this.groupBox15.TabIndex = 3;
-            this.groupBox15.TabStop = false;
-            this.groupBox15.Text = "Lock Tag";
-            // 
-            // htxtLockPwd
-            // 
-            this.htxtLockPwd.Location = new System.Drawing.Point(742, 49);
-            this.htxtLockPwd.Name = "htxtLockPwd";
-            this.htxtLockPwd.Size = new System.Drawing.Size(114, 21);
-            this.htxtLockPwd.TabIndex = 12;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(606, 53);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(131, 12);
-            this.label28.TabIndex = 12;
-            this.label28.Text = "Access Password(HEX):";
-            // 
-            // groupBox19
-            // 
-            this.groupBox19.Controls.Add(this.rdbUserMemory);
-            this.groupBox19.Controls.Add(this.rdbTidMemory);
-            this.groupBox19.Controls.Add(this.rdbEpcMermory);
-            this.groupBox19.Controls.Add(this.rdbKillPwd);
-            this.groupBox19.Controls.Add(this.rdbAccessPwd);
-            this.groupBox19.Location = new System.Drawing.Point(16, 15);
-            this.groupBox19.Name = "groupBox19";
-            this.groupBox19.Size = new System.Drawing.Size(578, 43);
-            this.groupBox19.TabIndex = 2;
-            this.groupBox19.TabStop = false;
-            // 
-            // rdbUserMemory
-            // 
-            this.rdbUserMemory.AutoSize = true;
-            this.rdbUserMemory.Location = new System.Drawing.Point(464, 16);
-            this.rdbUserMemory.Name = "rdbUserMemory";
-            this.rdbUserMemory.Size = new System.Drawing.Size(47, 16);
-            this.rdbUserMemory.TabIndex = 4;
-            this.rdbUserMemory.TabStop = true;
-            this.rdbUserMemory.Text = "USER";
-            this.rdbUserMemory.UseVisualStyleBackColor = true;
-            // 
-            // rdbTidMemory
-            // 
-            this.rdbTidMemory.AutoSize = true;
-            this.rdbTidMemory.Location = new System.Drawing.Point(375, 16);
-            this.rdbTidMemory.Name = "rdbTidMemory";
-            this.rdbTidMemory.Size = new System.Drawing.Size(41, 16);
-            this.rdbTidMemory.TabIndex = 3;
-            this.rdbTidMemory.TabStop = true;
-            this.rdbTidMemory.Text = "TID";
-            this.rdbTidMemory.UseVisualStyleBackColor = true;
-            // 
-            // rdbEpcMermory
-            // 
-            this.rdbEpcMermory.AutoSize = true;
-            this.rdbEpcMermory.Location = new System.Drawing.Point(269, 16);
-            this.rdbEpcMermory.Name = "rdbEpcMermory";
-            this.rdbEpcMermory.Size = new System.Drawing.Size(41, 16);
-            this.rdbEpcMermory.TabIndex = 2;
-            this.rdbEpcMermory.TabStop = true;
-            this.rdbEpcMermory.Text = "EPC";
-            this.rdbEpcMermory.UseVisualStyleBackColor = true;
-            // 
-            // rdbKillPwd
-            // 
-            this.rdbKillPwd.AutoSize = true;
-            this.rdbKillPwd.Location = new System.Drawing.Point(142, 16);
-            this.rdbKillPwd.Name = "rdbKillPwd";
-            this.rdbKillPwd.Size = new System.Drawing.Size(101, 16);
-            this.rdbKillPwd.TabIndex = 1;
-            this.rdbKillPwd.TabStop = true;
-            this.rdbKillPwd.Text = "Kill Password";
-            this.rdbKillPwd.UseVisualStyleBackColor = true;
-            // 
-            // rdbAccessPwd
-            // 
-            this.rdbAccessPwd.AutoSize = true;
-            this.rdbAccessPwd.Location = new System.Drawing.Point(9, 16);
-            this.rdbAccessPwd.Name = "rdbAccessPwd";
-            this.rdbAccessPwd.Size = new System.Drawing.Size(113, 16);
-            this.rdbAccessPwd.TabIndex = 0;
-            this.rdbAccessPwd.TabStop = true;
-            this.rdbAccessPwd.Text = "Access Password";
-            this.rdbAccessPwd.UseVisualStyleBackColor = true;
-            // 
-            // groupBox18
-            // 
-            this.groupBox18.Controls.Add(this.rdbLockEver);
-            this.groupBox18.Controls.Add(this.rdbFreeEver);
-            this.groupBox18.Controls.Add(this.rdbLock);
-            this.groupBox18.Controls.Add(this.rdbFree);
-            this.groupBox18.Location = new System.Drawing.Point(16, 55);
-            this.groupBox18.Name = "groupBox18";
-            this.groupBox18.Size = new System.Drawing.Size(578, 43);
-            this.groupBox18.TabIndex = 1;
-            this.groupBox18.TabStop = false;
-            // 
-            // rdbLockEver
-            // 
-            this.rdbLockEver.AutoSize = true;
-            this.rdbLockEver.Location = new System.Drawing.Point(464, 15);
-            this.rdbLockEver.Name = "rdbLockEver";
-            this.rdbLockEver.Size = new System.Drawing.Size(107, 16);
-            this.rdbLockEver.TabIndex = 3;
-            this.rdbLockEver.TabStop = true;
-            this.rdbLockEver.Text = "Permanent Lock";
-            this.rdbLockEver.UseVisualStyleBackColor = true;
-            // 
-            // rdbFreeEver
-            // 
-            this.rdbFreeEver.AutoSize = true;
-            this.rdbFreeEver.Location = new System.Drawing.Point(293, 15);
-            this.rdbFreeEver.Name = "rdbFreeEver";
-            this.rdbFreeEver.Size = new System.Drawing.Size(107, 16);
-            this.rdbFreeEver.TabIndex = 2;
-            this.rdbFreeEver.TabStop = true;
-            this.rdbFreeEver.Text = "Permanent Open";
-            this.rdbFreeEver.UseVisualStyleBackColor = true;
-            // 
-            // rdbLock
-            // 
-            this.rdbLock.AutoSize = true;
-            this.rdbLock.Location = new System.Drawing.Point(144, 15);
-            this.rdbLock.Name = "rdbLock";
-            this.rdbLock.Size = new System.Drawing.Size(47, 16);
-            this.rdbLock.TabIndex = 1;
-            this.rdbLock.TabStop = true;
-            this.rdbLock.Text = "Lock";
-            this.rdbLock.UseVisualStyleBackColor = true;
-            // 
-            // rdbFree
-            // 
-            this.rdbFree.AutoSize = true;
-            this.rdbFree.Location = new System.Drawing.Point(9, 15);
-            this.rdbFree.Name = "rdbFree";
-            this.rdbFree.Size = new System.Drawing.Size(47, 16);
-            this.rdbFree.TabIndex = 0;
-            this.rdbFree.TabStop = true;
-            this.rdbFree.Text = "Open";
-            this.rdbFree.UseVisualStyleBackColor = true;
-            // 
-            // btnLockTag
-            // 
-            this.btnLockTag.Location = new System.Drawing.Point(888, 48);
-            this.btnLockTag.Name = "btnLockTag";
-            this.btnLockTag.Size = new System.Drawing.Size(90, 25);
-            this.btnLockTag.TabIndex = 0;
-            this.btnLockTag.Text = "Lock";
-            this.btnLockTag.UseVisualStyleBackColor = true;
-            this.btnLockTag.Click += new System.EventHandler(this.btnLockTag_Click);
-            // 
-            // groupBox14
-            // 
-            this.groupBox14.Controls.Add(this.htxtWriteData);
-            this.groupBox14.Controls.Add(this.txtWordCnt);
-            this.groupBox14.Controls.Add(this.label27);
-            this.groupBox14.Controls.Add(this.btnWriteTag);
-            this.groupBox14.Controls.Add(this.btnReadTag);
-            this.groupBox14.Controls.Add(this.txtWordAdd);
-            this.groupBox14.Controls.Add(this.label26);
-            this.groupBox14.Controls.Add(this.htxtReadAndWritePwd);
-            this.groupBox14.Controls.Add(this.label25);
-            this.groupBox14.Controls.Add(this.groupBox17);
-            this.groupBox14.Controls.Add(this.label24);
-            this.groupBox14.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox14.Location = new System.Drawing.Point(3, 71);
-            this.groupBox14.Name = "groupBox14";
-            this.groupBox14.Size = new System.Drawing.Size(1325, 103);
-            this.groupBox14.TabIndex = 2;
-            this.groupBox14.TabStop = false;
-            this.groupBox14.Text = "Read/Write Tag";
-            // 
-            // htxtWriteData
-            // 
-            this.htxtWriteData.Location = new System.Drawing.Point(171, 74);
-            this.htxtWriteData.Name = "htxtWriteData";
-            this.htxtWriteData.Size = new System.Drawing.Size(685, 21);
-            this.htxtWriteData.TabIndex = 10;
-            // 
-            // txtWordCnt
-            // 
-            this.txtWordCnt.Location = new System.Drawing.Point(808, 25);
-            this.txtWordCnt.Name = "txtWordCnt";
-            this.txtWordCnt.Size = new System.Drawing.Size(48, 21);
-            this.txtWordCnt.TabIndex = 9;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(719, 29);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(83, 12);
-            this.label27.TabIndex = 8;
-            this.label27.Text = "Length(WORD):";
-            // 
-            // btnWriteTag
-            // 
-            this.btnWriteTag.Location = new System.Drawing.Point(888, 72);
-            this.btnWriteTag.Name = "btnWriteTag";
-            this.btnWriteTag.Size = new System.Drawing.Size(90, 25);
-            this.btnWriteTag.TabIndex = 7;
-            this.btnWriteTag.Text = "Write";
-            this.btnWriteTag.UseVisualStyleBackColor = true;
-            this.btnWriteTag.Click += new System.EventHandler(this.btnWriteTag_Click);
-            // 
-            // btnReadTag
-            // 
-            this.btnReadTag.Location = new System.Drawing.Point(888, 24);
-            this.btnReadTag.Name = "btnReadTag";
-            this.btnReadTag.Size = new System.Drawing.Size(90, 25);
-            this.btnReadTag.TabIndex = 6;
-            this.btnReadTag.Text = "Read";
-            this.btnReadTag.UseVisualStyleBackColor = true;
-            this.btnReadTag.Click += new System.EventHandler(this.btnReadTag_Click);
-            // 
-            // txtWordAdd
-            // 
-            this.txtWordAdd.Location = new System.Drawing.Point(655, 25);
-            this.txtWordAdd.Name = "txtWordAdd";
-            this.txtWordAdd.Size = new System.Drawing.Size(48, 21);
-            this.txtWordAdd.TabIndex = 5;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(548, 29);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(101, 12);
-            this.label26.TabIndex = 4;
-            this.label26.Text = "Start Add(WORD):";
-            // 
-            // htxtReadAndWritePwd
-            // 
-            this.htxtReadAndWritePwd.Location = new System.Drawing.Point(410, 25);
-            this.htxtReadAndWritePwd.Name = "htxtReadAndWritePwd";
-            this.htxtReadAndWritePwd.Size = new System.Drawing.Size(120, 21);
-            this.htxtReadAndWritePwd.TabIndex = 3;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(273, 29);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(131, 12);
-            this.label25.TabIndex = 2;
-            this.label25.Text = "Access Password(HEX):";
-            // 
-            // groupBox17
-            // 
-            this.groupBox17.Controls.Add(this.rdbUser);
-            this.groupBox17.Controls.Add(this.rdbTid);
-            this.groupBox17.Controls.Add(this.rdbEpc);
-            this.groupBox17.Controls.Add(this.rdbReserved);
-            this.groupBox17.Location = new System.Drawing.Point(18, 13);
-            this.groupBox17.Name = "groupBox17";
-            this.groupBox17.Size = new System.Drawing.Size(242, 43);
-            this.groupBox17.TabIndex = 1;
-            this.groupBox17.TabStop = false;
-            // 
-            // rdbUser
-            // 
-            this.rdbUser.AutoSize = true;
-            this.rdbUser.Location = new System.Drawing.Point(189, 14);
-            this.rdbUser.Name = "rdbUser";
-            this.rdbUser.Size = new System.Drawing.Size(47, 16);
-            this.rdbUser.TabIndex = 3;
-            this.rdbUser.TabStop = true;
-            this.rdbUser.Text = "USER";
-            this.rdbUser.UseVisualStyleBackColor = true;
-            // 
-            // rdbTid
-            // 
-            this.rdbTid.AutoSize = true;
-            this.rdbTid.Location = new System.Drawing.Point(130, 14);
-            this.rdbTid.Name = "rdbTid";
-            this.rdbTid.Size = new System.Drawing.Size(41, 16);
-            this.rdbTid.TabIndex = 2;
-            this.rdbTid.TabStop = true;
-            this.rdbTid.Text = "TID";
-            this.rdbTid.UseVisualStyleBackColor = true;
-            // 
-            // rdbEpc
-            // 
-            this.rdbEpc.AutoSize = true;
-            this.rdbEpc.Location = new System.Drawing.Point(83, 14);
-            this.rdbEpc.Name = "rdbEpc";
-            this.rdbEpc.Size = new System.Drawing.Size(41, 16);
-            this.rdbEpc.TabIndex = 1;
-            this.rdbEpc.TabStop = true;
-            this.rdbEpc.Text = "EPC";
-            this.rdbEpc.UseVisualStyleBackColor = true;
-            // 
-            // rdbReserved
-            // 
-            this.rdbReserved.AutoSize = true;
-            this.rdbReserved.Location = new System.Drawing.Point(6, 14);
-            this.rdbReserved.Name = "rdbReserved";
-            this.rdbReserved.Size = new System.Drawing.Size(71, 16);
-            this.rdbReserved.TabIndex = 0;
-            this.rdbReserved.TabStop = true;
-            this.rdbReserved.Text = "Password";
-            this.rdbReserved.UseVisualStyleBackColor = true;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(16, 78);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(149, 12);
-            this.label24.TabIndex = 0;
-            this.label24.Text = "Data to be written(HEX):";
-            // 
-            // groupBox13
-            // 
-            this.groupBox13.Controls.Add(this.label23);
-            this.groupBox13.Controls.Add(this.btnSetAccessEpcMatch);
-            this.groupBox13.Controls.Add(this.cmbSetAccessEpcMatch);
-            this.groupBox13.Controls.Add(this.txtAccessEpcMatch);
-            this.groupBox13.Controls.Add(this.ckAccessEpcMatch);
-            this.groupBox13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox13.Location = new System.Drawing.Point(3, 17);
-            this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Size = new System.Drawing.Size(1325, 54);
-            this.groupBox13.TabIndex = 1;
-            this.groupBox13.TabStop = false;
-            this.groupBox13.Text = "Tag Selection";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(468, 24);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(59, 12);
-            this.label23.TabIndex = 4;
-            this.label23.Text = "Tag List:";
-            // 
-            // btnSetAccessEpcMatch
-            // 
-            this.btnSetAccessEpcMatch.Location = new System.Drawing.Point(888, 19);
-            this.btnSetAccessEpcMatch.Name = "btnSetAccessEpcMatch";
-            this.btnSetAccessEpcMatch.Size = new System.Drawing.Size(90, 25);
-            this.btnSetAccessEpcMatch.TabIndex = 3;
-            this.btnSetAccessEpcMatch.Text = "Select";
-            this.btnSetAccessEpcMatch.UseVisualStyleBackColor = true;
-            this.btnSetAccessEpcMatch.Click += new System.EventHandler(this.btnSetAccessEpcMatch_Click);
-            // 
-            // cmbSetAccessEpcMatch
-            // 
-            this.cmbSetAccessEpcMatch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbSetAccessEpcMatch.FormattingEnabled = true;
-            this.cmbSetAccessEpcMatch.Location = new System.Drawing.Point(533, 20);
-            this.cmbSetAccessEpcMatch.Name = "cmbSetAccessEpcMatch";
-            this.cmbSetAccessEpcMatch.Size = new System.Drawing.Size(323, 20);
-            this.cmbSetAccessEpcMatch.TabIndex = 2;
-            this.cmbSetAccessEpcMatch.DropDown += new System.EventHandler(this.cmbSetAccessEpcMatch_DropDown);
-            // 
-            // txtAccessEpcMatch
-            // 
-            this.txtAccessEpcMatch.Location = new System.Drawing.Point(123, 19);
-            this.txtAccessEpcMatch.Name = "txtAccessEpcMatch";
-            this.txtAccessEpcMatch.ReadOnly = true;
-            this.txtAccessEpcMatch.Size = new System.Drawing.Size(320, 21);
-            this.txtAccessEpcMatch.TabIndex = 1;
-            // 
-            // ckAccessEpcMatch
-            // 
-            this.ckAccessEpcMatch.AutoSize = true;
-            this.ckAccessEpcMatch.Location = new System.Drawing.Point(16, 22);
-            this.ckAccessEpcMatch.Name = "ckAccessEpcMatch";
-            this.ckAccessEpcMatch.Size = new System.Drawing.Size(102, 16);
-            this.ckAccessEpcMatch.TabIndex = 0;
-            this.ckAccessEpcMatch.Text = "Selected Tag:";
-            this.ckAccessEpcMatch.UseVisualStyleBackColor = true;
-            this.ckAccessEpcMatch.CheckedChanged += new System.EventHandler(this.cbAccessEpcMatch_CheckedChanged);
-            // 
             // PagISO18000
             // 
             this.PagISO18000.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
@@ -6892,7 +8109,7 @@
             this.PagISO18000.Controls.Add(this.htxtReadUID);
             this.PagISO18000.Location = new System.Drawing.Point(4, 22);
             this.PagISO18000.Name = "PagISO18000";
-            this.PagISO18000.Size = new System.Drawing.Size(1341, 504);
+            this.PagISO18000.Size = new System.Drawing.Size(1341, 655);
             this.PagISO18000.TabIndex = 4;
             this.PagISO18000.Text = "ISO 18000-6B Tag Test";
             // 
@@ -7259,7 +8476,7 @@
             this.PagTranDataLog.Controls.Add(this.lrtxtDataTran);
             this.PagTranDataLog.Location = new System.Drawing.Point(4, 22);
             this.PagTranDataLog.Name = "PagTranDataLog";
-            this.PagTranDataLog.Size = new System.Drawing.Size(1341, 504);
+            this.PagTranDataLog.Size = new System.Drawing.Size(1341, 655);
             this.PagTranDataLog.TabIndex = 2;
             this.PagTranDataLog.Text = "Serial Port Monitor";
             this.PagTranDataLog.UseVisualStyleBackColor = true;
@@ -7392,28 +8609,6 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(1235, 63);
             this.dataGridView1.TabIndex = 6;
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(5, 537);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(91, 13);
-            this.label35.TabIndex = 13;
-            this.label35.Text = "Operation History:";
-            // 
-            // ckDisplayLog
-            // 
-            this.ckDisplayLog.AutoSize = true;
-            this.ckDisplayLog.ForeColor = System.Drawing.Color.Indigo;
-            this.ckDisplayLog.Location = new System.Drawing.Point(814, 535);
-            this.ckDisplayLog.Name = "ckDisplayLog";
-            this.ckDisplayLog.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ckDisplayLog.Size = new System.Drawing.Size(154, 17);
-            this.ckDisplayLog.TabIndex = 16;
-            this.ckDisplayLog.Text = "Activate Serial Port Monitor";
-            this.ckDisplayLog.UseVisualStyleBackColor = true;
-            this.ckDisplayLog.CheckedChanged += new System.EventHandler(this.ckDisplayLog_CheckedChanged);
             // 
             // tableLayoutPanel3
             // 
@@ -7876,28 +9071,6 @@
             this.label91.TabIndex = 26;
             this.label91.Text = "已盘存的标签总数量(个)：";
             // 
-            // ckClearOperationRec
-            // 
-            this.ckClearOperationRec.AutoSize = true;
-            this.ckClearOperationRec.Checked = true;
-            this.ckClearOperationRec.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ckClearOperationRec.Location = new System.Drawing.Point(138, 536);
-            this.ckClearOperationRec.Name = "ckClearOperationRec";
-            this.ckClearOperationRec.Size = new System.Drawing.Size(75, 17);
-            this.ckClearOperationRec.TabIndex = 17;
-            this.ckClearOperationRec.Text = "Auto Clear";
-            this.ckClearOperationRec.UseVisualStyleBackColor = true;
-            // 
-            // lrtxtLog
-            // 
-            this.lrtxtLog.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lrtxtLog.Location = new System.Drawing.Point(0, 559);
-            this.lrtxtLog.Name = "lrtxtLog";
-            this.lrtxtLog.Size = new System.Drawing.Size(1349, 123);
-            this.lrtxtLog.TabIndex = 1;
-            this.lrtxtLog.Text = "";
-            this.lrtxtLog.DoubleClick += new System.EventHandler(this.lrtxtLog_DoubleClick);
-            // 
             // lxLedControl14
             // 
             this.lxLedControl14.BackColor = System.Drawing.Color.Transparent;
@@ -8009,198 +9182,12 @@
             this.timerInventory.Interval = 500;
             this.timerInventory.Tick += new System.EventHandler(this.timerInventory_Tick);
             // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "OrderNumber";
-            this.Column1.HeaderText = "#";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 60;
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            this.nameDataGridViewTextBoxColumn.Width = 200;
-            // 
-            // nicknameDataGridViewTextBoxColumn
-            // 
-            this.nicknameDataGridViewTextBoxColumn.DataPropertyName = "Nickname";
-            this.nicknameDataGridViewTextBoxColumn.HeaderText = "Nickname";
-            this.nicknameDataGridViewTextBoxColumn.Name = "nicknameDataGridViewTextBoxColumn";
-            // 
-            // teamDataGridViewTextBoxColumn
-            // 
-            this.teamDataGridViewTextBoxColumn.DataPropertyName = "Team";
-            this.teamDataGridViewTextBoxColumn.HeaderText = "Team";
-            this.teamDataGridViewTextBoxColumn.Name = "teamDataGridViewTextBoxColumn";
-            // 
-            // tagDataGridViewTextBoxColumn
-            // 
-            this.tagDataGridViewTextBoxColumn.DataPropertyName = "Tag";
-            this.tagDataGridViewTextBoxColumn.HeaderText = "TAG ID";
-            this.tagDataGridViewTextBoxColumn.Name = "tagDataGridViewTextBoxColumn";
-            this.tagDataGridViewTextBoxColumn.Width = 250;
-            // 
-            // emailDataGridViewTextBoxColumn
-            // 
-            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
-            this.emailDataGridViewTextBoxColumn.HeaderText = "E-Mail";
-            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-            // 
-            // Email
-            // 
-            this.Email.DataPropertyName = "ConfirmationString";
-            this.Email.HeaderText = "Confirmation";
-            this.Email.Name = "Email";
-            // 
-            // OrderNumber
-            // 
-            this.OrderNumber.DataPropertyName = "OrderNumber";
-            this.OrderNumber.HeaderText = "#";
-            this.OrderNumber.Name = "OrderNumber";
-            this.OrderNumber.Width = 40;
-            // 
-            // PilotName
-            // 
-            this.PilotName.DataPropertyName = "PilotName";
-            this.PilotName.HeaderText = "Name";
-            this.PilotName.Name = "PilotName";
-            this.PilotName.Width = 150;
-            // 
-            // Epc
-            // 
-            this.Epc.DataPropertyName = "Epc";
-            this.Epc.HeaderText = "TAG ID - EPC";
-            this.Epc.Name = "Epc";
-            this.Epc.Width = 200;
-            // 
-            // Pc
-            // 
-            this.Pc.DataPropertyName = "Pc";
-            this.Pc.HeaderText = "PC";
-            this.Pc.Name = "Pc";
-            this.Pc.Width = 50;
-            // 
-            // IdentCount
-            // 
-            this.IdentCount.DataPropertyName = "IdCount";
-            this.IdentCount.HeaderText = "ID Count";
-            this.IdentCount.Name = "IdentCount";
-            this.IdentCount.Width = 80;
-            // 
-            // Rssi
-            // 
-            this.Rssi.DataPropertyName = "Rssi";
-            this.Rssi.HeaderText = "RSSI";
-            this.Rssi.Name = "Rssi";
-            this.Rssi.Width = 50;
-            // 
-            // CarrFrequency
-            // 
-            this.CarrFrequency.DataPropertyName = "CarrFrequency";
-            this.CarrFrequency.HeaderText = "Freq.";
-            this.CarrFrequency.Name = "CarrFrequency";
-            this.CarrFrequency.Width = 60;
-            // 
-            // Lap1
-            // 
-            this.Lap1.DataPropertyName = "Lap1";
-            this.Lap1.HeaderText = "LAP1";
-            this.Lap1.Name = "Lap1";
-            this.Lap1.Width = 70;
-            // 
-            // Lap2
-            // 
-            this.Lap2.DataPropertyName = "Lap2";
-            this.Lap2.HeaderText = "LAP2";
-            this.Lap2.Name = "Lap2";
-            this.Lap2.Width = 70;
-            // 
-            // Lap3
-            // 
-            this.Lap3.DataPropertyName = "Lap3";
-            this.Lap3.HeaderText = "LAP3";
-            this.Lap3.Name = "Lap3";
-            this.Lap3.Width = 70;
-            // 
-            // Lap4
-            // 
-            this.Lap4.DataPropertyName = "Lap4";
-            this.Lap4.HeaderText = "LAP4";
-            this.Lap4.Name = "Lap4";
-            this.Lap4.Width = 70;
-            // 
-            // Lap5
-            // 
-            this.Lap5.DataPropertyName = "Lap5";
-            this.Lap5.HeaderText = "LAP5";
-            this.Lap5.Name = "Lap5";
-            this.Lap5.Width = 70;
-            // 
-            // Lap6
-            // 
-            this.Lap6.DataPropertyName = "Lap6";
-            this.Lap6.HeaderText = "LAP6";
-            this.Lap6.Name = "Lap6";
-            this.Lap6.Width = 70;
-            // 
-            // BestLapTime
-            // 
-            this.BestLapTime.DataPropertyName = "BestLapTimeString";
-            this.BestLapTime.HeaderText = "Best Lap";
-            this.BestLapTime.Name = "BestLapTime";
-            this.BestLapTime.ReadOnly = true;
-            // 
-            // avgLapTimeDataGridViewTextBoxColumn
-            // 
-            this.avgLapTimeDataGridViewTextBoxColumn.DataPropertyName = "AvgLapTimeString";
-            this.avgLapTimeDataGridViewTextBoxColumn.HeaderText = "Average";
-            this.avgLapTimeDataGridViewTextBoxColumn.Name = "avgLapTimeDataGridViewTextBoxColumn";
-            this.avgLapTimeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // RankNumber
-            // 
-            this.RankNumber.DataPropertyName = "RankNumber";
-            this.RankNumber.HeaderText = "#";
-            this.RankNumber.Name = "RankNumber";
-            this.RankNumber.ReadOnly = true;
-            this.RankNumber.Width = 40;
-            // 
-            // pilotNameDataGridViewTextBoxColumn
-            // 
-            this.pilotNameDataGridViewTextBoxColumn.DataPropertyName = "PilotName";
-            this.pilotNameDataGridViewTextBoxColumn.HeaderText = "Name";
-            this.pilotNameDataGridViewTextBoxColumn.Name = "pilotNameDataGridViewTextBoxColumn";
-            this.pilotNameDataGridViewTextBoxColumn.ReadOnly = true;
-            this.pilotNameDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // bestLapTimeStringDataGridViewTextBoxColumn
-            // 
-            this.bestLapTimeStringDataGridViewTextBoxColumn.DataPropertyName = "BestLapTimeString";
-            this.bestLapTimeStringDataGridViewTextBoxColumn.HeaderText = "Best Lap";
-            this.bestLapTimeStringDataGridViewTextBoxColumn.Name = "bestLapTimeStringDataGridViewTextBoxColumn";
-            this.bestLapTimeStringDataGridViewTextBoxColumn.ReadOnly = true;
-            this.bestLapTimeStringDataGridViewTextBoxColumn.Width = 90;
-            // 
-            // avgLapTimeStringDataGridViewTextBoxColumn
-            // 
-            this.avgLapTimeStringDataGridViewTextBoxColumn.DataPropertyName = "AvgLapTimeString";
-            this.avgLapTimeStringDataGridViewTextBoxColumn.HeaderText = "Average Lap";
-            this.avgLapTimeStringDataGridViewTextBoxColumn.Name = "avgLapTimeStringDataGridViewTextBoxColumn";
-            this.avgLapTimeStringDataGridViewTextBoxColumn.ReadOnly = true;
-            this.avgLapTimeStringDataGridViewTextBoxColumn.Width = 90;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1349, 682);
-            this.Controls.Add(this.ckClearOperationRec);
-            this.Controls.Add(this.ckDisplayLog);
-            this.Controls.Add(this.label35);
-            this.Controls.Add(this.lrtxtLog);
             this.Controls.Add(this.tabCtrMain);
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -8214,6 +9201,7 @@
             this.PagReaderSetting.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.gbCmdReadGpio.ResumeLayout(false);
             this.groupBox11.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
@@ -8263,42 +9251,6 @@
             this.groupBox30.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudNumberOfQualRounds)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudNumOfLaps)).EndInit();
-            this.tableLayoutPanel7.ResumeLayout(false);
-            this.groupBox29.ResumeLayout(false);
-            this.groupBox29.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudPilotsPerGroup)).EndInit();
-            this.tabControl2.ResumeLayout(false);
-            this.pageGroupA.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupA)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourcePilots)).EndInit();
-            this.pageGroupB.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupB)).EndInit();
-            this.pageGroupC.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupC)).EndInit();
-            this.pageGroupD.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupD)).EndInit();
-            this.pageGroupE.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupE)).EndInit();
-            this.pageGroupF.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupF)).EndInit();
-            this.pageGroupG.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupG)).EndInit();
-            this.pageGroupH.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupH)).EndInit();
-            this.pageGroupI.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupI)).EndInit();
-            this.pageGroupJ.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupJ)).EndInit();
-            this.pageGroupK.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupK)).EndInit();
-            this.pageGroupL.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupL)).EndInit();
-            this.pageGroupM.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupM)).EndInit();
-            this.pageGroupN.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupN)).EndInit();
-            this.pageGroupO.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupO)).EndInit();
             this.tableLayoutPanel8.ResumeLayout(false);
             this.groupBox27.ResumeLayout(false);
             this.groupBox27.PerformLayout();
@@ -8390,6 +9342,68 @@
             this.groupBox17.PerformLayout();
             this.groupBox13.ResumeLayout(false);
             this.groupBox13.PerformLayout();
+            this.tabRounds.ResumeLayout(false);
+            this.tableLayoutPanel11.ResumeLayout(false);
+            this.groupBox38.ResumeLayout(false);
+            this.tabControl5.ResumeLayout(false);
+            this.tabPage9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupAF)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourcePilots)).EndInit();
+            this.tabPage10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupBF)).EndInit();
+            this.tableLayoutPanel10.ResumeLayout(false);
+            this.groupBox37.ResumeLayout(false);
+            this.tabControl4.ResumeLayout(false);
+            this.tabPage7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupAS)).EndInit();
+            this.tabPage8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupBS)).EndInit();
+            this.tableLayoutPanel9.ResumeLayout(false);
+            this.groupBox36.ResumeLayout(false);
+            this.tabControl3.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupAQ)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupBQ)).EndInit();
+            this.tabPage5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupCQ)).EndInit();
+            this.tabPage6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupDQ)).EndInit();
+            this.tableLayoutPanel7.ResumeLayout(false);
+            this.groupBox29.ResumeLayout(false);
+            this.groupBox29.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPilotsPerGroup)).EndInit();
+            this.tabControl2.ResumeLayout(false);
+            this.pageGroupA.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupA)).EndInit();
+            this.pageGroupB.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupB)).EndInit();
+            this.pageGroupC.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupC)).EndInit();
+            this.pageGroupD.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupD)).EndInit();
+            this.pageGroupE.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupE)).EndInit();
+            this.pageGroupF.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupF)).EndInit();
+            this.pageGroupG.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupG)).EndInit();
+            this.pageGroupH.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupH)).EndInit();
+            this.pageGroupI.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupI)).EndInit();
+            this.pageGroupJ.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupJ)).EndInit();
+            this.pageGroupK.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupK)).EndInit();
+            this.pageGroupL.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupL)).EndInit();
+            this.pageGroupM.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupM)).EndInit();
+            this.pageGroupN.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupN)).EndInit();
+            this.pageGroupO.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvGroupO)).EndInit();
             this.PagISO18000.ResumeLayout(false);
             this.PagISO18000.PerformLayout();
             this.gbISO1800LockQuery.ResumeLayout(false);
@@ -8419,7 +9433,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.lxLedControl17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lxLedControl18)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -8427,9 +9440,7 @@
 
         private System.Windows.Forms.TabControl tabCtrMain;
         private System.Windows.Forms.TabPage PagReaderSetting;
-        private CustomControl.LogRichTextBox lrtxtLog;
         private System.Windows.Forms.TabPage PagTranDataLog;
-        private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Button btnSendData;
         private System.Windows.Forms.Label label17;
         private CustomControl.HexTextBox htxtSendData;
@@ -8471,7 +9482,6 @@
         private System.Windows.Forms.GroupBox gbISO1800ReadWrite;
         private System.Windows.Forms.GroupBox gbISO1800LockQuery;
         private System.Windows.Forms.Button btnClear;
-        private System.Windows.Forms.CheckBox ckDisplayLog;
         private System.Windows.Forms.TextBox txtLoopTimes;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.TextBox txtLoop;
@@ -8825,7 +9835,6 @@
         private System.Windows.Forms.Label label110;
         private System.Windows.Forms.Label label109;
         private System.Windows.Forms.ComboBox cmbReturnLossFreq;
-        private System.Windows.Forms.CheckBox ckClearOperationRec;
         private System.Windows.Forms.CheckBox cbUserDefineFreq;
         private System.Windows.Forms.Timer timerInventory;
         private System.Windows.Forms.TabPage tabRace;
@@ -8895,150 +9904,9 @@
         private System.Windows.Forms.GroupBox groupBox30;
         private System.Windows.Forms.Label label113;
         private System.Windows.Forms.Label label112;
-        private System.Windows.Forms.Button btnAddPilotsToGroups;
-        private System.Windows.Forms.Label label111;
-        private System.Windows.Forms.TabControl tabControl2;
-        private System.Windows.Forms.TabPage pageGroupA;
-        private System.Windows.Forms.DataGridView gvGroupA;
-        private System.Windows.Forms.TabPage pageGroupB;
-        private System.Windows.Forms.TabPage pageGroupC;
-        private System.Windows.Forms.TabPage pageGroupD;
-        private System.Windows.Forms.TabPage pageGroupE;
-        private System.Windows.Forms.TabPage pageGroupF;
-        private System.Windows.Forms.TabPage pageGroupG;
-        private System.Windows.Forms.TabPage pageGroupH;
-        private System.Windows.Forms.TabPage pageGroupI;
-        private System.Windows.Forms.TabPage pageGroupJ;
-        private System.Windows.Forms.TabPage pageGroupK;
-        private System.Windows.Forms.TabPage pageGroupL;
-        private System.Windows.Forms.TabPage pageGroupM;
-        private System.Windows.Forms.TabPage pageGroupN;
-        private System.Windows.Forms.TabPage pageGroupO;
-        private System.Windows.Forms.GroupBox groupBox29;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
-        private System.Windows.Forms.NumericUpDown nudPilotsPerGroup;
-        private System.Windows.Forms.DataGridView gvGroupB;
-        private System.Windows.Forms.DataGridView gvGroupC;
-        private System.Windows.Forms.DataGridView gvGroupD;
-        private System.Windows.Forms.DataGridView gvGroupE;
-        private System.Windows.Forms.DataGridView gvGroupF;
-        private System.Windows.Forms.DataGridView gvGroupG;
-        private System.Windows.Forms.DataGridView gvGroupH;
-        private System.Windows.Forms.DataGridView gvGroupI;
-        private System.Windows.Forms.DataGridView gvGroupJ;
-        private System.Windows.Forms.DataGridView gvGroupK;
-        private System.Windows.Forms.DataGridView gvGroupL;
-        private System.Windows.Forms.DataGridView gvGroupM;
-        private System.Windows.Forms.DataGridView gvGroupN;
-        private System.Windows.Forms.DataGridView gvGroupO;
         private System.Windows.Forms.BindingSource bindingSourcePilots1;
         private System.Windows.Forms.NumericUpDown nudNumberOfQualRounds;
         private System.Windows.Forms.NumericUpDown nudNumOfLaps;
-        private System.Windows.Forms.DataGridViewTextBoxColumn orderNumberDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nicknameDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn teamDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tagDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn confirmationStringDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn19;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn20;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn22;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn23;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn24;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn25;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn26;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn27;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn28;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn29;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn30;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn31;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn32;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn33;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn34;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn35;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn36;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn37;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn38;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn39;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn40;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn41;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn42;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn43;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn44;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn45;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn46;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn47;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn48;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn49;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn50;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn51;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn52;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn53;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn54;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn55;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn56;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn57;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn58;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn59;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn60;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn61;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn62;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn63;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn64;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn65;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn66;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn67;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn68;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn69;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn70;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn71;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn72;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn73;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn74;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn75;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn76;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn77;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn78;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn79;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn80;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn81;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn82;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn83;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn84;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn85;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn86;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn87;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn88;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn89;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn90;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn91;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn92;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn93;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn94;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn95;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn96;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn97;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn98;
         private System.Windows.Forms.GroupBox groupBox33;
         private System.Windows.Forms.GroupBox groupBox32;
         private System.Windows.Forms.GroupBox groupBox31;
@@ -9084,6 +9952,236 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn pilotNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn bestLapTimeStringDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn avgLapTimeStringDataGridViewTextBoxColumn;
+        private System.Windows.Forms.TabPage tabRounds;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
+        private System.Windows.Forms.GroupBox groupBox36;
+        private System.Windows.Forms.Button btnAddPilotsToQF;
+        private System.Windows.Forms.TabControl tabControl3;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.DataGridView gvGroupAQ;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn99;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn100;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn101;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn102;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn103;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn104;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn105;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.DataGridView gvGroupBQ;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn106;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn107;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn108;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn109;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn110;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn111;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn112;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.DataGridView gvGroupCQ;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn113;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn114;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn115;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn116;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn117;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn118;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn119;
+        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.DataGridView gvGroupDQ;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn120;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn121;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn122;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn123;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn124;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn125;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn126;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
+        private System.Windows.Forms.GroupBox groupBox29;
+        private System.Windows.Forms.NumericUpDown nudPilotsPerGroup;
+        private System.Windows.Forms.Button btnAddPilotsToGroups;
+        private System.Windows.Forms.Label label111;
+        private System.Windows.Forms.TabControl tabControl2;
+        private System.Windows.Forms.TabPage pageGroupA;
+        private System.Windows.Forms.DataGridView gvGroupA;
+        private System.Windows.Forms.DataGridViewTextBoxColumn orderNumberDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nicknameDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn teamDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tagDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn confirmationStringDataGridViewTextBoxColumn;
+        private System.Windows.Forms.TabPage pageGroupB;
+        private System.Windows.Forms.DataGridView gvGroupB;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.TabPage pageGroupC;
+        private System.Windows.Forms.DataGridView gvGroupC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
+        private System.Windows.Forms.TabPage pageGroupD;
+        private System.Windows.Forms.DataGridView gvGroupD;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn19;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn20;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
+        private System.Windows.Forms.TabPage pageGroupE;
+        private System.Windows.Forms.DataGridView gvGroupE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn22;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn23;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn24;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn25;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn26;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn27;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn28;
+        private System.Windows.Forms.TabPage pageGroupF;
+        private System.Windows.Forms.DataGridView gvGroupF;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn29;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn30;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn31;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn32;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn33;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn34;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn35;
+        private System.Windows.Forms.TabPage pageGroupG;
+        private System.Windows.Forms.DataGridView gvGroupG;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn36;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn37;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn38;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn39;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn40;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn41;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn42;
+        private System.Windows.Forms.TabPage pageGroupH;
+        private System.Windows.Forms.DataGridView gvGroupH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn43;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn44;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn45;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn46;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn47;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn48;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn49;
+        private System.Windows.Forms.TabPage pageGroupI;
+        private System.Windows.Forms.DataGridView gvGroupI;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn50;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn51;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn52;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn53;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn54;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn55;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn56;
+        private System.Windows.Forms.TabPage pageGroupJ;
+        private System.Windows.Forms.DataGridView gvGroupJ;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn57;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn58;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn59;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn60;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn61;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn62;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn63;
+        private System.Windows.Forms.TabPage pageGroupK;
+        private System.Windows.Forms.DataGridView gvGroupK;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn64;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn65;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn66;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn67;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn68;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn69;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn70;
+        private System.Windows.Forms.TabPage pageGroupL;
+        private System.Windows.Forms.DataGridView gvGroupL;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn71;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn72;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn73;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn74;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn75;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn76;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn77;
+        private System.Windows.Forms.TabPage pageGroupM;
+        private System.Windows.Forms.DataGridView gvGroupM;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn78;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn79;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn80;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn81;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn82;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn83;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn84;
+        private System.Windows.Forms.TabPage pageGroupN;
+        private System.Windows.Forms.DataGridView gvGroupN;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn85;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn86;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn87;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn88;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn89;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn90;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn91;
+        private System.Windows.Forms.TabPage pageGroupO;
+        private System.Windows.Forms.DataGridView gvGroupO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn92;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn93;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn94;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn95;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn96;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn97;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn98;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
+        private System.Windows.Forms.GroupBox groupBox37;
+        private System.Windows.Forms.Button btnAddPilotsToGroupsSF;
+        private System.Windows.Forms.TabControl tabControl4;
+        private System.Windows.Forms.TabPage tabPage7;
+        private System.Windows.Forms.DataGridView gvGroupAS;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn127;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn128;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn129;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn130;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn131;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn132;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn133;
+        private System.Windows.Forms.TabPage tabPage8;
+        private System.Windows.Forms.DataGridView gvGroupBS;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn134;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn135;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn136;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn137;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn138;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn139;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn140;
+        private System.Windows.Forms.CheckBox ckClearOperationRec;
+        private System.Windows.Forms.CheckBox ckDisplayLog;
+        private System.Windows.Forms.Label label35;
+        private CustomControl.LogRichTextBox lrtxtLog;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
+        private System.Windows.Forms.GroupBox groupBox38;
+        private System.Windows.Forms.Button btnAddPilotsToGroupsF;
+        private System.Windows.Forms.TabControl tabControl5;
+        private System.Windows.Forms.TabPage tabPage9;
+        private System.Windows.Forms.DataGridView gvGroupAF;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn141;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn142;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn143;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn144;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn145;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn146;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn147;
+        private System.Windows.Forms.TabPage tabPage10;
+        private System.Windows.Forms.DataGridView gvGroupBF;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn148;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn149;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn150;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn151;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn152;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn153;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn154;
     }
 }
 
