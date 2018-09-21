@@ -165,7 +165,8 @@ namespace RaceManager.Data
             {
                 try
                 {
-                    return _lapsTime.Min();
+                    var bestLapTimes = _lapsTime.Where(l => l.HasValue && l != TimeSpan.Zero);
+                    return bestLapTimes.Min();
                 }
                 catch
                 {
@@ -182,8 +183,11 @@ namespace RaceManager.Data
             {
                 try
                 {
-                    var bestLapTimes = _lapsTime.OrderBy(l => l.GetValueOrDefault(TimeSpan.MaxValue));
-                    return TimeSpan.FromMilliseconds(bestLapTimes.Take(3).Where(l => l.HasValue).Average(l => l.Value.TotalMilliseconds));
+                    var bestLapTimes = _lapsTime.Where(l => l.HasValue && l != TimeSpan.Zero)
+                            .OrderBy(l => l.GetValueOrDefault(TimeSpan.MaxValue)).ToList();
+                    if (bestLapTimes.Count < 3) return null;
+
+                    return TimeSpan.FromMilliseconds(bestLapTimes.Take(3).Average(l => l.Value.TotalMilliseconds));
                 }
                 catch
                 {
