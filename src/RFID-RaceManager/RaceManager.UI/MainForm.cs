@@ -5085,9 +5085,11 @@ namespace RaceManager.UI
                     m_btAryData[6] = 3;
                 }
                 m_btAryData[7] = 1;
-                
-                m_btAryData[8] = 1; // Interval
-                m_btAryData[9] = Convert.ToByte("10"); // Number of repeats
+
+                m_btAryData[8] = Convert.ToByte
+                    (ConfigurationManager.AppSettings["InteralBetweenAnts"]); // Interval
+                m_btAryData[9] = Convert.ToByte
+                    (ConfigurationManager.AppSettings["NumberOfRepeats"]); // Number of repeats
                 
                 if (m_btAryData[0] > 3)
                 {
@@ -5645,7 +5647,8 @@ namespace RaceManager.UI
                     }
                 }
 
-                var orderedList =  source.OrderBy(s => s.BestLapTime).ToList();
+                var orderedList =  source.Where(s=>s.BestLapTime.HasValue).OrderBy(s => s.BestLapTime).ToList();
+                orderedList.AddRange(source.Where(s => !s.BestLapTime.HasValue).ToList());
                 orderedList.ForEach(l=>l.RankNumber = orderedList.IndexOf(l) + 1);
                 bindingSourceRanking.DataSource = orderedList;
 
@@ -5672,7 +5675,8 @@ namespace RaceManager.UI
                     }
                 }
 
-                var orderedList = source.OrderBy(s => s.AvgLapTime).ToList();
+                var orderedList = source.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
+                orderedList.AddRange(source.Where(s => !s.AvgLapTime.HasValue).ToList());
                 orderedList.ForEach(l => l.RankNumber = orderedList.IndexOf(l) + 1);
                 bindingSourceRanking.DataSource = orderedList;
 
@@ -5685,6 +5689,11 @@ namespace RaceManager.UI
         private void btnRaceSave_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void gvRace_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+            UpdateRanking();
         }
     }
 }

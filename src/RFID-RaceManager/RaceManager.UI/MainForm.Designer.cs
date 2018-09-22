@@ -5087,6 +5087,7 @@
             this.gvRace.AllowUserToDeleteRows = false;
             this.gvRace.AutoGenerateColumns = false;
             this.gvRace.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.gvRace.CellEndEdit += gvRace_CellEndEdit;
             this.gvRace.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvRace.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.OrderNumber,
