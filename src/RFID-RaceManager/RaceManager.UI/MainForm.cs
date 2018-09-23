@@ -5330,6 +5330,7 @@ namespace RaceManager.UI
                 {
                     foreach (var pilot in group.Pilots)
                     {
+                        if(pilot == null) continue;
                         var lapsInfo = new LapsInfo
                         {
                             PilotId = pilot.Id,
@@ -5580,41 +5581,187 @@ namespace RaceManager.UI
             {
                 cmbRaceRound.Items.Add("Q" + i);
             }
+        }
 
-            //var numberOfFinals = (int)nudNumberOfFinals.Value;
-
+        private void btnAddPilotsToQF_Click(object sender, EventArgs e)
+        {
             // 1/4 finals
-            for (int i = 1; i <= 4; i++)      
+            var group = new Group
+            {
+                Name = "Group A (R)",
+                Pilots = new List<Pilot>
+                {
+                    Pilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(0)?.Epc),
+                    Pilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(4)?.Epc),
+                    Pilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(8)?.Epc),
+                    Pilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(12)?.Epc),
+                }
+            };
+            gvGroupAQ.DataSource = group.Pilots;
+            _race.Groups.Add(group);
+
+            group = new Group
+            {
+                Name = "Group B (R)",
+                Pilots = new List<Pilot>
+                {
+                    Pilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(3)?.Epc),
+                    Pilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(7)?.Epc),
+                    Pilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(11)?.Epc),
+                    Pilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(15)?.Epc),
+                }
+            };
+            gvGroupBQ.DataSource = group.Pilots;
+            _race.Groups.Add(group);
+
+            group = new Group
+            {
+                Name = "Group C (R)",
+                Pilots = new List<Pilot>
+                {
+                    Pilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(2)?.Epc),
+                    Pilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(6)?.Epc),
+                    Pilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(10)?.Epc),
+                    Pilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(14)?.Epc),
+                }
+            };
+            gvGroupCQ.DataSource = group.Pilots;
+            _race.Groups.Add(group);
+
+            group = new Group
+            {
+                Name = "Group D (R)",
+                Pilots = new List<Pilot>
+                {
+                    Pilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(1)?.Epc),
+                    Pilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(5)?.Epc),
+                    Pilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(9)?.Epc),
+                    Pilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(13)?.Epc),
+                }
+            };
+            gvGroupDQ.DataSource = group.Pilots;
+            _race.Groups.Add(group);
+
+            cmbRaceGroup.Items.Clear();
+            _race.Groups.ForEach(i => cmbRaceGroup.Items.Add(i.Name));
+
+            for (int i = 1; i <= 4; i++)
             {
                 cmbRaceRound.Items.Add("R" + i);
             }
+        }
+
+        private void btnAddPilotsToGroupsSF_Click(object sender, EventArgs e)
+        {
+            var race1 = _race.RaceEvents.FirstOrDefault(re => re.Round == "R1" && re.Group.Name == "Group A (R)");
+            if(race1 == null) return;
+
+            var race1Results = race1.Laps.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
+            race1Results.AddRange(race1.Laps.Where(s => !s.AvgLapTime.HasValue).ToList());
+
+            var race2 = _race.RaceEvents.FirstOrDefault(re => re.Round == "R2" && re.Group.Name == "Group B (R)");
+            if (race2 == null) return;
+            var race2Results = race2.Laps.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
+            race2Results.AddRange(race2.Laps.Where(s => !s.AvgLapTime.HasValue).ToList());
+
+            var race3 = _race.RaceEvents.FirstOrDefault(re => re.Round == "R3" && re.Group.Name == "Group C (R)");
+            if (race3 == null) return;
+            var race3Results = race3.Laps.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
+            race3Results.AddRange(race3.Laps.Where(s => !s.AvgLapTime.HasValue).ToList());
+
+            var race4 = _race.RaceEvents.FirstOrDefault(re => re.Round == "R4" && re.Group.Name == "Group D (R)");
+            if (race4 == null) return;
+            var race4Results = race4.Laps.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
+            race4Results.AddRange(race4.Laps.Where(s => !s.AvgLapTime.HasValue).ToList());
+
+            var group = new Group
+            {
+                Name = "Group A (S)",
+                Pilots = new List<Pilot>
+                {
+                    Pilots.FirstOrDefault(p=>p.Tag == race1Results.ElementAtOrDefault(1)?.Epc),
+                    Pilots.FirstOrDefault(p=>p.Tag == race1Results.ElementAtOrDefault(0)?.Epc),
+                    Pilots.FirstOrDefault(p=>p.Tag == race2Results.ElementAtOrDefault(0)?.Epc),
+                    Pilots.FirstOrDefault(p=>p.Tag == race2Results.ElementAtOrDefault(1)?.Epc)
+                }
+            };
+            gvGroupAS.DataSource = group.Pilots;
+            _race.Groups.Add(group);
+
+            group = new Group
+            {
+                Name = "Group B (S)",
+                Pilots = new List<Pilot>
+                {
+                    Pilots.FirstOrDefault(p=>p.Tag == race3Results.ElementAtOrDefault(1)?.Epc),
+                    Pilots.FirstOrDefault(p=>p.Tag == race3Results.ElementAtOrDefault(0)?.Epc),
+                    Pilots.FirstOrDefault(p=>p.Tag == race4Results.ElementAtOrDefault(0)?.Epc),
+                    Pilots.FirstOrDefault(p=>p.Tag == race4Results.ElementAtOrDefault(1)?.Epc)
+                }
+            };
+            gvGroupBS.DataSource = group.Pilots;
+            _race.Groups.Add(group);
+
+            cmbRaceGroup.Items.Clear();
+            _race.Groups.ForEach(i => cmbRaceGroup.Items.Add(i.Name));
 
             // Semi final rounds
             for (int i = 1; i <= 2; i++)
             {
                 cmbRaceRound.Items.Add("S" + i);
             }
-
-            // Final rounds
-            for (int i = 1; i <= 2; i++)
-            {
-                cmbRaceRound.Items.Add("F" + i);
-            }
-        }
-
-        private void btnAddPilotsToQF_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnAddPilotsToGroupsSF_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnAddPilotsToGroupsF_Click(object sender, EventArgs e)
         {
+            // Final rounds
+            var race1 = _race.RaceEvents.FirstOrDefault(re => re.Round == "S1" && re.Group.Name == "Group A (S)");
+            if (race1 == null) return;
 
+            var race1Results = race1.Laps.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
+            race1Results.AddRange(race1.Laps.Where(s => !s.AvgLapTime.HasValue).ToList());
+
+            var race2 = _race.RaceEvents.FirstOrDefault(re => re.Round == "S2" && re.Group.Name == "Group B (S)");
+            if (race2 == null) return;
+
+            var race2Results = race2.Laps.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
+            race2Results.AddRange(race2.Laps.Where(s => !s.AvgLapTime.HasValue).ToList());
+
+            var group = new Group
+            {
+                Name = "Group A (F)",
+                Pilots = new List<Pilot>
+                {
+                    Pilots.FirstOrDefault(p=>p.Tag == race1Results.ElementAtOrDefault(0)?.Epc),
+                    Pilots.FirstOrDefault(p=>p.Tag == race1Results.ElementAtOrDefault(1)?.Epc),
+                    Pilots.FirstOrDefault(p=>p.Tag == race2Results.ElementAtOrDefault(0)?.Epc),
+                    Pilots.FirstOrDefault(p=>p.Tag == race2Results.ElementAtOrDefault(1)?.Epc)
+                }
+            };
+            gvGroupAS.DataSource = group.Pilots;
+            _race.Groups.Add(group);
+
+            group = new Group
+            {
+                Name = "Group B (F)",
+                Pilots = new List<Pilot>
+                {
+                    Pilots.FirstOrDefault(p=>p.Tag == race1Results.ElementAtOrDefault(2)?.Epc),
+                    Pilots.FirstOrDefault(p=>p.Tag == race1Results.ElementAtOrDefault(3)?.Epc),
+                    Pilots.FirstOrDefault(p=>p.Tag == race2Results.ElementAtOrDefault(2)?.Epc),
+                    Pilots.FirstOrDefault(p=>p.Tag == race2Results.ElementAtOrDefault(3)?.Epc)
+                }
+            };
+            gvGroupBS.DataSource = group.Pilots;
+            _race.Groups.Add(group);
+
+            cmbRaceGroup.Items.Clear();
+            _race.Groups.ForEach(i => cmbRaceGroup.Items.Add(i.Name));
+
+            for (int i = 1; i <= 2; i++)
+            {
+                cmbRaceRound.Items.Add("F" + i);
+            }
         }
 
         #endregion
@@ -5625,60 +5772,61 @@ namespace RaceManager.UI
             UpdateRanking();
         }
 
+        private List<LapsInfo> _bestQualificationResuls; 
         private void UpdateRanking()
         {
+            var avgSource = new List<LapsInfo>();
+            var bestSource = new List<LapsInfo>();
+
+            foreach (var raceEvent in _race.RaceEvents)
+            {
+                //Only qualification rounds
+                if (!raceEvent.Round.StartsWith("Q")) continue;
+
+                foreach (var lap in raceEvent.Laps)
+                {
+                    var existingLap = avgSource.FirstOrDefault(s => s.Epc == lap.Epc);
+                    if (existingLap == null)
+                        avgSource.Add(lap);
+                    else
+                    {
+                        if (existingLap.AvgLapTime > lap.AvgLapTime)
+                            avgSource[avgSource.IndexOf(existingLap)] = lap;
+                    }
+
+                    existingLap = bestSource.FirstOrDefault(s => s.Epc == lap.Epc);
+                    if (existingLap == null)
+                        bestSource.Add(lap);
+                    else
+                    {
+                        if (existingLap.BestLapTime > lap.BestLapTime)
+                            bestSource[bestSource.IndexOf(existingLap)] = lap;
+                    }
+                }
+            }
+
+            var bestOrderedList = bestSource.Where(s => s.BestLapTime.HasValue).OrderBy(s => s.BestLapTime).ToList();
+            bestOrderedList.AddRange(bestSource.Where(s => !s.BestLapTime.HasValue).ToList());
+
+            var avgOrderedList = avgSource.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
+            avgOrderedList.AddRange(avgSource.Where(s => !s.AvgLapTime.HasValue).ToList());
+            _bestQualificationResuls = avgOrderedList;
+
             // Best lap ranking
             if (cmbDisplayRanking.SelectedIndex == 0)
             {
-                var source = new List<LapsInfo>();
-                foreach (var raceEvent in _race.RaceEvents)
-                {
-                    foreach (var lap in raceEvent.Laps)
-                    {
-                        var existingLap = source.FirstOrDefault(s => s.Epc == lap.Epc);
-                        if (existingLap == null)
-                            source.Add(lap);
-
-                        else
-                        {
-                            if (existingLap.BestLapTime > lap.BestLapTime)
-                                source[source.IndexOf(existingLap)] = lap;
-                        }
-                    }
-                }
-
-                var orderedList =  source.Where(s=>s.BestLapTime.HasValue).OrderBy(s => s.BestLapTime).ToList();
-                orderedList.AddRange(source.Where(s => !s.BestLapTime.HasValue).ToList());
-                orderedList.ForEach(l=>l.RankNumber = orderedList.IndexOf(l) + 1);
-                bindingSourceRanking.DataSource = orderedList;
+                bestOrderedList.ForEach(l => l.RankNumber = bestOrderedList.IndexOf(l) + 1);
+                bindingSourceRanking.DataSource = bestOrderedList;
 
                 avgLapTimeStringDataGridViewTextBoxColumn.Visible = false;
                 bestLapTimeStringDataGridViewTextBoxColumn.Visible = true;
             }
+
             // Average lap ranking
             if (cmbDisplayRanking.SelectedIndex == 1)
             {
-                var source = new List<LapsInfo>();
-                foreach (var raceEvent in _race.RaceEvents)
-                {
-                    foreach (var lap in raceEvent.Laps)
-                    {
-                        var existingLap = source.FirstOrDefault(s => s.Epc == lap.Epc);
-                        if (existingLap == null)
-                            source.Add(lap);
-
-                        else
-                        {
-                            if (existingLap.AvgLapTime > lap.AvgLapTime)
-                                source[source.IndexOf(existingLap)] = lap;
-                        }
-                    }
-                }
-
-                var orderedList = source.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
-                orderedList.AddRange(source.Where(s => !s.AvgLapTime.HasValue).ToList());
-                orderedList.ForEach(l => l.RankNumber = orderedList.IndexOf(l) + 1);
-                bindingSourceRanking.DataSource = orderedList;
+                avgOrderedList.ForEach(l => l.RankNumber = avgOrderedList.IndexOf(l) + 1);
+                bindingSourceRanking.DataSource = avgOrderedList;
 
                 avgLapTimeStringDataGridViewTextBoxColumn.Visible = true;
                 bestLapTimeStringDataGridViewTextBoxColumn.Visible = false;
