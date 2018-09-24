@@ -5203,6 +5203,8 @@ namespace RaceManager.UI
             Debug.WriteLine("tag = " + tag + ", lap = "+lap.OrderNumber+", time = " + _raceTime);
 
             var success = lap.RegisterLapTime(_raceTime, (double) nudMinFirstLapTime.Value, (double)nudMinLapTime.Value);
+            bindingSourceRace.ResetBindings(false);
+
             if (!success) return;
 
             var file = ConfigurationManager.AppSettings["TagReadSoundFile"];
@@ -5217,8 +5219,6 @@ namespace RaceManager.UI
             {
                 SystemSounds.Asterisk.Play();
             }
-
-            bindingSourceRace.ResetBindings(false);
 
             UpdateRanking();
             bindingSourceRanking.ResetBindings(false);
@@ -5738,7 +5738,7 @@ namespace RaceManager.UI
                     Pilots.FirstOrDefault(p=>p.Tag == race2Results.ElementAtOrDefault(1)?.Epc)
                 }
             };
-            gvGroupAS.DataSource = group.Pilots;
+            gvGroupAF.DataSource = group.Pilots;
             _race.Groups.Add(group);
 
             group = new Group
@@ -5752,7 +5752,7 @@ namespace RaceManager.UI
                     Pilots.FirstOrDefault(p=>p.Tag == race2Results.ElementAtOrDefault(3)?.Epc)
                 }
             };
-            gvGroupBS.DataSource = group.Pilots;
+            gvGroupBF.DataSource = group.Pilots;
             _race.Groups.Add(group);
 
             cmbRaceGroup.Items.Clear();

@@ -5232,7 +5232,7 @@
             this.groupBox35.Size = new System.Drawing.Size(325, 623);
             this.groupBox35.TabIndex = 6;
             this.groupBox35.TabStop = false;
-            this.groupBox35.Text = "Race Ranking";
+            this.groupBox35.Text = "Race Ranking (Qualification rounds)";
             // 
             // gvRanking
             // 
