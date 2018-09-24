@@ -432,7 +432,7 @@
             this.Lap5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Lap6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BestLapTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.avgLapTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AvgLapTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bindingSourceRace = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox35 = new System.Windows.Forms.GroupBox();
             this.gvRanking = new System.Windows.Forms.DataGridView();
@@ -5104,7 +5104,7 @@
             this.Lap5,
             this.Lap6,
             this.BestLapTime,
-            this.avgLapTimeDataGridViewTextBoxColumn});
+            this.AvgLapTime});
             this.gvRace.DataSource = this.bindingSourceRace;
             this.gvRace.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.gvRace.Location = new System.Drawing.Point(2, 305);
@@ -5210,12 +5210,12 @@
             this.BestLapTime.Name = "BestLapTime";
             this.BestLapTime.ReadOnly = true;
             // 
-            // avgLapTimeDataGridViewTextBoxColumn
+            // AvgLapTime
             // 
-            this.avgLapTimeDataGridViewTextBoxColumn.DataPropertyName = "AvgLapTimeString";
-            this.avgLapTimeDataGridViewTextBoxColumn.HeaderText = "Average";
-            this.avgLapTimeDataGridViewTextBoxColumn.Name = "avgLapTimeDataGridViewTextBoxColumn";
-            this.avgLapTimeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.AvgLapTime.DataPropertyName = "AvgLapTimeString";
+            this.AvgLapTime.HeaderText = "Average";
+            this.AvgLapTime.Name = "AvgLapTime";
+            this.AvgLapTime.ReadOnly = true;
             // 
             // bindingSourceRace
             // 
@@ -9961,7 +9961,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Lap5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Lap6;
         private System.Windows.Forms.DataGridViewTextBoxColumn BestLapTime;
-        private System.Windows.Forms.DataGridViewTextBoxColumn avgLapTimeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AvgLapTime;
         private System.Windows.Forms.DataGridViewTextBoxColumn RankNumber;
         private System.Windows.Forms.DataGridViewTextBoxColumn pilotNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn bestLapTimeStringDataGridViewTextBoxColumn;

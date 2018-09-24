@@ -69,11 +69,54 @@ namespace RaceManager.UI
             InitializeComponent();
 
             _timer.Elapsed += _timer_Elapsed;
+            btnRaceExport.Click += BtnRaceExport_Click;
 
             _db = new ApplicationContext();
             _race = new Race();
 
             cmbRaceMode.SelectedIndex = 0;
+        }
+
+        private void BtnRaceExport_Click(object sender, EventArgs e)
+        {
+            if (_selectedRaceEvent == null) return;
+
+            string filename = "";
+            SaveFileDialog sfd = new SaveFileDialog();
+            sfd.Filter = "CSV (*.csv)|*.csv";
+            sfd.FileName = $"{_selectedRaceEvent.Group.Name}({_selectedRaceEvent.Round}).csv";
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+                if (File.Exists(filename))
+                {
+                    try
+                    {
+                        File.Delete(filename);
+                    }
+                    catch (IOException ex)
+                    {
+                        MessageBox.Show("It wasn't possible to write the data to the disk." + ex.Message);
+                    }
+                }
+                int columnCount = gvRace.ColumnCount;
+                string columnNames = "";
+                string[] output = new string[gvRace.RowCount + 1];
+                for (int i = 0; i < columnCount; i++)
+                {
+                    columnNames += $"{gvRace.Columns[i].Name},";
+                }
+                output[0] += columnNames;
+                for (int i = 1; (i - 1) < gvRace.RowCount; i++)
+                {
+                    for (int j = 0; j < columnCount; j++)
+                    {
+                        output[i] += $"{gvRace.Rows[i - 1].Cells[j].Value},";
+                    }
+                }
+                System.IO.File.WriteAllLines(sfd.FileName, output, System.Text.Encoding.UTF8);
+                MessageBox.Show("Your file was generated and its ready for use.");
+
+            }
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -5645,31 +5688,28 @@ namespace RaceManager.UI
             cmbRaceGroup.Items.Clear();
             _race.Groups.ForEach(i => cmbRaceGroup.Items.Add(i.Name));
 
-            for (int i = 1; i <= 4; i++)
-            {
-                cmbRaceRound.Items.Add("R" + i);
-            }
+            cmbRaceRound.Items.Add("R");
         }
 
         private void btnAddPilotsToGroupsSF_Click(object sender, EventArgs e)
         {
-            var race1 = _race.RaceEvents.FirstOrDefault(re => re.Round == "R1" && re.Group.Name == "Group A (R)");
+            var race1 = _race.RaceEvents.FirstOrDefault(re => re.Group.Name == "Group A (R)");
             if(race1 == null) return;
 
             var race1Results = race1.Laps.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
             race1Results.AddRange(race1.Laps.Where(s => !s.AvgLapTime.HasValue).ToList());
 
-            var race2 = _race.RaceEvents.FirstOrDefault(re => re.Round == "R2" && re.Group.Name == "Group B (R)");
+            var race2 = _race.RaceEvents.FirstOrDefault(re => re.Group.Name == "Group B (R)");
             if (race2 == null) return;
             var race2Results = race2.Laps.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
             race2Results.AddRange(race2.Laps.Where(s => !s.AvgLapTime.HasValue).ToList());
 
-            var race3 = _race.RaceEvents.FirstOrDefault(re => re.Round == "R3" && re.Group.Name == "Group C (R)");
+            var race3 = _race.RaceEvents.FirstOrDefault(re => re.Group.Name == "Group C (R)");
             if (race3 == null) return;
             var race3Results = race3.Laps.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
             race3Results.AddRange(race3.Laps.Where(s => !s.AvgLapTime.HasValue).ToList());
 
-            var race4 = _race.RaceEvents.FirstOrDefault(re => re.Round == "R4" && re.Group.Name == "Group D (R)");
+            var race4 = _race.RaceEvents.FirstOrDefault(re => re.Group.Name == "Group D (R)");
             if (race4 == null) return;
             var race4Results = race4.Laps.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
             race4Results.AddRange(race4.Laps.Where(s => !s.AvgLapTime.HasValue).ToList());
@@ -5705,23 +5745,20 @@ namespace RaceManager.UI
             cmbRaceGroup.Items.Clear();
             _race.Groups.ForEach(i => cmbRaceGroup.Items.Add(i.Name));
 
-            // Semi final rounds
-            for (int i = 1; i <= 2; i++)
-            {
-                cmbRaceRound.Items.Add("S" + i);
-            }
+            // Semi final round
+            cmbRaceRound.Items.Add("S");
         }
 
         private void btnAddPilotsToGroupsF_Click(object sender, EventArgs e)
         {
             // Final rounds
-            var race1 = _race.RaceEvents.FirstOrDefault(re => re.Round == "S1" && re.Group.Name == "Group A (S)");
+            var race1 = _race.RaceEvents.FirstOrDefault(re => re.Group.Name == "Group A (S)");
             if (race1 == null) return;
 
             var race1Results = race1.Laps.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
             race1Results.AddRange(race1.Laps.Where(s => !s.AvgLapTime.HasValue).ToList());
 
-            var race2 = _race.RaceEvents.FirstOrDefault(re => re.Round == "S2" && re.Group.Name == "Group B (S)");
+            var race2 = _race.RaceEvents.FirstOrDefault(re => re.Group.Name == "Group B (S)");
             if (race2 == null) return;
 
             var race2Results = race2.Laps.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
@@ -5758,10 +5795,7 @@ namespace RaceManager.UI
             cmbRaceGroup.Items.Clear();
             _race.Groups.ForEach(i => cmbRaceGroup.Items.Add(i.Name));
 
-            for (int i = 1; i <= 2; i++)
-            {
-                cmbRaceRound.Items.Add("F" + i);
-            }
+            cmbRaceRound.Items.Add("F");
         }
 
         #endregion
