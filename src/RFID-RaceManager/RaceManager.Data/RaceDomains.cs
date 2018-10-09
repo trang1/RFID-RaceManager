@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Diagnostics;
 using System.Linq;
-using System.Text;
 
 namespace RaceManager.Data
 {
@@ -64,6 +63,7 @@ namespace RaceManager.Data
         }
         public bool Finished { get; set; }
     }
+
     public class Pilot
     {
         public int Id { get; set; }
@@ -76,6 +76,7 @@ namespace RaceManager.Data
         public string Nickname { get; set; }
         public string Team { get; set; }
         public string Email { get; set; }
+        public int isChecked { get; set; }
         public bool Confirmation { get; set; }
 
         [NotMapped]

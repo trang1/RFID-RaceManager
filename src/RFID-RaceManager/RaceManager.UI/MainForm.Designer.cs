@@ -166,6 +166,7 @@
             this.label112 = new System.Windows.Forms.Label();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox27 = new System.Windows.Forms.GroupBox();
+            this.btnClearDB = new System.Windows.Forms.Button();
             this.btnAddPilotFromDb = new System.Windows.Forms.Button();
             this.btnAddPilot = new System.Windows.Forms.Button();
             this.cbPilotConfirmation = new System.Windows.Forms.CheckBox();
@@ -182,6 +183,7 @@
             this.groupBox28 = new System.Windows.Forms.GroupBox();
             this.gvPilots = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nicknameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.teamDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -202,7 +204,6 @@
             this.dataGridViewTextBoxColumn144 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn145 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn146 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn147 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bindingSourcePilots = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage10 = new System.Windows.Forms.TabPage();
             this.gvGroupBF = new System.Windows.Forms.DataGridView();
@@ -212,7 +213,6 @@
             this.dataGridViewTextBoxColumn151 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn152 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn153 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn154 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox37 = new System.Windows.Forms.GroupBox();
             this.btnAddPilotsToGroupsSF = new System.Windows.Forms.Button();
@@ -225,7 +225,6 @@
             this.dataGridViewTextBoxColumn130 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn131 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn132 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn133 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.gvGroupBS = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn134 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -234,7 +233,6 @@
             this.dataGridViewTextBoxColumn137 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn138 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn139 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn140 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox36 = new System.Windows.Forms.GroupBox();
             this.btnAddPilotsToQF = new System.Windows.Forms.Button();
@@ -247,7 +245,6 @@
             this.dataGridViewTextBoxColumn102 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn103 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn104 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn105 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.gvGroupBQ = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn106 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -256,7 +253,6 @@
             this.dataGridViewTextBoxColumn109 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn110 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn111 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn112 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.gvGroupCQ = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn113 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -265,7 +261,6 @@
             this.dataGridViewTextBoxColumn116 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn117 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn118 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn119 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.gvGroupDQ = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn120 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -274,7 +269,6 @@
             this.dataGridViewTextBoxColumn123 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn124 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn125 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn126 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox29 = new System.Windows.Forms.GroupBox();
             this.nudPilotsPerGroup = new System.Windows.Forms.NumericUpDown();
@@ -289,7 +283,6 @@
             this.teamDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tagDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.confirmationStringDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageGroupB = new System.Windows.Forms.TabPage();
             this.gvGroupB = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -298,7 +291,6 @@
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageGroupC = new System.Windows.Forms.TabPage();
             this.gvGroupC = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -307,7 +299,6 @@
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageGroupD = new System.Windows.Forms.TabPage();
             this.gvGroupD = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -316,7 +307,6 @@
             this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageGroupE = new System.Windows.Forms.TabPage();
             this.gvGroupE = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -325,7 +315,6 @@
             this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageGroupF = new System.Windows.Forms.TabPage();
             this.gvGroupF = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -334,7 +323,6 @@
             this.dataGridViewTextBoxColumn32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageGroupG = new System.Windows.Forms.TabPage();
             this.gvGroupG = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -343,7 +331,6 @@
             this.dataGridViewTextBoxColumn39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn40 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn42 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageGroupH = new System.Windows.Forms.TabPage();
             this.gvGroupH = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn43 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -352,7 +339,6 @@
             this.dataGridViewTextBoxColumn46 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn47 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn48 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn49 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageGroupI = new System.Windows.Forms.TabPage();
             this.gvGroupI = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn50 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -361,7 +347,6 @@
             this.dataGridViewTextBoxColumn53 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn54 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn55 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn56 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageGroupJ = new System.Windows.Forms.TabPage();
             this.gvGroupJ = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn57 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -370,7 +355,6 @@
             this.dataGridViewTextBoxColumn60 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn61 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn62 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn63 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageGroupK = new System.Windows.Forms.TabPage();
             this.gvGroupK = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn64 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -379,7 +363,6 @@
             this.dataGridViewTextBoxColumn67 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn68 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn69 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn70 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageGroupL = new System.Windows.Forms.TabPage();
             this.gvGroupL = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn71 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -388,7 +371,6 @@
             this.dataGridViewTextBoxColumn74 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn75 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn76 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn77 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageGroupM = new System.Windows.Forms.TabPage();
             this.gvGroupM = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn78 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -397,7 +379,6 @@
             this.dataGridViewTextBoxColumn81 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn82 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn83 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn84 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageGroupN = new System.Windows.Forms.TabPage();
             this.gvGroupN = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn85 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -406,7 +387,6 @@
             this.dataGridViewTextBoxColumn88 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn89 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn90 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn91 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageGroupO = new System.Windows.Forms.TabPage();
             this.gvGroupO = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn92 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -415,16 +395,12 @@
             this.dataGridViewTextBoxColumn95 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn96 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn97 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn98 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabRace = new System.Windows.Forms.TabPage();
             this.gvRace = new System.Windows.Forms.DataGridView();
             this.OrderNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PilotName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Epc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Pc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IdentCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Rssi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CarrFrequency = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Lap1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Lap2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Lap3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -447,6 +423,7 @@
             this.groupBox33 = new System.Windows.Forms.GroupBox();
             this.groupBox32 = new System.Windows.Forms.GroupBox();
             this.groupBox31 = new System.Windows.Forms.GroupBox();
+            this.btnRaceSave = new System.Windows.Forms.Button();
             this.tbCurEvGroup = new System.Windows.Forms.TextBox();
             this.tbCurEvRound = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
@@ -723,6 +700,9 @@
             this.btnSendData = new System.Windows.Forms.Button();
             this.htxtCheckData = new CustomControl.HexTextBox();
             this.lrtxtDataTran = new CustomControl.LogRichTextBox();
+            this.Pc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Rssi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CarrFrequency = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel12 = new System.Windows.Forms.Panel();
             this.label114 = new System.Windows.Forms.Label();
             this.label115 = new System.Windows.Forms.Label();
@@ -773,7 +753,6 @@
             this.lxLedControl17 = new LxControl.LxLedControl();
             this.lxLedControl18 = new LxControl.LxLedControl();
             this.timerInventory = new System.Windows.Forms.Timer(this.components);
-            this.btnRaceSave = new System.Windows.Forms.Button();
             this.tabCtrMain.SuspendLayout();
             this.PagReaderSetting.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -1502,7 +1481,7 @@
             // 
             // btnDisconnectTcp
             // 
-            this.btnDisconnectTcp.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnDisconnectTcp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDisconnectTcp.Location = new System.Drawing.Point(314, 55);
             this.btnDisconnectTcp.Name = "btnDisconnectTcp";
             this.btnDisconnectTcp.Size = new System.Drawing.Size(90, 25);
@@ -1521,7 +1500,7 @@
             // 
             // btnConnectTcp
             // 
-            this.btnConnectTcp.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnConnectTcp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConnectTcp.Location = new System.Drawing.Point(314, 20);
             this.btnConnectTcp.Name = "btnConnectTcp";
             this.btnConnectTcp.Size = new System.Drawing.Size(90, 25);
@@ -2398,7 +2377,7 @@
             this.pageEpcTest.Name = "pageEpcTest";
             this.pageEpcTest.Size = new System.Drawing.Size(1341, 655);
             this.pageEpcTest.TabIndex = 5;
-            this.pageEpcTest.Text = "Race management";
+            this.pageEpcTest.Text = "Race Management";
             // 
             // tabEpcTest
             // 
@@ -2527,6 +2506,7 @@
             // 
             // groupBox27
             // 
+            this.groupBox27.Controls.Add(this.btnClearDB);
             this.groupBox27.Controls.Add(this.btnAddPilotFromDb);
             this.groupBox27.Controls.Add(this.btnAddPilot);
             this.groupBox27.Controls.Add(this.cbPilotConfirmation);
@@ -2550,10 +2530,20 @@
             this.groupBox27.TabStop = false;
             this.groupBox27.Text = "Pilot Registration";
             // 
+            // btnClearDB
+            // 
+            this.btnClearDB.Location = new System.Drawing.Point(236, 220);
+            this.btnClearDB.Margin = new System.Windows.Forms.Padding(2);
+            this.btnClearDB.Name = "btnClearDB";
+            this.btnClearDB.Size = new System.Drawing.Size(94, 37);
+            this.btnClearDB.TabIndex = 13;
+            this.btnClearDB.Text = "Clear all from DB";
+            this.btnClearDB.UseVisualStyleBackColor = true;
+            this.btnClearDB.Click += new System.EventHandler(this.btnClearDB_Click);
+            // 
             // btnAddPilotFromDb
             // 
-            this.btnAddPilotFromDb.Enabled = false;
-            this.btnAddPilotFromDb.Location = new System.Drawing.Point(199, 198);
+            this.btnAddPilotFromDb.Location = new System.Drawing.Point(124, 220);
             this.btnAddPilotFromDb.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddPilotFromDb.Name = "btnAddPilotFromDb";
             this.btnAddPilotFromDb.Size = new System.Drawing.Size(92, 37);
@@ -2564,7 +2554,7 @@
             // 
             // btnAddPilot
             // 
-            this.btnAddPilot.Location = new System.Drawing.Point(93, 198);
+            this.btnAddPilot.Location = new System.Drawing.Point(14, 220);
             this.btnAddPilot.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddPilot.Name = "btnAddPilot";
             this.btnAddPilot.Size = new System.Drawing.Size(92, 37);
@@ -2696,6 +2686,7 @@
             this.gvPilots.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvPilots.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
+            this.Id,
             this.nameDataGridViewTextBoxColumn,
             this.nicknameDataGridViewTextBoxColumn,
             this.teamDataGridViewTextBoxColumn,
@@ -2711,6 +2702,7 @@
             this.gvPilots.RowTemplate.Height = 24;
             this.gvPilots.Size = new System.Drawing.Size(961, 541);
             this.gvPilots.TabIndex = 0;
+            this.gvPilots.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvPilots_CellValueChanged);
             // 
             // Column1
             // 
@@ -2718,6 +2710,13 @@
             this.Column1.HeaderText = "#";
             this.Column1.Name = "Column1";
             this.Column1.Width = 60;
+            // 
+            // Id
+            // 
+            this.Id.DataPropertyName = "Id";
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.Visible = false;
             // 
             // nameDataGridViewTextBoxColumn
             // 
@@ -2852,8 +2851,7 @@
             this.dataGridViewTextBoxColumn143,
             this.dataGridViewTextBoxColumn144,
             this.dataGridViewTextBoxColumn145,
-            this.dataGridViewTextBoxColumn146,
-            this.dataGridViewTextBoxColumn147});
+            this.dataGridViewTextBoxColumn146});
             this.gvGroupAF.DataSource = this.bindingSourcePilots;
             this.gvGroupAF.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gvGroupAF.Location = new System.Drawing.Point(2, 2);
@@ -2909,13 +2907,6 @@
             this.dataGridViewTextBoxColumn146.Name = "dataGridViewTextBoxColumn146";
             this.dataGridViewTextBoxColumn146.ReadOnly = true;
             // 
-            // dataGridViewTextBoxColumn147
-            // 
-            this.dataGridViewTextBoxColumn147.DataPropertyName = "ConfirmationString";
-            this.dataGridViewTextBoxColumn147.HeaderText = "Confirmation";
-            this.dataGridViewTextBoxColumn147.Name = "dataGridViewTextBoxColumn147";
-            this.dataGridViewTextBoxColumn147.ReadOnly = true;
-            // 
             // bindingSourcePilots
             // 
             this.bindingSourcePilots.DataSource = typeof(RaceManager.Data.Pilot);
@@ -2944,8 +2935,7 @@
             this.dataGridViewTextBoxColumn150,
             this.dataGridViewTextBoxColumn151,
             this.dataGridViewTextBoxColumn152,
-            this.dataGridViewTextBoxColumn153,
-            this.dataGridViewTextBoxColumn154});
+            this.dataGridViewTextBoxColumn153});
             this.gvGroupBF.DataSource = this.bindingSourcePilots;
             this.gvGroupBF.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gvGroupBF.Location = new System.Drawing.Point(2, 2);
@@ -3000,13 +2990,6 @@
             this.dataGridViewTextBoxColumn153.HeaderText = "E-Mail";
             this.dataGridViewTextBoxColumn153.Name = "dataGridViewTextBoxColumn153";
             this.dataGridViewTextBoxColumn153.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn154
-            // 
-            this.dataGridViewTextBoxColumn154.DataPropertyName = "ConfirmationString";
-            this.dataGridViewTextBoxColumn154.HeaderText = "Confirmation";
-            this.dataGridViewTextBoxColumn154.Name = "dataGridViewTextBoxColumn154";
-            this.dataGridViewTextBoxColumn154.ReadOnly = true;
             // 
             // tableLayoutPanel10
             // 
@@ -3085,8 +3068,7 @@
             this.dataGridViewTextBoxColumn129,
             this.dataGridViewTextBoxColumn130,
             this.dataGridViewTextBoxColumn131,
-            this.dataGridViewTextBoxColumn132,
-            this.dataGridViewTextBoxColumn133});
+            this.dataGridViewTextBoxColumn132});
             this.gvGroupAS.DataSource = this.bindingSourcePilots;
             this.gvGroupAS.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gvGroupAS.Location = new System.Drawing.Point(2, 2);
@@ -3142,13 +3124,6 @@
             this.dataGridViewTextBoxColumn132.Name = "dataGridViewTextBoxColumn132";
             this.dataGridViewTextBoxColumn132.ReadOnly = true;
             // 
-            // dataGridViewTextBoxColumn133
-            // 
-            this.dataGridViewTextBoxColumn133.DataPropertyName = "ConfirmationString";
-            this.dataGridViewTextBoxColumn133.HeaderText = "Confirmation";
-            this.dataGridViewTextBoxColumn133.Name = "dataGridViewTextBoxColumn133";
-            this.dataGridViewTextBoxColumn133.ReadOnly = true;
-            // 
             // tabPage8
             // 
             this.tabPage8.Controls.Add(this.gvGroupBS);
@@ -3173,8 +3148,7 @@
             this.dataGridViewTextBoxColumn136,
             this.dataGridViewTextBoxColumn137,
             this.dataGridViewTextBoxColumn138,
-            this.dataGridViewTextBoxColumn139,
-            this.dataGridViewTextBoxColumn140});
+            this.dataGridViewTextBoxColumn139});
             this.gvGroupBS.DataSource = this.bindingSourcePilots;
             this.gvGroupBS.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gvGroupBS.Location = new System.Drawing.Point(2, 2);
@@ -3229,13 +3203,6 @@
             this.dataGridViewTextBoxColumn139.HeaderText = "E-Mail";
             this.dataGridViewTextBoxColumn139.Name = "dataGridViewTextBoxColumn139";
             this.dataGridViewTextBoxColumn139.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn140
-            // 
-            this.dataGridViewTextBoxColumn140.DataPropertyName = "ConfirmationString";
-            this.dataGridViewTextBoxColumn140.HeaderText = "Confirmation";
-            this.dataGridViewTextBoxColumn140.Name = "dataGridViewTextBoxColumn140";
-            this.dataGridViewTextBoxColumn140.ReadOnly = true;
             // 
             // tableLayoutPanel9
             // 
@@ -3316,8 +3283,7 @@
             this.dataGridViewTextBoxColumn101,
             this.dataGridViewTextBoxColumn102,
             this.dataGridViewTextBoxColumn103,
-            this.dataGridViewTextBoxColumn104,
-            this.dataGridViewTextBoxColumn105});
+            this.dataGridViewTextBoxColumn104});
             this.gvGroupAQ.DataSource = this.bindingSourcePilots;
             this.gvGroupAQ.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gvGroupAQ.Location = new System.Drawing.Point(2, 2);
@@ -3373,13 +3339,6 @@
             this.dataGridViewTextBoxColumn104.Name = "dataGridViewTextBoxColumn104";
             this.dataGridViewTextBoxColumn104.ReadOnly = true;
             // 
-            // dataGridViewTextBoxColumn105
-            // 
-            this.dataGridViewTextBoxColumn105.DataPropertyName = "ConfirmationString";
-            this.dataGridViewTextBoxColumn105.HeaderText = "Confirmation";
-            this.dataGridViewTextBoxColumn105.Name = "dataGridViewTextBoxColumn105";
-            this.dataGridViewTextBoxColumn105.ReadOnly = true;
-            // 
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.gvGroupBQ);
@@ -3404,8 +3363,7 @@
             this.dataGridViewTextBoxColumn108,
             this.dataGridViewTextBoxColumn109,
             this.dataGridViewTextBoxColumn110,
-            this.dataGridViewTextBoxColumn111,
-            this.dataGridViewTextBoxColumn112});
+            this.dataGridViewTextBoxColumn111});
             this.gvGroupBQ.DataSource = this.bindingSourcePilots;
             this.gvGroupBQ.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gvGroupBQ.Location = new System.Drawing.Point(2, 2);
@@ -3461,13 +3419,6 @@
             this.dataGridViewTextBoxColumn111.Name = "dataGridViewTextBoxColumn111";
             this.dataGridViewTextBoxColumn111.ReadOnly = true;
             // 
-            // dataGridViewTextBoxColumn112
-            // 
-            this.dataGridViewTextBoxColumn112.DataPropertyName = "ConfirmationString";
-            this.dataGridViewTextBoxColumn112.HeaderText = "Confirmation";
-            this.dataGridViewTextBoxColumn112.Name = "dataGridViewTextBoxColumn112";
-            this.dataGridViewTextBoxColumn112.ReadOnly = true;
-            // 
             // tabPage5
             // 
             this.tabPage5.Controls.Add(this.gvGroupCQ);
@@ -3492,8 +3443,7 @@
             this.dataGridViewTextBoxColumn115,
             this.dataGridViewTextBoxColumn116,
             this.dataGridViewTextBoxColumn117,
-            this.dataGridViewTextBoxColumn118,
-            this.dataGridViewTextBoxColumn119});
+            this.dataGridViewTextBoxColumn118});
             this.gvGroupCQ.DataSource = this.bindingSourcePilots;
             this.gvGroupCQ.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gvGroupCQ.Location = new System.Drawing.Point(2, 2);
@@ -3549,13 +3499,6 @@
             this.dataGridViewTextBoxColumn118.Name = "dataGridViewTextBoxColumn118";
             this.dataGridViewTextBoxColumn118.ReadOnly = true;
             // 
-            // dataGridViewTextBoxColumn119
-            // 
-            this.dataGridViewTextBoxColumn119.DataPropertyName = "ConfirmationString";
-            this.dataGridViewTextBoxColumn119.HeaderText = "Confirmation";
-            this.dataGridViewTextBoxColumn119.Name = "dataGridViewTextBoxColumn119";
-            this.dataGridViewTextBoxColumn119.ReadOnly = true;
-            // 
             // tabPage6
             // 
             this.tabPage6.Controls.Add(this.gvGroupDQ);
@@ -3580,8 +3523,7 @@
             this.dataGridViewTextBoxColumn122,
             this.dataGridViewTextBoxColumn123,
             this.dataGridViewTextBoxColumn124,
-            this.dataGridViewTextBoxColumn125,
-            this.dataGridViewTextBoxColumn126});
+            this.dataGridViewTextBoxColumn125});
             this.gvGroupDQ.DataSource = this.bindingSourcePilots;
             this.gvGroupDQ.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gvGroupDQ.Location = new System.Drawing.Point(2, 2);
@@ -3636,13 +3578,6 @@
             this.dataGridViewTextBoxColumn125.HeaderText = "E-Mail";
             this.dataGridViewTextBoxColumn125.Name = "dataGridViewTextBoxColumn125";
             this.dataGridViewTextBoxColumn125.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn126
-            // 
-            this.dataGridViewTextBoxColumn126.DataPropertyName = "ConfirmationString";
-            this.dataGridViewTextBoxColumn126.HeaderText = "Confirmation";
-            this.dataGridViewTextBoxColumn126.Name = "dataGridViewTextBoxColumn126";
-            this.dataGridViewTextBoxColumn126.ReadOnly = true;
             // 
             // tableLayoutPanel7
             // 
@@ -3768,8 +3703,7 @@
             this.nicknameDataGridViewTextBoxColumn1,
             this.teamDataGridViewTextBoxColumn1,
             this.tagDataGridViewTextBoxColumn1,
-            this.emailDataGridViewTextBoxColumn1,
-            this.confirmationStringDataGridViewTextBoxColumn});
+            this.emailDataGridViewTextBoxColumn1});
             this.gvGroupA.DataSource = this.bindingSourcePilots;
             this.gvGroupA.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gvGroupA.Location = new System.Drawing.Point(2, 2);
@@ -3825,13 +3759,6 @@
             this.emailDataGridViewTextBoxColumn1.Name = "emailDataGridViewTextBoxColumn1";
             this.emailDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
-            // confirmationStringDataGridViewTextBoxColumn
-            // 
-            this.confirmationStringDataGridViewTextBoxColumn.DataPropertyName = "ConfirmationString";
-            this.confirmationStringDataGridViewTextBoxColumn.HeaderText = "Confirmation";
-            this.confirmationStringDataGridViewTextBoxColumn.Name = "confirmationStringDataGridViewTextBoxColumn";
-            this.confirmationStringDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
             // pageGroupB
             // 
             this.pageGroupB.Controls.Add(this.gvGroupB);
@@ -3856,8 +3783,7 @@
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7});
+            this.dataGridViewTextBoxColumn6});
             this.gvGroupB.DataSource = this.bindingSourcePilots;
             this.gvGroupB.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gvGroupB.Location = new System.Drawing.Point(2, 2);
@@ -3913,13 +3839,6 @@
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.ReadOnly = true;
             // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "ConfirmationString";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Confirmation";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            // 
             // pageGroupC
             // 
             this.pageGroupC.Controls.Add(this.gvGroupC);
@@ -3944,8 +3863,7 @@
             this.dataGridViewTextBoxColumn10,
             this.dataGridViewTextBoxColumn11,
             this.dataGridViewTextBoxColumn12,
-            this.dataGridViewTextBoxColumn13,
-            this.dataGridViewTextBoxColumn14});
+            this.dataGridViewTextBoxColumn13});
             this.gvGroupC.DataSource = this.bindingSourcePilots;
             this.gvGroupC.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gvGroupC.Location = new System.Drawing.Point(2, 2);
@@ -4001,13 +3919,6 @@
             this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
             this.dataGridViewTextBoxColumn13.ReadOnly = true;
             // 
-            // dataGridViewTextBoxColumn14
-            // 
-            this.dataGridViewTextBoxColumn14.DataPropertyName = "ConfirmationString";
-            this.dataGridViewTextBoxColumn14.HeaderText = "Confirmation";
-            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
-            this.dataGridViewTextBoxColumn14.ReadOnly = true;
-            // 
             // pageGroupD
             // 
             this.pageGroupD.Controls.Add(this.gvGroupD);
@@ -4032,8 +3943,7 @@
             this.dataGridViewTextBoxColumn17,
             this.dataGridViewTextBoxColumn18,
             this.dataGridViewTextBoxColumn19,
-            this.dataGridViewTextBoxColumn20,
-            this.dataGridViewTextBoxColumn21});
+            this.dataGridViewTextBoxColumn20});
             this.gvGroupD.DataSource = this.bindingSourcePilots;
             this.gvGroupD.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gvGroupD.Location = new System.Drawing.Point(2, 2);
@@ -4089,13 +3999,6 @@
             this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
             this.dataGridViewTextBoxColumn20.ReadOnly = true;
             // 
-            // dataGridViewTextBoxColumn21
-            // 
-            this.dataGridViewTextBoxColumn21.DataPropertyName = "ConfirmationString";
-            this.dataGridViewTextBoxColumn21.HeaderText = "Confirmation";
-            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
-            this.dataGridViewTextBoxColumn21.ReadOnly = true;
-            // 
             // pageGroupE
             // 
             this.pageGroupE.Controls.Add(this.gvGroupE);
@@ -4120,8 +4023,7 @@
             this.dataGridViewTextBoxColumn24,
             this.dataGridViewTextBoxColumn25,
             this.dataGridViewTextBoxColumn26,
-            this.dataGridViewTextBoxColumn27,
-            this.dataGridViewTextBoxColumn28});
+            this.dataGridViewTextBoxColumn27});
             this.gvGroupE.DataSource = this.bindingSourcePilots;
             this.gvGroupE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gvGroupE.Location = new System.Drawing.Point(2, 2);
@@ -4177,13 +4079,6 @@
             this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
             this.dataGridViewTextBoxColumn27.ReadOnly = true;
             // 
-            // dataGridViewTextBoxColumn28
-            // 
-            this.dataGridViewTextBoxColumn28.DataPropertyName = "ConfirmationString";
-            this.dataGridViewTextBoxColumn28.HeaderText = "Confirmation";
-            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
-            this.dataGridViewTextBoxColumn28.ReadOnly = true;
-            // 
             // pageGroupF
             // 
             this.pageGroupF.Controls.Add(this.gvGroupF);
@@ -4208,8 +4103,7 @@
             this.dataGridViewTextBoxColumn31,
             this.dataGridViewTextBoxColumn32,
             this.dataGridViewTextBoxColumn33,
-            this.dataGridViewTextBoxColumn34,
-            this.dataGridViewTextBoxColumn35});
+            this.dataGridViewTextBoxColumn34});
             this.gvGroupF.DataSource = this.bindingSourcePilots;
             this.gvGroupF.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gvGroupF.Location = new System.Drawing.Point(2, 2);
@@ -4265,13 +4159,6 @@
             this.dataGridViewTextBoxColumn34.Name = "dataGridViewTextBoxColumn34";
             this.dataGridViewTextBoxColumn34.ReadOnly = true;
             // 
-            // dataGridViewTextBoxColumn35
-            // 
-            this.dataGridViewTextBoxColumn35.DataPropertyName = "ConfirmationString";
-            this.dataGridViewTextBoxColumn35.HeaderText = "Confirmation";
-            this.dataGridViewTextBoxColumn35.Name = "dataGridViewTextBoxColumn35";
-            this.dataGridViewTextBoxColumn35.ReadOnly = true;
-            // 
             // pageGroupG
             // 
             this.pageGroupG.Controls.Add(this.gvGroupG);
@@ -4296,8 +4183,7 @@
             this.dataGridViewTextBoxColumn38,
             this.dataGridViewTextBoxColumn39,
             this.dataGridViewTextBoxColumn40,
-            this.dataGridViewTextBoxColumn41,
-            this.dataGridViewTextBoxColumn42});
+            this.dataGridViewTextBoxColumn41});
             this.gvGroupG.DataSource = this.bindingSourcePilots;
             this.gvGroupG.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gvGroupG.Location = new System.Drawing.Point(2, 2);
@@ -4353,13 +4239,6 @@
             this.dataGridViewTextBoxColumn41.Name = "dataGridViewTextBoxColumn41";
             this.dataGridViewTextBoxColumn41.ReadOnly = true;
             // 
-            // dataGridViewTextBoxColumn42
-            // 
-            this.dataGridViewTextBoxColumn42.DataPropertyName = "ConfirmationString";
-            this.dataGridViewTextBoxColumn42.HeaderText = "Confirmation";
-            this.dataGridViewTextBoxColumn42.Name = "dataGridViewTextBoxColumn42";
-            this.dataGridViewTextBoxColumn42.ReadOnly = true;
-            // 
             // pageGroupH
             // 
             this.pageGroupH.Controls.Add(this.gvGroupH);
@@ -4384,8 +4263,7 @@
             this.dataGridViewTextBoxColumn45,
             this.dataGridViewTextBoxColumn46,
             this.dataGridViewTextBoxColumn47,
-            this.dataGridViewTextBoxColumn48,
-            this.dataGridViewTextBoxColumn49});
+            this.dataGridViewTextBoxColumn48});
             this.gvGroupH.DataSource = this.bindingSourcePilots;
             this.gvGroupH.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gvGroupH.Location = new System.Drawing.Point(2, 2);
@@ -4441,13 +4319,6 @@
             this.dataGridViewTextBoxColumn48.Name = "dataGridViewTextBoxColumn48";
             this.dataGridViewTextBoxColumn48.ReadOnly = true;
             // 
-            // dataGridViewTextBoxColumn49
-            // 
-            this.dataGridViewTextBoxColumn49.DataPropertyName = "ConfirmationString";
-            this.dataGridViewTextBoxColumn49.HeaderText = "Confirmation";
-            this.dataGridViewTextBoxColumn49.Name = "dataGridViewTextBoxColumn49";
-            this.dataGridViewTextBoxColumn49.ReadOnly = true;
-            // 
             // pageGroupI
             // 
             this.pageGroupI.Controls.Add(this.gvGroupI);
@@ -4472,8 +4343,7 @@
             this.dataGridViewTextBoxColumn52,
             this.dataGridViewTextBoxColumn53,
             this.dataGridViewTextBoxColumn54,
-            this.dataGridViewTextBoxColumn55,
-            this.dataGridViewTextBoxColumn56});
+            this.dataGridViewTextBoxColumn55});
             this.gvGroupI.DataSource = this.bindingSourcePilots;
             this.gvGroupI.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gvGroupI.Location = new System.Drawing.Point(2, 2);
@@ -4529,13 +4399,6 @@
             this.dataGridViewTextBoxColumn55.Name = "dataGridViewTextBoxColumn55";
             this.dataGridViewTextBoxColumn55.ReadOnly = true;
             // 
-            // dataGridViewTextBoxColumn56
-            // 
-            this.dataGridViewTextBoxColumn56.DataPropertyName = "ConfirmationString";
-            this.dataGridViewTextBoxColumn56.HeaderText = "Confirmation";
-            this.dataGridViewTextBoxColumn56.Name = "dataGridViewTextBoxColumn56";
-            this.dataGridViewTextBoxColumn56.ReadOnly = true;
-            // 
             // pageGroupJ
             // 
             this.pageGroupJ.Controls.Add(this.gvGroupJ);
@@ -4560,8 +4423,7 @@
             this.dataGridViewTextBoxColumn59,
             this.dataGridViewTextBoxColumn60,
             this.dataGridViewTextBoxColumn61,
-            this.dataGridViewTextBoxColumn62,
-            this.dataGridViewTextBoxColumn63});
+            this.dataGridViewTextBoxColumn62});
             this.gvGroupJ.DataSource = this.bindingSourcePilots;
             this.gvGroupJ.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gvGroupJ.Location = new System.Drawing.Point(2, 2);
@@ -4617,13 +4479,6 @@
             this.dataGridViewTextBoxColumn62.Name = "dataGridViewTextBoxColumn62";
             this.dataGridViewTextBoxColumn62.ReadOnly = true;
             // 
-            // dataGridViewTextBoxColumn63
-            // 
-            this.dataGridViewTextBoxColumn63.DataPropertyName = "ConfirmationString";
-            this.dataGridViewTextBoxColumn63.HeaderText = "Confirmation";
-            this.dataGridViewTextBoxColumn63.Name = "dataGridViewTextBoxColumn63";
-            this.dataGridViewTextBoxColumn63.ReadOnly = true;
-            // 
             // pageGroupK
             // 
             this.pageGroupK.Controls.Add(this.gvGroupK);
@@ -4648,8 +4503,7 @@
             this.dataGridViewTextBoxColumn66,
             this.dataGridViewTextBoxColumn67,
             this.dataGridViewTextBoxColumn68,
-            this.dataGridViewTextBoxColumn69,
-            this.dataGridViewTextBoxColumn70});
+            this.dataGridViewTextBoxColumn69});
             this.gvGroupK.DataSource = this.bindingSourcePilots;
             this.gvGroupK.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gvGroupK.Location = new System.Drawing.Point(2, 2);
@@ -4705,13 +4559,6 @@
             this.dataGridViewTextBoxColumn69.Name = "dataGridViewTextBoxColumn69";
             this.dataGridViewTextBoxColumn69.ReadOnly = true;
             // 
-            // dataGridViewTextBoxColumn70
-            // 
-            this.dataGridViewTextBoxColumn70.DataPropertyName = "ConfirmationString";
-            this.dataGridViewTextBoxColumn70.HeaderText = "Confirmation";
-            this.dataGridViewTextBoxColumn70.Name = "dataGridViewTextBoxColumn70";
-            this.dataGridViewTextBoxColumn70.ReadOnly = true;
-            // 
             // pageGroupL
             // 
             this.pageGroupL.Controls.Add(this.gvGroupL);
@@ -4736,8 +4583,7 @@
             this.dataGridViewTextBoxColumn73,
             this.dataGridViewTextBoxColumn74,
             this.dataGridViewTextBoxColumn75,
-            this.dataGridViewTextBoxColumn76,
-            this.dataGridViewTextBoxColumn77});
+            this.dataGridViewTextBoxColumn76});
             this.gvGroupL.DataSource = this.bindingSourcePilots;
             this.gvGroupL.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gvGroupL.Location = new System.Drawing.Point(2, 2);
@@ -4793,13 +4639,6 @@
             this.dataGridViewTextBoxColumn76.Name = "dataGridViewTextBoxColumn76";
             this.dataGridViewTextBoxColumn76.ReadOnly = true;
             // 
-            // dataGridViewTextBoxColumn77
-            // 
-            this.dataGridViewTextBoxColumn77.DataPropertyName = "ConfirmationString";
-            this.dataGridViewTextBoxColumn77.HeaderText = "Confirmation";
-            this.dataGridViewTextBoxColumn77.Name = "dataGridViewTextBoxColumn77";
-            this.dataGridViewTextBoxColumn77.ReadOnly = true;
-            // 
             // pageGroupM
             // 
             this.pageGroupM.Controls.Add(this.gvGroupM);
@@ -4824,8 +4663,7 @@
             this.dataGridViewTextBoxColumn80,
             this.dataGridViewTextBoxColumn81,
             this.dataGridViewTextBoxColumn82,
-            this.dataGridViewTextBoxColumn83,
-            this.dataGridViewTextBoxColumn84});
+            this.dataGridViewTextBoxColumn83});
             this.gvGroupM.DataSource = this.bindingSourcePilots;
             this.gvGroupM.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gvGroupM.Location = new System.Drawing.Point(2, 2);
@@ -4881,13 +4719,6 @@
             this.dataGridViewTextBoxColumn83.Name = "dataGridViewTextBoxColumn83";
             this.dataGridViewTextBoxColumn83.ReadOnly = true;
             // 
-            // dataGridViewTextBoxColumn84
-            // 
-            this.dataGridViewTextBoxColumn84.DataPropertyName = "ConfirmationString";
-            this.dataGridViewTextBoxColumn84.HeaderText = "Confirmation";
-            this.dataGridViewTextBoxColumn84.Name = "dataGridViewTextBoxColumn84";
-            this.dataGridViewTextBoxColumn84.ReadOnly = true;
-            // 
             // pageGroupN
             // 
             this.pageGroupN.Controls.Add(this.gvGroupN);
@@ -4911,8 +4742,7 @@
             this.dataGridViewTextBoxColumn87,
             this.dataGridViewTextBoxColumn88,
             this.dataGridViewTextBoxColumn89,
-            this.dataGridViewTextBoxColumn90,
-            this.dataGridViewTextBoxColumn91});
+            this.dataGridViewTextBoxColumn90});
             this.gvGroupN.DataSource = this.bindingSourcePilots;
             this.gvGroupN.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gvGroupN.Location = new System.Drawing.Point(0, 0);
@@ -4968,13 +4798,6 @@
             this.dataGridViewTextBoxColumn90.Name = "dataGridViewTextBoxColumn90";
             this.dataGridViewTextBoxColumn90.ReadOnly = true;
             // 
-            // dataGridViewTextBoxColumn91
-            // 
-            this.dataGridViewTextBoxColumn91.DataPropertyName = "ConfirmationString";
-            this.dataGridViewTextBoxColumn91.HeaderText = "Confirmation";
-            this.dataGridViewTextBoxColumn91.Name = "dataGridViewTextBoxColumn91";
-            this.dataGridViewTextBoxColumn91.ReadOnly = true;
-            // 
             // pageGroupO
             // 
             this.pageGroupO.Controls.Add(this.gvGroupO);
@@ -4998,8 +4821,7 @@
             this.dataGridViewTextBoxColumn94,
             this.dataGridViewTextBoxColumn95,
             this.dataGridViewTextBoxColumn96,
-            this.dataGridViewTextBoxColumn97,
-            this.dataGridViewTextBoxColumn98});
+            this.dataGridViewTextBoxColumn97});
             this.gvGroupO.DataSource = this.bindingSourcePilots;
             this.gvGroupO.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gvGroupO.Location = new System.Drawing.Point(0, 0);
@@ -5055,13 +4877,6 @@
             this.dataGridViewTextBoxColumn97.Name = "dataGridViewTextBoxColumn97";
             this.dataGridViewTextBoxColumn97.ReadOnly = true;
             // 
-            // dataGridViewTextBoxColumn98
-            // 
-            this.dataGridViewTextBoxColumn98.DataPropertyName = "ConfirmationString";
-            this.dataGridViewTextBoxColumn98.HeaderText = "Confirmation";
-            this.dataGridViewTextBoxColumn98.Name = "dataGridViewTextBoxColumn98";
-            this.dataGridViewTextBoxColumn98.ReadOnly = true;
-            // 
             // tabRace
             // 
             this.tabRace.Controls.Add(this.gvRace);
@@ -5078,7 +4893,7 @@
             this.tabRace.Padding = new System.Windows.Forms.Padding(2);
             this.tabRace.Size = new System.Drawing.Size(1331, 627);
             this.tabRace.TabIndex = 4;
-            this.tabRace.Text = "Race";
+            this.tabRace.Text = "Race Management";
             this.tabRace.UseVisualStyleBackColor = true;
             // 
             // gvRace
@@ -5087,16 +4902,12 @@
             this.gvRace.AllowUserToDeleteRows = false;
             this.gvRace.AutoGenerateColumns = false;
             this.gvRace.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.gvRace.CellEndEdit += gvRace_CellEndEdit;
             this.gvRace.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvRace.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.OrderNumber,
             this.PilotName,
             this.Epc,
-            this.Pc,
             this.IdentCount,
-            this.Rssi,
-            this.CarrFrequency,
             this.Lap1,
             this.Lap2,
             this.Lap3,
@@ -5129,16 +4940,9 @@
             // Epc
             // 
             this.Epc.DataPropertyName = "Epc";
-            this.Epc.HeaderText = "TAG ID - EPC";
+            this.Epc.HeaderText = "TAG ID";
             this.Epc.Name = "Epc";
-            this.Epc.Width = 200;
-            // 
-            // Pc
-            // 
-            this.Pc.DataPropertyName = "Pc";
-            this.Pc.HeaderText = "PC";
-            this.Pc.Name = "Pc";
-            this.Pc.Width = 50;
+            this.Epc.Width = 75;
             // 
             // IdentCount
             // 
@@ -5146,20 +4950,6 @@
             this.IdentCount.HeaderText = "ID Count";
             this.IdentCount.Name = "IdentCount";
             this.IdentCount.Width = 80;
-            // 
-            // Rssi
-            // 
-            this.Rssi.DataPropertyName = "Rssi";
-            this.Rssi.HeaderText = "RSSI";
-            this.Rssi.Name = "Rssi";
-            this.Rssi.Width = 50;
-            // 
-            // CarrFrequency
-            // 
-            this.CarrFrequency.DataPropertyName = "CarrFrequency";
-            this.CarrFrequency.HeaderText = "Freq.";
-            this.CarrFrequency.Name = "CarrFrequency";
-            this.CarrFrequency.Width = 60;
             // 
             // Lap1
             // 
@@ -5233,6 +5023,7 @@
             this.groupBox35.TabIndex = 6;
             this.groupBox35.TabStop = false;
             this.groupBox35.Text = "Race Ranking (Qualification rounds)";
+            this.groupBox35.Enter += new System.EventHandler(this.groupBox35_Enter);
             // 
             // gvRanking
             // 
@@ -5281,7 +5072,7 @@
             // avgLapTimeStringDataGridViewTextBoxColumn
             // 
             this.avgLapTimeStringDataGridViewTextBoxColumn.DataPropertyName = "AvgLapTimeString";
-            this.avgLapTimeStringDataGridViewTextBoxColumn.HeaderText = "Average Lap";
+            this.avgLapTimeStringDataGridViewTextBoxColumn.HeaderText = "Average Top 3";
             this.avgLapTimeStringDataGridViewTextBoxColumn.Name = "avgLapTimeStringDataGridViewTextBoxColumn";
             this.avgLapTimeStringDataGridViewTextBoxColumn.ReadOnly = true;
             this.avgLapTimeStringDataGridViewTextBoxColumn.Width = 90;
@@ -5295,7 +5086,7 @@
             this.cmbDisplayRanking.FormattingEnabled = true;
             this.cmbDisplayRanking.Items.AddRange(new object[] {
             "Best Lap Times",
-            "Average Time"});
+            "Average Time Top 3"});
             this.cmbDisplayRanking.Location = new System.Drawing.Point(110, 33);
             this.cmbDisplayRanking.Name = "cmbDisplayRanking";
             this.cmbDisplayRanking.Size = new System.Drawing.Size(209, 21);
@@ -5349,6 +5140,17 @@
             this.groupBox31.TabIndex = 2;
             this.groupBox31.TabStop = false;
             this.groupBox31.Text = "Current Event";
+            // 
+            // btnRaceSave
+            // 
+            this.btnRaceSave.Location = new System.Drawing.Point(483, 38);
+            this.btnRaceSave.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRaceSave.Name = "btnRaceSave";
+            this.btnRaceSave.Size = new System.Drawing.Size(187, 35);
+            this.btnRaceSave.TabIndex = 2;
+            this.btnRaceSave.Text = "Confirm and Save to DB";
+            this.btnRaceSave.UseVisualStyleBackColor = true;
+            this.btnRaceSave.Click += new System.EventHandler(this.btnRaceSave_Click);
             // 
             // tbCurEvGroup
             // 
@@ -5406,7 +5208,7 @@
             // btnRaceReset
             // 
             this.btnRaceReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.btnRaceReset.Location = new System.Drawing.Point(164, 59);
+            this.btnRaceReset.Location = new System.Drawing.Point(174, 58);
             this.btnRaceReset.Margin = new System.Windows.Forms.Padding(2);
             this.btnRaceReset.Name = "btnRaceReset";
             this.btnRaceReset.Size = new System.Drawing.Size(88, 29);
@@ -5418,7 +5220,7 @@
             // btnRaceStop
             // 
             this.btnRaceStop.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.btnRaceStop.Location = new System.Drawing.Point(164, 18);
+            this.btnRaceStop.Location = new System.Drawing.Point(174, 18);
             this.btnRaceStop.Margin = new System.Windows.Forms.Padding(2);
             this.btnRaceStop.Name = "btnRaceStop";
             this.btnRaceStop.Size = new System.Drawing.Size(88, 29);
@@ -5430,7 +5232,7 @@
             // btnRaceStart
             // 
             this.btnRaceStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.btnRaceStart.Location = new System.Drawing.Point(5, 18);
+            this.btnRaceStart.Location = new System.Drawing.Point(10, 18);
             this.btnRaceStart.Margin = new System.Windows.Forms.Padding(2);
             this.btnRaceStart.Name = "btnRaceStart";
             this.btnRaceStart.Size = new System.Drawing.Size(146, 70);
@@ -5463,7 +5265,7 @@
             // 
             this.label71.AutoSize = true;
             this.label71.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
-            this.label71.Location = new System.Drawing.Point(148, 72);
+            this.label71.Location = new System.Drawing.Point(175, 72);
             this.label71.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label71.Name = "label71";
             this.label71.Size = new System.Drawing.Size(48, 9);
@@ -5474,7 +5276,7 @@
             // 
             this.label38.AutoSize = true;
             this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
-            this.label38.Location = new System.Drawing.Point(80, 72);
+            this.label38.Location = new System.Drawing.Point(100, 72);
             this.label38.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(33, 9);
@@ -5485,7 +5287,7 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
-            this.label21.Location = new System.Drawing.Point(19, 72);
+            this.label21.Location = new System.Drawing.Point(35, 72);
             this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(32, 9);
@@ -5495,8 +5297,8 @@
             // lblRaceMilliSeconds
             // 
             this.lblRaceMilliSeconds.AutoSize = true;
-            this.lblRaceMilliSeconds.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
-            this.lblRaceMilliSeconds.Location = new System.Drawing.Point(139, 32);
+            this.lblRaceMilliSeconds.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRaceMilliSeconds.Location = new System.Drawing.Point(161, 32);
             this.lblRaceMilliSeconds.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRaceMilliSeconds.Name = "lblRaceMilliSeconds";
             this.lblRaceMilliSeconds.Size = new System.Drawing.Size(71, 37);
@@ -5507,7 +5309,7 @@
             // 
             this.label39.AutoSize = true;
             this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.label39.Location = new System.Drawing.Point(117, 32);
+            this.label39.Location = new System.Drawing.Point(138, 32);
             this.label39.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(19, 29);
@@ -5517,8 +5319,8 @@
             // lblRaceSeconds
             // 
             this.lblRaceSeconds.AutoSize = true;
-            this.lblRaceSeconds.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
-            this.lblRaceSeconds.Location = new System.Drawing.Point(71, 32);
+            this.lblRaceSeconds.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRaceSeconds.Location = new System.Drawing.Point(90, 32);
             this.lblRaceSeconds.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRaceSeconds.Name = "lblRaceSeconds";
             this.lblRaceSeconds.Size = new System.Drawing.Size(53, 37);
@@ -5529,7 +5331,7 @@
             // 
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.label34.Location = new System.Drawing.Point(50, 32);
+            this.label34.Location = new System.Drawing.Point(70, 32);
             this.label34.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(19, 29);
@@ -5539,8 +5341,8 @@
             // lblRaceMinutes
             // 
             this.lblRaceMinutes.AutoSize = true;
-            this.lblRaceMinutes.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
-            this.lblRaceMinutes.Location = new System.Drawing.Point(8, 32);
+            this.lblRaceMinutes.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRaceMinutes.Location = new System.Drawing.Point(23, 32);
             this.lblRaceMinutes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRaceMinutes.Name = "lblRaceMinutes";
             this.lblRaceMinutes.Size = new System.Drawing.Size(53, 37);
@@ -5733,7 +5535,7 @@
             this.cmbRaceMode.Items.AddRange(new object[] {
             "Real Time",
             "Fast Switch Antenna"});
-            this.cmbRaceMode.Location = new System.Drawing.Point(362, 36);
+            this.cmbRaceMode.Location = new System.Drawing.Point(361, 34);
             this.cmbRaceMode.Name = "cmbRaceMode";
             this.cmbRaceMode.Size = new System.Drawing.Size(121, 21);
             this.cmbRaceMode.TabIndex = 46;
@@ -5837,7 +5639,8 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(144, 30);
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(151, 37);
             this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(36, 13);
@@ -5847,7 +5650,7 @@
             // cmbRaceGroup
             // 
             this.cmbRaceGroup.FormattingEnabled = true;
-            this.cmbRaceGroup.Location = new System.Drawing.Point(184, 27);
+            this.cmbRaceGroup.Location = new System.Drawing.Point(191, 36);
             this.cmbRaceGroup.Margin = new System.Windows.Forms.Padding(2);
             this.cmbRaceGroup.Name = "cmbRaceGroup";
             this.cmbRaceGroup.Size = new System.Drawing.Size(92, 21);
@@ -5857,7 +5660,8 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(4, 30);
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(4, 37);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(39, 13);
@@ -5867,7 +5671,7 @@
             // cmbRaceRound
             // 
             this.cmbRaceRound.FormattingEnabled = true;
-            this.cmbRaceRound.Location = new System.Drawing.Point(42, 27);
+            this.cmbRaceRound.Location = new System.Drawing.Point(49, 34);
             this.cmbRaceRound.Margin = new System.Windows.Forms.Padding(2);
             this.cmbRaceRound.Name = "cmbRaceRound";
             this.cmbRaceRound.Size = new System.Drawing.Size(92, 21);
@@ -5889,12 +5693,12 @@
             // 
             // btnRaceExport
             // 
-            this.btnRaceExport.Location = new System.Drawing.Point(32, 23);
+            this.btnRaceExport.Location = new System.Drawing.Point(45, 25);
             this.btnRaceExport.Margin = new System.Windows.Forms.Padding(2);
             this.btnRaceExport.Name = "btnRaceExport";
             this.btnRaceExport.Size = new System.Drawing.Size(96, 34);
             this.btnRaceExport.TabIndex = 0;
-            this.btnRaceExport.Text = "Export to Excel";
+            this.btnRaceExport.Text = "Export to CSV";
             this.btnRaceExport.UseVisualStyleBackColor = true;
             // 
             // pageRealMode
@@ -5916,7 +5720,7 @@
             this.pageRealMode.Padding = new System.Windows.Forms.Padding(3);
             this.pageRealMode.Size = new System.Drawing.Size(1331, 627);
             this.pageRealMode.TabIndex = 1;
-            this.pageRealMode.Text = "Tag Inventory(Real Time Mode)";
+            this.pageRealMode.Text = "RTM Debug";
             // 
             // groupBox20
             // 
@@ -5925,7 +5729,7 @@
             this.groupBox20.Controls.Add(this.cbRealWorkant3);
             this.groupBox20.Controls.Add(this.cbRealWorkant2);
             this.groupBox20.Controls.Add(this.label19);
-            this.groupBox20.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.groupBox20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox20.ForeColor = System.Drawing.Color.Black;
             this.groupBox20.Location = new System.Drawing.Point(1005, 64);
             this.groupBox20.Name = "groupBox20";
@@ -5939,10 +5743,10 @@
             this.cbRealWorkant1.AutoSize = true;
             this.cbRealWorkant1.Checked = true;
             this.cbRealWorkant1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbRealWorkant1.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cbRealWorkant1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbRealWorkant1.Location = new System.Drawing.Point(32, 24);
             this.cbRealWorkant1.Name = "cbRealWorkant1";
-            this.cbRealWorkant1.Size = new System.Drawing.Size(48, 16);
+            this.cbRealWorkant1.Size = new System.Drawing.Size(50, 19);
             this.cbRealWorkant1.TabIndex = 68;
             this.cbRealWorkant1.Text = "Ant1";
             this.cbRealWorkant1.UseVisualStyleBackColor = true;
@@ -5950,10 +5754,10 @@
             // cbRealWorkant4
             // 
             this.cbRealWorkant4.AutoSize = true;
-            this.cbRealWorkant4.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cbRealWorkant4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbRealWorkant4.Location = new System.Drawing.Point(31, 90);
             this.cbRealWorkant4.Name = "cbRealWorkant4";
-            this.cbRealWorkant4.Size = new System.Drawing.Size(48, 16);
+            this.cbRealWorkant4.Size = new System.Drawing.Size(50, 19);
             this.cbRealWorkant4.TabIndex = 67;
             this.cbRealWorkant4.Text = "Ant4";
             this.cbRealWorkant4.UseVisualStyleBackColor = true;
@@ -5961,10 +5765,10 @@
             // cbRealWorkant3
             // 
             this.cbRealWorkant3.AutoSize = true;
-            this.cbRealWorkant3.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cbRealWorkant3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbRealWorkant3.Location = new System.Drawing.Point(32, 68);
             this.cbRealWorkant3.Name = "cbRealWorkant3";
-            this.cbRealWorkant3.Size = new System.Drawing.Size(48, 16);
+            this.cbRealWorkant3.Size = new System.Drawing.Size(50, 19);
             this.cbRealWorkant3.TabIndex = 66;
             this.cbRealWorkant3.Text = "Ant3";
             this.cbRealWorkant3.UseVisualStyleBackColor = true;
@@ -5972,10 +5776,10 @@
             // cbRealWorkant2
             // 
             this.cbRealWorkant2.AutoSize = true;
-            this.cbRealWorkant2.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cbRealWorkant2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbRealWorkant2.Location = new System.Drawing.Point(32, 46);
             this.cbRealWorkant2.Name = "cbRealWorkant2";
-            this.cbRealWorkant2.Size = new System.Drawing.Size(48, 16);
+            this.cbRealWorkant2.Size = new System.Drawing.Size(50, 19);
             this.cbRealWorkant2.TabIndex = 65;
             this.cbRealWorkant2.Text = "Ant2";
             this.cbRealWorkant2.UseVisualStyleBackColor = true;
@@ -5985,7 +5789,7 @@
             this.label19.AutoSize = true;
             this.label19.Location = new System.Drawing.Point(51, 20);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(0, 12);
+            this.label19.Size = new System.Drawing.Size(0, 15);
             this.label19.TabIndex = 0;
             // 
             // tableLayoutPanel1
@@ -6019,7 +5823,7 @@
             // textRealRound
             // 
             this.textRealRound.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textRealRound.Location = new System.Drawing.Point(354, 16);
+            this.textRealRound.Location = new System.Drawing.Point(364, 16);
             this.textRealRound.Name = "textRealRound";
             this.textRealRound.Size = new System.Drawing.Size(28, 21);
             this.textRealRound.TabIndex = 48;
@@ -6029,16 +5833,16 @@
             // label84
             // 
             this.label84.AutoSize = true;
-            this.label84.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label84.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label84.Location = new System.Drawing.Point(231, 20);
             this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(119, 12);
+            this.label84.Size = new System.Drawing.Size(133, 15);
             this.label84.TabIndex = 2;
             this.label84.Text = "Repeat Per Command:";
             // 
             // btRealTimeInventory
             // 
-            this.btRealTimeInventory.Font = new System.Drawing.Font("SimSun", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btRealTimeInventory.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btRealTimeInventory.ForeColor = System.Drawing.Color.DarkBlue;
             this.btRealTimeInventory.Location = new System.Drawing.Point(75, 6);
             this.btRealTimeInventory.Name = "btRealTimeInventory";
@@ -6064,10 +5868,10 @@
             // cbRealSession
             // 
             this.cbRealSession.AutoSize = true;
-            this.cbRealSession.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cbRealSession.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbRealSession.Location = new System.Drawing.Point(29, 19);
             this.cbRealSession.Name = "cbRealSession";
-            this.cbRealSession.Size = new System.Drawing.Size(138, 16);
+            this.cbRealSession.Size = new System.Drawing.Size(138, 19);
             this.cbRealSession.TabIndex = 55;
             this.cbRealSession.Text = "User Define Session";
             this.cbRealSession.UseVisualStyleBackColor = true;
@@ -6091,10 +5895,10 @@
             // 
             this.label98.AutoSize = true;
             this.label98.Enabled = false;
-            this.label98.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label98.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label98.Location = new System.Drawing.Point(359, 20);
             this.label98.Name = "label98";
-            this.label98.Size = new System.Drawing.Size(107, 12);
+            this.label98.Size = new System.Drawing.Size(97, 15);
             this.label98.TabIndex = 53;
             this.label98.Text = "Inventoried Flag:";
             // 
@@ -6118,10 +5922,10 @@
             // 
             this.label97.AutoSize = true;
             this.label97.Enabled = false;
-            this.label97.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label97.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label97.Location = new System.Drawing.Point(196, 20);
             this.label97.Name = "label97";
-            this.label97.Size = new System.Drawing.Size(71, 12);
+            this.label97.Size = new System.Drawing.Size(69, 15);
             this.label97.TabIndex = 51;
             this.label97.Text = "Session ID:";
             // 
@@ -6147,7 +5951,7 @@
             // 
             // btRealFresh
             // 
-            this.btRealFresh.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btRealFresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btRealFresh.ForeColor = System.Drawing.SystemColors.Desktop;
             this.btRealFresh.Location = new System.Drawing.Point(771, 240);
             this.btRealFresh.Name = "btRealFresh";
@@ -6160,33 +5964,33 @@
             // label70
             // 
             this.label70.AutoSize = true;
-            this.label70.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label70.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label70.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label70.Location = new System.Drawing.Point(602, 243);
             this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(59, 12);
+            this.label70.Size = new System.Drawing.Size(65, 15);
             this.label70.TabIndex = 43;
             this.label70.Text = "Max RSSI:";
             // 
             // label74
             // 
             this.label74.AutoSize = true;
-            this.label74.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label74.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label74.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label74.Location = new System.Drawing.Point(417, 243);
             this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(59, 12);
+            this.label74.Size = new System.Drawing.Size(62, 15);
             this.label74.TabIndex = 44;
             this.label74.Text = "Min RSSI:";
             // 
             // lbRealTagCount
             // 
             this.lbRealTagCount.AutoSize = true;
-            this.lbRealTagCount.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lbRealTagCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbRealTagCount.ForeColor = System.Drawing.SystemColors.Desktop;
             this.lbRealTagCount.Location = new System.Drawing.Point(6, 243);
             this.lbRealTagCount.Name = "lbRealTagCount";
-            this.lbRealTagCount.Size = new System.Drawing.Size(59, 12);
+            this.lbRealTagCount.Size = new System.Drawing.Size(53, 15);
             this.lbRealTagCount.TabIndex = 42;
             this.lbRealTagCount.Text = "Tag List:";
             // 
@@ -6203,7 +6007,7 @@
             this.groupBox1.Controls.Add(this.label68);
             this.groupBox1.Controls.Add(this.label69);
             this.groupBox1.Controls.Add(this.ledReal1);
-            this.groupBox1.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.groupBox1.Location = new System.Drawing.Point(3, 64);
             this.groupBox1.Name = "groupBox1";
@@ -6247,7 +6051,7 @@
             "不选"});
             this.comboBox6.Location = new System.Drawing.Point(-165, 120);
             this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(55, 20);
+            this.comboBox6.Size = new System.Drawing.Size(55, 23);
             this.comboBox6.TabIndex = 39;
             // 
             // ledReal5
@@ -6319,55 +6123,55 @@
             // label53
             // 
             this.label53.AutoSize = true;
-            this.label53.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label53.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label53.Location = new System.Drawing.Point(700, 111);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(179, 12);
+            this.label53.Size = new System.Drawing.Size(165, 15);
             this.label53.TabIndex = 30;
             this.label53.Text = "Total Inventory Duration(mS):";
             // 
             // label66
             // 
             this.label66.AutoSize = true;
-            this.label66.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label66.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label66.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label66.Location = new System.Drawing.Point(495, 19);
             this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(95, 12);
+            this.label66.Size = new System.Drawing.Size(99, 15);
             this.label66.TabIndex = 29;
             this.label66.Text = "Speed(Tag/Sec):";
             // 
             // label67
             // 
             this.label67.AutoSize = true;
-            this.label67.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label67.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label67.Location = new System.Drawing.Point(498, 95);
             this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(131, 12);
+            this.label67.Size = new System.Drawing.Size(145, 15);
             this.label67.TabIndex = 28;
             this.label67.Text = "Command Duration(mS):";
             // 
             // label68
             // 
             this.label68.AutoSize = true;
-            this.label68.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label68.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label68.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label68.Location = new System.Drawing.Point(700, 38);
             this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(149, 12);
+            this.label68.Size = new System.Drawing.Size(151, 15);
             this.label68.TabIndex = 27;
             this.label68.Text = "Total Tag Communication:";
             // 
             // label69
             // 
             this.label69.AutoSize = true;
-            this.label69.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label69.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label69.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label69.Location = new System.Drawing.Point(104, 19);
             this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(131, 12);
+            this.label69.Size = new System.Drawing.Size(117, 15);
             this.label69.TabIndex = 26;
             this.label69.Text = "Inventoried Quantity:";
             // 
@@ -6403,7 +6207,7 @@
             this.columnHeader41,
             this.columnHeader42});
             this.lvRealList.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lvRealList.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lvRealList.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvRealList.GridLines = true;
             this.lvRealList.Location = new System.Drawing.Point(3, 267);
             this.lvRealList.Name = "lvRealList";
@@ -6468,7 +6272,7 @@
             this.tableLayoutPanel4.ColumnCount = 3;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.22422F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.77578F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 420F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 444F));
             this.tableLayoutPanel4.Controls.Add(this.panel9, 2, 0);
             this.tableLayoutPanel4.Controls.Add(this.panel10, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.panel8, 1, 0);
@@ -6487,9 +6291,9 @@
             this.panel9.Controls.Add(this.btGetClearBuffer);
             this.panel9.Controls.Add(this.btGetBuffer);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel9.Location = new System.Drawing.Point(912, 4);
+            this.panel9.Location = new System.Drawing.Point(888, 4);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(415, 81);
+            this.panel9.Size = new System.Drawing.Size(439, 81);
             this.panel9.TabIndex = 1;
             // 
             // btClearBuffer
@@ -6548,7 +6352,7 @@
             this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel10.Location = new System.Drawing.Point(4, 4);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(449, 81);
+            this.panel10.Size = new System.Drawing.Size(437, 81);
             this.panel10.TabIndex = 0;
             // 
             // btBufferInventory
@@ -6590,9 +6394,9 @@
             this.panel8.Controls.Add(this.cbBufferWorkant2);
             this.panel8.Controls.Add(this.cbBufferWorkant3);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(460, 4);
+            this.panel8.Location = new System.Drawing.Point(448, 4);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(445, 81);
+            this.panel8.Size = new System.Drawing.Size(433, 81);
             this.panel8.TabIndex = 0;
             // 
             // cbBufferWorkant1
@@ -6940,13 +6744,14 @@
             this.pageFast4AntMode.Controls.Add(this.lvFastList);
             this.pageFast4AntMode.Controls.Add(this.label49);
             this.pageFast4AntMode.Controls.Add(this.txtFastTagList);
+            this.pageFast4AntMode.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pageFast4AntMode.ForeColor = System.Drawing.SystemColors.Desktop;
             this.pageFast4AntMode.Location = new System.Drawing.Point(4, 22);
             this.pageFast4AntMode.Name = "pageFast4AntMode";
             this.pageFast4AntMode.Padding = new System.Windows.Forms.Padding(3);
             this.pageFast4AntMode.Size = new System.Drawing.Size(1331, 627);
             this.pageFast4AntMode.TabIndex = 0;
-            this.pageFast4AntMode.Text = "Tag Inventory(Fast Switch Antenna Mode)";
+            this.pageFast4AntMode.Text = "FSA Debug";
             this.pageFast4AntMode.Enter += new System.EventHandler(this.pageFast4AntMode_Enter);
             // 
             // groupBox2
@@ -6963,7 +6768,7 @@
             this.groupBox2.Controls.Add(this.label58);
             this.groupBox2.Controls.Add(this.ledFast1);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox2.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.groupBox2.Location = new System.Drawing.Point(3, 88);
             this.groupBox2.Name = "groupBox2";
@@ -7007,7 +6812,7 @@
             "不选"});
             this.comboBox7.Location = new System.Drawing.Point(-165, 120);
             this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(55, 20);
+            this.comboBox7.Size = new System.Drawing.Size(55, 23);
             this.comboBox7.TabIndex = 39;
             // 
             // ledFast5
@@ -7079,55 +6884,55 @@
             // label54
             // 
             this.label54.AutoSize = true;
-            this.label54.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label54.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label54.Location = new System.Drawing.Point(700, 111);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(179, 12);
+            this.label54.Size = new System.Drawing.Size(165, 15);
             this.label54.TabIndex = 30;
             this.label54.Text = "Total Inventory Duration(mS):";
             // 
             // label55
             // 
             this.label55.AutoSize = true;
-            this.label55.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label55.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label55.Location = new System.Drawing.Point(495, 19);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(95, 12);
+            this.label55.Size = new System.Drawing.Size(99, 15);
             this.label55.TabIndex = 29;
             this.label55.Text = "Speed(Tag/Sec):";
             // 
             // label56
             // 
             this.label56.AutoSize = true;
-            this.label56.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label56.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label56.Location = new System.Drawing.Point(498, 95);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(131, 12);
+            this.label56.Size = new System.Drawing.Size(145, 15);
             this.label56.TabIndex = 28;
             this.label56.Text = "Command Duration(mS):";
             // 
             // label57
             // 
             this.label57.AutoSize = true;
-            this.label57.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label57.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label57.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label57.Location = new System.Drawing.Point(717, 19);
             this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(149, 12);
+            this.label57.Size = new System.Drawing.Size(151, 15);
             this.label57.TabIndex = 27;
             this.label57.Text = "Total Tag Communication:";
             // 
             // label58
             // 
             this.label58.AutoSize = true;
-            this.label58.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label58.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label58.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label58.Location = new System.Drawing.Point(104, 19);
             this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(125, 12);
+            this.label58.Size = new System.Drawing.Size(114, 15);
             this.label58.TabIndex = 26;
             this.label58.Text = "Inventoried Quantity";
             // 
@@ -7171,7 +6976,7 @@
             // 
             // buttonFastFresh
             // 
-            this.buttonFastFresh.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.buttonFastFresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonFastFresh.ForeColor = System.Drawing.SystemColors.Desktop;
             this.buttonFastFresh.Location = new System.Drawing.Point(905, 271);
             this.buttonFastFresh.Name = "buttonFastFresh";
@@ -7188,7 +6993,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.20588F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.79412F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 393F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 429F));
             this.tableLayoutPanel2.Controls.Add(this.panel2, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel3, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel4, 2, 0);
@@ -7220,9 +7025,9 @@
             this.panel2.Controls.Add(this.label59);
             this.panel2.Controls.Add(this.label48);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(258, 5);
+            this.panel2.Location = new System.Drawing.Point(248, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(666, 75);
+            this.panel2.Size = new System.Drawing.Size(640, 75);
             this.panel2.TabIndex = 0;
             // 
             // txtDStay
@@ -7230,7 +7035,7 @@
             this.txtDStay.AcceptsReturn = true;
             this.txtDStay.Location = new System.Drawing.Point(469, 29);
             this.txtDStay.Name = "txtDStay";
-            this.txtDStay.Size = new System.Drawing.Size(42, 20);
+            this.txtDStay.Size = new System.Drawing.Size(42, 21);
             this.txtDStay.TabIndex = 59;
             this.txtDStay.Text = "1";
             this.txtDStay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -7239,7 +7044,7 @@
             // 
             this.txtCStay.Location = new System.Drawing.Point(336, 29);
             this.txtCStay.Name = "txtCStay";
-            this.txtCStay.Size = new System.Drawing.Size(42, 20);
+            this.txtCStay.Size = new System.Drawing.Size(42, 21);
             this.txtCStay.TabIndex = 58;
             this.txtCStay.Text = "1";
             this.txtCStay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -7248,7 +7053,7 @@
             // 
             this.txtBStay.Location = new System.Drawing.Point(203, 29);
             this.txtBStay.Name = "txtBStay";
-            this.txtBStay.Size = new System.Drawing.Size(42, 20);
+            this.txtBStay.Size = new System.Drawing.Size(42, 21);
             this.txtBStay.TabIndex = 57;
             this.txtBStay.Text = "1";
             this.txtBStay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -7257,7 +7062,7 @@
             // 
             this.txtAStay.Location = new System.Drawing.Point(69, 29);
             this.txtAStay.Name = "txtAStay";
-            this.txtAStay.Size = new System.Drawing.Size(42, 20);
+            this.txtAStay.Size = new System.Drawing.Size(42, 21);
             this.txtAStay.TabIndex = 56;
             this.txtAStay.Text = "1";
             this.txtAStay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -7265,22 +7070,22 @@
             // label64
             // 
             this.label64.AutoSize = true;
-            this.label64.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label64.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label64.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label64.Location = new System.Drawing.Point(467, 13);
             this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(35, 12);
+            this.label64.Size = new System.Drawing.Size(44, 15);
             this.label64.TabIndex = 39;
             this.label64.Text = "Round";
             // 
             // label65
             // 
             this.label65.AutoSize = true;
-            this.label65.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label65.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label65.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label65.Location = new System.Drawing.Point(431, 13);
             this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(11, 12);
+            this.label65.Size = new System.Drawing.Size(16, 15);
             this.label65.TabIndex = 38;
             this.label65.Text = "D";
             // 
@@ -7304,11 +7109,11 @@
             // label62
             // 
             this.label62.AutoSize = true;
-            this.label62.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label62.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label62.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label62.Location = new System.Drawing.Point(334, 13);
             this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(35, 12);
+            this.label62.Size = new System.Drawing.Size(44, 15);
             this.label62.TabIndex = 37;
             this.label62.Text = "Round";
             // 
@@ -7332,11 +7137,11 @@
             // label63
             // 
             this.label63.AutoSize = true;
-            this.label63.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label63.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label63.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label63.Location = new System.Drawing.Point(297, 13);
             this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(11, 12);
+            this.label63.Size = new System.Drawing.Size(15, 15);
             this.label63.TabIndex = 36;
             this.label63.Text = "C";
             // 
@@ -7360,11 +7165,11 @@
             // label60
             // 
             this.label60.AutoSize = true;
-            this.label60.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label60.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label60.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label60.Location = new System.Drawing.Point(201, 13);
             this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(35, 12);
+            this.label60.Size = new System.Drawing.Size(44, 15);
             this.label60.TabIndex = 35;
             this.label60.Text = "Round";
             // 
@@ -7388,33 +7193,33 @@
             // label61
             // 
             this.label61.AutoSize = true;
-            this.label61.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label61.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label61.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label61.Location = new System.Drawing.Point(161, 13);
             this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(11, 12);
+            this.label61.Size = new System.Drawing.Size(15, 15);
             this.label61.TabIndex = 34;
             this.label61.Text = "B";
             // 
             // label59
             // 
             this.label59.AutoSize = true;
-            this.label59.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label59.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label59.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label59.Location = new System.Drawing.Point(67, 13);
             this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(35, 12);
+            this.label59.Size = new System.Drawing.Size(44, 15);
             this.label59.TabIndex = 33;
             this.label59.Text = "Round";
             // 
             // label48
             // 
             this.label48.AutoSize = true;
-            this.label48.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label48.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label48.Location = new System.Drawing.Point(27, 13);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(11, 12);
+            this.label48.Size = new System.Drawing.Size(14, 15);
             this.label48.TabIndex = 32;
             this.label48.Text = "A";
             // 
@@ -7424,12 +7229,12 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(5, 5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(245, 75);
+            this.panel3.Size = new System.Drawing.Size(235, 75);
             this.panel3.TabIndex = 1;
             // 
             // btFastInventory
             // 
-            this.btFastInventory.Font = new System.Drawing.Font("SimSun", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btFastInventory.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btFastInventory.ForeColor = System.Drawing.Color.DarkBlue;
             this.btFastInventory.Location = new System.Drawing.Point(28, 17);
             this.btFastInventory.Name = "btFastInventory";
@@ -7446,25 +7251,25 @@
             this.panel4.Controls.Add(this.label73);
             this.panel4.Controls.Add(this.label72);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(932, 5);
+            this.panel4.Location = new System.Drawing.Point(896, 5);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(388, 75);
+            this.panel4.Size = new System.Drawing.Size(424, 75);
             this.panel4.TabIndex = 2;
             // 
             // txtRepeat
             // 
-            this.txtRepeat.Location = new System.Drawing.Point(187, 28);
+            this.txtRepeat.Location = new System.Drawing.Point(286, 28);
             this.txtRepeat.Name = "txtRepeat";
-            this.txtRepeat.Size = new System.Drawing.Size(42, 20);
+            this.txtRepeat.Size = new System.Drawing.Size(42, 21);
             this.txtRepeat.TabIndex = 58;
             this.txtRepeat.Text = "10";
             this.txtRepeat.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtInterval
             // 
-            this.txtInterval.Location = new System.Drawing.Point(65, 28);
+            this.txtInterval.Location = new System.Drawing.Point(156, 26);
             this.txtInterval.Name = "txtInterval";
-            this.txtInterval.Size = new System.Drawing.Size(42, 20);
+            this.txtInterval.Size = new System.Drawing.Size(42, 21);
             this.txtInterval.TabIndex = 57;
             this.txtInterval.Text = "0";
             this.txtInterval.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -7472,33 +7277,33 @@
             // label73
             // 
             this.label73.AutoSize = true;
-            this.label73.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label73.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label73.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label73.Location = new System.Drawing.Point(11, 13);
+            this.label73.Location = new System.Drawing.Point(6, 29);
             this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(149, 12);
+            this.label73.Size = new System.Drawing.Size(144, 15);
             this.label73.TabIndex = 36;
             this.label73.Text = "Interval Between Ant(mS)";
             // 
             // label72
             // 
             this.label72.AutoSize = true;
-            this.label72.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label72.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label72.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label72.Location = new System.Drawing.Point(188, 13);
+            this.label72.Location = new System.Drawing.Point(224, 31);
             this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(41, 12);
+            this.label72.Size = new System.Drawing.Size(47, 15);
             this.label72.TabIndex = 37;
             this.label72.Text = "Repeat";
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label22.Location = new System.Drawing.Point(634, 276);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(59, 12);
+            this.label22.Size = new System.Drawing.Size(65, 15);
             this.label22.TabIndex = 26;
             this.label22.Text = "Max RSSI:";
             // 
@@ -7512,7 +7317,7 @@
             this.columnHeader35,
             this.columnHeader36});
             this.lvFastList.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lvFastList.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lvFastList.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvFastList.GridLines = true;
             this.lvFastList.Location = new System.Drawing.Point(3, 298);
             this.lvFastList.Name = "lvFastList";
@@ -7559,22 +7364,22 @@
             // label49
             // 
             this.label49.AutoSize = true;
-            this.label49.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label49.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label49.Location = new System.Drawing.Point(428, 276);
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(59, 12);
+            this.label49.Size = new System.Drawing.Size(62, 15);
             this.label49.TabIndex = 27;
             this.label49.Text = "Min RSSI:";
             // 
             // txtFastTagList
             // 
             this.txtFastTagList.AutoSize = true;
-            this.txtFastTagList.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtFastTagList.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFastTagList.ForeColor = System.Drawing.SystemColors.Desktop;
             this.txtFastTagList.Location = new System.Drawing.Point(6, 276);
             this.txtFastTagList.Name = "txtFastTagList";
-            this.txtFastTagList.Size = new System.Drawing.Size(59, 12);
+            this.txtFastTagList.Size = new System.Drawing.Size(53, 15);
             this.txtFastTagList.TabIndex = 23;
             this.txtFastTagList.Text = "Tag List:";
             // 
@@ -7587,7 +7392,7 @@
             this.pageAcessTag.Name = "pageAcessTag";
             this.pageAcessTag.Size = new System.Drawing.Size(1331, 627);
             this.pageAcessTag.TabIndex = 3;
-            this.pageAcessTag.Text = "Access Tag";
+            this.pageAcessTag.Text = "Tag R/W";
             this.pageAcessTag.UseVisualStyleBackColor = true;
             // 
             // ltvOperate
@@ -7602,7 +7407,7 @@
             this.columnHeader14,
             this.columnHeader15});
             this.ltvOperate.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ltvOperate.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ltvOperate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ltvOperate.GridLines = true;
             this.ltvOperate.Location = new System.Drawing.Point(0, 348);
             this.ltvOperate.Name = "ltvOperate";
@@ -7663,7 +7468,7 @@
             this.gbCmdOperateTag.Controls.Add(this.groupBox14);
             this.gbCmdOperateTag.Controls.Add(this.groupBox13);
             this.gbCmdOperateTag.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gbCmdOperateTag.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.gbCmdOperateTag.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbCmdOperateTag.Location = new System.Drawing.Point(0, 0);
             this.gbCmdOperateTag.Name = "gbCmdOperateTag";
             this.gbCmdOperateTag.Size = new System.Drawing.Size(1331, 348);
@@ -7704,9 +7509,9 @@
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(307, 27);
+            this.label29.Location = new System.Drawing.Point(284, 27);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(119, 12);
+            this.label29.Size = new System.Drawing.Size(117, 15);
             this.label29.TabIndex = 13;
             this.label29.Text = "Kill Password(HEX):";
             // 
@@ -7737,7 +7542,7 @@
             this.label28.AutoSize = true;
             this.label28.Location = new System.Drawing.Point(606, 53);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(131, 12);
+            this.label28.Size = new System.Drawing.Size(138, 15);
             this.label28.TabIndex = 12;
             this.label28.Text = "Access Password(HEX):";
             // 
@@ -7759,7 +7564,7 @@
             this.rdbUserMemory.AutoSize = true;
             this.rdbUserMemory.Location = new System.Drawing.Point(464, 16);
             this.rdbUserMemory.Name = "rdbUserMemory";
-            this.rdbUserMemory.Size = new System.Drawing.Size(47, 16);
+            this.rdbUserMemory.Size = new System.Drawing.Size(59, 19);
             this.rdbUserMemory.TabIndex = 4;
             this.rdbUserMemory.TabStop = true;
             this.rdbUserMemory.Text = "USER";
@@ -7770,7 +7575,7 @@
             this.rdbTidMemory.AutoSize = true;
             this.rdbTidMemory.Location = new System.Drawing.Point(375, 16);
             this.rdbTidMemory.Name = "rdbTidMemory";
-            this.rdbTidMemory.Size = new System.Drawing.Size(41, 16);
+            this.rdbTidMemory.Size = new System.Drawing.Size(44, 19);
             this.rdbTidMemory.TabIndex = 3;
             this.rdbTidMemory.TabStop = true;
             this.rdbTidMemory.Text = "TID";
@@ -7781,7 +7586,7 @@
             this.rdbEpcMermory.AutoSize = true;
             this.rdbEpcMermory.Location = new System.Drawing.Point(269, 16);
             this.rdbEpcMermory.Name = "rdbEpcMermory";
-            this.rdbEpcMermory.Size = new System.Drawing.Size(41, 16);
+            this.rdbEpcMermory.Size = new System.Drawing.Size(49, 19);
             this.rdbEpcMermory.TabIndex = 2;
             this.rdbEpcMermory.TabStop = true;
             this.rdbEpcMermory.Text = "EPC";
@@ -7792,7 +7597,7 @@
             this.rdbKillPwd.AutoSize = true;
             this.rdbKillPwd.Location = new System.Drawing.Point(142, 16);
             this.rdbKillPwd.Name = "rdbKillPwd";
-            this.rdbKillPwd.Size = new System.Drawing.Size(101, 16);
+            this.rdbKillPwd.Size = new System.Drawing.Size(99, 19);
             this.rdbKillPwd.TabIndex = 1;
             this.rdbKillPwd.TabStop = true;
             this.rdbKillPwd.Text = "Kill Password";
@@ -7803,7 +7608,7 @@
             this.rdbAccessPwd.AutoSize = true;
             this.rdbAccessPwd.Location = new System.Drawing.Point(9, 16);
             this.rdbAccessPwd.Name = "rdbAccessPwd";
-            this.rdbAccessPwd.Size = new System.Drawing.Size(113, 16);
+            this.rdbAccessPwd.Size = new System.Drawing.Size(120, 19);
             this.rdbAccessPwd.TabIndex = 0;
             this.rdbAccessPwd.TabStop = true;
             this.rdbAccessPwd.Text = "Access Password";
@@ -7824,9 +7629,9 @@
             // rdbLockEver
             // 
             this.rdbLockEver.AutoSize = true;
-            this.rdbLockEver.Location = new System.Drawing.Point(464, 15);
+            this.rdbLockEver.Location = new System.Drawing.Point(453, 15);
             this.rdbLockEver.Name = "rdbLockEver";
-            this.rdbLockEver.Size = new System.Drawing.Size(107, 16);
+            this.rdbLockEver.Size = new System.Drawing.Size(115, 19);
             this.rdbLockEver.TabIndex = 3;
             this.rdbLockEver.TabStop = true;
             this.rdbLockEver.Text = "Permanent Lock";
@@ -7837,7 +7642,7 @@
             this.rdbFreeEver.AutoSize = true;
             this.rdbFreeEver.Location = new System.Drawing.Point(293, 15);
             this.rdbFreeEver.Name = "rdbFreeEver";
-            this.rdbFreeEver.Size = new System.Drawing.Size(107, 16);
+            this.rdbFreeEver.Size = new System.Drawing.Size(119, 19);
             this.rdbFreeEver.TabIndex = 2;
             this.rdbFreeEver.TabStop = true;
             this.rdbFreeEver.Text = "Permanent Open";
@@ -7848,7 +7653,7 @@
             this.rdbLock.AutoSize = true;
             this.rdbLock.Location = new System.Drawing.Point(144, 15);
             this.rdbLock.Name = "rdbLock";
-            this.rdbLock.Size = new System.Drawing.Size(47, 16);
+            this.rdbLock.Size = new System.Drawing.Size(51, 19);
             this.rdbLock.TabIndex = 1;
             this.rdbLock.TabStop = true;
             this.rdbLock.Text = "Lock";
@@ -7859,7 +7664,7 @@
             this.rdbFree.AutoSize = true;
             this.rdbFree.Location = new System.Drawing.Point(9, 15);
             this.rdbFree.Name = "rdbFree";
-            this.rdbFree.Size = new System.Drawing.Size(47, 16);
+            this.rdbFree.Size = new System.Drawing.Size(55, 19);
             this.rdbFree.TabIndex = 0;
             this.rdbFree.TabStop = true;
             this.rdbFree.Text = "Open";
@@ -7915,7 +7720,7 @@
             this.label27.AutoSize = true;
             this.label27.Location = new System.Drawing.Point(719, 29);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(83, 12);
+            this.label27.Size = new System.Drawing.Size(94, 15);
             this.label27.TabIndex = 8;
             this.label27.Text = "Length(WORD):";
             // 
@@ -7951,7 +7756,7 @@
             this.label26.AutoSize = true;
             this.label26.Location = new System.Drawing.Point(548, 29);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(101, 12);
+            this.label26.Size = new System.Drawing.Size(105, 15);
             this.label26.TabIndex = 4;
             this.label26.Text = "Start Add(WORD):";
             // 
@@ -7967,7 +7772,7 @@
             this.label25.AutoSize = true;
             this.label25.Location = new System.Drawing.Point(273, 29);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(131, 12);
+            this.label25.Size = new System.Drawing.Size(138, 15);
             this.label25.TabIndex = 2;
             this.label25.Text = "Access Password(HEX):";
             // 
@@ -7986,9 +7791,9 @@
             // rdbUser
             // 
             this.rdbUser.AutoSize = true;
-            this.rdbUser.Location = new System.Drawing.Point(189, 14);
+            this.rdbUser.Location = new System.Drawing.Point(179, 14);
             this.rdbUser.Name = "rdbUser";
-            this.rdbUser.Size = new System.Drawing.Size(47, 16);
+            this.rdbUser.Size = new System.Drawing.Size(59, 19);
             this.rdbUser.TabIndex = 3;
             this.rdbUser.TabStop = true;
             this.rdbUser.Text = "USER";
@@ -7999,7 +7804,7 @@
             this.rdbTid.AutoSize = true;
             this.rdbTid.Location = new System.Drawing.Point(130, 14);
             this.rdbTid.Name = "rdbTid";
-            this.rdbTid.Size = new System.Drawing.Size(41, 16);
+            this.rdbTid.Size = new System.Drawing.Size(44, 19);
             this.rdbTid.TabIndex = 2;
             this.rdbTid.TabStop = true;
             this.rdbTid.Text = "TID";
@@ -8010,7 +7815,7 @@
             this.rdbEpc.AutoSize = true;
             this.rdbEpc.Location = new System.Drawing.Point(83, 14);
             this.rdbEpc.Name = "rdbEpc";
-            this.rdbEpc.Size = new System.Drawing.Size(41, 16);
+            this.rdbEpc.Size = new System.Drawing.Size(49, 19);
             this.rdbEpc.TabIndex = 1;
             this.rdbEpc.TabStop = true;
             this.rdbEpc.Text = "EPC";
@@ -8019,9 +7824,9 @@
             // rdbReserved
             // 
             this.rdbReserved.AutoSize = true;
-            this.rdbReserved.Location = new System.Drawing.Point(6, 14);
+            this.rdbReserved.Location = new System.Drawing.Point(5, 14);
             this.rdbReserved.Name = "rdbReserved";
-            this.rdbReserved.Size = new System.Drawing.Size(71, 16);
+            this.rdbReserved.Size = new System.Drawing.Size(79, 19);
             this.rdbReserved.TabIndex = 0;
             this.rdbReserved.TabStop = true;
             this.rdbReserved.Text = "Password";
@@ -8032,7 +7837,7 @@
             this.label24.AutoSize = true;
             this.label24.Location = new System.Drawing.Point(16, 78);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(149, 12);
+            this.label24.Size = new System.Drawing.Size(138, 15);
             this.label24.TabIndex = 0;
             this.label24.Text = "Data to be written(HEX):";
             // 
@@ -8056,7 +7861,7 @@
             this.label23.AutoSize = true;
             this.label23.Location = new System.Drawing.Point(468, 24);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(59, 12);
+            this.label23.Size = new System.Drawing.Size(53, 15);
             this.label23.TabIndex = 4;
             this.label23.Text = "Tag List:";
             // 
@@ -8076,7 +7881,7 @@
             this.cmbSetAccessEpcMatch.FormattingEnabled = true;
             this.cmbSetAccessEpcMatch.Location = new System.Drawing.Point(533, 20);
             this.cmbSetAccessEpcMatch.Name = "cmbSetAccessEpcMatch";
-            this.cmbSetAccessEpcMatch.Size = new System.Drawing.Size(323, 20);
+            this.cmbSetAccessEpcMatch.Size = new System.Drawing.Size(323, 23);
             this.cmbSetAccessEpcMatch.TabIndex = 2;
             this.cmbSetAccessEpcMatch.DropDown += new System.EventHandler(this.cmbSetAccessEpcMatch_DropDown);
             // 
@@ -8093,7 +7898,7 @@
             this.ckAccessEpcMatch.AutoSize = true;
             this.ckAccessEpcMatch.Location = new System.Drawing.Point(16, 22);
             this.ckAccessEpcMatch.Name = "ckAccessEpcMatch";
-            this.ckAccessEpcMatch.Size = new System.Drawing.Size(102, 16);
+            this.ckAccessEpcMatch.Size = new System.Drawing.Size(101, 19);
             this.ckAccessEpcMatch.TabIndex = 0;
             this.ckAccessEpcMatch.Text = "Selected Tag:";
             this.ckAccessEpcMatch.UseVisualStyleBackColor = true;
@@ -8562,6 +8367,18 @@
             this.lrtxtDataTran.Text = "";
             this.lrtxtDataTran.DoubleClick += new System.EventHandler(this.lrtxtDataTran_DoubleClick);
             // 
+            // Pc
+            // 
+            this.Pc.Name = "Pc";
+            // 
+            // Rssi
+            // 
+            this.Rssi.Name = "Rssi";
+            // 
+            // CarrFrequency
+            // 
+            this.CarrFrequency.Name = "CarrFrequency";
+            // 
             // panel12
             // 
             this.panel12.Controls.Add(this.label114);
@@ -8899,7 +8716,7 @@
             this.label80.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label80.Location = new System.Drawing.Point(495, 17);
             this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(120, 13);
+            this.label80.Size = new System.Drawing.Size(117, 13);
             this.label80.TabIndex = 29;
             this.label80.Text = "命令识别速度(个/秒)：";
             // 
@@ -9185,17 +9002,6 @@
             this.timerInventory.Interval = 500;
             this.timerInventory.Tick += new System.EventHandler(this.timerInventory_Tick);
             // 
-            // btnRaceSave
-            // 
-            this.btnRaceSave.Location = new System.Drawing.Point(499, 38);
-            this.btnRaceSave.Margin = new System.Windows.Forms.Padding(2);
-            this.btnRaceSave.Name = "btnRaceSave";
-            this.btnRaceSave.Size = new System.Drawing.Size(134, 35);
-            this.btnRaceSave.TabIndex = 2;
-            this.btnRaceSave.Text = "Confirm and Save";
-            this.btnRaceSave.UseVisualStyleBackColor = true;
-            this.btnRaceSave.Click += new System.EventHandler(this.btnRaceSave_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -9209,7 +9015,7 @@
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "RFID Chrono Timing System v1.0";
+            this.Text = "RFID Chrono Timing System v1.0 by RC-WORKS | 3D-WORKS | CHRONOSYSTEM";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.tabCtrMain.ResumeLayout(false);
             this.PagReaderSetting.ResumeLayout(false);
@@ -9940,13 +9746,6 @@
         private System.Windows.Forms.Label label117;
         private System.Windows.Forms.Label label118;
         private System.Windows.Forms.ComboBox cmbRaceMode;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nicknameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn teamDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tagDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
         private System.Windows.Forms.DataGridViewTextBoxColumn OrderNumber;
         private System.Windows.Forms.DataGridViewTextBoxColumn PilotName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Epc;
@@ -10197,6 +9996,15 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn153;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn154;
         private System.Windows.Forms.Button btnRaceSave;
+        private System.Windows.Forms.Button btnClearDB;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nicknameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn teamDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tagDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
     }
 }
 

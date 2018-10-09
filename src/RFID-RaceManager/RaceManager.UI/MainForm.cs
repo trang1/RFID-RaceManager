@@ -17,6 +17,7 @@ using System.Threading.Tasks;
 using RaceManager.Data;
 using ApplicationContext = RaceManager.Data.ApplicationContext;
 using Color = System.Drawing.Color;
+using System.Data.SQLite;
 
 namespace RaceManager.UI
 {
@@ -50,7 +51,7 @@ namespace RaceManager.UI
         //Frequency of list updating.
         private int m_nRealRate = 20;
         //Record quick poll antenna parameter.
-        private byte[] m_btAryData=new byte[10];
+        private byte[] m_btAryData = new byte[10];
         //Record the total number of quick poll times.
         private int m_nSwitchTotal = 0;
         private int m_nSwitchTime = 0;
@@ -133,17 +134,17 @@ namespace RaceManager.UI
             //gbRS232.Enabled = false;
             gbTcpIp.Enabled = false;
 
-            if(!Debugger.IsAttached)
+            if (!Debugger.IsAttached)
                 SetFormEnable(false);
             //rdbRS232.Checked = true;
 
             //Initialization connect the default configuration of reader.
             //cmbComPort.SelectedIndex = 0;
             //cmbBaudrate.SelectedIndex = 1;
-            ipIpServer.IpAddressStr = "192.168.0.178";
+            ipIpServer.IpAddressStr = "192.168.1.200";
             txtTcpPort.Text = "4001";
 
-            
+
             rdbInventoryRealTag_CheckedChanged(sender, e);
             cmbSession.SelectedIndex = 0;
             cmbTarget.SelectedIndex = 0;
@@ -163,9 +164,9 @@ namespace RaceManager.UI
             tabCtrMain.TabPages.Remove(PagTranDataLog);
             tabCtrMain.TabPages.Remove(PagISO18000);
 
-          //  tabEpcTest.Controls.Remove(pageRealMode);
+            //  tabEpcTest.Controls.Remove(pageRealMode);
             tabEpcTest.Controls.Remove(pageBufferedMode);
-           // tabEpcTest.Controls.Remove(pageFast4AntMode);
+            // tabEpcTest.Controls.Remove(pageFast4AntMode);
 
             btnRaceStop.Enabled = false;
 
@@ -179,7 +180,7 @@ namespace RaceManager.UI
                 string strLog = CCommondMethod.ByteArrayToString(btAryReceiveData, 0, btAryReceiveData.Length);
 
                 WriteLog(lrtxtDataTran, strLog, 1);
-            }            
+            }
         }
 
         private void SendData(byte[] btArySendData)
@@ -189,7 +190,7 @@ namespace RaceManager.UI
                 string strLog = CCommondMethod.ByteArrayToString(btArySendData, 0, btArySendData.Length);
 
                 WriteLog(lrtxtDataTran, strLog, 0);
-            }            
+            }
         }
 
         private void AnalyData(Reader.MessageTran msgTran)
@@ -199,7 +200,7 @@ namespace RaceManager.UI
             {
                 return;
             }
-            switch(msgTran.Cmd)
+            switch (msgTran.Cmd)
             {
                 case 0x69:
                     ProcessSetProfile(msgTran);
@@ -267,7 +268,7 @@ namespace RaceManager.UI
                 case 0x68:
                     ProcessGetReaderIdentifier(msgTran);
                     break;
-                              
+
                 case 0x80:
                     ProcessInventory(msgTran);
                     break;
@@ -377,7 +378,7 @@ namespace RaceManager.UI
             }
             else
             {
-                switch(btCmd)
+                switch (btCmd)
                 {
                     case 0x80:
                         {
@@ -395,15 +396,15 @@ namespace RaceManager.UI
                             int commandDuration = 0;
                             if (m_curInventoryBuffer.nReadRate > 0)
                             {
-                                commandDuration = m_curInventoryBuffer.nDataCount *1000/m_curInventoryBuffer.nReadRate;
+                                commandDuration = m_curInventoryBuffer.nDataCount * 1000 / m_curInventoryBuffer.nReadRate;
                             }
                             ledBuffer3.Text = commandDuration.ToString();
                             int currentAntDisplay = 0;
                             currentAntDisplay = m_curInventoryBuffer.nCurrentAnt + 1;
-                            
+
                         }
                         break;
-                    case 0x90:                        
+                    case 0x90:
                     case 0x91:
                         {
                             int nCount = lvBufferList.Items.Count;
@@ -420,14 +421,14 @@ namespace RaceManager.UI
                             string strTemp = (Convert.ToInt32(row[4].ToString()) - 129).ToString() + "dBm";
                             item.SubItems.Add(strTemp);
                             byte byTemp = Convert.ToByte(row[4]);
-                         /*   if (byTemp > 0x50)
-                            {
-                                item.BackColor = Color.PowderBlue;
-                            }
-                            else if (byTemp < 0x30)
-                            {
-                                item.BackColor = Color.LemonChiffon;
-                            } */
+                            /*   if (byTemp > 0x50)
+                               {
+                                   item.BackColor = Color.PowderBlue;
+                               }
+                               else if (byTemp < 0x30)
+                               {
+                                   item.BackColor = Color.LemonChiffon;
+                               } */
 
                             item.SubItems.Add(row[5].ToString());
 
@@ -435,17 +436,17 @@ namespace RaceManager.UI
                             lvBufferList.Items[nCount].EnsureVisible();
 
                             labelBufferTagCount.Text = "Tag List: " + m_curInventoryBuffer.nTagCount.ToString() + " ";
-                           
+
                         }
                         break;
                     case 0x92:
                         {
-                           
+
                         }
                         break;
                     case 0x93:
                         {
-                            
+
                         }
                         break;
                     default:
@@ -464,7 +465,7 @@ namespace RaceManager.UI
             }
             else
             {
-                switch(btCmd)
+                switch (btCmd)
                 {
                     case 0x81:
                     case 0x82:
@@ -510,7 +511,7 @@ namespace RaceManager.UI
             }
             else
             {
-                switch(btCmd)
+                switch (btCmd)
                 {
                     case 0x89:
                     case 0x8B:
@@ -538,10 +539,10 @@ namespace RaceManager.UI
                             //Variable of list
                             int nEpcCount = 0;
                             int nEpcLength = m_curInventoryBuffer.dtTagTable.Rows.Count;
-                                                       
+
                             ledReal1.Text = nTagCount.ToString();
                             ledReal2.Text = nCaculatedReadRate.ToString();
-                            
+
                             ledReal5.Text = nTotalTime.ToString();
                             ledReal3.Text = nTotalRead.ToString();
                             ledReal4.Text = nCommandDuation.ToString();  //The actual command execution time.
@@ -550,8 +551,8 @@ namespace RaceManager.UI
                             lbRealTagCount.Text = "Tags' EPC list (no-repeat): " + nTagCount.ToString() + " ";
 
                             nEpcCount = lvRealList.Items.Count;
-                                
-                                                        
+
+
                             if (nEpcCount < nEpcLength)
                             {
                                 DataRow row = m_curInventoryBuffer.dtTagTable.Rows[nEpcLength - 1];
@@ -660,18 +661,18 @@ namespace RaceManager.UI
                             //    ltvInventoryTag.Items.Add(item);
                             //    ltvInventoryTag.Items[nDetailCount].EnsureVisible();
                             //}
-                            
-                            
+
+
                         }
                         break;
 
-                   
+
                     case 0x00:
                     case 0x01:
                         {
                             m_bLockTab = false;
-                                                      
-                            
+
+
                         }
                         break;
                     default:
@@ -680,7 +681,7 @@ namespace RaceManager.UI
             }
         }
 
-     
+
 
         private delegate void RefreshFastSwitchUnsafe(byte btCmd);
         private void RefreshFastSwitch(byte btCmd)
@@ -692,7 +693,7 @@ namespace RaceManager.UI
             }
             else
             {
-                switch(btCmd)
+                switch (btCmd)
                 {
                     case 0x00:
                         {
@@ -715,7 +716,7 @@ namespace RaceManager.UI
 
                             ledFast5.Text = nTotalTime.ToString(); //Total inventory duration
                             ledFast4.Text = nTotalRead.ToString();
-                           
+
                             txtFastMaxRssi.Text = (m_curInventoryBuffer.nMaxRSSI - 129).ToString() + "dBm";
                             txtFastMinRssi.Text = (m_curInventoryBuffer.nMinRSSI - 129).ToString() + "dBm";
                             txtFastTagList.Text = "Tags' EPC list (no-repeat): " + nTagCount.ToString() + " ";
@@ -776,7 +777,7 @@ namespace RaceManager.UI
                         break;
                     default:
                         break;
-                }                
+                }
             }
         }
 
@@ -791,7 +792,7 @@ namespace RaceManager.UI
             else
             {
                 //htxtReadId.Text = string.Format("{0:X2}", m_curSetting.btReadId);
-                switch(btCmd)
+                switch (btCmd)
                 {
                     case 0x6A:
                         if (m_curSetting.btLinkProfile == 0xd0)
@@ -813,7 +814,7 @@ namespace RaceManager.UI
                         else
                         {
                         }
-                        
+
                         break;
                     case 0x68:
                         htbGetIdentifier.Text = m_curSetting.btReaderIdentifier;
@@ -836,7 +837,7 @@ namespace RaceManager.UI
                         break;
                     case 0x79:
                         {
-                            switch(m_curSetting.btRegion)
+                            switch (m_curSetting.btRegion)
                             {
                                 case 0x01:
                                     {
@@ -921,7 +922,7 @@ namespace RaceManager.UI
                         }
                         break;
 
-                    
+
                     case 0x8E:
                         {
                             if (m_curSetting.btMonzaStatus == 0x8D)
@@ -977,31 +978,31 @@ namespace RaceManager.UI
             else
             {
                 //Verify whether all antennas are completed inventory
-                if ( m_curInventoryBuffer.nIndexAntenna < m_curInventoryBuffer.lAntenna.Count - 1 || m_curInventoryBuffer.nCommond == 0)
+                if (m_curInventoryBuffer.nIndexAntenna < m_curInventoryBuffer.lAntenna.Count - 1 || m_curInventoryBuffer.nCommond == 0)
                 {
                     if (m_curInventoryBuffer.nCommond == 0)
                     {
                         m_curInventoryBuffer.nCommond = 1;
-                        
+
                         if (m_curInventoryBuffer.bLoopInventoryReal)
                         {
                             //m_bLockTab = true;
                             //btnInventory.Enabled = false;
                             if (m_curInventoryBuffer.bLoopCustomizedSession)//User define Session and Inventoried Flag. 
                             {
-                                reader.CustomizedInventory(m_curSetting.btReadId, m_curInventoryBuffer.btSession, m_curInventoryBuffer.btTarget, m_curInventoryBuffer.btRepeat); 
+                                reader.CustomizedInventory(m_curSetting.btReadId, m_curInventoryBuffer.btSession, m_curInventoryBuffer.btTarget, m_curInventoryBuffer.btRepeat);
                             }
                             else //Inventory tags in real time mode
                             {
                                 reader.InventoryReal(m_curSetting.btReadId, m_curInventoryBuffer.btRepeat);
-                                
+
                             }
                         }
                         else
                         {
                             if (m_curInventoryBuffer.bLoopInventory)
                                 reader.Inventory(m_curSetting.btReadId, m_curInventoryBuffer.btRepeat);
-                        }                        
+                        }
                     }
                     else
                     {
@@ -1049,11 +1050,11 @@ namespace RaceManager.UI
             if (this.InvokeRequired)
             {
                 RefreshISO18000Unsafe InvokeRefreshISO18000 = new RefreshISO18000Unsafe(RefreshISO18000);
-                this.Invoke(InvokeRefreshISO18000, new object[] {btCmd });
+                this.Invoke(InvokeRefreshISO18000, new object[] { btCmd });
             }
             else
             {
-                switch(btCmd)
+                switch (btCmd)
                 {
                     case 0xb0:
                         {
@@ -1158,41 +1159,41 @@ namespace RaceManager.UI
             }
         }
 
-     /*   private void rdbRS232_CheckedChanged(object sender, EventArgs e)
-        {
-            if (rdbRS232.Checked)
-            {
-                gbRS232.Enabled = true;
-                btnDisconnectRs232.Enabled = false;
+        /*   private void rdbRS232_CheckedChanged(object sender, EventArgs e)
+           {
+               if (rdbRS232.Checked)
+               {
+                   gbRS232.Enabled = true;
+                   btnDisconnectRs232.Enabled = false;
 
-                //Set button font color
-                btnConnectRs232.ForeColor = Color.Indigo;
-                SetButtonBold(btnConnectRs232);
-                if (btnConnectTcp.Font.Bold)
-                {
-                    SetButtonBold(btnConnectTcp);
-                }                
-                
-                gbTcpIp.Enabled = false;
-            }
-        }*/
+                   //Set button font color
+                   btnConnectRs232.ForeColor = Color.Indigo;
+                   SetButtonBold(btnConnectRs232);
+                   if (btnConnectTcp.Font.Bold)
+                   {
+                       SetButtonBold(btnConnectTcp);
+                   }                
+
+                   gbTcpIp.Enabled = false;
+               }
+           }*/
 
         private void rdbTcpIp_CheckedChanged(object sender, EventArgs e)
         {
             //if (rdbTcpIp.Checked)
             //{
-                gbTcpIp.Enabled = true;
-                btnDisconnectTcp.Enabled = false;
+            gbTcpIp.Enabled = true;
+            btnDisconnectTcp.Enabled = false;
 
-                //Set button font color
-                btnConnectTcp.ForeColor = Color.Indigo;
-              //  if (btnConnectRs232.Font.Bold)
-              //  {
-              //      SetButtonBold(btnConnectRs232);
-              //  }                
-                SetButtonBold(btnConnectTcp);
-                
-              //  gbRS232.Enabled = false;
+            //Set button font color
+            btnConnectTcp.ForeColor = Color.Indigo;
+            //  if (btnConnectRs232.Font.Bold)
+            //  {
+            //      SetButtonBold(btnConnectRs232);
+            //  }                
+            SetButtonBold(btnConnectTcp);
+
+            //  gbRS232.Enabled = false;
             //}
         }
 
@@ -1229,7 +1230,7 @@ namespace RaceManager.UI
 
             btnResetReader.Enabled = bIsEnable;
 
-           
+
             gbCmdOperateTag.Enabled = bIsEnable;
 
             btnInventoryISO18000.Enabled = bIsEnable;
@@ -1250,57 +1251,57 @@ namespace RaceManager.UI
             btRfSetup.Enabled = bIsEnable;
         }
 
-     /*   private void btnConnectRs232_Click(object sender, EventArgs e)
-        {
-            //Processing serial port to connect reader.
-            string strException = string.Empty;
-            string strComPort = cmbComPort.Text;
-            int nBaudrate=Convert.ToInt32(cmbBaudrate.Text);
+        /*   private void btnConnectRs232_Click(object sender, EventArgs e)
+           {
+               //Processing serial port to connect reader.
+               string strException = string.Empty;
+               string strComPort = cmbComPort.Text;
+               int nBaudrate=Convert.ToInt32(cmbBaudrate.Text);
 
-            int nRet = reader.OpenCom(strComPort, nBaudrate, out strException);
-            if (nRet != 0)
-            {
-                string strLog = "Connection failed, failure cause: " + strException; 
-                WriteLog(lrtxtLog, strLog, 1);
+               int nRet = reader.OpenCom(strComPort, nBaudrate, out strException);
+               if (nRet != 0)
+               {
+                   string strLog = "Connection failed, failure cause: " + strException; 
+                   WriteLog(lrtxtLog, strLog, 1);
 
-                return;
-            }
-            else
-            {
-                string strLog = "Connect" + strComPort + "@" + nBaudrate.ToString();
-                WriteLog(lrtxtLog, strLog, 0);
-            }
-            
-            //Whether processing interface element is valid.
-            SetFormEnable(true);
+                   return;
+               }
+               else
+               {
+                   string strLog = "Connect" + strComPort + "@" + nBaudrate.ToString();
+                   WriteLog(lrtxtLog, strLog, 0);
+               }
 
-            
-            btnConnectRs232.Enabled = false;
-            btnDisconnectRs232.Enabled = true;
+               //Whether processing interface element is valid.
+               SetFormEnable(true);
 
-            //Set button font color.
-            btnConnectRs232.ForeColor = Color.Black;
-            btnDisconnectRs232.ForeColor = Color.Indigo;
-            SetButtonBold(btnConnectRs232);
-            SetButtonBold(btnDisconnectRs232);
-        }
 
-        private void btnDisconnectRs232_Click(object sender, EventArgs e)
-        {
-            //Processing serial port to disconnect reader.
-            reader.CloseCom();
+               btnConnectRs232.Enabled = false;
+               btnDisconnectRs232.Enabled = true;
 
-            //Whether processing interface element is valid.
-            SetFormEnable(false);
-            btnConnectRs232.Enabled = true;
-            btnDisconnectRs232.Enabled = false;
+               //Set button font color.
+               btnConnectRs232.ForeColor = Color.Black;
+               btnDisconnectRs232.ForeColor = Color.Indigo;
+               SetButtonBold(btnConnectRs232);
+               SetButtonBold(btnDisconnectRs232);
+           }
 
-            //Set button font color.
-            btnConnectRs232.ForeColor = Color.Indigo;
-            btnDisconnectRs232.ForeColor = Color.Black;
-            SetButtonBold(btnConnectRs232);
-            SetButtonBold(btnDisconnectRs232);
-        }*/
+           private void btnDisconnectRs232_Click(object sender, EventArgs e)
+           {
+               //Processing serial port to disconnect reader.
+               reader.CloseCom();
+
+               //Whether processing interface element is valid.
+               SetFormEnable(false);
+               btnConnectRs232.Enabled = true;
+               btnDisconnectRs232.Enabled = false;
+
+               //Set button font color.
+               btnConnectRs232.ForeColor = Color.Indigo;
+               btnDisconnectRs232.ForeColor = Color.Black;
+               SetButtonBold(btnConnectRs232);
+               SetButtonBold(btnDisconnectRs232);
+           }*/
 
         private void btnConnectTcp_Click(object sender, EventArgs e)
         {
@@ -1311,7 +1312,7 @@ namespace RaceManager.UI
                 IPAddress ipAddress = IPAddress.Parse(ipIpServer.IpAddressStr);
                 int nPort = Convert.ToInt32(txtTcpPort.Text);
 
-                int nRet = reader.ConnectServer(ipAddress,nPort,out strException);
+                int nRet = reader.ConnectServer(ipAddress, nPort, out strException);
                 if (nRet != 0)
                 {
                     string strLog = "Connection failed, failure cause: " + strException;
@@ -1340,7 +1341,7 @@ namespace RaceManager.UI
             {
                 MessageBox.Show(ex.Message);
             }
-            
+
         }
 
         private void btnDisconnectTcp_Click(object sender, EventArgs e)
@@ -1375,23 +1376,23 @@ namespace RaceManager.UI
             }
         }
 
-    /*    private void btnSetReadAddress_Click(object sender, EventArgs e)
-        {
-            try
+        /*    private void btnSetReadAddress_Click(object sender, EventArgs e)
             {
-                if (htxtReadId.Text.Length != 0)
+                try
                 {
-                    string strTemp = htxtReadId.Text.Trim();
-                    reader.SetReaderAddress(m_curSetting.btReadId, Convert.ToByte(strTemp, 16));
-                    m_curSetting.btReadId = Convert.ToByte(strTemp, 16);
+                    if (htxtReadId.Text.Length != 0)
+                    {
+                        string strTemp = htxtReadId.Text.Trim();
+                        reader.SetReaderAddress(m_curSetting.btReadId, Convert.ToByte(strTemp, 16));
+                        m_curSetting.btReadId = Convert.ToByte(strTemp, 16);
+                    }
                 }
-            }
-            catch (System.Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            
-        }*/
+                catch (System.Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+            }*/
 
         private void ProcessSetReadAddress(Reader.MessageTran msgTran)
         {
@@ -1454,14 +1455,14 @@ namespace RaceManager.UI
             WriteLog(lrtxtLog, strLog, 1);
         }
 
-   /*     private void btnSetUartBaudrate_Click(object sender, EventArgs e)
-        {
-            if (cmbSetBaudrate.SelectedIndex != -1)
-            {
-                reader.SetUartBaudrate(m_curSetting.btReadId, cmbSetBaudrate.SelectedIndex + 3);
-                m_curSetting.btIndexBaudrate = Convert.ToByte(cmbSetBaudrate.SelectedIndex);
-            }            
-        }*/
+        /*     private void btnSetUartBaudrate_Click(object sender, EventArgs e)
+             {
+                 if (cmbSetBaudrate.SelectedIndex != -1)
+                 {
+                     reader.SetUartBaudrate(m_curSetting.btReadId, cmbSetBaudrate.SelectedIndex + 3);
+                     m_curSetting.btIndexBaudrate = Convert.ToByte(cmbSetBaudrate.SelectedIndex);
+                 }            
+             }*/
 
         private void ProcessSetUartBaudrate(Reader.MessageTran msgTran)
         {
@@ -1566,7 +1567,7 @@ namespace RaceManager.UI
             {
                 MessageBox.Show(ex.Message);
             }
-            
+
         }
 
         private void ProcessSetOutputPower(Reader.MessageTran msgTran)
@@ -1649,7 +1650,7 @@ namespace RaceManager.UI
             int intCurrentAnt = 0;
             intCurrentAnt = m_curSetting.btWorkAntenna + 1;
             string strCmd = "Set working antenna successfully, Current Ant: Ant" + intCurrentAnt.ToString();
-         
+
             string strErrorCode = string.Empty;
 
             if (msgTran.AryData.Length == 1)
@@ -1889,7 +1890,7 @@ namespace RaceManager.UI
                 RefreshReadSetting(0x79);
                 WriteLog(lrtxtLog, strCmd, 0);
                 return;
-                
+
 
             }
             else if (msgTran.AryData.Length == 1)
@@ -2168,7 +2169,7 @@ namespace RaceManager.UI
             {
                 m_curSetting.btReadId = msgTran.ReadId;
                 m_curSetting.btAntDetector = msgTran.AryData[0];
-                
+
                 RefreshReadSetting(0x63);
                 WriteLog(lrtxtLog, strCmd, 0);
                 return;
@@ -2308,19 +2309,19 @@ namespace RaceManager.UI
             string strErrorCode = string.Empty;
             short i;
             string readerIdentifier = "";
-            
+
             if (msgTran.AryData.Length == 12)
             {
                 m_curSetting.btReadId = msgTran.ReadId;
-                for (i = 0; i < 12; i ++)
+                for (i = 0; i < 12; i++)
                 {
                     readerIdentifier = readerIdentifier + string.Format("{0:X2}", msgTran.AryData[i]) + " ";
 
-                    
+
                 }
                 m_curSetting.btReaderIdentifier = readerIdentifier;
                 RefreshReadSetting(0x68);
-                
+
                 WriteLog(lrtxtLog, strCmd, 0);
                 return;
             }
@@ -2337,15 +2338,15 @@ namespace RaceManager.UI
         {
             string strCmd = "Measure Impedance of Antenna Port Match";
             string strErrorCode = string.Empty;
-                  
-            
+
+
             if (msgTran.AryData.Length == 1)
             {
                 m_curSetting.btReadId = msgTran.ReadId;
 
                 m_curSetting.btAntImpedance = msgTran.AryData[0];
                 RefreshReadSetting(0x7E);
-                
+
                 WriteLog(lrtxtLog, strCmd, 0);
                 return;
             }
@@ -2358,13 +2359,13 @@ namespace RaceManager.UI
             WriteLog(lrtxtLog, strLog, 1);
         }
 
-        
+
 
         private void ProcessSetReaderIdentifier(Reader.MessageTran msgTran)
         {
             string strCmd = "Set Reader Identifier";
             string strErrorCode = string.Empty;
-            
+
             if (msgTran.AryData.Length == 1)
             {
                 if (msgTran.AryData[0] == 0x10)
@@ -2394,7 +2395,7 @@ namespace RaceManager.UI
                     m_curSetting.btAntDetector = Convert.ToByte(tbAntDectector.Text);
                 }
             }
-             catch (System.Exception ex)
+            catch (System.Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
@@ -2428,25 +2429,25 @@ namespace RaceManager.UI
             string strLog = strCmd + "Failure, failure cause: " + strErrorCode;
             WriteLog(lrtxtLog, strLog, 1);
         }
-        
+
         private void rdbInventoryTag_CheckedChanged(object sender, EventArgs e)
         {
-           
+
         }
 
         private void rdbOperateTag_CheckedChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void rdbInventoryRealTag_CheckedChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void rbdFastSwitchInventory_CheckedChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnInventory_Click(object sender, EventArgs e)
@@ -2633,7 +2634,7 @@ namespace RaceManager.UI
             catch (System.Exception ex)
             {
                 MessageBox.Show(ex.Message);
-            }     */       
+            }     */
         }
 
         private void ProcessFastSwitch(Reader.MessageTran msgTran)
@@ -2661,10 +2662,10 @@ namespace RaceManager.UI
 
             else if (msgTran.AryData.Length == 7)
             {
-                m_nSwitchTotal = Convert.ToInt32(msgTran.AryData[0])*255*255 + Convert.ToInt32(msgTran.AryData[1])*255 +
+                m_nSwitchTotal = Convert.ToInt32(msgTran.AryData[0]) * 255 * 255 + Convert.ToInt32(msgTran.AryData[1]) * 255 +
                                  Convert.ToInt32(msgTran.AryData[2]);
-                m_nSwitchTime = Convert.ToInt32(msgTran.AryData[3])*255*255*255 +
-                                Convert.ToInt32(msgTran.AryData[4])*255*255 + Convert.ToInt32(msgTran.AryData[5])*255 +
+                m_nSwitchTime = Convert.ToInt32(msgTran.AryData[3]) * 255 * 255 * 255 +
+                                Convert.ToInt32(msgTran.AryData[4]) * 255 * 255 + Convert.ToInt32(msgTran.AryData[5]) * 255 +
                                 Convert.ToInt32(msgTran.AryData[6]);
 
                 m_curInventoryBuffer.nDataCount = m_nSwitchTotal;
@@ -2698,10 +2699,10 @@ namespace RaceManager.UI
                 string strRSSI = msgTran.AryData[nLength - 1].ToString();
                 SetMaxMinRSSI(Convert.ToInt32(msgTran.AryData[nLength - 1]));
                 byte btTemp = msgTran.AryData[0];
-                byte btAntId = (byte) ((btTemp & 0x03) + 1);
-                m_curInventoryBuffer.nCurrentAnt = (int) btAntId;
+                byte btAntId = (byte)((btTemp & 0x03) + 1);
+                m_curInventoryBuffer.nCurrentAnt = (int)btAntId;
                 string strAntId = btAntId.ToString();
-                byte btFreq = (byte) (btTemp >> 2);
+                byte btFreq = (byte)(btTemp >> 2);
 
                 string strFreq = GetFreqString(btFreq);
 
@@ -2721,24 +2722,24 @@ namespace RaceManager.UI
                     switch (btAntId)
                     {
                         case 0x01:
-                        {
-                            row1[7] = "1";
-                        }
+                            {
+                                row1[7] = "1";
+                            }
                             break;
                         case 0x02:
-                        {
-                            row1[8] = "1";
-                        }
+                            {
+                                row1[8] = "1";
+                            }
                             break;
                         case 0x03:
-                        {
-                            row1[9] = "1";
-                        }
+                            {
+                                row1[9] = "1";
+                            }
                             break;
                         case 0x04:
-                        {
-                            row1[10] = "1";
-                        }
+                            {
+                                row1[10] = "1";
+                            }
                             break;
                         default:
                             break;
@@ -2765,32 +2766,32 @@ namespace RaceManager.UI
                         switch (btAntId)
                         {
                             case 0x01:
-                            {
-                                //dr[7] = (Convert.ToInt32(dr[7]) + 1).ToString();
-                                nTemp = Convert.ToInt32(dr[7]);
-                                dr[7] = (nTemp + 1).ToString();
-                            }
+                                {
+                                    //dr[7] = (Convert.ToInt32(dr[7]) + 1).ToString();
+                                    nTemp = Convert.ToInt32(dr[7]);
+                                    dr[7] = (nTemp + 1).ToString();
+                                }
                                 break;
                             case 0x02:
-                            {
-                                //dr[8] = (Convert.ToInt32(dr[8]) + 1).ToString();
-                                nTemp = Convert.ToInt32(dr[8]);
-                                dr[8] = (nTemp + 1).ToString();
-                            }
+                                {
+                                    //dr[8] = (Convert.ToInt32(dr[8]) + 1).ToString();
+                                    nTemp = Convert.ToInt32(dr[8]);
+                                    dr[8] = (nTemp + 1).ToString();
+                                }
                                 break;
                             case 0x03:
-                            {
-                                //dr[9] = (Convert.ToInt32(dr[9]) + 1).ToString();
-                                nTemp = Convert.ToInt32(dr[9]);
-                                dr[9] = (nTemp + 1).ToString();
-                            }
+                                {
+                                    //dr[9] = (Convert.ToInt32(dr[9]) + 1).ToString();
+                                    nTemp = Convert.ToInt32(dr[9]);
+                                    dr[9] = (nTemp + 1).ToString();
+                                }
                                 break;
                             case 0x04:
-                            {
-                                //dr[10] = (Convert.ToInt32(dr[10]) + 1).ToString();
-                                nTemp = Convert.ToInt32(dr[10]);
-                                dr[10] = (nTemp + 1).ToString();
-                            }
+                                {
+                                    //dr[10] = (Convert.ToInt32(dr[10]) + 1).ToString();
+                                    nTemp = Convert.ToInt32(dr[10]);
+                                    dr[10] = (nTemp + 1).ToString();
+                                }
                                 break;
                             default:
                                 break;
@@ -2818,7 +2819,7 @@ namespace RaceManager.UI
         {
             string strCmd = "";
             m_curInventoryBuffer.drLastTag = null;
-            
+
             if (msgTran.Cmd == 0x89)
             {
                 strCmd = "Real time inventory";
@@ -2866,10 +2867,10 @@ namespace RaceManager.UI
                 byte btAntId = (byte)((btTemp & 0x03) + 1);
                 m_curInventoryBuffer.nCurrentAnt = btAntId;
                 string strAntId = btAntId.ToString();
-            
+
                 byte btFreq = (byte)(btTemp >> 2);
                 string strFreq = GetFreqString(btFreq);
-                
+
                 var row = m_curInventoryBuffer.dtTagDetailTable.NewRow();
                 row[0] = strEPC;
                 row[1] = strRSSI;
@@ -2907,7 +2908,7 @@ namespace RaceManager.UI
                         dr[5] = (Convert.ToInt32(dr[5]) + 1).ToString();
                         dr[6] = strFreq;
 
-                        dr.EndEdit();                       
+                        dr.EndEdit();
                     }
                     m_curInventoryBuffer.dtTagTable.AcceptChanges();
                 }
@@ -2917,7 +2918,7 @@ namespace RaceManager.UI
             }
         }
 
-      
+
 
         private void ProcessInventory(Reader.MessageTran msgTran)
         {
@@ -2962,7 +2963,7 @@ namespace RaceManager.UI
         private void btnGetInventoryBuffer_Click(object sender, EventArgs e)
         {
             m_curInventoryBuffer.dtTagTable.Rows.Clear();
-            
+
             reader.GetInventoryBuffer(m_curSetting.btReadId);
         }
 
@@ -3029,7 +3030,7 @@ namespace RaceManager.UI
         private void btnGetAndResetInventoryBuffer_Click(object sender, EventArgs e)
         {
             m_curInventoryBuffer.dtTagTable.Rows.Clear();
-            
+
             reader.GetAndResetInventoryBuffer(m_curSetting.btReadId);
         }
 
@@ -3075,7 +3076,7 @@ namespace RaceManager.UI
                 WriteLog(lrtxtLog, strCmd, 0);
             }
         }
-        
+
         private void btnGetInventoryBufferTagCount_Click(object sender, EventArgs e)
         {
             reader.GetInventoryBufferTagCount(m_curSetting.btReadId);
@@ -3178,7 +3179,7 @@ namespace RaceManager.UI
                 if (msgTran.AryData[0] == 0x00)
                 {
                     m_curOperateTagBuffer.strAccessEpcMatch = CCommondMethod.ByteArrayToString(msgTran.AryData, 2, Convert.ToInt32(msgTran.AryData[1]));
-                    
+
                     RefreshOpTag(0x86);
                     WriteLog(lrtxtLog, strCmd, 0);
                     return;
@@ -3297,7 +3298,7 @@ namespace RaceManager.UI
             {
                 MessageBox.Show(ex.Message);
             }
-            
+
         }
 
         private void ProcessReadTag(Reader.MessageTran msgTran)
@@ -3420,7 +3421,7 @@ namespace RaceManager.UI
             {
                 MessageBox.Show(ex.Message);
             }
-            
+
         }
 
         private void ProcessWriteTag(Reader.MessageTran msgTran)
@@ -3438,7 +3439,7 @@ namespace RaceManager.UI
             else
             {
                 int nLen = msgTran.AryData.Length;
-                int nEpcLen = Convert.ToInt32(msgTran.AryData[2])  - 4;
+                int nEpcLen = Convert.ToInt32(msgTran.AryData[2]) - 4;
 
                 if (msgTran.AryData[nLen - 3] != 0x10)
                 {
@@ -3681,7 +3682,7 @@ namespace RaceManager.UI
         }
 
         private void btnInventoryISO18000_Click(object sender, EventArgs e)
-        {            
+        {
             if (m_bContinue)
             {
                 m_bContinue = false;
@@ -3714,9 +3715,9 @@ namespace RaceManager.UI
 
                 string strCmd = "Inventory";
                 WriteLog(lrtxtLog, strCmd, 0);
-                
+
                 reader.InventoryISO18000(m_curSetting.btReadId);
-            }            
+            }
         }
 
         private void ProcessInventoryISO18000(Reader.MessageTran msgTran)
@@ -3732,7 +3733,7 @@ namespace RaceManager.UI
                     string strLog = strCmd + "Failure, failure cause: " + strErrorCode;
 
                     WriteLog(lrtxtLog, strLog, 1);
-                }                
+                }
             }
             else if (msgTran.AryData.Length == 9)
             {
@@ -3757,7 +3758,7 @@ namespace RaceManager.UI
                     row[2] = (Convert.ToInt32(row[2]) + 1).ToString();
                     m_curOperateTagISO18000Buffer.dtTagTable.AcceptChanges();
                 }
-                
+
             }
             else if (msgTran.AryData.Length == 2)
             {
@@ -3957,7 +3958,7 @@ namespace RaceManager.UI
             }
 
             //Confirm the write protection prompt
-            if (MessageBox.Show("Are you sure to write protect this address permanently?", "Prompt", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Cancel) 
+            if (MessageBox.Show("Are you sure to write protect this address permanently?", "Prompt", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Cancel)
             {
                 return;
             }
@@ -4002,7 +4003,7 @@ namespace RaceManager.UI
                 m_curOperateTagISO18000Buffer.btStatus = msgTran.AryData[1];
 
                 //RefreshISO18000(msgTran.Cmd);
-                string strLog = string.Empty; 
+                string strLog = string.Empty;
                 switch (msgTran.AryData[1])
                 {
                     case 0x00:
@@ -4019,7 +4020,7 @@ namespace RaceManager.UI
                 }
 
                 WriteLog(lrtxtLog, strLog, 0);
-                
+
             }
         }
 
@@ -4200,13 +4201,13 @@ namespace RaceManager.UI
             }
         }
 
-        
+
         private void btnClearInventoryRealResult_Click(object sender, EventArgs e)
         {
             m_curInventoryBuffer.ClearInventoryRealResult();
 
-           
-            
+
+
             lvRealList.Items.Clear();
             //ltvInventoryTag.Items.Clear();
         }
@@ -4315,7 +4316,7 @@ namespace RaceManager.UI
             }
         }
 
-       
+
         private void btRealTimeInventory_Click(object sender, EventArgs e)
         {
             try
@@ -4339,7 +4340,7 @@ namespace RaceManager.UI
                     if (cmbTarget.SelectedIndex == -1)
                     {
                         MessageBox.Show("Please enter Inventoried Flag");
-                            return;
+                        return;
                     }
                     m_curInventoryBuffer.bLoopCustomizedSession = true;
                     m_curInventoryBuffer.btSession = (byte)cmbSession.SelectedIndex;
@@ -4406,7 +4407,7 @@ namespace RaceManager.UI
                 }
 
                 m_curInventoryBuffer.bLoopInventoryReal = true;
-               
+
                 m_curInventoryBuffer.ClearInventoryRealResult();
                 lvRealList.Items.Clear();
                 lvRealList.Items.Clear();
@@ -4414,13 +4415,13 @@ namespace RaceManager.UI
                 tbRealMinRssi.Text = "0";
                 m_nTotal = 0;
 
-                              
+
                 byte btWorkAntenna = m_curInventoryBuffer.lAntenna[m_curInventoryBuffer.nIndexAntenna];
                 reader.SetWorkAntenna(m_curSetting.btReadId, btWorkAntenna);
                 m_curSetting.btWorkAntenna = btWorkAntenna;
 
                 timerInventory.Enabled = true;
-                                         
+
             }
             catch (System.Exception ex)
             {
@@ -4432,7 +4433,7 @@ namespace RaceManager.UI
         {
             SystemSounds.Asterisk.Play();
             m_curInventoryBuffer.ClearInventoryRealResult();
-            
+
             lvRealList.Items.Clear();
             lvRealList.Items.Clear();
             ledReal1.Text = "0";
@@ -4448,45 +4449,45 @@ namespace RaceManager.UI
             cbRealWorkant3.Checked = false;
             cbRealWorkant4.Checked = false;
             lbRealTagCount.Text = "Tag List:";
-       
-           
+
+
         }
 
         private void btBufferInventory_Click(object sender, EventArgs e)
         {
             try
             {
-                    m_curInventoryBuffer.ClearInventoryPar();
+                m_curInventoryBuffer.ClearInventoryPar();
 
-                    if (textReadRoundBuffer.Text.Length == 0)
-                    {
-                        MessageBox.Show("Please enter the number of cycles");
-                        return;
-                    }
-                    m_curInventoryBuffer.btRepeat = Convert.ToByte(textReadRoundBuffer.Text);
+                if (textReadRoundBuffer.Text.Length == 0)
+                {
+                    MessageBox.Show("Please enter the number of cycles");
+                    return;
+                }
+                m_curInventoryBuffer.btRepeat = Convert.ToByte(textReadRoundBuffer.Text);
 
-                    if (cbBufferWorkant1.Checked)
-                    {
-                        m_curInventoryBuffer.lAntenna.Add(0x00);
-                    }
-                    if (cbBufferWorkant2.Checked)
-                    {
-                        m_curInventoryBuffer.lAntenna.Add(0x01);
-                    }
-                    if (cbBufferWorkant3.Checked)
-                    {
-                        m_curInventoryBuffer.lAntenna.Add(0x02);
-                    }
-                    if (cbBufferWorkant4.Checked)
-                    {
-                        m_curInventoryBuffer.lAntenna.Add(0x03);
-                    }
-                    if (m_curInventoryBuffer.lAntenna.Count == 0)
-                    {
-                        MessageBox.Show("One antenna must be selected");
-                        return;
-                    }
-                
+                if (cbBufferWorkant1.Checked)
+                {
+                    m_curInventoryBuffer.lAntenna.Add(0x00);
+                }
+                if (cbBufferWorkant2.Checked)
+                {
+                    m_curInventoryBuffer.lAntenna.Add(0x01);
+                }
+                if (cbBufferWorkant3.Checked)
+                {
+                    m_curInventoryBuffer.lAntenna.Add(0x02);
+                }
+                if (cbBufferWorkant4.Checked)
+                {
+                    m_curInventoryBuffer.lAntenna.Add(0x03);
+                }
+                if (m_curInventoryBuffer.lAntenna.Count == 0)
+                {
+                    MessageBox.Show("One antenna must be selected");
+                    return;
+                }
+
 
                 //Default cycle to send commands
                 if (m_curInventoryBuffer.bLoopInventory)
@@ -4521,21 +4522,21 @@ namespace RaceManager.UI
                     btBufferInventory.Text = "Stop";
                 }
 
-              
+
                 m_curInventoryBuffer.ClearInventoryRealResult();
                 lvBufferList.Items.Clear();
                 lvBufferList.Items.Clear();
                 m_nTotal = 0;
-                
+
                 byte btWorkAntenna = m_curInventoryBuffer.lAntenna[m_curInventoryBuffer.nIndexAntenna];
                 reader.SetWorkAntenna(m_curSetting.btReadId, btWorkAntenna);
                 m_curSetting.btWorkAntenna = btWorkAntenna;
-                
+
             }
             catch (System.Exception ex)
             {
                 MessageBox.Show(ex.Message);
-            }            
+            }
         }
 
         private void btGetBuffer_Click(object sender, EventArgs e)
@@ -4574,7 +4575,7 @@ namespace RaceManager.UI
             ledBuffer3.Text = "0";
             ledBuffer4.Text = "0";
             ledBuffer5.Text = "0";
-           
+
             textReadRoundBuffer.Text = "1";
             cbBufferWorkant1.Checked = true;
             cbBufferWorkant2.Checked = false;
@@ -4624,137 +4625,137 @@ namespace RaceManager.UI
             try
             {
                 m_curInventoryBuffer.bLoopInventoryReal = true;
-                
+
                 m_curInventoryBuffer.ClearInventoryRealResult();
                 lvFastList.Items.Clear();
-                
+
                 m_nTotal = 0;
-                    if ((cmbAntSelect1.SelectedIndex < 0) || (cmbAntSelect1.SelectedIndex > 3))  
-                    {
-                        m_btAryData[0] = 0xFF;
-                    }
-                    else
-                    {
-                        m_btAryData[0] = Convert.ToByte(cmbAntSelect1.SelectedIndex);
-                    }
-                    if (txtAStay.Text.Length == 0)
-                    {
-                        m_btAryData[1] = 0x00;
-                    }
-                    else
-                    {
-                        m_btAryData[1] = Convert.ToByte(txtAStay.Text);
-                    }
+                if ((cmbAntSelect1.SelectedIndex < 0) || (cmbAntSelect1.SelectedIndex > 3))
+                {
+                    m_btAryData[0] = 0xFF;
+                }
+                else
+                {
+                    m_btAryData[0] = Convert.ToByte(cmbAntSelect1.SelectedIndex);
+                }
+                if (txtAStay.Text.Length == 0)
+                {
+                    m_btAryData[1] = 0x00;
+                }
+                else
+                {
+                    m_btAryData[1] = Convert.ToByte(txtAStay.Text);
+                }
 
-                    if ((cmbAntSelect2.SelectedIndex < 0) || (cmbAntSelect2.SelectedIndex > 3))  
-                    {
-                        m_btAryData[2] = 0xFF;
-                    }
-                    else
-                    {
-                        m_btAryData[2] = Convert.ToByte(cmbAntSelect2.SelectedIndex);
-                    }
-                    if (txtBStay.Text.Length == 0)
-                    {
-                        m_btAryData[3] = 0x00;
-                    }
-                    else
-                    {
-                        m_btAryData[3] = Convert.ToByte(txtBStay.Text);
-                    }
+                if ((cmbAntSelect2.SelectedIndex < 0) || (cmbAntSelect2.SelectedIndex > 3))
+                {
+                    m_btAryData[2] = 0xFF;
+                }
+                else
+                {
+                    m_btAryData[2] = Convert.ToByte(cmbAntSelect2.SelectedIndex);
+                }
+                if (txtBStay.Text.Length == 0)
+                {
+                    m_btAryData[3] = 0x00;
+                }
+                else
+                {
+                    m_btAryData[3] = Convert.ToByte(txtBStay.Text);
+                }
 
-                    if ((cmbAntSelect3.SelectedIndex < 0) || (cmbAntSelect3.SelectedIndex > 3))  
-                    {
-                        m_btAryData[4] = 0xFF;
-                    }
-                    else
-                    {
-                        m_btAryData[4] = Convert.ToByte(cmbAntSelect3.SelectedIndex);
-                    }
-                    if (txtCStay.Text.Length == 0)
-                    {
-                        m_btAryData[5] = 0x00;
-                    }
-                    else
-                    {
-                        m_btAryData[5] = Convert.ToByte(txtCStay.Text);
-                    }
+                if ((cmbAntSelect3.SelectedIndex < 0) || (cmbAntSelect3.SelectedIndex > 3))
+                {
+                    m_btAryData[4] = 0xFF;
+                }
+                else
+                {
+                    m_btAryData[4] = Convert.ToByte(cmbAntSelect3.SelectedIndex);
+                }
+                if (txtCStay.Text.Length == 0)
+                {
+                    m_btAryData[5] = 0x00;
+                }
+                else
+                {
+                    m_btAryData[5] = Convert.ToByte(txtCStay.Text);
+                }
 
-                    if ((cmbAntSelect4.SelectedIndex < 0) || (cmbAntSelect4.SelectedIndex > 3))  
-                    {
-                        m_btAryData[6] = 0xFF;
-                    }
-                    else
-                    {
-                        m_btAryData[6] = Convert.ToByte(cmbAntSelect4.SelectedIndex);
-                    }
-                    if (txtDStay.Text.Length == 0)
-                    {
-                        m_btAryData[7] = 0x00;
-                    }
-                    else
-                    {
-                        m_btAryData[7] = Convert.ToByte(txtDStay.Text);
-                    }
+                if ((cmbAntSelect4.SelectedIndex < 0) || (cmbAntSelect4.SelectedIndex > 3))
+                {
+                    m_btAryData[6] = 0xFF;
+                }
+                else
+                {
+                    m_btAryData[6] = Convert.ToByte(cmbAntSelect4.SelectedIndex);
+                }
+                if (txtDStay.Text.Length == 0)
+                {
+                    m_btAryData[7] = 0x00;
+                }
+                else
+                {
+                    m_btAryData[7] = Convert.ToByte(txtDStay.Text);
+                }
 
-                    if (txtInterval.Text.Length == 0)
-                    {
-                        m_btAryData[8] = 0x00;
-                    }
-                    else
-                    {
-                        m_btAryData[8] = Convert.ToByte(txtInterval.Text);
-                    }
+                if (txtInterval.Text.Length == 0)
+                {
+                    m_btAryData[8] = 0x00;
+                }
+                else
+                {
+                    m_btAryData[8] = Convert.ToByte(txtInterval.Text);
+                }
 
-                    if (txtRepeat.Text.Length == 0)
-                    {
-                        m_btAryData[9] = 0x00;
-                    }
-                    else
-                    {
-                        m_btAryData[9] = Convert.ToByte(txtRepeat.Text);
-                    }
+                if (txtRepeat.Text.Length == 0)
+                {
+                    m_btAryData[9] = 0x00;
+                }
+                else
+                {
+                    m_btAryData[9] = Convert.ToByte(txtRepeat.Text);
+                }
 
-                    if (m_btAryData[0] > 3) 
-                    {
-                        antASelection = 0;
-                    }
+                if (m_btAryData[0] > 3)
+                {
+                    antASelection = 0;
+                }
 
-                    if (m_btAryData[2] > 3)
-                    {
-                        antBSelection = 0;
-                    }
+                if (m_btAryData[2] > 3)
+                {
+                    antBSelection = 0;
+                }
 
-                    if (m_btAryData[4] > 3)
-                    {
-                        antCSelection = 0;
-                    }
+                if (m_btAryData[4] > 3)
+                {
+                    antCSelection = 0;
+                }
 
-                    if (m_btAryData[6] > 3)
-                    {
-                        antDSelection = 0;
-                    }
+                if (m_btAryData[6] > 3)
+                {
+                    antDSelection = 0;
+                }
 
-                    if ((antASelection * m_btAryData[1] + antBSelection * m_btAryData[3] + antCSelection * m_btAryData[5] + antDSelection * m_btAryData[7]) * m_btAryData[9] == 0)
-                    {
-                        MessageBox.Show("One antenna must be selected, polling at least once,repeat per command at least once.");
-                        m_bInventory = false;
-                        m_curInventoryBuffer.bLoopInventory = false;
-                        btFastInventory.BackColor = Color.WhiteSmoke;
-                        btFastInventory.ForeColor = Color.DarkBlue;
-                        btFastInventory.Text = "Inventory";
-                        return;    
-                    }
+                if ((antASelection * m_btAryData[1] + antBSelection * m_btAryData[3] + antCSelection * m_btAryData[5] + antDSelection * m_btAryData[7]) * m_btAryData[9] == 0)
+                {
+                    MessageBox.Show("One antenna must be selected, polling at least once,repeat per command at least once.");
+                    m_bInventory = false;
+                    m_curInventoryBuffer.bLoopInventory = false;
+                    btFastInventory.BackColor = Color.WhiteSmoke;
+                    btFastInventory.ForeColor = Color.DarkBlue;
+                    btFastInventory.Text = "Inventory";
+                    return;
+                }
 
-                    m_nSwitchTotal = 0;
-                    m_nSwitchTime = 0;
-                    reader.FastSwitchInventory(m_curSetting.btReadId, m_btAryData);
-            
+                m_nSwitchTotal = 0;
+                m_nSwitchTime = 0;
+                reader.FastSwitchInventory(m_curSetting.btReadId, m_btAryData);
+
             }
             catch (System.Exception ex)
             {
                 MessageBox.Show(ex.Message);
-            }            
+            }
         }
 
         private void buttonFastFresh_Click(object sender, EventArgs e)
@@ -4787,7 +4788,7 @@ namespace RaceManager.UI
 
         private void pageFast4AntMode_Enter(object sender, EventArgs e)
         {
-           // buttonFastFresh_Click(sender, e);
+            // buttonFastFresh_Click(sender, e);
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -4855,7 +4856,7 @@ namespace RaceManager.UI
 
                 reader.SetReaderIdentifier(m_curSetting.btReadId, readerIdentifier);
                 //m_curSetting.btReadId = Convert.ToByte(strTemp, 16);
-                
+
             }
             catch (System.Exception ex)
             {
@@ -4865,7 +4866,7 @@ namespace RaceManager.UI
 
         private void btReaderSetupRefresh_Click(object sender, EventArgs e)
         {
-           // htxtReadId.Text = "";
+            // htxtReadId.Text = "";
             htbGetIdentifier.Text = "";
             htbSetIdentifier.Text = "";
             txtFirmwareVersion.Text = "";
@@ -4883,7 +4884,7 @@ namespace RaceManager.UI
             rdbBeeperModeInventory.Checked = false;
             rdbBeeperModeTag.Checked = false;
 
-          //  cmbSetBaudrate.SelectedIndex = -1;
+            //  cmbSetBaudrate.SelectedIndex = -1;
         }
 
         private void btRfSetup_Click(object sender, EventArgs e)
@@ -5000,7 +5001,7 @@ namespace RaceManager.UI
         private void timerInventory_Tick(object sender, EventArgs e)
         {
             m_nReceiveFlag++;
-            if (m_nReceiveFlag >=5)
+            if (m_nReceiveFlag >= 5)
             {
                 RunLoopInventroy();
                 m_nReceiveFlag = 0;
@@ -5075,7 +5076,7 @@ namespace RaceManager.UI
                 m_curInventoryBuffer.bLoopInventory = false;
                 return;
             }
-            
+
             m_bInventory = true;
             m_curInventoryBuffer.bLoopInventory = true;
 
@@ -5096,7 +5097,7 @@ namespace RaceManager.UI
                 {
                     m_btAryData[0] = 0;
                 }
-                
+
                 m_btAryData[1] = 1;
 
                 if (!cbRaceAnt2.Checked)
@@ -5133,7 +5134,7 @@ namespace RaceManager.UI
                     (ConfigurationManager.AppSettings["InteralBetweenAnts"]); // Interval
                 m_btAryData[9] = Convert.ToByte
                     (ConfigurationManager.AppSettings["NumberOfRepeats"]); // Number of repeats
-                
+
                 if (m_btAryData[0] > 3)
                 {
                     antASelection = 0;
@@ -5234,18 +5235,18 @@ namespace RaceManager.UI
         {
             tbRaceMaxRssi.Text = $"{m_curInventoryBuffer.nMaxRSSI - 129} dBm";
             tbRaceMinRssi.Text = $"{m_curInventoryBuffer.nMinRSSI - 129} dBm";
-            
+
             var row = m_curInventoryBuffer.drLastTag;
-            if(row == null) return;
+            if (row == null) return;
 
             var tag = row[0].ToString().Trim();
             tag = CleanTag(tag);
             var lap = _selectedRaceEvent.Laps.FirstOrDefault(l => l.Epc == tag);
 
             if (lap == null || lap.LapsCount >= nudNumOfLaps.Value) return;
-            Debug.WriteLine("tag = " + tag + ", lap = "+lap.OrderNumber+", time = " + _raceTime);
+            Debug.WriteLine("tag = " + tag + ", lap = " + lap.OrderNumber + ", time = " + _raceTime);
 
-            var success = lap.RegisterLapTime(_raceTime, (double) nudMinFirstLapTime.Value, (double)nudMinLapTime.Value);
+            var success = lap.RegisterLapTime(_raceTime, (double)nudMinFirstLapTime.Value, (double)nudMinLapTime.Value);
             bindingSourceRace.ResetBindings(false);
 
             if (!success) return;
@@ -5282,7 +5283,7 @@ namespace RaceManager.UI
             _raceTime = _raceTime.Add(TimeSpan.FromMilliseconds(1));
 
             // Improving perfomance
-            if (_raceTime.Milliseconds%5 == 0 && !Disposing)
+            if (_raceTime.Milliseconds % 5 == 0 && !Disposing)
             {
                 BeginInvoke(new Action(ShowRaceTime));
             }
@@ -5322,15 +5323,15 @@ namespace RaceManager.UI
             race.Name = tbRaceName.Text;
             race.Date = dtpRaceDate.Value;
             race.Location = tbRaceLocation.Text;
-          //  race.MinLapTime = Convert.ToInt32(tbRaceMinLapTime.Text);
-          
+            //  race.MinLapTime = Convert.ToInt32(tbRaceMinLapTime.Text);
+
         }
 
         private bool RaceValidation()
         {
-            return !string.IsNullOrEmpty(tbRaceName.Text) && 
+            return !string.IsNullOrEmpty(tbRaceName.Text) &&
                            !string.IsNullOrEmpty(tbRaceLocation.Text) && !string.IsNullOrEmpty(dtpRaceDate.Text) &&
-                           !string.IsNullOrEmpty(tbCurEvGroup.Text) && !string.IsNullOrEmpty(tbCurEvRound.Text) ;
+                           !string.IsNullOrEmpty(tbCurEvGroup.Text) && !string.IsNullOrEmpty(tbCurEvRound.Text);
         }
 
         private void EnableDisableRaceControls(bool enable)
@@ -5352,7 +5353,7 @@ namespace RaceManager.UI
         private void ShowPilots()
         {
             _selectedRaceEvent = null;
-            if(cmbRaceGroup.SelectedItem == null || cmbRaceRound.SelectedItem == null) return;
+            if (cmbRaceGroup.SelectedItem == null || cmbRaceRound.SelectedItem == null) return;
 
             var group = _race.Groups.FirstOrDefault(g => g.Name == cmbRaceGroup.SelectedItem.ToString());
             var round = cmbRaceRound.SelectedItem.ToString();
@@ -5373,7 +5374,7 @@ namespace RaceManager.UI
                 {
                     foreach (var pilot in group.Pilots)
                     {
-                        if(pilot == null) continue;
+                        if (pilot == null) continue;
                         var lapsInfo = new LapsInfo
                         {
                             PilotId = pilot.Id,
@@ -5407,11 +5408,11 @@ namespace RaceManager.UI
         }
         #endregion
 
-        #region Pilot Management
+        #region Pilots Management
 
         List<Pilot> Pilots = new List<Pilot>();
 
-        private void btnAddPilot_Click(object sender, EventArgs e)
+        private void btnAddPilot_Click(object sender, EventArgs e) // Add Pilot
         {
             var pilot = new Pilot();
             pilot.Tag = tbPilotTag.Text;
@@ -5419,28 +5420,115 @@ namespace RaceManager.UI
             pilot.Nickname = tbPilotNickname.Text;
             pilot.Team = tbPilotTeam.Text;
             pilot.Email = tbPilotEmail.Text;
+            pilot.isChecked = Convert.ToInt32(cbPilotConfirmation.Checked);
             pilot.Confirmation = cbPilotConfirmation.Checked;
-
             Pilots.Add(pilot);
             pilot.OrderNumber = Pilots.IndexOf(pilot) + 1;
 
-            //if(bindingSourcePilots1.DataSource == null)
-                bindingSourcePilots1.DataSource = Pilots;
+            database objDatabase = new database();
+            string sqlQuery = "insert into Pilots (Name, NickName, Team, Email, Confirmation, TagID) values ('" + pilot.Name + "','" + pilot.Nickname + "','" + pilot.Team + "','" + pilot.Email + "','" + pilot.isChecked + "', '" + pilot.Tag + "' )";
+            SQLiteCommand cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+            cmd.ExecuteNonQuery();
+            pilot.Id = Convert.ToInt32(getLastInsertedId(cmd));
 
+            bindingSourcePilots1.DataSource = Pilots;
             bindingSourcePilots1.ResetBindings(false);
-            //gvPilots.Refresh();
         }
 
-        private void btnAddPilotFromDb_Click(object sender, EventArgs e)
+        private void btnAddPilotFromDb_Click(object sender, EventArgs e) // Add From DB
         {
-           
+            bindingSourcePilots1.Clear();
+            database objDatabase = new database();
+            string sqlQuery = "select * from Pilots";
+            SQLiteCommand cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+            SQLiteDataReader dataReader = cmd.ExecuteReader();
+            while (dataReader.Read())
+            {
+                var pilot = new Pilot();
+                pilot.Id = Convert.ToInt32(dataReader["Id"]);
+                pilot.Tag = Convert.ToString(dataReader["TagID"]);
+                pilot.Name = Convert.ToString(dataReader["Name"]);
+                pilot.Nickname = Convert.ToString(dataReader["Nickname"]);
+                pilot.Team = Convert.ToString(dataReader["Team"]);
+                pilot.Email = Convert.ToString(dataReader["Email"]);
+                pilot.Confirmation = Convert.ToBoolean(dataReader["Confirmation"]);
+                Pilots.Add(pilot);
+                pilot.OrderNumber = Pilots.IndexOf(pilot) + 1;
+            }
+            bindingSourcePilots1.DataSource = Pilots;
+            bindingSourcePilots1.ResetBindings(false);
         }
 
+        private void btnClearDB_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Do you really want to clear all DB?", "Pilots", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                database objDatabase = new database();
+                SQLiteCommand cmd;
+                cmd = new SQLiteCommand("Delete from Pilots", objDatabase.get_SQLiteConnection());
+                cmd.ExecuteNonQuery();
+
+                cmd = new SQLiteCommand("Delete from LapsInfos", objDatabase.get_SQLiteConnection());
+                cmd.ExecuteNonQuery();
+
+                cmd = new SQLiteCommand("Delete from RaceEvents", objDatabase.get_SQLiteConnection());
+                cmd.ExecuteNonQuery();
+
+                cmd = new SQLiteCommand("Delete from Groups", objDatabase.get_SQLiteConnection());
+                cmd.ExecuteNonQuery();
+
+                cmd = new SQLiteCommand("Delete from Races", objDatabase.get_SQLiteConnection());
+                cmd.ExecuteNonQuery();
+
+                cmd = new SQLiteCommand("Delete from Pilot_Groups", objDatabase.get_SQLiteConnection());
+                cmd.ExecuteNonQuery();
+
+                bindingSourcePilots1.Clear();
+                clearFormText();
+                MessageBox.Show("DB has been cleared successfully", "Pilots", MessageBoxButtons.OK);
+            }
+        }
+
+        public void clearFormText()
+        {
+            tbPilotTag.Text = string.Empty;
+            tbPilotName.Text = string.Empty;
+            tbPilotNickname.Text = string.Empty;
+            tbPilotTeam.Text = string.Empty;
+            tbPilotEmail.Text = string.Empty;
+            cbPilotConfirmation.Checked = false;
+        }
+
+        private void gvPilots_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                int Id, Conf;
+                string Name, Nickname, Team, Email, TagID;
+                Id = Convert.ToInt32(gvPilots.Rows[e.RowIndex].Cells[1].Value);
+                Name = Convert.ToString(gvPilots.Rows[e.RowIndex].Cells[2].Value);
+                Nickname = Convert.ToString(gvPilots.Rows[e.RowIndex].Cells[3].Value);
+                Team = Convert.ToString(gvPilots.Rows[e.RowIndex].Cells[4].Value);
+                TagID = Convert.ToString(gvPilots.Rows[e.RowIndex].Cells[5].Value);
+                Email = Convert.ToString(gvPilots.Rows[e.RowIndex].Cells[6].Value);
+                Conf = Convert.ToString(gvPilots.Rows[e.RowIndex].Cells[7].Value) == "Yes" ? 1 : 0;
+                database objDatabase = new database();
+                string sqlQuery = "Update Pilots set Name = @Name, Nickname = @Nickname, Team = @Team, TagID = @TagID, Email = @Email, Confirmation = @Confirmation where Id = @Id";
+                SQLiteCommand cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+                cmd.Parameters.AddWithValue("@Id", Id);
+                cmd.Parameters.AddWithValue("@Name", Name);
+                cmd.Parameters.AddWithValue("@Nickname", Nickname);
+                cmd.Parameters.AddWithValue("@Team", Team);
+                cmd.Parameters.AddWithValue("@TagID", TagID);
+                cmd.Parameters.AddWithValue("@Email", Email);
+                cmd.Parameters.AddWithValue("@Confirmation", Conf);
+                cmd.ExecuteNonQuery();
+            }
+        }
 
         #endregion
 
         #region Round Management
-
 
         private void btnAddPilotsToGroups_Click(object sender, EventArgs e)
         {
@@ -5449,10 +5537,10 @@ namespace RaceManager.UI
             // shuffle pilots
             //Pilots = Pilots.OrderBy(a => Guid.NewGuid()).ToList(); 
             // 20.09.2018 - do NOT shuffle pilots
-            
-            
+
+
             // get "pilots per group" value
-            var ppg = (int) nudPilotsPerGroup.Value;
+            var ppg = (int)nudPilotsPerGroup.Value;
             var group = new Group
             {
                 Name = "Group A",
@@ -5466,18 +5554,18 @@ namespace RaceManager.UI
                 var gr = new Group
                 {
                     Name = "Group B",
-                    Pilots = Pilots.GetRange(ppg, 2*ppg > Pilots.Count ? Pilots.Count - ppg :  ppg)
+                    Pilots = Pilots.GetRange(ppg, 2 * ppg > Pilots.Count ? Pilots.Count - ppg : ppg)
                 };
                 gvGroupB.DataSource = gr.Pilots;
                 _race.Groups.Add(gr);
             }
 
-            if (Pilots.Count > ppg*2)
+            if (Pilots.Count > ppg * 2)
             {
                 var gr = new Group
                 {
                     Name = "Group C",
-                    Pilots = Pilots.GetRange(2*ppg, 3 * ppg > Pilots.Count ? Pilots.Count - 2*ppg : ppg)
+                    Pilots = Pilots.GetRange(2 * ppg, 3 * ppg > Pilots.Count ? Pilots.Count - 2 * ppg : ppg)
                 };
                 gvGroupC.DataSource = gr.Pilots;
                 _race.Groups.Add(gr);
@@ -5615,6 +5703,43 @@ namespace RaceManager.UI
                 _race.Groups.Add(gr);
             }
 
+            #region Groups Insertion
+
+            database objDatabase = new database();
+            string sqlQuery;
+            SQLiteCommand cmd;
+
+            foreach (var item in _race.Groups)
+            {
+                if (item.Id == 0)
+                {
+                    sqlQuery = "insert into Groups (Name) values ('" + Convert.ToString(item.Name) + "')";
+                    cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+                    cmd.ExecuteNonQuery();
+                    item.Id = Convert.ToInt32(getLastInsertedId(cmd));
+
+                    sqlQuery = "delete from Pilot_Groups where GroupId =" + Convert.ToInt32(item.Id);
+                    cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+                    cmd.ExecuteNonQuery();
+                }
+
+                foreach (var pilot in item.Pilots)
+                {
+                    if (pilot != null)
+                    {
+                        sqlQuery = "delete from Pilot_Groups where PilotId =" + pilot.Id + " and GroupId =" + Convert.ToInt32(item.Id);
+                        cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+                        cmd.ExecuteNonQuery();
+
+                        sqlQuery = "insert into Pilot_Groups (PilotId, GroupId) values ('" + Convert.ToInt32(pilot.Id) + "', '" + Convert.ToInt32(item.Id) + "')";
+                        cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+                        cmd.ExecuteNonQuery();
+                        //pilot.Id = Convert.ToInt32(getLastInsertedId(cmd));
+                    }
+                }
+            }
+            #endregion
+
             cmbRaceGroup.Items.Clear();
             _race.Groups.ForEach(i => cmbRaceGroup.Items.Add(i.Name));
 
@@ -5685,6 +5810,43 @@ namespace RaceManager.UI
             gvGroupDQ.DataSource = group.Pilots;
             _race.Groups.Add(group);
 
+            #region Groups Insertion
+
+            database objDatabase = new database();
+            string sqlQuery;
+            SQLiteCommand cmd;
+
+            foreach (var item in _race.Groups)
+            {
+                if (item.Id == 0)
+                {
+                    sqlQuery = "insert into Groups (Name) values ('" + Convert.ToString(item.Name) + "')";
+                    cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+                    cmd.ExecuteNonQuery();
+                    item.Id = Convert.ToInt32(getLastInsertedId(cmd));
+
+                    sqlQuery = "delete from Pilot_Groups where GroupId =" + Convert.ToInt32(item.Id);
+                    cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+                    cmd.ExecuteNonQuery();
+                }
+
+                foreach (var pilot in item.Pilots)
+                {
+                    if (pilot != null)
+                    {
+                        sqlQuery = "delete from Pilot_Groups where PilotId =" + pilot.Id + " and GroupId =" + Convert.ToInt32(item.Id);
+                        cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+                        cmd.ExecuteNonQuery();
+
+                        sqlQuery = "insert into Pilot_Groups (PilotId, GroupId) values ('" + Convert.ToInt32(pilot.Id) + "', '" + Convert.ToInt32(item.Id) + "')";
+                        cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+                        cmd.ExecuteNonQuery();
+                        //pilot.Id = Convert.ToInt32(getLastInsertedId(cmd));
+                    }
+                }
+            }
+            #endregion
+
             cmbRaceGroup.Items.Clear();
             _race.Groups.ForEach(i => cmbRaceGroup.Items.Add(i.Name));
 
@@ -5694,7 +5856,7 @@ namespace RaceManager.UI
         private void btnAddPilotsToGroupsSF_Click(object sender, EventArgs e)
         {
             var race1 = _race.RaceEvents.FirstOrDefault(re => re.Group.Name == "Group A (R)");
-            if(race1 == null) return;
+            if (race1 == null) return;
 
             var race1Results = race1.Laps.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
             race1Results.AddRange(race1.Laps.Where(s => !s.AvgLapTime.HasValue).ToList());
@@ -5741,6 +5903,43 @@ namespace RaceManager.UI
             };
             gvGroupBS.DataSource = group.Pilots;
             _race.Groups.Add(group);
+
+            #region Groups Insertion
+
+            database objDatabase = new database();
+            string sqlQuery;
+            SQLiteCommand cmd;
+
+            foreach (var item in _race.Groups)
+            {
+                if (item.Id == 0)
+                {
+                    sqlQuery = "insert into Groups (Name) values ('" + Convert.ToString(item.Name) + "')";
+                    cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+                    cmd.ExecuteNonQuery();
+                    item.Id = Convert.ToInt32(getLastInsertedId(cmd));
+
+                    sqlQuery = "delete from Pilot_Groups where GroupId =" + Convert.ToInt32(item.Id);
+                    cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+                    cmd.ExecuteNonQuery();
+                }
+
+                foreach (var pilot in item.Pilots)
+                {
+                    if (pilot != null)
+                    {
+                        sqlQuery = "delete from Pilot_Groups where PilotId =" + pilot.Id + " and GroupId =" + Convert.ToInt32(item.Id);
+                        cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+                        cmd.ExecuteNonQuery();
+
+                        sqlQuery = "insert into Pilot_Groups (PilotId, GroupId) values ('" + Convert.ToInt32(pilot.Id) + "', '" + Convert.ToInt32(item.Id) + "')";
+                        cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+                        cmd.ExecuteNonQuery();
+                        //pilot.Id = Convert.ToInt32(getLastInsertedId(cmd));
+                    }
+                }
+            }
+            #endregion
 
             cmbRaceGroup.Items.Clear();
             _race.Groups.ForEach(i => cmbRaceGroup.Items.Add(i.Name));
@@ -5792,6 +5991,43 @@ namespace RaceManager.UI
             gvGroupBF.DataSource = group.Pilots;
             _race.Groups.Add(group);
 
+            #region Groups Insertion
+
+            database objDatabase = new database();
+            string sqlQuery;
+            SQLiteCommand cmd;
+
+            foreach (var item in _race.Groups)
+            {
+                if (item.Id == 0)
+                {
+                    sqlQuery = "insert into Groups (Name) values ('" + Convert.ToString(item.Name) + "')";
+                    cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+                    cmd.ExecuteNonQuery();
+                    item.Id = Convert.ToInt32(getLastInsertedId(cmd));
+
+                    sqlQuery = "delete from Pilot_Groups where GroupId =" + Convert.ToInt32(item.Id);
+                    cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+                    cmd.ExecuteNonQuery();
+                }
+
+                foreach (var pilot in item.Pilots)
+                {
+                    if (pilot != null)
+                    {
+                        sqlQuery = "delete from Pilot_Groups where PilotId =" + pilot.Id + " and GroupId =" + Convert.ToInt32(item.Id);
+                        cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+                        cmd.ExecuteNonQuery();
+
+                        sqlQuery = "insert into Pilot_Groups (PilotId, GroupId) values ('" + Convert.ToInt32(pilot.Id) + "', '" + Convert.ToInt32(item.Id) + "')";
+                        cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+                        cmd.ExecuteNonQuery();
+                        //pilot.Id = Convert.ToInt32(getLastInsertedId(cmd));
+                    }
+                }
+            }
+            #endregion
+
             cmbRaceGroup.Items.Clear();
             _race.Groups.ForEach(i => cmbRaceGroup.Items.Add(i.Name));
 
@@ -5806,7 +6042,7 @@ namespace RaceManager.UI
             UpdateRanking();
         }
 
-        private List<LapsInfo> _bestQualificationResuls; 
+        private List<LapsInfo> _bestQualificationResuls;
         private void UpdateRanking()
         {
             var avgSource = new List<LapsInfo>();
@@ -5868,14 +6104,106 @@ namespace RaceManager.UI
         }
         #endregion
 
-        private void btnRaceSave_Click(object sender, EventArgs e)
+        private void btnRaceSave_Click(object sender, EventArgs e) // Confirm And Save Button
         {
+            database objDatabase = new database();
+            string sqlQuery;
+            SQLiteCommand cmd;
 
+            // Insert into RACES table
+            if (_race.Id == 0)
+            {
+                sqlQuery = "insert into Races (Name, Location, Date, NumberOfLaps, NumberOfQualRounds) values ('" + Convert.ToString(_race.Name) + "' , '" + Convert.ToString(_race.Location) + "' , '" + Convert.ToString(_race.Date) + "', '" + nudNumOfLaps.Value + "', '" + nudNumberOfQualRounds.Value + "')";
+                cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+                cmd.ExecuteNonQuery();
+                _race.Id = Convert.ToInt32(getLastInsertedId(cmd));
+            }
+
+            foreach (var raceEvent in _race.RaceEvents)
+            {
+                // Insert into RaceEvents table
+                if (raceEvent.Id == 0)
+                {
+                    sqlQuery = "insert into RaceEvents (RaceId, Name, Group_Id) values (" + Convert.ToInt32(_race.Id) + ", '" + Convert.ToString(raceEvent.Round) + "', " + raceEvent.Group.Id + "  )";
+                    cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+                    cmd.ExecuteNonQuery();
+                    raceEvent.Id = Convert.ToInt32(getLastInsertedId(cmd));
+                }
+
+                foreach (var laps in raceEvent.Laps)
+                {
+                    // Insert into LapsInfos table
+                    if (laps.Id == 0 && Convert.ToString(laps.Lap1) != null)
+                    {
+                        sqlQuery = "insert into LapsInfos (PilotId, PilotName, RaceEventId, OrderNumber, RankNumber, Epc, Pc, IdCount, Rssi, CarrFrequency, Lap1, Lap2, Lap3," +
+                        "Lap4, Lap5, Lap6, AvgLapTime, BestLapTime, GroupId)" +
+                    " values (" + Convert.ToInt32(laps.PilotId) + ", '" + Convert.ToString(laps.PilotName) + "', " + Convert.ToInt32(raceEvent.Id) + ", " +
+                    " " + laps.OrderNumber + ", " + laps.RankNumber + ", '" + laps.Epc + "', '" + laps.Pc + "', " + laps.IdCount + ", '" + laps.Rssi + "'" +
+                    ", " + Convert.ToDecimal(laps.CarrFrequency) + ", '" + Convert.ToString(laps.Lap1) + "', '" + Convert.ToString(laps.Lap2) + "', '" + Convert.ToString(laps.Lap3) + "'" +
+                    ", '" + Convert.ToString(laps.Lap4) + "', '" + Convert.ToString(laps.Lap5) + "', '" + Convert.ToString(laps.Lap6) + "'" +
+                    ",'" + Convert.ToString(laps.AvgLapTimeString) + "', '" + Convert.ToString(laps.BestLapTimeString) + "', '" + raceEvent.Group.Id + "' )";
+                        cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+                        cmd.ExecuteNonQuery();
+                        laps.Id = Convert.ToInt32(getLastInsertedId(cmd));
+                    }
+                }
+            }
+
+            //foreach (var group in _race.Groups)
+            //{
+            //    // Insert into GROUP table and Update GroupId into RaceEvents Collection
+            //    sqlQuery = "insert into Groups (RaceId, Name) values (" + Convert.ToInt32(_race.Id) + ", '" + Convert.ToString(group.Name) + "')";
+            //    cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+            //    cmd.ExecuteNonQuery();
+            //    group.Id = Convert.ToInt32(getLastInsertedId(cmd));
+
+            //    foreach (var raceEvent in _race.RaceEvents)
+            //    {
+            //        // Insert into RACEEVENTS table
+            //        if (group.Name == raceEvent.Group.Name)
+            //        {
+            //            sqlQuery = "insert into RaceEvents (RaceId, Name, Group_Id) values (" + Convert.ToInt32(_race.Id) + ", '" + Convert.ToString(raceEvent.Round) + "', " + group.Id + "  )";
+            //            cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+            //            cmd.ExecuteNonQuery();
+            //            raceEvent.Id = Convert.ToInt32(getLastInsertedId(cmd));
+
+            //            foreach (var laps in raceEvent.Laps)
+            //            {
+            //                // Insert into LAPSINFOS table
+            //                sqlQuery = "insert into LapsInfos (PilotId, PilotName, RaceEventId, OrderNumber, RankNumber, Epc, Pc, IdCount, Rssi, CarrFrequency, Lap1, Lap2, Lap3," +
+            //                    "Lap4, Lap5, Lap6, AvgLapTime, BestLapTime)" +
+            //                " values (" + Convert.ToInt32(laps.PilotId) + ", '" + Convert.ToString(laps.PilotName) + "', " + Convert.ToInt32(raceEvent.Id) + ", " +
+            //                " " + laps.OrderNumber + ", " + laps.RankNumber + ", '" + laps.Epc + "', '" + laps.Pc + "', " + laps.IdCount + ", '" + laps.Rssi + "'" +
+            //                ", " + Convert.ToDecimal(laps.CarrFrequency) + ", '" + Convert.ToString(laps.Lap1) + "', '" + Convert.ToString(laps.Lap2) + "', '" + Convert.ToString(laps.Lap3) + "'" +
+            //                ", '" + Convert.ToString(laps.Lap4) + "', '" + Convert.ToString(laps.Lap5) + "', '" + Convert.ToString(laps.Lap6) + "'" +
+            //                ",'" + Convert.ToString(laps.AvgLapTimeString) + "', '" + Convert.ToString(laps.BestLapTimeString) + "' )";
+            //                cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+            //                cmd.ExecuteNonQuery();
+            //            }
+            //        }
+            //    }
+            //}
+        }
+
+        public int getLastInsertedId(SQLiteCommand cmd)
+        {
+            //database objDatabase = new database();
+            //SQLiteCommand cmd;
+            string lastRowIdQuery;
+            lastRowIdQuery = @"select last_insert_rowid()";
+            //cmd = new SQLiteCommand(objDatabase.get_SQLiteConnection());
+            cmd.CommandText = lastRowIdQuery;
+            return Convert.ToInt32(cmd.ExecuteScalar());
         }
 
         private void gvRace_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
             UpdateRanking();
+        }
+
+        private void groupBox35_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
