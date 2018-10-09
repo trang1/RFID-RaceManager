@@ -85,7 +85,7 @@ namespace RaceManager.Data
             get { return Confirmation ? "Yes" : "No"; }
             set
             {
-                if(string.IsNullOrEmpty(value)) return;
+                if (string.IsNullOrEmpty(value)) return;
 
                 if (value.ToLower() == "yes") Confirmation = true;
                 if (value.ToLower() == "no") Confirmation = false;
@@ -110,7 +110,13 @@ namespace RaceManager.Data
         [NotMapped]
         public TimeSpan? StartTime { get; set; }
 
-        private TimeSpan?[] _lapsTime = {null, null, null, null, null, null};
+        private readonly TimeSpan?[] _lapsTime = { null, null, null, null, null, null };
+
+        public List<TimeSpan> GetLapsTime()
+        {
+            return _lapsTime.Where(l => l.HasValue && l != TimeSpan.Zero).Select(l => l.Value).ToList();
+        }
+
         public int LapsCount => _lapsTime.Count(l => l.HasValue);
         [NotMapped]
         public string Lap1
@@ -203,7 +209,7 @@ namespace RaceManager.Data
         public bool RegisterLapTime(TimeSpan raceTime, double minFirstLapTime, double minLapTime)
         {
             //if (_lapsTime == null) _lapsTime = new List<TimeSpan?>();
-            
+
             var diff = raceTime - _prevRaceTime;
             IdCount++;
 
@@ -235,5 +241,28 @@ namespace RaceManager.Data
             _prevRaceTime = raceTime;
             return true;
         }
+    }
+
+    public class AvgTop3RankingItem
+    {
+        public string Epc { get; set; }
+        public List<TimeSpan> LapsTime { get; set; }
+        public string PilotName { get; set; }
+        public int RankNumber { get; set; }
+
+        public TimeSpan? AvgLapTime
+        {
+            get
+            {
+                if (LapsTime == null)
+                    LapsTime = new List<TimeSpan>();
+
+                var times = LapsTime.OrderBy(l => l);
+                if (times.Count() < 3) return null;
+
+                return TimeSpan.FromMilliseconds(times.Take(3).Average(l => l.TotalMilliseconds));
+            }
+        }
+        public string AvgLapTimeString => AvgLapTime?.ToString("g");
     }
 }

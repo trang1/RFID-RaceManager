@@ -4922,6 +4922,7 @@
             this.gvRace.Name = "gvRace";
             this.gvRace.Size = new System.Drawing.Size(1002, 320);
             this.gvRace.TabIndex = 7;
+            this.gvRace.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvRace_CellEndEdit);
             // 
             // OrderNumber
             // 
@@ -6272,7 +6273,7 @@
             this.tableLayoutPanel4.ColumnCount = 3;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.22422F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.77578F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 444F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 446F));
             this.tableLayoutPanel4.Controls.Add(this.panel9, 2, 0);
             this.tableLayoutPanel4.Controls.Add(this.panel10, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.panel8, 1, 0);
@@ -6291,9 +6292,9 @@
             this.panel9.Controls.Add(this.btGetClearBuffer);
             this.panel9.Controls.Add(this.btGetBuffer);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel9.Location = new System.Drawing.Point(888, 4);
+            this.panel9.Location = new System.Drawing.Point(886, 4);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(439, 81);
+            this.panel9.Size = new System.Drawing.Size(441, 81);
             this.panel9.TabIndex = 1;
             // 
             // btClearBuffer
@@ -6352,7 +6353,7 @@
             this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel10.Location = new System.Drawing.Point(4, 4);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(437, 81);
+            this.panel10.Size = new System.Drawing.Size(436, 81);
             this.panel10.TabIndex = 0;
             // 
             // btBufferInventory
@@ -6394,9 +6395,9 @@
             this.panel8.Controls.Add(this.cbBufferWorkant2);
             this.panel8.Controls.Add(this.cbBufferWorkant3);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(448, 4);
+            this.panel8.Location = new System.Drawing.Point(447, 4);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(433, 81);
+            this.panel8.Size = new System.Drawing.Size(432, 81);
             this.panel8.TabIndex = 0;
             // 
             // cbBufferWorkant1
@@ -6993,7 +6994,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.20588F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.79412F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 429F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 432F));
             this.tableLayoutPanel2.Controls.Add(this.panel2, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel3, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel4, 2, 0);
@@ -7025,9 +7026,9 @@
             this.panel2.Controls.Add(this.label59);
             this.panel2.Controls.Add(this.label48);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(248, 5);
+            this.panel2.Location = new System.Drawing.Point(247, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(640, 75);
+            this.panel2.Size = new System.Drawing.Size(638, 75);
             this.panel2.TabIndex = 0;
             // 
             // txtDStay
@@ -7229,7 +7230,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(5, 5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(235, 75);
+            this.panel3.Size = new System.Drawing.Size(234, 75);
             this.panel3.TabIndex = 1;
             // 
             // btFastInventory
@@ -7251,9 +7252,9 @@
             this.panel4.Controls.Add(this.label73);
             this.panel4.Controls.Add(this.label72);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(896, 5);
+            this.panel4.Location = new System.Drawing.Point(893, 5);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(424, 75);
+            this.panel4.Size = new System.Drawing.Size(427, 75);
             this.panel4.TabIndex = 2;
             // 
             // txtRepeat
@@ -8716,7 +8717,7 @@
             this.label80.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label80.Location = new System.Drawing.Point(495, 17);
             this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(117, 13);
+            this.label80.Size = new System.Drawing.Size(120, 13);
             this.label80.TabIndex = 29;
             this.label80.Text = "命令识别速度(个/秒)：";
             // 

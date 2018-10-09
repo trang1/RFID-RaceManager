@@ -6042,10 +6042,10 @@ namespace RaceManager.UI
             UpdateRanking();
         }
 
-        private List<LapsInfo> _bestQualificationResuls;
+        private List<AvgTop3RankingItem> _bestQualificationResuls;
         private void UpdateRanking()
         {
-            var avgSource = new List<LapsInfo>();
+            var avgSource = new List<AvgTop3RankingItem>();
             var bestSource = new List<LapsInfo>();
 
             foreach (var raceEvent in _race.RaceEvents)
@@ -6055,16 +6055,16 @@ namespace RaceManager.UI
 
                 foreach (var lap in raceEvent.Laps)
                 {
-                    var existingLap = avgSource.FirstOrDefault(s => s.Epc == lap.Epc);
-                    if (existingLap == null)
-                        avgSource.Add(lap);
+                    var existingItem = avgSource.FirstOrDefault(s => s.Epc == lap.Epc);
+                    if (existingItem == null)
+                        avgSource.Add(new AvgTop3RankingItem { Epc = lap.Epc, LapsTime = lap.GetLapsTime(), PilotName = lap.PilotName });
                     else
                     {
-                        if (existingLap.AvgLapTime > lap.AvgLapTime)
-                            avgSource[avgSource.IndexOf(existingLap)] = lap;
+                        //if (existingLap.AvgLapTime > lap.AvgLapTime)
+                        avgSource[avgSource.IndexOf(existingItem)].LapsTime.AddRange(lap.GetLapsTime());
                     }
 
-                    existingLap = bestSource.FirstOrDefault(s => s.Epc == lap.Epc);
+                    var existingLap = bestSource.FirstOrDefault(s => s.Epc == lap.Epc);
                     if (existingLap == null)
                         bestSource.Add(lap);
                     else
