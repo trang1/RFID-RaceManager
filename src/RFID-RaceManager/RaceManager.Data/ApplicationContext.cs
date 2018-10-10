@@ -9,6 +9,7 @@ namespace RaceManager.Data
     {
         public ApplicationContext() : base("DefaultConnection")
         {
+            Database.SetInitializer<ApplicationContext>(null);
         }
 
         public DbSet<Race> Races { get; set; }

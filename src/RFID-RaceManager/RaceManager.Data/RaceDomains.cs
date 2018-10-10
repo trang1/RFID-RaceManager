@@ -41,11 +41,11 @@ namespace RaceManager.Data
         public int Id { get; set; }
         public int RaceId { get; set; }
         public string Name { get; set; }
-        public List<Pilot> Pilots { get; set; }
+        public List<RacePilot> Pilots { get; set; }
 
         public Group()
         {
-            Pilots = new List<Pilot>();
+            Pilots = new List<RacePilot>();
         }
     }
 
@@ -67,29 +67,47 @@ namespace RaceManager.Data
     public class Pilot
     {
         public int Id { get; set; }
-        public int GroupId { get; set; }
-
-        [NotMapped]
-        public int OrderNumber { get; set; }
         public string Tag { get; set; }
         public string Name { get; set; }
         public string Nickname { get; set; }
         public string Team { get; set; }
         public string Email { get; set; }
-        public int isChecked { get; set; }
-        public bool Confirmation { get; set; }
+        public int Confirmation { get; set; }
 
         [NotMapped]
         public string ConfirmationString
         {
-            get { return Confirmation ? "Yes" : "No"; }
+            get { return Confirmation == 1 ? "Yes" : "No"; }
             set
             {
                 if (string.IsNullOrEmpty(value)) return;
 
-                if (value.ToLower() == "yes") Confirmation = true;
-                if (value.ToLower() == "no") Confirmation = false;
+                if (value.ToLower() == "yes") Confirmation = 1;
+                if (value.ToLower() == "no") Confirmation = 0;
             }
+        }
+    }
+
+    [NotMapped]
+    public class RacePilot : Pilot
+    {
+        public int GroupId { get; set; }
+        public int OrderNumber { get; set; }
+        public int IsChecked { get; set; }
+
+        public RacePilot(Pilot pilot)
+        {
+            Id = pilot.Id;
+            Name = pilot.Name;
+            Nickname = pilot.Nickname;
+            Team = pilot.Team;
+            Email = pilot.Email;
+            Tag = pilot.Tag;
+            Confirmation = pilot.Confirmation;
+        }
+
+        public RacePilot()
+        {
         }
     }
 
