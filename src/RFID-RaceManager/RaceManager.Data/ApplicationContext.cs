@@ -10,6 +10,7 @@ namespace RaceManager.Data
         public ApplicationContext() : base("DefaultConnection")
         {
             Database.SetInitializer<ApplicationContext>(null);
+            Database.Log = (s => System.Diagnostics.Debug.WriteLine(s));
         }
 
         public DbSet<Race> Races { get; set; }

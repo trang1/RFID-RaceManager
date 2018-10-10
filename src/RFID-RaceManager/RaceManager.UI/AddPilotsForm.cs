@@ -1,11 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Data.Entity;
-using System.Drawing;
 using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using RaceManager.Data;
 using ApplicationContext = RaceManager.Data.ApplicationContext;
@@ -16,14 +12,15 @@ namespace RaceManager.UI
     {
         private readonly ApplicationContext _db;
 
-        public AddPilotsForm(ApplicationContext db)
+        public AddPilotsForm()
         {
-            _db = db;
             InitializeComponent();
+
+            _db = new ApplicationContext();
             SelectedPilots = new List<Pilot>();
         }
 
-        public List<Pilot> SelectedPilots { get; set; } 
+        public List<Pilot> SelectedPilots { get; set; }
 
         private void AddPilotsForm_Load(object sender, EventArgs e)
         {

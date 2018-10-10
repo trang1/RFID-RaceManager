@@ -52,6 +52,7 @@ namespace RaceManager.Data
     public class RaceEvent
     {
         public int Id { get; set; }
+        public int GroupId { get; set; }
         public int RaceId { get; set; }
         public string Round { get; set; }
         public Group Group { get; set; }
@@ -61,6 +62,8 @@ namespace RaceManager.Data
         {
             Laps = new List<LapsInfo>();
         }
+
+        [NotMapped]
         public bool Finished { get; set; }
     }
 
@@ -136,37 +139,37 @@ namespace RaceManager.Data
         }
 
         public int LapsCount => _lapsTime.Count(l => l.HasValue);
-        [NotMapped]
+        
         public string Lap1
         {
             get { return _lapsTime[0]?.ToString("g"); }
             set { SetLapTime(0, value); }
         }
-        [NotMapped]
+        
         public string Lap2
         {
             get { return _lapsTime[1]?.ToString("g"); }
             set { SetLapTime(1, value); }
         }
-        [NotMapped]
+        
         public string Lap3
         {
             get { return _lapsTime[2]?.ToString("g"); }
             set { SetLapTime(2, value); }
         }
-        [NotMapped]
+        
         public string Lap4
         {
             get { return _lapsTime[3]?.ToString("g"); }
             set { SetLapTime(3, value); }
         }
-        [NotMapped]
+        
         public string Lap5
         {
             get { return _lapsTime[4]?.ToString("g"); }
             set { SetLapTime(4, value); }
         }
-        [NotMapped]
+        
         public string Lap6
         {
             get { return _lapsTime[5]?.ToString("g"); }
