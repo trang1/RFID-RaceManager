@@ -182,6 +182,14 @@
             this.label126 = new System.Windows.Forms.Label();
             this.groupBox28 = new System.Windows.Forms.GroupBox();
             this.gvPilots = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nicknameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.teamDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tagDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bindingSourcePilots1 = new System.Windows.Forms.BindingSource(this.components);
             this.tabRounds = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
@@ -190,7 +198,6 @@
             this.tabControl5 = new System.Windows.Forms.TabControl();
             this.tabPage9 = new System.Windows.Forms.TabPage();
             this.gvGroupAF = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn141 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn142 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn143 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn144 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -199,7 +206,6 @@
             this.bindingSourcePilots = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage10 = new System.Windows.Forms.TabPage();
             this.gvGroupBF = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn148 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn149 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn150 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn151 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -211,7 +217,6 @@
             this.tabControl4 = new System.Windows.Forms.TabControl();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.gvGroupAS = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn127 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn128 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn129 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn130 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -219,7 +224,6 @@
             this.dataGridViewTextBoxColumn132 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.gvGroupBS = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn134 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn135 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn136 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn137 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -231,7 +235,6 @@
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.gvGroupAQ = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn99 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn100 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn101 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn102 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -239,7 +242,6 @@
             this.dataGridViewTextBoxColumn104 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.gvGroupBQ = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn106 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn107 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn108 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn109 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -247,7 +249,6 @@
             this.dataGridViewTextBoxColumn111 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.gvGroupCQ = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn113 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn114 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn115 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn116 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -255,7 +256,6 @@
             this.dataGridViewTextBoxColumn118 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.gvGroupDQ = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn120 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn121 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn122 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn123 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -269,7 +269,6 @@
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.pageGroupA = new System.Windows.Forms.TabPage();
             this.gvGroupA = new System.Windows.Forms.DataGridView();
-            this.orderNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nicknameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.teamDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -277,7 +276,6 @@
             this.emailDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageGroupB = new System.Windows.Forms.TabPage();
             this.gvGroupB = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -285,7 +283,6 @@
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageGroupC = new System.Windows.Forms.TabPage();
             this.gvGroupC = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -293,7 +290,6 @@
             this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageGroupD = new System.Windows.Forms.TabPage();
             this.gvGroupD = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -301,7 +297,6 @@
             this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageGroupE = new System.Windows.Forms.TabPage();
             this.gvGroupE = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -309,7 +304,6 @@
             this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageGroupF = new System.Windows.Forms.TabPage();
             this.gvGroupF = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -317,7 +311,6 @@
             this.dataGridViewTextBoxColumn34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageGroupG = new System.Windows.Forms.TabPage();
             this.gvGroupG = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -325,7 +318,6 @@
             this.dataGridViewTextBoxColumn41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageGroupH = new System.Windows.Forms.TabPage();
             this.gvGroupH = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn43 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn44 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn45 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn46 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -333,7 +325,6 @@
             this.dataGridViewTextBoxColumn48 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageGroupI = new System.Windows.Forms.TabPage();
             this.gvGroupI = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn50 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn51 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn52 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn53 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -341,7 +332,6 @@
             this.dataGridViewTextBoxColumn55 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageGroupJ = new System.Windows.Forms.TabPage();
             this.gvGroupJ = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn57 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn58 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn59 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn60 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -349,7 +339,6 @@
             this.dataGridViewTextBoxColumn62 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageGroupK = new System.Windows.Forms.TabPage();
             this.gvGroupK = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn64 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn65 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn66 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn67 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -357,7 +346,6 @@
             this.dataGridViewTextBoxColumn69 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageGroupL = new System.Windows.Forms.TabPage();
             this.gvGroupL = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn71 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn72 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn73 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn74 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -365,7 +353,6 @@
             this.dataGridViewTextBoxColumn76 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageGroupM = new System.Windows.Forms.TabPage();
             this.gvGroupM = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn78 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn79 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn80 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn81 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -373,7 +360,6 @@
             this.dataGridViewTextBoxColumn83 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageGroupN = new System.Windows.Forms.TabPage();
             this.gvGroupN = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn85 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn86 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn87 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn88 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -381,7 +367,6 @@
             this.dataGridViewTextBoxColumn90 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageGroupO = new System.Windows.Forms.TabPage();
             this.gvGroupO = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn92 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn93 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn94 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn95 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -745,14 +730,6 @@
             this.lxLedControl17 = new LxControl.LxLedControl();
             this.lxLedControl18 = new LxControl.LxLedControl();
             this.timerInventory = new System.Windows.Forms.Timer(this.components);
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nicknameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.teamDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tagDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabCtrMain.SuspendLayout();
             this.PagReaderSetting.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -2675,7 +2652,7 @@
             this.groupBox28.Size = new System.Drawing.Size(965, 558);
             this.groupBox28.TabIndex = 1;
             this.groupBox28.TabStop = false;
-            this.groupBox28.Text = "Pilot List";
+            this.groupBox28.Text = "Pilot List for the Race";
             // 
             // gvPilots
             // 
@@ -2703,6 +2680,59 @@
             this.gvPilots.Size = new System.Drawing.Size(961, 541);
             this.gvPilots.TabIndex = 0;
             this.gvPilots.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvPilots_CellValueChanged);
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "OrderNumber";
+            this.Column1.HeaderText = "#";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 60;
+            // 
+            // Id
+            // 
+            this.Id.DataPropertyName = "Id";
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.Visible = false;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // nicknameDataGridViewTextBoxColumn
+            // 
+            this.nicknameDataGridViewTextBoxColumn.DataPropertyName = "Nickname";
+            this.nicknameDataGridViewTextBoxColumn.HeaderText = "Nickname";
+            this.nicknameDataGridViewTextBoxColumn.Name = "nicknameDataGridViewTextBoxColumn";
+            // 
+            // teamDataGridViewTextBoxColumn
+            // 
+            this.teamDataGridViewTextBoxColumn.DataPropertyName = "Team";
+            this.teamDataGridViewTextBoxColumn.HeaderText = "Team";
+            this.teamDataGridViewTextBoxColumn.Name = "teamDataGridViewTextBoxColumn";
+            // 
+            // tagDataGridViewTextBoxColumn
+            // 
+            this.tagDataGridViewTextBoxColumn.DataPropertyName = "Tag";
+            this.tagDataGridViewTextBoxColumn.HeaderText = "TAG ID";
+            this.tagDataGridViewTextBoxColumn.Name = "tagDataGridViewTextBoxColumn";
+            this.tagDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "E-Mail";
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            this.emailDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // Email
+            // 
+            this.Email.DataPropertyName = "ConfirmationString";
+            this.Email.HeaderText = "Confirmation";
+            this.Email.Name = "Email";
             // 
             // bindingSourcePilots1
             // 
@@ -2794,7 +2824,6 @@
             this.gvGroupAF.AutoGenerateColumns = false;
             this.gvGroupAF.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvGroupAF.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn141,
             this.dataGridViewTextBoxColumn142,
             this.dataGridViewTextBoxColumn143,
             this.dataGridViewTextBoxColumn144,
@@ -2809,14 +2838,6 @@
             this.gvGroupAF.RowTemplate.Height = 24;
             this.gvGroupAF.Size = new System.Drawing.Size(1009, 120);
             this.gvGroupAF.TabIndex = 0;
-            // 
-            // dataGridViewTextBoxColumn141
-            // 
-            this.dataGridViewTextBoxColumn141.DataPropertyName = "OrderNumber";
-            this.dataGridViewTextBoxColumn141.HeaderText = "#";
-            this.dataGridViewTextBoxColumn141.Name = "dataGridViewTextBoxColumn141";
-            this.dataGridViewTextBoxColumn141.ReadOnly = true;
-            this.dataGridViewTextBoxColumn141.Width = 60;
             // 
             // dataGridViewTextBoxColumn142
             // 
@@ -2878,7 +2899,6 @@
             this.gvGroupBF.AutoGenerateColumns = false;
             this.gvGroupBF.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvGroupBF.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn148,
             this.dataGridViewTextBoxColumn149,
             this.dataGridViewTextBoxColumn150,
             this.dataGridViewTextBoxColumn151,
@@ -2893,14 +2913,6 @@
             this.gvGroupBF.RowTemplate.Height = 24;
             this.gvGroupBF.Size = new System.Drawing.Size(1009, 120);
             this.gvGroupBF.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn148
-            // 
-            this.dataGridViewTextBoxColumn148.DataPropertyName = "OrderNumber";
-            this.dataGridViewTextBoxColumn148.HeaderText = "#";
-            this.dataGridViewTextBoxColumn148.Name = "dataGridViewTextBoxColumn148";
-            this.dataGridViewTextBoxColumn148.ReadOnly = true;
-            this.dataGridViewTextBoxColumn148.Width = 60;
             // 
             // dataGridViewTextBoxColumn149
             // 
@@ -3011,7 +3023,6 @@
             this.gvGroupAS.AutoGenerateColumns = false;
             this.gvGroupAS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvGroupAS.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn127,
             this.dataGridViewTextBoxColumn128,
             this.dataGridViewTextBoxColumn129,
             this.dataGridViewTextBoxColumn130,
@@ -3026,14 +3037,6 @@
             this.gvGroupAS.RowTemplate.Height = 24;
             this.gvGroupAS.Size = new System.Drawing.Size(1009, 120);
             this.gvGroupAS.TabIndex = 0;
-            // 
-            // dataGridViewTextBoxColumn127
-            // 
-            this.dataGridViewTextBoxColumn127.DataPropertyName = "OrderNumber";
-            this.dataGridViewTextBoxColumn127.HeaderText = "#";
-            this.dataGridViewTextBoxColumn127.Name = "dataGridViewTextBoxColumn127";
-            this.dataGridViewTextBoxColumn127.ReadOnly = true;
-            this.dataGridViewTextBoxColumn127.Width = 60;
             // 
             // dataGridViewTextBoxColumn128
             // 
@@ -3091,7 +3094,6 @@
             this.gvGroupBS.AutoGenerateColumns = false;
             this.gvGroupBS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvGroupBS.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn134,
             this.dataGridViewTextBoxColumn135,
             this.dataGridViewTextBoxColumn136,
             this.dataGridViewTextBoxColumn137,
@@ -3106,14 +3108,6 @@
             this.gvGroupBS.RowTemplate.Height = 24;
             this.gvGroupBS.Size = new System.Drawing.Size(1009, 120);
             this.gvGroupBS.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn134
-            // 
-            this.dataGridViewTextBoxColumn134.DataPropertyName = "OrderNumber";
-            this.dataGridViewTextBoxColumn134.HeaderText = "#";
-            this.dataGridViewTextBoxColumn134.Name = "dataGridViewTextBoxColumn134";
-            this.dataGridViewTextBoxColumn134.ReadOnly = true;
-            this.dataGridViewTextBoxColumn134.Width = 60;
             // 
             // dataGridViewTextBoxColumn135
             // 
@@ -3226,7 +3220,6 @@
             this.gvGroupAQ.AutoGenerateColumns = false;
             this.gvGroupAQ.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvGroupAQ.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn99,
             this.dataGridViewTextBoxColumn100,
             this.dataGridViewTextBoxColumn101,
             this.dataGridViewTextBoxColumn102,
@@ -3241,14 +3234,6 @@
             this.gvGroupAQ.RowTemplate.Height = 24;
             this.gvGroupAQ.Size = new System.Drawing.Size(1009, 120);
             this.gvGroupAQ.TabIndex = 0;
-            // 
-            // dataGridViewTextBoxColumn99
-            // 
-            this.dataGridViewTextBoxColumn99.DataPropertyName = "OrderNumber";
-            this.dataGridViewTextBoxColumn99.HeaderText = "#";
-            this.dataGridViewTextBoxColumn99.Name = "dataGridViewTextBoxColumn99";
-            this.dataGridViewTextBoxColumn99.ReadOnly = true;
-            this.dataGridViewTextBoxColumn99.Width = 60;
             // 
             // dataGridViewTextBoxColumn100
             // 
@@ -3306,7 +3291,6 @@
             this.gvGroupBQ.AutoGenerateColumns = false;
             this.gvGroupBQ.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvGroupBQ.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn106,
             this.dataGridViewTextBoxColumn107,
             this.dataGridViewTextBoxColumn108,
             this.dataGridViewTextBoxColumn109,
@@ -3321,14 +3305,6 @@
             this.gvGroupBQ.RowTemplate.Height = 24;
             this.gvGroupBQ.Size = new System.Drawing.Size(1009, 120);
             this.gvGroupBQ.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn106
-            // 
-            this.dataGridViewTextBoxColumn106.DataPropertyName = "OrderNumber";
-            this.dataGridViewTextBoxColumn106.HeaderText = "#";
-            this.dataGridViewTextBoxColumn106.Name = "dataGridViewTextBoxColumn106";
-            this.dataGridViewTextBoxColumn106.ReadOnly = true;
-            this.dataGridViewTextBoxColumn106.Width = 60;
             // 
             // dataGridViewTextBoxColumn107
             // 
@@ -3386,7 +3362,6 @@
             this.gvGroupCQ.AutoGenerateColumns = false;
             this.gvGroupCQ.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvGroupCQ.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn113,
             this.dataGridViewTextBoxColumn114,
             this.dataGridViewTextBoxColumn115,
             this.dataGridViewTextBoxColumn116,
@@ -3401,14 +3376,6 @@
             this.gvGroupCQ.RowTemplate.Height = 24;
             this.gvGroupCQ.Size = new System.Drawing.Size(1009, 120);
             this.gvGroupCQ.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn113
-            // 
-            this.dataGridViewTextBoxColumn113.DataPropertyName = "OrderNumber";
-            this.dataGridViewTextBoxColumn113.HeaderText = "#";
-            this.dataGridViewTextBoxColumn113.Name = "dataGridViewTextBoxColumn113";
-            this.dataGridViewTextBoxColumn113.ReadOnly = true;
-            this.dataGridViewTextBoxColumn113.Width = 60;
             // 
             // dataGridViewTextBoxColumn114
             // 
@@ -3466,7 +3433,6 @@
             this.gvGroupDQ.AutoGenerateColumns = false;
             this.gvGroupDQ.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvGroupDQ.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn120,
             this.dataGridViewTextBoxColumn121,
             this.dataGridViewTextBoxColumn122,
             this.dataGridViewTextBoxColumn123,
@@ -3481,14 +3447,6 @@
             this.gvGroupDQ.RowTemplate.Height = 24;
             this.gvGroupDQ.Size = new System.Drawing.Size(1009, 120);
             this.gvGroupDQ.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn120
-            // 
-            this.dataGridViewTextBoxColumn120.DataPropertyName = "OrderNumber";
-            this.dataGridViewTextBoxColumn120.HeaderText = "#";
-            this.dataGridViewTextBoxColumn120.Name = "dataGridViewTextBoxColumn120";
-            this.dataGridViewTextBoxColumn120.ReadOnly = true;
-            this.dataGridViewTextBoxColumn120.Width = 60;
             // 
             // dataGridViewTextBoxColumn121
             // 
@@ -3646,7 +3604,6 @@
             this.gvGroupA.AutoGenerateColumns = false;
             this.gvGroupA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvGroupA.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.orderNumberDataGridViewTextBoxColumn,
             this.nameDataGridViewTextBoxColumn1,
             this.nicknameDataGridViewTextBoxColumn1,
             this.teamDataGridViewTextBoxColumn1,
@@ -3661,14 +3618,6 @@
             this.gvGroupA.RowTemplate.Height = 24;
             this.gvGroupA.Size = new System.Drawing.Size(1009, 120);
             this.gvGroupA.TabIndex = 0;
-            // 
-            // orderNumberDataGridViewTextBoxColumn
-            // 
-            this.orderNumberDataGridViewTextBoxColumn.DataPropertyName = "OrderNumber";
-            this.orderNumberDataGridViewTextBoxColumn.HeaderText = "#";
-            this.orderNumberDataGridViewTextBoxColumn.Name = "orderNumberDataGridViewTextBoxColumn";
-            this.orderNumberDataGridViewTextBoxColumn.ReadOnly = true;
-            this.orderNumberDataGridViewTextBoxColumn.Width = 60;
             // 
             // nameDataGridViewTextBoxColumn1
             // 
@@ -3726,7 +3675,6 @@
             this.gvGroupB.AutoGenerateColumns = false;
             this.gvGroupB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvGroupB.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4,
@@ -3741,14 +3689,6 @@
             this.gvGroupB.RowTemplate.Height = 24;
             this.gvGroupB.Size = new System.Drawing.Size(1009, 120);
             this.gvGroupB.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "OrderNumber";
-            this.dataGridViewTextBoxColumn1.HeaderText = "#";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 60;
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -3806,7 +3746,6 @@
             this.gvGroupC.AutoGenerateColumns = false;
             this.gvGroupC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvGroupC.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn8,
             this.dataGridViewTextBoxColumn9,
             this.dataGridViewTextBoxColumn10,
             this.dataGridViewTextBoxColumn11,
@@ -3821,14 +3760,6 @@
             this.gvGroupC.RowTemplate.Height = 24;
             this.gvGroupC.Size = new System.Drawing.Size(1009, 120);
             this.gvGroupC.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "OrderNumber";
-            this.dataGridViewTextBoxColumn8.HeaderText = "#";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.ReadOnly = true;
-            this.dataGridViewTextBoxColumn8.Width = 60;
             // 
             // dataGridViewTextBoxColumn9
             // 
@@ -3886,7 +3817,6 @@
             this.gvGroupD.AutoGenerateColumns = false;
             this.gvGroupD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvGroupD.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn15,
             this.dataGridViewTextBoxColumn16,
             this.dataGridViewTextBoxColumn17,
             this.dataGridViewTextBoxColumn18,
@@ -3901,14 +3831,6 @@
             this.gvGroupD.RowTemplate.Height = 24;
             this.gvGroupD.Size = new System.Drawing.Size(1009, 120);
             this.gvGroupD.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn15
-            // 
-            this.dataGridViewTextBoxColumn15.DataPropertyName = "OrderNumber";
-            this.dataGridViewTextBoxColumn15.HeaderText = "#";
-            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
-            this.dataGridViewTextBoxColumn15.ReadOnly = true;
-            this.dataGridViewTextBoxColumn15.Width = 60;
             // 
             // dataGridViewTextBoxColumn16
             // 
@@ -3966,7 +3888,6 @@
             this.gvGroupE.AutoGenerateColumns = false;
             this.gvGroupE.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvGroupE.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn22,
             this.dataGridViewTextBoxColumn23,
             this.dataGridViewTextBoxColumn24,
             this.dataGridViewTextBoxColumn25,
@@ -3981,14 +3902,6 @@
             this.gvGroupE.RowTemplate.Height = 24;
             this.gvGroupE.Size = new System.Drawing.Size(1009, 120);
             this.gvGroupE.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn22
-            // 
-            this.dataGridViewTextBoxColumn22.DataPropertyName = "OrderNumber";
-            this.dataGridViewTextBoxColumn22.HeaderText = "#";
-            this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
-            this.dataGridViewTextBoxColumn22.ReadOnly = true;
-            this.dataGridViewTextBoxColumn22.Width = 60;
             // 
             // dataGridViewTextBoxColumn23
             // 
@@ -4046,7 +3959,6 @@
             this.gvGroupF.AutoGenerateColumns = false;
             this.gvGroupF.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvGroupF.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn29,
             this.dataGridViewTextBoxColumn30,
             this.dataGridViewTextBoxColumn31,
             this.dataGridViewTextBoxColumn32,
@@ -4061,14 +3973,6 @@
             this.gvGroupF.RowTemplate.Height = 24;
             this.gvGroupF.Size = new System.Drawing.Size(1009, 120);
             this.gvGroupF.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn29
-            // 
-            this.dataGridViewTextBoxColumn29.DataPropertyName = "OrderNumber";
-            this.dataGridViewTextBoxColumn29.HeaderText = "#";
-            this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
-            this.dataGridViewTextBoxColumn29.ReadOnly = true;
-            this.dataGridViewTextBoxColumn29.Width = 60;
             // 
             // dataGridViewTextBoxColumn30
             // 
@@ -4126,7 +4030,6 @@
             this.gvGroupG.AutoGenerateColumns = false;
             this.gvGroupG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvGroupG.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn36,
             this.dataGridViewTextBoxColumn37,
             this.dataGridViewTextBoxColumn38,
             this.dataGridViewTextBoxColumn39,
@@ -4141,14 +4044,6 @@
             this.gvGroupG.RowTemplate.Height = 24;
             this.gvGroupG.Size = new System.Drawing.Size(1009, 120);
             this.gvGroupG.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn36
-            // 
-            this.dataGridViewTextBoxColumn36.DataPropertyName = "OrderNumber";
-            this.dataGridViewTextBoxColumn36.HeaderText = "#";
-            this.dataGridViewTextBoxColumn36.Name = "dataGridViewTextBoxColumn36";
-            this.dataGridViewTextBoxColumn36.ReadOnly = true;
-            this.dataGridViewTextBoxColumn36.Width = 60;
             // 
             // dataGridViewTextBoxColumn37
             // 
@@ -4206,7 +4101,6 @@
             this.gvGroupH.AutoGenerateColumns = false;
             this.gvGroupH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvGroupH.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn43,
             this.dataGridViewTextBoxColumn44,
             this.dataGridViewTextBoxColumn45,
             this.dataGridViewTextBoxColumn46,
@@ -4221,14 +4115,6 @@
             this.gvGroupH.RowTemplate.Height = 24;
             this.gvGroupH.Size = new System.Drawing.Size(1009, 120);
             this.gvGroupH.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn43
-            // 
-            this.dataGridViewTextBoxColumn43.DataPropertyName = "OrderNumber";
-            this.dataGridViewTextBoxColumn43.HeaderText = "#";
-            this.dataGridViewTextBoxColumn43.Name = "dataGridViewTextBoxColumn43";
-            this.dataGridViewTextBoxColumn43.ReadOnly = true;
-            this.dataGridViewTextBoxColumn43.Width = 60;
             // 
             // dataGridViewTextBoxColumn44
             // 
@@ -4286,7 +4172,6 @@
             this.gvGroupI.AutoGenerateColumns = false;
             this.gvGroupI.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvGroupI.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn50,
             this.dataGridViewTextBoxColumn51,
             this.dataGridViewTextBoxColumn52,
             this.dataGridViewTextBoxColumn53,
@@ -4301,14 +4186,6 @@
             this.gvGroupI.RowTemplate.Height = 24;
             this.gvGroupI.Size = new System.Drawing.Size(1009, 120);
             this.gvGroupI.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn50
-            // 
-            this.dataGridViewTextBoxColumn50.DataPropertyName = "OrderNumber";
-            this.dataGridViewTextBoxColumn50.HeaderText = "#";
-            this.dataGridViewTextBoxColumn50.Name = "dataGridViewTextBoxColumn50";
-            this.dataGridViewTextBoxColumn50.ReadOnly = true;
-            this.dataGridViewTextBoxColumn50.Width = 60;
             // 
             // dataGridViewTextBoxColumn51
             // 
@@ -4366,7 +4243,6 @@
             this.gvGroupJ.AutoGenerateColumns = false;
             this.gvGroupJ.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvGroupJ.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn57,
             this.dataGridViewTextBoxColumn58,
             this.dataGridViewTextBoxColumn59,
             this.dataGridViewTextBoxColumn60,
@@ -4381,14 +4257,6 @@
             this.gvGroupJ.RowTemplate.Height = 24;
             this.gvGroupJ.Size = new System.Drawing.Size(1009, 120);
             this.gvGroupJ.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn57
-            // 
-            this.dataGridViewTextBoxColumn57.DataPropertyName = "OrderNumber";
-            this.dataGridViewTextBoxColumn57.HeaderText = "#";
-            this.dataGridViewTextBoxColumn57.Name = "dataGridViewTextBoxColumn57";
-            this.dataGridViewTextBoxColumn57.ReadOnly = true;
-            this.dataGridViewTextBoxColumn57.Width = 60;
             // 
             // dataGridViewTextBoxColumn58
             // 
@@ -4446,7 +4314,6 @@
             this.gvGroupK.AutoGenerateColumns = false;
             this.gvGroupK.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvGroupK.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn64,
             this.dataGridViewTextBoxColumn65,
             this.dataGridViewTextBoxColumn66,
             this.dataGridViewTextBoxColumn67,
@@ -4461,14 +4328,6 @@
             this.gvGroupK.RowTemplate.Height = 24;
             this.gvGroupK.Size = new System.Drawing.Size(1009, 120);
             this.gvGroupK.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn64
-            // 
-            this.dataGridViewTextBoxColumn64.DataPropertyName = "OrderNumber";
-            this.dataGridViewTextBoxColumn64.HeaderText = "#";
-            this.dataGridViewTextBoxColumn64.Name = "dataGridViewTextBoxColumn64";
-            this.dataGridViewTextBoxColumn64.ReadOnly = true;
-            this.dataGridViewTextBoxColumn64.Width = 60;
             // 
             // dataGridViewTextBoxColumn65
             // 
@@ -4526,7 +4385,6 @@
             this.gvGroupL.AutoGenerateColumns = false;
             this.gvGroupL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvGroupL.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn71,
             this.dataGridViewTextBoxColumn72,
             this.dataGridViewTextBoxColumn73,
             this.dataGridViewTextBoxColumn74,
@@ -4541,14 +4399,6 @@
             this.gvGroupL.RowTemplate.Height = 24;
             this.gvGroupL.Size = new System.Drawing.Size(1009, 120);
             this.gvGroupL.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn71
-            // 
-            this.dataGridViewTextBoxColumn71.DataPropertyName = "OrderNumber";
-            this.dataGridViewTextBoxColumn71.HeaderText = "#";
-            this.dataGridViewTextBoxColumn71.Name = "dataGridViewTextBoxColumn71";
-            this.dataGridViewTextBoxColumn71.ReadOnly = true;
-            this.dataGridViewTextBoxColumn71.Width = 60;
             // 
             // dataGridViewTextBoxColumn72
             // 
@@ -4606,7 +4456,6 @@
             this.gvGroupM.AutoGenerateColumns = false;
             this.gvGroupM.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvGroupM.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn78,
             this.dataGridViewTextBoxColumn79,
             this.dataGridViewTextBoxColumn80,
             this.dataGridViewTextBoxColumn81,
@@ -4621,14 +4470,6 @@
             this.gvGroupM.RowTemplate.Height = 24;
             this.gvGroupM.Size = new System.Drawing.Size(1009, 120);
             this.gvGroupM.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn78
-            // 
-            this.dataGridViewTextBoxColumn78.DataPropertyName = "OrderNumber";
-            this.dataGridViewTextBoxColumn78.HeaderText = "#";
-            this.dataGridViewTextBoxColumn78.Name = "dataGridViewTextBoxColumn78";
-            this.dataGridViewTextBoxColumn78.ReadOnly = true;
-            this.dataGridViewTextBoxColumn78.Width = 60;
             // 
             // dataGridViewTextBoxColumn79
             // 
@@ -4685,7 +4526,6 @@
             this.gvGroupN.AutoGenerateColumns = false;
             this.gvGroupN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvGroupN.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn85,
             this.dataGridViewTextBoxColumn86,
             this.dataGridViewTextBoxColumn87,
             this.dataGridViewTextBoxColumn88,
@@ -4700,14 +4540,6 @@
             this.gvGroupN.RowTemplate.Height = 24;
             this.gvGroupN.Size = new System.Drawing.Size(1013, 124);
             this.gvGroupN.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn85
-            // 
-            this.dataGridViewTextBoxColumn85.DataPropertyName = "OrderNumber";
-            this.dataGridViewTextBoxColumn85.HeaderText = "#";
-            this.dataGridViewTextBoxColumn85.Name = "dataGridViewTextBoxColumn85";
-            this.dataGridViewTextBoxColumn85.ReadOnly = true;
-            this.dataGridViewTextBoxColumn85.Width = 60;
             // 
             // dataGridViewTextBoxColumn86
             // 
@@ -4764,7 +4596,6 @@
             this.gvGroupO.AutoGenerateColumns = false;
             this.gvGroupO.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvGroupO.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn92,
             this.dataGridViewTextBoxColumn93,
             this.dataGridViewTextBoxColumn94,
             this.dataGridViewTextBoxColumn95,
@@ -4779,14 +4610,6 @@
             this.gvGroupO.RowTemplate.Height = 24;
             this.gvGroupO.Size = new System.Drawing.Size(1013, 124);
             this.gvGroupO.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn92
-            // 
-            this.dataGridViewTextBoxColumn92.DataPropertyName = "OrderNumber";
-            this.dataGridViewTextBoxColumn92.HeaderText = "#";
-            this.dataGridViewTextBoxColumn92.Name = "dataGridViewTextBoxColumn92";
-            this.dataGridViewTextBoxColumn92.ReadOnly = true;
-            this.dataGridViewTextBoxColumn92.Width = 60;
             // 
             // dataGridViewTextBoxColumn93
             // 
@@ -6221,7 +6044,7 @@
             this.tableLayoutPanel4.ColumnCount = 3;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.22422F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.77578F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 448F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 450F));
             this.tableLayoutPanel4.Controls.Add(this.panel9, 2, 0);
             this.tableLayoutPanel4.Controls.Add(this.panel10, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.panel8, 1, 0);
@@ -6240,9 +6063,9 @@
             this.panel9.Controls.Add(this.btGetClearBuffer);
             this.panel9.Controls.Add(this.btGetBuffer);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel9.Location = new System.Drawing.Point(884, 4);
+            this.panel9.Location = new System.Drawing.Point(882, 4);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(443, 81);
+            this.panel9.Size = new System.Drawing.Size(445, 81);
             this.panel9.TabIndex = 1;
             // 
             // btClearBuffer
@@ -6301,7 +6124,7 @@
             this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel10.Location = new System.Drawing.Point(4, 4);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(435, 81);
+            this.panel10.Size = new System.Drawing.Size(434, 81);
             this.panel10.TabIndex = 0;
             // 
             // btBufferInventory
@@ -6343,9 +6166,9 @@
             this.panel8.Controls.Add(this.cbBufferWorkant2);
             this.panel8.Controls.Add(this.cbBufferWorkant3);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(446, 4);
+            this.panel8.Location = new System.Drawing.Point(445, 4);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(431, 81);
+            this.panel8.Size = new System.Drawing.Size(430, 81);
             this.panel8.TabIndex = 0;
             // 
             // cbBufferWorkant1
@@ -6942,7 +6765,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.20588F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.79412F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 435F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 438F));
             this.tableLayoutPanel2.Controls.Add(this.panel2, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel3, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel4, 2, 0);
@@ -6976,7 +6799,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(246, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(636, 75);
+            this.panel2.Size = new System.Drawing.Size(633, 75);
             this.panel2.TabIndex = 0;
             // 
             // txtDStay
@@ -7200,9 +7023,9 @@
             this.panel4.Controls.Add(this.label73);
             this.panel4.Controls.Add(this.label72);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(890, 5);
+            this.panel4.Location = new System.Drawing.Point(887, 5);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(430, 75);
+            this.panel4.Size = new System.Drawing.Size(433, 75);
             this.panel4.TabIndex = 2;
             // 
             // txtRepeat
@@ -8950,59 +8773,6 @@
             // 
             this.timerInventory.Interval = 500;
             this.timerInventory.Tick += new System.EventHandler(this.timerInventory_Tick);
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "OrderNumber";
-            this.Column1.HeaderText = "#";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 60;
-            // 
-            // Id
-            // 
-            this.Id.DataPropertyName = "Id";
-            this.Id.HeaderText = "Id";
-            this.Id.Name = "Id";
-            this.Id.Visible = false;
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            this.nameDataGridViewTextBoxColumn.Width = 200;
-            // 
-            // nicknameDataGridViewTextBoxColumn
-            // 
-            this.nicknameDataGridViewTextBoxColumn.DataPropertyName = "Nickname";
-            this.nicknameDataGridViewTextBoxColumn.HeaderText = "Nickname";
-            this.nicknameDataGridViewTextBoxColumn.Name = "nicknameDataGridViewTextBoxColumn";
-            // 
-            // teamDataGridViewTextBoxColumn
-            // 
-            this.teamDataGridViewTextBoxColumn.DataPropertyName = "Team";
-            this.teamDataGridViewTextBoxColumn.HeaderText = "Team";
-            this.teamDataGridViewTextBoxColumn.Name = "teamDataGridViewTextBoxColumn";
-            // 
-            // tagDataGridViewTextBoxColumn
-            // 
-            this.tagDataGridViewTextBoxColumn.DataPropertyName = "Tag";
-            this.tagDataGridViewTextBoxColumn.HeaderText = "TAG ID";
-            this.tagDataGridViewTextBoxColumn.Name = "tagDataGridViewTextBoxColumn";
-            this.tagDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // emailDataGridViewTextBoxColumn
-            // 
-            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
-            this.emailDataGridViewTextBoxColumn.HeaderText = "E-Mail";
-            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-            this.emailDataGridViewTextBoxColumn.Width = 200;
-            // 
-            // Email
-            // 
-            this.Email.DataPropertyName = "ConfirmationString";
-            this.Email.HeaderText = "Confirmation";
-            this.Email.Name = "Email";
             // 
             // MainForm
             // 

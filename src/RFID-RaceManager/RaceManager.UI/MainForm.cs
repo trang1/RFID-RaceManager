@@ -5358,6 +5358,7 @@ namespace RaceManager.UI
         {
             btnRaceStart.Enabled = enable;
             btnRaceStop.Enabled = !enable;
+            btnRaceSave.Enabled = enable;
 
             groupBox9.Enabled = enable;
             groupBox12.Enabled = enable;
@@ -5782,6 +5783,8 @@ namespace RaceManager.UI
 
         private void btnAddPilotsToQF_Click(object sender, EventArgs e)
         {
+            if(_bestQualificationResuls == null || _bestQualificationResuls.Count == 0) return;
+
             // 1/4 finals
             var group = new Group
             {
@@ -6138,6 +6141,7 @@ namespace RaceManager.UI
             try
             {
                 _db.SaveChanges();
+                _selectedRaceEvent.Finished = true;
                 MessageBox.Show("Successfully saved.");
             }
             catch (Exception exception)
