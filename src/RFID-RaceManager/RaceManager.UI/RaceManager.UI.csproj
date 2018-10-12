@@ -120,6 +120,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddPilotForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPilotForm.Designer.cs">
+      <DependentUpon>AddPilotForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddPilotsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +151,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="HighResolutionTimer.cs" />
+    <EmbeddedResource Include="AddPilotForm.resx">
+      <DependentUpon>AddPilotForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddPilotsForm.resx">
       <DependentUpon>AddPilotsForm.cs</DependentUpon>
     </EmbeddedResource>

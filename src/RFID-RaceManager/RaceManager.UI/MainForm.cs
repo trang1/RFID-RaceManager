@@ -5466,7 +5466,6 @@ namespace RaceManager.UI
                 RacePilots.ForEach(rp => rp.OrderNumber = RacePilots.IndexOf(rp) + 1);
             }
 
-
             //bindingSourcePilots1.Clear();
             //database objDatabase = new database();
             //string sqlQuery = "select * from Pilots";

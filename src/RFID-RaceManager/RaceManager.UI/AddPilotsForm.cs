@@ -15,7 +15,6 @@ namespace RaceManager.UI
         public AddPilotsForm()
         {
             InitializeComponent();
-
             SelectedPilots = new List<Pilot>();
         }
 
@@ -32,7 +31,8 @@ namespace RaceManager.UI
             _db.Pilots.Load();
             var pilots = _db.Pilots.ToList();
 
-            gvPilots.DataSource = pilots;
+            pilotBindingSource.DataSource = pilots;
+            pilotBindingSource.ResetBindings(false);
         }
 
         private void btnAddPilots_Click(object sender, EventArgs e)
@@ -41,6 +41,7 @@ namespace RaceManager.UI
                     .Select(r => (Pilot) r.DataBoundItem)
                     .OrderBy(p => p.Tag)
                     .ToList();
+            
             DialogResult = DialogResult.OK;
         }
 
@@ -60,6 +61,17 @@ namespace RaceManager.UI
         private void btnRefresh_Click(object sender, EventArgs e)
         {
             FillTable();
+        }
+
+        private void btnAddPilot_Click(object sender, EventArgs e)
+        {
+            var form = new AddPilotForm();
+            if (form.ShowDialog(this) == DialogResult.OK)
+            {
+                _db.Pilots.Add(form.Pilot);
+                ((List<Pilot>)pilotBindingSource.DataSource).Add(form.Pilot);
+                pilotBindingSource.ResetBindings(false);
+            }
         }
     }
 }

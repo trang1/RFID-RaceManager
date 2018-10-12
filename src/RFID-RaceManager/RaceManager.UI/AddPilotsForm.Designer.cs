@@ -43,6 +43,7 @@
             this.btnRefresh = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnAddPilot = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gvPilots)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pilotBindingSource)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -120,18 +121,18 @@
             // btnClose
             // 
             this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnClose.Location = new System.Drawing.Point(553, 3);
+            this.btnClose.Location = new System.Drawing.Point(695, 3);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(90, 23);
+            this.btnClose.Size = new System.Drawing.Size(153, 23);
             this.btnClose.TabIndex = 2;
             this.btnClose.Text = "Cancel";
             this.btnClose.UseVisualStyleBackColor = true;
             // 
             // btnAddPilots
             // 
-            this.btnAddPilots.Location = new System.Drawing.Point(435, 3);
+            this.btnAddPilots.Location = new System.Drawing.Point(536, 3);
             this.btnAddPilots.Name = "btnAddPilots";
-            this.btnAddPilots.Size = new System.Drawing.Size(100, 23);
+            this.btnAddPilots.Size = new System.Drawing.Size(153, 23);
             this.btnAddPilots.TabIndex = 3;
             this.btnAddPilots.Text = "Add Pilots to List";
             this.btnAddPilots.UseVisualStyleBackColor = true;
@@ -139,7 +140,7 @@
             // 
             // btnSaveChanges
             // 
-            this.btnSaveChanges.Location = new System.Drawing.Point(266, 3);
+            this.btnSaveChanges.Location = new System.Drawing.Point(377, 3);
             this.btnSaveChanges.Name = "btnSaveChanges";
             this.btnSaveChanges.Size = new System.Drawing.Size(153, 23);
             this.btnSaveChanges.TabIndex = 4;
@@ -149,9 +150,9 @@
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(98, 3);
+            this.btnRefresh.Location = new System.Drawing.Point(218, 3);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(151, 23);
+            this.btnRefresh.Size = new System.Drawing.Size(153, 23);
             this.btnRefresh.TabIndex = 5;
             this.btnRefresh.Text = "Refresh List from Database";
             this.btnRefresh.UseVisualStyleBackColor = true;
@@ -174,15 +175,26 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnAddPilot);
             this.panel1.Controls.Add(this.btnSaveChanges);
             this.panel1.Controls.Add(this.btnClose);
             this.panel1.Controls.Add(this.btnRefresh);
             this.panel1.Controls.Add(this.btnAddPilots);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(279, 428);
+            this.panel1.Location = new System.Drawing.Point(75, 428);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(652, 34);
+            this.panel1.Size = new System.Drawing.Size(856, 34);
             this.panel1.TabIndex = 7;
+            // 
+            // btnAddPilot
+            // 
+            this.btnAddPilot.Location = new System.Drawing.Point(59, 3);
+            this.btnAddPilot.Name = "btnAddPilot";
+            this.btnAddPilot.Size = new System.Drawing.Size(153, 23);
+            this.btnAddPilot.TabIndex = 6;
+            this.btnAddPilot.Text = "Add New Pilot";
+            this.btnAddPilot.UseVisualStyleBackColor = true;
+            this.btnAddPilot.Click += new System.EventHandler(this.btnAddPilot_Click);
             // 
             // AddPilotsForm
             // 
@@ -217,5 +229,6 @@
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnAddPilot;
     }
 }
