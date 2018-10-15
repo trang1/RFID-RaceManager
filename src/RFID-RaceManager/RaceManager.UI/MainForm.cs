@@ -6074,6 +6074,8 @@ namespace RaceManager.UI
         }
 
         private List<AvgTop3RankingItem> _bestQualificationResuls;
+        private TimeSpan _bestLapTime = TimeSpan.MaxValue;
+
         private void UpdateRanking()
         {
             var avgSource = new List<AvgTop3RankingItem>();
@@ -6100,7 +6102,7 @@ namespace RaceManager.UI
                         bestSource.Add(lap);
                     else
                     {
-                        if (existingLap.BestLapTime > lap.BestLapTime)
+                        if (!existingLap.BestLapTime.HasValue || existingLap.BestLapTime > lap.BestLapTime)
                             bestSource[bestSource.IndexOf(existingLap)] = lap;
                     }
                 }
@@ -6131,6 +6133,26 @@ namespace RaceManager.UI
 
                 avgLapTimeStringDataGridViewTextBoxColumn.Visible = true;
                 bestLapTimeStringDataGridViewTextBoxColumn.Visible = false;
+            }
+
+            // Check the best lap time
+            var currentBestLapTime = bestOrderedList.FirstOrDefault();
+            if (currentBestLapTime != null &&
+                currentBestLapTime.BestLapTime.GetValueOrDefault(TimeSpan.MaxValue) < _bestLapTime)
+            {
+                _bestLapTime = currentBestLapTime.BestLapTime.Value;
+                var file = ConfigurationManager.AppSettings["BestLapSoundFile"];
+                var path = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), file);
+                if (File.Exists(path))
+                {
+                    var player = new SoundPlayer();
+                    player.SoundLocation = file;
+                    player.Play();
+                }
+                else
+                {
+                    SystemSounds.Question.Play();
+                }
             }
         }
         #endregion
