@@ -17,5 +17,20 @@ namespace RaceManager.UI
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainForm());
         }
+
+
+        //Extension methods
+        public static double? TryToDoubleNull(this object o)
+        {
+            try
+            {
+                if (o == null) return null;
+                return Convert.ToDouble(o);
+            }
+            catch
+            {
+                return null;
+            }
+        }
     }
 }

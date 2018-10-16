@@ -5343,8 +5343,16 @@ namespace RaceManager.UI
             race.Name = tbRaceName.Text;
             race.Date = dtpRaceDate.Value;
             race.Location = tbRaceLocation.Text;
-            //  race.MinLapTime = Convert.ToInt32(tbRaceMinLapTime.Text);
+            race.Length = tbRaceLength.Text.TryToDoubleNull();
 
+            foreach (var raceEvent in race.RaceEvents)
+            {
+                foreach (var lap in raceEvent.Laps)
+                {
+                    lap.Length = race.Length;
+                }
+            }
+            //  race.MinLapTime = Convert.ToInt32(tbRaceMinLapTime.Text);
         }
 
         private bool RaceValidation()

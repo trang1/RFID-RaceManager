@@ -18,6 +18,7 @@ namespace RaceManager.Data
 
         public string Name { get; set; }
         public string Location { get; set; }
+        public double? Length { get; set; }
         public DateTime Date { get; set; }
         public int NumberOfLaps { get; set; }
 
@@ -223,7 +224,40 @@ namespace RaceManager.Data
                 }
             }
         }
+
+        public double? AverageSpeed
+        {
+            get
+            {
+                if(!Length.HasValue) return null;
+
+                var sum = TimeSpan.Zero;
+                var count = 0;
+
+                // average speed = n * Length / (LAP1 + ... LAPn)
+                for (int i = 0; i < LapsCount; i++)
+                {
+                    var lapTime = _lapsTime[i];
+                    if (!lapTime.HasValue) continue;
+
+                    sum += lapTime.Value;
+                    count++;
+                }
+
+                return Length * count / sum.TotalSeconds;
+            }
+        }
+
+        [NotMapped]
+        public double? Distance { get; set; }
+
+        [NotMapped]
+        public double? Length { get; set; }
+
+        public string Penalty { get; set; }
+
         public string AvgLapTimeString => AvgLapTime?.ToString("g");
+        public string AvgSpeedString => AverageSpeed?.ToString("F2");
 
         private TimeSpan _prevRaceTime = TimeSpan.Zero;
 
