@@ -117,6 +117,9 @@ namespace RaceManager.Data
 
     public class LapsInfo
     {
+        readonly TimeSpan DNS = TimeSpan.FromMilliseconds(1);
+        readonly TimeSpan DNF = TimeSpan.FromMilliseconds(2);
+
         public int Id { get; set; }
         public int PilotId { get; set; }
         public string PilotName { get; set; }
@@ -136,44 +139,44 @@ namespace RaceManager.Data
 
         public List<TimeSpan> GetLapsTime()
         {
-            return _lapsTime.Where(l => l.HasValue && l != TimeSpan.Zero).Select(l => l.Value).ToList();
+            return _lapsTime.Where(l => l.HasValue && l != TimeSpan.Zero && l != DNS && l != DNF).Select(l => l.Value).ToList();
         }
 
         public int LapsCount => _lapsTime.Count(l => l.HasValue);
         
         public string Lap1
         {
-            get { return _lapsTime[0]?.ToString("g"); }
+            get { return GetLapTime(0); }
             set { SetLapTime(0, value); }
         }
         
         public string Lap2
         {
-            get { return _lapsTime[1]?.ToString("g"); }
+            get { return GetLapTime(1); }
             set { SetLapTime(1, value); }
         }
         
         public string Lap3
         {
-            get { return _lapsTime[2]?.ToString("g"); }
+            get { return GetLapTime(2); }
             set { SetLapTime(2, value); }
         }
         
         public string Lap4
         {
-            get { return _lapsTime[3]?.ToString("g"); }
+            get { return GetLapTime(3); }
             set { SetLapTime(3, value); }
         }
         
         public string Lap5
         {
-            get { return _lapsTime[4]?.ToString("g"); }
+            get { return GetLapTime(4); }
             set { SetLapTime(4, value); }
         }
         
         public string Lap6
         {
-            get { return _lapsTime[5]?.ToString("g"); }
+            get { return GetLapTime(5); }
             set { SetLapTime(5, value); }
         }
 
@@ -185,7 +188,25 @@ namespace RaceManager.Data
                 _lapsTime[index] = ts;
             }
             else
-                _lapsTime[index] = null;
+            {
+                if (string.Compare(value, "DNF", StringComparison.OrdinalIgnoreCase) == 0)
+                    _lapsTime[index] = DNF;
+
+                else if (string.Compare(value, "DNS", StringComparison.OrdinalIgnoreCase) == 0)
+                    _lapsTime[index] = DNS;
+                else
+                    _lapsTime[index] = null;
+            }
+        }
+
+        private string GetLapTime(int index)
+        {
+            var value = _lapsTime[index];
+
+            if (value == DNF) return "DNF";
+            if (value == DNS) return "DNS";
+
+            return value?.ToString("g");
         }
 
         public TimeSpan? BestLapTime
@@ -194,7 +215,7 @@ namespace RaceManager.Data
             {
                 try
                 {
-                    var bestLapTimes = _lapsTime.Where(l => l.HasValue && l != TimeSpan.Zero);
+                    var bestLapTimes = _lapsTime.Where(l => l.HasValue && l != TimeSpan.Zero && l != DNS && l != DNF);
                     return bestLapTimes.Min();
                 }
                 catch
@@ -212,7 +233,7 @@ namespace RaceManager.Data
             {
                 try
                 {
-                    var bestLapTimes = _lapsTime.Where(l => l.HasValue && l != TimeSpan.Zero)
+                    var bestLapTimes = _lapsTime.Where(l => l.HasValue && l != TimeSpan.Zero && l != DNS && l != DNF)
                             .OrderBy(l => l.GetValueOrDefault(TimeSpan.MaxValue)).ToList();
                     if (bestLapTimes.Count < 3) return null;
 
@@ -235,26 +256,30 @@ namespace RaceManager.Data
                 var count = 0;
 
                 // average speed = n * Length / (LAP1 + ... LAPn)
-                for (int i = 0; i < LapsCount; i++)
+                for (int i = 0; i < NumberOfLaps; i++)
                 {
                     var lapTime = _lapsTime[i];
-                    if (!lapTime.HasValue) continue;
+                    if (!lapTime.HasValue || lapTime == DNS || lapTime == DNF) continue;
 
                     sum += lapTime.Value;
                     count++;
                 }
 
-                return Length * count / sum.TotalSeconds;
+                return sum == TimeSpan.Zero ? null : Length * count / sum.TotalSeconds;
             }
+            set { }
         }
-
-        [NotMapped]
+        
         public double? Distance { get; set; }
+        public string Penalty { get; set; }
 
+        // Length from the race properties
         [NotMapped]
         public double? Length { get; set; }
 
-        public string Penalty { get; set; }
+        // Number of laps from the race properties
+        [NotMapped]
+        public int NumberOfLaps { get; set; }
 
         public string AvgLapTimeString => AvgLapTime?.ToString("g");
         public string AvgSpeedString => AverageSpeed?.ToString("F2");

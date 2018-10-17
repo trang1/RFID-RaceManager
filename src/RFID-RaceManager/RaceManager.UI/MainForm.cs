@@ -5286,6 +5286,15 @@ namespace RaceManager.UI
 
             UpdateRanking();
             bindingSourceRanking.ResetBindings(false);
+
+            try
+            {
+                _db.SaveChanges();
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show("Database error. " + exception.Message);
+            }
         }
 
         private string CleanTag(string tag)
@@ -5344,12 +5353,14 @@ namespace RaceManager.UI
             race.Date = dtpRaceDate.Value;
             race.Location = tbRaceLocation.Text;
             race.Length = tbRaceLength.Text.TryToDoubleNull();
+            race.NumberOfLaps = Convert.ToInt32(nudNumOfLaps.Value);
 
             foreach (var raceEvent in race.RaceEvents)
             {
                 foreach (var lap in raceEvent.Laps)
                 {
                     lap.Length = race.Length;
+                    lap.NumberOfLaps = race.NumberOfLaps;
                 }
             }
             //  race.MinLapTime = Convert.ToInt32(tbRaceMinLapTime.Text);
@@ -6270,6 +6281,14 @@ namespace RaceManager.UI
         private void gvRace_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
             UpdateRanking();
+            try
+            {
+                _db.SaveChanges();
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show("Database error. " + exception.Message);
+            }
         }
 
         private void groupBox35_Enter(object sender, EventArgs e)
