@@ -6144,6 +6144,7 @@ namespace RaceManager.UI
 
                 avgLapTimeStringDataGridViewTextBoxColumn.Visible = false;
                 bestLapTimeStringDataGridViewTextBoxColumn.Visible = true;
+                dataGridViewTextBoxColumn157.Visible = false;
             }
 
             // Average lap ranking
@@ -6154,6 +6155,7 @@ namespace RaceManager.UI
 
                 avgLapTimeStringDataGridViewTextBoxColumn.Visible = true;
                 bestLapTimeStringDataGridViewTextBoxColumn.Visible = false;
+                dataGridViewTextBoxColumn157.Visible = true;
             }
 
             // Check the best lap time

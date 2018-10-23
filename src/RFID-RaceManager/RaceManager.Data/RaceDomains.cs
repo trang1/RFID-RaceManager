@@ -130,7 +130,7 @@ namespace RaceManager.Data
         public string Pc { get; set; }
         public int IdCount { get; set; }
         public string Rssi { get; set; }
-        public string CarrFrequency { get; set; }
+        public decimal CarrFrequency { get; set; }
 
         [NotMapped]
         public TimeSpan? StartTime { get; set; }
@@ -281,7 +281,7 @@ namespace RaceManager.Data
                 var currentLapTime = registeredLaps.Last();
                 var previousLapTime = registeredLaps[registeredLaps.Count - 2];
 
-                return (previousLapTime - currentLapTime).ToString("g");
+                return (currentLapTime - previousLapTime).ToString("g");
             }
             set { }
         }
@@ -302,14 +302,12 @@ namespace RaceManager.Data
 
         private TimeSpan _prevRaceTime = TimeSpan.Zero;
 
-        public bool RegisterLapTime(TimeSpan raceTime, double minFirstLapTime, double minLapTime, string rssi, string carrFreq)
+        public bool RegisterLapTime(TimeSpan raceTime, double minFirstLapTime, double minLapTime)
         {
             //if (_lapsTime == null) _lapsTime = new List<TimeSpan?>();
 
             var diff = raceTime - _prevRaceTime;
             IdCount++;
-            Rssi = rssi;
-            CarrFrequency = carrFreq;
 
             // For the first lap we need to compare time with another variable than next laps
             if (!StartTime.HasValue)
