@@ -7828,7 +7828,7 @@
             this.dataGridViewTextBoxColumn155.DataPropertyName = "Rssi";
             this.dataGridViewTextBoxColumn155.HeaderText = "RSSI";
             this.dataGridViewTextBoxColumn155.Name = "dataGridViewTextBoxColumn155";
-            this.dataGridViewTextBoxColumn155.Width = 50;
+            this.dataGridViewTextBoxColumn155.Width = 70;
             // 
             // dataGridViewTextBoxColumn156
             // 
@@ -7842,42 +7842,42 @@
             this.Lap1.DataPropertyName = "Lap1";
             this.Lap1.HeaderText = "LAP1";
             this.Lap1.Name = "Lap1";
-            this.Lap1.Width = 70;
+            this.Lap1.Width = 80;
             // 
             // Lap2
             // 
             this.Lap2.DataPropertyName = "Lap2";
             this.Lap2.HeaderText = "LAP2";
             this.Lap2.Name = "Lap2";
-            this.Lap2.Width = 70;
+            this.Lap2.Width = 80;
             // 
             // Lap3
             // 
             this.Lap3.DataPropertyName = "Lap3";
             this.Lap3.HeaderText = "LAP3";
             this.Lap3.Name = "Lap3";
-            this.Lap3.Width = 70;
+            this.Lap3.Width = 80;
             // 
             // Lap4
             // 
             this.Lap4.DataPropertyName = "Lap4";
             this.Lap4.HeaderText = "LAP4";
             this.Lap4.Name = "Lap4";
-            this.Lap4.Width = 70;
+            this.Lap4.Width = 80;
             // 
             // Lap5
             // 
             this.Lap5.DataPropertyName = "Lap5";
             this.Lap5.HeaderText = "LAP5";
             this.Lap5.Name = "Lap5";
-            this.Lap5.Width = 70;
+            this.Lap5.Width = 80;
             // 
             // Lap6
             // 
             this.Lap6.DataPropertyName = "Lap6";
             this.Lap6.HeaderText = "LAP6";
             this.Lap6.Name = "Lap6";
-            this.Lap6.Width = 70;
+            this.Lap6.Width = 80;
             // 
             // TimeDifferential
             // 
