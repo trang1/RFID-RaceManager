@@ -2812,7 +2812,7 @@ namespace RaceManager.UI
 
                 var row = m_curInventoryBuffer.dtTagDetailTable.NewRow();
                 row[0] = strEPC;
-                row[1] = strRSSI;
+                row[1] = (Convert.ToInt32(strRSSI) - 129) + "dBm";
                 row[2] = strAntId;
                 row[3] = strFreq;
                 Debug.WriteLine(row[0] + "\r\n" + row[1] + "\r\n" + row[2] + "\r\n" + row[3] + "\r\n");
@@ -2881,7 +2881,7 @@ namespace RaceManager.UI
 
                 var row = m_curInventoryBuffer.dtTagDetailTable.NewRow();
                 row[0] = strEPC;
-                row[1] = strRSSI;
+                row[1] = (Convert.ToInt32(strRSSI) - 129) + "dBm"; ;
                 row[2] = strAntId;
                 row[3] = strFreq;
                 Debug.WriteLine(row[0] + "\r\n" + row[1] + "\r\n");
@@ -5262,11 +5262,13 @@ namespace RaceManager.UI
             var tag = row[0].ToString().Trim();
             tag = CleanTag(tag);
             var lap = _selectedRaceEvent.Laps.FirstOrDefault(l => l.Epc == tag);
+            var rssi = row[1].ToString();
+            var carrFreq = row[3].ToString();
 
             if (lap == null || lap.LapsCount >= nudNumOfLaps.Value) return;
             Debug.WriteLine("tag = " + tag + ", lap = " + lap.OrderNumber + ", time = " + _raceTime);
 
-            var success = lap.RegisterLapTime(_raceTime, (double)nudMinFirstLapTime.Value, (double)nudMinLapTime.Value);
+            var success = lap.RegisterLapTime(_raceTime, (double)nudMinFirstLapTime.Value, (double)nudMinLapTime.Value, rssi, carrFreq);
             bindingSourceRace.ResetBindings(false);
 
             if (!success) return;

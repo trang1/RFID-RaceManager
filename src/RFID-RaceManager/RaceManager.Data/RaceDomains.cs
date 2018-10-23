@@ -130,7 +130,7 @@ namespace RaceManager.Data
         public string Pc { get; set; }
         public int IdCount { get; set; }
         public string Rssi { get; set; }
-        public decimal CarrFrequency { get; set; }
+        public string CarrFrequency { get; set; }
 
         [NotMapped]
         public TimeSpan? StartTime { get; set; }
@@ -143,7 +143,8 @@ namespace RaceManager.Data
         }
 
         public int LapsCount => _lapsTime.Count(l => l.HasValue);
-        
+        public int RegisteredLapsCount => _lapsTime.Count(l => l.HasValue && l != TimeSpan.Zero && l != DNS && l != DNF);
+
         public string Lap1
         {
             get { return GetLapTime(0); }
@@ -269,6 +270,21 @@ namespace RaceManager.Data
             }
             set { }
         }
+
+        public string TimeDifferential
+        {
+            get
+            {
+                var registeredLaps = GetLapsTime();
+                if (registeredLaps.Count < 2) return null;
+                
+                var currentLapTime = registeredLaps.Last();
+                var previousLapTime = registeredLaps[registeredLaps.Count - 2];
+
+                return (previousLapTime - currentLapTime).ToString("g");
+            }
+            set { }
+        }
         
         public double? Distance { get; set; }
         public string Penalty { get; set; }
@@ -286,12 +302,14 @@ namespace RaceManager.Data
 
         private TimeSpan _prevRaceTime = TimeSpan.Zero;
 
-        public bool RegisterLapTime(TimeSpan raceTime, double minFirstLapTime, double minLapTime)
+        public bool RegisterLapTime(TimeSpan raceTime, double minFirstLapTime, double minLapTime, string rssi, string carrFreq)
         {
             //if (_lapsTime == null) _lapsTime = new List<TimeSpan?>();
 
             var diff = raceTime - _prevRaceTime;
             IdCount++;
+            Rssi = rssi;
+            CarrFrequency = carrFreq;
 
             // For the first lap we need to compare time with another variable than next laps
             if (!StartTime.HasValue)
@@ -343,6 +361,9 @@ namespace RaceManager.Data
                 return TimeSpan.FromMilliseconds(times.Take(3).Average(l => l.TotalMilliseconds));
             }
         }
+
+        public int RegisteredLapsCount => LapsTime.Count;
+
         public string AvgLapTimeString => AvgLapTime?.ToString("g");
     }
 }

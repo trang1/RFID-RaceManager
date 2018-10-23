@@ -8754,7 +8754,7 @@
             this.dataGridViewTextBoxColumn155.DataPropertyName = "Rssi";
             this.dataGridViewTextBoxColumn155.HeaderText = "RSSI";
             this.dataGridViewTextBoxColumn155.Name = "dataGridViewTextBoxColumn155";
-            this.dataGridViewTextBoxColumn155.Width = 50;
+            this.dataGridViewTextBoxColumn155.Width = 70;
             // 
             // dataGridViewTextBoxColumn156
             // 
