@@ -143,7 +143,8 @@ namespace RaceManager.Data
         }
 
         public int LapsCount => _lapsTime.Count(l => l.HasValue);
-        
+        public int RegisteredLapsCount => _lapsTime.Count(l => l.HasValue && l != TimeSpan.Zero && l != DNS && l != DNF);
+
         public string Lap1
         {
             get { return GetLapTime(0); }
@@ -269,6 +270,21 @@ namespace RaceManager.Data
             }
             set { }
         }
+
+        public string TimeDifferential
+        {
+            get
+            {
+                var registeredLaps = GetLapsTime();
+                if (registeredLaps.Count < 2) return null;
+                
+                var currentLapTime = registeredLaps.Last();
+                var previousLapTime = registeredLaps[registeredLaps.Count - 2];
+
+                return (currentLapTime - previousLapTime).ToString("g");
+            }
+            set { }
+        }
         
         public double? Distance { get; set; }
         public string Penalty { get; set; }
@@ -343,6 +359,9 @@ namespace RaceManager.Data
                 return TimeSpan.FromMilliseconds(times.Take(3).Average(l => l.TotalMilliseconds));
             }
         }
+
+        public int RegisteredLapsCount => LapsTime.Count;
+
         public string AvgLapTimeString => AvgLapTime?.ToString("g");
     }
 }

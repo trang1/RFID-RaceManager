@@ -254,7 +254,6 @@
             this.gvRace = new System.Windows.Forms.DataGridView();
             this.groupBox35 = new System.Windows.Forms.GroupBox();
             this.gvRanking = new System.Windows.Forms.DataGridView();
-            this.RankNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cmbDisplayRanking = new System.Windows.Forms.ComboBox();
             this.label20 = new System.Windows.Forms.Label();
             this.groupBox34 = new System.Windows.Forms.GroupBox();
@@ -279,6 +278,8 @@
             this.label34 = new System.Windows.Forms.Label();
             this.lblRaceMinutes = new System.Windows.Forms.Label();
             this.groupBox26 = new System.Windows.Forms.GroupBox();
+            this.tbRaceLength = new System.Windows.Forms.TextBox();
+            this.label119 = new System.Windows.Forms.Label();
             this.nudMinLapTime = new System.Windows.Forms.NumericUpDown();
             this.label117 = new System.Windows.Forms.Label();
             this.nudMinFirstLapTime = new System.Windows.Forms.NumericUpDown();
@@ -591,8 +592,24 @@
             this.lxLedControl17 = new LxControl.LxLedControl();
             this.lxLedControl18 = new LxControl.LxLedControl();
             this.timerInventory = new System.Windows.Forms.Timer(this.components);
-            this.label119 = new System.Windows.Forms.Label();
-            this.tbRaceLength = new System.Windows.Forms.TextBox();
+            this.OrderNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PilotName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Epc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IdentCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn155 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn156 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Lap1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Lap2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Lap3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Lap4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Lap5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Lap6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TimeDifferential = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BestLapTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AverageSpeed = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RegisteredLapsCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Distance = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Penalty = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nicknameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.teamDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -715,28 +732,14 @@
             this.dataGridViewTextBoxColumn95 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn96 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn97 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AvgLapTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bindingSourceRace = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingSourceRanking = new System.Windows.Forms.BindingSource(this.components);
+            this.RankNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pilotNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bestLapTimeStringDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.avgLapTimeStringDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bindingSourceRanking = new System.Windows.Forms.BindingSource(this.components);
-            this.OrderNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PilotName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Epc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IdentCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn155 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn156 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Lap1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Lap2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Lap3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Lap4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Lap5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Lap6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BestLapTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AvgLapTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AverageSpeed = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Distance = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Penalty = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn157 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabCtrMain.SuspendLayout();
             this.PagReaderSetting.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -3802,9 +3805,11 @@
             this.Lap4,
             this.Lap5,
             this.Lap6,
+            this.TimeDifferential,
             this.BestLapTime,
             this.AvgLapTime,
             this.AverageSpeed,
+            this.RegisteredLapsCount,
             this.Distance,
             this.Penalty});
             this.gvRace.DataSource = this.bindingSourceRace;
@@ -3840,7 +3845,8 @@
             this.RankNumber,
             this.pilotNameDataGridViewTextBoxColumn,
             this.bestLapTimeStringDataGridViewTextBoxColumn,
-            this.avgLapTimeStringDataGridViewTextBoxColumn});
+            this.avgLapTimeStringDataGridViewTextBoxColumn,
+            this.dataGridViewTextBoxColumn157});
             this.gvRanking.DataSource = this.bindingSourceRanking;
             this.gvRanking.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.gvRanking.Location = new System.Drawing.Point(3, 60);
@@ -3848,14 +3854,6 @@
             this.gvRanking.ReadOnly = true;
             this.gvRanking.Size = new System.Drawing.Size(319, 560);
             this.gvRanking.TabIndex = 7;
-            // 
-            // RankNumber
-            // 
-            this.RankNumber.DataPropertyName = "RankNumber";
-            this.RankNumber.HeaderText = "#";
-            this.RankNumber.Name = "RankNumber";
-            this.RankNumber.ReadOnly = true;
-            this.RankNumber.Width = 40;
             // 
             // cmbDisplayRanking
             // 
@@ -4149,6 +4147,22 @@
             this.groupBox26.TabIndex = 2;
             this.groupBox26.TabStop = false;
             this.groupBox26.Text = "Race Properties";
+            // 
+            // tbRaceLength
+            // 
+            this.tbRaceLength.Location = new System.Drawing.Point(306, 41);
+            this.tbRaceLength.Name = "tbRaceLength";
+            this.tbRaceLength.Size = new System.Drawing.Size(129, 20);
+            this.tbRaceLength.TabIndex = 13;
+            // 
+            // label119
+            // 
+            this.label119.AutoSize = true;
+            this.label119.Location = new System.Drawing.Point(215, 44);
+            this.label119.Name = "label119";
+            this.label119.Size = new System.Drawing.Size(88, 13);
+            this.label119.TabIndex = 12;
+            this.label119.Text = "Track Length, m:";
             // 
             // nudMinLapTime
             // 
@@ -5051,7 +5065,7 @@
             this.tableLayoutPanel4.ColumnCount = 3;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.22422F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.77578F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 464F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 470F));
             this.tableLayoutPanel4.Controls.Add(this.panel9, 2, 0);
             this.tableLayoutPanel4.Controls.Add(this.panel10, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.panel8, 1, 0);
@@ -5070,9 +5084,9 @@
             this.panel9.Controls.Add(this.btGetClearBuffer);
             this.panel9.Controls.Add(this.btGetBuffer);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel9.Location = new System.Drawing.Point(868, 4);
+            this.panel9.Location = new System.Drawing.Point(862, 4);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(459, 81);
+            this.panel9.Size = new System.Drawing.Size(465, 81);
             this.panel9.TabIndex = 1;
             // 
             // btClearBuffer
@@ -5131,7 +5145,7 @@
             this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel10.Location = new System.Drawing.Point(4, 4);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(427, 81);
+            this.panel10.Size = new System.Drawing.Size(424, 81);
             this.panel10.TabIndex = 0;
             // 
             // btBufferInventory
@@ -5173,9 +5187,9 @@
             this.panel8.Controls.Add(this.cbBufferWorkant2);
             this.panel8.Controls.Add(this.cbBufferWorkant3);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(438, 4);
+            this.panel8.Location = new System.Drawing.Point(435, 4);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(423, 81);
+            this.panel8.Size = new System.Drawing.Size(420, 81);
             this.panel8.TabIndex = 0;
             // 
             // cbBufferWorkant1
@@ -5772,7 +5786,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.20588F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.79412F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 459F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 468F));
             this.tableLayoutPanel2.Controls.Add(this.panel2, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel3, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel4, 2, 0);
@@ -5804,9 +5818,9 @@
             this.panel2.Controls.Add(this.label59);
             this.panel2.Controls.Add(this.label48);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(240, 5);
+            this.panel2.Location = new System.Drawing.Point(237, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(618, 75);
+            this.panel2.Size = new System.Drawing.Size(612, 75);
             this.panel2.TabIndex = 0;
             // 
             // txtDStay
@@ -6008,7 +6022,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(5, 5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(227, 75);
+            this.panel3.Size = new System.Drawing.Size(224, 75);
             this.panel3.TabIndex = 1;
             // 
             // btFastInventory
@@ -6030,9 +6044,9 @@
             this.panel4.Controls.Add(this.label73);
             this.panel4.Controls.Add(this.label72);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(866, 5);
+            this.panel4.Location = new System.Drawing.Point(857, 5);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(454, 75);
+            this.panel4.Size = new System.Drawing.Size(463, 75);
             this.panel4.TabIndex = 2;
             // 
             // txtRepeat
@@ -7781,21 +7795,132 @@
             this.timerInventory.Interval = 500;
             this.timerInventory.Tick += new System.EventHandler(this.timerInventory_Tick);
             // 
-            // label119
+            // OrderNumber
             // 
-            this.label119.AutoSize = true;
-            this.label119.Location = new System.Drawing.Point(215, 44);
-            this.label119.Name = "label119";
-            this.label119.Size = new System.Drawing.Size(88, 13);
-            this.label119.TabIndex = 12;
-            this.label119.Text = "Track Length, m:";
+            this.OrderNumber.DataPropertyName = "OrderNumber";
+            this.OrderNumber.HeaderText = "#";
+            this.OrderNumber.Name = "OrderNumber";
+            this.OrderNumber.Width = 40;
             // 
-            // tbRaceLength
+            // PilotName
             // 
-            this.tbRaceLength.Location = new System.Drawing.Point(306, 41);
-            this.tbRaceLength.Name = "tbRaceLength";
-            this.tbRaceLength.Size = new System.Drawing.Size(129, 20);
-            this.tbRaceLength.TabIndex = 13;
+            this.PilotName.DataPropertyName = "PilotName";
+            this.PilotName.HeaderText = "Name";
+            this.PilotName.Name = "PilotName";
+            this.PilotName.Width = 130;
+            // 
+            // Epc
+            // 
+            this.Epc.DataPropertyName = "Epc";
+            this.Epc.HeaderText = "TAG ID";
+            this.Epc.Name = "Epc";
+            this.Epc.Width = 75;
+            // 
+            // IdentCount
+            // 
+            this.IdentCount.DataPropertyName = "IdCount";
+            this.IdentCount.HeaderText = "ID Count";
+            this.IdentCount.Name = "IdentCount";
+            this.IdentCount.Width = 75;
+            // 
+            // dataGridViewTextBoxColumn155
+            // 
+            this.dataGridViewTextBoxColumn155.DataPropertyName = "Rssi";
+            this.dataGridViewTextBoxColumn155.HeaderText = "RSSI";
+            this.dataGridViewTextBoxColumn155.Name = "dataGridViewTextBoxColumn155";
+            this.dataGridViewTextBoxColumn155.Width = 50;
+            // 
+            // dataGridViewTextBoxColumn156
+            // 
+            this.dataGridViewTextBoxColumn156.DataPropertyName = "CarrFrequency";
+            this.dataGridViewTextBoxColumn156.HeaderText = "Freq";
+            this.dataGridViewTextBoxColumn156.Name = "dataGridViewTextBoxColumn156";
+            this.dataGridViewTextBoxColumn156.Width = 50;
+            // 
+            // Lap1
+            // 
+            this.Lap1.DataPropertyName = "Lap1";
+            this.Lap1.HeaderText = "LAP1";
+            this.Lap1.Name = "Lap1";
+            this.Lap1.Width = 70;
+            // 
+            // Lap2
+            // 
+            this.Lap2.DataPropertyName = "Lap2";
+            this.Lap2.HeaderText = "LAP2";
+            this.Lap2.Name = "Lap2";
+            this.Lap2.Width = 70;
+            // 
+            // Lap3
+            // 
+            this.Lap3.DataPropertyName = "Lap3";
+            this.Lap3.HeaderText = "LAP3";
+            this.Lap3.Name = "Lap3";
+            this.Lap3.Width = 70;
+            // 
+            // Lap4
+            // 
+            this.Lap4.DataPropertyName = "Lap4";
+            this.Lap4.HeaderText = "LAP4";
+            this.Lap4.Name = "Lap4";
+            this.Lap4.Width = 70;
+            // 
+            // Lap5
+            // 
+            this.Lap5.DataPropertyName = "Lap5";
+            this.Lap5.HeaderText = "LAP5";
+            this.Lap5.Name = "Lap5";
+            this.Lap5.Width = 70;
+            // 
+            // Lap6
+            // 
+            this.Lap6.DataPropertyName = "Lap6";
+            this.Lap6.HeaderText = "LAP6";
+            this.Lap6.Name = "Lap6";
+            this.Lap6.Width = 70;
+            // 
+            // TimeDifferential
+            // 
+            this.TimeDifferential.DataPropertyName = "TimeDifferential";
+            this.TimeDifferential.HeaderText = "Time Diff";
+            this.TimeDifferential.Name = "TimeDifferential";
+            // 
+            // BestLapTime
+            // 
+            this.BestLapTime.DataPropertyName = "BestLapTimeString";
+            this.BestLapTime.HeaderText = "Best Lap";
+            this.BestLapTime.Name = "BestLapTime";
+            this.BestLapTime.ReadOnly = true;
+            this.BestLapTime.Width = 80;
+            // 
+            // AverageSpeed
+            // 
+            this.AverageSpeed.DataPropertyName = "AvgSpeedString";
+            this.AverageSpeed.HeaderText = "Avg Speed, m/s";
+            this.AverageSpeed.Name = "AverageSpeed";
+            this.AverageSpeed.ReadOnly = true;
+            // 
+            // RegisteredLapsCount
+            // 
+            this.RegisteredLapsCount.DataPropertyName = "RegisteredLapsCount";
+            this.RegisteredLapsCount.HeaderText = "Laps";
+            this.RegisteredLapsCount.Name = "RegisteredLapsCount";
+            this.RegisteredLapsCount.ReadOnly = true;
+            this.RegisteredLapsCount.Width = 50;
+            // 
+            // Distance
+            // 
+            this.Distance.DataPropertyName = "Distance";
+            this.Distance.HeaderText = "Distance";
+            this.Distance.Name = "Distance";
+            this.Distance.Width = 80;
+            // 
+            // Penalty
+            // 
+            this.Penalty.DataPropertyName = "Penalty";
+            this.Penalty.HeaderText = "Penalty";
+            this.Penalty.Name = "Penalty";
+            this.Penalty.Width = 70;
             // 
             // nameDataGridViewTextBoxColumn
             // 
@@ -8689,9 +8814,29 @@
             this.dataGridViewTextBoxColumn97.Name = "dataGridViewTextBoxColumn97";
             this.dataGridViewTextBoxColumn97.ReadOnly = true;
             // 
+            // AvgLapTime
+            // 
+            this.AvgLapTime.DataPropertyName = "AvgLapTimeString";
+            this.AvgLapTime.HeaderText = "Average";
+            this.AvgLapTime.Name = "AvgLapTime";
+            this.AvgLapTime.ReadOnly = true;
+            this.AvgLapTime.Width = 80;
+            // 
             // bindingSourceRace
             // 
             this.bindingSourceRace.DataSource = typeof(RaceManager.Data.LapsInfo);
+            // 
+            // bindingSourceRanking
+            // 
+            this.bindingSourceRanking.DataSource = typeof(RaceManager.Data.LapsInfo);
+            // 
+            // RankNumber
+            // 
+            this.RankNumber.DataPropertyName = "RankNumber";
+            this.RankNumber.HeaderText = "#";
+            this.RankNumber.Name = "RankNumber";
+            this.RankNumber.ReadOnly = true;
+            this.RankNumber.Width = 40;
             // 
             // pilotNameDataGridViewTextBoxColumn
             // 
@@ -8699,7 +8844,7 @@
             this.pilotNameDataGridViewTextBoxColumn.HeaderText = "Name";
             this.pilotNameDataGridViewTextBoxColumn.Name = "pilotNameDataGridViewTextBoxColumn";
             this.pilotNameDataGridViewTextBoxColumn.ReadOnly = true;
-            this.pilotNameDataGridViewTextBoxColumn.Width = 150;
+            this.pilotNameDataGridViewTextBoxColumn.Width = 105;
             // 
             // bestLapTimeStringDataGridViewTextBoxColumn
             // 
@@ -8715,132 +8860,15 @@
             this.avgLapTimeStringDataGridViewTextBoxColumn.HeaderText = "Average Top 3";
             this.avgLapTimeStringDataGridViewTextBoxColumn.Name = "avgLapTimeStringDataGridViewTextBoxColumn";
             this.avgLapTimeStringDataGridViewTextBoxColumn.ReadOnly = true;
-            this.avgLapTimeStringDataGridViewTextBoxColumn.Width = 90;
+            this.avgLapTimeStringDataGridViewTextBoxColumn.Width = 80;
             // 
-            // bindingSourceRanking
+            // dataGridViewTextBoxColumn157
             // 
-            this.bindingSourceRanking.DataSource = typeof(RaceManager.Data.LapsInfo);
-            // 
-            // OrderNumber
-            // 
-            this.OrderNumber.DataPropertyName = "OrderNumber";
-            this.OrderNumber.HeaderText = "#";
-            this.OrderNumber.Name = "OrderNumber";
-            this.OrderNumber.Width = 40;
-            // 
-            // PilotName
-            // 
-            this.PilotName.DataPropertyName = "PilotName";
-            this.PilotName.HeaderText = "Name";
-            this.PilotName.Name = "PilotName";
-            this.PilotName.Width = 130;
-            // 
-            // Epc
-            // 
-            this.Epc.DataPropertyName = "Epc";
-            this.Epc.HeaderText = "TAG ID";
-            this.Epc.Name = "Epc";
-            this.Epc.Width = 75;
-            // 
-            // IdentCount
-            // 
-            this.IdentCount.DataPropertyName = "IdCount";
-            this.IdentCount.HeaderText = "ID Count";
-            this.IdentCount.Name = "IdentCount";
-            this.IdentCount.Width = 75;
-            // 
-            // dataGridViewTextBoxColumn155
-            // 
-            this.dataGridViewTextBoxColumn155.DataPropertyName = "Rssi";
-            this.dataGridViewTextBoxColumn155.HeaderText = "RSSI";
-            this.dataGridViewTextBoxColumn155.Name = "dataGridViewTextBoxColumn155";
-            this.dataGridViewTextBoxColumn155.Width = 50;
-            // 
-            // dataGridViewTextBoxColumn156
-            // 
-            this.dataGridViewTextBoxColumn156.DataPropertyName = "CarrFrequency";
-            this.dataGridViewTextBoxColumn156.HeaderText = "Freq";
-            this.dataGridViewTextBoxColumn156.Name = "dataGridViewTextBoxColumn156";
-            this.dataGridViewTextBoxColumn156.Width = 50;
-            // 
-            // Lap1
-            // 
-            this.Lap1.DataPropertyName = "Lap1";
-            this.Lap1.HeaderText = "LAP1";
-            this.Lap1.Name = "Lap1";
-            this.Lap1.Width = 70;
-            // 
-            // Lap2
-            // 
-            this.Lap2.DataPropertyName = "Lap2";
-            this.Lap2.HeaderText = "LAP2";
-            this.Lap2.Name = "Lap2";
-            this.Lap2.Width = 70;
-            // 
-            // Lap3
-            // 
-            this.Lap3.DataPropertyName = "Lap3";
-            this.Lap3.HeaderText = "LAP3";
-            this.Lap3.Name = "Lap3";
-            this.Lap3.Width = 70;
-            // 
-            // Lap4
-            // 
-            this.Lap4.DataPropertyName = "Lap4";
-            this.Lap4.HeaderText = "LAP4";
-            this.Lap4.Name = "Lap4";
-            this.Lap4.Width = 70;
-            // 
-            // Lap5
-            // 
-            this.Lap5.DataPropertyName = "Lap5";
-            this.Lap5.HeaderText = "LAP5";
-            this.Lap5.Name = "Lap5";
-            this.Lap5.Width = 70;
-            // 
-            // Lap6
-            // 
-            this.Lap6.DataPropertyName = "Lap6";
-            this.Lap6.HeaderText = "LAP6";
-            this.Lap6.Name = "Lap6";
-            this.Lap6.Width = 70;
-            // 
-            // BestLapTime
-            // 
-            this.BestLapTime.DataPropertyName = "BestLapTimeString";
-            this.BestLapTime.HeaderText = "Best Lap";
-            this.BestLapTime.Name = "BestLapTime";
-            this.BestLapTime.ReadOnly = true;
-            this.BestLapTime.Width = 80;
-            // 
-            // AvgLapTime
-            // 
-            this.AvgLapTime.DataPropertyName = "AvgLapTimeString";
-            this.AvgLapTime.HeaderText = "Average";
-            this.AvgLapTime.Name = "AvgLapTime";
-            this.AvgLapTime.ReadOnly = true;
-            this.AvgLapTime.Width = 80;
-            // 
-            // AverageSpeed
-            // 
-            this.AverageSpeed.DataPropertyName = "AvgSpeedString";
-            this.AverageSpeed.HeaderText = "Avg Speed, m/s";
-            this.AverageSpeed.Name = "AverageSpeed";
-            this.AverageSpeed.ReadOnly = true;
-            // 
-            // Distance
-            // 
-            this.Distance.DataPropertyName = "Distance";
-            this.Distance.HeaderText = "Distance";
-            this.Distance.Name = "Distance";
-            this.Distance.Width = 80;
-            // 
-            // Penalty
-            // 
-            this.Penalty.DataPropertyName = "Penalty";
-            this.Penalty.HeaderText = "Penalty";
-            this.Penalty.Name = "Penalty";
-            this.Penalty.Width = 70;
+            this.dataGridViewTextBoxColumn157.DataPropertyName = "RegisteredLapsCount";
+            this.dataGridViewTextBoxColumn157.HeaderText = "Laps";
+            this.dataGridViewTextBoxColumn157.Name = "dataGridViewTextBoxColumn157";
+            this.dataGridViewTextBoxColumn157.ReadOnly = true;
+            this.dataGridViewTextBoxColumn157.Width = 50;
             // 
             // MainForm
             // 
@@ -9589,10 +9617,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Pc;
         private System.Windows.Forms.DataGridViewTextBoxColumn Rssi;
         private System.Windows.Forms.DataGridViewTextBoxColumn CarrFrequency;
-        private System.Windows.Forms.DataGridViewTextBoxColumn RankNumber;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pilotNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn bestLapTimeStringDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn avgLapTimeStringDataGridViewTextBoxColumn;
         private System.Windows.Forms.TabPage tabRounds;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
         private System.Windows.Forms.GroupBox groupBox36;
@@ -9847,11 +9871,18 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Lap4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Lap5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Lap6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TimeDifferential;
         private System.Windows.Forms.DataGridViewTextBoxColumn BestLapTime;
         private System.Windows.Forms.DataGridViewTextBoxColumn AvgLapTime;
         private System.Windows.Forms.DataGridViewTextBoxColumn AverageSpeed;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RegisteredLapsCount;
         private System.Windows.Forms.DataGridViewTextBoxColumn Distance;
         private System.Windows.Forms.DataGridViewTextBoxColumn Penalty;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RankNumber;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pilotNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn bestLapTimeStringDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn avgLapTimeStringDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn157;
     }
 }
 
