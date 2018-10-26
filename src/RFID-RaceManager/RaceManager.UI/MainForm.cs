@@ -5747,41 +5747,157 @@ namespace RaceManager.UI
                 _race.Groups.Add(gr);
             }
 
+            if (RacePilots.Count > ppg * 15)
+            {
+                var gr = new Group
+                {
+                    Name = "Group P",
+                    Pilots = RacePilots.GetRange(15 * ppg, 16 * ppg > RacePilots.Count ? RacePilots.Count - 15 * ppg : ppg)
+                };
+                gvGroupP.DataSource = gr.Pilots;
+                _race.Groups.Add(gr);
+            }
+
+            if (RacePilots.Count > ppg * 16)
+            {
+                var gr = new Group
+                {
+                    Name = "Group Q",
+                    Pilots = RacePilots.GetRange(16 * ppg, 17 * ppg > RacePilots.Count ? RacePilots.Count - 16 * ppg : ppg)
+                };
+                gvGroupQ.DataSource = gr.Pilots;
+                _race.Groups.Add(gr);
+            }
+
+            if (RacePilots.Count > ppg * 17)
+            {
+                var gr = new Group
+                {
+                    Name = "Group R",
+                    Pilots = RacePilots.GetRange(17 * ppg, 18 * ppg > RacePilots.Count ? RacePilots.Count - 17 * ppg : ppg)
+                };
+                gvGroupR.DataSource = gr.Pilots;
+                _race.Groups.Add(gr);
+            }
+
+            if (RacePilots.Count > ppg * 18)
+            {
+                var gr = new Group
+                {
+                    Name = "Group S",
+                    Pilots = RacePilots.GetRange(18 * ppg, 19 * ppg > RacePilots.Count ? RacePilots.Count - 18 * ppg : ppg)
+                };
+                gvGroupS.DataSource = gr.Pilots;
+                _race.Groups.Add(gr);
+            }
+            if (RacePilots.Count > ppg * 19)
+            {
+                var gr = new Group
+                {
+                    Name = "Group T",
+                    Pilots = RacePilots.GetRange(19 * ppg, 20 * ppg > RacePilots.Count ? RacePilots.Count - 19 * ppg : ppg)
+                };
+                gvGroupT.DataSource = gr.Pilots;
+                _race.Groups.Add(gr);
+            }
+
+            if (RacePilots.Count > ppg * 20)
+            {
+                var gr = new Group
+                {
+                    Name = "Group U",
+                    Pilots = RacePilots.GetRange(20 * ppg, 21 * ppg > RacePilots.Count ? RacePilots.Count - 20 * ppg : ppg)
+                };
+                gvGroupU.DataSource = gr.Pilots;
+                _race.Groups.Add(gr);
+            }
+            if (RacePilots.Count > ppg * 21)
+            {
+                var gr = new Group
+                {
+                    Name = "Group V",
+                    Pilots = RacePilots.GetRange(21 * ppg, 22 * ppg > RacePilots.Count ? RacePilots.Count - 21 * ppg : ppg)
+                };
+                gvGroupV.DataSource = gr.Pilots;
+                _race.Groups.Add(gr);
+            }
+
+            if (RacePilots.Count > ppg * 22)
+            {
+                var gr = new Group
+                {
+                    Name = "Group W",
+                    Pilots = RacePilots.GetRange(22 * ppg, 23 * ppg > RacePilots.Count ? RacePilots.Count - 22 * ppg : ppg)
+                };
+                gvGroupW.DataSource = gr.Pilots;
+                _race.Groups.Add(gr);
+            }
+            if (RacePilots.Count > ppg * 23)
+            {
+                var gr = new Group
+                {
+                    Name = "Group X",
+                    Pilots = RacePilots.GetRange(23 * ppg, 24 * ppg > RacePilots.Count ? RacePilots.Count - 23 * ppg : ppg)
+                };
+                gvGroupX.DataSource = gr.Pilots;
+                _race.Groups.Add(gr);
+            }
+            if (RacePilots.Count > ppg * 24)
+            {
+                var gr = new Group
+                {
+                    Name = "Group Y",
+                    Pilots = RacePilots.GetRange(24 * ppg, 25 * ppg > RacePilots.Count ? RacePilots.Count - 24 * ppg : ppg)
+                };
+                gvGroupY.DataSource = gr.Pilots;
+                _race.Groups.Add(gr);
+            }
+
+            if (RacePilots.Count > ppg * 25)
+            {
+                var gr = new Group
+                {
+                    Name = "Group Z",
+                    Pilots = RacePilots.GetRange(25 * ppg, 26 * ppg > RacePilots.Count ? RacePilots.Count - 25 * ppg : ppg)
+                };
+                gvGroupZ.DataSource = gr.Pilots;
+                _race.Groups.Add(gr);
+            }
             #region Groups Insertion
 
-          /*  database objDatabase = new database();
-            string sqlQuery;
-            SQLiteCommand cmd;
+            /*  database objDatabase = new database();
+              string sqlQuery;
+              SQLiteCommand cmd;
 
-            foreach (var item in _race.Groups)
-            {
-                if (item.Id == 0)
-                {
-                    sqlQuery = "insert into Groups (Name) values ('" + Convert.ToString(item.Name) + "')";
-                    cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
-                    cmd.ExecuteNonQuery();
-                    item.Id = Convert.ToInt32(getLastInsertedId(cmd));
+              foreach (var item in _race.Groups)
+              {
+                  if (item.Id == 0)
+                  {
+                      sqlQuery = "insert into Groups (Name) values ('" + Convert.ToString(item.Name) + "')";
+                      cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+                      cmd.ExecuteNonQuery();
+                      item.Id = Convert.ToInt32(getLastInsertedId(cmd));
 
-                    sqlQuery = "delete from Pilot_Groups where GroupId =" + Convert.ToInt32(item.Id);
-                    cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
-                    cmd.ExecuteNonQuery();
-                }
+                      sqlQuery = "delete from Pilot_Groups where GroupId =" + Convert.ToInt32(item.Id);
+                      cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+                      cmd.ExecuteNonQuery();
+                  }
 
-                foreach (var pilot in item.Pilots)
-                {
-                    if (pilot != null)
-                    {
-                        sqlQuery = "delete from Pilot_Groups where PilotId =" + pilot.Id + " and GroupId =" + Convert.ToInt32(item.Id);
-                        cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
-                        cmd.ExecuteNonQuery();
+                  foreach (var pilot in item.Pilots)
+                  {
+                      if (pilot != null)
+                      {
+                          sqlQuery = "delete from Pilot_Groups where PilotId =" + pilot.Id + " and GroupId =" + Convert.ToInt32(item.Id);
+                          cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+                          cmd.ExecuteNonQuery();
 
-                        sqlQuery = "insert into Pilot_Groups (PilotId, GroupId) values ('" + Convert.ToInt32(pilot.Id) + "', '" + Convert.ToInt32(item.Id) + "')";
-                        cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
-                        cmd.ExecuteNonQuery();
-                        //pilot.Id = Convert.ToInt32(getLastInsertedId(cmd));
-                    }
-                }
-            }*/
+                          sqlQuery = "insert into Pilot_Groups (PilotId, GroupId) values ('" + Convert.ToInt32(pilot.Id) + "', '" + Convert.ToInt32(item.Id) + "')";
+                          cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+                          cmd.ExecuteNonQuery();
+                          //pilot.Id = Convert.ToInt32(getLastInsertedId(cmd));
+                      }
+                  }
+              }*/
             #endregion
 
             cmbRaceGroup.Items.Clear();
