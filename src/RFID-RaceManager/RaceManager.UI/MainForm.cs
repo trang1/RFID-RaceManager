@@ -5457,13 +5457,10 @@ namespace RaceManager.UI
         private void btnAddPilot_Click(object sender, EventArgs e) // Add Pilot
         {
             var pilot = new RacePilot();
-            pilot.Tag = tbPilotTag.Text;
-            pilot.Name = tbPilotName.Text;
-            pilot.Nickname = tbPilotNickname.Text;
-            pilot.Team = tbPilotTeam.Text;
-            pilot.Email = tbPilotEmail.Text;
-            pilot.IsChecked = Convert.ToInt32(cbPilotConfirmation.Checked);
-            pilot.Confirmation = cbPilotConfirmation.Checked ? 1 : 0;
+  
+           
+
+     
             RacePilots.Add(pilot);
             pilot.OrderNumber = RacePilots.IndexOf(pilot) + 1;
 
@@ -5541,12 +5538,9 @@ namespace RaceManager.UI
 
         public void clearFormText()
         {
-            tbPilotTag.Text = string.Empty;
-            tbPilotName.Text = string.Empty;
-            tbPilotNickname.Text = string.Empty;
-            tbPilotTeam.Text = string.Empty;
-            tbPilotEmail.Text = string.Empty;
-            cbPilotConfirmation.Checked = false;
+         
+           
+         
         }
 
         private void gvPilots_CellValueChanged(object sender, DataGridViewCellEventArgs e)
@@ -6295,7 +6289,19 @@ namespace RaceManager.UI
             }
         }
 
-        private void groupBox35_Enter(object sender, EventArgs e)
+        
+        private void btTrack_Click(object sender, EventArgs e)
+        {
+            tbMimicName.Text = tbRaceName.Text;
+            tbMimicLocation.Text = tbRaceLocation.Text;
+        }
+
+        private void label122_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label123_Click(object sender, EventArgs e)
         {
 
         }
