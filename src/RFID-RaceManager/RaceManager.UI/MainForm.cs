@@ -5911,6 +5911,165 @@ namespace RaceManager.UI
             }
         }
 
+        private void btnAddPilotsTo18F_Click(object sender, EventArgs e)
+        {
+            if (_bestQualificationResuls == null || _bestQualificationResuls.Count == 0) return;
+
+            // 1/8 finals
+            var group = new Group
+            {
+                Name = "Race 1",
+                Pilots = new List<RacePilot>
+                {
+                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(0)?.Epc),
+                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(8)?.Epc),
+                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(16)?.Epc),
+                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(14)?.Epc),
+                }
+            };
+            gvRace1.DataSource = group.Pilots;
+            _race.Groups.Add(group);
+
+            group = new Group
+            {
+                Name = "Race 2",
+                Pilots = new List<RacePilot>
+                {
+                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(7)?.Epc),
+                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(15)?.Epc),
+                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(23)?.Epc),
+                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(31)?.Epc),
+                }
+            };
+            gvRace2.DataSource = group.Pilots;
+            _race.Groups.Add(group);
+
+            group = new Group
+            {
+                Name = "Race 3",
+                Pilots = new List<RacePilot>
+                {
+                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(5)?.Epc),
+                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(13)?.Epc),
+                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(21)?.Epc),
+                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(29)?.Epc),
+                }
+            };
+            gvRace3.DataSource = group.Pilots;
+            _race.Groups.Add(group);
+
+            group = new Group
+            {
+                Name = "Race 4",
+                Pilots = new List<RacePilot>
+                {
+                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(3)?.Epc),
+                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(11)?.Epc),
+                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(19)?.Epc),
+                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(27)?.Epc),
+                }
+            };
+            gvRace4.DataSource = group.Pilots;
+            _race.Groups.Add(group);
+
+            group = new Group
+            {
+                Name = "Race 5",
+                Pilots = new List<RacePilot>
+                {
+                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(2)?.Epc),
+                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(10)?.Epc),
+                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(18)?.Epc),
+                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(26)?.Epc),
+                }
+            };
+            gvRace5.DataSource = group.Pilots;
+            _race.Groups.Add(group);
+
+            group = new Group
+            {
+                Name = "Race 6",
+                Pilots = new List<RacePilot>
+                {
+                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(4)?.Epc),
+                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(12)?.Epc),
+                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(20)?.Epc),
+                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(28)?.Epc),
+                }
+            };
+            gvRace6.DataSource = group.Pilots;
+            _race.Groups.Add(group);
+
+            group = new Group
+            {
+                Name = "Race 7",
+                Pilots = new List<RacePilot>
+                {
+                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(6)?.Epc),
+                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(12)?.Epc),
+                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(22)?.Epc),
+                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(30)?.Epc),
+                }
+            };
+            gvRace7.DataSource = group.Pilots;
+            _race.Groups.Add(group);
+
+            group = new Group
+            {
+                Name = "Race 8",
+                Pilots = new List<RacePilot>
+                {
+                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(1)?.Epc),
+                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(9)?.Epc),
+                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(17)?.Epc),
+                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(25)?.Epc),
+                }
+            };
+            gvRace8.DataSource = group.Pilots;
+            _race.Groups.Add(group);
+            #region Groups Insertion
+
+            //database objDatabase = new database();
+            //string sqlQuery;
+            //SQLiteCommand cmd;
+
+            //foreach (var item in _race.Groups)
+            //{
+            //    if (item.Id == 0)
+            //    {
+            //        sqlQuery = "insert into Groups (Name) values ('" + Convert.ToString(item.Name) + "')";
+            //        cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+            //        cmd.ExecuteNonQuery();
+            //        item.Id = Convert.ToInt32(getLastInsertedId(cmd));
+
+            //        sqlQuery = "delete from Pilot_Groups where GroupId =" + Convert.ToInt32(item.Id);
+            //        cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+            //        cmd.ExecuteNonQuery();
+            //    }
+
+            //    foreach (var pilot in item.Pilots)
+            //    {
+            //        if (pilot != null)
+            //        {
+            //            sqlQuery = "delete from Pilot_Groups where PilotId =" + pilot.Id + " and GroupId =" + Convert.ToInt32(item.Id);
+            //            cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+            //            cmd.ExecuteNonQuery();
+
+            //            sqlQuery = "insert into Pilot_Groups (PilotId, GroupId) values ('" + Convert.ToInt32(pilot.Id) + "', '" + Convert.ToInt32(item.Id) + "')";
+            //            cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+            //            cmd.ExecuteNonQuery();
+            //            //pilot.Id = Convert.ToInt32(getLastInsertedId(cmd));
+            //        }
+            //    }
+            //}
+            #endregion
+
+            cmbRaceGroup.Items.Clear();
+            _race.Groups.ForEach(i => cmbRaceGroup.Items.Add(i.Name));
+
+            cmbRaceRound.Items.Add("R8");
+        }
+
         private void btnAddPilotsToQF_Click(object sender, EventArgs e)
         {
             if(_bestQualificationResuls == null || _bestQualificationResuls.Count == 0) return;
@@ -5918,7 +6077,7 @@ namespace RaceManager.UI
             // 1/4 finals
             var group = new Group
             {
-                Name = "Group A (R)",
+                Name = "Race 13",
                 Pilots = new List<RacePilot>
                 {
                     RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(0)?.Epc),
@@ -5927,12 +6086,12 @@ namespace RaceManager.UI
                     RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(12)?.Epc),
                 }
             };
-            gvGroupAQ.DataSource = group.Pilots;
+            gvRace13.DataSource = group.Pilots;
             _race.Groups.Add(group);
 
             group = new Group
             {
-                Name = "Group B (R)",
+                Name = "Race 14",
                 Pilots = new List<RacePilot>
                 {
                     RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(3)?.Epc),
@@ -5941,12 +6100,12 @@ namespace RaceManager.UI
                     RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(15)?.Epc),
                 }
             };
-            gvGroupBQ.DataSource = group.Pilots;
+            gvRace14.DataSource = group.Pilots;
             _race.Groups.Add(group);
 
             group = new Group
             {
-                Name = "Group C (R)",
+                Name = "Race 15",
                 Pilots = new List<RacePilot>
                 {
                     RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(2)?.Epc),
@@ -5955,12 +6114,12 @@ namespace RaceManager.UI
                     RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(14)?.Epc),
                 }
             };
-            gvGroupCQ.DataSource = group.Pilots;
+            gvRace15.DataSource = group.Pilots;
             _race.Groups.Add(group);
 
             group = new Group
             {
-                Name = "Group D (R)",
+                Name = "Race 16",
                 Pilots = new List<RacePilot>
                 {
                     RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(1)?.Epc),
@@ -5969,7 +6128,7 @@ namespace RaceManager.UI
                     RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(13)?.Epc),
                 }
             };
-            gvGroupDQ.DataSource = group.Pilots;
+            gvRace16.DataSource = group.Pilots;
             _race.Groups.Add(group);
 
             #region Groups Insertion
@@ -6040,7 +6199,7 @@ namespace RaceManager.UI
 
             var group = new Group
             {
-                Name = "Group A (S)",
+                Name = "Semi 1",
                 Pilots = new List<RacePilot>
                 {
                     RacePilots.FirstOrDefault(p=>p.Tag == race1Results.ElementAtOrDefault(1)?.Epc),
@@ -6049,12 +6208,12 @@ namespace RaceManager.UI
                     RacePilots.FirstOrDefault(p=>p.Tag == race2Results.ElementAtOrDefault(1)?.Epc)
                 }
             };
-            gvGroupAS.DataSource = group.Pilots;
+            gvSemi1.DataSource = group.Pilots;
             _race.Groups.Add(group);
 
             group = new Group
             {
-                Name = "Group B (S)",
+                Name = "Semi 2",
                 Pilots = new List<RacePilot>
                 {
                     RacePilots.FirstOrDefault(p=>p.Tag == race3Results.ElementAtOrDefault(1)?.Epc),
@@ -6063,7 +6222,7 @@ namespace RaceManager.UI
                     RacePilots.FirstOrDefault(p=>p.Tag == race4Results.ElementAtOrDefault(1)?.Epc)
                 }
             };
-            gvGroupBS.DataSource = group.Pilots;
+            gvSemi2.DataSource = group.Pilots;
             _race.Groups.Add(group);
 
             #region Groups Insertion
@@ -6127,7 +6286,7 @@ namespace RaceManager.UI
 
             var group = new Group
             {
-                Name = "Group A (F)",
+                Name = "Small Final",
                 Pilots = new List<RacePilot>
                 {
                     RacePilots.FirstOrDefault(p=>p.Tag == race1Results.ElementAtOrDefault(0)?.Epc),
@@ -6136,12 +6295,12 @@ namespace RaceManager.UI
                     RacePilots.FirstOrDefault(p=>p.Tag == race2Results.ElementAtOrDefault(1)?.Epc)
                 }
             };
-            gvGroupAF.DataSource = group.Pilots;
+            gvSmallFinal.DataSource = group.Pilots;
             _race.Groups.Add(group);
 
             group = new Group
             {
-                Name = "Group B (F)",
+                Name = "Final",
                 Pilots = new List<RacePilot>
                 {
                     RacePilots.FirstOrDefault(p=>p.Tag == race1Results.ElementAtOrDefault(2)?.Epc),
@@ -6150,7 +6309,7 @@ namespace RaceManager.UI
                     RacePilots.FirstOrDefault(p=>p.Tag == race2Results.ElementAtOrDefault(3)?.Epc)
                 }
             };
-            gvGroupBF.DataSource = group.Pilots;
+            gvFinal.DataSource = group.Pilots;
             _race.Groups.Add(group);
 
             #region Groups Insertion
@@ -6410,16 +6569,6 @@ namespace RaceManager.UI
         {
             tbMimicName.Text = tbRaceName.Text;
             tbMimicLocation.Text = tbRaceLocation.Text;
-        }
-
-        private void label122_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label123_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

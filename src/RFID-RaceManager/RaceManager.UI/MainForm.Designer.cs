@@ -200,75 +200,40 @@
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bindingSourcePilots1 = new System.Windows.Forms.BindingSource(this.components);
             this.tabRounds = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
-            this.groupBox38 = new System.Windows.Forms.GroupBox();
-            this.btnAddPilotsToGroupsF = new System.Windows.Forms.Button();
-            this.tabControl5 = new System.Windows.Forms.TabControl();
-            this.tabPage9 = new System.Windows.Forms.TabPage();
-            this.gvGroupAF = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn142 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn143 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn144 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn145 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn146 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
+            this.tabControl6 = new System.Windows.Forms.TabControl();
+            this.tabPage22 = new System.Windows.Forms.TabPage();
+            this.gvRace1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn213 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn214 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn215 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn216 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn217 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bindingSourcePilots = new System.Windows.Forms.BindingSource(this.components);
-            this.tabPage10 = new System.Windows.Forms.TabPage();
-            this.gvGroupBF = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn149 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn150 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn151 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn152 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn153 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
-            this.groupBox37 = new System.Windows.Forms.GroupBox();
-            this.btnAddPilotsToSF = new System.Windows.Forms.Button();
-            this.tabControl4 = new System.Windows.Forms.TabControl();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.gvGroupAS = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn128 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn129 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn130 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn131 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn132 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.gvGroupBS = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn135 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn136 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn137 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn138 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn139 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
-            this.groupBox36 = new System.Windows.Forms.GroupBox();
-            this.btnAddPilotsToQF = new System.Windows.Forms.Button();
-            this.tabControl3 = new System.Windows.Forms.TabControl();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.gvGroupAQ = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn100 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn101 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn102 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn103 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn104 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.gvGroupBQ = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn107 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn108 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn109 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn110 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn111 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.gvGroupCQ = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn114 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn115 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn116 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn117 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn118 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.gvGroupDQ = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn121 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn122 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn123 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn124 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn125 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage23 = new System.Windows.Forms.TabPage();
+            this.gvRace2 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn218 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn219 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn220 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn221 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn222 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage24 = new System.Windows.Forms.TabPage();
+            this.gvRace3 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn223 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn224 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn225 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn226 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn227 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage25 = new System.Windows.Forms.TabPage();
+            this.gvRace4 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn228 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn229 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn230 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn231 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn232 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox30 = new System.Windows.Forms.GroupBox();
+            this.btnAddPilotsTo18F = new System.Windows.Forms.Button();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox29 = new System.Windows.Forms.GroupBox();
             this.btnAddPilotsToQR = new System.Windows.Forms.Button();
@@ -455,6 +420,74 @@
             this.dataGridViewTextBoxColumn210 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn211 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn212 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
+            this.groupBox38 = new System.Windows.Forms.GroupBox();
+            this.btnAddPilotsToGroupsF = new System.Windows.Forms.Button();
+            this.tabControl5 = new System.Windows.Forms.TabControl();
+            this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.gvSmallFinal = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn142 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn143 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn144 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn145 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn146 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage10 = new System.Windows.Forms.TabPage();
+            this.gvFinal = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn149 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn150 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn151 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn152 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn153 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
+            this.groupBox36 = new System.Windows.Forms.GroupBox();
+            this.btnAddPilotsToQF = new System.Windows.Forms.Button();
+            this.tabControl3 = new System.Windows.Forms.TabControl();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.gvRace13 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn100 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn101 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn102 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn103 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn104 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.gvRace14 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn107 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn108 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn109 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn110 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn111 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.gvRace15 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn114 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn115 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn116 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn117 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn118 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.gvRace16 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn121 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn122 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn123 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn124 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn125 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
+            this.groupBox37 = new System.Windows.Forms.GroupBox();
+            this.btnAddPilotsToSF = new System.Windows.Forms.Button();
+            this.tabControl4 = new System.Windows.Forms.TabControl();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.gvSemi1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn128 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn129 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn130 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn131 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn132 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.gvSemi2 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn135 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn136 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn137 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn138 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn139 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabRace = new System.Windows.Forms.TabPage();
             this.gvRace = new System.Windows.Forms.DataGridView();
             this.OrderNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -817,39 +850,34 @@
             this.lxLedControl16 = new LxControl.LxLedControl();
             this.lxLedControl17 = new LxControl.LxLedControl();
             this.lxLedControl18 = new LxControl.LxLedControl();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
-            this.groupBox30 = new System.Windows.Forms.GroupBox();
-            this.btnAddPilotsTo18F = new System.Windows.Forms.Button();
-            this.tabControl6 = new System.Windows.Forms.TabControl();
-            this.tabPage22 = new System.Windows.Forms.TabPage();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn213 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn214 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn215 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn216 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn217 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPage23 = new System.Windows.Forms.TabPage();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn218 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn219 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn220 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn221 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn222 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPage24 = new System.Windows.Forms.TabPage();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn223 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn224 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn225 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn226 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn227 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPage25 = new System.Windows.Forms.TabPage();
-            this.dataGridView5 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn228 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn229 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn230 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn231 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn232 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage26 = new System.Windows.Forms.TabPage();
+            this.tabPage27 = new System.Windows.Forms.TabPage();
+            this.tabPage28 = new System.Windows.Forms.TabPage();
+            this.tabPage29 = new System.Windows.Forms.TabPage();
+            this.gvRace5 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn233 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn234 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn235 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn236 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn237 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gvRace6 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn238 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn239 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn240 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn241 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn242 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gvRace7 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn243 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn244 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn245 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn246 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn247 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gvRace8 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn248 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn249 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn250 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn251 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn252 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabCtrMain.SuspendLayout();
             this.PagReaderSetting.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -893,32 +921,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.gvPilots)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourcePilots1)).BeginInit();
             this.tabRounds.SuspendLayout();
-            this.tableLayoutPanel11.SuspendLayout();
-            this.groupBox38.SuspendLayout();
-            this.tabControl5.SuspendLayout();
-            this.tabPage9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupAF)).BeginInit();
+            this.panel11.SuspendLayout();
+            this.tableLayoutPanel12.SuspendLayout();
+            this.tabControl6.SuspendLayout();
+            this.tabPage22.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvRace1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourcePilots)).BeginInit();
-            this.tabPage10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupBF)).BeginInit();
-            this.tableLayoutPanel10.SuspendLayout();
-            this.groupBox37.SuspendLayout();
-            this.tabControl4.SuspendLayout();
-            this.tabPage7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupAS)).BeginInit();
-            this.tabPage8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupBS)).BeginInit();
-            this.tableLayoutPanel9.SuspendLayout();
-            this.groupBox36.SuspendLayout();
-            this.tabControl3.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupAQ)).BeginInit();
-            this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupBQ)).BeginInit();
-            this.tabPage5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupCQ)).BeginInit();
-            this.tabPage6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupDQ)).BeginInit();
+            this.tabPage23.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvRace2)).BeginInit();
+            this.tabPage24.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvRace3)).BeginInit();
+            this.tabPage25.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvRace4)).BeginInit();
+            this.groupBox30.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
             this.groupBox29.SuspendLayout();
             this.tabControl2.SuspendLayout();
@@ -974,6 +989,31 @@
             ((System.ComponentModel.ISupportInitialize)(this.gvGroupY)).BeginInit();
             this.tabPage21.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvGroupZ)).BeginInit();
+            this.tableLayoutPanel11.SuspendLayout();
+            this.groupBox38.SuspendLayout();
+            this.tabControl5.SuspendLayout();
+            this.tabPage9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvSmallFinal)).BeginInit();
+            this.tabPage10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvFinal)).BeginInit();
+            this.tableLayoutPanel9.SuspendLayout();
+            this.groupBox36.SuspendLayout();
+            this.tabControl3.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvRace13)).BeginInit();
+            this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvRace14)).BeginInit();
+            this.tabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvRace15)).BeginInit();
+            this.tabPage6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvRace16)).BeginInit();
+            this.tableLayoutPanel10.SuspendLayout();
+            this.groupBox37.SuspendLayout();
+            this.tabControl4.SuspendLayout();
+            this.tabPage7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvSemi1)).BeginInit();
+            this.tabPage8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvSemi2)).BeginInit();
             this.tabRace.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvRace)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceRace)).BeginInit();
@@ -1052,18 +1092,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.lxLedControl16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lxLedControl17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lxLedControl18)).BeginInit();
-            this.panel11.SuspendLayout();
-            this.tableLayoutPanel12.SuspendLayout();
-            this.groupBox30.SuspendLayout();
-            this.tabControl6.SuspendLayout();
-            this.tabPage22.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            this.tabPage23.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            this.tabPage24.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
-            this.tabPage25.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
+            this.tabPage26.SuspendLayout();
+            this.tabPage27.SuspendLayout();
+            this.tabPage28.SuspendLayout();
+            this.tabPage29.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvRace5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvRace6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvRace7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvRace8)).BeginInit();
             this.SuspendLayout();
             // 
             // tabCtrMain
@@ -2584,7 +2620,6 @@
             this.label123.Size = new System.Drawing.Size(65, 13);
             this.label123.TabIndex = 24;
             this.label123.Text = "Round type:";
-            this.label123.Click += new System.EventHandler(this.label123_Click);
             // 
             // comboBox1
             // 
@@ -2612,7 +2647,6 @@
             this.label122.Size = new System.Drawing.Size(107, 13);
             this.label122.TabIndex = 21;
             this.label122.Text = "Use second Change:";
-            this.label122.Click += new System.EventHandler(this.label122_Click);
             // 
             // btTrack
             // 
@@ -3018,738 +3052,362 @@
             this.tabRounds.Text = "Round Management";
             this.tabRounds.UseVisualStyleBackColor = true;
             // 
-            // tableLayoutPanel11
+            // panel11
             // 
-            this.tableLayoutPanel11.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.tableLayoutPanel11.ColumnCount = 2;
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.4359F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 77.5641F));
-            this.tableLayoutPanel11.Controls.Add(this.groupBox38, 0, 0);
-            this.tableLayoutPanel11.Controls.Add(this.tabControl5, 1, 0);
-            this.tableLayoutPanel11.Location = new System.Drawing.Point(2, 626);
-            this.tableLayoutPanel11.Margin = new System.Windows.Forms.Padding(2);
-            this.tableLayoutPanel11.Name = "tableLayoutPanel11";
-            this.tableLayoutPanel11.RowCount = 1;
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 155F));
-            this.tableLayoutPanel11.Size = new System.Drawing.Size(1300, 156);
-            this.tableLayoutPanel11.TabIndex = 5;
+            this.panel11.AutoScroll = true;
+            this.panel11.Controls.Add(this.tableLayoutPanel12);
+            this.panel11.Controls.Add(this.tableLayoutPanel7);
+            this.panel11.Controls.Add(this.tableLayoutPanel11);
+            this.panel11.Controls.Add(this.tableLayoutPanel9);
+            this.panel11.Controls.Add(this.tableLayoutPanel10);
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel11.Location = new System.Drawing.Point(3, 3);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(1325, 621);
+            this.panel11.TabIndex = 6;
             // 
-            // groupBox38
+            // tableLayoutPanel12
             // 
-            this.groupBox38.Controls.Add(this.btnAddPilotsToGroupsF);
-            this.groupBox38.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox38.Location = new System.Drawing.Point(3, 3);
-            this.groupBox38.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox38.Name = "groupBox38";
-            this.groupBox38.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox38.Size = new System.Drawing.Size(286, 150);
-            this.groupBox38.TabIndex = 0;
-            this.groupBox38.TabStop = false;
-            this.groupBox38.Text = "FINAL";
+            this.tableLayoutPanel12.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.tableLayoutPanel12.ColumnCount = 2;
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.40185F));
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 77.59815F));
+            this.tableLayoutPanel12.Controls.Add(this.tabControl6, 1, 0);
+            this.tableLayoutPanel12.Controls.Add(this.groupBox30, 0, 0);
+            this.tableLayoutPanel12.Location = new System.Drawing.Point(2, 158);
+            this.tableLayoutPanel12.Name = "tableLayoutPanel12";
+            this.tableLayoutPanel12.RowCount = 1;
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel12.Size = new System.Drawing.Size(1300, 156);
+            this.tableLayoutPanel12.TabIndex = 6;
             // 
-            // btnAddPilotsToGroupsF
+            // tabControl6
             // 
-            this.btnAddPilotsToGroupsF.Location = new System.Drawing.Point(23, 55);
-            this.btnAddPilotsToGroupsF.Margin = new System.Windows.Forms.Padding(2);
-            this.btnAddPilotsToGroupsF.Name = "btnAddPilotsToGroupsF";
-            this.btnAddPilotsToGroupsF.Size = new System.Drawing.Size(176, 36);
-            this.btnAddPilotsToGroupsF.TabIndex = 2;
-            this.btnAddPilotsToGroupsF.Text = "Add Pilots to Final Round";
-            this.btnAddPilotsToGroupsF.UseVisualStyleBackColor = true;
-            this.btnAddPilotsToGroupsF.Click += new System.EventHandler(this.btnAddPilotsToGroupsF_Click);
+            this.tabControl6.Controls.Add(this.tabPage22);
+            this.tabControl6.Controls.Add(this.tabPage23);
+            this.tabControl6.Controls.Add(this.tabPage24);
+            this.tabControl6.Controls.Add(this.tabPage25);
+            this.tabControl6.Controls.Add(this.tabPage26);
+            this.tabControl6.Controls.Add(this.tabPage27);
+            this.tabControl6.Controls.Add(this.tabPage28);
+            this.tabControl6.Controls.Add(this.tabPage29);
+            this.tabControl6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl6.Location = new System.Drawing.Point(294, 3);
+            this.tabControl6.Margin = new System.Windows.Forms.Padding(2);
+            this.tabControl6.Name = "tabControl6";
+            this.tabControl6.SelectedIndex = 0;
+            this.tabControl6.Size = new System.Drawing.Size(1003, 150);
+            this.tabControl6.TabIndex = 2;
             // 
-            // tabControl5
+            // tabPage22
             // 
-            this.tabControl5.Controls.Add(this.tabPage9);
-            this.tabControl5.Controls.Add(this.tabPage10);
-            this.tabControl5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl5.Location = new System.Drawing.Point(294, 3);
-            this.tabControl5.Margin = new System.Windows.Forms.Padding(2);
-            this.tabControl5.Name = "tabControl5";
-            this.tabControl5.SelectedIndex = 0;
-            this.tabControl5.Size = new System.Drawing.Size(1003, 150);
-            this.tabControl5.TabIndex = 1;
+            this.tabPage22.Controls.Add(this.gvRace1);
+            this.tabPage22.Location = new System.Drawing.Point(4, 22);
+            this.tabPage22.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage22.Name = "tabPage22";
+            this.tabPage22.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage22.Size = new System.Drawing.Size(995, 124);
+            this.tabPage22.TabIndex = 0;
+            this.tabPage22.Text = "Race 1";
+            this.tabPage22.UseVisualStyleBackColor = true;
             // 
-            // tabPage9
+            // gvRace1
             // 
-            this.tabPage9.Controls.Add(this.gvGroupAF);
-            this.tabPage9.Location = new System.Drawing.Point(4, 22);
-            this.tabPage9.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage9.Size = new System.Drawing.Size(995, 124);
-            this.tabPage9.TabIndex = 0;
-            this.tabPage9.Text = "Group A";
-            this.tabPage9.UseVisualStyleBackColor = true;
+            this.gvRace1.AllowUserToAddRows = false;
+            this.gvRace1.AllowUserToDeleteRows = false;
+            this.gvRace1.AutoGenerateColumns = false;
+            this.gvRace1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvRace1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn213,
+            this.dataGridViewTextBoxColumn214,
+            this.dataGridViewTextBoxColumn215,
+            this.dataGridViewTextBoxColumn216,
+            this.dataGridViewTextBoxColumn217});
+            this.gvRace1.DataSource = this.bindingSourcePilots;
+            this.gvRace1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvRace1.Location = new System.Drawing.Point(2, 2);
+            this.gvRace1.Margin = new System.Windows.Forms.Padding(2);
+            this.gvRace1.Name = "gvRace1";
+            this.gvRace1.ReadOnly = true;
+            this.gvRace1.RowTemplate.Height = 24;
+            this.gvRace1.Size = new System.Drawing.Size(991, 120);
+            this.gvRace1.TabIndex = 0;
             // 
-            // gvGroupAF
+            // dataGridViewTextBoxColumn213
             // 
-            this.gvGroupAF.AllowUserToAddRows = false;
-            this.gvGroupAF.AllowUserToDeleteRows = false;
-            this.gvGroupAF.AutoGenerateColumns = false;
-            this.gvGroupAF.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvGroupAF.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn142,
-            this.dataGridViewTextBoxColumn143,
-            this.dataGridViewTextBoxColumn144,
-            this.dataGridViewTextBoxColumn145,
-            this.dataGridViewTextBoxColumn146});
-            this.gvGroupAF.DataSource = this.bindingSourcePilots;
-            this.gvGroupAF.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gvGroupAF.Location = new System.Drawing.Point(2, 2);
-            this.gvGroupAF.Margin = new System.Windows.Forms.Padding(2);
-            this.gvGroupAF.Name = "gvGroupAF";
-            this.gvGroupAF.ReadOnly = true;
-            this.gvGroupAF.RowTemplate.Height = 24;
-            this.gvGroupAF.Size = new System.Drawing.Size(991, 120);
-            this.gvGroupAF.TabIndex = 0;
+            this.dataGridViewTextBoxColumn213.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn213.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn213.Name = "dataGridViewTextBoxColumn213";
+            this.dataGridViewTextBoxColumn213.ReadOnly = true;
+            this.dataGridViewTextBoxColumn213.Width = 200;
             // 
-            // dataGridViewTextBoxColumn142
+            // dataGridViewTextBoxColumn214
             // 
-            this.dataGridViewTextBoxColumn142.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn142.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn142.Name = "dataGridViewTextBoxColumn142";
-            this.dataGridViewTextBoxColumn142.ReadOnly = true;
-            this.dataGridViewTextBoxColumn142.Width = 200;
+            this.dataGridViewTextBoxColumn214.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn214.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn214.Name = "dataGridViewTextBoxColumn214";
+            this.dataGridViewTextBoxColumn214.ReadOnly = true;
             // 
-            // dataGridViewTextBoxColumn143
+            // dataGridViewTextBoxColumn215
             // 
-            this.dataGridViewTextBoxColumn143.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn143.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn143.Name = "dataGridViewTextBoxColumn143";
-            this.dataGridViewTextBoxColumn143.ReadOnly = true;
+            this.dataGridViewTextBoxColumn215.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn215.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn215.Name = "dataGridViewTextBoxColumn215";
+            this.dataGridViewTextBoxColumn215.ReadOnly = true;
             // 
-            // dataGridViewTextBoxColumn144
+            // dataGridViewTextBoxColumn216
             // 
-            this.dataGridViewTextBoxColumn144.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn144.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn144.Name = "dataGridViewTextBoxColumn144";
-            this.dataGridViewTextBoxColumn144.ReadOnly = true;
+            this.dataGridViewTextBoxColumn216.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn216.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn216.Name = "dataGridViewTextBoxColumn216";
+            this.dataGridViewTextBoxColumn216.ReadOnly = true;
+            this.dataGridViewTextBoxColumn216.Width = 300;
             // 
-            // dataGridViewTextBoxColumn145
+            // dataGridViewTextBoxColumn217
             // 
-            this.dataGridViewTextBoxColumn145.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn145.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn145.Name = "dataGridViewTextBoxColumn145";
-            this.dataGridViewTextBoxColumn145.ReadOnly = true;
-            this.dataGridViewTextBoxColumn145.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn146
-            // 
-            this.dataGridViewTextBoxColumn146.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn146.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn146.Name = "dataGridViewTextBoxColumn146";
-            this.dataGridViewTextBoxColumn146.ReadOnly = true;
+            this.dataGridViewTextBoxColumn217.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn217.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn217.Name = "dataGridViewTextBoxColumn217";
+            this.dataGridViewTextBoxColumn217.ReadOnly = true;
             // 
             // bindingSourcePilots
             // 
             this.bindingSourcePilots.DataSource = typeof(RaceManager.Data.Pilot);
             // 
-            // tabPage10
-            // 
-            this.tabPage10.Controls.Add(this.gvGroupBF);
-            this.tabPage10.Location = new System.Drawing.Point(4, 22);
-            this.tabPage10.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage10.Size = new System.Drawing.Size(1013, 124);
-            this.tabPage10.TabIndex = 1;
-            this.tabPage10.Text = "Group B";
-            this.tabPage10.UseVisualStyleBackColor = true;
-            // 
-            // gvGroupBF
-            // 
-            this.gvGroupBF.AllowUserToAddRows = false;
-            this.gvGroupBF.AllowUserToDeleteRows = false;
-            this.gvGroupBF.AutoGenerateColumns = false;
-            this.gvGroupBF.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvGroupBF.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn149,
-            this.dataGridViewTextBoxColumn150,
-            this.dataGridViewTextBoxColumn151,
-            this.dataGridViewTextBoxColumn152,
-            this.dataGridViewTextBoxColumn153});
-            this.gvGroupBF.DataSource = this.bindingSourcePilots;
-            this.gvGroupBF.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gvGroupBF.Location = new System.Drawing.Point(2, 2);
-            this.gvGroupBF.Margin = new System.Windows.Forms.Padding(2);
-            this.gvGroupBF.Name = "gvGroupBF";
-            this.gvGroupBF.ReadOnly = true;
-            this.gvGroupBF.RowTemplate.Height = 24;
-            this.gvGroupBF.Size = new System.Drawing.Size(1009, 120);
-            this.gvGroupBF.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn149
-            // 
-            this.dataGridViewTextBoxColumn149.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn149.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn149.Name = "dataGridViewTextBoxColumn149";
-            this.dataGridViewTextBoxColumn149.ReadOnly = true;
-            this.dataGridViewTextBoxColumn149.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn150
-            // 
-            this.dataGridViewTextBoxColumn150.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn150.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn150.Name = "dataGridViewTextBoxColumn150";
-            this.dataGridViewTextBoxColumn150.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn151
-            // 
-            this.dataGridViewTextBoxColumn151.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn151.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn151.Name = "dataGridViewTextBoxColumn151";
-            this.dataGridViewTextBoxColumn151.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn152
-            // 
-            this.dataGridViewTextBoxColumn152.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn152.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn152.Name = "dataGridViewTextBoxColumn152";
-            this.dataGridViewTextBoxColumn152.ReadOnly = true;
-            this.dataGridViewTextBoxColumn152.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn153
-            // 
-            this.dataGridViewTextBoxColumn153.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn153.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn153.Name = "dataGridViewTextBoxColumn153";
-            this.dataGridViewTextBoxColumn153.ReadOnly = true;
-            // 
-            // tableLayoutPanel10
-            // 
-            this.tableLayoutPanel10.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.tableLayoutPanel10.ColumnCount = 2;
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.4359F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 77.5641F));
-            this.tableLayoutPanel10.Controls.Add(this.groupBox37, 0, 0);
-            this.tableLayoutPanel10.Controls.Add(this.tabControl4, 1, 0);
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(2, 470);
-            this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(2);
-            this.tableLayoutPanel10.Name = "tableLayoutPanel10";
-            this.tableLayoutPanel10.RowCount = 1;
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 155F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(1300, 156);
-            this.tableLayoutPanel10.TabIndex = 4;
-            // 
-            // groupBox37
-            // 
-            this.groupBox37.Controls.Add(this.btnAddPilotsToSF);
-            this.groupBox37.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox37.Location = new System.Drawing.Point(3, 3);
-            this.groupBox37.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox37.Name = "groupBox37";
-            this.groupBox37.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox37.Size = new System.Drawing.Size(286, 150);
-            this.groupBox37.TabIndex = 0;
-            this.groupBox37.TabStop = false;
-            this.groupBox37.Text = "SEMI FINAL";
-            // 
-            // btnAddPilotsToSF
-            // 
-            this.btnAddPilotsToSF.Location = new System.Drawing.Point(23, 55);
-            this.btnAddPilotsToSF.Margin = new System.Windows.Forms.Padding(2);
-            this.btnAddPilotsToSF.Name = "btnAddPilotsToSF";
-            this.btnAddPilotsToSF.Size = new System.Drawing.Size(176, 36);
-            this.btnAddPilotsToSF.TabIndex = 2;
-            this.btnAddPilotsToSF.Text = "Add Pilots to Semi Final";
-            this.btnAddPilotsToSF.UseVisualStyleBackColor = true;
-            this.btnAddPilotsToSF.Click += new System.EventHandler(this.btnAddPilotsToGroupsSF_Click);
-            // 
-            // tabControl4
-            // 
-            this.tabControl4.Controls.Add(this.tabPage7);
-            this.tabControl4.Controls.Add(this.tabPage8);
-            this.tabControl4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl4.Location = new System.Drawing.Point(294, 3);
-            this.tabControl4.Margin = new System.Windows.Forms.Padding(2);
-            this.tabControl4.Name = "tabControl4";
-            this.tabControl4.SelectedIndex = 0;
-            this.tabControl4.Size = new System.Drawing.Size(1003, 150);
-            this.tabControl4.TabIndex = 1;
-            // 
-            // tabPage7
-            // 
-            this.tabPage7.Controls.Add(this.gvGroupAS);
-            this.tabPage7.Location = new System.Drawing.Point(4, 22);
-            this.tabPage7.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage7.Size = new System.Drawing.Size(995, 124);
-            this.tabPage7.TabIndex = 0;
-            this.tabPage7.Text = "Group A";
-            this.tabPage7.UseVisualStyleBackColor = true;
-            // 
-            // gvGroupAS
-            // 
-            this.gvGroupAS.AllowUserToAddRows = false;
-            this.gvGroupAS.AllowUserToDeleteRows = false;
-            this.gvGroupAS.AutoGenerateColumns = false;
-            this.gvGroupAS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvGroupAS.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn128,
-            this.dataGridViewTextBoxColumn129,
-            this.dataGridViewTextBoxColumn130,
-            this.dataGridViewTextBoxColumn131,
-            this.dataGridViewTextBoxColumn132});
-            this.gvGroupAS.DataSource = this.bindingSourcePilots;
-            this.gvGroupAS.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gvGroupAS.Location = new System.Drawing.Point(2, 2);
-            this.gvGroupAS.Margin = new System.Windows.Forms.Padding(2);
-            this.gvGroupAS.Name = "gvGroupAS";
-            this.gvGroupAS.ReadOnly = true;
-            this.gvGroupAS.RowTemplate.Height = 24;
-            this.gvGroupAS.Size = new System.Drawing.Size(991, 120);
-            this.gvGroupAS.TabIndex = 0;
-            // 
-            // dataGridViewTextBoxColumn128
-            // 
-            this.dataGridViewTextBoxColumn128.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn128.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn128.Name = "dataGridViewTextBoxColumn128";
-            this.dataGridViewTextBoxColumn128.ReadOnly = true;
-            this.dataGridViewTextBoxColumn128.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn129
-            // 
-            this.dataGridViewTextBoxColumn129.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn129.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn129.Name = "dataGridViewTextBoxColumn129";
-            this.dataGridViewTextBoxColumn129.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn130
-            // 
-            this.dataGridViewTextBoxColumn130.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn130.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn130.Name = "dataGridViewTextBoxColumn130";
-            this.dataGridViewTextBoxColumn130.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn131
-            // 
-            this.dataGridViewTextBoxColumn131.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn131.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn131.Name = "dataGridViewTextBoxColumn131";
-            this.dataGridViewTextBoxColumn131.ReadOnly = true;
-            this.dataGridViewTextBoxColumn131.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn132
-            // 
-            this.dataGridViewTextBoxColumn132.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn132.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn132.Name = "dataGridViewTextBoxColumn132";
-            this.dataGridViewTextBoxColumn132.ReadOnly = true;
-            // 
-            // tabPage8
-            // 
-            this.tabPage8.Controls.Add(this.gvGroupBS);
-            this.tabPage8.Location = new System.Drawing.Point(4, 22);
-            this.tabPage8.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage8.Size = new System.Drawing.Size(1013, 124);
-            this.tabPage8.TabIndex = 1;
-            this.tabPage8.Text = "Group B";
-            this.tabPage8.UseVisualStyleBackColor = true;
-            // 
-            // gvGroupBS
-            // 
-            this.gvGroupBS.AllowUserToAddRows = false;
-            this.gvGroupBS.AllowUserToDeleteRows = false;
-            this.gvGroupBS.AutoGenerateColumns = false;
-            this.gvGroupBS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvGroupBS.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn135,
-            this.dataGridViewTextBoxColumn136,
-            this.dataGridViewTextBoxColumn137,
-            this.dataGridViewTextBoxColumn138,
-            this.dataGridViewTextBoxColumn139});
-            this.gvGroupBS.DataSource = this.bindingSourcePilots;
-            this.gvGroupBS.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gvGroupBS.Location = new System.Drawing.Point(2, 2);
-            this.gvGroupBS.Margin = new System.Windows.Forms.Padding(2);
-            this.gvGroupBS.Name = "gvGroupBS";
-            this.gvGroupBS.ReadOnly = true;
-            this.gvGroupBS.RowTemplate.Height = 24;
-            this.gvGroupBS.Size = new System.Drawing.Size(1009, 120);
-            this.gvGroupBS.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn135
-            // 
-            this.dataGridViewTextBoxColumn135.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn135.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn135.Name = "dataGridViewTextBoxColumn135";
-            this.dataGridViewTextBoxColumn135.ReadOnly = true;
-            this.dataGridViewTextBoxColumn135.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn136
-            // 
-            this.dataGridViewTextBoxColumn136.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn136.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn136.Name = "dataGridViewTextBoxColumn136";
-            this.dataGridViewTextBoxColumn136.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn137
-            // 
-            this.dataGridViewTextBoxColumn137.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn137.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn137.Name = "dataGridViewTextBoxColumn137";
-            this.dataGridViewTextBoxColumn137.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn138
-            // 
-            this.dataGridViewTextBoxColumn138.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn138.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn138.Name = "dataGridViewTextBoxColumn138";
-            this.dataGridViewTextBoxColumn138.ReadOnly = true;
-            this.dataGridViewTextBoxColumn138.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn139
-            // 
-            this.dataGridViewTextBoxColumn139.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn139.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn139.Name = "dataGridViewTextBoxColumn139";
-            this.dataGridViewTextBoxColumn139.ReadOnly = true;
-            // 
-            // tableLayoutPanel9
-            // 
-            this.tableLayoutPanel9.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.tableLayoutPanel9.ColumnCount = 2;
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.4359F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 77.5641F));
-            this.tableLayoutPanel9.Controls.Add(this.groupBox36, 0, 0);
-            this.tableLayoutPanel9.Controls.Add(this.tabControl3, 1, 0);
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(2, 314);
-            this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(2);
-            this.tableLayoutPanel9.Name = "tableLayoutPanel9";
-            this.tableLayoutPanel9.RowCount = 1;
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 155F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(1300, 156);
-            this.tableLayoutPanel9.TabIndex = 3;
-            // 
-            // groupBox36
-            // 
-            this.groupBox36.Controls.Add(this.btnAddPilotsToQF);
-            this.groupBox36.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox36.Location = new System.Drawing.Point(3, 3);
-            this.groupBox36.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox36.Name = "groupBox36";
-            this.groupBox36.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox36.Size = new System.Drawing.Size(286, 150);
-            this.groupBox36.TabIndex = 0;
-            this.groupBox36.TabStop = false;
-            this.groupBox36.Text = "1 / 4   ROUND";
-            // 
-            // btnAddPilotsToQF
-            // 
-            this.btnAddPilotsToQF.Location = new System.Drawing.Point(22, 46);
-            this.btnAddPilotsToQF.Margin = new System.Windows.Forms.Padding(2);
-            this.btnAddPilotsToQF.Name = "btnAddPilotsToQF";
-            this.btnAddPilotsToQF.Size = new System.Drawing.Size(176, 36);
-            this.btnAddPilotsToQF.TabIndex = 2;
-            this.btnAddPilotsToQF.Text = "Add Pilots to 1/4 round";
-            this.btnAddPilotsToQF.UseVisualStyleBackColor = true;
-            this.btnAddPilotsToQF.Click += new System.EventHandler(this.btnAddPilotsToQF_Click);
-            // 
-            // tabControl3
-            // 
-            this.tabControl3.Controls.Add(this.tabPage3);
-            this.tabControl3.Controls.Add(this.tabPage4);
-            this.tabControl3.Controls.Add(this.tabPage5);
-            this.tabControl3.Controls.Add(this.tabPage6);
-            this.tabControl3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl3.Location = new System.Drawing.Point(294, 3);
-            this.tabControl3.Margin = new System.Windows.Forms.Padding(2);
-            this.tabControl3.Name = "tabControl3";
-            this.tabControl3.SelectedIndex = 0;
-            this.tabControl3.Size = new System.Drawing.Size(1003, 150);
-            this.tabControl3.TabIndex = 1;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.gvGroupAQ);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage3.Size = new System.Drawing.Size(995, 124);
-            this.tabPage3.TabIndex = 0;
-            this.tabPage3.Text = "Group A";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // gvGroupAQ
-            // 
-            this.gvGroupAQ.AllowUserToAddRows = false;
-            this.gvGroupAQ.AllowUserToDeleteRows = false;
-            this.gvGroupAQ.AutoGenerateColumns = false;
-            this.gvGroupAQ.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvGroupAQ.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn100,
-            this.dataGridViewTextBoxColumn101,
-            this.dataGridViewTextBoxColumn102,
-            this.dataGridViewTextBoxColumn103,
-            this.dataGridViewTextBoxColumn104});
-            this.gvGroupAQ.DataSource = this.bindingSourcePilots;
-            this.gvGroupAQ.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gvGroupAQ.Location = new System.Drawing.Point(2, 2);
-            this.gvGroupAQ.Margin = new System.Windows.Forms.Padding(2);
-            this.gvGroupAQ.Name = "gvGroupAQ";
-            this.gvGroupAQ.ReadOnly = true;
-            this.gvGroupAQ.RowTemplate.Height = 24;
-            this.gvGroupAQ.Size = new System.Drawing.Size(991, 120);
-            this.gvGroupAQ.TabIndex = 0;
-            // 
-            // dataGridViewTextBoxColumn100
-            // 
-            this.dataGridViewTextBoxColumn100.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn100.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn100.Name = "dataGridViewTextBoxColumn100";
-            this.dataGridViewTextBoxColumn100.ReadOnly = true;
-            this.dataGridViewTextBoxColumn100.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn101
-            // 
-            this.dataGridViewTextBoxColumn101.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn101.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn101.Name = "dataGridViewTextBoxColumn101";
-            this.dataGridViewTextBoxColumn101.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn102
-            // 
-            this.dataGridViewTextBoxColumn102.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn102.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn102.Name = "dataGridViewTextBoxColumn102";
-            this.dataGridViewTextBoxColumn102.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn103
-            // 
-            this.dataGridViewTextBoxColumn103.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn103.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn103.Name = "dataGridViewTextBoxColumn103";
-            this.dataGridViewTextBoxColumn103.ReadOnly = true;
-            this.dataGridViewTextBoxColumn103.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn104
-            // 
-            this.dataGridViewTextBoxColumn104.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn104.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn104.Name = "dataGridViewTextBoxColumn104";
-            this.dataGridViewTextBoxColumn104.ReadOnly = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.gvGroupBQ);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage4.Size = new System.Drawing.Size(1013, 124);
-            this.tabPage4.TabIndex = 1;
-            this.tabPage4.Text = "Group B";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // gvGroupBQ
-            // 
-            this.gvGroupBQ.AllowUserToAddRows = false;
-            this.gvGroupBQ.AllowUserToDeleteRows = false;
-            this.gvGroupBQ.AutoGenerateColumns = false;
-            this.gvGroupBQ.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvGroupBQ.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn107,
-            this.dataGridViewTextBoxColumn108,
-            this.dataGridViewTextBoxColumn109,
-            this.dataGridViewTextBoxColumn110,
-            this.dataGridViewTextBoxColumn111});
-            this.gvGroupBQ.DataSource = this.bindingSourcePilots;
-            this.gvGroupBQ.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gvGroupBQ.Location = new System.Drawing.Point(2, 2);
-            this.gvGroupBQ.Margin = new System.Windows.Forms.Padding(2);
-            this.gvGroupBQ.Name = "gvGroupBQ";
-            this.gvGroupBQ.ReadOnly = true;
-            this.gvGroupBQ.RowTemplate.Height = 24;
-            this.gvGroupBQ.Size = new System.Drawing.Size(1009, 120);
-            this.gvGroupBQ.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn107
-            // 
-            this.dataGridViewTextBoxColumn107.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn107.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn107.Name = "dataGridViewTextBoxColumn107";
-            this.dataGridViewTextBoxColumn107.ReadOnly = true;
-            this.dataGridViewTextBoxColumn107.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn108
-            // 
-            this.dataGridViewTextBoxColumn108.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn108.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn108.Name = "dataGridViewTextBoxColumn108";
-            this.dataGridViewTextBoxColumn108.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn109
-            // 
-            this.dataGridViewTextBoxColumn109.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn109.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn109.Name = "dataGridViewTextBoxColumn109";
-            this.dataGridViewTextBoxColumn109.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn110
-            // 
-            this.dataGridViewTextBoxColumn110.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn110.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn110.Name = "dataGridViewTextBoxColumn110";
-            this.dataGridViewTextBoxColumn110.ReadOnly = true;
-            this.dataGridViewTextBoxColumn110.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn111
-            // 
-            this.dataGridViewTextBoxColumn111.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn111.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn111.Name = "dataGridViewTextBoxColumn111";
-            this.dataGridViewTextBoxColumn111.ReadOnly = true;
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Controls.Add(this.gvGroupCQ);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage5.Size = new System.Drawing.Size(1013, 124);
-            this.tabPage5.TabIndex = 2;
-            this.tabPage5.Text = "Group C";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // gvGroupCQ
-            // 
-            this.gvGroupCQ.AllowUserToAddRows = false;
-            this.gvGroupCQ.AllowUserToDeleteRows = false;
-            this.gvGroupCQ.AutoGenerateColumns = false;
-            this.gvGroupCQ.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvGroupCQ.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn114,
-            this.dataGridViewTextBoxColumn115,
-            this.dataGridViewTextBoxColumn116,
-            this.dataGridViewTextBoxColumn117,
-            this.dataGridViewTextBoxColumn118});
-            this.gvGroupCQ.DataSource = this.bindingSourcePilots;
-            this.gvGroupCQ.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gvGroupCQ.Location = new System.Drawing.Point(2, 2);
-            this.gvGroupCQ.Margin = new System.Windows.Forms.Padding(2);
-            this.gvGroupCQ.Name = "gvGroupCQ";
-            this.gvGroupCQ.ReadOnly = true;
-            this.gvGroupCQ.RowTemplate.Height = 24;
-            this.gvGroupCQ.Size = new System.Drawing.Size(1009, 120);
-            this.gvGroupCQ.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn114
-            // 
-            this.dataGridViewTextBoxColumn114.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn114.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn114.Name = "dataGridViewTextBoxColumn114";
-            this.dataGridViewTextBoxColumn114.ReadOnly = true;
-            this.dataGridViewTextBoxColumn114.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn115
-            // 
-            this.dataGridViewTextBoxColumn115.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn115.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn115.Name = "dataGridViewTextBoxColumn115";
-            this.dataGridViewTextBoxColumn115.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn116
-            // 
-            this.dataGridViewTextBoxColumn116.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn116.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn116.Name = "dataGridViewTextBoxColumn116";
-            this.dataGridViewTextBoxColumn116.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn117
-            // 
-            this.dataGridViewTextBoxColumn117.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn117.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn117.Name = "dataGridViewTextBoxColumn117";
-            this.dataGridViewTextBoxColumn117.ReadOnly = true;
-            this.dataGridViewTextBoxColumn117.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn118
-            // 
-            this.dataGridViewTextBoxColumn118.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn118.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn118.Name = "dataGridViewTextBoxColumn118";
-            this.dataGridViewTextBoxColumn118.ReadOnly = true;
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.Controls.Add(this.gvGroupDQ);
-            this.tabPage6.Location = new System.Drawing.Point(4, 22);
-            this.tabPage6.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage6.Size = new System.Drawing.Size(1013, 124);
-            this.tabPage6.TabIndex = 3;
-            this.tabPage6.Text = "Group D";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // gvGroupDQ
-            // 
-            this.gvGroupDQ.AllowUserToAddRows = false;
-            this.gvGroupDQ.AllowUserToDeleteRows = false;
-            this.gvGroupDQ.AutoGenerateColumns = false;
-            this.gvGroupDQ.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvGroupDQ.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn121,
-            this.dataGridViewTextBoxColumn122,
-            this.dataGridViewTextBoxColumn123,
-            this.dataGridViewTextBoxColumn124,
-            this.dataGridViewTextBoxColumn125});
-            this.gvGroupDQ.DataSource = this.bindingSourcePilots;
-            this.gvGroupDQ.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gvGroupDQ.Location = new System.Drawing.Point(2, 2);
-            this.gvGroupDQ.Margin = new System.Windows.Forms.Padding(2);
-            this.gvGroupDQ.Name = "gvGroupDQ";
-            this.gvGroupDQ.ReadOnly = true;
-            this.gvGroupDQ.RowTemplate.Height = 24;
-            this.gvGroupDQ.Size = new System.Drawing.Size(1009, 120);
-            this.gvGroupDQ.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn121
-            // 
-            this.dataGridViewTextBoxColumn121.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn121.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn121.Name = "dataGridViewTextBoxColumn121";
-            this.dataGridViewTextBoxColumn121.ReadOnly = true;
-            this.dataGridViewTextBoxColumn121.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn122
-            // 
-            this.dataGridViewTextBoxColumn122.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn122.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn122.Name = "dataGridViewTextBoxColumn122";
-            this.dataGridViewTextBoxColumn122.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn123
-            // 
-            this.dataGridViewTextBoxColumn123.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn123.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn123.Name = "dataGridViewTextBoxColumn123";
-            this.dataGridViewTextBoxColumn123.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn124
-            // 
-            this.dataGridViewTextBoxColumn124.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn124.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn124.Name = "dataGridViewTextBoxColumn124";
-            this.dataGridViewTextBoxColumn124.ReadOnly = true;
-            this.dataGridViewTextBoxColumn124.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn125
-            // 
-            this.dataGridViewTextBoxColumn125.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn125.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn125.Name = "dataGridViewTextBoxColumn125";
-            this.dataGridViewTextBoxColumn125.ReadOnly = true;
+            // tabPage23
+            // 
+            this.tabPage23.Controls.Add(this.gvRace2);
+            this.tabPage23.Location = new System.Drawing.Point(4, 22);
+            this.tabPage23.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage23.Name = "tabPage23";
+            this.tabPage23.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage23.Size = new System.Drawing.Size(995, 124);
+            this.tabPage23.TabIndex = 1;
+            this.tabPage23.Text = "Race 2";
+            this.tabPage23.UseVisualStyleBackColor = true;
+            // 
+            // gvRace2
+            // 
+            this.gvRace2.AllowUserToAddRows = false;
+            this.gvRace2.AllowUserToDeleteRows = false;
+            this.gvRace2.AutoGenerateColumns = false;
+            this.gvRace2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvRace2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn218,
+            this.dataGridViewTextBoxColumn219,
+            this.dataGridViewTextBoxColumn220,
+            this.dataGridViewTextBoxColumn221,
+            this.dataGridViewTextBoxColumn222});
+            this.gvRace2.DataSource = this.bindingSourcePilots;
+            this.gvRace2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvRace2.Location = new System.Drawing.Point(2, 2);
+            this.gvRace2.Margin = new System.Windows.Forms.Padding(2);
+            this.gvRace2.Name = "gvRace2";
+            this.gvRace2.ReadOnly = true;
+            this.gvRace2.RowTemplate.Height = 24;
+            this.gvRace2.Size = new System.Drawing.Size(991, 120);
+            this.gvRace2.TabIndex = 1;
+            // 
+            // dataGridViewTextBoxColumn218
+            // 
+            this.dataGridViewTextBoxColumn218.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn218.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn218.Name = "dataGridViewTextBoxColumn218";
+            this.dataGridViewTextBoxColumn218.ReadOnly = true;
+            this.dataGridViewTextBoxColumn218.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn219
+            // 
+            this.dataGridViewTextBoxColumn219.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn219.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn219.Name = "dataGridViewTextBoxColumn219";
+            this.dataGridViewTextBoxColumn219.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn220
+            // 
+            this.dataGridViewTextBoxColumn220.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn220.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn220.Name = "dataGridViewTextBoxColumn220";
+            this.dataGridViewTextBoxColumn220.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn221
+            // 
+            this.dataGridViewTextBoxColumn221.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn221.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn221.Name = "dataGridViewTextBoxColumn221";
+            this.dataGridViewTextBoxColumn221.ReadOnly = true;
+            this.dataGridViewTextBoxColumn221.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn222
+            // 
+            this.dataGridViewTextBoxColumn222.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn222.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn222.Name = "dataGridViewTextBoxColumn222";
+            this.dataGridViewTextBoxColumn222.ReadOnly = true;
+            // 
+            // tabPage24
+            // 
+            this.tabPage24.Controls.Add(this.gvRace3);
+            this.tabPage24.Location = new System.Drawing.Point(4, 22);
+            this.tabPage24.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage24.Name = "tabPage24";
+            this.tabPage24.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage24.Size = new System.Drawing.Size(995, 124);
+            this.tabPage24.TabIndex = 2;
+            this.tabPage24.Text = "Race 3";
+            this.tabPage24.UseVisualStyleBackColor = true;
+            // 
+            // gvRace3
+            // 
+            this.gvRace3.AllowUserToAddRows = false;
+            this.gvRace3.AllowUserToDeleteRows = false;
+            this.gvRace3.AutoGenerateColumns = false;
+            this.gvRace3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvRace3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn223,
+            this.dataGridViewTextBoxColumn224,
+            this.dataGridViewTextBoxColumn225,
+            this.dataGridViewTextBoxColumn226,
+            this.dataGridViewTextBoxColumn227});
+            this.gvRace3.DataSource = this.bindingSourcePilots;
+            this.gvRace3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvRace3.Location = new System.Drawing.Point(2, 2);
+            this.gvRace3.Margin = new System.Windows.Forms.Padding(2);
+            this.gvRace3.Name = "gvRace3";
+            this.gvRace3.ReadOnly = true;
+            this.gvRace3.RowTemplate.Height = 24;
+            this.gvRace3.Size = new System.Drawing.Size(991, 120);
+            this.gvRace3.TabIndex = 1;
+            // 
+            // dataGridViewTextBoxColumn223
+            // 
+            this.dataGridViewTextBoxColumn223.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn223.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn223.Name = "dataGridViewTextBoxColumn223";
+            this.dataGridViewTextBoxColumn223.ReadOnly = true;
+            this.dataGridViewTextBoxColumn223.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn224
+            // 
+            this.dataGridViewTextBoxColumn224.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn224.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn224.Name = "dataGridViewTextBoxColumn224";
+            this.dataGridViewTextBoxColumn224.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn225
+            // 
+            this.dataGridViewTextBoxColumn225.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn225.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn225.Name = "dataGridViewTextBoxColumn225";
+            this.dataGridViewTextBoxColumn225.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn226
+            // 
+            this.dataGridViewTextBoxColumn226.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn226.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn226.Name = "dataGridViewTextBoxColumn226";
+            this.dataGridViewTextBoxColumn226.ReadOnly = true;
+            this.dataGridViewTextBoxColumn226.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn227
+            // 
+            this.dataGridViewTextBoxColumn227.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn227.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn227.Name = "dataGridViewTextBoxColumn227";
+            this.dataGridViewTextBoxColumn227.ReadOnly = true;
+            // 
+            // tabPage25
+            // 
+            this.tabPage25.Controls.Add(this.gvRace4);
+            this.tabPage25.Location = new System.Drawing.Point(4, 22);
+            this.tabPage25.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage25.Name = "tabPage25";
+            this.tabPage25.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage25.Size = new System.Drawing.Size(995, 124);
+            this.tabPage25.TabIndex = 3;
+            this.tabPage25.Text = "Race 4";
+            this.tabPage25.UseVisualStyleBackColor = true;
+            // 
+            // gvRace4
+            // 
+            this.gvRace4.AllowUserToAddRows = false;
+            this.gvRace4.AllowUserToDeleteRows = false;
+            this.gvRace4.AutoGenerateColumns = false;
+            this.gvRace4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvRace4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn228,
+            this.dataGridViewTextBoxColumn229,
+            this.dataGridViewTextBoxColumn230,
+            this.dataGridViewTextBoxColumn231,
+            this.dataGridViewTextBoxColumn232});
+            this.gvRace4.DataSource = this.bindingSourcePilots;
+            this.gvRace4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvRace4.Location = new System.Drawing.Point(2, 2);
+            this.gvRace4.Margin = new System.Windows.Forms.Padding(2);
+            this.gvRace4.Name = "gvRace4";
+            this.gvRace4.ReadOnly = true;
+            this.gvRace4.RowTemplate.Height = 24;
+            this.gvRace4.Size = new System.Drawing.Size(991, 120);
+            this.gvRace4.TabIndex = 1;
+            // 
+            // dataGridViewTextBoxColumn228
+            // 
+            this.dataGridViewTextBoxColumn228.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn228.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn228.Name = "dataGridViewTextBoxColumn228";
+            this.dataGridViewTextBoxColumn228.ReadOnly = true;
+            this.dataGridViewTextBoxColumn228.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn229
+            // 
+            this.dataGridViewTextBoxColumn229.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn229.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn229.Name = "dataGridViewTextBoxColumn229";
+            this.dataGridViewTextBoxColumn229.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn230
+            // 
+            this.dataGridViewTextBoxColumn230.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn230.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn230.Name = "dataGridViewTextBoxColumn230";
+            this.dataGridViewTextBoxColumn230.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn231
+            // 
+            this.dataGridViewTextBoxColumn231.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn231.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn231.Name = "dataGridViewTextBoxColumn231";
+            this.dataGridViewTextBoxColumn231.ReadOnly = true;
+            this.dataGridViewTextBoxColumn231.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn232
+            // 
+            this.dataGridViewTextBoxColumn232.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn232.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn232.Name = "dataGridViewTextBoxColumn232";
+            this.dataGridViewTextBoxColumn232.ReadOnly = true;
+            // 
+            // groupBox30
+            // 
+            this.groupBox30.Controls.Add(this.btnAddPilotsTo18F);
+            this.groupBox30.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox30.Location = new System.Drawing.Point(4, 4);
+            this.groupBox30.Name = "groupBox30";
+            this.groupBox30.Size = new System.Drawing.Size(284, 148);
+            this.groupBox30.TabIndex = 0;
+            this.groupBox30.TabStop = false;
+            this.groupBox30.Text = "1 / 8   ROUND";
+            // 
+            // btnAddPilotsTo18F
+            // 
+            this.btnAddPilotsTo18F.Location = new System.Drawing.Point(25, 56);
+            this.btnAddPilotsTo18F.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddPilotsTo18F.Name = "btnAddPilotsTo18F";
+            this.btnAddPilotsTo18F.Size = new System.Drawing.Size(176, 36);
+            this.btnAddPilotsTo18F.TabIndex = 3;
+            this.btnAddPilotsTo18F.Text = "Add Pilots to 1/8 round";
+            this.btnAddPilotsTo18F.UseVisualStyleBackColor = true;
+            this.btnAddPilotsTo18F.Click += new System.EventHandler(this.btnAddPilotsTo18F_Click);
             // 
             // tableLayoutPanel7
             // 
@@ -3906,7 +3564,7 @@
             this.pageGroupB.Margin = new System.Windows.Forms.Padding(2);
             this.pageGroupB.Name = "pageGroupB";
             this.pageGroupB.Padding = new System.Windows.Forms.Padding(2);
-            this.pageGroupB.Size = new System.Drawing.Size(1013, 124);
+            this.pageGroupB.Size = new System.Drawing.Size(995, 124);
             this.pageGroupB.TabIndex = 1;
             this.pageGroupB.Text = "Group B";
             this.pageGroupB.UseVisualStyleBackColor = true;
@@ -3930,7 +3588,7 @@
             this.gvGroupB.Name = "gvGroupB";
             this.gvGroupB.ReadOnly = true;
             this.gvGroupB.RowTemplate.Height = 24;
-            this.gvGroupB.Size = new System.Drawing.Size(1009, 120);
+            this.gvGroupB.Size = new System.Drawing.Size(991, 120);
             this.gvGroupB.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn2
@@ -3977,7 +3635,7 @@
             this.pageGroupC.Margin = new System.Windows.Forms.Padding(2);
             this.pageGroupC.Name = "pageGroupC";
             this.pageGroupC.Padding = new System.Windows.Forms.Padding(2);
-            this.pageGroupC.Size = new System.Drawing.Size(1013, 124);
+            this.pageGroupC.Size = new System.Drawing.Size(995, 124);
             this.pageGroupC.TabIndex = 2;
             this.pageGroupC.Text = "Group C";
             this.pageGroupC.UseVisualStyleBackColor = true;
@@ -4001,7 +3659,7 @@
             this.gvGroupC.Name = "gvGroupC";
             this.gvGroupC.ReadOnly = true;
             this.gvGroupC.RowTemplate.Height = 24;
-            this.gvGroupC.Size = new System.Drawing.Size(1009, 120);
+            this.gvGroupC.Size = new System.Drawing.Size(991, 120);
             this.gvGroupC.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn9
@@ -4048,7 +3706,7 @@
             this.pageGroupD.Margin = new System.Windows.Forms.Padding(2);
             this.pageGroupD.Name = "pageGroupD";
             this.pageGroupD.Padding = new System.Windows.Forms.Padding(2);
-            this.pageGroupD.Size = new System.Drawing.Size(1013, 124);
+            this.pageGroupD.Size = new System.Drawing.Size(995, 124);
             this.pageGroupD.TabIndex = 3;
             this.pageGroupD.Text = "Group D";
             this.pageGroupD.UseVisualStyleBackColor = true;
@@ -4072,7 +3730,7 @@
             this.gvGroupD.Name = "gvGroupD";
             this.gvGroupD.ReadOnly = true;
             this.gvGroupD.RowTemplate.Height = 24;
-            this.gvGroupD.Size = new System.Drawing.Size(1009, 120);
+            this.gvGroupD.Size = new System.Drawing.Size(991, 120);
             this.gvGroupD.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn16
@@ -4119,7 +3777,7 @@
             this.pageGroupE.Margin = new System.Windows.Forms.Padding(2);
             this.pageGroupE.Name = "pageGroupE";
             this.pageGroupE.Padding = new System.Windows.Forms.Padding(2);
-            this.pageGroupE.Size = new System.Drawing.Size(1013, 124);
+            this.pageGroupE.Size = new System.Drawing.Size(995, 124);
             this.pageGroupE.TabIndex = 4;
             this.pageGroupE.Text = "Group E";
             this.pageGroupE.UseVisualStyleBackColor = true;
@@ -4143,7 +3801,7 @@
             this.gvGroupE.Name = "gvGroupE";
             this.gvGroupE.ReadOnly = true;
             this.gvGroupE.RowTemplate.Height = 24;
-            this.gvGroupE.Size = new System.Drawing.Size(1009, 120);
+            this.gvGroupE.Size = new System.Drawing.Size(991, 120);
             this.gvGroupE.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn23
@@ -4190,7 +3848,7 @@
             this.pageGroupF.Margin = new System.Windows.Forms.Padding(2);
             this.pageGroupF.Name = "pageGroupF";
             this.pageGroupF.Padding = new System.Windows.Forms.Padding(2);
-            this.pageGroupF.Size = new System.Drawing.Size(1013, 124);
+            this.pageGroupF.Size = new System.Drawing.Size(995, 124);
             this.pageGroupF.TabIndex = 5;
             this.pageGroupF.Text = "GroupF";
             this.pageGroupF.UseVisualStyleBackColor = true;
@@ -4214,7 +3872,7 @@
             this.gvGroupF.Name = "gvGroupF";
             this.gvGroupF.ReadOnly = true;
             this.gvGroupF.RowTemplate.Height = 24;
-            this.gvGroupF.Size = new System.Drawing.Size(1009, 120);
+            this.gvGroupF.Size = new System.Drawing.Size(991, 120);
             this.gvGroupF.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn30
@@ -4261,7 +3919,7 @@
             this.pageGroupG.Margin = new System.Windows.Forms.Padding(2);
             this.pageGroupG.Name = "pageGroupG";
             this.pageGroupG.Padding = new System.Windows.Forms.Padding(2);
-            this.pageGroupG.Size = new System.Drawing.Size(1013, 124);
+            this.pageGroupG.Size = new System.Drawing.Size(995, 124);
             this.pageGroupG.TabIndex = 6;
             this.pageGroupG.Text = "Group G";
             this.pageGroupG.UseVisualStyleBackColor = true;
@@ -4285,7 +3943,7 @@
             this.gvGroupG.Name = "gvGroupG";
             this.gvGroupG.ReadOnly = true;
             this.gvGroupG.RowTemplate.Height = 24;
-            this.gvGroupG.Size = new System.Drawing.Size(1009, 120);
+            this.gvGroupG.Size = new System.Drawing.Size(991, 120);
             this.gvGroupG.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn37
@@ -4332,7 +3990,7 @@
             this.pageGroupH.Margin = new System.Windows.Forms.Padding(2);
             this.pageGroupH.Name = "pageGroupH";
             this.pageGroupH.Padding = new System.Windows.Forms.Padding(2);
-            this.pageGroupH.Size = new System.Drawing.Size(1013, 124);
+            this.pageGroupH.Size = new System.Drawing.Size(995, 124);
             this.pageGroupH.TabIndex = 7;
             this.pageGroupH.Text = "Group H";
             this.pageGroupH.UseVisualStyleBackColor = true;
@@ -4356,7 +4014,7 @@
             this.gvGroupH.Name = "gvGroupH";
             this.gvGroupH.ReadOnly = true;
             this.gvGroupH.RowTemplate.Height = 24;
-            this.gvGroupH.Size = new System.Drawing.Size(1009, 120);
+            this.gvGroupH.Size = new System.Drawing.Size(991, 120);
             this.gvGroupH.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn44
@@ -4403,7 +4061,7 @@
             this.pageGroupI.Margin = new System.Windows.Forms.Padding(2);
             this.pageGroupI.Name = "pageGroupI";
             this.pageGroupI.Padding = new System.Windows.Forms.Padding(2);
-            this.pageGroupI.Size = new System.Drawing.Size(1013, 124);
+            this.pageGroupI.Size = new System.Drawing.Size(995, 124);
             this.pageGroupI.TabIndex = 8;
             this.pageGroupI.Text = "Group I";
             this.pageGroupI.UseVisualStyleBackColor = true;
@@ -4427,7 +4085,7 @@
             this.gvGroupI.Name = "gvGroupI";
             this.gvGroupI.ReadOnly = true;
             this.gvGroupI.RowTemplate.Height = 24;
-            this.gvGroupI.Size = new System.Drawing.Size(1009, 120);
+            this.gvGroupI.Size = new System.Drawing.Size(991, 120);
             this.gvGroupI.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn51
@@ -4474,7 +4132,7 @@
             this.pageGroupJ.Margin = new System.Windows.Forms.Padding(2);
             this.pageGroupJ.Name = "pageGroupJ";
             this.pageGroupJ.Padding = new System.Windows.Forms.Padding(2);
-            this.pageGroupJ.Size = new System.Drawing.Size(1013, 124);
+            this.pageGroupJ.Size = new System.Drawing.Size(995, 124);
             this.pageGroupJ.TabIndex = 9;
             this.pageGroupJ.Text = "Group J";
             this.pageGroupJ.UseVisualStyleBackColor = true;
@@ -4498,7 +4156,7 @@
             this.gvGroupJ.Name = "gvGroupJ";
             this.gvGroupJ.ReadOnly = true;
             this.gvGroupJ.RowTemplate.Height = 24;
-            this.gvGroupJ.Size = new System.Drawing.Size(1009, 120);
+            this.gvGroupJ.Size = new System.Drawing.Size(991, 120);
             this.gvGroupJ.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn58
@@ -4545,7 +4203,7 @@
             this.pageGroupK.Margin = new System.Windows.Forms.Padding(2);
             this.pageGroupK.Name = "pageGroupK";
             this.pageGroupK.Padding = new System.Windows.Forms.Padding(2);
-            this.pageGroupK.Size = new System.Drawing.Size(1013, 124);
+            this.pageGroupK.Size = new System.Drawing.Size(995, 124);
             this.pageGroupK.TabIndex = 10;
             this.pageGroupK.Text = "Group K";
             this.pageGroupK.UseVisualStyleBackColor = true;
@@ -4569,7 +4227,7 @@
             this.gvGroupK.Name = "gvGroupK";
             this.gvGroupK.ReadOnly = true;
             this.gvGroupK.RowTemplate.Height = 24;
-            this.gvGroupK.Size = new System.Drawing.Size(1009, 120);
+            this.gvGroupK.Size = new System.Drawing.Size(991, 120);
             this.gvGroupK.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn65
@@ -4616,7 +4274,7 @@
             this.pageGroupL.Margin = new System.Windows.Forms.Padding(2);
             this.pageGroupL.Name = "pageGroupL";
             this.pageGroupL.Padding = new System.Windows.Forms.Padding(2);
-            this.pageGroupL.Size = new System.Drawing.Size(1013, 124);
+            this.pageGroupL.Size = new System.Drawing.Size(995, 124);
             this.pageGroupL.TabIndex = 11;
             this.pageGroupL.Text = "Group L";
             this.pageGroupL.UseVisualStyleBackColor = true;
@@ -4640,7 +4298,7 @@
             this.gvGroupL.Name = "gvGroupL";
             this.gvGroupL.ReadOnly = true;
             this.gvGroupL.RowTemplate.Height = 24;
-            this.gvGroupL.Size = new System.Drawing.Size(1009, 120);
+            this.gvGroupL.Size = new System.Drawing.Size(991, 120);
             this.gvGroupL.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn72
@@ -4687,7 +4345,7 @@
             this.pageGroupM.Margin = new System.Windows.Forms.Padding(2);
             this.pageGroupM.Name = "pageGroupM";
             this.pageGroupM.Padding = new System.Windows.Forms.Padding(2);
-            this.pageGroupM.Size = new System.Drawing.Size(1013, 124);
+            this.pageGroupM.Size = new System.Drawing.Size(995, 124);
             this.pageGroupM.TabIndex = 12;
             this.pageGroupM.Text = "Group M";
             this.pageGroupM.UseVisualStyleBackColor = true;
@@ -4711,7 +4369,7 @@
             this.gvGroupM.Name = "gvGroupM";
             this.gvGroupM.ReadOnly = true;
             this.gvGroupM.RowTemplate.Height = 24;
-            this.gvGroupM.Size = new System.Drawing.Size(1009, 120);
+            this.gvGroupM.Size = new System.Drawing.Size(991, 120);
             this.gvGroupM.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn79
@@ -4757,7 +4415,7 @@
             this.pageGroupN.Location = new System.Drawing.Point(4, 22);
             this.pageGroupN.Margin = new System.Windows.Forms.Padding(2);
             this.pageGroupN.Name = "pageGroupN";
-            this.pageGroupN.Size = new System.Drawing.Size(1013, 124);
+            this.pageGroupN.Size = new System.Drawing.Size(995, 124);
             this.pageGroupN.TabIndex = 13;
             this.pageGroupN.Text = "Group N";
             this.pageGroupN.UseVisualStyleBackColor = true;
@@ -4781,7 +4439,7 @@
             this.gvGroupN.Name = "gvGroupN";
             this.gvGroupN.ReadOnly = true;
             this.gvGroupN.RowTemplate.Height = 24;
-            this.gvGroupN.Size = new System.Drawing.Size(1013, 124);
+            this.gvGroupN.Size = new System.Drawing.Size(995, 124);
             this.gvGroupN.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn86
@@ -4827,7 +4485,7 @@
             this.pageGroupO.Location = new System.Drawing.Point(4, 22);
             this.pageGroupO.Margin = new System.Windows.Forms.Padding(2);
             this.pageGroupO.Name = "pageGroupO";
-            this.pageGroupO.Size = new System.Drawing.Size(1013, 124);
+            this.pageGroupO.Size = new System.Drawing.Size(995, 124);
             this.pageGroupO.TabIndex = 14;
             this.pageGroupO.Text = "Group O";
             this.pageGroupO.UseVisualStyleBackColor = true;
@@ -4851,7 +4509,7 @@
             this.gvGroupO.Name = "gvGroupO";
             this.gvGroupO.ReadOnly = true;
             this.gvGroupO.RowTemplate.Height = 24;
-            this.gvGroupO.Size = new System.Drawing.Size(1013, 124);
+            this.gvGroupO.Size = new System.Drawing.Size(995, 124);
             this.gvGroupO.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn93
@@ -4897,7 +4555,7 @@
             this.tabPage11.Location = new System.Drawing.Point(4, 22);
             this.tabPage11.Name = "tabPage11";
             this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage11.Size = new System.Drawing.Size(1013, 124);
+            this.tabPage11.Size = new System.Drawing.Size(995, 124);
             this.tabPage11.TabIndex = 15;
             this.tabPage11.Text = "Group P";
             this.tabPage11.UseVisualStyleBackColor = true;
@@ -4921,7 +4579,7 @@
             this.gvGroupP.Name = "gvGroupP";
             this.gvGroupP.ReadOnly = true;
             this.gvGroupP.RowTemplate.Height = 24;
-            this.gvGroupP.Size = new System.Drawing.Size(1007, 118);
+            this.gvGroupP.Size = new System.Drawing.Size(989, 118);
             this.gvGroupP.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn158
@@ -4967,7 +4625,7 @@
             this.tabPage12.Location = new System.Drawing.Point(4, 22);
             this.tabPage12.Name = "tabPage12";
             this.tabPage12.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage12.Size = new System.Drawing.Size(1013, 124);
+            this.tabPage12.Size = new System.Drawing.Size(995, 124);
             this.tabPage12.TabIndex = 16;
             this.tabPage12.Text = "Group Q";
             this.tabPage12.UseVisualStyleBackColor = true;
@@ -4991,7 +4649,7 @@
             this.gvGroupQ.Name = "gvGroupQ";
             this.gvGroupQ.ReadOnly = true;
             this.gvGroupQ.RowTemplate.Height = 24;
-            this.gvGroupQ.Size = new System.Drawing.Size(1007, 118);
+            this.gvGroupQ.Size = new System.Drawing.Size(989, 118);
             this.gvGroupQ.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn163
@@ -5037,7 +4695,7 @@
             this.tabPage13.Location = new System.Drawing.Point(4, 22);
             this.tabPage13.Name = "tabPage13";
             this.tabPage13.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage13.Size = new System.Drawing.Size(1013, 124);
+            this.tabPage13.Size = new System.Drawing.Size(995, 124);
             this.tabPage13.TabIndex = 17;
             this.tabPage13.Text = "Group R";
             this.tabPage13.UseVisualStyleBackColor = true;
@@ -5061,7 +4719,7 @@
             this.gvGroupR.Name = "gvGroupR";
             this.gvGroupR.ReadOnly = true;
             this.gvGroupR.RowTemplate.Height = 24;
-            this.gvGroupR.Size = new System.Drawing.Size(1007, 118);
+            this.gvGroupR.Size = new System.Drawing.Size(989, 118);
             this.gvGroupR.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn168
@@ -5107,7 +4765,7 @@
             this.tabPage14.Location = new System.Drawing.Point(4, 22);
             this.tabPage14.Name = "tabPage14";
             this.tabPage14.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage14.Size = new System.Drawing.Size(1013, 124);
+            this.tabPage14.Size = new System.Drawing.Size(995, 124);
             this.tabPage14.TabIndex = 18;
             this.tabPage14.Text = "Group S";
             this.tabPage14.UseVisualStyleBackColor = true;
@@ -5131,7 +4789,7 @@
             this.gvGroupS.Name = "gvGroupS";
             this.gvGroupS.ReadOnly = true;
             this.gvGroupS.RowTemplate.Height = 24;
-            this.gvGroupS.Size = new System.Drawing.Size(1007, 118);
+            this.gvGroupS.Size = new System.Drawing.Size(989, 118);
             this.gvGroupS.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn173
@@ -5177,7 +4835,7 @@
             this.tabPage15.Location = new System.Drawing.Point(4, 22);
             this.tabPage15.Name = "tabPage15";
             this.tabPage15.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage15.Size = new System.Drawing.Size(1013, 124);
+            this.tabPage15.Size = new System.Drawing.Size(995, 124);
             this.tabPage15.TabIndex = 19;
             this.tabPage15.Text = "Group T";
             this.tabPage15.UseVisualStyleBackColor = true;
@@ -5201,7 +4859,7 @@
             this.gvGroupT.Name = "gvGroupT";
             this.gvGroupT.ReadOnly = true;
             this.gvGroupT.RowTemplate.Height = 24;
-            this.gvGroupT.Size = new System.Drawing.Size(1007, 118);
+            this.gvGroupT.Size = new System.Drawing.Size(989, 118);
             this.gvGroupT.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn178
@@ -5247,7 +4905,7 @@
             this.tabPage16.Location = new System.Drawing.Point(4, 22);
             this.tabPage16.Name = "tabPage16";
             this.tabPage16.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage16.Size = new System.Drawing.Size(1013, 124);
+            this.tabPage16.Size = new System.Drawing.Size(995, 124);
             this.tabPage16.TabIndex = 20;
             this.tabPage16.Text = "Group U";
             this.tabPage16.UseVisualStyleBackColor = true;
@@ -5271,7 +4929,7 @@
             this.gvGroupU.Name = "gvGroupU";
             this.gvGroupU.ReadOnly = true;
             this.gvGroupU.RowTemplate.Height = 24;
-            this.gvGroupU.Size = new System.Drawing.Size(1007, 118);
+            this.gvGroupU.Size = new System.Drawing.Size(989, 118);
             this.gvGroupU.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn183
@@ -5317,7 +4975,7 @@
             this.tabPage17.Location = new System.Drawing.Point(4, 22);
             this.tabPage17.Name = "tabPage17";
             this.tabPage17.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage17.Size = new System.Drawing.Size(1013, 124);
+            this.tabPage17.Size = new System.Drawing.Size(995, 124);
             this.tabPage17.TabIndex = 21;
             this.tabPage17.Text = "Group V";
             this.tabPage17.UseVisualStyleBackColor = true;
@@ -5341,7 +4999,7 @@
             this.gvGroupV.Name = "gvGroupV";
             this.gvGroupV.ReadOnly = true;
             this.gvGroupV.RowTemplate.Height = 24;
-            this.gvGroupV.Size = new System.Drawing.Size(1007, 118);
+            this.gvGroupV.Size = new System.Drawing.Size(989, 118);
             this.gvGroupV.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn188
@@ -5387,7 +5045,7 @@
             this.tabPage18.Location = new System.Drawing.Point(4, 22);
             this.tabPage18.Name = "tabPage18";
             this.tabPage18.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage18.Size = new System.Drawing.Size(1013, 124);
+            this.tabPage18.Size = new System.Drawing.Size(995, 124);
             this.tabPage18.TabIndex = 22;
             this.tabPage18.Text = "Group W";
             this.tabPage18.UseVisualStyleBackColor = true;
@@ -5411,7 +5069,7 @@
             this.gvGroupW.Name = "gvGroupW";
             this.gvGroupW.ReadOnly = true;
             this.gvGroupW.RowTemplate.Height = 24;
-            this.gvGroupW.Size = new System.Drawing.Size(1007, 118);
+            this.gvGroupW.Size = new System.Drawing.Size(989, 118);
             this.gvGroupW.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn193
@@ -5457,7 +5115,7 @@
             this.tabPage19.Location = new System.Drawing.Point(4, 22);
             this.tabPage19.Name = "tabPage19";
             this.tabPage19.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage19.Size = new System.Drawing.Size(1013, 124);
+            this.tabPage19.Size = new System.Drawing.Size(995, 124);
             this.tabPage19.TabIndex = 23;
             this.tabPage19.Text = "Group X";
             this.tabPage19.UseVisualStyleBackColor = true;
@@ -5481,7 +5139,7 @@
             this.gvGroupX.Name = "gvGroupX";
             this.gvGroupX.ReadOnly = true;
             this.gvGroupX.RowTemplate.Height = 24;
-            this.gvGroupX.Size = new System.Drawing.Size(1007, 118);
+            this.gvGroupX.Size = new System.Drawing.Size(989, 118);
             this.gvGroupX.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn198
@@ -5527,7 +5185,7 @@
             this.tabPage20.Location = new System.Drawing.Point(4, 22);
             this.tabPage20.Name = "tabPage20";
             this.tabPage20.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage20.Size = new System.Drawing.Size(1013, 124);
+            this.tabPage20.Size = new System.Drawing.Size(995, 124);
             this.tabPage20.TabIndex = 24;
             this.tabPage20.Text = "Group Y";
             this.tabPage20.UseVisualStyleBackColor = true;
@@ -5551,7 +5209,7 @@
             this.gvGroupY.Name = "gvGroupY";
             this.gvGroupY.ReadOnly = true;
             this.gvGroupY.RowTemplate.Height = 24;
-            this.gvGroupY.Size = new System.Drawing.Size(1007, 118);
+            this.gvGroupY.Size = new System.Drawing.Size(989, 118);
             this.gvGroupY.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn203
@@ -5597,7 +5255,7 @@
             this.tabPage21.Location = new System.Drawing.Point(4, 22);
             this.tabPage21.Name = "tabPage21";
             this.tabPage21.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage21.Size = new System.Drawing.Size(1013, 124);
+            this.tabPage21.Size = new System.Drawing.Size(995, 124);
             this.tabPage21.TabIndex = 25;
             this.tabPage21.Text = "Group Z";
             this.tabPage21.UseVisualStyleBackColor = true;
@@ -5621,7 +5279,7 @@
             this.gvGroupZ.Name = "gvGroupZ";
             this.gvGroupZ.ReadOnly = true;
             this.gvGroupZ.RowTemplate.Height = 24;
-            this.gvGroupZ.Size = new System.Drawing.Size(1007, 118);
+            this.gvGroupZ.Size = new System.Drawing.Size(989, 118);
             this.gvGroupZ.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn208
@@ -5660,6 +5318,735 @@
             this.dataGridViewTextBoxColumn212.HeaderText = "E-Mail";
             this.dataGridViewTextBoxColumn212.Name = "dataGridViewTextBoxColumn212";
             this.dataGridViewTextBoxColumn212.ReadOnly = true;
+            // 
+            // tableLayoutPanel11
+            // 
+            this.tableLayoutPanel11.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.tableLayoutPanel11.ColumnCount = 2;
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.4359F));
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 77.5641F));
+            this.tableLayoutPanel11.Controls.Add(this.groupBox38, 0, 0);
+            this.tableLayoutPanel11.Controls.Add(this.tabControl5, 1, 0);
+            this.tableLayoutPanel11.Location = new System.Drawing.Point(2, 626);
+            this.tableLayoutPanel11.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanel11.Name = "tableLayoutPanel11";
+            this.tableLayoutPanel11.RowCount = 1;
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 155F));
+            this.tableLayoutPanel11.Size = new System.Drawing.Size(1300, 156);
+            this.tableLayoutPanel11.TabIndex = 5;
+            // 
+            // groupBox38
+            // 
+            this.groupBox38.Controls.Add(this.btnAddPilotsToGroupsF);
+            this.groupBox38.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox38.Location = new System.Drawing.Point(3, 3);
+            this.groupBox38.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox38.Name = "groupBox38";
+            this.groupBox38.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox38.Size = new System.Drawing.Size(286, 150);
+            this.groupBox38.TabIndex = 0;
+            this.groupBox38.TabStop = false;
+            this.groupBox38.Text = "FINAL";
+            // 
+            // btnAddPilotsToGroupsF
+            // 
+            this.btnAddPilotsToGroupsF.Location = new System.Drawing.Point(23, 55);
+            this.btnAddPilotsToGroupsF.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddPilotsToGroupsF.Name = "btnAddPilotsToGroupsF";
+            this.btnAddPilotsToGroupsF.Size = new System.Drawing.Size(176, 36);
+            this.btnAddPilotsToGroupsF.TabIndex = 2;
+            this.btnAddPilotsToGroupsF.Text = "Add Pilots to Final Round";
+            this.btnAddPilotsToGroupsF.UseVisualStyleBackColor = true;
+            this.btnAddPilotsToGroupsF.Click += new System.EventHandler(this.btnAddPilotsToGroupsF_Click);
+            // 
+            // tabControl5
+            // 
+            this.tabControl5.Controls.Add(this.tabPage9);
+            this.tabControl5.Controls.Add(this.tabPage10);
+            this.tabControl5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl5.Location = new System.Drawing.Point(294, 3);
+            this.tabControl5.Margin = new System.Windows.Forms.Padding(2);
+            this.tabControl5.Name = "tabControl5";
+            this.tabControl5.SelectedIndex = 0;
+            this.tabControl5.Size = new System.Drawing.Size(1003, 150);
+            this.tabControl5.TabIndex = 1;
+            // 
+            // tabPage9
+            // 
+            this.tabPage9.Controls.Add(this.gvSmallFinal);
+            this.tabPage9.Location = new System.Drawing.Point(4, 22);
+            this.tabPage9.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage9.Size = new System.Drawing.Size(995, 124);
+            this.tabPage9.TabIndex = 0;
+            this.tabPage9.Text = "Small Final";
+            this.tabPage9.UseVisualStyleBackColor = true;
+            // 
+            // gvSmallFinal
+            // 
+            this.gvSmallFinal.AllowUserToAddRows = false;
+            this.gvSmallFinal.AllowUserToDeleteRows = false;
+            this.gvSmallFinal.AutoGenerateColumns = false;
+            this.gvSmallFinal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvSmallFinal.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn142,
+            this.dataGridViewTextBoxColumn143,
+            this.dataGridViewTextBoxColumn144,
+            this.dataGridViewTextBoxColumn145,
+            this.dataGridViewTextBoxColumn146});
+            this.gvSmallFinal.DataSource = this.bindingSourcePilots;
+            this.gvSmallFinal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvSmallFinal.Location = new System.Drawing.Point(2, 2);
+            this.gvSmallFinal.Margin = new System.Windows.Forms.Padding(2);
+            this.gvSmallFinal.Name = "gvSmallFinal";
+            this.gvSmallFinal.ReadOnly = true;
+            this.gvSmallFinal.RowTemplate.Height = 24;
+            this.gvSmallFinal.Size = new System.Drawing.Size(991, 120);
+            this.gvSmallFinal.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn142
+            // 
+            this.dataGridViewTextBoxColumn142.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn142.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn142.Name = "dataGridViewTextBoxColumn142";
+            this.dataGridViewTextBoxColumn142.ReadOnly = true;
+            this.dataGridViewTextBoxColumn142.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn143
+            // 
+            this.dataGridViewTextBoxColumn143.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn143.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn143.Name = "dataGridViewTextBoxColumn143";
+            this.dataGridViewTextBoxColumn143.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn144
+            // 
+            this.dataGridViewTextBoxColumn144.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn144.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn144.Name = "dataGridViewTextBoxColumn144";
+            this.dataGridViewTextBoxColumn144.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn145
+            // 
+            this.dataGridViewTextBoxColumn145.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn145.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn145.Name = "dataGridViewTextBoxColumn145";
+            this.dataGridViewTextBoxColumn145.ReadOnly = true;
+            this.dataGridViewTextBoxColumn145.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn146
+            // 
+            this.dataGridViewTextBoxColumn146.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn146.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn146.Name = "dataGridViewTextBoxColumn146";
+            this.dataGridViewTextBoxColumn146.ReadOnly = true;
+            // 
+            // tabPage10
+            // 
+            this.tabPage10.Controls.Add(this.gvFinal);
+            this.tabPage10.Location = new System.Drawing.Point(4, 22);
+            this.tabPage10.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage10.Name = "tabPage10";
+            this.tabPage10.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage10.Size = new System.Drawing.Size(995, 124);
+            this.tabPage10.TabIndex = 1;
+            this.tabPage10.Text = "Final";
+            this.tabPage10.UseVisualStyleBackColor = true;
+            // 
+            // gvFinal
+            // 
+            this.gvFinal.AllowUserToAddRows = false;
+            this.gvFinal.AllowUserToDeleteRows = false;
+            this.gvFinal.AutoGenerateColumns = false;
+            this.gvFinal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvFinal.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn149,
+            this.dataGridViewTextBoxColumn150,
+            this.dataGridViewTextBoxColumn151,
+            this.dataGridViewTextBoxColumn152,
+            this.dataGridViewTextBoxColumn153});
+            this.gvFinal.DataSource = this.bindingSourcePilots;
+            this.gvFinal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvFinal.Location = new System.Drawing.Point(2, 2);
+            this.gvFinal.Margin = new System.Windows.Forms.Padding(2);
+            this.gvFinal.Name = "gvFinal";
+            this.gvFinal.ReadOnly = true;
+            this.gvFinal.RowTemplate.Height = 24;
+            this.gvFinal.Size = new System.Drawing.Size(991, 120);
+            this.gvFinal.TabIndex = 1;
+            // 
+            // dataGridViewTextBoxColumn149
+            // 
+            this.dataGridViewTextBoxColumn149.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn149.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn149.Name = "dataGridViewTextBoxColumn149";
+            this.dataGridViewTextBoxColumn149.ReadOnly = true;
+            this.dataGridViewTextBoxColumn149.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn150
+            // 
+            this.dataGridViewTextBoxColumn150.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn150.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn150.Name = "dataGridViewTextBoxColumn150";
+            this.dataGridViewTextBoxColumn150.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn151
+            // 
+            this.dataGridViewTextBoxColumn151.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn151.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn151.Name = "dataGridViewTextBoxColumn151";
+            this.dataGridViewTextBoxColumn151.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn152
+            // 
+            this.dataGridViewTextBoxColumn152.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn152.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn152.Name = "dataGridViewTextBoxColumn152";
+            this.dataGridViewTextBoxColumn152.ReadOnly = true;
+            this.dataGridViewTextBoxColumn152.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn153
+            // 
+            this.dataGridViewTextBoxColumn153.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn153.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn153.Name = "dataGridViewTextBoxColumn153";
+            this.dataGridViewTextBoxColumn153.ReadOnly = true;
+            // 
+            // tableLayoutPanel9
+            // 
+            this.tableLayoutPanel9.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.tableLayoutPanel9.ColumnCount = 2;
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.4359F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 77.5641F));
+            this.tableLayoutPanel9.Controls.Add(this.groupBox36, 0, 0);
+            this.tableLayoutPanel9.Controls.Add(this.tabControl3, 1, 0);
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(2, 314);
+            this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanel9.Name = "tableLayoutPanel9";
+            this.tableLayoutPanel9.RowCount = 1;
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 155F));
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(1300, 156);
+            this.tableLayoutPanel9.TabIndex = 3;
+            // 
+            // groupBox36
+            // 
+            this.groupBox36.Controls.Add(this.btnAddPilotsToQF);
+            this.groupBox36.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox36.Location = new System.Drawing.Point(3, 3);
+            this.groupBox36.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox36.Name = "groupBox36";
+            this.groupBox36.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox36.Size = new System.Drawing.Size(286, 150);
+            this.groupBox36.TabIndex = 0;
+            this.groupBox36.TabStop = false;
+            this.groupBox36.Text = "1 / 4   ROUND";
+            // 
+            // btnAddPilotsToQF
+            // 
+            this.btnAddPilotsToQF.Location = new System.Drawing.Point(22, 46);
+            this.btnAddPilotsToQF.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddPilotsToQF.Name = "btnAddPilotsToQF";
+            this.btnAddPilotsToQF.Size = new System.Drawing.Size(176, 36);
+            this.btnAddPilotsToQF.TabIndex = 2;
+            this.btnAddPilotsToQF.Text = "Add Pilots to 1/4 round";
+            this.btnAddPilotsToQF.UseVisualStyleBackColor = true;
+            this.btnAddPilotsToQF.Click += new System.EventHandler(this.btnAddPilotsToQF_Click);
+            // 
+            // tabControl3
+            // 
+            this.tabControl3.Controls.Add(this.tabPage3);
+            this.tabControl3.Controls.Add(this.tabPage4);
+            this.tabControl3.Controls.Add(this.tabPage5);
+            this.tabControl3.Controls.Add(this.tabPage6);
+            this.tabControl3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl3.Location = new System.Drawing.Point(294, 3);
+            this.tabControl3.Margin = new System.Windows.Forms.Padding(2);
+            this.tabControl3.Name = "tabControl3";
+            this.tabControl3.SelectedIndex = 0;
+            this.tabControl3.Size = new System.Drawing.Size(1003, 150);
+            this.tabControl3.TabIndex = 1;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.gvRace13);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage3.Size = new System.Drawing.Size(995, 124);
+            this.tabPage3.TabIndex = 0;
+            this.tabPage3.Text = "Race 13";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // gvRace13
+            // 
+            this.gvRace13.AllowUserToAddRows = false;
+            this.gvRace13.AllowUserToDeleteRows = false;
+            this.gvRace13.AutoGenerateColumns = false;
+            this.gvRace13.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvRace13.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn100,
+            this.dataGridViewTextBoxColumn101,
+            this.dataGridViewTextBoxColumn102,
+            this.dataGridViewTextBoxColumn103,
+            this.dataGridViewTextBoxColumn104});
+            this.gvRace13.DataSource = this.bindingSourcePilots;
+            this.gvRace13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvRace13.Location = new System.Drawing.Point(2, 2);
+            this.gvRace13.Margin = new System.Windows.Forms.Padding(2);
+            this.gvRace13.Name = "gvRace13";
+            this.gvRace13.ReadOnly = true;
+            this.gvRace13.RowTemplate.Height = 24;
+            this.gvRace13.Size = new System.Drawing.Size(991, 120);
+            this.gvRace13.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn100
+            // 
+            this.dataGridViewTextBoxColumn100.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn100.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn100.Name = "dataGridViewTextBoxColumn100";
+            this.dataGridViewTextBoxColumn100.ReadOnly = true;
+            this.dataGridViewTextBoxColumn100.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn101
+            // 
+            this.dataGridViewTextBoxColumn101.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn101.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn101.Name = "dataGridViewTextBoxColumn101";
+            this.dataGridViewTextBoxColumn101.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn102
+            // 
+            this.dataGridViewTextBoxColumn102.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn102.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn102.Name = "dataGridViewTextBoxColumn102";
+            this.dataGridViewTextBoxColumn102.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn103
+            // 
+            this.dataGridViewTextBoxColumn103.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn103.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn103.Name = "dataGridViewTextBoxColumn103";
+            this.dataGridViewTextBoxColumn103.ReadOnly = true;
+            this.dataGridViewTextBoxColumn103.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn104
+            // 
+            this.dataGridViewTextBoxColumn104.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn104.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn104.Name = "dataGridViewTextBoxColumn104";
+            this.dataGridViewTextBoxColumn104.ReadOnly = true;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.gvRace14);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage4.Size = new System.Drawing.Size(995, 124);
+            this.tabPage4.TabIndex = 1;
+            this.tabPage4.Text = "Race 14";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // gvRace14
+            // 
+            this.gvRace14.AllowUserToAddRows = false;
+            this.gvRace14.AllowUserToDeleteRows = false;
+            this.gvRace14.AutoGenerateColumns = false;
+            this.gvRace14.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvRace14.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn107,
+            this.dataGridViewTextBoxColumn108,
+            this.dataGridViewTextBoxColumn109,
+            this.dataGridViewTextBoxColumn110,
+            this.dataGridViewTextBoxColumn111});
+            this.gvRace14.DataSource = this.bindingSourcePilots;
+            this.gvRace14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvRace14.Location = new System.Drawing.Point(2, 2);
+            this.gvRace14.Margin = new System.Windows.Forms.Padding(2);
+            this.gvRace14.Name = "gvRace14";
+            this.gvRace14.ReadOnly = true;
+            this.gvRace14.RowTemplate.Height = 24;
+            this.gvRace14.Size = new System.Drawing.Size(991, 120);
+            this.gvRace14.TabIndex = 1;
+            // 
+            // dataGridViewTextBoxColumn107
+            // 
+            this.dataGridViewTextBoxColumn107.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn107.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn107.Name = "dataGridViewTextBoxColumn107";
+            this.dataGridViewTextBoxColumn107.ReadOnly = true;
+            this.dataGridViewTextBoxColumn107.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn108
+            // 
+            this.dataGridViewTextBoxColumn108.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn108.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn108.Name = "dataGridViewTextBoxColumn108";
+            this.dataGridViewTextBoxColumn108.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn109
+            // 
+            this.dataGridViewTextBoxColumn109.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn109.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn109.Name = "dataGridViewTextBoxColumn109";
+            this.dataGridViewTextBoxColumn109.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn110
+            // 
+            this.dataGridViewTextBoxColumn110.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn110.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn110.Name = "dataGridViewTextBoxColumn110";
+            this.dataGridViewTextBoxColumn110.ReadOnly = true;
+            this.dataGridViewTextBoxColumn110.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn111
+            // 
+            this.dataGridViewTextBoxColumn111.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn111.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn111.Name = "dataGridViewTextBoxColumn111";
+            this.dataGridViewTextBoxColumn111.ReadOnly = true;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.gvRace15);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage5.Size = new System.Drawing.Size(995, 124);
+            this.tabPage5.TabIndex = 2;
+            this.tabPage5.Text = "Race 15";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // gvRace15
+            // 
+            this.gvRace15.AllowUserToAddRows = false;
+            this.gvRace15.AllowUserToDeleteRows = false;
+            this.gvRace15.AutoGenerateColumns = false;
+            this.gvRace15.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvRace15.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn114,
+            this.dataGridViewTextBoxColumn115,
+            this.dataGridViewTextBoxColumn116,
+            this.dataGridViewTextBoxColumn117,
+            this.dataGridViewTextBoxColumn118});
+            this.gvRace15.DataSource = this.bindingSourcePilots;
+            this.gvRace15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvRace15.Location = new System.Drawing.Point(2, 2);
+            this.gvRace15.Margin = new System.Windows.Forms.Padding(2);
+            this.gvRace15.Name = "gvRace15";
+            this.gvRace15.ReadOnly = true;
+            this.gvRace15.RowTemplate.Height = 24;
+            this.gvRace15.Size = new System.Drawing.Size(991, 120);
+            this.gvRace15.TabIndex = 1;
+            // 
+            // dataGridViewTextBoxColumn114
+            // 
+            this.dataGridViewTextBoxColumn114.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn114.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn114.Name = "dataGridViewTextBoxColumn114";
+            this.dataGridViewTextBoxColumn114.ReadOnly = true;
+            this.dataGridViewTextBoxColumn114.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn115
+            // 
+            this.dataGridViewTextBoxColumn115.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn115.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn115.Name = "dataGridViewTextBoxColumn115";
+            this.dataGridViewTextBoxColumn115.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn116
+            // 
+            this.dataGridViewTextBoxColumn116.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn116.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn116.Name = "dataGridViewTextBoxColumn116";
+            this.dataGridViewTextBoxColumn116.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn117
+            // 
+            this.dataGridViewTextBoxColumn117.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn117.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn117.Name = "dataGridViewTextBoxColumn117";
+            this.dataGridViewTextBoxColumn117.ReadOnly = true;
+            this.dataGridViewTextBoxColumn117.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn118
+            // 
+            this.dataGridViewTextBoxColumn118.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn118.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn118.Name = "dataGridViewTextBoxColumn118";
+            this.dataGridViewTextBoxColumn118.ReadOnly = true;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.Controls.Add(this.gvRace16);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage6.Size = new System.Drawing.Size(995, 124);
+            this.tabPage6.TabIndex = 3;
+            this.tabPage6.Text = "Race 16";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // gvRace16
+            // 
+            this.gvRace16.AllowUserToAddRows = false;
+            this.gvRace16.AllowUserToDeleteRows = false;
+            this.gvRace16.AutoGenerateColumns = false;
+            this.gvRace16.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvRace16.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn121,
+            this.dataGridViewTextBoxColumn122,
+            this.dataGridViewTextBoxColumn123,
+            this.dataGridViewTextBoxColumn124,
+            this.dataGridViewTextBoxColumn125});
+            this.gvRace16.DataSource = this.bindingSourcePilots;
+            this.gvRace16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvRace16.Location = new System.Drawing.Point(2, 2);
+            this.gvRace16.Margin = new System.Windows.Forms.Padding(2);
+            this.gvRace16.Name = "gvRace16";
+            this.gvRace16.ReadOnly = true;
+            this.gvRace16.RowTemplate.Height = 24;
+            this.gvRace16.Size = new System.Drawing.Size(991, 120);
+            this.gvRace16.TabIndex = 1;
+            // 
+            // dataGridViewTextBoxColumn121
+            // 
+            this.dataGridViewTextBoxColumn121.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn121.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn121.Name = "dataGridViewTextBoxColumn121";
+            this.dataGridViewTextBoxColumn121.ReadOnly = true;
+            this.dataGridViewTextBoxColumn121.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn122
+            // 
+            this.dataGridViewTextBoxColumn122.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn122.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn122.Name = "dataGridViewTextBoxColumn122";
+            this.dataGridViewTextBoxColumn122.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn123
+            // 
+            this.dataGridViewTextBoxColumn123.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn123.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn123.Name = "dataGridViewTextBoxColumn123";
+            this.dataGridViewTextBoxColumn123.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn124
+            // 
+            this.dataGridViewTextBoxColumn124.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn124.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn124.Name = "dataGridViewTextBoxColumn124";
+            this.dataGridViewTextBoxColumn124.ReadOnly = true;
+            this.dataGridViewTextBoxColumn124.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn125
+            // 
+            this.dataGridViewTextBoxColumn125.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn125.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn125.Name = "dataGridViewTextBoxColumn125";
+            this.dataGridViewTextBoxColumn125.ReadOnly = true;
+            // 
+            // tableLayoutPanel10
+            // 
+            this.tableLayoutPanel10.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.tableLayoutPanel10.ColumnCount = 2;
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.4359F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 77.5641F));
+            this.tableLayoutPanel10.Controls.Add(this.groupBox37, 0, 0);
+            this.tableLayoutPanel10.Controls.Add(this.tabControl4, 1, 0);
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(2, 470);
+            this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanel10.Name = "tableLayoutPanel10";
+            this.tableLayoutPanel10.RowCount = 1;
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 155F));
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(1300, 156);
+            this.tableLayoutPanel10.TabIndex = 4;
+            // 
+            // groupBox37
+            // 
+            this.groupBox37.Controls.Add(this.btnAddPilotsToSF);
+            this.groupBox37.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox37.Location = new System.Drawing.Point(3, 3);
+            this.groupBox37.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox37.Name = "groupBox37";
+            this.groupBox37.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox37.Size = new System.Drawing.Size(286, 150);
+            this.groupBox37.TabIndex = 0;
+            this.groupBox37.TabStop = false;
+            this.groupBox37.Text = "SEMI FINAL";
+            // 
+            // btnAddPilotsToSF
+            // 
+            this.btnAddPilotsToSF.Location = new System.Drawing.Point(23, 55);
+            this.btnAddPilotsToSF.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddPilotsToSF.Name = "btnAddPilotsToSF";
+            this.btnAddPilotsToSF.Size = new System.Drawing.Size(176, 36);
+            this.btnAddPilotsToSF.TabIndex = 2;
+            this.btnAddPilotsToSF.Text = "Add Pilots to Semi Final";
+            this.btnAddPilotsToSF.UseVisualStyleBackColor = true;
+            this.btnAddPilotsToSF.Click += new System.EventHandler(this.btnAddPilotsToGroupsSF_Click);
+            // 
+            // tabControl4
+            // 
+            this.tabControl4.Controls.Add(this.tabPage7);
+            this.tabControl4.Controls.Add(this.tabPage8);
+            this.tabControl4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl4.Location = new System.Drawing.Point(294, 3);
+            this.tabControl4.Margin = new System.Windows.Forms.Padding(2);
+            this.tabControl4.Name = "tabControl4";
+            this.tabControl4.SelectedIndex = 0;
+            this.tabControl4.Size = new System.Drawing.Size(1003, 150);
+            this.tabControl4.TabIndex = 1;
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.Controls.Add(this.gvSemi1);
+            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage7.Size = new System.Drawing.Size(995, 124);
+            this.tabPage7.TabIndex = 0;
+            this.tabPage7.Text = "Semi 1";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // gvSemi1
+            // 
+            this.gvSemi1.AllowUserToAddRows = false;
+            this.gvSemi1.AllowUserToDeleteRows = false;
+            this.gvSemi1.AutoGenerateColumns = false;
+            this.gvSemi1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvSemi1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn128,
+            this.dataGridViewTextBoxColumn129,
+            this.dataGridViewTextBoxColumn130,
+            this.dataGridViewTextBoxColumn131,
+            this.dataGridViewTextBoxColumn132});
+            this.gvSemi1.DataSource = this.bindingSourcePilots;
+            this.gvSemi1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvSemi1.Location = new System.Drawing.Point(2, 2);
+            this.gvSemi1.Margin = new System.Windows.Forms.Padding(2);
+            this.gvSemi1.Name = "gvSemi1";
+            this.gvSemi1.ReadOnly = true;
+            this.gvSemi1.RowTemplate.Height = 24;
+            this.gvSemi1.Size = new System.Drawing.Size(991, 120);
+            this.gvSemi1.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn128
+            // 
+            this.dataGridViewTextBoxColumn128.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn128.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn128.Name = "dataGridViewTextBoxColumn128";
+            this.dataGridViewTextBoxColumn128.ReadOnly = true;
+            this.dataGridViewTextBoxColumn128.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn129
+            // 
+            this.dataGridViewTextBoxColumn129.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn129.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn129.Name = "dataGridViewTextBoxColumn129";
+            this.dataGridViewTextBoxColumn129.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn130
+            // 
+            this.dataGridViewTextBoxColumn130.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn130.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn130.Name = "dataGridViewTextBoxColumn130";
+            this.dataGridViewTextBoxColumn130.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn131
+            // 
+            this.dataGridViewTextBoxColumn131.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn131.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn131.Name = "dataGridViewTextBoxColumn131";
+            this.dataGridViewTextBoxColumn131.ReadOnly = true;
+            this.dataGridViewTextBoxColumn131.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn132
+            // 
+            this.dataGridViewTextBoxColumn132.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn132.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn132.Name = "dataGridViewTextBoxColumn132";
+            this.dataGridViewTextBoxColumn132.ReadOnly = true;
+            // 
+            // tabPage8
+            // 
+            this.tabPage8.Controls.Add(this.gvSemi2);
+            this.tabPage8.Location = new System.Drawing.Point(4, 22);
+            this.tabPage8.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage8.Size = new System.Drawing.Size(995, 124);
+            this.tabPage8.TabIndex = 1;
+            this.tabPage8.Text = "Semi 2";
+            this.tabPage8.UseVisualStyleBackColor = true;
+            // 
+            // gvSemi2
+            // 
+            this.gvSemi2.AllowUserToAddRows = false;
+            this.gvSemi2.AllowUserToDeleteRows = false;
+            this.gvSemi2.AutoGenerateColumns = false;
+            this.gvSemi2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvSemi2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn135,
+            this.dataGridViewTextBoxColumn136,
+            this.dataGridViewTextBoxColumn137,
+            this.dataGridViewTextBoxColumn138,
+            this.dataGridViewTextBoxColumn139});
+            this.gvSemi2.DataSource = this.bindingSourcePilots;
+            this.gvSemi2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvSemi2.Location = new System.Drawing.Point(2, 2);
+            this.gvSemi2.Margin = new System.Windows.Forms.Padding(2);
+            this.gvSemi2.Name = "gvSemi2";
+            this.gvSemi2.ReadOnly = true;
+            this.gvSemi2.RowTemplate.Height = 24;
+            this.gvSemi2.Size = new System.Drawing.Size(991, 120);
+            this.gvSemi2.TabIndex = 1;
+            // 
+            // dataGridViewTextBoxColumn135
+            // 
+            this.dataGridViewTextBoxColumn135.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn135.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn135.Name = "dataGridViewTextBoxColumn135";
+            this.dataGridViewTextBoxColumn135.ReadOnly = true;
+            this.dataGridViewTextBoxColumn135.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn136
+            // 
+            this.dataGridViewTextBoxColumn136.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn136.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn136.Name = "dataGridViewTextBoxColumn136";
+            this.dataGridViewTextBoxColumn136.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn137
+            // 
+            this.dataGridViewTextBoxColumn137.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn137.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn137.Name = "dataGridViewTextBoxColumn137";
+            this.dataGridViewTextBoxColumn137.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn138
+            // 
+            this.dataGridViewTextBoxColumn138.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn138.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn138.Name = "dataGridViewTextBoxColumn138";
+            this.dataGridViewTextBoxColumn138.ReadOnly = true;
+            this.dataGridViewTextBoxColumn138.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn139
+            // 
+            this.dataGridViewTextBoxColumn139.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn139.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn139.Name = "dataGridViewTextBoxColumn139";
+            this.dataGridViewTextBoxColumn139.ReadOnly = true;
             // 
             // tabRace
             // 
@@ -7063,7 +7450,7 @@
             this.tableLayoutPanel4.ColumnCount = 3;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.22422F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.77578F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 496F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 498F));
             this.tableLayoutPanel4.Controls.Add(this.panel9, 2, 0);
             this.tableLayoutPanel4.Controls.Add(this.panel10, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.panel8, 1, 0);
@@ -7082,9 +7469,9 @@
             this.panel9.Controls.Add(this.btGetClearBuffer);
             this.panel9.Controls.Add(this.btGetBuffer);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel9.Location = new System.Drawing.Point(836, 4);
+            this.panel9.Location = new System.Drawing.Point(834, 4);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(491, 81);
+            this.panel9.Size = new System.Drawing.Size(493, 81);
             this.panel9.TabIndex = 1;
             // 
             // btClearBuffer
@@ -7143,7 +7530,7 @@
             this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel10.Location = new System.Drawing.Point(4, 4);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(411, 81);
+            this.panel10.Size = new System.Drawing.Size(410, 81);
             this.panel10.TabIndex = 0;
             // 
             // btBufferInventory
@@ -7185,9 +7572,9 @@
             this.panel8.Controls.Add(this.cbBufferWorkant2);
             this.panel8.Controls.Add(this.cbBufferWorkant3);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(422, 4);
+            this.panel8.Location = new System.Drawing.Point(421, 4);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(407, 81);
+            this.panel8.Size = new System.Drawing.Size(406, 81);
             this.panel8.TabIndex = 0;
             // 
             // cbBufferWorkant1
@@ -7784,7 +8171,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.20588F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.79412F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 507F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 510F));
             this.tableLayoutPanel2.Controls.Add(this.panel2, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel3, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel4, 2, 0);
@@ -7816,9 +8203,9 @@
             this.panel2.Controls.Add(this.label59);
             this.panel2.Controls.Add(this.label48);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(227, 5);
+            this.panel2.Location = new System.Drawing.Point(226, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(583, 75);
+            this.panel2.Size = new System.Drawing.Size(581, 75);
             this.panel2.TabIndex = 0;
             // 
             // txtDStay
@@ -8020,7 +8407,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(5, 5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(214, 75);
+            this.panel3.Size = new System.Drawing.Size(213, 75);
             this.panel3.TabIndex = 1;
             // 
             // btFastInventory
@@ -8042,9 +8429,9 @@
             this.panel4.Controls.Add(this.label73);
             this.panel4.Controls.Add(this.label72);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(818, 5);
+            this.panel4.Location = new System.Drawing.Point(815, 5);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(502, 75);
+            this.panel4.Size = new System.Drawing.Size(505, 75);
             this.panel4.TabIndex = 2;
             // 
             // txtRepeat
@@ -9793,353 +10180,285 @@
             this.lxLedControl18.Text = "0";
             this.lxLedControl18.TextAlignment = LxControl.LxLedControl.Alignment.Right;
             // 
-            // panel11
-            // 
-            this.panel11.AutoScroll = true;
-            this.panel11.Controls.Add(this.tableLayoutPanel12);
-            this.panel11.Controls.Add(this.tableLayoutPanel7);
-            this.panel11.Controls.Add(this.tableLayoutPanel11);
-            this.panel11.Controls.Add(this.tableLayoutPanel9);
-            this.panel11.Controls.Add(this.tableLayoutPanel10);
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel11.Location = new System.Drawing.Point(3, 3);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(1325, 621);
-            this.panel11.TabIndex = 6;
-            // 
-            // tableLayoutPanel12
-            // 
-            this.tableLayoutPanel12.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.tableLayoutPanel12.ColumnCount = 2;
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.40185F));
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 77.59815F));
-            this.tableLayoutPanel12.Controls.Add(this.tabControl6, 1, 0);
-            this.tableLayoutPanel12.Controls.Add(this.groupBox30, 0, 0);
-            this.tableLayoutPanel12.Location = new System.Drawing.Point(2, 158);
-            this.tableLayoutPanel12.Name = "tableLayoutPanel12";
-            this.tableLayoutPanel12.RowCount = 1;
-            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel12.Size = new System.Drawing.Size(1300, 156);
-            this.tableLayoutPanel12.TabIndex = 6;
-            // 
-            // groupBox30
-            // 
-            this.groupBox30.Controls.Add(this.btnAddPilotsTo18F);
-            this.groupBox30.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox30.Location = new System.Drawing.Point(4, 4);
-            this.groupBox30.Name = "groupBox30";
-            this.groupBox30.Size = new System.Drawing.Size(284, 148);
-            this.groupBox30.TabIndex = 0;
-            this.groupBox30.TabStop = false;
-            this.groupBox30.Text = "1 / 8   ROUND";
-            // 
-            // btnAddPilotsTo18F
-            // 
-            this.btnAddPilotsTo18F.Location = new System.Drawing.Point(25, 56);
-            this.btnAddPilotsTo18F.Margin = new System.Windows.Forms.Padding(2);
-            this.btnAddPilotsTo18F.Name = "btnAddPilotsTo18F";
-            this.btnAddPilotsTo18F.Size = new System.Drawing.Size(176, 36);
-            this.btnAddPilotsTo18F.TabIndex = 3;
-            this.btnAddPilotsTo18F.Text = "Add Pilots to 1/8 round";
-            this.btnAddPilotsTo18F.UseVisualStyleBackColor = true;
-            // 
-            // tabControl6
-            // 
-            this.tabControl6.Controls.Add(this.tabPage22);
-            this.tabControl6.Controls.Add(this.tabPage23);
-            this.tabControl6.Controls.Add(this.tabPage24);
-            this.tabControl6.Controls.Add(this.tabPage25);
-            this.tabControl6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl6.Location = new System.Drawing.Point(294, 3);
-            this.tabControl6.Margin = new System.Windows.Forms.Padding(2);
-            this.tabControl6.Name = "tabControl6";
-            this.tabControl6.SelectedIndex = 0;
-            this.tabControl6.Size = new System.Drawing.Size(1003, 150);
-            this.tabControl6.TabIndex = 2;
-            // 
-            // tabPage22
-            // 
-            this.tabPage22.Controls.Add(this.dataGridView2);
-            this.tabPage22.Location = new System.Drawing.Point(4, 22);
-            this.tabPage22.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage22.Name = "tabPage22";
-            this.tabPage22.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage22.Size = new System.Drawing.Size(995, 124);
-            this.tabPage22.TabIndex = 0;
-            this.tabPage22.Text = "Group A";
-            this.tabPage22.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.AllowUserToDeleteRows = false;
-            this.dataGridView2.AutoGenerateColumns = false;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn213,
-            this.dataGridViewTextBoxColumn214,
-            this.dataGridViewTextBoxColumn215,
-            this.dataGridViewTextBoxColumn216,
-            this.dataGridViewTextBoxColumn217});
-            this.dataGridView2.DataSource = this.bindingSourcePilots;
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Location = new System.Drawing.Point(2, 2);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(991, 120);
-            this.dataGridView2.TabIndex = 0;
-            // 
-            // dataGridViewTextBoxColumn213
-            // 
-            this.dataGridViewTextBoxColumn213.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn213.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn213.Name = "dataGridViewTextBoxColumn213";
-            this.dataGridViewTextBoxColumn213.ReadOnly = true;
-            this.dataGridViewTextBoxColumn213.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn214
-            // 
-            this.dataGridViewTextBoxColumn214.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn214.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn214.Name = "dataGridViewTextBoxColumn214";
-            this.dataGridViewTextBoxColumn214.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn215
-            // 
-            this.dataGridViewTextBoxColumn215.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn215.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn215.Name = "dataGridViewTextBoxColumn215";
-            this.dataGridViewTextBoxColumn215.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn216
-            // 
-            this.dataGridViewTextBoxColumn216.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn216.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn216.Name = "dataGridViewTextBoxColumn216";
-            this.dataGridViewTextBoxColumn216.ReadOnly = true;
-            this.dataGridViewTextBoxColumn216.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn217
-            // 
-            this.dataGridViewTextBoxColumn217.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn217.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn217.Name = "dataGridViewTextBoxColumn217";
-            this.dataGridViewTextBoxColumn217.ReadOnly = true;
-            // 
-            // tabPage23
-            // 
-            this.tabPage23.Controls.Add(this.dataGridView3);
-            this.tabPage23.Location = new System.Drawing.Point(4, 22);
-            this.tabPage23.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage23.Name = "tabPage23";
-            this.tabPage23.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage23.Size = new System.Drawing.Size(995, 124);
-            this.tabPage23.TabIndex = 1;
-            this.tabPage23.Text = "Group B";
-            this.tabPage23.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView3
-            // 
-            this.dataGridView3.AllowUserToAddRows = false;
-            this.dataGridView3.AllowUserToDeleteRows = false;
-            this.dataGridView3.AutoGenerateColumns = false;
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn218,
-            this.dataGridViewTextBoxColumn219,
-            this.dataGridViewTextBoxColumn220,
-            this.dataGridViewTextBoxColumn221,
-            this.dataGridViewTextBoxColumn222});
-            this.dataGridView3.DataSource = this.bindingSourcePilots;
-            this.dataGridView3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView3.Location = new System.Drawing.Point(2, 2);
-            this.dataGridView3.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.ReadOnly = true;
-            this.dataGridView3.RowTemplate.Height = 24;
-            this.dataGridView3.Size = new System.Drawing.Size(991, 120);
-            this.dataGridView3.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn218
-            // 
-            this.dataGridViewTextBoxColumn218.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn218.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn218.Name = "dataGridViewTextBoxColumn218";
-            this.dataGridViewTextBoxColumn218.ReadOnly = true;
-            this.dataGridViewTextBoxColumn218.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn219
-            // 
-            this.dataGridViewTextBoxColumn219.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn219.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn219.Name = "dataGridViewTextBoxColumn219";
-            this.dataGridViewTextBoxColumn219.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn220
-            // 
-            this.dataGridViewTextBoxColumn220.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn220.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn220.Name = "dataGridViewTextBoxColumn220";
-            this.dataGridViewTextBoxColumn220.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn221
-            // 
-            this.dataGridViewTextBoxColumn221.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn221.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn221.Name = "dataGridViewTextBoxColumn221";
-            this.dataGridViewTextBoxColumn221.ReadOnly = true;
-            this.dataGridViewTextBoxColumn221.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn222
-            // 
-            this.dataGridViewTextBoxColumn222.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn222.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn222.Name = "dataGridViewTextBoxColumn222";
-            this.dataGridViewTextBoxColumn222.ReadOnly = true;
-            // 
-            // tabPage24
-            // 
-            this.tabPage24.Controls.Add(this.dataGridView4);
-            this.tabPage24.Location = new System.Drawing.Point(4, 22);
-            this.tabPage24.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage24.Name = "tabPage24";
-            this.tabPage24.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage24.Size = new System.Drawing.Size(995, 124);
-            this.tabPage24.TabIndex = 2;
-            this.tabPage24.Text = "Group C";
-            this.tabPage24.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView4
-            // 
-            this.dataGridView4.AllowUserToAddRows = false;
-            this.dataGridView4.AllowUserToDeleteRows = false;
-            this.dataGridView4.AutoGenerateColumns = false;
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn223,
-            this.dataGridViewTextBoxColumn224,
-            this.dataGridViewTextBoxColumn225,
-            this.dataGridViewTextBoxColumn226,
-            this.dataGridViewTextBoxColumn227});
-            this.dataGridView4.DataSource = this.bindingSourcePilots;
-            this.dataGridView4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView4.Location = new System.Drawing.Point(2, 2);
-            this.dataGridView4.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.ReadOnly = true;
-            this.dataGridView4.RowTemplate.Height = 24;
-            this.dataGridView4.Size = new System.Drawing.Size(991, 120);
-            this.dataGridView4.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn223
-            // 
-            this.dataGridViewTextBoxColumn223.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn223.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn223.Name = "dataGridViewTextBoxColumn223";
-            this.dataGridViewTextBoxColumn223.ReadOnly = true;
-            this.dataGridViewTextBoxColumn223.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn224
-            // 
-            this.dataGridViewTextBoxColumn224.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn224.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn224.Name = "dataGridViewTextBoxColumn224";
-            this.dataGridViewTextBoxColumn224.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn225
-            // 
-            this.dataGridViewTextBoxColumn225.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn225.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn225.Name = "dataGridViewTextBoxColumn225";
-            this.dataGridViewTextBoxColumn225.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn226
-            // 
-            this.dataGridViewTextBoxColumn226.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn226.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn226.Name = "dataGridViewTextBoxColumn226";
-            this.dataGridViewTextBoxColumn226.ReadOnly = true;
-            this.dataGridViewTextBoxColumn226.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn227
-            // 
-            this.dataGridViewTextBoxColumn227.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn227.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn227.Name = "dataGridViewTextBoxColumn227";
-            this.dataGridViewTextBoxColumn227.ReadOnly = true;
-            // 
-            // tabPage25
-            // 
-            this.tabPage25.Controls.Add(this.dataGridView5);
-            this.tabPage25.Location = new System.Drawing.Point(4, 22);
-            this.tabPage25.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage25.Name = "tabPage25";
-            this.tabPage25.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage25.Size = new System.Drawing.Size(995, 124);
-            this.tabPage25.TabIndex = 3;
-            this.tabPage25.Text = "Group D";
-            this.tabPage25.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView5
-            // 
-            this.dataGridView5.AllowUserToAddRows = false;
-            this.dataGridView5.AllowUserToDeleteRows = false;
-            this.dataGridView5.AutoGenerateColumns = false;
-            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn228,
-            this.dataGridViewTextBoxColumn229,
-            this.dataGridViewTextBoxColumn230,
-            this.dataGridViewTextBoxColumn231,
-            this.dataGridViewTextBoxColumn232});
-            this.dataGridView5.DataSource = this.bindingSourcePilots;
-            this.dataGridView5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView5.Location = new System.Drawing.Point(2, 2);
-            this.dataGridView5.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridView5.Name = "dataGridView5";
-            this.dataGridView5.ReadOnly = true;
-            this.dataGridView5.RowTemplate.Height = 24;
-            this.dataGridView5.Size = new System.Drawing.Size(991, 120);
-            this.dataGridView5.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn228
-            // 
-            this.dataGridViewTextBoxColumn228.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn228.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn228.Name = "dataGridViewTextBoxColumn228";
-            this.dataGridViewTextBoxColumn228.ReadOnly = true;
-            this.dataGridViewTextBoxColumn228.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn229
-            // 
-            this.dataGridViewTextBoxColumn229.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn229.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn229.Name = "dataGridViewTextBoxColumn229";
-            this.dataGridViewTextBoxColumn229.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn230
-            // 
-            this.dataGridViewTextBoxColumn230.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn230.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn230.Name = "dataGridViewTextBoxColumn230";
-            this.dataGridViewTextBoxColumn230.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn231
-            // 
-            this.dataGridViewTextBoxColumn231.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn231.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn231.Name = "dataGridViewTextBoxColumn231";
-            this.dataGridViewTextBoxColumn231.ReadOnly = true;
-            this.dataGridViewTextBoxColumn231.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn232
-            // 
-            this.dataGridViewTextBoxColumn232.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn232.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn232.Name = "dataGridViewTextBoxColumn232";
-            this.dataGridViewTextBoxColumn232.ReadOnly = true;
+            // tabPage26
+            // 
+            this.tabPage26.Controls.Add(this.gvRace5);
+            this.tabPage26.Location = new System.Drawing.Point(4, 22);
+            this.tabPage26.Name = "tabPage26";
+            this.tabPage26.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage26.Size = new System.Drawing.Size(995, 124);
+            this.tabPage26.TabIndex = 4;
+            this.tabPage26.Text = "Race 5";
+            this.tabPage26.UseVisualStyleBackColor = true;
+            // 
+            // tabPage27
+            // 
+            this.tabPage27.Controls.Add(this.gvRace6);
+            this.tabPage27.Location = new System.Drawing.Point(4, 22);
+            this.tabPage27.Name = "tabPage27";
+            this.tabPage27.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage27.Size = new System.Drawing.Size(995, 124);
+            this.tabPage27.TabIndex = 5;
+            this.tabPage27.Text = "Race 6";
+            this.tabPage27.UseVisualStyleBackColor = true;
+            // 
+            // tabPage28
+            // 
+            this.tabPage28.Controls.Add(this.gvRace7);
+            this.tabPage28.Location = new System.Drawing.Point(4, 22);
+            this.tabPage28.Name = "tabPage28";
+            this.tabPage28.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage28.Size = new System.Drawing.Size(995, 124);
+            this.tabPage28.TabIndex = 6;
+            this.tabPage28.Text = "Race 7";
+            this.tabPage28.UseVisualStyleBackColor = true;
+            // 
+            // tabPage29
+            // 
+            this.tabPage29.Controls.Add(this.gvRace8);
+            this.tabPage29.Location = new System.Drawing.Point(4, 22);
+            this.tabPage29.Name = "tabPage29";
+            this.tabPage29.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage29.Size = new System.Drawing.Size(995, 124);
+            this.tabPage29.TabIndex = 7;
+            this.tabPage29.Text = "Race 8";
+            this.tabPage29.UseVisualStyleBackColor = true;
+            // 
+            // gvRace5
+            // 
+            this.gvRace5.AllowUserToAddRows = false;
+            this.gvRace5.AllowUserToDeleteRows = false;
+            this.gvRace5.AutoGenerateColumns = false;
+            this.gvRace5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvRace5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn233,
+            this.dataGridViewTextBoxColumn234,
+            this.dataGridViewTextBoxColumn235,
+            this.dataGridViewTextBoxColumn236,
+            this.dataGridViewTextBoxColumn237});
+            this.gvRace5.DataSource = this.bindingSourcePilots;
+            this.gvRace5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvRace5.Location = new System.Drawing.Point(3, 3);
+            this.gvRace5.Margin = new System.Windows.Forms.Padding(2);
+            this.gvRace5.Name = "gvRace5";
+            this.gvRace5.ReadOnly = true;
+            this.gvRace5.RowTemplate.Height = 24;
+            this.gvRace5.Size = new System.Drawing.Size(989, 118);
+            this.gvRace5.TabIndex = 2;
+            // 
+            // dataGridViewTextBoxColumn233
+            // 
+            this.dataGridViewTextBoxColumn233.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn233.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn233.Name = "dataGridViewTextBoxColumn233";
+            this.dataGridViewTextBoxColumn233.ReadOnly = true;
+            this.dataGridViewTextBoxColumn233.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn234
+            // 
+            this.dataGridViewTextBoxColumn234.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn234.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn234.Name = "dataGridViewTextBoxColumn234";
+            this.dataGridViewTextBoxColumn234.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn235
+            // 
+            this.dataGridViewTextBoxColumn235.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn235.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn235.Name = "dataGridViewTextBoxColumn235";
+            this.dataGridViewTextBoxColumn235.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn236
+            // 
+            this.dataGridViewTextBoxColumn236.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn236.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn236.Name = "dataGridViewTextBoxColumn236";
+            this.dataGridViewTextBoxColumn236.ReadOnly = true;
+            this.dataGridViewTextBoxColumn236.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn237
+            // 
+            this.dataGridViewTextBoxColumn237.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn237.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn237.Name = "dataGridViewTextBoxColumn237";
+            this.dataGridViewTextBoxColumn237.ReadOnly = true;
+            // 
+            // gvRace6
+            // 
+            this.gvRace6.AllowUserToAddRows = false;
+            this.gvRace6.AllowUserToDeleteRows = false;
+            this.gvRace6.AutoGenerateColumns = false;
+            this.gvRace6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvRace6.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn238,
+            this.dataGridViewTextBoxColumn239,
+            this.dataGridViewTextBoxColumn240,
+            this.dataGridViewTextBoxColumn241,
+            this.dataGridViewTextBoxColumn242});
+            this.gvRace6.DataSource = this.bindingSourcePilots;
+            this.gvRace6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvRace6.Location = new System.Drawing.Point(3, 3);
+            this.gvRace6.Margin = new System.Windows.Forms.Padding(2);
+            this.gvRace6.Name = "gvRace6";
+            this.gvRace6.ReadOnly = true;
+            this.gvRace6.RowTemplate.Height = 24;
+            this.gvRace6.Size = new System.Drawing.Size(989, 118);
+            this.gvRace6.TabIndex = 2;
+            // 
+            // dataGridViewTextBoxColumn238
+            // 
+            this.dataGridViewTextBoxColumn238.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn238.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn238.Name = "dataGridViewTextBoxColumn238";
+            this.dataGridViewTextBoxColumn238.ReadOnly = true;
+            this.dataGridViewTextBoxColumn238.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn239
+            // 
+            this.dataGridViewTextBoxColumn239.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn239.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn239.Name = "dataGridViewTextBoxColumn239";
+            this.dataGridViewTextBoxColumn239.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn240
+            // 
+            this.dataGridViewTextBoxColumn240.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn240.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn240.Name = "dataGridViewTextBoxColumn240";
+            this.dataGridViewTextBoxColumn240.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn241
+            // 
+            this.dataGridViewTextBoxColumn241.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn241.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn241.Name = "dataGridViewTextBoxColumn241";
+            this.dataGridViewTextBoxColumn241.ReadOnly = true;
+            this.dataGridViewTextBoxColumn241.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn242
+            // 
+            this.dataGridViewTextBoxColumn242.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn242.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn242.Name = "dataGridViewTextBoxColumn242";
+            this.dataGridViewTextBoxColumn242.ReadOnly = true;
+            // 
+            // gvRace7
+            // 
+            this.gvRace7.AllowUserToAddRows = false;
+            this.gvRace7.AllowUserToDeleteRows = false;
+            this.gvRace7.AutoGenerateColumns = false;
+            this.gvRace7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvRace7.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn243,
+            this.dataGridViewTextBoxColumn244,
+            this.dataGridViewTextBoxColumn245,
+            this.dataGridViewTextBoxColumn246,
+            this.dataGridViewTextBoxColumn247});
+            this.gvRace7.DataSource = this.bindingSourcePilots;
+            this.gvRace7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvRace7.Location = new System.Drawing.Point(3, 3);
+            this.gvRace7.Margin = new System.Windows.Forms.Padding(2);
+            this.gvRace7.Name = "gvRace7";
+            this.gvRace7.ReadOnly = true;
+            this.gvRace7.RowTemplate.Height = 24;
+            this.gvRace7.Size = new System.Drawing.Size(989, 118);
+            this.gvRace7.TabIndex = 2;
+            // 
+            // dataGridViewTextBoxColumn243
+            // 
+            this.dataGridViewTextBoxColumn243.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn243.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn243.Name = "dataGridViewTextBoxColumn243";
+            this.dataGridViewTextBoxColumn243.ReadOnly = true;
+            this.dataGridViewTextBoxColumn243.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn244
+            // 
+            this.dataGridViewTextBoxColumn244.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn244.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn244.Name = "dataGridViewTextBoxColumn244";
+            this.dataGridViewTextBoxColumn244.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn245
+            // 
+            this.dataGridViewTextBoxColumn245.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn245.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn245.Name = "dataGridViewTextBoxColumn245";
+            this.dataGridViewTextBoxColumn245.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn246
+            // 
+            this.dataGridViewTextBoxColumn246.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn246.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn246.Name = "dataGridViewTextBoxColumn246";
+            this.dataGridViewTextBoxColumn246.ReadOnly = true;
+            this.dataGridViewTextBoxColumn246.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn247
+            // 
+            this.dataGridViewTextBoxColumn247.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn247.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn247.Name = "dataGridViewTextBoxColumn247";
+            this.dataGridViewTextBoxColumn247.ReadOnly = true;
+            // 
+            // gvRace8
+            // 
+            this.gvRace8.AllowUserToAddRows = false;
+            this.gvRace8.AllowUserToDeleteRows = false;
+            this.gvRace8.AutoGenerateColumns = false;
+            this.gvRace8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvRace8.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn248,
+            this.dataGridViewTextBoxColumn249,
+            this.dataGridViewTextBoxColumn250,
+            this.dataGridViewTextBoxColumn251,
+            this.dataGridViewTextBoxColumn252});
+            this.gvRace8.DataSource = this.bindingSourcePilots;
+            this.gvRace8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvRace8.Location = new System.Drawing.Point(3, 3);
+            this.gvRace8.Margin = new System.Windows.Forms.Padding(2);
+            this.gvRace8.Name = "gvRace8";
+            this.gvRace8.ReadOnly = true;
+            this.gvRace8.RowTemplate.Height = 24;
+            this.gvRace8.Size = new System.Drawing.Size(989, 118);
+            this.gvRace8.TabIndex = 2;
+            // 
+            // dataGridViewTextBoxColumn248
+            // 
+            this.dataGridViewTextBoxColumn248.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn248.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn248.Name = "dataGridViewTextBoxColumn248";
+            this.dataGridViewTextBoxColumn248.ReadOnly = true;
+            this.dataGridViewTextBoxColumn248.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn249
+            // 
+            this.dataGridViewTextBoxColumn249.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn249.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn249.Name = "dataGridViewTextBoxColumn249";
+            this.dataGridViewTextBoxColumn249.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn250
+            // 
+            this.dataGridViewTextBoxColumn250.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn250.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn250.Name = "dataGridViewTextBoxColumn250";
+            this.dataGridViewTextBoxColumn250.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn251
+            // 
+            this.dataGridViewTextBoxColumn251.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn251.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn251.Name = "dataGridViewTextBoxColumn251";
+            this.dataGridViewTextBoxColumn251.ReadOnly = true;
+            this.dataGridViewTextBoxColumn251.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn252
+            // 
+            this.dataGridViewTextBoxColumn252.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn252.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn252.Name = "dataGridViewTextBoxColumn252";
+            this.dataGridViewTextBoxColumn252.ReadOnly = true;
             // 
             // MainForm
             // 
@@ -10220,32 +10539,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.gvPilots)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourcePilots1)).EndInit();
             this.tabRounds.ResumeLayout(false);
-            this.tableLayoutPanel11.ResumeLayout(false);
-            this.groupBox38.ResumeLayout(false);
-            this.tabControl5.ResumeLayout(false);
-            this.tabPage9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupAF)).EndInit();
+            this.panel11.ResumeLayout(false);
+            this.tableLayoutPanel12.ResumeLayout(false);
+            this.tabControl6.ResumeLayout(false);
+            this.tabPage22.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvRace1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourcePilots)).EndInit();
-            this.tabPage10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupBF)).EndInit();
-            this.tableLayoutPanel10.ResumeLayout(false);
-            this.groupBox37.ResumeLayout(false);
-            this.tabControl4.ResumeLayout(false);
-            this.tabPage7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupAS)).EndInit();
-            this.tabPage8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupBS)).EndInit();
-            this.tableLayoutPanel9.ResumeLayout(false);
-            this.groupBox36.ResumeLayout(false);
-            this.tabControl3.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupAQ)).EndInit();
-            this.tabPage4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupBQ)).EndInit();
-            this.tabPage5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupCQ)).EndInit();
-            this.tabPage6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gvGroupDQ)).EndInit();
+            this.tabPage23.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvRace2)).EndInit();
+            this.tabPage24.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvRace3)).EndInit();
+            this.tabPage25.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvRace4)).EndInit();
+            this.groupBox30.ResumeLayout(false);
             this.tableLayoutPanel7.ResumeLayout(false);
             this.groupBox29.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
@@ -10301,6 +10607,31 @@
             ((System.ComponentModel.ISupportInitialize)(this.gvGroupY)).EndInit();
             this.tabPage21.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gvGroupZ)).EndInit();
+            this.tableLayoutPanel11.ResumeLayout(false);
+            this.groupBox38.ResumeLayout(false);
+            this.tabControl5.ResumeLayout(false);
+            this.tabPage9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvSmallFinal)).EndInit();
+            this.tabPage10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvFinal)).EndInit();
+            this.tableLayoutPanel9.ResumeLayout(false);
+            this.groupBox36.ResumeLayout(false);
+            this.tabControl3.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvRace13)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvRace14)).EndInit();
+            this.tabPage5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvRace15)).EndInit();
+            this.tabPage6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvRace16)).EndInit();
+            this.tableLayoutPanel10.ResumeLayout(false);
+            this.groupBox37.ResumeLayout(false);
+            this.tabControl4.ResumeLayout(false);
+            this.tabPage7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvSemi1)).EndInit();
+            this.tabPage8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvSemi2)).EndInit();
             this.tabRace.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gvRace)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceRace)).EndInit();
@@ -10412,18 +10743,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.lxLedControl16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lxLedControl17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lxLedControl18)).EndInit();
-            this.panel11.ResumeLayout(false);
-            this.tableLayoutPanel12.ResumeLayout(false);
-            this.groupBox30.ResumeLayout(false);
-            this.tabControl6.ResumeLayout(false);
-            this.tabPage22.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            this.tabPage23.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            this.tabPage24.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
-            this.tabPage25.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
+            this.tabPage26.ResumeLayout(false);
+            this.tabPage27.ResumeLayout(false);
+            this.tabPage28.ResumeLayout(false);
+            this.tabPage29.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvRace5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvRace6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvRace7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvRace8)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -10895,11 +11222,11 @@
         private System.Windows.Forms.Button btnAddPilotsToQF;
         private System.Windows.Forms.TabControl tabControl3;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.DataGridView gvGroupAQ;
+        private System.Windows.Forms.DataGridView gvRace13;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn99;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn105;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.DataGridView gvGroupBQ;
+        private System.Windows.Forms.DataGridView gvRace14;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn106;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn107;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn108;
@@ -10908,7 +11235,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn111;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn112;
         private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.DataGridView gvGroupCQ;
+        private System.Windows.Forms.DataGridView gvRace15;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn113;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn114;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn115;
@@ -10917,7 +11244,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn118;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn119;
         private System.Windows.Forms.TabPage tabPage6;
-        private System.Windows.Forms.DataGridView gvGroupDQ;
+        private System.Windows.Forms.DataGridView gvRace16;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn120;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn121;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn122;
@@ -11064,11 +11391,11 @@
         private System.Windows.Forms.Button btnAddPilotsToSF;
         private System.Windows.Forms.TabControl tabControl4;
         private System.Windows.Forms.TabPage tabPage7;
-        private System.Windows.Forms.DataGridView gvGroupAS;
+        private System.Windows.Forms.DataGridView gvSemi1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn127;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn133;
         private System.Windows.Forms.TabPage tabPage8;
-        private System.Windows.Forms.DataGridView gvGroupBS;
+        private System.Windows.Forms.DataGridView gvSemi2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn134;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn135;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn136;
@@ -11085,11 +11412,11 @@
         private System.Windows.Forms.Button btnAddPilotsToGroupsF;
         private System.Windows.Forms.TabControl tabControl5;
         private System.Windows.Forms.TabPage tabPage9;
-        private System.Windows.Forms.DataGridView gvGroupAF;
+        private System.Windows.Forms.DataGridView gvSmallFinal;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn141;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn147;
         private System.Windows.Forms.TabPage tabPage10;
-        private System.Windows.Forms.DataGridView gvGroupBF;
+        private System.Windows.Forms.DataGridView gvFinal;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn148;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn149;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn150;
@@ -11268,28 +11595,28 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel12;
         private System.Windows.Forms.TabControl tabControl6;
         private System.Windows.Forms.TabPage tabPage22;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView gvRace1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn213;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn214;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn215;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn216;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn217;
         private System.Windows.Forms.TabPage tabPage23;
-        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.DataGridView gvRace2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn218;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn219;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn220;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn221;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn222;
         private System.Windows.Forms.TabPage tabPage24;
-        private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.DataGridView gvRace3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn223;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn224;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn225;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn226;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn227;
         private System.Windows.Forms.TabPage tabPage25;
-        private System.Windows.Forms.DataGridView dataGridView5;
+        private System.Windows.Forms.DataGridView gvRace4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn228;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn229;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn230;
@@ -11297,6 +11624,34 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn232;
         private System.Windows.Forms.GroupBox groupBox30;
         private System.Windows.Forms.Button btnAddPilotsTo18F;
+        private System.Windows.Forms.TabPage tabPage26;
+        private System.Windows.Forms.DataGridView gvRace5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn233;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn234;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn235;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn236;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn237;
+        private System.Windows.Forms.TabPage tabPage27;
+        private System.Windows.Forms.DataGridView gvRace6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn238;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn239;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn240;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn241;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn242;
+        private System.Windows.Forms.TabPage tabPage28;
+        private System.Windows.Forms.DataGridView gvRace7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn243;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn244;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn245;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn246;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn247;
+        private System.Windows.Forms.TabPage tabPage29;
+        private System.Windows.Forms.DataGridView gvRace8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn248;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn249;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn250;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn251;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn252;
     }
 }
 
