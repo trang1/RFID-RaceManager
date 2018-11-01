@@ -31,6 +31,9 @@ namespace RaceManager.Data
         public List<Group> Groups { get; set; }
         public List<RaceEvent> RaceEvents { get; set; }
 
+        [NotMapped]
+        public bool Is18RoundEnabled { get; set; }
+
         public Race()
         {
             RaceEvents = new List<RaceEvent>();

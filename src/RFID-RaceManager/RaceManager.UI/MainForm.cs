@@ -6072,140 +6072,291 @@ namespace RaceManager.UI
 
         private void btnAddPilotsToQF_Click(object sender, EventArgs e)
         {
-            if(_bestQualificationResuls == null || _bestQualificationResuls.Count == 0) return;
-
-            // 1/4 finals
-            var group = new Group
+            if (_race.Is18RoundEnabled)
             {
-                Name = "Race 13",
-                Pilots = new List<RacePilot>
+                var race1 = _race.RaceEvents.FirstOrDefault(re => re.Group.Name == "Race 1");
+                if (race1 == null) return;
+                var race1Results = race1.Laps.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
+                race1Results.AddRange(race1.Laps.Where(s => !s.AvgLapTime.HasValue).ToList());
+
+                var race2 = _race.RaceEvents.FirstOrDefault(re => re.Group.Name == "Race 2");
+                if (race2 == null) return;
+                var race2Results = race2.Laps.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
+                race2Results.AddRange(race2.Laps.Where(s => !s.AvgLapTime.HasValue).ToList());
+
+                var race3 = _race.RaceEvents.FirstOrDefault(re => re.Group.Name == "Race 3");
+                if (race3 == null) return;
+                var race3Results = race3.Laps.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
+                race3Results.AddRange(race3.Laps.Where(s => !s.AvgLapTime.HasValue).ToList());
+
+                var race4 = _race.RaceEvents.FirstOrDefault(re => re.Group.Name == "Race 4");
+                if (race4 == null) return;
+                var race4Results = race4.Laps.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
+                race4Results.AddRange(race4.Laps.Where(s => !s.AvgLapTime.HasValue).ToList());
+
+                var race5 = _race.RaceEvents.FirstOrDefault(re => re.Group.Name == "Race 5");
+                if (race5 == null) return;
+                var race5Results = race5.Laps.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
+                race5Results.AddRange(race5.Laps.Where(s => !s.AvgLapTime.HasValue).ToList());
+
+                var race6 = _race.RaceEvents.FirstOrDefault(re => re.Group.Name == "Race 6");
+                if (race6 == null) return;
+                var race6Results = race6.Laps.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
+                race6Results.AddRange(race6.Laps.Where(s => !s.AvgLapTime.HasValue).ToList());
+
+                var race7 = _race.RaceEvents.FirstOrDefault(re => re.Group.Name == "Race 7");
+                if (race7 == null) return;
+                var race7Results = race7.Laps.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
+                race7Results.AddRange(race7.Laps.Where(s => !s.AvgLapTime.HasValue).ToList());
+
+                var race8 = _race.RaceEvents.FirstOrDefault(re => re.Group.Name == "Race 8");
+                if (race8 == null) return;
+                var race8Results = race8.Laps.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
+                race8Results.AddRange(race8.Laps.Where(s => !s.AvgLapTime.HasValue).ToList());
+
+                // 1/4 finals
+                var group = new Group
                 {
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(0)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(4)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(8)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(12)?.Epc),
-                }
-            };
-            gvRace13.DataSource = group.Pilots;
-            _race.Groups.Add(group);
-
-            group = new Group
-            {
-                Name = "Race 14",
-                Pilots = new List<RacePilot>
-                {
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(3)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(7)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(11)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(15)?.Epc),
-                }
-            };
-            gvRace14.DataSource = group.Pilots;
-            _race.Groups.Add(group);
-
-            group = new Group
-            {
-                Name = "Race 15",
-                Pilots = new List<RacePilot>
-                {
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(2)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(6)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(10)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(14)?.Epc),
-                }
-            };
-            gvRace15.DataSource = group.Pilots;
-            _race.Groups.Add(group);
-
-            group = new Group
-            {
-                Name = "Race 16",
-                Pilots = new List<RacePilot>
-                {
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(1)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(5)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(9)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(13)?.Epc),
-                }
-            };
-            gvRace16.DataSource = group.Pilots;
-            _race.Groups.Add(group);
-
-            #region Groups Insertion
-
-            database objDatabase = new database();
-            string sqlQuery;
-            SQLiteCommand cmd;
-
-            foreach (var item in _race.Groups)
-            {
-                if (item.Id == 0)
-                {
-                    sqlQuery = "insert into Groups (Name) values ('" + Convert.ToString(item.Name) + "')";
-                    cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
-                    cmd.ExecuteNonQuery();
-                    item.Id = Convert.ToInt32(getLastInsertedId(cmd));
-
-                    sqlQuery = "delete from Pilot_Groups where GroupId =" + Convert.ToInt32(item.Id);
-                    cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
-                    cmd.ExecuteNonQuery();
-                }
-
-                foreach (var pilot in item.Pilots)
-                {
-                    if (pilot != null)
+                    Name = "Race 13",
+                    Pilots = new List<RacePilot>
                     {
-                        sqlQuery = "delete from Pilot_Groups where PilotId =" + pilot.Id + " and GroupId =" + Convert.ToInt32(item.Id);
-                        cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
-                        cmd.ExecuteNonQuery();
-
-                        sqlQuery = "insert into Pilot_Groups (PilotId, GroupId) values ('" + Convert.ToInt32(pilot.Id) + "', '" + Convert.ToInt32(item.Id) + "')";
-                        cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
-                        cmd.ExecuteNonQuery();
-                        //pilot.Id = Convert.ToInt32(getLastInsertedId(cmd));
+                        RacePilots.FirstOrDefault(p => p.Tag == race1Results.ElementAtOrDefault(1)?.Epc),
+                        RacePilots.FirstOrDefault(p => p.Tag == race1Results.ElementAtOrDefault(0)?.Epc),
+                        RacePilots.FirstOrDefault(p => p.Tag == race2Results.ElementAtOrDefault(0)?.Epc),
+                        RacePilots.FirstOrDefault(p => p.Tag == race2Results.ElementAtOrDefault(1)?.Epc),
                     }
-                }
+                };
+                gvRace13.DataSource = group.Pilots;
+                _race.Groups.Add(group);
+
+                group = new Group
+                {
+                    Name = "Race 14",
+                    Pilots = new List<RacePilot>
+                    {
+                        RacePilots.FirstOrDefault(p => p.Tag == race3Results.ElementAtOrDefault(1)?.Epc),
+                        RacePilots.FirstOrDefault(p => p.Tag == race3Results.ElementAtOrDefault(0)?.Epc),
+                        RacePilots.FirstOrDefault(p => p.Tag == race4Results.ElementAtOrDefault(0)?.Epc),
+                        RacePilots.FirstOrDefault(p => p.Tag == race4Results.ElementAtOrDefault(1)?.Epc),
+                    }
+                };
+                gvRace14.DataSource = group.Pilots;
+                _race.Groups.Add(group);
+
+                group = new Group
+                {
+                    Name = "Race 15",
+                    Pilots = new List<RacePilot>
+                    {
+                        RacePilots.FirstOrDefault(p => p.Tag == race5Results.ElementAtOrDefault(1)?.Epc),
+                        RacePilots.FirstOrDefault(p => p.Tag == race5Results.ElementAtOrDefault(0)?.Epc),
+                        RacePilots.FirstOrDefault(p => p.Tag == race6Results.ElementAtOrDefault(0)?.Epc),
+                        RacePilots.FirstOrDefault(p => p.Tag == race6Results.ElementAtOrDefault(1)?.Epc),
+                    }
+                };
+                gvRace15.DataSource = group.Pilots;
+                _race.Groups.Add(group);
+
+                group = new Group
+                {
+                    Name = "Race 16",
+                    Pilots = new List<RacePilot>
+                    {
+                        RacePilots.FirstOrDefault(p => p.Tag == race7Results.ElementAtOrDefault(1)?.Epc),
+                        RacePilots.FirstOrDefault(p => p.Tag == race7Results.ElementAtOrDefault(0)?.Epc),
+                        RacePilots.FirstOrDefault(p => p.Tag == race8Results.ElementAtOrDefault(0)?.Epc),
+                        RacePilots.FirstOrDefault(p => p.Tag == race8Results.ElementAtOrDefault(1)?.Epc),
+                    }
+                };
+                gvRace16.DataSource = group.Pilots;
+                _race.Groups.Add(group);
+
+                #region Groups Insertion
+
+                //database objDatabase = new database();
+                //string sqlQuery;
+                //SQLiteCommand cmd;
+
+                //foreach (var item in _race.Groups)
+                //{
+                //    if (item.Id == 0)
+                //    {
+                //        sqlQuery = "insert into Groups (Name) values ('" + Convert.ToString(item.Name) + "')";
+                //        cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+                //        cmd.ExecuteNonQuery();
+                //        item.Id = Convert.ToInt32(getLastInsertedId(cmd));
+
+                //        sqlQuery = "delete from Pilot_Groups where GroupId =" + Convert.ToInt32(item.Id);
+                //        cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+                //        cmd.ExecuteNonQuery();
+                //    }
+
+                //    foreach (var pilot in item.Pilots)
+                //    {
+                //        if (pilot != null)
+                //        {
+                //            sqlQuery = "delete from Pilot_Groups where PilotId =" + pilot.Id + " and GroupId =" +
+                //                       Convert.ToInt32(item.Id);
+                //            cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+                //            cmd.ExecuteNonQuery();
+
+                //            sqlQuery = "insert into Pilot_Groups (PilotId, GroupId) values ('" +
+                //                       Convert.ToInt32(pilot.Id) + "', '" + Convert.ToInt32(item.Id) + "')";
+                //            cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+                //            cmd.ExecuteNonQuery();
+                //            //pilot.Id = Convert.ToInt32(getLastInsertedId(cmd));
+                //        }
+                //    }
+                //}
+
+                #endregion
+
+                cmbRaceGroup.Items.Clear();
+                _race.Groups.ForEach(i => cmbRaceGroup.Items.Add(i.Name));
+
+                cmbRaceRound.Items.Add("R");
             }
-            #endregion
 
-            cmbRaceGroup.Items.Clear();
-            _race.Groups.ForEach(i => cmbRaceGroup.Items.Add(i.Name));
+            else
+            {
+                if (_bestQualificationResuls == null || _bestQualificationResuls.Count == 0) return;
 
-            cmbRaceRound.Items.Add("R");
+                // 1/4 finals
+                var group = new Group
+                {
+                    Name = "Race 13",
+                    Pilots = new List<RacePilot>
+                    {
+                        RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(0)?.Epc),
+                        RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(4)?.Epc),
+                        RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(8)?.Epc),
+                        RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(12)?.Epc),
+                    }
+                };
+                gvRace13.DataSource = group.Pilots;
+                _race.Groups.Add(group);
+
+                group = new Group
+                {
+                    Name = "Race 14",
+                    Pilots = new List<RacePilot>
+                    {
+                        RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(3)?.Epc),
+                        RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(7)?.Epc),
+                        RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(11)?.Epc),
+                        RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(15)?.Epc),
+                    }
+                };
+                gvRace14.DataSource = group.Pilots;
+                _race.Groups.Add(group);
+
+                group = new Group
+                {
+                    Name = "Race 15",
+                    Pilots = new List<RacePilot>
+                    {
+                        RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(2)?.Epc),
+                        RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(6)?.Epc),
+                        RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(10)?.Epc),
+                        RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(14)?.Epc),
+                    }
+                };
+                gvRace15.DataSource = group.Pilots;
+                _race.Groups.Add(group);
+
+                group = new Group
+                {
+                    Name = "Race 16",
+                    Pilots = new List<RacePilot>
+                    {
+                        RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(1)?.Epc),
+                        RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(5)?.Epc),
+                        RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(9)?.Epc),
+                        RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(13)?.Epc),
+                    }
+                };
+                gvRace16.DataSource = group.Pilots;
+                _race.Groups.Add(group);
+
+                #region Groups Insertion
+
+                //database objDatabase = new database();
+                //string sqlQuery;
+                //SQLiteCommand cmd;
+
+                //foreach (var item in _race.Groups)
+                //{
+                //    if (item.Id == 0)
+                //    {
+                //        sqlQuery = "insert into Groups (Name) values ('" + Convert.ToString(item.Name) + "')";
+                //        cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+                //        cmd.ExecuteNonQuery();
+                //        item.Id = Convert.ToInt32(getLastInsertedId(cmd));
+
+                //        sqlQuery = "delete from Pilot_Groups where GroupId =" + Convert.ToInt32(item.Id);
+                //        cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+                //        cmd.ExecuteNonQuery();
+                //    }
+
+                //    foreach (var pilot in item.Pilots)
+                //    {
+                //        if (pilot != null)
+                //        {
+                //            sqlQuery = "delete from Pilot_Groups where PilotId =" + pilot.Id + " and GroupId =" +
+                //                       Convert.ToInt32(item.Id);
+                //            cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+                //            cmd.ExecuteNonQuery();
+
+                //            sqlQuery = "insert into Pilot_Groups (PilotId, GroupId) values ('" +
+                //                       Convert.ToInt32(pilot.Id) + "', '" + Convert.ToInt32(item.Id) + "')";
+                //            cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+                //            cmd.ExecuteNonQuery();
+                //            //pilot.Id = Convert.ToInt32(getLastInsertedId(cmd));
+                //        }
+                //    }
+                //}
+
+                #endregion
+
+                cmbRaceGroup.Items.Clear();
+                _race.Groups.ForEach(i => cmbRaceGroup.Items.Add(i.Name));
+
+                cmbRaceRound.Items.Add("R");
+            }
         }
 
         private void btnAddPilotsToGroupsSF_Click(object sender, EventArgs e)
         {
-            var race1 = _race.RaceEvents.FirstOrDefault(re => re.Group.Name == "Group A (R)");
-            if (race1 == null) return;
+            var race13 = _race.RaceEvents.FirstOrDefault(re => re.Group.Name == "Race 13");
+            if (race13 == null) return;
 
-            var race1Results = race1.Laps.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
-            race1Results.AddRange(race1.Laps.Where(s => !s.AvgLapTime.HasValue).ToList());
+            var race13Results = race13.Laps.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
+            race13Results.AddRange(race13.Laps.Where(s => !s.AvgLapTime.HasValue).ToList());
 
-            var race2 = _race.RaceEvents.FirstOrDefault(re => re.Group.Name == "Group B (R)");
-            if (race2 == null) return;
-            var race2Results = race2.Laps.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
-            race2Results.AddRange(race2.Laps.Where(s => !s.AvgLapTime.HasValue).ToList());
+            var race14 = _race.RaceEvents.FirstOrDefault(re => re.Group.Name == "Race 14");
+            if (race14 == null) return;
+            var race14Results = race14.Laps.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
+            race14Results.AddRange(race14.Laps.Where(s => !s.AvgLapTime.HasValue).ToList());
 
-            var race3 = _race.RaceEvents.FirstOrDefault(re => re.Group.Name == "Group C (R)");
-            if (race3 == null) return;
-            var race3Results = race3.Laps.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
-            race3Results.AddRange(race3.Laps.Where(s => !s.AvgLapTime.HasValue).ToList());
+            var race15 = _race.RaceEvents.FirstOrDefault(re => re.Group.Name == "Race 15");
+            if (race15 == null) return;
+            var race15Results = race15.Laps.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
+            race15Results.AddRange(race15.Laps.Where(s => !s.AvgLapTime.HasValue).ToList());
 
-            var race4 = _race.RaceEvents.FirstOrDefault(re => re.Group.Name == "Group D (R)");
-            if (race4 == null) return;
-            var race4Results = race4.Laps.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
-            race4Results.AddRange(race4.Laps.Where(s => !s.AvgLapTime.HasValue).ToList());
+            var race16 = _race.RaceEvents.FirstOrDefault(re => re.Group.Name == "Race 16");
+            if (race16 == null) return;
+            var race16Results = race16.Laps.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
+            race16Results.AddRange(race16.Laps.Where(s => !s.AvgLapTime.HasValue).ToList());
 
             var group = new Group
             {
                 Name = "Semi 1",
                 Pilots = new List<RacePilot>
                 {
-                    RacePilots.FirstOrDefault(p=>p.Tag == race1Results.ElementAtOrDefault(1)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == race1Results.ElementAtOrDefault(0)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == race2Results.ElementAtOrDefault(0)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == race2Results.ElementAtOrDefault(1)?.Epc)
+                    RacePilots.FirstOrDefault(p=>p.Tag == race13Results.ElementAtOrDefault(1)?.Epc),
+                    RacePilots.FirstOrDefault(p=>p.Tag == race13Results.ElementAtOrDefault(0)?.Epc),
+                    RacePilots.FirstOrDefault(p=>p.Tag == race14Results.ElementAtOrDefault(0)?.Epc),
+                    RacePilots.FirstOrDefault(p=>p.Tag == race14Results.ElementAtOrDefault(1)?.Epc)
                 }
             };
             gvSemi1.DataSource = group.Pilots;
@@ -6216,10 +6367,10 @@ namespace RaceManager.UI
                 Name = "Semi 2",
                 Pilots = new List<RacePilot>
                 {
-                    RacePilots.FirstOrDefault(p=>p.Tag == race3Results.ElementAtOrDefault(1)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == race3Results.ElementAtOrDefault(0)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == race4Results.ElementAtOrDefault(0)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == race4Results.ElementAtOrDefault(1)?.Epc)
+                    RacePilots.FirstOrDefault(p=>p.Tag == race15Results.ElementAtOrDefault(1)?.Epc),
+                    RacePilots.FirstOrDefault(p=>p.Tag == race15Results.ElementAtOrDefault(0)?.Epc),
+                    RacePilots.FirstOrDefault(p=>p.Tag == race16Results.ElementAtOrDefault(0)?.Epc),
+                    RacePilots.FirstOrDefault(p=>p.Tag == race16Results.ElementAtOrDefault(1)?.Epc)
                 }
             };
             gvSemi2.DataSource = group.Pilots;
@@ -6227,39 +6378,39 @@ namespace RaceManager.UI
 
             #region Groups Insertion
 
-            database objDatabase = new database();
-            string sqlQuery;
-            SQLiteCommand cmd;
+            //database objDatabase = new database();
+            //string sqlQuery;
+            //SQLiteCommand cmd;
 
-            foreach (var item in _race.Groups)
-            {
-                if (item.Id == 0)
-                {
-                    sqlQuery = "insert into Groups (Name) values ('" + Convert.ToString(item.Name) + "')";
-                    cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
-                    cmd.ExecuteNonQuery();
-                    item.Id = Convert.ToInt32(getLastInsertedId(cmd));
+            //foreach (var item in _race.Groups)
+            //{
+            //    if (item.Id == 0)
+            //    {
+            //        sqlQuery = "insert into Groups (Name) values ('" + Convert.ToString(item.Name) + "')";
+            //        cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+            //        cmd.ExecuteNonQuery();
+            //        item.Id = Convert.ToInt32(getLastInsertedId(cmd));
 
-                    sqlQuery = "delete from Pilot_Groups where GroupId =" + Convert.ToInt32(item.Id);
-                    cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
-                    cmd.ExecuteNonQuery();
-                }
+            //        sqlQuery = "delete from Pilot_Groups where GroupId =" + Convert.ToInt32(item.Id);
+            //        cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+            //        cmd.ExecuteNonQuery();
+            //    }
 
-                foreach (var pilot in item.Pilots)
-                {
-                    if (pilot != null)
-                    {
-                        sqlQuery = "delete from Pilot_Groups where PilotId =" + pilot.Id + " and GroupId =" + Convert.ToInt32(item.Id);
-                        cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
-                        cmd.ExecuteNonQuery();
+            //    foreach (var pilot in item.Pilots)
+            //    {
+            //        if (pilot != null)
+            //        {
+            //            sqlQuery = "delete from Pilot_Groups where PilotId =" + pilot.Id + " and GroupId =" + Convert.ToInt32(item.Id);
+            //            cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+            //            cmd.ExecuteNonQuery();
 
-                        sqlQuery = "insert into Pilot_Groups (PilotId, GroupId) values ('" + Convert.ToInt32(pilot.Id) + "', '" + Convert.ToInt32(item.Id) + "')";
-                        cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
-                        cmd.ExecuteNonQuery();
-                        //pilot.Id = Convert.ToInt32(getLastInsertedId(cmd));
-                    }
-                }
-            }
+            //            sqlQuery = "insert into Pilot_Groups (PilotId, GroupId) values ('" + Convert.ToInt32(pilot.Id) + "', '" + Convert.ToInt32(item.Id) + "')";
+            //            cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+            //            cmd.ExecuteNonQuery();
+            //            //pilot.Id = Convert.ToInt32(getLastInsertedId(cmd));
+            //        }
+            //    }
+            //}
             #endregion
 
             cmbRaceGroup.Items.Clear();
@@ -6272,13 +6423,13 @@ namespace RaceManager.UI
         private void btnAddPilotsToGroupsF_Click(object sender, EventArgs e)
         {
             // Final rounds
-            var race1 = _race.RaceEvents.FirstOrDefault(re => re.Group.Name == "Group A (S)");
+            var race1 = _race.RaceEvents.FirstOrDefault(re => re.Group.Name == "Semi 1");
             if (race1 == null) return;
 
             var race1Results = race1.Laps.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
             race1Results.AddRange(race1.Laps.Where(s => !s.AvgLapTime.HasValue).ToList());
 
-            var race2 = _race.RaceEvents.FirstOrDefault(re => re.Group.Name == "Group B (S)");
+            var race2 = _race.RaceEvents.FirstOrDefault(re => re.Group.Name == "Semi 2");
             if (race2 == null) return;
 
             var race2Results = race2.Laps.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
@@ -6314,39 +6465,39 @@ namespace RaceManager.UI
 
             #region Groups Insertion
 
-            database objDatabase = new database();
-            string sqlQuery;
-            SQLiteCommand cmd;
+            //database objDatabase = new database();
+            //string sqlQuery;
+            //SQLiteCommand cmd;
 
-            foreach (var item in _race.Groups)
-            {
-                if (item.Id == 0)
-                {
-                    sqlQuery = "insert into Groups (Name) values ('" + Convert.ToString(item.Name) + "')";
-                    cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
-                    cmd.ExecuteNonQuery();
-                    item.Id = Convert.ToInt32(getLastInsertedId(cmd));
+            //foreach (var item in _race.Groups)
+            //{
+            //    if (item.Id == 0)
+            //    {
+            //        sqlQuery = "insert into Groups (Name) values ('" + Convert.ToString(item.Name) + "')";
+            //        cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+            //        cmd.ExecuteNonQuery();
+            //        item.Id = Convert.ToInt32(getLastInsertedId(cmd));
 
-                    sqlQuery = "delete from Pilot_Groups where GroupId =" + Convert.ToInt32(item.Id);
-                    cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
-                    cmd.ExecuteNonQuery();
-                }
+            //        sqlQuery = "delete from Pilot_Groups where GroupId =" + Convert.ToInt32(item.Id);
+            //        cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+            //        cmd.ExecuteNonQuery();
+            //    }
 
-                foreach (var pilot in item.Pilots)
-                {
-                    if (pilot != null)
-                    {
-                        sqlQuery = "delete from Pilot_Groups where PilotId =" + pilot.Id + " and GroupId =" + Convert.ToInt32(item.Id);
-                        cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
-                        cmd.ExecuteNonQuery();
+            //    foreach (var pilot in item.Pilots)
+            //    {
+            //        if (pilot != null)
+            //        {
+            //            sqlQuery = "delete from Pilot_Groups where PilotId =" + pilot.Id + " and GroupId =" + Convert.ToInt32(item.Id);
+            //            cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+            //            cmd.ExecuteNonQuery();
 
-                        sqlQuery = "insert into Pilot_Groups (PilotId, GroupId) values ('" + Convert.ToInt32(pilot.Id) + "', '" + Convert.ToInt32(item.Id) + "')";
-                        cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
-                        cmd.ExecuteNonQuery();
-                        //pilot.Id = Convert.ToInt32(getLastInsertedId(cmd));
-                    }
-                }
-            }
+            //            sqlQuery = "insert into Pilot_Groups (PilotId, GroupId) values ('" + Convert.ToInt32(pilot.Id) + "', '" + Convert.ToInt32(item.Id) + "')";
+            //            cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+            //            cmd.ExecuteNonQuery();
+            //            //pilot.Id = Convert.ToInt32(getLastInsertedId(cmd));
+            //        }
+            //    }
+            //}
             #endregion
 
             cmbRaceGroup.Items.Clear();
