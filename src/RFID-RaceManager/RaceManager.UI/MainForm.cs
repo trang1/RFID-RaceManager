@@ -6074,6 +6074,7 @@ namespace RaceManager.UI
         {
             if (_race.Is18RoundEnabled)
             {
+                // Query races from the 1/8
                 var race1 = _race.RaceEvents.FirstOrDefault(re => re.Group.Name == "Race 1");
                 if (race1 == null) return;
                 var race1Results = race1.Laps.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
@@ -6114,7 +6115,7 @@ namespace RaceManager.UI
                 var race8Results = race8.Laps.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
                 race8Results.AddRange(race8.Laps.Where(s => !s.AvgLapTime.HasValue).ToList());
 
-                // 1/4 finals
+                // Creating 1/4 finals
                 var group = new Group
                 {
                     Name = "Race 13",
@@ -6221,10 +6222,10 @@ namespace RaceManager.UI
             {
                 if (_bestQualificationResuls == null || _bestQualificationResuls.Count == 0) return;
 
-                // 1/4 finals
+                //Query results from Qualification rounds and create 1/4 finals
                 var group = new Group
                 {
-                    Name = "Race 13",
+                    Name = "Race 1",
                     Pilots = new List<RacePilot>
                     {
                         RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(0)?.Epc),
@@ -6238,7 +6239,7 @@ namespace RaceManager.UI
 
                 group = new Group
                 {
-                    Name = "Race 14",
+                    Name = "Race 2",
                     Pilots = new List<RacePilot>
                     {
                         RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(3)?.Epc),
@@ -6252,7 +6253,7 @@ namespace RaceManager.UI
 
                 group = new Group
                 {
-                    Name = "Race 15",
+                    Name = "Race 3",
                     Pilots = new List<RacePilot>
                     {
                         RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(2)?.Epc),
@@ -6266,7 +6267,7 @@ namespace RaceManager.UI
 
                 group = new Group
                 {
-                    Name = "Race 16",
+                    Name = "Race 4",
                     Pilots = new List<RacePilot>
                     {
                         RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(1)?.Epc),
@@ -6327,36 +6328,35 @@ namespace RaceManager.UI
 
         private void btnAddPilotsToGroupsSF_Click(object sender, EventArgs e)
         {
-            var race13 = _race.RaceEvents.FirstOrDefault(re => re.Group.Name == "Race 13");
-            if (race13 == null) return;
+            var race1 = _race.RaceEvents.FirstOrDefault(re => re.Group.Name == (_race.Is18RoundEnabled ? "Race 13" : "Race 1"));
+            if (race1 == null) return;
+            var race1Results = race1.Laps.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
+            race1Results.AddRange(race1.Laps.Where(s => !s.AvgLapTime.HasValue).ToList());
 
-            var race13Results = race13.Laps.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
-            race13Results.AddRange(race13.Laps.Where(s => !s.AvgLapTime.HasValue).ToList());
+            var race2 = _race.RaceEvents.FirstOrDefault(re => re.Group.Name == (_race.Is18RoundEnabled ? "Race 14" : "Race 2"));
+            if (race2 == null) return;
+            var race2Results = race2.Laps.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
+            race2Results.AddRange(race2.Laps.Where(s => !s.AvgLapTime.HasValue).ToList());
 
-            var race14 = _race.RaceEvents.FirstOrDefault(re => re.Group.Name == "Race 14");
-            if (race14 == null) return;
-            var race14Results = race14.Laps.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
-            race14Results.AddRange(race14.Laps.Where(s => !s.AvgLapTime.HasValue).ToList());
+            var race3 = _race.RaceEvents.FirstOrDefault(re => re.Group.Name == (_race.Is18RoundEnabled ? "Race 15" : "Race 3"));
+            if (race3 == null) return;
+            var race3Results = race3.Laps.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
+            race3Results.AddRange(race3.Laps.Where(s => !s.AvgLapTime.HasValue).ToList());
 
-            var race15 = _race.RaceEvents.FirstOrDefault(re => re.Group.Name == "Race 15");
-            if (race15 == null) return;
-            var race15Results = race15.Laps.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
-            race15Results.AddRange(race15.Laps.Where(s => !s.AvgLapTime.HasValue).ToList());
-
-            var race16 = _race.RaceEvents.FirstOrDefault(re => re.Group.Name == "Race 16");
-            if (race16 == null) return;
-            var race16Results = race16.Laps.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
-            race16Results.AddRange(race16.Laps.Where(s => !s.AvgLapTime.HasValue).ToList());
+            var race4 = _race.RaceEvents.FirstOrDefault(re => re.Group.Name == (_race.Is18RoundEnabled ? "Race 16" : "Race 4"));
+            if (race4 == null) return;
+            var race4Results = race4.Laps.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
+            race4Results.AddRange(race4.Laps.Where(s => !s.AvgLapTime.HasValue).ToList());
 
             var group = new Group
             {
                 Name = "Semi 1",
                 Pilots = new List<RacePilot>
                 {
-                    RacePilots.FirstOrDefault(p=>p.Tag == race13Results.ElementAtOrDefault(1)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == race13Results.ElementAtOrDefault(0)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == race14Results.ElementAtOrDefault(0)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == race14Results.ElementAtOrDefault(1)?.Epc)
+                    RacePilots.FirstOrDefault(p=>p.Tag == race1Results.ElementAtOrDefault(1)?.Epc),
+                    RacePilots.FirstOrDefault(p=>p.Tag == race1Results.ElementAtOrDefault(0)?.Epc),
+                    RacePilots.FirstOrDefault(p=>p.Tag == race2Results.ElementAtOrDefault(0)?.Epc),
+                    RacePilots.FirstOrDefault(p=>p.Tag == race2Results.ElementAtOrDefault(1)?.Epc)
                 }
             };
             gvSemi1.DataSource = group.Pilots;
@@ -6367,10 +6367,10 @@ namespace RaceManager.UI
                 Name = "Semi 2",
                 Pilots = new List<RacePilot>
                 {
-                    RacePilots.FirstOrDefault(p=>p.Tag == race15Results.ElementAtOrDefault(1)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == race15Results.ElementAtOrDefault(0)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == race16Results.ElementAtOrDefault(0)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == race16Results.ElementAtOrDefault(1)?.Epc)
+                    RacePilots.FirstOrDefault(p=>p.Tag == race3Results.ElementAtOrDefault(1)?.Epc),
+                    RacePilots.FirstOrDefault(p=>p.Tag == race3Results.ElementAtOrDefault(0)?.Epc),
+                    RacePilots.FirstOrDefault(p=>p.Tag == race4Results.ElementAtOrDefault(0)?.Epc),
+                    RacePilots.FirstOrDefault(p=>p.Tag == race4Results.ElementAtOrDefault(1)?.Epc)
                 }
             };
             gvSemi2.DataSource = group.Pilots;
@@ -6612,7 +6612,7 @@ namespace RaceManager.UI
             {
                 MessageBox.Show("Database error. " + exception.Message);
             }
-            //database objDatabase = new database();
+            /*database objDatabase = new database();
             //string sqlQuery;
             //SQLiteCommand cmd;
 
@@ -6688,7 +6688,7 @@ namespace RaceManager.UI
             //            }
             //        }
             //    }
-            //}
+            //}*/
         }
 
         public int getLastInsertedId(SQLiteCommand cmd)
@@ -6715,11 +6715,57 @@ namespace RaceManager.UI
             }
         }
 
-        
+        #region Track management
         private void btTrack_Click(object sender, EventArgs e)
         {
             tbMimicName.Text = tbRaceName.Text;
             tbMimicLocation.Text = tbRaceLocation.Text;
         }
+
+        private void cmbRoundType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // 1/4 option is selected
+            if (cmbRoundType.SelectedIndex == 0)
+            {
+                _race.Is18RoundEnabled = false;
+                if (tableLayoutPanel12.Height > 0)
+                {
+                    tableLayoutPanel12.Height = 0;
+                    // move 1/4 groups up
+                    tableLayoutPanel9.Location = new Point(tableLayoutPanel9.Location.X, tableLayoutPanel9.Location.Y - 156);
+                    // move 1/2 groups up
+                    tableLayoutPanel10.Location = new Point(tableLayoutPanel10.Location.X, tableLayoutPanel10.Location.Y - 156);
+                    // move final groups up
+                    tableLayoutPanel11.Location = new Point(tableLayoutPanel11.Location.X, tableLayoutPanel11.Location.Y - 156);
+                    // rename 1/4 groups
+                    tabPage3.Text = "Race 1";
+                    tabPage4.Text = "Race 2";
+                    tabPage5.Text = "Race 3";
+                    tabPage6.Text = "Race 4";
+                }
+            }
+            // 1/8 option is selected
+            if (cmbRoundType.SelectedIndex == 1)
+            {
+                _race.Is18RoundEnabled = true;
+                if (tableLayoutPanel12.Height == 0)
+                {
+                    tableLayoutPanel12.Height = 156;
+                    // move 1/4 groups down
+                    tableLayoutPanel9.Location = new Point(tableLayoutPanel9.Location.X, tableLayoutPanel9.Location.Y + 156);
+                    // move 1/2 groups down
+                    tableLayoutPanel10.Location = new Point(tableLayoutPanel10.Location.X, tableLayoutPanel10.Location.Y + 156);
+                    // move final groups down
+                    tableLayoutPanel11.Location = new Point(tableLayoutPanel11.Location.X, tableLayoutPanel11.Location.Y + 156);
+                    // rename 1/4 groups
+                    tabPage3.Text = "Race 13";
+                    tabPage4.Text = "Race 14";
+                    tabPage5.Text = "Race 15";
+                    tabPage6.Text = "Race 16";
+                }
+            }
+        }
+
+        #endregion
     }
 }
