@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Diagnostics;
+using System.Globalization;
 using System.Linq;
 
 namespace RaceManager.Data
@@ -187,17 +188,31 @@ namespace RaceManager.Data
         private void SetLapTime(int index, string value)
         {
             TimeSpan ts;
-            if (TimeSpan.TryParse(value, out ts))
+            
+            // first check our string format
+            if (TimeSpan.TryParseExact(value, new[] { @"mm\:ss\,fff",
+                                                      @"mm\:ss\.fff",
+                                                      @"m\:ss\.fff",
+                                                      @"m\:ss\,fff",
+                                                      @"ss\.fff",
+                                                      @"ss\,fff",
+                                                      @"s\.fff",
+                                                      @"s\,fff"
+                                                        }, CultureInfo.CurrentCulture, out ts)
+                // then standard formats
+                || TimeSpan.TryParse(value, out ts))
             {
                 _lapsTime[index] = ts;
             }
             else
             {
+                // check special cases
                 if (string.Compare(value, "DNF", StringComparison.OrdinalIgnoreCase) == 0)
                     _lapsTime[index] = DNF;
 
                 else if (string.Compare(value, "DNS", StringComparison.OrdinalIgnoreCase) == 0)
                     _lapsTime[index] = DNS;
+                // no success
                 else
                     _lapsTime[index] = null;
             }
@@ -210,7 +225,7 @@ namespace RaceManager.Data
             if (value == DNF) return "DNF";
             if (value == DNS) return "DNS";
 
-            return value?.ToString("g");
+            return value?.ToString(@"mm\:ss\,fff");
         }
 
         public TimeSpan? BestLapTime
@@ -229,7 +244,7 @@ namespace RaceManager.Data
             }
         }
 
-        public string BestLapTimeString => BestLapTime?.ToString("g");
+        public string BestLapTimeString => BestLapTime?.ToString(@"mm\:ss\,fff");
 
         public TimeSpan? AvgLapTime
         {
@@ -269,7 +284,7 @@ namespace RaceManager.Data
                     count++;
                 }
 
-                return sum == TimeSpan.Zero ? null : Length * count / sum.TotalSeconds;
+                return sum == TimeSpan.Zero ? null : (Length * count * 3.6 )/ sum.TotalSeconds;
             }
             set { }
         }
@@ -284,7 +299,7 @@ namespace RaceManager.Data
                 var currentLapTime = registeredLaps.Last();
                 var previousLapTime = registeredLaps[registeredLaps.Count - 2];
 
-                return (currentLapTime - previousLapTime).ToString("g");
+                return (currentLapTime - previousLapTime).ToString(@"mm\:ss\,fff");
             }
             set { }
         }
@@ -300,7 +315,7 @@ namespace RaceManager.Data
         [NotMapped]
         public int NumberOfLaps { get; set; }
 
-        public string AvgLapTimeString => AvgLapTime?.ToString("g");
+        public string AvgLapTimeString => AvgLapTime?.ToString(@"mm\:ss\,fff");
         public string AvgSpeedString => AverageSpeed?.ToString("F2");
 
         private TimeSpan _prevRaceTime = TimeSpan.Zero;
@@ -367,6 +382,6 @@ namespace RaceManager.Data
 
         public int RegisteredLapsCount => LapsTime.Count;
 
-        public string AvgLapTimeString => AvgLapTime?.ToString("g");
+        public string AvgLapTimeString => AvgLapTime?.ToString(@"mm\:ss\,fff");
     }
 }
