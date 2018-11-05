@@ -191,76 +191,30 @@
             this.groupBox28 = new System.Windows.Forms.GroupBox();
             this.gvPilots = new System.Windows.Forms.DataGridView();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nicknameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.teamDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tagDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bindingSourcePilots1 = new System.Windows.Forms.BindingSource(this.components);
             this.tabRounds = new System.Windows.Forms.TabPage();
             this.panel11 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
             this.tabControl6 = new System.Windows.Forms.TabControl();
             this.tabPage22 = new System.Windows.Forms.TabPage();
             this.gvRace1 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn213 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn214 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn215 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn216 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn217 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bindingSourcePilots = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage23 = new System.Windows.Forms.TabPage();
             this.gvRace2 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn218 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn219 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn220 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn221 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn222 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage24 = new System.Windows.Forms.TabPage();
             this.gvRace3 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn223 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn224 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn225 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn226 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn227 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage25 = new System.Windows.Forms.TabPage();
             this.gvRace4 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn228 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn229 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn230 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn231 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn232 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage26 = new System.Windows.Forms.TabPage();
             this.gvRace5 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn233 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn234 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn235 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn236 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn237 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage27 = new System.Windows.Forms.TabPage();
             this.gvRace6 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn238 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn239 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn240 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn241 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn242 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage28 = new System.Windows.Forms.TabPage();
             this.gvRace7 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn243 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn244 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn245 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn246 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn247 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage29 = new System.Windows.Forms.TabPage();
             this.gvRace8 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn248 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn249 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn250 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn251 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn252 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox30 = new System.Windows.Forms.GroupBox();
+            this.btnManAddPilotsTo18F = new System.Windows.Forms.Button();
             this.btnAddPilotsTo18F = new System.Windows.Forms.Button();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox29 = new System.Windows.Forms.GroupBox();
@@ -268,284 +222,93 @@
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.pageGroupA = new System.Windows.Forms.TabPage();
             this.gvGroupA = new System.Windows.Forms.DataGridView();
-            this.nameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nicknameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.teamDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tagDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageGroupB = new System.Windows.Forms.TabPage();
             this.gvGroupB = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageGroupC = new System.Windows.Forms.TabPage();
             this.gvGroupC = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageGroupD = new System.Windows.Forms.TabPage();
             this.gvGroupD = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageGroupE = new System.Windows.Forms.TabPage();
             this.gvGroupE = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageGroupF = new System.Windows.Forms.TabPage();
             this.gvGroupF = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageGroupG = new System.Windows.Forms.TabPage();
             this.gvGroupG = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn40 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageGroupH = new System.Windows.Forms.TabPage();
             this.gvGroupH = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn44 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn45 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn46 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn47 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn48 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageGroupI = new System.Windows.Forms.TabPage();
             this.gvGroupI = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn51 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn52 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn53 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn54 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn55 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageGroupJ = new System.Windows.Forms.TabPage();
             this.gvGroupJ = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn58 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn59 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn60 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn61 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn62 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageGroupK = new System.Windows.Forms.TabPage();
             this.gvGroupK = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn65 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn66 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn67 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn68 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn69 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageGroupL = new System.Windows.Forms.TabPage();
             this.gvGroupL = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn72 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn73 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn74 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn75 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn76 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageGroupM = new System.Windows.Forms.TabPage();
             this.gvGroupM = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn79 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn80 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn81 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn82 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn83 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageGroupN = new System.Windows.Forms.TabPage();
             this.gvGroupN = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn86 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn87 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn88 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn89 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn90 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageGroupO = new System.Windows.Forms.TabPage();
             this.gvGroupO = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn93 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn94 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn95 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn96 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn97 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage11 = new System.Windows.Forms.TabPage();
             this.gvGroupP = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn158 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn159 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn160 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn161 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn162 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage12 = new System.Windows.Forms.TabPage();
             this.gvGroupQ = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn163 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn164 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn165 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn166 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn167 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage13 = new System.Windows.Forms.TabPage();
             this.gvGroupR = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn168 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn169 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn170 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn171 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn172 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage14 = new System.Windows.Forms.TabPage();
             this.gvGroupS = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn173 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn174 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn175 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn176 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn177 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage15 = new System.Windows.Forms.TabPage();
             this.gvGroupT = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn178 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn179 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn180 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn181 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn182 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage16 = new System.Windows.Forms.TabPage();
             this.gvGroupU = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn183 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn184 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn185 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn186 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn187 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage17 = new System.Windows.Forms.TabPage();
             this.gvGroupV = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn188 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn189 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn190 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn191 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn192 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage18 = new System.Windows.Forms.TabPage();
             this.gvGroupW = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn193 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn194 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn195 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn196 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn197 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage19 = new System.Windows.Forms.TabPage();
             this.gvGroupX = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn198 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn199 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn200 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn201 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn202 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage20 = new System.Windows.Forms.TabPage();
             this.gvGroupY = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn203 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn204 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn205 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn206 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn207 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage21 = new System.Windows.Forms.TabPage();
             this.gvGroupZ = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn208 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn209 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn210 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn211 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn212 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox38 = new System.Windows.Forms.GroupBox();
-            this.btnAddPilotsToGroupsF = new System.Windows.Forms.Button();
+            this.btnManAddPilotsToF = new System.Windows.Forms.Button();
+            this.btnAddPilotsToF = new System.Windows.Forms.Button();
             this.tabControl5 = new System.Windows.Forms.TabControl();
             this.tabPage9 = new System.Windows.Forms.TabPage();
             this.gvSmallFinal = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn142 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn143 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn144 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn145 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn146 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage10 = new System.Windows.Forms.TabPage();
             this.gvFinal = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn149 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn150 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn151 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn152 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn153 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox36 = new System.Windows.Forms.GroupBox();
+            this.btnManAddPilotsToQF = new System.Windows.Forms.Button();
             this.btnAddPilotsToQF = new System.Windows.Forms.Button();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.gvRace13 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn100 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn101 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn102 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn103 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn104 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.gvRace14 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn107 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn108 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn109 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn110 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn111 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.gvRace15 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn114 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn115 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn116 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn117 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn118 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.gvRace16 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn121 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn122 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn123 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn124 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn125 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox37 = new System.Windows.Forms.GroupBox();
+            this.btnManAddPilotsToSF = new System.Windows.Forms.Button();
             this.btnAddPilotsToSF = new System.Windows.Forms.Button();
             this.tabControl4 = new System.Windows.Forms.TabControl();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.gvSemi1 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn128 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn129 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn130 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn131 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn132 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.gvSemi2 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn135 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn136 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn137 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn138 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn139 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabRace = new System.Windows.Forms.TabPage();
             this.gvRace = new System.Windows.Forms.DataGridView();
-            this.OrderNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PilotName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Epc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IdentCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn155 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn156 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Lap1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Lap2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Lap3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Lap4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Lap5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Lap6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TimeDifferential = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BestLapTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AvgLapTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AverageSpeed = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RegisteredLapsCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Distance = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Penalty = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bindingSourceRace = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox35 = new System.Windows.Forms.GroupBox();
             this.gvRanking = new System.Windows.Forms.DataGridView();
             this.RankNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pilotNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bestLapTimeStringDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.avgLapTimeStringDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn157 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bindingSourceRanking = new System.Windows.Forms.BindingSource(this.components);
             this.cmbDisplayRanking = new System.Windows.Forms.ComboBox();
             this.label20 = new System.Windows.Forms.Label();
             this.groupBox34 = new System.Windows.Forms.GroupBox();
@@ -878,6 +641,247 @@
             this.lxLedControl16 = new LxControl.LxLedControl();
             this.lxLedControl17 = new LxControl.LxLedControl();
             this.lxLedControl18 = new LxControl.LxLedControl();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nicknameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.teamDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tagDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bindingSourcePilots1 = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridViewTextBoxColumn213 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn214 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn215 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn216 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn217 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bindingSourcePilots = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridViewTextBoxColumn218 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn219 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn220 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn221 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn222 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn223 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn224 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn225 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn226 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn227 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn228 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn229 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn230 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn231 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn232 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn233 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn234 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn235 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn236 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn237 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn238 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn239 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn240 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn241 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn242 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn243 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn244 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn245 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn246 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn247 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn248 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn249 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn250 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn251 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn252 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nicknameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.teamDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tagDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn40 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn44 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn45 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn46 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn47 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn48 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn51 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn52 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn53 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn54 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn55 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn58 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn59 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn60 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn61 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn62 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn65 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn66 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn67 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn68 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn69 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn72 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn73 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn74 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn75 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn76 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn79 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn80 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn81 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn82 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn83 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn86 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn87 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn88 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn89 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn90 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn93 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn94 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn95 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn96 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn97 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn158 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn159 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn160 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn161 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn162 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn163 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn164 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn165 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn166 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn167 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn168 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn169 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn170 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn171 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn172 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn173 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn174 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn175 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn176 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn177 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn178 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn179 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn180 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn181 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn182 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn183 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn184 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn185 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn186 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn187 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn188 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn189 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn190 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn191 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn192 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn193 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn194 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn195 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn196 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn197 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn198 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn199 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn200 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn201 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn202 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn203 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn204 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn205 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn206 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn207 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn208 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn209 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn210 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn211 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn212 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn142 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn143 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn144 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn145 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn146 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn149 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn150 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn151 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn152 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn153 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn100 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn101 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn102 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn103 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn104 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn107 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn108 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn109 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn110 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn111 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn114 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn115 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn116 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn117 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn118 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn121 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn122 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn123 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn124 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn125 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn128 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn129 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn130 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn131 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn132 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn135 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn136 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn137 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn138 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn139 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bindingSourceRace = new System.Windows.Forms.BindingSource(this.components);
+            this.pilotNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bestLapTimeStringDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.avgLapTimeStringDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bindingSourceRanking = new System.Windows.Forms.BindingSource(this.components);
+            this.OrderNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PilotName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Epc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IdentCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn155 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn156 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Lap1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Lap2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Lap3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Lap4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Lap5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Lap6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TimeDifferential = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BestLapTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AvgLapTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AverageSpeed = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RegisteredLapsCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Distance = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Penalty = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabCtrMain.SuspendLayout();
             this.PagReaderSetting.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -919,14 +923,12 @@
             this.groupBox27.SuspendLayout();
             this.groupBox28.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvPilots)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourcePilots1)).BeginInit();
             this.tabRounds.SuspendLayout();
             this.panel11.SuspendLayout();
             this.tableLayoutPanel12.SuspendLayout();
             this.tabControl6.SuspendLayout();
             this.tabPage22.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvRace1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourcePilots)).BeginInit();
             this.tabPage23.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvRace2)).BeginInit();
             this.tabPage24.SuspendLayout();
@@ -1024,10 +1026,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.gvSemi2)).BeginInit();
             this.tabRace.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvRace)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceRace)).BeginInit();
             this.groupBox35.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvRanking)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceRanking)).BeginInit();
             this.groupBox31.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.groupBox22.SuspendLayout();
@@ -1100,6 +1100,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.lxLedControl16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lxLedControl17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lxLedControl18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourcePilots1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourcePilots)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceRace)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceRanking)).BeginInit();
             this.SuspendLayout();
             // 
             // tabCtrMain
@@ -2698,7 +2702,7 @@
             // 
             this.tbRaceLength.Location = new System.Drawing.Point(96, 98);
             this.tbRaceLength.Name = "tbRaceLength";
-            this.tbRaceLength.Size = new System.Drawing.Size(125, 20);
+            this.tbRaceLength.Size = new System.Drawing.Size(211, 20);
             this.tbRaceLength.TabIndex = 13;
             // 
             // label113
@@ -2770,7 +2774,7 @@
             this.dtpRaceDate.Location = new System.Drawing.Point(97, 141);
             this.dtpRaceDate.Margin = new System.Windows.Forms.Padding(2);
             this.dtpRaceDate.Name = "dtpRaceDate";
-            this.dtpRaceDate.Size = new System.Drawing.Size(124, 20);
+            this.dtpRaceDate.Size = new System.Drawing.Size(210, 20);
             this.dtpRaceDate.TabIndex = 8;
             // 
             // label111
@@ -2842,7 +2846,7 @@
             this.tbRaceLocation.Location = new System.Drawing.Point(96, 63);
             this.tbRaceLocation.Margin = new System.Windows.Forms.Padding(2);
             this.tbRaceLocation.Name = "tbRaceLocation";
-            this.tbRaceLocation.Size = new System.Drawing.Size(125, 20);
+            this.tbRaceLocation.Size = new System.Drawing.Size(211, 20);
             this.tbRaceLocation.TabIndex = 5;
             // 
             // label101
@@ -2860,7 +2864,7 @@
             this.tbRaceName.Location = new System.Drawing.Point(96, 31);
             this.tbRaceName.Margin = new System.Windows.Forms.Padding(2);
             this.tbRaceName.Name = "tbRaceName";
-            this.tbRaceName.Size = new System.Drawing.Size(293, 20);
+            this.tbRaceName.Size = new System.Drawing.Size(211, 20);
             this.tbRaceName.TabIndex = 3;
             // 
             // label100
@@ -2995,39 +2999,6 @@
             this.Id.Name = "Id";
             this.Id.Visible = false;
             // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            this.nameDataGridViewTextBoxColumn.Width = 200;
-            // 
-            // nicknameDataGridViewTextBoxColumn
-            // 
-            this.nicknameDataGridViewTextBoxColumn.DataPropertyName = "Nickname";
-            this.nicknameDataGridViewTextBoxColumn.HeaderText = "Nickname";
-            this.nicknameDataGridViewTextBoxColumn.Name = "nicknameDataGridViewTextBoxColumn";
-            // 
-            // teamDataGridViewTextBoxColumn
-            // 
-            this.teamDataGridViewTextBoxColumn.DataPropertyName = "Team";
-            this.teamDataGridViewTextBoxColumn.HeaderText = "Team";
-            this.teamDataGridViewTextBoxColumn.Name = "teamDataGridViewTextBoxColumn";
-            // 
-            // tagDataGridViewTextBoxColumn
-            // 
-            this.tagDataGridViewTextBoxColumn.DataPropertyName = "Tag";
-            this.tagDataGridViewTextBoxColumn.HeaderText = "TAG ID";
-            this.tagDataGridViewTextBoxColumn.Name = "tagDataGridViewTextBoxColumn";
-            this.tagDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // emailDataGridViewTextBoxColumn
-            // 
-            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
-            this.emailDataGridViewTextBoxColumn.HeaderText = "E-Mail";
-            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-            this.emailDataGridViewTextBoxColumn.Width = 200;
-            // 
             // Email
             // 
             this.Email.DataPropertyName = "ConfirmationString";
@@ -3040,10 +3011,6 @@
             this.Column1.HeaderText = "#";
             this.Column1.Name = "Column1";
             this.Column1.Width = 60;
-            // 
-            // bindingSourcePilots1
-            // 
-            this.bindingSourcePilots1.DataSource = typeof(RaceManager.Data.Pilot);
             // 
             // tabRounds
             // 
@@ -3074,8 +3041,8 @@
             // 
             this.tableLayoutPanel12.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel12.ColumnCount = 2;
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.40185F));
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 77.59815F));
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.24711F));
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 78.75288F));
             this.tableLayoutPanel12.Controls.Add(this.tabControl6, 1, 0);
             this.tableLayoutPanel12.Controls.Add(this.groupBox30, 0, 0);
             this.tableLayoutPanel12.Location = new System.Drawing.Point(2, 158);
@@ -3096,11 +3063,11 @@
             this.tabControl6.Controls.Add(this.tabPage28);
             this.tabControl6.Controls.Add(this.tabPage29);
             this.tabControl6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl6.Location = new System.Drawing.Point(294, 3);
+            this.tabControl6.Location = new System.Drawing.Point(279, 3);
             this.tabControl6.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl6.Name = "tabControl6";
             this.tabControl6.SelectedIndex = 0;
-            this.tabControl6.Size = new System.Drawing.Size(1003, 150);
+            this.tabControl6.Size = new System.Drawing.Size(1018, 150);
             this.tabControl6.TabIndex = 2;
             // 
             // tabPage22
@@ -3110,7 +3077,7 @@
             this.tabPage22.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage22.Name = "tabPage22";
             this.tabPage22.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage22.Size = new System.Drawing.Size(995, 124);
+            this.tabPage22.Size = new System.Drawing.Size(1010, 124);
             this.tabPage22.TabIndex = 0;
             this.tabPage22.Text = "Race 1";
             this.tabPage22.UseVisualStyleBackColor = true;
@@ -3134,49 +3101,8 @@
             this.gvRace1.Name = "gvRace1";
             this.gvRace1.ReadOnly = true;
             this.gvRace1.RowTemplate.Height = 24;
-            this.gvRace1.Size = new System.Drawing.Size(991, 120);
+            this.gvRace1.Size = new System.Drawing.Size(1006, 120);
             this.gvRace1.TabIndex = 0;
-            // 
-            // dataGridViewTextBoxColumn213
-            // 
-            this.dataGridViewTextBoxColumn213.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn213.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn213.Name = "dataGridViewTextBoxColumn213";
-            this.dataGridViewTextBoxColumn213.ReadOnly = true;
-            this.dataGridViewTextBoxColumn213.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn214
-            // 
-            this.dataGridViewTextBoxColumn214.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn214.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn214.Name = "dataGridViewTextBoxColumn214";
-            this.dataGridViewTextBoxColumn214.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn215
-            // 
-            this.dataGridViewTextBoxColumn215.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn215.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn215.Name = "dataGridViewTextBoxColumn215";
-            this.dataGridViewTextBoxColumn215.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn216
-            // 
-            this.dataGridViewTextBoxColumn216.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn216.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn216.Name = "dataGridViewTextBoxColumn216";
-            this.dataGridViewTextBoxColumn216.ReadOnly = true;
-            this.dataGridViewTextBoxColumn216.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn217
-            // 
-            this.dataGridViewTextBoxColumn217.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn217.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn217.Name = "dataGridViewTextBoxColumn217";
-            this.dataGridViewTextBoxColumn217.ReadOnly = true;
-            // 
-            // bindingSourcePilots
-            // 
-            this.bindingSourcePilots.DataSource = typeof(RaceManager.Data.Pilot);
             // 
             // tabPage23
             // 
@@ -3185,7 +3111,7 @@
             this.tabPage23.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage23.Name = "tabPage23";
             this.tabPage23.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage23.Size = new System.Drawing.Size(995, 124);
+            this.tabPage23.Size = new System.Drawing.Size(1010, 124);
             this.tabPage23.TabIndex = 1;
             this.tabPage23.Text = "Race 2";
             this.tabPage23.UseVisualStyleBackColor = true;
@@ -3209,45 +3135,8 @@
             this.gvRace2.Name = "gvRace2";
             this.gvRace2.ReadOnly = true;
             this.gvRace2.RowTemplate.Height = 24;
-            this.gvRace2.Size = new System.Drawing.Size(991, 120);
+            this.gvRace2.Size = new System.Drawing.Size(1006, 120);
             this.gvRace2.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn218
-            // 
-            this.dataGridViewTextBoxColumn218.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn218.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn218.Name = "dataGridViewTextBoxColumn218";
-            this.dataGridViewTextBoxColumn218.ReadOnly = true;
-            this.dataGridViewTextBoxColumn218.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn219
-            // 
-            this.dataGridViewTextBoxColumn219.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn219.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn219.Name = "dataGridViewTextBoxColumn219";
-            this.dataGridViewTextBoxColumn219.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn220
-            // 
-            this.dataGridViewTextBoxColumn220.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn220.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn220.Name = "dataGridViewTextBoxColumn220";
-            this.dataGridViewTextBoxColumn220.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn221
-            // 
-            this.dataGridViewTextBoxColumn221.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn221.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn221.Name = "dataGridViewTextBoxColumn221";
-            this.dataGridViewTextBoxColumn221.ReadOnly = true;
-            this.dataGridViewTextBoxColumn221.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn222
-            // 
-            this.dataGridViewTextBoxColumn222.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn222.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn222.Name = "dataGridViewTextBoxColumn222";
-            this.dataGridViewTextBoxColumn222.ReadOnly = true;
             // 
             // tabPage24
             // 
@@ -3256,7 +3145,7 @@
             this.tabPage24.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage24.Name = "tabPage24";
             this.tabPage24.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage24.Size = new System.Drawing.Size(995, 124);
+            this.tabPage24.Size = new System.Drawing.Size(1010, 124);
             this.tabPage24.TabIndex = 2;
             this.tabPage24.Text = "Race 3";
             this.tabPage24.UseVisualStyleBackColor = true;
@@ -3280,45 +3169,8 @@
             this.gvRace3.Name = "gvRace3";
             this.gvRace3.ReadOnly = true;
             this.gvRace3.RowTemplate.Height = 24;
-            this.gvRace3.Size = new System.Drawing.Size(991, 120);
+            this.gvRace3.Size = new System.Drawing.Size(1006, 120);
             this.gvRace3.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn223
-            // 
-            this.dataGridViewTextBoxColumn223.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn223.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn223.Name = "dataGridViewTextBoxColumn223";
-            this.dataGridViewTextBoxColumn223.ReadOnly = true;
-            this.dataGridViewTextBoxColumn223.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn224
-            // 
-            this.dataGridViewTextBoxColumn224.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn224.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn224.Name = "dataGridViewTextBoxColumn224";
-            this.dataGridViewTextBoxColumn224.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn225
-            // 
-            this.dataGridViewTextBoxColumn225.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn225.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn225.Name = "dataGridViewTextBoxColumn225";
-            this.dataGridViewTextBoxColumn225.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn226
-            // 
-            this.dataGridViewTextBoxColumn226.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn226.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn226.Name = "dataGridViewTextBoxColumn226";
-            this.dataGridViewTextBoxColumn226.ReadOnly = true;
-            this.dataGridViewTextBoxColumn226.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn227
-            // 
-            this.dataGridViewTextBoxColumn227.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn227.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn227.Name = "dataGridViewTextBoxColumn227";
-            this.dataGridViewTextBoxColumn227.ReadOnly = true;
             // 
             // tabPage25
             // 
@@ -3327,7 +3179,7 @@
             this.tabPage25.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage25.Name = "tabPage25";
             this.tabPage25.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage25.Size = new System.Drawing.Size(995, 124);
+            this.tabPage25.Size = new System.Drawing.Size(1010, 124);
             this.tabPage25.TabIndex = 3;
             this.tabPage25.Text = "Race 4";
             this.tabPage25.UseVisualStyleBackColor = true;
@@ -3351,45 +3203,8 @@
             this.gvRace4.Name = "gvRace4";
             this.gvRace4.ReadOnly = true;
             this.gvRace4.RowTemplate.Height = 24;
-            this.gvRace4.Size = new System.Drawing.Size(991, 120);
+            this.gvRace4.Size = new System.Drawing.Size(1006, 120);
             this.gvRace4.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn228
-            // 
-            this.dataGridViewTextBoxColumn228.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn228.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn228.Name = "dataGridViewTextBoxColumn228";
-            this.dataGridViewTextBoxColumn228.ReadOnly = true;
-            this.dataGridViewTextBoxColumn228.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn229
-            // 
-            this.dataGridViewTextBoxColumn229.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn229.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn229.Name = "dataGridViewTextBoxColumn229";
-            this.dataGridViewTextBoxColumn229.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn230
-            // 
-            this.dataGridViewTextBoxColumn230.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn230.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn230.Name = "dataGridViewTextBoxColumn230";
-            this.dataGridViewTextBoxColumn230.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn231
-            // 
-            this.dataGridViewTextBoxColumn231.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn231.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn231.Name = "dataGridViewTextBoxColumn231";
-            this.dataGridViewTextBoxColumn231.ReadOnly = true;
-            this.dataGridViewTextBoxColumn231.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn232
-            // 
-            this.dataGridViewTextBoxColumn232.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn232.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn232.Name = "dataGridViewTextBoxColumn232";
-            this.dataGridViewTextBoxColumn232.ReadOnly = true;
             // 
             // tabPage26
             // 
@@ -3397,7 +3212,7 @@
             this.tabPage26.Location = new System.Drawing.Point(4, 22);
             this.tabPage26.Name = "tabPage26";
             this.tabPage26.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage26.Size = new System.Drawing.Size(995, 124);
+            this.tabPage26.Size = new System.Drawing.Size(1010, 124);
             this.tabPage26.TabIndex = 4;
             this.tabPage26.Text = "Race 5";
             this.tabPage26.UseVisualStyleBackColor = true;
@@ -3421,45 +3236,8 @@
             this.gvRace5.Name = "gvRace5";
             this.gvRace5.ReadOnly = true;
             this.gvRace5.RowTemplate.Height = 24;
-            this.gvRace5.Size = new System.Drawing.Size(989, 118);
+            this.gvRace5.Size = new System.Drawing.Size(1004, 118);
             this.gvRace5.TabIndex = 2;
-            // 
-            // dataGridViewTextBoxColumn233
-            // 
-            this.dataGridViewTextBoxColumn233.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn233.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn233.Name = "dataGridViewTextBoxColumn233";
-            this.dataGridViewTextBoxColumn233.ReadOnly = true;
-            this.dataGridViewTextBoxColumn233.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn234
-            // 
-            this.dataGridViewTextBoxColumn234.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn234.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn234.Name = "dataGridViewTextBoxColumn234";
-            this.dataGridViewTextBoxColumn234.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn235
-            // 
-            this.dataGridViewTextBoxColumn235.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn235.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn235.Name = "dataGridViewTextBoxColumn235";
-            this.dataGridViewTextBoxColumn235.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn236
-            // 
-            this.dataGridViewTextBoxColumn236.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn236.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn236.Name = "dataGridViewTextBoxColumn236";
-            this.dataGridViewTextBoxColumn236.ReadOnly = true;
-            this.dataGridViewTextBoxColumn236.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn237
-            // 
-            this.dataGridViewTextBoxColumn237.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn237.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn237.Name = "dataGridViewTextBoxColumn237";
-            this.dataGridViewTextBoxColumn237.ReadOnly = true;
             // 
             // tabPage27
             // 
@@ -3467,7 +3245,7 @@
             this.tabPage27.Location = new System.Drawing.Point(4, 22);
             this.tabPage27.Name = "tabPage27";
             this.tabPage27.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage27.Size = new System.Drawing.Size(995, 124);
+            this.tabPage27.Size = new System.Drawing.Size(1010, 124);
             this.tabPage27.TabIndex = 5;
             this.tabPage27.Text = "Race 6";
             this.tabPage27.UseVisualStyleBackColor = true;
@@ -3491,45 +3269,8 @@
             this.gvRace6.Name = "gvRace6";
             this.gvRace6.ReadOnly = true;
             this.gvRace6.RowTemplate.Height = 24;
-            this.gvRace6.Size = new System.Drawing.Size(989, 118);
+            this.gvRace6.Size = new System.Drawing.Size(1004, 118);
             this.gvRace6.TabIndex = 2;
-            // 
-            // dataGridViewTextBoxColumn238
-            // 
-            this.dataGridViewTextBoxColumn238.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn238.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn238.Name = "dataGridViewTextBoxColumn238";
-            this.dataGridViewTextBoxColumn238.ReadOnly = true;
-            this.dataGridViewTextBoxColumn238.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn239
-            // 
-            this.dataGridViewTextBoxColumn239.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn239.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn239.Name = "dataGridViewTextBoxColumn239";
-            this.dataGridViewTextBoxColumn239.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn240
-            // 
-            this.dataGridViewTextBoxColumn240.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn240.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn240.Name = "dataGridViewTextBoxColumn240";
-            this.dataGridViewTextBoxColumn240.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn241
-            // 
-            this.dataGridViewTextBoxColumn241.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn241.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn241.Name = "dataGridViewTextBoxColumn241";
-            this.dataGridViewTextBoxColumn241.ReadOnly = true;
-            this.dataGridViewTextBoxColumn241.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn242
-            // 
-            this.dataGridViewTextBoxColumn242.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn242.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn242.Name = "dataGridViewTextBoxColumn242";
-            this.dataGridViewTextBoxColumn242.ReadOnly = true;
             // 
             // tabPage28
             // 
@@ -3537,7 +3278,7 @@
             this.tabPage28.Location = new System.Drawing.Point(4, 22);
             this.tabPage28.Name = "tabPage28";
             this.tabPage28.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage28.Size = new System.Drawing.Size(995, 124);
+            this.tabPage28.Size = new System.Drawing.Size(1010, 124);
             this.tabPage28.TabIndex = 6;
             this.tabPage28.Text = "Race 7";
             this.tabPage28.UseVisualStyleBackColor = true;
@@ -3561,45 +3302,8 @@
             this.gvRace7.Name = "gvRace7";
             this.gvRace7.ReadOnly = true;
             this.gvRace7.RowTemplate.Height = 24;
-            this.gvRace7.Size = new System.Drawing.Size(989, 118);
+            this.gvRace7.Size = new System.Drawing.Size(1004, 118);
             this.gvRace7.TabIndex = 2;
-            // 
-            // dataGridViewTextBoxColumn243
-            // 
-            this.dataGridViewTextBoxColumn243.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn243.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn243.Name = "dataGridViewTextBoxColumn243";
-            this.dataGridViewTextBoxColumn243.ReadOnly = true;
-            this.dataGridViewTextBoxColumn243.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn244
-            // 
-            this.dataGridViewTextBoxColumn244.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn244.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn244.Name = "dataGridViewTextBoxColumn244";
-            this.dataGridViewTextBoxColumn244.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn245
-            // 
-            this.dataGridViewTextBoxColumn245.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn245.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn245.Name = "dataGridViewTextBoxColumn245";
-            this.dataGridViewTextBoxColumn245.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn246
-            // 
-            this.dataGridViewTextBoxColumn246.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn246.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn246.Name = "dataGridViewTextBoxColumn246";
-            this.dataGridViewTextBoxColumn246.ReadOnly = true;
-            this.dataGridViewTextBoxColumn246.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn247
-            // 
-            this.dataGridViewTextBoxColumn247.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn247.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn247.Name = "dataGridViewTextBoxColumn247";
-            this.dataGridViewTextBoxColumn247.ReadOnly = true;
             // 
             // tabPage29
             // 
@@ -3607,7 +3311,7 @@
             this.tabPage29.Location = new System.Drawing.Point(4, 22);
             this.tabPage29.Name = "tabPage29";
             this.tabPage29.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage29.Size = new System.Drawing.Size(995, 124);
+            this.tabPage29.Size = new System.Drawing.Size(1010, 124);
             this.tabPage29.TabIndex = 7;
             this.tabPage29.Text = "Race 8";
             this.tabPage29.UseVisualStyleBackColor = true;
@@ -3631,63 +3335,37 @@
             this.gvRace8.Name = "gvRace8";
             this.gvRace8.ReadOnly = true;
             this.gvRace8.RowTemplate.Height = 24;
-            this.gvRace8.Size = new System.Drawing.Size(989, 118);
+            this.gvRace8.Size = new System.Drawing.Size(1004, 118);
             this.gvRace8.TabIndex = 2;
-            // 
-            // dataGridViewTextBoxColumn248
-            // 
-            this.dataGridViewTextBoxColumn248.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn248.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn248.Name = "dataGridViewTextBoxColumn248";
-            this.dataGridViewTextBoxColumn248.ReadOnly = true;
-            this.dataGridViewTextBoxColumn248.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn249
-            // 
-            this.dataGridViewTextBoxColumn249.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn249.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn249.Name = "dataGridViewTextBoxColumn249";
-            this.dataGridViewTextBoxColumn249.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn250
-            // 
-            this.dataGridViewTextBoxColumn250.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn250.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn250.Name = "dataGridViewTextBoxColumn250";
-            this.dataGridViewTextBoxColumn250.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn251
-            // 
-            this.dataGridViewTextBoxColumn251.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn251.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn251.Name = "dataGridViewTextBoxColumn251";
-            this.dataGridViewTextBoxColumn251.ReadOnly = true;
-            this.dataGridViewTextBoxColumn251.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn252
-            // 
-            this.dataGridViewTextBoxColumn252.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn252.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn252.Name = "dataGridViewTextBoxColumn252";
-            this.dataGridViewTextBoxColumn252.ReadOnly = true;
             // 
             // groupBox30
             // 
+            this.groupBox30.Controls.Add(this.btnManAddPilotsTo18F);
             this.groupBox30.Controls.Add(this.btnAddPilotsTo18F);
             this.groupBox30.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox30.Location = new System.Drawing.Point(4, 4);
             this.groupBox30.Name = "groupBox30";
-            this.groupBox30.Size = new System.Drawing.Size(284, 148);
+            this.groupBox30.Size = new System.Drawing.Size(269, 148);
             this.groupBox30.TabIndex = 0;
             this.groupBox30.TabStop = false;
             this.groupBox30.Text = "1 / 8   ROUND";
             // 
+            // btnManAddPilotsTo18F
+            // 
+            this.btnManAddPilotsTo18F.Location = new System.Drawing.Point(25, 86);
+            this.btnManAddPilotsTo18F.Name = "btnManAddPilotsTo18F";
+            this.btnManAddPilotsTo18F.Size = new System.Drawing.Size(208, 36);
+            this.btnManAddPilotsTo18F.TabIndex = 3;
+            this.btnManAddPilotsTo18F.Text = "Manually Add Pilots";
+            this.btnManAddPilotsTo18F.UseVisualStyleBackColor = true;
+            this.btnManAddPilotsTo18F.Click += new System.EventHandler(this.btnManAddPilotsTo18F_Click);
+            // 
             // btnAddPilotsTo18F
             // 
-            this.btnAddPilotsTo18F.Location = new System.Drawing.Point(25, 56);
+            this.btnAddPilotsTo18F.Location = new System.Drawing.Point(25, 35);
             this.btnAddPilotsTo18F.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddPilotsTo18F.Name = "btnAddPilotsTo18F";
-            this.btnAddPilotsTo18F.Size = new System.Drawing.Size(176, 36);
+            this.btnAddPilotsTo18F.Size = new System.Drawing.Size(208, 36);
             this.btnAddPilotsTo18F.TabIndex = 3;
             this.btnAddPilotsTo18F.Text = "Add Pilots to 1/8 round";
             this.btnAddPilotsTo18F.UseVisualStyleBackColor = true;
@@ -3697,8 +3375,8 @@
             // 
             this.tableLayoutPanel7.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel7.ColumnCount = 2;
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.4359F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 77.5641F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.24711F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 78.75288F));
             this.tableLayoutPanel7.Controls.Add(this.groupBox29, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.tabControl2, 1, 0);
             this.tableLayoutPanel7.Location = new System.Drawing.Point(2, 2);
@@ -3718,17 +3396,17 @@
             this.groupBox29.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox29.Name = "groupBox29";
             this.groupBox29.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox29.Size = new System.Drawing.Size(286, 150);
+            this.groupBox29.Size = new System.Drawing.Size(271, 150);
             this.groupBox29.TabIndex = 0;
             this.groupBox29.TabStop = false;
             this.groupBox29.Text = "QUALIFICATION ROUND";
             // 
             // btnAddPilotsToQR
             // 
-            this.btnAddPilotsToQR.Location = new System.Drawing.Point(25, 50);
+            this.btnAddPilotsToQR.Location = new System.Drawing.Point(26, 62);
             this.btnAddPilotsToQR.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddPilotsToQR.Name = "btnAddPilotsToQR";
-            this.btnAddPilotsToQR.Size = new System.Drawing.Size(176, 36);
+            this.btnAddPilotsToQR.Size = new System.Drawing.Size(208, 36);
             this.btnAddPilotsToQR.TabIndex = 2;
             this.btnAddPilotsToQR.Text = "Add Pilots to Qualification Round";
             this.btnAddPilotsToQR.UseVisualStyleBackColor = true;
@@ -3763,11 +3441,11 @@
             this.tabControl2.Controls.Add(this.tabPage20);
             this.tabControl2.Controls.Add(this.tabPage21);
             this.tabControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl2.Location = new System.Drawing.Point(294, 3);
+            this.tabControl2.Location = new System.Drawing.Point(279, 3);
             this.tabControl2.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(1003, 150);
+            this.tabControl2.Size = new System.Drawing.Size(1018, 150);
             this.tabControl2.TabIndex = 1;
             // 
             // pageGroupA
@@ -3777,7 +3455,7 @@
             this.pageGroupA.Margin = new System.Windows.Forms.Padding(2);
             this.pageGroupA.Name = "pageGroupA";
             this.pageGroupA.Padding = new System.Windows.Forms.Padding(2);
-            this.pageGroupA.Size = new System.Drawing.Size(995, 124);
+            this.pageGroupA.Size = new System.Drawing.Size(1010, 124);
             this.pageGroupA.TabIndex = 0;
             this.pageGroupA.Text = "Group A";
             this.pageGroupA.UseVisualStyleBackColor = true;
@@ -3801,45 +3479,8 @@
             this.gvGroupA.Name = "gvGroupA";
             this.gvGroupA.ReadOnly = true;
             this.gvGroupA.RowTemplate.Height = 24;
-            this.gvGroupA.Size = new System.Drawing.Size(991, 120);
+            this.gvGroupA.Size = new System.Drawing.Size(1006, 120);
             this.gvGroupA.TabIndex = 0;
-            // 
-            // nameDataGridViewTextBoxColumn1
-            // 
-            this.nameDataGridViewTextBoxColumn1.DataPropertyName = "Name";
-            this.nameDataGridViewTextBoxColumn1.HeaderText = "Name";
-            this.nameDataGridViewTextBoxColumn1.Name = "nameDataGridViewTextBoxColumn1";
-            this.nameDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.nameDataGridViewTextBoxColumn1.Width = 200;
-            // 
-            // nicknameDataGridViewTextBoxColumn1
-            // 
-            this.nicknameDataGridViewTextBoxColumn1.DataPropertyName = "Nickname";
-            this.nicknameDataGridViewTextBoxColumn1.HeaderText = "Nickname";
-            this.nicknameDataGridViewTextBoxColumn1.Name = "nicknameDataGridViewTextBoxColumn1";
-            this.nicknameDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // teamDataGridViewTextBoxColumn1
-            // 
-            this.teamDataGridViewTextBoxColumn1.DataPropertyName = "Team";
-            this.teamDataGridViewTextBoxColumn1.HeaderText = "Team";
-            this.teamDataGridViewTextBoxColumn1.Name = "teamDataGridViewTextBoxColumn1";
-            this.teamDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // tagDataGridViewTextBoxColumn1
-            // 
-            this.tagDataGridViewTextBoxColumn1.DataPropertyName = "Tag";
-            this.tagDataGridViewTextBoxColumn1.HeaderText = "TAG ID";
-            this.tagDataGridViewTextBoxColumn1.Name = "tagDataGridViewTextBoxColumn1";
-            this.tagDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.tagDataGridViewTextBoxColumn1.Width = 300;
-            // 
-            // emailDataGridViewTextBoxColumn1
-            // 
-            this.emailDataGridViewTextBoxColumn1.DataPropertyName = "Email";
-            this.emailDataGridViewTextBoxColumn1.HeaderText = "E-Mail";
-            this.emailDataGridViewTextBoxColumn1.Name = "emailDataGridViewTextBoxColumn1";
-            this.emailDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // pageGroupB
             // 
@@ -3848,7 +3489,7 @@
             this.pageGroupB.Margin = new System.Windows.Forms.Padding(2);
             this.pageGroupB.Name = "pageGroupB";
             this.pageGroupB.Padding = new System.Windows.Forms.Padding(2);
-            this.pageGroupB.Size = new System.Drawing.Size(995, 124);
+            this.pageGroupB.Size = new System.Drawing.Size(1010, 124);
             this.pageGroupB.TabIndex = 1;
             this.pageGroupB.Text = "Group B";
             this.pageGroupB.UseVisualStyleBackColor = true;
@@ -3872,45 +3513,8 @@
             this.gvGroupB.Name = "gvGroupB";
             this.gvGroupB.ReadOnly = true;
             this.gvGroupB.RowTemplate.Height = 24;
-            this.gvGroupB.Size = new System.Drawing.Size(991, 120);
+            this.gvGroupB.Size = new System.Drawing.Size(1006, 120);
             this.gvGroupB.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn5.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            this.dataGridViewTextBoxColumn5.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn6.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
             // 
             // pageGroupC
             // 
@@ -3919,7 +3523,7 @@
             this.pageGroupC.Margin = new System.Windows.Forms.Padding(2);
             this.pageGroupC.Name = "pageGroupC";
             this.pageGroupC.Padding = new System.Windows.Forms.Padding(2);
-            this.pageGroupC.Size = new System.Drawing.Size(995, 124);
+            this.pageGroupC.Size = new System.Drawing.Size(1010, 124);
             this.pageGroupC.TabIndex = 2;
             this.pageGroupC.Text = "Group C";
             this.pageGroupC.UseVisualStyleBackColor = true;
@@ -3943,45 +3547,8 @@
             this.gvGroupC.Name = "gvGroupC";
             this.gvGroupC.ReadOnly = true;
             this.gvGroupC.RowTemplate.Height = 24;
-            this.gvGroupC.Size = new System.Drawing.Size(991, 120);
+            this.gvGroupC.Size = new System.Drawing.Size(1006, 120);
             this.gvGroupC.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn9.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.ReadOnly = true;
-            this.dataGridViewTextBoxColumn9.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn10.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn11.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn12.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.ReadOnly = true;
-            this.dataGridViewTextBoxColumn12.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn13
-            // 
-            this.dataGridViewTextBoxColumn13.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn13.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            this.dataGridViewTextBoxColumn13.ReadOnly = true;
             // 
             // pageGroupD
             // 
@@ -3990,7 +3557,7 @@
             this.pageGroupD.Margin = new System.Windows.Forms.Padding(2);
             this.pageGroupD.Name = "pageGroupD";
             this.pageGroupD.Padding = new System.Windows.Forms.Padding(2);
-            this.pageGroupD.Size = new System.Drawing.Size(995, 124);
+            this.pageGroupD.Size = new System.Drawing.Size(1010, 124);
             this.pageGroupD.TabIndex = 3;
             this.pageGroupD.Text = "Group D";
             this.pageGroupD.UseVisualStyleBackColor = true;
@@ -4014,45 +3581,8 @@
             this.gvGroupD.Name = "gvGroupD";
             this.gvGroupD.ReadOnly = true;
             this.gvGroupD.RowTemplate.Height = 24;
-            this.gvGroupD.Size = new System.Drawing.Size(991, 120);
+            this.gvGroupD.Size = new System.Drawing.Size(1006, 120);
             this.gvGroupD.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn16
-            // 
-            this.dataGridViewTextBoxColumn16.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn16.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
-            this.dataGridViewTextBoxColumn16.ReadOnly = true;
-            this.dataGridViewTextBoxColumn16.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn17
-            // 
-            this.dataGridViewTextBoxColumn17.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn17.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
-            this.dataGridViewTextBoxColumn17.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn18
-            // 
-            this.dataGridViewTextBoxColumn18.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn18.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
-            this.dataGridViewTextBoxColumn18.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn19
-            // 
-            this.dataGridViewTextBoxColumn19.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn19.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
-            this.dataGridViewTextBoxColumn19.ReadOnly = true;
-            this.dataGridViewTextBoxColumn19.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn20
-            // 
-            this.dataGridViewTextBoxColumn20.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn20.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
-            this.dataGridViewTextBoxColumn20.ReadOnly = true;
             // 
             // pageGroupE
             // 
@@ -4061,7 +3591,7 @@
             this.pageGroupE.Margin = new System.Windows.Forms.Padding(2);
             this.pageGroupE.Name = "pageGroupE";
             this.pageGroupE.Padding = new System.Windows.Forms.Padding(2);
-            this.pageGroupE.Size = new System.Drawing.Size(995, 124);
+            this.pageGroupE.Size = new System.Drawing.Size(1010, 124);
             this.pageGroupE.TabIndex = 4;
             this.pageGroupE.Text = "Group E";
             this.pageGroupE.UseVisualStyleBackColor = true;
@@ -4085,45 +3615,8 @@
             this.gvGroupE.Name = "gvGroupE";
             this.gvGroupE.ReadOnly = true;
             this.gvGroupE.RowTemplate.Height = 24;
-            this.gvGroupE.Size = new System.Drawing.Size(991, 120);
+            this.gvGroupE.Size = new System.Drawing.Size(1006, 120);
             this.gvGroupE.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn23
-            // 
-            this.dataGridViewTextBoxColumn23.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn23.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
-            this.dataGridViewTextBoxColumn23.ReadOnly = true;
-            this.dataGridViewTextBoxColumn23.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn24
-            // 
-            this.dataGridViewTextBoxColumn24.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn24.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
-            this.dataGridViewTextBoxColumn24.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn25
-            // 
-            this.dataGridViewTextBoxColumn25.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn25.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
-            this.dataGridViewTextBoxColumn25.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn26
-            // 
-            this.dataGridViewTextBoxColumn26.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn26.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
-            this.dataGridViewTextBoxColumn26.ReadOnly = true;
-            this.dataGridViewTextBoxColumn26.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn27
-            // 
-            this.dataGridViewTextBoxColumn27.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn27.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
-            this.dataGridViewTextBoxColumn27.ReadOnly = true;
             // 
             // pageGroupF
             // 
@@ -4132,7 +3625,7 @@
             this.pageGroupF.Margin = new System.Windows.Forms.Padding(2);
             this.pageGroupF.Name = "pageGroupF";
             this.pageGroupF.Padding = new System.Windows.Forms.Padding(2);
-            this.pageGroupF.Size = new System.Drawing.Size(995, 124);
+            this.pageGroupF.Size = new System.Drawing.Size(1010, 124);
             this.pageGroupF.TabIndex = 5;
             this.pageGroupF.Text = "GroupF";
             this.pageGroupF.UseVisualStyleBackColor = true;
@@ -4156,45 +3649,8 @@
             this.gvGroupF.Name = "gvGroupF";
             this.gvGroupF.ReadOnly = true;
             this.gvGroupF.RowTemplate.Height = 24;
-            this.gvGroupF.Size = new System.Drawing.Size(991, 120);
+            this.gvGroupF.Size = new System.Drawing.Size(1006, 120);
             this.gvGroupF.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn30
-            // 
-            this.dataGridViewTextBoxColumn30.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn30.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
-            this.dataGridViewTextBoxColumn30.ReadOnly = true;
-            this.dataGridViewTextBoxColumn30.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn31
-            // 
-            this.dataGridViewTextBoxColumn31.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn31.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
-            this.dataGridViewTextBoxColumn31.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn32
-            // 
-            this.dataGridViewTextBoxColumn32.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn32.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn32.Name = "dataGridViewTextBoxColumn32";
-            this.dataGridViewTextBoxColumn32.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn33
-            // 
-            this.dataGridViewTextBoxColumn33.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn33.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
-            this.dataGridViewTextBoxColumn33.ReadOnly = true;
-            this.dataGridViewTextBoxColumn33.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn34
-            // 
-            this.dataGridViewTextBoxColumn34.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn34.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn34.Name = "dataGridViewTextBoxColumn34";
-            this.dataGridViewTextBoxColumn34.ReadOnly = true;
             // 
             // pageGroupG
             // 
@@ -4203,7 +3659,7 @@
             this.pageGroupG.Margin = new System.Windows.Forms.Padding(2);
             this.pageGroupG.Name = "pageGroupG";
             this.pageGroupG.Padding = new System.Windows.Forms.Padding(2);
-            this.pageGroupG.Size = new System.Drawing.Size(995, 124);
+            this.pageGroupG.Size = new System.Drawing.Size(1010, 124);
             this.pageGroupG.TabIndex = 6;
             this.pageGroupG.Text = "Group G";
             this.pageGroupG.UseVisualStyleBackColor = true;
@@ -4227,45 +3683,8 @@
             this.gvGroupG.Name = "gvGroupG";
             this.gvGroupG.ReadOnly = true;
             this.gvGroupG.RowTemplate.Height = 24;
-            this.gvGroupG.Size = new System.Drawing.Size(991, 120);
+            this.gvGroupG.Size = new System.Drawing.Size(1006, 120);
             this.gvGroupG.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn37
-            // 
-            this.dataGridViewTextBoxColumn37.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn37.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn37.Name = "dataGridViewTextBoxColumn37";
-            this.dataGridViewTextBoxColumn37.ReadOnly = true;
-            this.dataGridViewTextBoxColumn37.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn38
-            // 
-            this.dataGridViewTextBoxColumn38.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn38.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn38.Name = "dataGridViewTextBoxColumn38";
-            this.dataGridViewTextBoxColumn38.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn39
-            // 
-            this.dataGridViewTextBoxColumn39.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn39.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn39.Name = "dataGridViewTextBoxColumn39";
-            this.dataGridViewTextBoxColumn39.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn40
-            // 
-            this.dataGridViewTextBoxColumn40.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn40.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn40.Name = "dataGridViewTextBoxColumn40";
-            this.dataGridViewTextBoxColumn40.ReadOnly = true;
-            this.dataGridViewTextBoxColumn40.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn41
-            // 
-            this.dataGridViewTextBoxColumn41.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn41.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn41.Name = "dataGridViewTextBoxColumn41";
-            this.dataGridViewTextBoxColumn41.ReadOnly = true;
             // 
             // pageGroupH
             // 
@@ -4274,7 +3693,7 @@
             this.pageGroupH.Margin = new System.Windows.Forms.Padding(2);
             this.pageGroupH.Name = "pageGroupH";
             this.pageGroupH.Padding = new System.Windows.Forms.Padding(2);
-            this.pageGroupH.Size = new System.Drawing.Size(995, 124);
+            this.pageGroupH.Size = new System.Drawing.Size(1010, 124);
             this.pageGroupH.TabIndex = 7;
             this.pageGroupH.Text = "Group H";
             this.pageGroupH.UseVisualStyleBackColor = true;
@@ -4298,45 +3717,8 @@
             this.gvGroupH.Name = "gvGroupH";
             this.gvGroupH.ReadOnly = true;
             this.gvGroupH.RowTemplate.Height = 24;
-            this.gvGroupH.Size = new System.Drawing.Size(991, 120);
+            this.gvGroupH.Size = new System.Drawing.Size(1006, 120);
             this.gvGroupH.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn44
-            // 
-            this.dataGridViewTextBoxColumn44.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn44.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn44.Name = "dataGridViewTextBoxColumn44";
-            this.dataGridViewTextBoxColumn44.ReadOnly = true;
-            this.dataGridViewTextBoxColumn44.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn45
-            // 
-            this.dataGridViewTextBoxColumn45.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn45.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn45.Name = "dataGridViewTextBoxColumn45";
-            this.dataGridViewTextBoxColumn45.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn46
-            // 
-            this.dataGridViewTextBoxColumn46.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn46.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn46.Name = "dataGridViewTextBoxColumn46";
-            this.dataGridViewTextBoxColumn46.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn47
-            // 
-            this.dataGridViewTextBoxColumn47.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn47.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn47.Name = "dataGridViewTextBoxColumn47";
-            this.dataGridViewTextBoxColumn47.ReadOnly = true;
-            this.dataGridViewTextBoxColumn47.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn48
-            // 
-            this.dataGridViewTextBoxColumn48.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn48.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn48.Name = "dataGridViewTextBoxColumn48";
-            this.dataGridViewTextBoxColumn48.ReadOnly = true;
             // 
             // pageGroupI
             // 
@@ -4345,7 +3727,7 @@
             this.pageGroupI.Margin = new System.Windows.Forms.Padding(2);
             this.pageGroupI.Name = "pageGroupI";
             this.pageGroupI.Padding = new System.Windows.Forms.Padding(2);
-            this.pageGroupI.Size = new System.Drawing.Size(995, 124);
+            this.pageGroupI.Size = new System.Drawing.Size(1010, 124);
             this.pageGroupI.TabIndex = 8;
             this.pageGroupI.Text = "Group I";
             this.pageGroupI.UseVisualStyleBackColor = true;
@@ -4369,45 +3751,8 @@
             this.gvGroupI.Name = "gvGroupI";
             this.gvGroupI.ReadOnly = true;
             this.gvGroupI.RowTemplate.Height = 24;
-            this.gvGroupI.Size = new System.Drawing.Size(991, 120);
+            this.gvGroupI.Size = new System.Drawing.Size(1006, 120);
             this.gvGroupI.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn51
-            // 
-            this.dataGridViewTextBoxColumn51.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn51.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn51.Name = "dataGridViewTextBoxColumn51";
-            this.dataGridViewTextBoxColumn51.ReadOnly = true;
-            this.dataGridViewTextBoxColumn51.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn52
-            // 
-            this.dataGridViewTextBoxColumn52.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn52.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn52.Name = "dataGridViewTextBoxColumn52";
-            this.dataGridViewTextBoxColumn52.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn53
-            // 
-            this.dataGridViewTextBoxColumn53.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn53.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn53.Name = "dataGridViewTextBoxColumn53";
-            this.dataGridViewTextBoxColumn53.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn54
-            // 
-            this.dataGridViewTextBoxColumn54.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn54.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn54.Name = "dataGridViewTextBoxColumn54";
-            this.dataGridViewTextBoxColumn54.ReadOnly = true;
-            this.dataGridViewTextBoxColumn54.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn55
-            // 
-            this.dataGridViewTextBoxColumn55.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn55.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn55.Name = "dataGridViewTextBoxColumn55";
-            this.dataGridViewTextBoxColumn55.ReadOnly = true;
             // 
             // pageGroupJ
             // 
@@ -4416,7 +3761,7 @@
             this.pageGroupJ.Margin = new System.Windows.Forms.Padding(2);
             this.pageGroupJ.Name = "pageGroupJ";
             this.pageGroupJ.Padding = new System.Windows.Forms.Padding(2);
-            this.pageGroupJ.Size = new System.Drawing.Size(995, 124);
+            this.pageGroupJ.Size = new System.Drawing.Size(1010, 124);
             this.pageGroupJ.TabIndex = 9;
             this.pageGroupJ.Text = "Group J";
             this.pageGroupJ.UseVisualStyleBackColor = true;
@@ -4440,45 +3785,8 @@
             this.gvGroupJ.Name = "gvGroupJ";
             this.gvGroupJ.ReadOnly = true;
             this.gvGroupJ.RowTemplate.Height = 24;
-            this.gvGroupJ.Size = new System.Drawing.Size(991, 120);
+            this.gvGroupJ.Size = new System.Drawing.Size(1006, 120);
             this.gvGroupJ.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn58
-            // 
-            this.dataGridViewTextBoxColumn58.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn58.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn58.Name = "dataGridViewTextBoxColumn58";
-            this.dataGridViewTextBoxColumn58.ReadOnly = true;
-            this.dataGridViewTextBoxColumn58.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn59
-            // 
-            this.dataGridViewTextBoxColumn59.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn59.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn59.Name = "dataGridViewTextBoxColumn59";
-            this.dataGridViewTextBoxColumn59.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn60
-            // 
-            this.dataGridViewTextBoxColumn60.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn60.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn60.Name = "dataGridViewTextBoxColumn60";
-            this.dataGridViewTextBoxColumn60.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn61
-            // 
-            this.dataGridViewTextBoxColumn61.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn61.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn61.Name = "dataGridViewTextBoxColumn61";
-            this.dataGridViewTextBoxColumn61.ReadOnly = true;
-            this.dataGridViewTextBoxColumn61.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn62
-            // 
-            this.dataGridViewTextBoxColumn62.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn62.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn62.Name = "dataGridViewTextBoxColumn62";
-            this.dataGridViewTextBoxColumn62.ReadOnly = true;
             // 
             // pageGroupK
             // 
@@ -4487,7 +3795,7 @@
             this.pageGroupK.Margin = new System.Windows.Forms.Padding(2);
             this.pageGroupK.Name = "pageGroupK";
             this.pageGroupK.Padding = new System.Windows.Forms.Padding(2);
-            this.pageGroupK.Size = new System.Drawing.Size(995, 124);
+            this.pageGroupK.Size = new System.Drawing.Size(1010, 124);
             this.pageGroupK.TabIndex = 10;
             this.pageGroupK.Text = "Group K";
             this.pageGroupK.UseVisualStyleBackColor = true;
@@ -4511,45 +3819,8 @@
             this.gvGroupK.Name = "gvGroupK";
             this.gvGroupK.ReadOnly = true;
             this.gvGroupK.RowTemplate.Height = 24;
-            this.gvGroupK.Size = new System.Drawing.Size(991, 120);
+            this.gvGroupK.Size = new System.Drawing.Size(1006, 120);
             this.gvGroupK.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn65
-            // 
-            this.dataGridViewTextBoxColumn65.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn65.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn65.Name = "dataGridViewTextBoxColumn65";
-            this.dataGridViewTextBoxColumn65.ReadOnly = true;
-            this.dataGridViewTextBoxColumn65.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn66
-            // 
-            this.dataGridViewTextBoxColumn66.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn66.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn66.Name = "dataGridViewTextBoxColumn66";
-            this.dataGridViewTextBoxColumn66.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn67
-            // 
-            this.dataGridViewTextBoxColumn67.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn67.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn67.Name = "dataGridViewTextBoxColumn67";
-            this.dataGridViewTextBoxColumn67.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn68
-            // 
-            this.dataGridViewTextBoxColumn68.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn68.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn68.Name = "dataGridViewTextBoxColumn68";
-            this.dataGridViewTextBoxColumn68.ReadOnly = true;
-            this.dataGridViewTextBoxColumn68.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn69
-            // 
-            this.dataGridViewTextBoxColumn69.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn69.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn69.Name = "dataGridViewTextBoxColumn69";
-            this.dataGridViewTextBoxColumn69.ReadOnly = true;
             // 
             // pageGroupL
             // 
@@ -4558,7 +3829,7 @@
             this.pageGroupL.Margin = new System.Windows.Forms.Padding(2);
             this.pageGroupL.Name = "pageGroupL";
             this.pageGroupL.Padding = new System.Windows.Forms.Padding(2);
-            this.pageGroupL.Size = new System.Drawing.Size(995, 124);
+            this.pageGroupL.Size = new System.Drawing.Size(1010, 124);
             this.pageGroupL.TabIndex = 11;
             this.pageGroupL.Text = "Group L";
             this.pageGroupL.UseVisualStyleBackColor = true;
@@ -4582,45 +3853,8 @@
             this.gvGroupL.Name = "gvGroupL";
             this.gvGroupL.ReadOnly = true;
             this.gvGroupL.RowTemplate.Height = 24;
-            this.gvGroupL.Size = new System.Drawing.Size(991, 120);
+            this.gvGroupL.Size = new System.Drawing.Size(1006, 120);
             this.gvGroupL.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn72
-            // 
-            this.dataGridViewTextBoxColumn72.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn72.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn72.Name = "dataGridViewTextBoxColumn72";
-            this.dataGridViewTextBoxColumn72.ReadOnly = true;
-            this.dataGridViewTextBoxColumn72.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn73
-            // 
-            this.dataGridViewTextBoxColumn73.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn73.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn73.Name = "dataGridViewTextBoxColumn73";
-            this.dataGridViewTextBoxColumn73.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn74
-            // 
-            this.dataGridViewTextBoxColumn74.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn74.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn74.Name = "dataGridViewTextBoxColumn74";
-            this.dataGridViewTextBoxColumn74.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn75
-            // 
-            this.dataGridViewTextBoxColumn75.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn75.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn75.Name = "dataGridViewTextBoxColumn75";
-            this.dataGridViewTextBoxColumn75.ReadOnly = true;
-            this.dataGridViewTextBoxColumn75.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn76
-            // 
-            this.dataGridViewTextBoxColumn76.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn76.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn76.Name = "dataGridViewTextBoxColumn76";
-            this.dataGridViewTextBoxColumn76.ReadOnly = true;
             // 
             // pageGroupM
             // 
@@ -4629,7 +3863,7 @@
             this.pageGroupM.Margin = new System.Windows.Forms.Padding(2);
             this.pageGroupM.Name = "pageGroupM";
             this.pageGroupM.Padding = new System.Windows.Forms.Padding(2);
-            this.pageGroupM.Size = new System.Drawing.Size(995, 124);
+            this.pageGroupM.Size = new System.Drawing.Size(1010, 124);
             this.pageGroupM.TabIndex = 12;
             this.pageGroupM.Text = "Group M";
             this.pageGroupM.UseVisualStyleBackColor = true;
@@ -4653,45 +3887,8 @@
             this.gvGroupM.Name = "gvGroupM";
             this.gvGroupM.ReadOnly = true;
             this.gvGroupM.RowTemplate.Height = 24;
-            this.gvGroupM.Size = new System.Drawing.Size(991, 120);
+            this.gvGroupM.Size = new System.Drawing.Size(1006, 120);
             this.gvGroupM.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn79
-            // 
-            this.dataGridViewTextBoxColumn79.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn79.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn79.Name = "dataGridViewTextBoxColumn79";
-            this.dataGridViewTextBoxColumn79.ReadOnly = true;
-            this.dataGridViewTextBoxColumn79.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn80
-            // 
-            this.dataGridViewTextBoxColumn80.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn80.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn80.Name = "dataGridViewTextBoxColumn80";
-            this.dataGridViewTextBoxColumn80.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn81
-            // 
-            this.dataGridViewTextBoxColumn81.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn81.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn81.Name = "dataGridViewTextBoxColumn81";
-            this.dataGridViewTextBoxColumn81.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn82
-            // 
-            this.dataGridViewTextBoxColumn82.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn82.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn82.Name = "dataGridViewTextBoxColumn82";
-            this.dataGridViewTextBoxColumn82.ReadOnly = true;
-            this.dataGridViewTextBoxColumn82.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn83
-            // 
-            this.dataGridViewTextBoxColumn83.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn83.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn83.Name = "dataGridViewTextBoxColumn83";
-            this.dataGridViewTextBoxColumn83.ReadOnly = true;
             // 
             // pageGroupN
             // 
@@ -4699,7 +3896,7 @@
             this.pageGroupN.Location = new System.Drawing.Point(4, 22);
             this.pageGroupN.Margin = new System.Windows.Forms.Padding(2);
             this.pageGroupN.Name = "pageGroupN";
-            this.pageGroupN.Size = new System.Drawing.Size(995, 124);
+            this.pageGroupN.Size = new System.Drawing.Size(1010, 124);
             this.pageGroupN.TabIndex = 13;
             this.pageGroupN.Text = "Group N";
             this.pageGroupN.UseVisualStyleBackColor = true;
@@ -4723,45 +3920,8 @@
             this.gvGroupN.Name = "gvGroupN";
             this.gvGroupN.ReadOnly = true;
             this.gvGroupN.RowTemplate.Height = 24;
-            this.gvGroupN.Size = new System.Drawing.Size(995, 124);
+            this.gvGroupN.Size = new System.Drawing.Size(1010, 124);
             this.gvGroupN.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn86
-            // 
-            this.dataGridViewTextBoxColumn86.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn86.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn86.Name = "dataGridViewTextBoxColumn86";
-            this.dataGridViewTextBoxColumn86.ReadOnly = true;
-            this.dataGridViewTextBoxColumn86.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn87
-            // 
-            this.dataGridViewTextBoxColumn87.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn87.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn87.Name = "dataGridViewTextBoxColumn87";
-            this.dataGridViewTextBoxColumn87.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn88
-            // 
-            this.dataGridViewTextBoxColumn88.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn88.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn88.Name = "dataGridViewTextBoxColumn88";
-            this.dataGridViewTextBoxColumn88.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn89
-            // 
-            this.dataGridViewTextBoxColumn89.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn89.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn89.Name = "dataGridViewTextBoxColumn89";
-            this.dataGridViewTextBoxColumn89.ReadOnly = true;
-            this.dataGridViewTextBoxColumn89.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn90
-            // 
-            this.dataGridViewTextBoxColumn90.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn90.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn90.Name = "dataGridViewTextBoxColumn90";
-            this.dataGridViewTextBoxColumn90.ReadOnly = true;
             // 
             // pageGroupO
             // 
@@ -4769,7 +3929,7 @@
             this.pageGroupO.Location = new System.Drawing.Point(4, 22);
             this.pageGroupO.Margin = new System.Windows.Forms.Padding(2);
             this.pageGroupO.Name = "pageGroupO";
-            this.pageGroupO.Size = new System.Drawing.Size(995, 124);
+            this.pageGroupO.Size = new System.Drawing.Size(1010, 124);
             this.pageGroupO.TabIndex = 14;
             this.pageGroupO.Text = "Group O";
             this.pageGroupO.UseVisualStyleBackColor = true;
@@ -4793,45 +3953,8 @@
             this.gvGroupO.Name = "gvGroupO";
             this.gvGroupO.ReadOnly = true;
             this.gvGroupO.RowTemplate.Height = 24;
-            this.gvGroupO.Size = new System.Drawing.Size(995, 124);
+            this.gvGroupO.Size = new System.Drawing.Size(1010, 124);
             this.gvGroupO.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn93
-            // 
-            this.dataGridViewTextBoxColumn93.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn93.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn93.Name = "dataGridViewTextBoxColumn93";
-            this.dataGridViewTextBoxColumn93.ReadOnly = true;
-            this.dataGridViewTextBoxColumn93.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn94
-            // 
-            this.dataGridViewTextBoxColumn94.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn94.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn94.Name = "dataGridViewTextBoxColumn94";
-            this.dataGridViewTextBoxColumn94.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn95
-            // 
-            this.dataGridViewTextBoxColumn95.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn95.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn95.Name = "dataGridViewTextBoxColumn95";
-            this.dataGridViewTextBoxColumn95.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn96
-            // 
-            this.dataGridViewTextBoxColumn96.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn96.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn96.Name = "dataGridViewTextBoxColumn96";
-            this.dataGridViewTextBoxColumn96.ReadOnly = true;
-            this.dataGridViewTextBoxColumn96.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn97
-            // 
-            this.dataGridViewTextBoxColumn97.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn97.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn97.Name = "dataGridViewTextBoxColumn97";
-            this.dataGridViewTextBoxColumn97.ReadOnly = true;
             // 
             // tabPage11
             // 
@@ -4839,7 +3962,7 @@
             this.tabPage11.Location = new System.Drawing.Point(4, 22);
             this.tabPage11.Name = "tabPage11";
             this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage11.Size = new System.Drawing.Size(995, 124);
+            this.tabPage11.Size = new System.Drawing.Size(1010, 124);
             this.tabPage11.TabIndex = 15;
             this.tabPage11.Text = "Group P";
             this.tabPage11.UseVisualStyleBackColor = true;
@@ -4863,45 +3986,8 @@
             this.gvGroupP.Name = "gvGroupP";
             this.gvGroupP.ReadOnly = true;
             this.gvGroupP.RowTemplate.Height = 24;
-            this.gvGroupP.Size = new System.Drawing.Size(989, 118);
+            this.gvGroupP.Size = new System.Drawing.Size(1004, 118);
             this.gvGroupP.TabIndex = 2;
-            // 
-            // dataGridViewTextBoxColumn158
-            // 
-            this.dataGridViewTextBoxColumn158.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn158.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn158.Name = "dataGridViewTextBoxColumn158";
-            this.dataGridViewTextBoxColumn158.ReadOnly = true;
-            this.dataGridViewTextBoxColumn158.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn159
-            // 
-            this.dataGridViewTextBoxColumn159.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn159.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn159.Name = "dataGridViewTextBoxColumn159";
-            this.dataGridViewTextBoxColumn159.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn160
-            // 
-            this.dataGridViewTextBoxColumn160.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn160.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn160.Name = "dataGridViewTextBoxColumn160";
-            this.dataGridViewTextBoxColumn160.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn161
-            // 
-            this.dataGridViewTextBoxColumn161.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn161.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn161.Name = "dataGridViewTextBoxColumn161";
-            this.dataGridViewTextBoxColumn161.ReadOnly = true;
-            this.dataGridViewTextBoxColumn161.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn162
-            // 
-            this.dataGridViewTextBoxColumn162.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn162.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn162.Name = "dataGridViewTextBoxColumn162";
-            this.dataGridViewTextBoxColumn162.ReadOnly = true;
             // 
             // tabPage12
             // 
@@ -4909,7 +3995,7 @@
             this.tabPage12.Location = new System.Drawing.Point(4, 22);
             this.tabPage12.Name = "tabPage12";
             this.tabPage12.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage12.Size = new System.Drawing.Size(995, 124);
+            this.tabPage12.Size = new System.Drawing.Size(1010, 124);
             this.tabPage12.TabIndex = 16;
             this.tabPage12.Text = "Group Q";
             this.tabPage12.UseVisualStyleBackColor = true;
@@ -4933,45 +4019,8 @@
             this.gvGroupQ.Name = "gvGroupQ";
             this.gvGroupQ.ReadOnly = true;
             this.gvGroupQ.RowTemplate.Height = 24;
-            this.gvGroupQ.Size = new System.Drawing.Size(989, 118);
+            this.gvGroupQ.Size = new System.Drawing.Size(1004, 118);
             this.gvGroupQ.TabIndex = 2;
-            // 
-            // dataGridViewTextBoxColumn163
-            // 
-            this.dataGridViewTextBoxColumn163.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn163.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn163.Name = "dataGridViewTextBoxColumn163";
-            this.dataGridViewTextBoxColumn163.ReadOnly = true;
-            this.dataGridViewTextBoxColumn163.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn164
-            // 
-            this.dataGridViewTextBoxColumn164.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn164.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn164.Name = "dataGridViewTextBoxColumn164";
-            this.dataGridViewTextBoxColumn164.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn165
-            // 
-            this.dataGridViewTextBoxColumn165.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn165.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn165.Name = "dataGridViewTextBoxColumn165";
-            this.dataGridViewTextBoxColumn165.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn166
-            // 
-            this.dataGridViewTextBoxColumn166.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn166.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn166.Name = "dataGridViewTextBoxColumn166";
-            this.dataGridViewTextBoxColumn166.ReadOnly = true;
-            this.dataGridViewTextBoxColumn166.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn167
-            // 
-            this.dataGridViewTextBoxColumn167.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn167.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn167.Name = "dataGridViewTextBoxColumn167";
-            this.dataGridViewTextBoxColumn167.ReadOnly = true;
             // 
             // tabPage13
             // 
@@ -4979,7 +4028,7 @@
             this.tabPage13.Location = new System.Drawing.Point(4, 22);
             this.tabPage13.Name = "tabPage13";
             this.tabPage13.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage13.Size = new System.Drawing.Size(995, 124);
+            this.tabPage13.Size = new System.Drawing.Size(1010, 124);
             this.tabPage13.TabIndex = 17;
             this.tabPage13.Text = "Group R";
             this.tabPage13.UseVisualStyleBackColor = true;
@@ -5003,45 +4052,8 @@
             this.gvGroupR.Name = "gvGroupR";
             this.gvGroupR.ReadOnly = true;
             this.gvGroupR.RowTemplate.Height = 24;
-            this.gvGroupR.Size = new System.Drawing.Size(989, 118);
+            this.gvGroupR.Size = new System.Drawing.Size(1004, 118);
             this.gvGroupR.TabIndex = 2;
-            // 
-            // dataGridViewTextBoxColumn168
-            // 
-            this.dataGridViewTextBoxColumn168.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn168.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn168.Name = "dataGridViewTextBoxColumn168";
-            this.dataGridViewTextBoxColumn168.ReadOnly = true;
-            this.dataGridViewTextBoxColumn168.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn169
-            // 
-            this.dataGridViewTextBoxColumn169.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn169.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn169.Name = "dataGridViewTextBoxColumn169";
-            this.dataGridViewTextBoxColumn169.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn170
-            // 
-            this.dataGridViewTextBoxColumn170.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn170.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn170.Name = "dataGridViewTextBoxColumn170";
-            this.dataGridViewTextBoxColumn170.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn171
-            // 
-            this.dataGridViewTextBoxColumn171.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn171.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn171.Name = "dataGridViewTextBoxColumn171";
-            this.dataGridViewTextBoxColumn171.ReadOnly = true;
-            this.dataGridViewTextBoxColumn171.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn172
-            // 
-            this.dataGridViewTextBoxColumn172.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn172.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn172.Name = "dataGridViewTextBoxColumn172";
-            this.dataGridViewTextBoxColumn172.ReadOnly = true;
             // 
             // tabPage14
             // 
@@ -5049,7 +4061,7 @@
             this.tabPage14.Location = new System.Drawing.Point(4, 22);
             this.tabPage14.Name = "tabPage14";
             this.tabPage14.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage14.Size = new System.Drawing.Size(995, 124);
+            this.tabPage14.Size = new System.Drawing.Size(1010, 124);
             this.tabPage14.TabIndex = 18;
             this.tabPage14.Text = "Group S";
             this.tabPage14.UseVisualStyleBackColor = true;
@@ -5073,45 +4085,8 @@
             this.gvGroupS.Name = "gvGroupS";
             this.gvGroupS.ReadOnly = true;
             this.gvGroupS.RowTemplate.Height = 24;
-            this.gvGroupS.Size = new System.Drawing.Size(989, 118);
+            this.gvGroupS.Size = new System.Drawing.Size(1004, 118);
             this.gvGroupS.TabIndex = 2;
-            // 
-            // dataGridViewTextBoxColumn173
-            // 
-            this.dataGridViewTextBoxColumn173.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn173.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn173.Name = "dataGridViewTextBoxColumn173";
-            this.dataGridViewTextBoxColumn173.ReadOnly = true;
-            this.dataGridViewTextBoxColumn173.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn174
-            // 
-            this.dataGridViewTextBoxColumn174.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn174.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn174.Name = "dataGridViewTextBoxColumn174";
-            this.dataGridViewTextBoxColumn174.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn175
-            // 
-            this.dataGridViewTextBoxColumn175.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn175.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn175.Name = "dataGridViewTextBoxColumn175";
-            this.dataGridViewTextBoxColumn175.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn176
-            // 
-            this.dataGridViewTextBoxColumn176.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn176.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn176.Name = "dataGridViewTextBoxColumn176";
-            this.dataGridViewTextBoxColumn176.ReadOnly = true;
-            this.dataGridViewTextBoxColumn176.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn177
-            // 
-            this.dataGridViewTextBoxColumn177.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn177.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn177.Name = "dataGridViewTextBoxColumn177";
-            this.dataGridViewTextBoxColumn177.ReadOnly = true;
             // 
             // tabPage15
             // 
@@ -5119,7 +4094,7 @@
             this.tabPage15.Location = new System.Drawing.Point(4, 22);
             this.tabPage15.Name = "tabPage15";
             this.tabPage15.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage15.Size = new System.Drawing.Size(995, 124);
+            this.tabPage15.Size = new System.Drawing.Size(1010, 124);
             this.tabPage15.TabIndex = 19;
             this.tabPage15.Text = "Group T";
             this.tabPage15.UseVisualStyleBackColor = true;
@@ -5143,45 +4118,8 @@
             this.gvGroupT.Name = "gvGroupT";
             this.gvGroupT.ReadOnly = true;
             this.gvGroupT.RowTemplate.Height = 24;
-            this.gvGroupT.Size = new System.Drawing.Size(989, 118);
+            this.gvGroupT.Size = new System.Drawing.Size(1004, 118);
             this.gvGroupT.TabIndex = 2;
-            // 
-            // dataGridViewTextBoxColumn178
-            // 
-            this.dataGridViewTextBoxColumn178.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn178.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn178.Name = "dataGridViewTextBoxColumn178";
-            this.dataGridViewTextBoxColumn178.ReadOnly = true;
-            this.dataGridViewTextBoxColumn178.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn179
-            // 
-            this.dataGridViewTextBoxColumn179.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn179.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn179.Name = "dataGridViewTextBoxColumn179";
-            this.dataGridViewTextBoxColumn179.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn180
-            // 
-            this.dataGridViewTextBoxColumn180.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn180.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn180.Name = "dataGridViewTextBoxColumn180";
-            this.dataGridViewTextBoxColumn180.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn181
-            // 
-            this.dataGridViewTextBoxColumn181.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn181.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn181.Name = "dataGridViewTextBoxColumn181";
-            this.dataGridViewTextBoxColumn181.ReadOnly = true;
-            this.dataGridViewTextBoxColumn181.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn182
-            // 
-            this.dataGridViewTextBoxColumn182.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn182.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn182.Name = "dataGridViewTextBoxColumn182";
-            this.dataGridViewTextBoxColumn182.ReadOnly = true;
             // 
             // tabPage16
             // 
@@ -5189,7 +4127,7 @@
             this.tabPage16.Location = new System.Drawing.Point(4, 22);
             this.tabPage16.Name = "tabPage16";
             this.tabPage16.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage16.Size = new System.Drawing.Size(995, 124);
+            this.tabPage16.Size = new System.Drawing.Size(1010, 124);
             this.tabPage16.TabIndex = 20;
             this.tabPage16.Text = "Group U";
             this.tabPage16.UseVisualStyleBackColor = true;
@@ -5213,45 +4151,8 @@
             this.gvGroupU.Name = "gvGroupU";
             this.gvGroupU.ReadOnly = true;
             this.gvGroupU.RowTemplate.Height = 24;
-            this.gvGroupU.Size = new System.Drawing.Size(989, 118);
+            this.gvGroupU.Size = new System.Drawing.Size(1004, 118);
             this.gvGroupU.TabIndex = 2;
-            // 
-            // dataGridViewTextBoxColumn183
-            // 
-            this.dataGridViewTextBoxColumn183.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn183.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn183.Name = "dataGridViewTextBoxColumn183";
-            this.dataGridViewTextBoxColumn183.ReadOnly = true;
-            this.dataGridViewTextBoxColumn183.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn184
-            // 
-            this.dataGridViewTextBoxColumn184.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn184.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn184.Name = "dataGridViewTextBoxColumn184";
-            this.dataGridViewTextBoxColumn184.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn185
-            // 
-            this.dataGridViewTextBoxColumn185.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn185.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn185.Name = "dataGridViewTextBoxColumn185";
-            this.dataGridViewTextBoxColumn185.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn186
-            // 
-            this.dataGridViewTextBoxColumn186.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn186.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn186.Name = "dataGridViewTextBoxColumn186";
-            this.dataGridViewTextBoxColumn186.ReadOnly = true;
-            this.dataGridViewTextBoxColumn186.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn187
-            // 
-            this.dataGridViewTextBoxColumn187.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn187.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn187.Name = "dataGridViewTextBoxColumn187";
-            this.dataGridViewTextBoxColumn187.ReadOnly = true;
             // 
             // tabPage17
             // 
@@ -5259,7 +4160,7 @@
             this.tabPage17.Location = new System.Drawing.Point(4, 22);
             this.tabPage17.Name = "tabPage17";
             this.tabPage17.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage17.Size = new System.Drawing.Size(995, 124);
+            this.tabPage17.Size = new System.Drawing.Size(1010, 124);
             this.tabPage17.TabIndex = 21;
             this.tabPage17.Text = "Group V";
             this.tabPage17.UseVisualStyleBackColor = true;
@@ -5283,45 +4184,8 @@
             this.gvGroupV.Name = "gvGroupV";
             this.gvGroupV.ReadOnly = true;
             this.gvGroupV.RowTemplate.Height = 24;
-            this.gvGroupV.Size = new System.Drawing.Size(989, 118);
+            this.gvGroupV.Size = new System.Drawing.Size(1004, 118);
             this.gvGroupV.TabIndex = 2;
-            // 
-            // dataGridViewTextBoxColumn188
-            // 
-            this.dataGridViewTextBoxColumn188.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn188.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn188.Name = "dataGridViewTextBoxColumn188";
-            this.dataGridViewTextBoxColumn188.ReadOnly = true;
-            this.dataGridViewTextBoxColumn188.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn189
-            // 
-            this.dataGridViewTextBoxColumn189.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn189.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn189.Name = "dataGridViewTextBoxColumn189";
-            this.dataGridViewTextBoxColumn189.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn190
-            // 
-            this.dataGridViewTextBoxColumn190.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn190.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn190.Name = "dataGridViewTextBoxColumn190";
-            this.dataGridViewTextBoxColumn190.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn191
-            // 
-            this.dataGridViewTextBoxColumn191.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn191.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn191.Name = "dataGridViewTextBoxColumn191";
-            this.dataGridViewTextBoxColumn191.ReadOnly = true;
-            this.dataGridViewTextBoxColumn191.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn192
-            // 
-            this.dataGridViewTextBoxColumn192.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn192.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn192.Name = "dataGridViewTextBoxColumn192";
-            this.dataGridViewTextBoxColumn192.ReadOnly = true;
             // 
             // tabPage18
             // 
@@ -5329,7 +4193,7 @@
             this.tabPage18.Location = new System.Drawing.Point(4, 22);
             this.tabPage18.Name = "tabPage18";
             this.tabPage18.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage18.Size = new System.Drawing.Size(995, 124);
+            this.tabPage18.Size = new System.Drawing.Size(1010, 124);
             this.tabPage18.TabIndex = 22;
             this.tabPage18.Text = "Group W";
             this.tabPage18.UseVisualStyleBackColor = true;
@@ -5353,45 +4217,8 @@
             this.gvGroupW.Name = "gvGroupW";
             this.gvGroupW.ReadOnly = true;
             this.gvGroupW.RowTemplate.Height = 24;
-            this.gvGroupW.Size = new System.Drawing.Size(989, 118);
+            this.gvGroupW.Size = new System.Drawing.Size(1004, 118);
             this.gvGroupW.TabIndex = 2;
-            // 
-            // dataGridViewTextBoxColumn193
-            // 
-            this.dataGridViewTextBoxColumn193.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn193.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn193.Name = "dataGridViewTextBoxColumn193";
-            this.dataGridViewTextBoxColumn193.ReadOnly = true;
-            this.dataGridViewTextBoxColumn193.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn194
-            // 
-            this.dataGridViewTextBoxColumn194.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn194.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn194.Name = "dataGridViewTextBoxColumn194";
-            this.dataGridViewTextBoxColumn194.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn195
-            // 
-            this.dataGridViewTextBoxColumn195.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn195.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn195.Name = "dataGridViewTextBoxColumn195";
-            this.dataGridViewTextBoxColumn195.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn196
-            // 
-            this.dataGridViewTextBoxColumn196.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn196.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn196.Name = "dataGridViewTextBoxColumn196";
-            this.dataGridViewTextBoxColumn196.ReadOnly = true;
-            this.dataGridViewTextBoxColumn196.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn197
-            // 
-            this.dataGridViewTextBoxColumn197.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn197.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn197.Name = "dataGridViewTextBoxColumn197";
-            this.dataGridViewTextBoxColumn197.ReadOnly = true;
             // 
             // tabPage19
             // 
@@ -5399,7 +4226,7 @@
             this.tabPage19.Location = new System.Drawing.Point(4, 22);
             this.tabPage19.Name = "tabPage19";
             this.tabPage19.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage19.Size = new System.Drawing.Size(995, 124);
+            this.tabPage19.Size = new System.Drawing.Size(1010, 124);
             this.tabPage19.TabIndex = 23;
             this.tabPage19.Text = "Group X";
             this.tabPage19.UseVisualStyleBackColor = true;
@@ -5423,45 +4250,8 @@
             this.gvGroupX.Name = "gvGroupX";
             this.gvGroupX.ReadOnly = true;
             this.gvGroupX.RowTemplate.Height = 24;
-            this.gvGroupX.Size = new System.Drawing.Size(989, 118);
+            this.gvGroupX.Size = new System.Drawing.Size(1004, 118);
             this.gvGroupX.TabIndex = 2;
-            // 
-            // dataGridViewTextBoxColumn198
-            // 
-            this.dataGridViewTextBoxColumn198.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn198.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn198.Name = "dataGridViewTextBoxColumn198";
-            this.dataGridViewTextBoxColumn198.ReadOnly = true;
-            this.dataGridViewTextBoxColumn198.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn199
-            // 
-            this.dataGridViewTextBoxColumn199.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn199.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn199.Name = "dataGridViewTextBoxColumn199";
-            this.dataGridViewTextBoxColumn199.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn200
-            // 
-            this.dataGridViewTextBoxColumn200.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn200.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn200.Name = "dataGridViewTextBoxColumn200";
-            this.dataGridViewTextBoxColumn200.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn201
-            // 
-            this.dataGridViewTextBoxColumn201.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn201.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn201.Name = "dataGridViewTextBoxColumn201";
-            this.dataGridViewTextBoxColumn201.ReadOnly = true;
-            this.dataGridViewTextBoxColumn201.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn202
-            // 
-            this.dataGridViewTextBoxColumn202.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn202.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn202.Name = "dataGridViewTextBoxColumn202";
-            this.dataGridViewTextBoxColumn202.ReadOnly = true;
             // 
             // tabPage20
             // 
@@ -5469,7 +4259,7 @@
             this.tabPage20.Location = new System.Drawing.Point(4, 22);
             this.tabPage20.Name = "tabPage20";
             this.tabPage20.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage20.Size = new System.Drawing.Size(995, 124);
+            this.tabPage20.Size = new System.Drawing.Size(1010, 124);
             this.tabPage20.TabIndex = 24;
             this.tabPage20.Text = "Group Y";
             this.tabPage20.UseVisualStyleBackColor = true;
@@ -5493,45 +4283,8 @@
             this.gvGroupY.Name = "gvGroupY";
             this.gvGroupY.ReadOnly = true;
             this.gvGroupY.RowTemplate.Height = 24;
-            this.gvGroupY.Size = new System.Drawing.Size(989, 118);
+            this.gvGroupY.Size = new System.Drawing.Size(1004, 118);
             this.gvGroupY.TabIndex = 2;
-            // 
-            // dataGridViewTextBoxColumn203
-            // 
-            this.dataGridViewTextBoxColumn203.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn203.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn203.Name = "dataGridViewTextBoxColumn203";
-            this.dataGridViewTextBoxColumn203.ReadOnly = true;
-            this.dataGridViewTextBoxColumn203.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn204
-            // 
-            this.dataGridViewTextBoxColumn204.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn204.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn204.Name = "dataGridViewTextBoxColumn204";
-            this.dataGridViewTextBoxColumn204.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn205
-            // 
-            this.dataGridViewTextBoxColumn205.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn205.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn205.Name = "dataGridViewTextBoxColumn205";
-            this.dataGridViewTextBoxColumn205.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn206
-            // 
-            this.dataGridViewTextBoxColumn206.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn206.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn206.Name = "dataGridViewTextBoxColumn206";
-            this.dataGridViewTextBoxColumn206.ReadOnly = true;
-            this.dataGridViewTextBoxColumn206.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn207
-            // 
-            this.dataGridViewTextBoxColumn207.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn207.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn207.Name = "dataGridViewTextBoxColumn207";
-            this.dataGridViewTextBoxColumn207.ReadOnly = true;
             // 
             // tabPage21
             // 
@@ -5539,7 +4292,7 @@
             this.tabPage21.Location = new System.Drawing.Point(4, 22);
             this.tabPage21.Name = "tabPage21";
             this.tabPage21.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage21.Size = new System.Drawing.Size(995, 124);
+            this.tabPage21.Size = new System.Drawing.Size(1010, 124);
             this.tabPage21.TabIndex = 25;
             this.tabPage21.Text = "Group Z";
             this.tabPage21.UseVisualStyleBackColor = true;
@@ -5563,52 +4316,15 @@
             this.gvGroupZ.Name = "gvGroupZ";
             this.gvGroupZ.ReadOnly = true;
             this.gvGroupZ.RowTemplate.Height = 24;
-            this.gvGroupZ.Size = new System.Drawing.Size(989, 118);
+            this.gvGroupZ.Size = new System.Drawing.Size(1004, 118);
             this.gvGroupZ.TabIndex = 2;
-            // 
-            // dataGridViewTextBoxColumn208
-            // 
-            this.dataGridViewTextBoxColumn208.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn208.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn208.Name = "dataGridViewTextBoxColumn208";
-            this.dataGridViewTextBoxColumn208.ReadOnly = true;
-            this.dataGridViewTextBoxColumn208.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn209
-            // 
-            this.dataGridViewTextBoxColumn209.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn209.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn209.Name = "dataGridViewTextBoxColumn209";
-            this.dataGridViewTextBoxColumn209.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn210
-            // 
-            this.dataGridViewTextBoxColumn210.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn210.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn210.Name = "dataGridViewTextBoxColumn210";
-            this.dataGridViewTextBoxColumn210.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn211
-            // 
-            this.dataGridViewTextBoxColumn211.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn211.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn211.Name = "dataGridViewTextBoxColumn211";
-            this.dataGridViewTextBoxColumn211.ReadOnly = true;
-            this.dataGridViewTextBoxColumn211.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn212
-            // 
-            this.dataGridViewTextBoxColumn212.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn212.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn212.Name = "dataGridViewTextBoxColumn212";
-            this.dataGridViewTextBoxColumn212.ReadOnly = true;
             // 
             // tableLayoutPanel11
             // 
             this.tableLayoutPanel11.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel11.ColumnCount = 2;
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.4359F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 77.5641F));
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.24711F));
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 78.75288F));
             this.tableLayoutPanel11.Controls.Add(this.groupBox38, 0, 0);
             this.tableLayoutPanel11.Controls.Add(this.tabControl5, 1, 0);
             this.tableLayoutPanel11.Location = new System.Drawing.Point(2, 626);
@@ -5622,38 +4338,49 @@
             // 
             // groupBox38
             // 
-            this.groupBox38.Controls.Add(this.btnAddPilotsToGroupsF);
+            this.groupBox38.Controls.Add(this.btnManAddPilotsToF);
+            this.groupBox38.Controls.Add(this.btnAddPilotsToF);
             this.groupBox38.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox38.Location = new System.Drawing.Point(3, 3);
             this.groupBox38.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox38.Name = "groupBox38";
             this.groupBox38.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox38.Size = new System.Drawing.Size(286, 150);
+            this.groupBox38.Size = new System.Drawing.Size(271, 150);
             this.groupBox38.TabIndex = 0;
             this.groupBox38.TabStop = false;
             this.groupBox38.Text = "FINAL";
             // 
-            // btnAddPilotsToGroupsF
+            // btnManAddPilotsToF
             // 
-            this.btnAddPilotsToGroupsF.Location = new System.Drawing.Point(23, 55);
-            this.btnAddPilotsToGroupsF.Margin = new System.Windows.Forms.Padding(2);
-            this.btnAddPilotsToGroupsF.Name = "btnAddPilotsToGroupsF";
-            this.btnAddPilotsToGroupsF.Size = new System.Drawing.Size(176, 36);
-            this.btnAddPilotsToGroupsF.TabIndex = 2;
-            this.btnAddPilotsToGroupsF.Text = "Add Pilots to Final Round";
-            this.btnAddPilotsToGroupsF.UseVisualStyleBackColor = true;
-            this.btnAddPilotsToGroupsF.Click += new System.EventHandler(this.btnAddPilotsToGroupsF_Click);
+            this.btnManAddPilotsToF.Location = new System.Drawing.Point(23, 96);
+            this.btnManAddPilotsToF.Name = "btnManAddPilotsToF";
+            this.btnManAddPilotsToF.Size = new System.Drawing.Size(208, 36);
+            this.btnManAddPilotsToF.TabIndex = 5;
+            this.btnManAddPilotsToF.Text = "Manually Add Pilots";
+            this.btnManAddPilotsToF.UseVisualStyleBackColor = true;
+            this.btnManAddPilotsToF.Click += new System.EventHandler(this.btnManAddPilotsToF_Click);
+            // 
+            // btnAddPilotsToF
+            // 
+            this.btnAddPilotsToF.Location = new System.Drawing.Point(26, 38);
+            this.btnAddPilotsToF.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddPilotsToF.Name = "btnAddPilotsToF";
+            this.btnAddPilotsToF.Size = new System.Drawing.Size(205, 36);
+            this.btnAddPilotsToF.TabIndex = 2;
+            this.btnAddPilotsToF.Text = "Add Pilots to Final Round";
+            this.btnAddPilotsToF.UseVisualStyleBackColor = true;
+            this.btnAddPilotsToF.Click += new System.EventHandler(this.btnAddPilotsToGroupsF_Click);
             // 
             // tabControl5
             // 
             this.tabControl5.Controls.Add(this.tabPage9);
             this.tabControl5.Controls.Add(this.tabPage10);
             this.tabControl5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl5.Location = new System.Drawing.Point(294, 3);
+            this.tabControl5.Location = new System.Drawing.Point(279, 3);
             this.tabControl5.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl5.Name = "tabControl5";
             this.tabControl5.SelectedIndex = 0;
-            this.tabControl5.Size = new System.Drawing.Size(1003, 150);
+            this.tabControl5.Size = new System.Drawing.Size(1018, 150);
             this.tabControl5.TabIndex = 1;
             // 
             // tabPage9
@@ -5663,7 +4390,7 @@
             this.tabPage9.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage9.Name = "tabPage9";
             this.tabPage9.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage9.Size = new System.Drawing.Size(995, 124);
+            this.tabPage9.Size = new System.Drawing.Size(1010, 124);
             this.tabPage9.TabIndex = 0;
             this.tabPage9.Text = "Small Final";
             this.tabPage9.UseVisualStyleBackColor = true;
@@ -5687,45 +4414,8 @@
             this.gvSmallFinal.Name = "gvSmallFinal";
             this.gvSmallFinal.ReadOnly = true;
             this.gvSmallFinal.RowTemplate.Height = 24;
-            this.gvSmallFinal.Size = new System.Drawing.Size(991, 120);
+            this.gvSmallFinal.Size = new System.Drawing.Size(1006, 120);
             this.gvSmallFinal.TabIndex = 0;
-            // 
-            // dataGridViewTextBoxColumn142
-            // 
-            this.dataGridViewTextBoxColumn142.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn142.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn142.Name = "dataGridViewTextBoxColumn142";
-            this.dataGridViewTextBoxColumn142.ReadOnly = true;
-            this.dataGridViewTextBoxColumn142.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn143
-            // 
-            this.dataGridViewTextBoxColumn143.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn143.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn143.Name = "dataGridViewTextBoxColumn143";
-            this.dataGridViewTextBoxColumn143.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn144
-            // 
-            this.dataGridViewTextBoxColumn144.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn144.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn144.Name = "dataGridViewTextBoxColumn144";
-            this.dataGridViewTextBoxColumn144.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn145
-            // 
-            this.dataGridViewTextBoxColumn145.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn145.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn145.Name = "dataGridViewTextBoxColumn145";
-            this.dataGridViewTextBoxColumn145.ReadOnly = true;
-            this.dataGridViewTextBoxColumn145.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn146
-            // 
-            this.dataGridViewTextBoxColumn146.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn146.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn146.Name = "dataGridViewTextBoxColumn146";
-            this.dataGridViewTextBoxColumn146.ReadOnly = true;
             // 
             // tabPage10
             // 
@@ -5734,7 +4424,7 @@
             this.tabPage10.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage10.Name = "tabPage10";
             this.tabPage10.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage10.Size = new System.Drawing.Size(995, 124);
+            this.tabPage10.Size = new System.Drawing.Size(1010, 124);
             this.tabPage10.TabIndex = 1;
             this.tabPage10.Text = "Final";
             this.tabPage10.UseVisualStyleBackColor = true;
@@ -5758,52 +4448,15 @@
             this.gvFinal.Name = "gvFinal";
             this.gvFinal.ReadOnly = true;
             this.gvFinal.RowTemplate.Height = 24;
-            this.gvFinal.Size = new System.Drawing.Size(991, 120);
+            this.gvFinal.Size = new System.Drawing.Size(1006, 120);
             this.gvFinal.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn149
-            // 
-            this.dataGridViewTextBoxColumn149.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn149.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn149.Name = "dataGridViewTextBoxColumn149";
-            this.dataGridViewTextBoxColumn149.ReadOnly = true;
-            this.dataGridViewTextBoxColumn149.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn150
-            // 
-            this.dataGridViewTextBoxColumn150.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn150.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn150.Name = "dataGridViewTextBoxColumn150";
-            this.dataGridViewTextBoxColumn150.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn151
-            // 
-            this.dataGridViewTextBoxColumn151.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn151.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn151.Name = "dataGridViewTextBoxColumn151";
-            this.dataGridViewTextBoxColumn151.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn152
-            // 
-            this.dataGridViewTextBoxColumn152.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn152.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn152.Name = "dataGridViewTextBoxColumn152";
-            this.dataGridViewTextBoxColumn152.ReadOnly = true;
-            this.dataGridViewTextBoxColumn152.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn153
-            // 
-            this.dataGridViewTextBoxColumn153.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn153.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn153.Name = "dataGridViewTextBoxColumn153";
-            this.dataGridViewTextBoxColumn153.ReadOnly = true;
             // 
             // tableLayoutPanel9
             // 
             this.tableLayoutPanel9.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel9.ColumnCount = 2;
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.4359F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 77.5641F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.24711F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 78.75288F));
             this.tableLayoutPanel9.Controls.Add(this.groupBox36, 0, 0);
             this.tableLayoutPanel9.Controls.Add(this.tabControl3, 1, 0);
             this.tableLayoutPanel9.Location = new System.Drawing.Point(2, 314);
@@ -5817,23 +4470,34 @@
             // 
             // groupBox36
             // 
+            this.groupBox36.Controls.Add(this.btnManAddPilotsToQF);
             this.groupBox36.Controls.Add(this.btnAddPilotsToQF);
             this.groupBox36.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox36.Location = new System.Drawing.Point(3, 3);
             this.groupBox36.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox36.Name = "groupBox36";
             this.groupBox36.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox36.Size = new System.Drawing.Size(286, 150);
+            this.groupBox36.Size = new System.Drawing.Size(271, 150);
             this.groupBox36.TabIndex = 0;
             this.groupBox36.TabStop = false;
             this.groupBox36.Text = "1 / 4   ROUND";
             // 
+            // btnManAddPilotsToQF
+            // 
+            this.btnManAddPilotsToQF.Location = new System.Drawing.Point(23, 88);
+            this.btnManAddPilotsToQF.Name = "btnManAddPilotsToQF";
+            this.btnManAddPilotsToQF.Size = new System.Drawing.Size(208, 36);
+            this.btnManAddPilotsToQF.TabIndex = 4;
+            this.btnManAddPilotsToQF.Text = "Manually Add Pilots";
+            this.btnManAddPilotsToQF.UseVisualStyleBackColor = true;
+            this.btnManAddPilotsToQF.Click += new System.EventHandler(this.btnManAddPilotsToQF_Click);
+            // 
             // btnAddPilotsToQF
             // 
-            this.btnAddPilotsToQF.Location = new System.Drawing.Point(22, 46);
+            this.btnAddPilotsToQF.Location = new System.Drawing.Point(23, 36);
             this.btnAddPilotsToQF.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddPilotsToQF.Name = "btnAddPilotsToQF";
-            this.btnAddPilotsToQF.Size = new System.Drawing.Size(176, 36);
+            this.btnAddPilotsToQF.Size = new System.Drawing.Size(208, 36);
             this.btnAddPilotsToQF.TabIndex = 2;
             this.btnAddPilotsToQF.Text = "Add Pilots to 1/4 round";
             this.btnAddPilotsToQF.UseVisualStyleBackColor = true;
@@ -5846,11 +4510,11 @@
             this.tabControl3.Controls.Add(this.tabPage5);
             this.tabControl3.Controls.Add(this.tabPage6);
             this.tabControl3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl3.Location = new System.Drawing.Point(294, 3);
+            this.tabControl3.Location = new System.Drawing.Point(279, 3);
             this.tabControl3.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl3.Name = "tabControl3";
             this.tabControl3.SelectedIndex = 0;
-            this.tabControl3.Size = new System.Drawing.Size(1003, 150);
+            this.tabControl3.Size = new System.Drawing.Size(1018, 150);
             this.tabControl3.TabIndex = 1;
             // 
             // tabPage3
@@ -5860,7 +4524,7 @@
             this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage3.Size = new System.Drawing.Size(995, 124);
+            this.tabPage3.Size = new System.Drawing.Size(1010, 124);
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "Race 13";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -5884,45 +4548,8 @@
             this.gvRace13.Name = "gvRace13";
             this.gvRace13.ReadOnly = true;
             this.gvRace13.RowTemplate.Height = 24;
-            this.gvRace13.Size = new System.Drawing.Size(991, 120);
+            this.gvRace13.Size = new System.Drawing.Size(1006, 120);
             this.gvRace13.TabIndex = 0;
-            // 
-            // dataGridViewTextBoxColumn100
-            // 
-            this.dataGridViewTextBoxColumn100.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn100.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn100.Name = "dataGridViewTextBoxColumn100";
-            this.dataGridViewTextBoxColumn100.ReadOnly = true;
-            this.dataGridViewTextBoxColumn100.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn101
-            // 
-            this.dataGridViewTextBoxColumn101.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn101.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn101.Name = "dataGridViewTextBoxColumn101";
-            this.dataGridViewTextBoxColumn101.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn102
-            // 
-            this.dataGridViewTextBoxColumn102.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn102.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn102.Name = "dataGridViewTextBoxColumn102";
-            this.dataGridViewTextBoxColumn102.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn103
-            // 
-            this.dataGridViewTextBoxColumn103.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn103.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn103.Name = "dataGridViewTextBoxColumn103";
-            this.dataGridViewTextBoxColumn103.ReadOnly = true;
-            this.dataGridViewTextBoxColumn103.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn104
-            // 
-            this.dataGridViewTextBoxColumn104.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn104.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn104.Name = "dataGridViewTextBoxColumn104";
-            this.dataGridViewTextBoxColumn104.ReadOnly = true;
             // 
             // tabPage4
             // 
@@ -5931,7 +4558,7 @@
             this.tabPage4.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage4.Size = new System.Drawing.Size(995, 124);
+            this.tabPage4.Size = new System.Drawing.Size(1010, 124);
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "Race 14";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -5955,45 +4582,8 @@
             this.gvRace14.Name = "gvRace14";
             this.gvRace14.ReadOnly = true;
             this.gvRace14.RowTemplate.Height = 24;
-            this.gvRace14.Size = new System.Drawing.Size(991, 120);
+            this.gvRace14.Size = new System.Drawing.Size(1006, 120);
             this.gvRace14.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn107
-            // 
-            this.dataGridViewTextBoxColumn107.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn107.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn107.Name = "dataGridViewTextBoxColumn107";
-            this.dataGridViewTextBoxColumn107.ReadOnly = true;
-            this.dataGridViewTextBoxColumn107.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn108
-            // 
-            this.dataGridViewTextBoxColumn108.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn108.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn108.Name = "dataGridViewTextBoxColumn108";
-            this.dataGridViewTextBoxColumn108.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn109
-            // 
-            this.dataGridViewTextBoxColumn109.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn109.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn109.Name = "dataGridViewTextBoxColumn109";
-            this.dataGridViewTextBoxColumn109.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn110
-            // 
-            this.dataGridViewTextBoxColumn110.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn110.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn110.Name = "dataGridViewTextBoxColumn110";
-            this.dataGridViewTextBoxColumn110.ReadOnly = true;
-            this.dataGridViewTextBoxColumn110.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn111
-            // 
-            this.dataGridViewTextBoxColumn111.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn111.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn111.Name = "dataGridViewTextBoxColumn111";
-            this.dataGridViewTextBoxColumn111.ReadOnly = true;
             // 
             // tabPage5
             // 
@@ -6002,7 +4592,7 @@
             this.tabPage5.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage5.Size = new System.Drawing.Size(995, 124);
+            this.tabPage5.Size = new System.Drawing.Size(1010, 124);
             this.tabPage5.TabIndex = 2;
             this.tabPage5.Text = "Race 15";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -6026,45 +4616,8 @@
             this.gvRace15.Name = "gvRace15";
             this.gvRace15.ReadOnly = true;
             this.gvRace15.RowTemplate.Height = 24;
-            this.gvRace15.Size = new System.Drawing.Size(991, 120);
+            this.gvRace15.Size = new System.Drawing.Size(1006, 120);
             this.gvRace15.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn114
-            // 
-            this.dataGridViewTextBoxColumn114.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn114.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn114.Name = "dataGridViewTextBoxColumn114";
-            this.dataGridViewTextBoxColumn114.ReadOnly = true;
-            this.dataGridViewTextBoxColumn114.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn115
-            // 
-            this.dataGridViewTextBoxColumn115.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn115.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn115.Name = "dataGridViewTextBoxColumn115";
-            this.dataGridViewTextBoxColumn115.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn116
-            // 
-            this.dataGridViewTextBoxColumn116.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn116.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn116.Name = "dataGridViewTextBoxColumn116";
-            this.dataGridViewTextBoxColumn116.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn117
-            // 
-            this.dataGridViewTextBoxColumn117.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn117.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn117.Name = "dataGridViewTextBoxColumn117";
-            this.dataGridViewTextBoxColumn117.ReadOnly = true;
-            this.dataGridViewTextBoxColumn117.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn118
-            // 
-            this.dataGridViewTextBoxColumn118.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn118.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn118.Name = "dataGridViewTextBoxColumn118";
-            this.dataGridViewTextBoxColumn118.ReadOnly = true;
             // 
             // tabPage6
             // 
@@ -6073,7 +4626,7 @@
             this.tabPage6.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage6.Size = new System.Drawing.Size(995, 124);
+            this.tabPage6.Size = new System.Drawing.Size(1010, 124);
             this.tabPage6.TabIndex = 3;
             this.tabPage6.Text = "Race 16";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -6097,52 +4650,15 @@
             this.gvRace16.Name = "gvRace16";
             this.gvRace16.ReadOnly = true;
             this.gvRace16.RowTemplate.Height = 24;
-            this.gvRace16.Size = new System.Drawing.Size(991, 120);
+            this.gvRace16.Size = new System.Drawing.Size(1006, 120);
             this.gvRace16.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn121
-            // 
-            this.dataGridViewTextBoxColumn121.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn121.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn121.Name = "dataGridViewTextBoxColumn121";
-            this.dataGridViewTextBoxColumn121.ReadOnly = true;
-            this.dataGridViewTextBoxColumn121.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn122
-            // 
-            this.dataGridViewTextBoxColumn122.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn122.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn122.Name = "dataGridViewTextBoxColumn122";
-            this.dataGridViewTextBoxColumn122.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn123
-            // 
-            this.dataGridViewTextBoxColumn123.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn123.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn123.Name = "dataGridViewTextBoxColumn123";
-            this.dataGridViewTextBoxColumn123.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn124
-            // 
-            this.dataGridViewTextBoxColumn124.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn124.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn124.Name = "dataGridViewTextBoxColumn124";
-            this.dataGridViewTextBoxColumn124.ReadOnly = true;
-            this.dataGridViewTextBoxColumn124.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn125
-            // 
-            this.dataGridViewTextBoxColumn125.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn125.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn125.Name = "dataGridViewTextBoxColumn125";
-            this.dataGridViewTextBoxColumn125.ReadOnly = true;
             // 
             // tableLayoutPanel10
             // 
             this.tableLayoutPanel10.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel10.ColumnCount = 2;
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.4359F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 77.5641F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.24711F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 78.75288F));
             this.tableLayoutPanel10.Controls.Add(this.groupBox37, 0, 0);
             this.tableLayoutPanel10.Controls.Add(this.tabControl4, 1, 0);
             this.tableLayoutPanel10.Location = new System.Drawing.Point(2, 470);
@@ -6156,23 +4672,34 @@
             // 
             // groupBox37
             // 
+            this.groupBox37.Controls.Add(this.btnManAddPilotsToSF);
             this.groupBox37.Controls.Add(this.btnAddPilotsToSF);
             this.groupBox37.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox37.Location = new System.Drawing.Point(3, 3);
             this.groupBox37.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox37.Name = "groupBox37";
             this.groupBox37.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox37.Size = new System.Drawing.Size(286, 150);
+            this.groupBox37.Size = new System.Drawing.Size(271, 150);
             this.groupBox37.TabIndex = 0;
             this.groupBox37.TabStop = false;
             this.groupBox37.Text = "SEMI FINAL";
             // 
+            // btnManAddPilotsToSF
+            // 
+            this.btnManAddPilotsToSF.Location = new System.Drawing.Point(23, 93);
+            this.btnManAddPilotsToSF.Name = "btnManAddPilotsToSF";
+            this.btnManAddPilotsToSF.Size = new System.Drawing.Size(208, 36);
+            this.btnManAddPilotsToSF.TabIndex = 4;
+            this.btnManAddPilotsToSF.Text = "Manually Add Pilots";
+            this.btnManAddPilotsToSF.UseVisualStyleBackColor = true;
+            this.btnManAddPilotsToSF.Click += new System.EventHandler(this.btnManAddPilotsToSF_Click);
+            // 
             // btnAddPilotsToSF
             // 
-            this.btnAddPilotsToSF.Location = new System.Drawing.Point(23, 55);
+            this.btnAddPilotsToSF.Location = new System.Drawing.Point(23, 40);
             this.btnAddPilotsToSF.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddPilotsToSF.Name = "btnAddPilotsToSF";
-            this.btnAddPilotsToSF.Size = new System.Drawing.Size(176, 36);
+            this.btnAddPilotsToSF.Size = new System.Drawing.Size(208, 36);
             this.btnAddPilotsToSF.TabIndex = 2;
             this.btnAddPilotsToSF.Text = "Add Pilots to Semi Final";
             this.btnAddPilotsToSF.UseVisualStyleBackColor = true;
@@ -6183,11 +4710,11 @@
             this.tabControl4.Controls.Add(this.tabPage7);
             this.tabControl4.Controls.Add(this.tabPage8);
             this.tabControl4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl4.Location = new System.Drawing.Point(294, 3);
+            this.tabControl4.Location = new System.Drawing.Point(279, 3);
             this.tabControl4.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl4.Name = "tabControl4";
             this.tabControl4.SelectedIndex = 0;
-            this.tabControl4.Size = new System.Drawing.Size(1003, 150);
+            this.tabControl4.Size = new System.Drawing.Size(1018, 150);
             this.tabControl4.TabIndex = 1;
             // 
             // tabPage7
@@ -6197,7 +4724,7 @@
             this.tabPage7.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage7.Size = new System.Drawing.Size(995, 124);
+            this.tabPage7.Size = new System.Drawing.Size(1010, 124);
             this.tabPage7.TabIndex = 0;
             this.tabPage7.Text = "Semi 1";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -6221,45 +4748,8 @@
             this.gvSemi1.Name = "gvSemi1";
             this.gvSemi1.ReadOnly = true;
             this.gvSemi1.RowTemplate.Height = 24;
-            this.gvSemi1.Size = new System.Drawing.Size(991, 120);
+            this.gvSemi1.Size = new System.Drawing.Size(1006, 120);
             this.gvSemi1.TabIndex = 0;
-            // 
-            // dataGridViewTextBoxColumn128
-            // 
-            this.dataGridViewTextBoxColumn128.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn128.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn128.Name = "dataGridViewTextBoxColumn128";
-            this.dataGridViewTextBoxColumn128.ReadOnly = true;
-            this.dataGridViewTextBoxColumn128.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn129
-            // 
-            this.dataGridViewTextBoxColumn129.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn129.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn129.Name = "dataGridViewTextBoxColumn129";
-            this.dataGridViewTextBoxColumn129.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn130
-            // 
-            this.dataGridViewTextBoxColumn130.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn130.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn130.Name = "dataGridViewTextBoxColumn130";
-            this.dataGridViewTextBoxColumn130.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn131
-            // 
-            this.dataGridViewTextBoxColumn131.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn131.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn131.Name = "dataGridViewTextBoxColumn131";
-            this.dataGridViewTextBoxColumn131.ReadOnly = true;
-            this.dataGridViewTextBoxColumn131.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn132
-            // 
-            this.dataGridViewTextBoxColumn132.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn132.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn132.Name = "dataGridViewTextBoxColumn132";
-            this.dataGridViewTextBoxColumn132.ReadOnly = true;
             // 
             // tabPage8
             // 
@@ -6268,7 +4758,7 @@
             this.tabPage8.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage8.Size = new System.Drawing.Size(995, 124);
+            this.tabPage8.Size = new System.Drawing.Size(1010, 124);
             this.tabPage8.TabIndex = 1;
             this.tabPage8.Text = "Semi 2";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -6292,45 +4782,8 @@
             this.gvSemi2.Name = "gvSemi2";
             this.gvSemi2.ReadOnly = true;
             this.gvSemi2.RowTemplate.Height = 24;
-            this.gvSemi2.Size = new System.Drawing.Size(991, 120);
+            this.gvSemi2.Size = new System.Drawing.Size(1006, 120);
             this.gvSemi2.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn135
-            // 
-            this.dataGridViewTextBoxColumn135.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn135.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn135.Name = "dataGridViewTextBoxColumn135";
-            this.dataGridViewTextBoxColumn135.ReadOnly = true;
-            this.dataGridViewTextBoxColumn135.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn136
-            // 
-            this.dataGridViewTextBoxColumn136.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn136.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn136.Name = "dataGridViewTextBoxColumn136";
-            this.dataGridViewTextBoxColumn136.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn137
-            // 
-            this.dataGridViewTextBoxColumn137.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn137.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn137.Name = "dataGridViewTextBoxColumn137";
-            this.dataGridViewTextBoxColumn137.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn138
-            // 
-            this.dataGridViewTextBoxColumn138.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn138.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn138.Name = "dataGridViewTextBoxColumn138";
-            this.dataGridViewTextBoxColumn138.ReadOnly = true;
-            this.dataGridViewTextBoxColumn138.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn139
-            // 
-            this.dataGridViewTextBoxColumn139.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn139.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn139.Name = "dataGridViewTextBoxColumn139";
-            this.dataGridViewTextBoxColumn139.ReadOnly = true;
             // 
             // tabRace
             // 
@@ -6386,145 +4839,6 @@
             this.gvRace.TabIndex = 7;
             this.gvRace.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvRace_CellEndEdit);
             // 
-            // OrderNumber
-            // 
-            this.OrderNumber.DataPropertyName = "OrderNumber";
-            this.OrderNumber.HeaderText = "#";
-            this.OrderNumber.Name = "OrderNumber";
-            this.OrderNumber.Width = 40;
-            // 
-            // PilotName
-            // 
-            this.PilotName.DataPropertyName = "PilotName";
-            this.PilotName.HeaderText = "Name";
-            this.PilotName.Name = "PilotName";
-            this.PilotName.Width = 130;
-            // 
-            // Epc
-            // 
-            this.Epc.DataPropertyName = "Epc";
-            this.Epc.HeaderText = "TAG ID";
-            this.Epc.Name = "Epc";
-            this.Epc.Width = 75;
-            // 
-            // IdentCount
-            // 
-            this.IdentCount.DataPropertyName = "IdCount";
-            this.IdentCount.HeaderText = "ID Count";
-            this.IdentCount.Name = "IdentCount";
-            this.IdentCount.Width = 75;
-            // 
-            // dataGridViewTextBoxColumn155
-            // 
-            this.dataGridViewTextBoxColumn155.DataPropertyName = "Rssi";
-            this.dataGridViewTextBoxColumn155.HeaderText = "RSSI";
-            this.dataGridViewTextBoxColumn155.Name = "dataGridViewTextBoxColumn155";
-            this.dataGridViewTextBoxColumn155.Width = 70;
-            // 
-            // dataGridViewTextBoxColumn156
-            // 
-            this.dataGridViewTextBoxColumn156.DataPropertyName = "CarrFrequency";
-            this.dataGridViewTextBoxColumn156.HeaderText = "Freq";
-            this.dataGridViewTextBoxColumn156.Name = "dataGridViewTextBoxColumn156";
-            this.dataGridViewTextBoxColumn156.Width = 50;
-            // 
-            // Lap1
-            // 
-            this.Lap1.DataPropertyName = "Lap1";
-            this.Lap1.HeaderText = "LAP1";
-            this.Lap1.Name = "Lap1";
-            this.Lap1.Width = 80;
-            // 
-            // Lap2
-            // 
-            this.Lap2.DataPropertyName = "Lap2";
-            this.Lap2.HeaderText = "LAP2";
-            this.Lap2.Name = "Lap2";
-            this.Lap2.Width = 80;
-            // 
-            // Lap3
-            // 
-            this.Lap3.DataPropertyName = "Lap3";
-            this.Lap3.HeaderText = "LAP3";
-            this.Lap3.Name = "Lap3";
-            this.Lap3.Width = 80;
-            // 
-            // Lap4
-            // 
-            this.Lap4.DataPropertyName = "Lap4";
-            this.Lap4.HeaderText = "LAP4";
-            this.Lap4.Name = "Lap4";
-            this.Lap4.Width = 80;
-            // 
-            // Lap5
-            // 
-            this.Lap5.DataPropertyName = "Lap5";
-            this.Lap5.HeaderText = "LAP5";
-            this.Lap5.Name = "Lap5";
-            this.Lap5.Width = 80;
-            // 
-            // Lap6
-            // 
-            this.Lap6.DataPropertyName = "Lap6";
-            this.Lap6.HeaderText = "LAP6";
-            this.Lap6.Name = "Lap6";
-            this.Lap6.Width = 80;
-            // 
-            // TimeDifferential
-            // 
-            this.TimeDifferential.DataPropertyName = "TimeDifferential";
-            this.TimeDifferential.HeaderText = "Time Diff";
-            this.TimeDifferential.Name = "TimeDifferential";
-            // 
-            // BestLapTime
-            // 
-            this.BestLapTime.DataPropertyName = "BestLapTimeString";
-            this.BestLapTime.HeaderText = "Best Lap";
-            this.BestLapTime.Name = "BestLapTime";
-            this.BestLapTime.ReadOnly = true;
-            this.BestLapTime.Width = 80;
-            // 
-            // AvgLapTime
-            // 
-            this.AvgLapTime.DataPropertyName = "AvgLapTimeString";
-            this.AvgLapTime.HeaderText = "Average";
-            this.AvgLapTime.Name = "AvgLapTime";
-            this.AvgLapTime.ReadOnly = true;
-            this.AvgLapTime.Width = 80;
-            // 
-            // AverageSpeed
-            // 
-            this.AverageSpeed.DataPropertyName = "AvgSpeedString";
-            this.AverageSpeed.HeaderText = "Avg Speed, m/s";
-            this.AverageSpeed.Name = "AverageSpeed";
-            this.AverageSpeed.ReadOnly = true;
-            // 
-            // RegisteredLapsCount
-            // 
-            this.RegisteredLapsCount.DataPropertyName = "RegisteredLapsCount";
-            this.RegisteredLapsCount.HeaderText = "Laps";
-            this.RegisteredLapsCount.Name = "RegisteredLapsCount";
-            this.RegisteredLapsCount.ReadOnly = true;
-            this.RegisteredLapsCount.Width = 50;
-            // 
-            // Distance
-            // 
-            this.Distance.DataPropertyName = "Distance";
-            this.Distance.HeaderText = "Distance";
-            this.Distance.Name = "Distance";
-            this.Distance.Width = 80;
-            // 
-            // Penalty
-            // 
-            this.Penalty.DataPropertyName = "Penalty";
-            this.Penalty.HeaderText = "Penalty";
-            this.Penalty.Name = "Penalty";
-            this.Penalty.Width = 70;
-            // 
-            // bindingSourceRace
-            // 
-            this.bindingSourceRace.DataSource = typeof(RaceManager.Data.LapsInfo);
-            // 
             // groupBox35
             // 
             this.groupBox35.Controls.Add(this.gvRanking);
@@ -6567,30 +4881,6 @@
             this.RankNumber.ReadOnly = true;
             this.RankNumber.Width = 40;
             // 
-            // pilotNameDataGridViewTextBoxColumn
-            // 
-            this.pilotNameDataGridViewTextBoxColumn.DataPropertyName = "PilotName";
-            this.pilotNameDataGridViewTextBoxColumn.HeaderText = "Name";
-            this.pilotNameDataGridViewTextBoxColumn.Name = "pilotNameDataGridViewTextBoxColumn";
-            this.pilotNameDataGridViewTextBoxColumn.ReadOnly = true;
-            this.pilotNameDataGridViewTextBoxColumn.Width = 105;
-            // 
-            // bestLapTimeStringDataGridViewTextBoxColumn
-            // 
-            this.bestLapTimeStringDataGridViewTextBoxColumn.DataPropertyName = "BestLapTimeString";
-            this.bestLapTimeStringDataGridViewTextBoxColumn.HeaderText = "Best Lap";
-            this.bestLapTimeStringDataGridViewTextBoxColumn.Name = "bestLapTimeStringDataGridViewTextBoxColumn";
-            this.bestLapTimeStringDataGridViewTextBoxColumn.ReadOnly = true;
-            this.bestLapTimeStringDataGridViewTextBoxColumn.Width = 90;
-            // 
-            // avgLapTimeStringDataGridViewTextBoxColumn
-            // 
-            this.avgLapTimeStringDataGridViewTextBoxColumn.DataPropertyName = "AvgLapTimeString";
-            this.avgLapTimeStringDataGridViewTextBoxColumn.HeaderText = "Average Top 3";
-            this.avgLapTimeStringDataGridViewTextBoxColumn.Name = "avgLapTimeStringDataGridViewTextBoxColumn";
-            this.avgLapTimeStringDataGridViewTextBoxColumn.ReadOnly = true;
-            this.avgLapTimeStringDataGridViewTextBoxColumn.Width = 80;
-            // 
             // dataGridViewTextBoxColumn157
             // 
             this.dataGridViewTextBoxColumn157.DataPropertyName = "RegisteredLapsCount";
@@ -6598,10 +4888,6 @@
             this.dataGridViewTextBoxColumn157.Name = "dataGridViewTextBoxColumn157";
             this.dataGridViewTextBoxColumn157.ReadOnly = true;
             this.dataGridViewTextBoxColumn157.Width = 50;
-            // 
-            // bindingSourceRanking
-            // 
-            this.bindingSourceRanking.DataSource = typeof(RaceManager.Data.LapsInfo);
             // 
             // cmbDisplayRanking
             // 
@@ -7734,7 +6020,7 @@
             this.tableLayoutPanel4.ColumnCount = 3;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.22422F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.77578F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 500F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 518F));
             this.tableLayoutPanel4.Controls.Add(this.panel9, 2, 0);
             this.tableLayoutPanel4.Controls.Add(this.panel10, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.panel8, 1, 0);
@@ -7753,9 +6039,9 @@
             this.panel9.Controls.Add(this.btGetClearBuffer);
             this.panel9.Controls.Add(this.btGetBuffer);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel9.Location = new System.Drawing.Point(832, 4);
+            this.panel9.Location = new System.Drawing.Point(814, 4);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(495, 81);
+            this.panel9.Size = new System.Drawing.Size(513, 81);
             this.panel9.TabIndex = 1;
             // 
             // btClearBuffer
@@ -7814,7 +6100,7 @@
             this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel10.Location = new System.Drawing.Point(4, 4);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(409, 81);
+            this.panel10.Size = new System.Drawing.Size(400, 81);
             this.panel10.TabIndex = 0;
             // 
             // btBufferInventory
@@ -7856,9 +6142,9 @@
             this.panel8.Controls.Add(this.cbBufferWorkant2);
             this.panel8.Controls.Add(this.cbBufferWorkant3);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(420, 4);
+            this.panel8.Location = new System.Drawing.Point(411, 4);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(405, 81);
+            this.panel8.Size = new System.Drawing.Size(396, 81);
             this.panel8.TabIndex = 0;
             // 
             // cbBufferWorkant1
@@ -8455,7 +6741,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.20588F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.79412F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 513F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 540F));
             this.tableLayoutPanel2.Controls.Add(this.panel2, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel3, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel4, 2, 0);
@@ -8487,9 +6773,9 @@
             this.panel2.Controls.Add(this.label59);
             this.panel2.Controls.Add(this.label48);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(225, 5);
+            this.panel2.Location = new System.Drawing.Point(218, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(579, 75);
+            this.panel2.Size = new System.Drawing.Size(559, 75);
             this.panel2.TabIndex = 0;
             // 
             // txtDStay
@@ -8691,7 +6977,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(5, 5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(212, 75);
+            this.panel3.Size = new System.Drawing.Size(205, 75);
             this.panel3.TabIndex = 1;
             // 
             // btFastInventory
@@ -8713,9 +6999,9 @@
             this.panel4.Controls.Add(this.label73);
             this.panel4.Controls.Add(this.label72);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(812, 5);
+            this.panel4.Location = new System.Drawing.Point(785, 5);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(508, 75);
+            this.panel4.Size = new System.Drawing.Size(535, 75);
             this.panel4.TabIndex = 2;
             // 
             // txtRepeat
@@ -10464,6 +8750,1810 @@
             this.lxLedControl18.Text = "0";
             this.lxLedControl18.TextAlignment = LxControl.LxLedControl.Alignment.Right;
             // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // nicknameDataGridViewTextBoxColumn
+            // 
+            this.nicknameDataGridViewTextBoxColumn.DataPropertyName = "Nickname";
+            this.nicknameDataGridViewTextBoxColumn.HeaderText = "Nickname";
+            this.nicknameDataGridViewTextBoxColumn.Name = "nicknameDataGridViewTextBoxColumn";
+            // 
+            // teamDataGridViewTextBoxColumn
+            // 
+            this.teamDataGridViewTextBoxColumn.DataPropertyName = "Team";
+            this.teamDataGridViewTextBoxColumn.HeaderText = "Team";
+            this.teamDataGridViewTextBoxColumn.Name = "teamDataGridViewTextBoxColumn";
+            // 
+            // tagDataGridViewTextBoxColumn
+            // 
+            this.tagDataGridViewTextBoxColumn.DataPropertyName = "Tag";
+            this.tagDataGridViewTextBoxColumn.HeaderText = "TAG ID";
+            this.tagDataGridViewTextBoxColumn.Name = "tagDataGridViewTextBoxColumn";
+            this.tagDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "E-Mail";
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            this.emailDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // bindingSourcePilots1
+            // 
+            this.bindingSourcePilots1.DataSource = typeof(RaceManager.Data.Pilot);
+            // 
+            // dataGridViewTextBoxColumn213
+            // 
+            this.dataGridViewTextBoxColumn213.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn213.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn213.Name = "dataGridViewTextBoxColumn213";
+            this.dataGridViewTextBoxColumn213.ReadOnly = true;
+            this.dataGridViewTextBoxColumn213.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn214
+            // 
+            this.dataGridViewTextBoxColumn214.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn214.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn214.Name = "dataGridViewTextBoxColumn214";
+            this.dataGridViewTextBoxColumn214.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn215
+            // 
+            this.dataGridViewTextBoxColumn215.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn215.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn215.Name = "dataGridViewTextBoxColumn215";
+            this.dataGridViewTextBoxColumn215.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn216
+            // 
+            this.dataGridViewTextBoxColumn216.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn216.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn216.Name = "dataGridViewTextBoxColumn216";
+            this.dataGridViewTextBoxColumn216.ReadOnly = true;
+            this.dataGridViewTextBoxColumn216.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn217
+            // 
+            this.dataGridViewTextBoxColumn217.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn217.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn217.Name = "dataGridViewTextBoxColumn217";
+            this.dataGridViewTextBoxColumn217.ReadOnly = true;
+            this.dataGridViewTextBoxColumn217.Width = 250;
+            // 
+            // bindingSourcePilots
+            // 
+            this.bindingSourcePilots.DataSource = typeof(RaceManager.Data.Pilot);
+            // 
+            // dataGridViewTextBoxColumn218
+            // 
+            this.dataGridViewTextBoxColumn218.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn218.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn218.Name = "dataGridViewTextBoxColumn218";
+            this.dataGridViewTextBoxColumn218.ReadOnly = true;
+            this.dataGridViewTextBoxColumn218.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn219
+            // 
+            this.dataGridViewTextBoxColumn219.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn219.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn219.Name = "dataGridViewTextBoxColumn219";
+            this.dataGridViewTextBoxColumn219.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn220
+            // 
+            this.dataGridViewTextBoxColumn220.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn220.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn220.Name = "dataGridViewTextBoxColumn220";
+            this.dataGridViewTextBoxColumn220.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn221
+            // 
+            this.dataGridViewTextBoxColumn221.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn221.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn221.Name = "dataGridViewTextBoxColumn221";
+            this.dataGridViewTextBoxColumn221.ReadOnly = true;
+            this.dataGridViewTextBoxColumn221.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn222
+            // 
+            this.dataGridViewTextBoxColumn222.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn222.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn222.Name = "dataGridViewTextBoxColumn222";
+            this.dataGridViewTextBoxColumn222.ReadOnly = true;
+            this.dataGridViewTextBoxColumn222.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn223
+            // 
+            this.dataGridViewTextBoxColumn223.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn223.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn223.Name = "dataGridViewTextBoxColumn223";
+            this.dataGridViewTextBoxColumn223.ReadOnly = true;
+            this.dataGridViewTextBoxColumn223.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn224
+            // 
+            this.dataGridViewTextBoxColumn224.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn224.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn224.Name = "dataGridViewTextBoxColumn224";
+            this.dataGridViewTextBoxColumn224.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn225
+            // 
+            this.dataGridViewTextBoxColumn225.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn225.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn225.Name = "dataGridViewTextBoxColumn225";
+            this.dataGridViewTextBoxColumn225.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn226
+            // 
+            this.dataGridViewTextBoxColumn226.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn226.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn226.Name = "dataGridViewTextBoxColumn226";
+            this.dataGridViewTextBoxColumn226.ReadOnly = true;
+            this.dataGridViewTextBoxColumn226.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn227
+            // 
+            this.dataGridViewTextBoxColumn227.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn227.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn227.Name = "dataGridViewTextBoxColumn227";
+            this.dataGridViewTextBoxColumn227.ReadOnly = true;
+            this.dataGridViewTextBoxColumn227.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn228
+            // 
+            this.dataGridViewTextBoxColumn228.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn228.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn228.Name = "dataGridViewTextBoxColumn228";
+            this.dataGridViewTextBoxColumn228.ReadOnly = true;
+            this.dataGridViewTextBoxColumn228.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn229
+            // 
+            this.dataGridViewTextBoxColumn229.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn229.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn229.Name = "dataGridViewTextBoxColumn229";
+            this.dataGridViewTextBoxColumn229.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn230
+            // 
+            this.dataGridViewTextBoxColumn230.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn230.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn230.Name = "dataGridViewTextBoxColumn230";
+            this.dataGridViewTextBoxColumn230.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn231
+            // 
+            this.dataGridViewTextBoxColumn231.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn231.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn231.Name = "dataGridViewTextBoxColumn231";
+            this.dataGridViewTextBoxColumn231.ReadOnly = true;
+            this.dataGridViewTextBoxColumn231.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn232
+            // 
+            this.dataGridViewTextBoxColumn232.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn232.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn232.Name = "dataGridViewTextBoxColumn232";
+            this.dataGridViewTextBoxColumn232.ReadOnly = true;
+            this.dataGridViewTextBoxColumn232.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn233
+            // 
+            this.dataGridViewTextBoxColumn233.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn233.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn233.Name = "dataGridViewTextBoxColumn233";
+            this.dataGridViewTextBoxColumn233.ReadOnly = true;
+            this.dataGridViewTextBoxColumn233.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn234
+            // 
+            this.dataGridViewTextBoxColumn234.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn234.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn234.Name = "dataGridViewTextBoxColumn234";
+            this.dataGridViewTextBoxColumn234.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn235
+            // 
+            this.dataGridViewTextBoxColumn235.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn235.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn235.Name = "dataGridViewTextBoxColumn235";
+            this.dataGridViewTextBoxColumn235.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn236
+            // 
+            this.dataGridViewTextBoxColumn236.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn236.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn236.Name = "dataGridViewTextBoxColumn236";
+            this.dataGridViewTextBoxColumn236.ReadOnly = true;
+            this.dataGridViewTextBoxColumn236.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn237
+            // 
+            this.dataGridViewTextBoxColumn237.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn237.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn237.Name = "dataGridViewTextBoxColumn237";
+            this.dataGridViewTextBoxColumn237.ReadOnly = true;
+            this.dataGridViewTextBoxColumn237.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn238
+            // 
+            this.dataGridViewTextBoxColumn238.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn238.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn238.Name = "dataGridViewTextBoxColumn238";
+            this.dataGridViewTextBoxColumn238.ReadOnly = true;
+            this.dataGridViewTextBoxColumn238.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn239
+            // 
+            this.dataGridViewTextBoxColumn239.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn239.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn239.Name = "dataGridViewTextBoxColumn239";
+            this.dataGridViewTextBoxColumn239.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn240
+            // 
+            this.dataGridViewTextBoxColumn240.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn240.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn240.Name = "dataGridViewTextBoxColumn240";
+            this.dataGridViewTextBoxColumn240.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn241
+            // 
+            this.dataGridViewTextBoxColumn241.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn241.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn241.Name = "dataGridViewTextBoxColumn241";
+            this.dataGridViewTextBoxColumn241.ReadOnly = true;
+            this.dataGridViewTextBoxColumn241.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn242
+            // 
+            this.dataGridViewTextBoxColumn242.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn242.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn242.Name = "dataGridViewTextBoxColumn242";
+            this.dataGridViewTextBoxColumn242.ReadOnly = true;
+            this.dataGridViewTextBoxColumn242.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn243
+            // 
+            this.dataGridViewTextBoxColumn243.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn243.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn243.Name = "dataGridViewTextBoxColumn243";
+            this.dataGridViewTextBoxColumn243.ReadOnly = true;
+            this.dataGridViewTextBoxColumn243.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn244
+            // 
+            this.dataGridViewTextBoxColumn244.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn244.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn244.Name = "dataGridViewTextBoxColumn244";
+            this.dataGridViewTextBoxColumn244.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn245
+            // 
+            this.dataGridViewTextBoxColumn245.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn245.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn245.Name = "dataGridViewTextBoxColumn245";
+            this.dataGridViewTextBoxColumn245.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn246
+            // 
+            this.dataGridViewTextBoxColumn246.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn246.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn246.Name = "dataGridViewTextBoxColumn246";
+            this.dataGridViewTextBoxColumn246.ReadOnly = true;
+            this.dataGridViewTextBoxColumn246.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn247
+            // 
+            this.dataGridViewTextBoxColumn247.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn247.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn247.Name = "dataGridViewTextBoxColumn247";
+            this.dataGridViewTextBoxColumn247.ReadOnly = true;
+            this.dataGridViewTextBoxColumn247.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn248
+            // 
+            this.dataGridViewTextBoxColumn248.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn248.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn248.Name = "dataGridViewTextBoxColumn248";
+            this.dataGridViewTextBoxColumn248.ReadOnly = true;
+            this.dataGridViewTextBoxColumn248.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn249
+            // 
+            this.dataGridViewTextBoxColumn249.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn249.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn249.Name = "dataGridViewTextBoxColumn249";
+            this.dataGridViewTextBoxColumn249.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn250
+            // 
+            this.dataGridViewTextBoxColumn250.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn250.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn250.Name = "dataGridViewTextBoxColumn250";
+            this.dataGridViewTextBoxColumn250.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn251
+            // 
+            this.dataGridViewTextBoxColumn251.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn251.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn251.Name = "dataGridViewTextBoxColumn251";
+            this.dataGridViewTextBoxColumn251.ReadOnly = true;
+            this.dataGridViewTextBoxColumn251.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn252
+            // 
+            this.dataGridViewTextBoxColumn252.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn252.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn252.Name = "dataGridViewTextBoxColumn252";
+            this.dataGridViewTextBoxColumn252.ReadOnly = true;
+            this.dataGridViewTextBoxColumn252.Width = 250;
+            // 
+            // nameDataGridViewTextBoxColumn1
+            // 
+            this.nameDataGridViewTextBoxColumn1.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn1.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn1.Name = "nameDataGridViewTextBoxColumn1";
+            this.nameDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.nameDataGridViewTextBoxColumn1.Width = 200;
+            // 
+            // nicknameDataGridViewTextBoxColumn1
+            // 
+            this.nicknameDataGridViewTextBoxColumn1.DataPropertyName = "Nickname";
+            this.nicknameDataGridViewTextBoxColumn1.HeaderText = "Nickname";
+            this.nicknameDataGridViewTextBoxColumn1.Name = "nicknameDataGridViewTextBoxColumn1";
+            this.nicknameDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // teamDataGridViewTextBoxColumn1
+            // 
+            this.teamDataGridViewTextBoxColumn1.DataPropertyName = "Team";
+            this.teamDataGridViewTextBoxColumn1.HeaderText = "Team";
+            this.teamDataGridViewTextBoxColumn1.Name = "teamDataGridViewTextBoxColumn1";
+            this.teamDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // tagDataGridViewTextBoxColumn1
+            // 
+            this.tagDataGridViewTextBoxColumn1.DataPropertyName = "Tag";
+            this.tagDataGridViewTextBoxColumn1.HeaderText = "TAG ID";
+            this.tagDataGridViewTextBoxColumn1.Name = "tagDataGridViewTextBoxColumn1";
+            this.tagDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.tagDataGridViewTextBoxColumn1.Width = 300;
+            // 
+            // emailDataGridViewTextBoxColumn1
+            // 
+            this.emailDataGridViewTextBoxColumn1.DataPropertyName = "Email";
+            this.emailDataGridViewTextBoxColumn1.HeaderText = "E-Mail";
+            this.emailDataGridViewTextBoxColumn1.Name = "emailDataGridViewTextBoxColumn1";
+            this.emailDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.emailDataGridViewTextBoxColumn1.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn5.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            this.dataGridViewTextBoxColumn5.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn6.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            this.dataGridViewTextBoxColumn6.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn9.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.ReadOnly = true;
+            this.dataGridViewTextBoxColumn9.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn10.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn11.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn12.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.ReadOnly = true;
+            this.dataGridViewTextBoxColumn12.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn13.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            this.dataGridViewTextBoxColumn13.ReadOnly = true;
+            this.dataGridViewTextBoxColumn13.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn16.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            this.dataGridViewTextBoxColumn16.ReadOnly = true;
+            this.dataGridViewTextBoxColumn16.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn17
+            // 
+            this.dataGridViewTextBoxColumn17.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn17.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            this.dataGridViewTextBoxColumn17.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn18
+            // 
+            this.dataGridViewTextBoxColumn18.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn18.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            this.dataGridViewTextBoxColumn18.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn19
+            // 
+            this.dataGridViewTextBoxColumn19.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn19.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
+            this.dataGridViewTextBoxColumn19.ReadOnly = true;
+            this.dataGridViewTextBoxColumn19.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn20
+            // 
+            this.dataGridViewTextBoxColumn20.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn20.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
+            this.dataGridViewTextBoxColumn20.ReadOnly = true;
+            this.dataGridViewTextBoxColumn20.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn23
+            // 
+            this.dataGridViewTextBoxColumn23.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn23.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
+            this.dataGridViewTextBoxColumn23.ReadOnly = true;
+            this.dataGridViewTextBoxColumn23.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn24
+            // 
+            this.dataGridViewTextBoxColumn24.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn24.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
+            this.dataGridViewTextBoxColumn24.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn25
+            // 
+            this.dataGridViewTextBoxColumn25.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn25.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
+            this.dataGridViewTextBoxColumn25.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn26
+            // 
+            this.dataGridViewTextBoxColumn26.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn26.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
+            this.dataGridViewTextBoxColumn26.ReadOnly = true;
+            this.dataGridViewTextBoxColumn26.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn27
+            // 
+            this.dataGridViewTextBoxColumn27.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn27.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
+            this.dataGridViewTextBoxColumn27.ReadOnly = true;
+            this.dataGridViewTextBoxColumn27.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn30
+            // 
+            this.dataGridViewTextBoxColumn30.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn30.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
+            this.dataGridViewTextBoxColumn30.ReadOnly = true;
+            this.dataGridViewTextBoxColumn30.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn31
+            // 
+            this.dataGridViewTextBoxColumn31.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn31.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
+            this.dataGridViewTextBoxColumn31.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn32
+            // 
+            this.dataGridViewTextBoxColumn32.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn32.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn32.Name = "dataGridViewTextBoxColumn32";
+            this.dataGridViewTextBoxColumn32.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn33
+            // 
+            this.dataGridViewTextBoxColumn33.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn33.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
+            this.dataGridViewTextBoxColumn33.ReadOnly = true;
+            this.dataGridViewTextBoxColumn33.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn34
+            // 
+            this.dataGridViewTextBoxColumn34.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn34.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn34.Name = "dataGridViewTextBoxColumn34";
+            this.dataGridViewTextBoxColumn34.ReadOnly = true;
+            this.dataGridViewTextBoxColumn34.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn37
+            // 
+            this.dataGridViewTextBoxColumn37.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn37.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn37.Name = "dataGridViewTextBoxColumn37";
+            this.dataGridViewTextBoxColumn37.ReadOnly = true;
+            this.dataGridViewTextBoxColumn37.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn38
+            // 
+            this.dataGridViewTextBoxColumn38.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn38.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn38.Name = "dataGridViewTextBoxColumn38";
+            this.dataGridViewTextBoxColumn38.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn39
+            // 
+            this.dataGridViewTextBoxColumn39.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn39.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn39.Name = "dataGridViewTextBoxColumn39";
+            this.dataGridViewTextBoxColumn39.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn40
+            // 
+            this.dataGridViewTextBoxColumn40.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn40.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn40.Name = "dataGridViewTextBoxColumn40";
+            this.dataGridViewTextBoxColumn40.ReadOnly = true;
+            this.dataGridViewTextBoxColumn40.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn41
+            // 
+            this.dataGridViewTextBoxColumn41.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn41.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn41.Name = "dataGridViewTextBoxColumn41";
+            this.dataGridViewTextBoxColumn41.ReadOnly = true;
+            this.dataGridViewTextBoxColumn41.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn44
+            // 
+            this.dataGridViewTextBoxColumn44.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn44.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn44.Name = "dataGridViewTextBoxColumn44";
+            this.dataGridViewTextBoxColumn44.ReadOnly = true;
+            this.dataGridViewTextBoxColumn44.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn45
+            // 
+            this.dataGridViewTextBoxColumn45.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn45.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn45.Name = "dataGridViewTextBoxColumn45";
+            this.dataGridViewTextBoxColumn45.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn46
+            // 
+            this.dataGridViewTextBoxColumn46.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn46.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn46.Name = "dataGridViewTextBoxColumn46";
+            this.dataGridViewTextBoxColumn46.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn47
+            // 
+            this.dataGridViewTextBoxColumn47.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn47.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn47.Name = "dataGridViewTextBoxColumn47";
+            this.dataGridViewTextBoxColumn47.ReadOnly = true;
+            this.dataGridViewTextBoxColumn47.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn48
+            // 
+            this.dataGridViewTextBoxColumn48.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn48.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn48.Name = "dataGridViewTextBoxColumn48";
+            this.dataGridViewTextBoxColumn48.ReadOnly = true;
+            this.dataGridViewTextBoxColumn48.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn51
+            // 
+            this.dataGridViewTextBoxColumn51.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn51.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn51.Name = "dataGridViewTextBoxColumn51";
+            this.dataGridViewTextBoxColumn51.ReadOnly = true;
+            this.dataGridViewTextBoxColumn51.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn52
+            // 
+            this.dataGridViewTextBoxColumn52.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn52.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn52.Name = "dataGridViewTextBoxColumn52";
+            this.dataGridViewTextBoxColumn52.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn53
+            // 
+            this.dataGridViewTextBoxColumn53.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn53.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn53.Name = "dataGridViewTextBoxColumn53";
+            this.dataGridViewTextBoxColumn53.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn54
+            // 
+            this.dataGridViewTextBoxColumn54.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn54.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn54.Name = "dataGridViewTextBoxColumn54";
+            this.dataGridViewTextBoxColumn54.ReadOnly = true;
+            this.dataGridViewTextBoxColumn54.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn55
+            // 
+            this.dataGridViewTextBoxColumn55.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn55.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn55.Name = "dataGridViewTextBoxColumn55";
+            this.dataGridViewTextBoxColumn55.ReadOnly = true;
+            this.dataGridViewTextBoxColumn55.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn58
+            // 
+            this.dataGridViewTextBoxColumn58.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn58.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn58.Name = "dataGridViewTextBoxColumn58";
+            this.dataGridViewTextBoxColumn58.ReadOnly = true;
+            this.dataGridViewTextBoxColumn58.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn59
+            // 
+            this.dataGridViewTextBoxColumn59.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn59.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn59.Name = "dataGridViewTextBoxColumn59";
+            this.dataGridViewTextBoxColumn59.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn60
+            // 
+            this.dataGridViewTextBoxColumn60.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn60.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn60.Name = "dataGridViewTextBoxColumn60";
+            this.dataGridViewTextBoxColumn60.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn61
+            // 
+            this.dataGridViewTextBoxColumn61.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn61.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn61.Name = "dataGridViewTextBoxColumn61";
+            this.dataGridViewTextBoxColumn61.ReadOnly = true;
+            this.dataGridViewTextBoxColumn61.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn62
+            // 
+            this.dataGridViewTextBoxColumn62.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn62.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn62.Name = "dataGridViewTextBoxColumn62";
+            this.dataGridViewTextBoxColumn62.ReadOnly = true;
+            this.dataGridViewTextBoxColumn62.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn65
+            // 
+            this.dataGridViewTextBoxColumn65.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn65.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn65.Name = "dataGridViewTextBoxColumn65";
+            this.dataGridViewTextBoxColumn65.ReadOnly = true;
+            this.dataGridViewTextBoxColumn65.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn66
+            // 
+            this.dataGridViewTextBoxColumn66.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn66.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn66.Name = "dataGridViewTextBoxColumn66";
+            this.dataGridViewTextBoxColumn66.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn67
+            // 
+            this.dataGridViewTextBoxColumn67.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn67.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn67.Name = "dataGridViewTextBoxColumn67";
+            this.dataGridViewTextBoxColumn67.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn68
+            // 
+            this.dataGridViewTextBoxColumn68.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn68.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn68.Name = "dataGridViewTextBoxColumn68";
+            this.dataGridViewTextBoxColumn68.ReadOnly = true;
+            this.dataGridViewTextBoxColumn68.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn69
+            // 
+            this.dataGridViewTextBoxColumn69.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn69.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn69.Name = "dataGridViewTextBoxColumn69";
+            this.dataGridViewTextBoxColumn69.ReadOnly = true;
+            this.dataGridViewTextBoxColumn69.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn72
+            // 
+            this.dataGridViewTextBoxColumn72.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn72.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn72.Name = "dataGridViewTextBoxColumn72";
+            this.dataGridViewTextBoxColumn72.ReadOnly = true;
+            this.dataGridViewTextBoxColumn72.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn73
+            // 
+            this.dataGridViewTextBoxColumn73.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn73.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn73.Name = "dataGridViewTextBoxColumn73";
+            this.dataGridViewTextBoxColumn73.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn74
+            // 
+            this.dataGridViewTextBoxColumn74.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn74.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn74.Name = "dataGridViewTextBoxColumn74";
+            this.dataGridViewTextBoxColumn74.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn75
+            // 
+            this.dataGridViewTextBoxColumn75.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn75.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn75.Name = "dataGridViewTextBoxColumn75";
+            this.dataGridViewTextBoxColumn75.ReadOnly = true;
+            this.dataGridViewTextBoxColumn75.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn76
+            // 
+            this.dataGridViewTextBoxColumn76.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn76.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn76.Name = "dataGridViewTextBoxColumn76";
+            this.dataGridViewTextBoxColumn76.ReadOnly = true;
+            this.dataGridViewTextBoxColumn76.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn79
+            // 
+            this.dataGridViewTextBoxColumn79.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn79.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn79.Name = "dataGridViewTextBoxColumn79";
+            this.dataGridViewTextBoxColumn79.ReadOnly = true;
+            this.dataGridViewTextBoxColumn79.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn80
+            // 
+            this.dataGridViewTextBoxColumn80.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn80.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn80.Name = "dataGridViewTextBoxColumn80";
+            this.dataGridViewTextBoxColumn80.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn81
+            // 
+            this.dataGridViewTextBoxColumn81.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn81.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn81.Name = "dataGridViewTextBoxColumn81";
+            this.dataGridViewTextBoxColumn81.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn82
+            // 
+            this.dataGridViewTextBoxColumn82.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn82.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn82.Name = "dataGridViewTextBoxColumn82";
+            this.dataGridViewTextBoxColumn82.ReadOnly = true;
+            this.dataGridViewTextBoxColumn82.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn83
+            // 
+            this.dataGridViewTextBoxColumn83.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn83.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn83.Name = "dataGridViewTextBoxColumn83";
+            this.dataGridViewTextBoxColumn83.ReadOnly = true;
+            this.dataGridViewTextBoxColumn83.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn86
+            // 
+            this.dataGridViewTextBoxColumn86.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn86.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn86.Name = "dataGridViewTextBoxColumn86";
+            this.dataGridViewTextBoxColumn86.ReadOnly = true;
+            this.dataGridViewTextBoxColumn86.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn87
+            // 
+            this.dataGridViewTextBoxColumn87.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn87.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn87.Name = "dataGridViewTextBoxColumn87";
+            this.dataGridViewTextBoxColumn87.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn88
+            // 
+            this.dataGridViewTextBoxColumn88.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn88.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn88.Name = "dataGridViewTextBoxColumn88";
+            this.dataGridViewTextBoxColumn88.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn89
+            // 
+            this.dataGridViewTextBoxColumn89.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn89.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn89.Name = "dataGridViewTextBoxColumn89";
+            this.dataGridViewTextBoxColumn89.ReadOnly = true;
+            this.dataGridViewTextBoxColumn89.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn90
+            // 
+            this.dataGridViewTextBoxColumn90.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn90.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn90.Name = "dataGridViewTextBoxColumn90";
+            this.dataGridViewTextBoxColumn90.ReadOnly = true;
+            this.dataGridViewTextBoxColumn90.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn93
+            // 
+            this.dataGridViewTextBoxColumn93.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn93.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn93.Name = "dataGridViewTextBoxColumn93";
+            this.dataGridViewTextBoxColumn93.ReadOnly = true;
+            this.dataGridViewTextBoxColumn93.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn94
+            // 
+            this.dataGridViewTextBoxColumn94.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn94.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn94.Name = "dataGridViewTextBoxColumn94";
+            this.dataGridViewTextBoxColumn94.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn95
+            // 
+            this.dataGridViewTextBoxColumn95.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn95.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn95.Name = "dataGridViewTextBoxColumn95";
+            this.dataGridViewTextBoxColumn95.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn96
+            // 
+            this.dataGridViewTextBoxColumn96.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn96.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn96.Name = "dataGridViewTextBoxColumn96";
+            this.dataGridViewTextBoxColumn96.ReadOnly = true;
+            this.dataGridViewTextBoxColumn96.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn97
+            // 
+            this.dataGridViewTextBoxColumn97.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn97.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn97.Name = "dataGridViewTextBoxColumn97";
+            this.dataGridViewTextBoxColumn97.ReadOnly = true;
+            this.dataGridViewTextBoxColumn97.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn158
+            // 
+            this.dataGridViewTextBoxColumn158.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn158.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn158.Name = "dataGridViewTextBoxColumn158";
+            this.dataGridViewTextBoxColumn158.ReadOnly = true;
+            this.dataGridViewTextBoxColumn158.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn159
+            // 
+            this.dataGridViewTextBoxColumn159.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn159.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn159.Name = "dataGridViewTextBoxColumn159";
+            this.dataGridViewTextBoxColumn159.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn160
+            // 
+            this.dataGridViewTextBoxColumn160.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn160.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn160.Name = "dataGridViewTextBoxColumn160";
+            this.dataGridViewTextBoxColumn160.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn161
+            // 
+            this.dataGridViewTextBoxColumn161.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn161.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn161.Name = "dataGridViewTextBoxColumn161";
+            this.dataGridViewTextBoxColumn161.ReadOnly = true;
+            this.dataGridViewTextBoxColumn161.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn162
+            // 
+            this.dataGridViewTextBoxColumn162.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn162.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn162.Name = "dataGridViewTextBoxColumn162";
+            this.dataGridViewTextBoxColumn162.ReadOnly = true;
+            this.dataGridViewTextBoxColumn162.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn163
+            // 
+            this.dataGridViewTextBoxColumn163.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn163.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn163.Name = "dataGridViewTextBoxColumn163";
+            this.dataGridViewTextBoxColumn163.ReadOnly = true;
+            this.dataGridViewTextBoxColumn163.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn164
+            // 
+            this.dataGridViewTextBoxColumn164.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn164.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn164.Name = "dataGridViewTextBoxColumn164";
+            this.dataGridViewTextBoxColumn164.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn165
+            // 
+            this.dataGridViewTextBoxColumn165.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn165.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn165.Name = "dataGridViewTextBoxColumn165";
+            this.dataGridViewTextBoxColumn165.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn166
+            // 
+            this.dataGridViewTextBoxColumn166.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn166.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn166.Name = "dataGridViewTextBoxColumn166";
+            this.dataGridViewTextBoxColumn166.ReadOnly = true;
+            this.dataGridViewTextBoxColumn166.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn167
+            // 
+            this.dataGridViewTextBoxColumn167.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn167.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn167.Name = "dataGridViewTextBoxColumn167";
+            this.dataGridViewTextBoxColumn167.ReadOnly = true;
+            this.dataGridViewTextBoxColumn167.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn168
+            // 
+            this.dataGridViewTextBoxColumn168.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn168.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn168.Name = "dataGridViewTextBoxColumn168";
+            this.dataGridViewTextBoxColumn168.ReadOnly = true;
+            this.dataGridViewTextBoxColumn168.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn169
+            // 
+            this.dataGridViewTextBoxColumn169.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn169.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn169.Name = "dataGridViewTextBoxColumn169";
+            this.dataGridViewTextBoxColumn169.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn170
+            // 
+            this.dataGridViewTextBoxColumn170.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn170.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn170.Name = "dataGridViewTextBoxColumn170";
+            this.dataGridViewTextBoxColumn170.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn171
+            // 
+            this.dataGridViewTextBoxColumn171.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn171.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn171.Name = "dataGridViewTextBoxColumn171";
+            this.dataGridViewTextBoxColumn171.ReadOnly = true;
+            this.dataGridViewTextBoxColumn171.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn172
+            // 
+            this.dataGridViewTextBoxColumn172.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn172.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn172.Name = "dataGridViewTextBoxColumn172";
+            this.dataGridViewTextBoxColumn172.ReadOnly = true;
+            this.dataGridViewTextBoxColumn172.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn173
+            // 
+            this.dataGridViewTextBoxColumn173.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn173.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn173.Name = "dataGridViewTextBoxColumn173";
+            this.dataGridViewTextBoxColumn173.ReadOnly = true;
+            this.dataGridViewTextBoxColumn173.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn174
+            // 
+            this.dataGridViewTextBoxColumn174.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn174.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn174.Name = "dataGridViewTextBoxColumn174";
+            this.dataGridViewTextBoxColumn174.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn175
+            // 
+            this.dataGridViewTextBoxColumn175.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn175.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn175.Name = "dataGridViewTextBoxColumn175";
+            this.dataGridViewTextBoxColumn175.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn176
+            // 
+            this.dataGridViewTextBoxColumn176.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn176.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn176.Name = "dataGridViewTextBoxColumn176";
+            this.dataGridViewTextBoxColumn176.ReadOnly = true;
+            this.dataGridViewTextBoxColumn176.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn177
+            // 
+            this.dataGridViewTextBoxColumn177.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn177.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn177.Name = "dataGridViewTextBoxColumn177";
+            this.dataGridViewTextBoxColumn177.ReadOnly = true;
+            this.dataGridViewTextBoxColumn177.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn178
+            // 
+            this.dataGridViewTextBoxColumn178.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn178.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn178.Name = "dataGridViewTextBoxColumn178";
+            this.dataGridViewTextBoxColumn178.ReadOnly = true;
+            this.dataGridViewTextBoxColumn178.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn179
+            // 
+            this.dataGridViewTextBoxColumn179.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn179.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn179.Name = "dataGridViewTextBoxColumn179";
+            this.dataGridViewTextBoxColumn179.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn180
+            // 
+            this.dataGridViewTextBoxColumn180.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn180.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn180.Name = "dataGridViewTextBoxColumn180";
+            this.dataGridViewTextBoxColumn180.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn181
+            // 
+            this.dataGridViewTextBoxColumn181.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn181.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn181.Name = "dataGridViewTextBoxColumn181";
+            this.dataGridViewTextBoxColumn181.ReadOnly = true;
+            this.dataGridViewTextBoxColumn181.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn182
+            // 
+            this.dataGridViewTextBoxColumn182.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn182.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn182.Name = "dataGridViewTextBoxColumn182";
+            this.dataGridViewTextBoxColumn182.ReadOnly = true;
+            this.dataGridViewTextBoxColumn182.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn183
+            // 
+            this.dataGridViewTextBoxColumn183.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn183.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn183.Name = "dataGridViewTextBoxColumn183";
+            this.dataGridViewTextBoxColumn183.ReadOnly = true;
+            this.dataGridViewTextBoxColumn183.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn184
+            // 
+            this.dataGridViewTextBoxColumn184.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn184.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn184.Name = "dataGridViewTextBoxColumn184";
+            this.dataGridViewTextBoxColumn184.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn185
+            // 
+            this.dataGridViewTextBoxColumn185.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn185.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn185.Name = "dataGridViewTextBoxColumn185";
+            this.dataGridViewTextBoxColumn185.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn186
+            // 
+            this.dataGridViewTextBoxColumn186.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn186.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn186.Name = "dataGridViewTextBoxColumn186";
+            this.dataGridViewTextBoxColumn186.ReadOnly = true;
+            this.dataGridViewTextBoxColumn186.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn187
+            // 
+            this.dataGridViewTextBoxColumn187.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn187.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn187.Name = "dataGridViewTextBoxColumn187";
+            this.dataGridViewTextBoxColumn187.ReadOnly = true;
+            this.dataGridViewTextBoxColumn187.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn188
+            // 
+            this.dataGridViewTextBoxColumn188.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn188.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn188.Name = "dataGridViewTextBoxColumn188";
+            this.dataGridViewTextBoxColumn188.ReadOnly = true;
+            this.dataGridViewTextBoxColumn188.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn189
+            // 
+            this.dataGridViewTextBoxColumn189.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn189.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn189.Name = "dataGridViewTextBoxColumn189";
+            this.dataGridViewTextBoxColumn189.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn190
+            // 
+            this.dataGridViewTextBoxColumn190.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn190.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn190.Name = "dataGridViewTextBoxColumn190";
+            this.dataGridViewTextBoxColumn190.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn191
+            // 
+            this.dataGridViewTextBoxColumn191.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn191.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn191.Name = "dataGridViewTextBoxColumn191";
+            this.dataGridViewTextBoxColumn191.ReadOnly = true;
+            this.dataGridViewTextBoxColumn191.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn192
+            // 
+            this.dataGridViewTextBoxColumn192.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn192.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn192.Name = "dataGridViewTextBoxColumn192";
+            this.dataGridViewTextBoxColumn192.ReadOnly = true;
+            this.dataGridViewTextBoxColumn192.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn193
+            // 
+            this.dataGridViewTextBoxColumn193.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn193.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn193.Name = "dataGridViewTextBoxColumn193";
+            this.dataGridViewTextBoxColumn193.ReadOnly = true;
+            this.dataGridViewTextBoxColumn193.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn194
+            // 
+            this.dataGridViewTextBoxColumn194.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn194.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn194.Name = "dataGridViewTextBoxColumn194";
+            this.dataGridViewTextBoxColumn194.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn195
+            // 
+            this.dataGridViewTextBoxColumn195.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn195.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn195.Name = "dataGridViewTextBoxColumn195";
+            this.dataGridViewTextBoxColumn195.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn196
+            // 
+            this.dataGridViewTextBoxColumn196.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn196.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn196.Name = "dataGridViewTextBoxColumn196";
+            this.dataGridViewTextBoxColumn196.ReadOnly = true;
+            this.dataGridViewTextBoxColumn196.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn197
+            // 
+            this.dataGridViewTextBoxColumn197.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn197.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn197.Name = "dataGridViewTextBoxColumn197";
+            this.dataGridViewTextBoxColumn197.ReadOnly = true;
+            this.dataGridViewTextBoxColumn197.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn198
+            // 
+            this.dataGridViewTextBoxColumn198.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn198.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn198.Name = "dataGridViewTextBoxColumn198";
+            this.dataGridViewTextBoxColumn198.ReadOnly = true;
+            this.dataGridViewTextBoxColumn198.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn199
+            // 
+            this.dataGridViewTextBoxColumn199.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn199.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn199.Name = "dataGridViewTextBoxColumn199";
+            this.dataGridViewTextBoxColumn199.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn200
+            // 
+            this.dataGridViewTextBoxColumn200.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn200.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn200.Name = "dataGridViewTextBoxColumn200";
+            this.dataGridViewTextBoxColumn200.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn201
+            // 
+            this.dataGridViewTextBoxColumn201.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn201.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn201.Name = "dataGridViewTextBoxColumn201";
+            this.dataGridViewTextBoxColumn201.ReadOnly = true;
+            this.dataGridViewTextBoxColumn201.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn202
+            // 
+            this.dataGridViewTextBoxColumn202.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn202.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn202.Name = "dataGridViewTextBoxColumn202";
+            this.dataGridViewTextBoxColumn202.ReadOnly = true;
+            this.dataGridViewTextBoxColumn202.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn203
+            // 
+            this.dataGridViewTextBoxColumn203.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn203.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn203.Name = "dataGridViewTextBoxColumn203";
+            this.dataGridViewTextBoxColumn203.ReadOnly = true;
+            this.dataGridViewTextBoxColumn203.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn204
+            // 
+            this.dataGridViewTextBoxColumn204.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn204.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn204.Name = "dataGridViewTextBoxColumn204";
+            this.dataGridViewTextBoxColumn204.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn205
+            // 
+            this.dataGridViewTextBoxColumn205.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn205.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn205.Name = "dataGridViewTextBoxColumn205";
+            this.dataGridViewTextBoxColumn205.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn206
+            // 
+            this.dataGridViewTextBoxColumn206.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn206.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn206.Name = "dataGridViewTextBoxColumn206";
+            this.dataGridViewTextBoxColumn206.ReadOnly = true;
+            this.dataGridViewTextBoxColumn206.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn207
+            // 
+            this.dataGridViewTextBoxColumn207.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn207.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn207.Name = "dataGridViewTextBoxColumn207";
+            this.dataGridViewTextBoxColumn207.ReadOnly = true;
+            this.dataGridViewTextBoxColumn207.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn208
+            // 
+            this.dataGridViewTextBoxColumn208.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn208.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn208.Name = "dataGridViewTextBoxColumn208";
+            this.dataGridViewTextBoxColumn208.ReadOnly = true;
+            this.dataGridViewTextBoxColumn208.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn209
+            // 
+            this.dataGridViewTextBoxColumn209.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn209.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn209.Name = "dataGridViewTextBoxColumn209";
+            this.dataGridViewTextBoxColumn209.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn210
+            // 
+            this.dataGridViewTextBoxColumn210.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn210.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn210.Name = "dataGridViewTextBoxColumn210";
+            this.dataGridViewTextBoxColumn210.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn211
+            // 
+            this.dataGridViewTextBoxColumn211.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn211.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn211.Name = "dataGridViewTextBoxColumn211";
+            this.dataGridViewTextBoxColumn211.ReadOnly = true;
+            this.dataGridViewTextBoxColumn211.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn212
+            // 
+            this.dataGridViewTextBoxColumn212.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn212.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn212.Name = "dataGridViewTextBoxColumn212";
+            this.dataGridViewTextBoxColumn212.ReadOnly = true;
+            this.dataGridViewTextBoxColumn212.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn142
+            // 
+            this.dataGridViewTextBoxColumn142.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn142.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn142.Name = "dataGridViewTextBoxColumn142";
+            this.dataGridViewTextBoxColumn142.ReadOnly = true;
+            this.dataGridViewTextBoxColumn142.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn143
+            // 
+            this.dataGridViewTextBoxColumn143.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn143.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn143.Name = "dataGridViewTextBoxColumn143";
+            this.dataGridViewTextBoxColumn143.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn144
+            // 
+            this.dataGridViewTextBoxColumn144.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn144.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn144.Name = "dataGridViewTextBoxColumn144";
+            this.dataGridViewTextBoxColumn144.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn145
+            // 
+            this.dataGridViewTextBoxColumn145.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn145.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn145.Name = "dataGridViewTextBoxColumn145";
+            this.dataGridViewTextBoxColumn145.ReadOnly = true;
+            this.dataGridViewTextBoxColumn145.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn146
+            // 
+            this.dataGridViewTextBoxColumn146.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn146.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn146.Name = "dataGridViewTextBoxColumn146";
+            this.dataGridViewTextBoxColumn146.ReadOnly = true;
+            this.dataGridViewTextBoxColumn146.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn149
+            // 
+            this.dataGridViewTextBoxColumn149.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn149.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn149.Name = "dataGridViewTextBoxColumn149";
+            this.dataGridViewTextBoxColumn149.ReadOnly = true;
+            this.dataGridViewTextBoxColumn149.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn150
+            // 
+            this.dataGridViewTextBoxColumn150.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn150.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn150.Name = "dataGridViewTextBoxColumn150";
+            this.dataGridViewTextBoxColumn150.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn151
+            // 
+            this.dataGridViewTextBoxColumn151.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn151.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn151.Name = "dataGridViewTextBoxColumn151";
+            this.dataGridViewTextBoxColumn151.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn152
+            // 
+            this.dataGridViewTextBoxColumn152.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn152.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn152.Name = "dataGridViewTextBoxColumn152";
+            this.dataGridViewTextBoxColumn152.ReadOnly = true;
+            this.dataGridViewTextBoxColumn152.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn153
+            // 
+            this.dataGridViewTextBoxColumn153.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn153.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn153.Name = "dataGridViewTextBoxColumn153";
+            this.dataGridViewTextBoxColumn153.ReadOnly = true;
+            this.dataGridViewTextBoxColumn153.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn100
+            // 
+            this.dataGridViewTextBoxColumn100.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn100.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn100.Name = "dataGridViewTextBoxColumn100";
+            this.dataGridViewTextBoxColumn100.ReadOnly = true;
+            this.dataGridViewTextBoxColumn100.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn101
+            // 
+            this.dataGridViewTextBoxColumn101.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn101.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn101.Name = "dataGridViewTextBoxColumn101";
+            this.dataGridViewTextBoxColumn101.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn102
+            // 
+            this.dataGridViewTextBoxColumn102.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn102.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn102.Name = "dataGridViewTextBoxColumn102";
+            this.dataGridViewTextBoxColumn102.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn103
+            // 
+            this.dataGridViewTextBoxColumn103.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn103.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn103.Name = "dataGridViewTextBoxColumn103";
+            this.dataGridViewTextBoxColumn103.ReadOnly = true;
+            this.dataGridViewTextBoxColumn103.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn104
+            // 
+            this.dataGridViewTextBoxColumn104.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn104.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn104.Name = "dataGridViewTextBoxColumn104";
+            this.dataGridViewTextBoxColumn104.ReadOnly = true;
+            this.dataGridViewTextBoxColumn104.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn107
+            // 
+            this.dataGridViewTextBoxColumn107.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn107.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn107.Name = "dataGridViewTextBoxColumn107";
+            this.dataGridViewTextBoxColumn107.ReadOnly = true;
+            this.dataGridViewTextBoxColumn107.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn108
+            // 
+            this.dataGridViewTextBoxColumn108.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn108.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn108.Name = "dataGridViewTextBoxColumn108";
+            this.dataGridViewTextBoxColumn108.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn109
+            // 
+            this.dataGridViewTextBoxColumn109.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn109.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn109.Name = "dataGridViewTextBoxColumn109";
+            this.dataGridViewTextBoxColumn109.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn110
+            // 
+            this.dataGridViewTextBoxColumn110.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn110.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn110.Name = "dataGridViewTextBoxColumn110";
+            this.dataGridViewTextBoxColumn110.ReadOnly = true;
+            this.dataGridViewTextBoxColumn110.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn111
+            // 
+            this.dataGridViewTextBoxColumn111.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn111.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn111.Name = "dataGridViewTextBoxColumn111";
+            this.dataGridViewTextBoxColumn111.ReadOnly = true;
+            this.dataGridViewTextBoxColumn111.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn114
+            // 
+            this.dataGridViewTextBoxColumn114.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn114.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn114.Name = "dataGridViewTextBoxColumn114";
+            this.dataGridViewTextBoxColumn114.ReadOnly = true;
+            this.dataGridViewTextBoxColumn114.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn115
+            // 
+            this.dataGridViewTextBoxColumn115.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn115.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn115.Name = "dataGridViewTextBoxColumn115";
+            this.dataGridViewTextBoxColumn115.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn116
+            // 
+            this.dataGridViewTextBoxColumn116.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn116.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn116.Name = "dataGridViewTextBoxColumn116";
+            this.dataGridViewTextBoxColumn116.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn117
+            // 
+            this.dataGridViewTextBoxColumn117.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn117.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn117.Name = "dataGridViewTextBoxColumn117";
+            this.dataGridViewTextBoxColumn117.ReadOnly = true;
+            this.dataGridViewTextBoxColumn117.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn118
+            // 
+            this.dataGridViewTextBoxColumn118.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn118.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn118.Name = "dataGridViewTextBoxColumn118";
+            this.dataGridViewTextBoxColumn118.ReadOnly = true;
+            this.dataGridViewTextBoxColumn118.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn121
+            // 
+            this.dataGridViewTextBoxColumn121.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn121.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn121.Name = "dataGridViewTextBoxColumn121";
+            this.dataGridViewTextBoxColumn121.ReadOnly = true;
+            this.dataGridViewTextBoxColumn121.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn122
+            // 
+            this.dataGridViewTextBoxColumn122.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn122.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn122.Name = "dataGridViewTextBoxColumn122";
+            this.dataGridViewTextBoxColumn122.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn123
+            // 
+            this.dataGridViewTextBoxColumn123.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn123.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn123.Name = "dataGridViewTextBoxColumn123";
+            this.dataGridViewTextBoxColumn123.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn124
+            // 
+            this.dataGridViewTextBoxColumn124.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn124.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn124.Name = "dataGridViewTextBoxColumn124";
+            this.dataGridViewTextBoxColumn124.ReadOnly = true;
+            this.dataGridViewTextBoxColumn124.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn125
+            // 
+            this.dataGridViewTextBoxColumn125.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn125.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn125.Name = "dataGridViewTextBoxColumn125";
+            this.dataGridViewTextBoxColumn125.ReadOnly = true;
+            this.dataGridViewTextBoxColumn125.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn128
+            // 
+            this.dataGridViewTextBoxColumn128.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn128.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn128.Name = "dataGridViewTextBoxColumn128";
+            this.dataGridViewTextBoxColumn128.ReadOnly = true;
+            this.dataGridViewTextBoxColumn128.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn129
+            // 
+            this.dataGridViewTextBoxColumn129.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn129.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn129.Name = "dataGridViewTextBoxColumn129";
+            this.dataGridViewTextBoxColumn129.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn130
+            // 
+            this.dataGridViewTextBoxColumn130.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn130.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn130.Name = "dataGridViewTextBoxColumn130";
+            this.dataGridViewTextBoxColumn130.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn131
+            // 
+            this.dataGridViewTextBoxColumn131.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn131.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn131.Name = "dataGridViewTextBoxColumn131";
+            this.dataGridViewTextBoxColumn131.ReadOnly = true;
+            this.dataGridViewTextBoxColumn131.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn132
+            // 
+            this.dataGridViewTextBoxColumn132.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn132.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn132.Name = "dataGridViewTextBoxColumn132";
+            this.dataGridViewTextBoxColumn132.ReadOnly = true;
+            this.dataGridViewTextBoxColumn132.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn135
+            // 
+            this.dataGridViewTextBoxColumn135.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn135.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn135.Name = "dataGridViewTextBoxColumn135";
+            this.dataGridViewTextBoxColumn135.ReadOnly = true;
+            this.dataGridViewTextBoxColumn135.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn136
+            // 
+            this.dataGridViewTextBoxColumn136.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn136.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn136.Name = "dataGridViewTextBoxColumn136";
+            this.dataGridViewTextBoxColumn136.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn137
+            // 
+            this.dataGridViewTextBoxColumn137.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn137.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn137.Name = "dataGridViewTextBoxColumn137";
+            this.dataGridViewTextBoxColumn137.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn138
+            // 
+            this.dataGridViewTextBoxColumn138.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn138.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn138.Name = "dataGridViewTextBoxColumn138";
+            this.dataGridViewTextBoxColumn138.ReadOnly = true;
+            this.dataGridViewTextBoxColumn138.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn139
+            // 
+            this.dataGridViewTextBoxColumn139.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn139.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn139.Name = "dataGridViewTextBoxColumn139";
+            this.dataGridViewTextBoxColumn139.ReadOnly = true;
+            this.dataGridViewTextBoxColumn139.Width = 250;
+            // 
+            // bindingSourceRace
+            // 
+            this.bindingSourceRace.DataSource = typeof(RaceManager.Data.LapsInfo);
+            // 
+            // pilotNameDataGridViewTextBoxColumn
+            // 
+            this.pilotNameDataGridViewTextBoxColumn.DataPropertyName = "PilotName";
+            this.pilotNameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.pilotNameDataGridViewTextBoxColumn.Name = "pilotNameDataGridViewTextBoxColumn";
+            this.pilotNameDataGridViewTextBoxColumn.ReadOnly = true;
+            this.pilotNameDataGridViewTextBoxColumn.Width = 105;
+            // 
+            // bestLapTimeStringDataGridViewTextBoxColumn
+            // 
+            this.bestLapTimeStringDataGridViewTextBoxColumn.DataPropertyName = "BestLapTimeString";
+            this.bestLapTimeStringDataGridViewTextBoxColumn.HeaderText = "Best Lap";
+            this.bestLapTimeStringDataGridViewTextBoxColumn.Name = "bestLapTimeStringDataGridViewTextBoxColumn";
+            this.bestLapTimeStringDataGridViewTextBoxColumn.ReadOnly = true;
+            this.bestLapTimeStringDataGridViewTextBoxColumn.Width = 90;
+            // 
+            // avgLapTimeStringDataGridViewTextBoxColumn
+            // 
+            this.avgLapTimeStringDataGridViewTextBoxColumn.DataPropertyName = "AvgLapTimeString";
+            this.avgLapTimeStringDataGridViewTextBoxColumn.HeaderText = "Average Top 3";
+            this.avgLapTimeStringDataGridViewTextBoxColumn.Name = "avgLapTimeStringDataGridViewTextBoxColumn";
+            this.avgLapTimeStringDataGridViewTextBoxColumn.ReadOnly = true;
+            this.avgLapTimeStringDataGridViewTextBoxColumn.Width = 80;
+            // 
+            // bindingSourceRanking
+            // 
+            this.bindingSourceRanking.DataSource = typeof(RaceManager.Data.LapsInfo);
+            // 
+            // OrderNumber
+            // 
+            this.OrderNumber.DataPropertyName = "OrderNumber";
+            this.OrderNumber.HeaderText = "#";
+            this.OrderNumber.Name = "OrderNumber";
+            this.OrderNumber.Width = 40;
+            // 
+            // PilotName
+            // 
+            this.PilotName.DataPropertyName = "PilotName";
+            this.PilotName.HeaderText = "Name";
+            this.PilotName.Name = "PilotName";
+            this.PilotName.Width = 130;
+            // 
+            // Epc
+            // 
+            this.Epc.DataPropertyName = "Epc";
+            this.Epc.HeaderText = "TAG ID";
+            this.Epc.Name = "Epc";
+            this.Epc.Width = 75;
+            // 
+            // IdentCount
+            // 
+            this.IdentCount.DataPropertyName = "IdCount";
+            this.IdentCount.HeaderText = "ID Count";
+            this.IdentCount.Name = "IdentCount";
+            this.IdentCount.Width = 75;
+            // 
+            // dataGridViewTextBoxColumn155
+            // 
+            this.dataGridViewTextBoxColumn155.DataPropertyName = "Rssi";
+            this.dataGridViewTextBoxColumn155.HeaderText = "RSSI";
+            this.dataGridViewTextBoxColumn155.Name = "dataGridViewTextBoxColumn155";
+            this.dataGridViewTextBoxColumn155.Width = 70;
+            // 
+            // dataGridViewTextBoxColumn156
+            // 
+            this.dataGridViewTextBoxColumn156.DataPropertyName = "CarrFrequency";
+            this.dataGridViewTextBoxColumn156.HeaderText = "Freq";
+            this.dataGridViewTextBoxColumn156.Name = "dataGridViewTextBoxColumn156";
+            this.dataGridViewTextBoxColumn156.Width = 50;
+            // 
+            // Lap1
+            // 
+            this.Lap1.DataPropertyName = "Lap1";
+            this.Lap1.HeaderText = "LAP1";
+            this.Lap1.Name = "Lap1";
+            this.Lap1.Width = 80;
+            // 
+            // Lap2
+            // 
+            this.Lap2.DataPropertyName = "Lap2";
+            this.Lap2.HeaderText = "LAP2";
+            this.Lap2.Name = "Lap2";
+            this.Lap2.Width = 80;
+            // 
+            // Lap3
+            // 
+            this.Lap3.DataPropertyName = "Lap3";
+            this.Lap3.HeaderText = "LAP3";
+            this.Lap3.Name = "Lap3";
+            this.Lap3.Width = 80;
+            // 
+            // Lap4
+            // 
+            this.Lap4.DataPropertyName = "Lap4";
+            this.Lap4.HeaderText = "LAP4";
+            this.Lap4.Name = "Lap4";
+            this.Lap4.Width = 80;
+            // 
+            // Lap5
+            // 
+            this.Lap5.DataPropertyName = "Lap5";
+            this.Lap5.HeaderText = "LAP5";
+            this.Lap5.Name = "Lap5";
+            this.Lap5.Width = 80;
+            // 
+            // Lap6
+            // 
+            this.Lap6.DataPropertyName = "Lap6";
+            this.Lap6.HeaderText = "LAP6";
+            this.Lap6.Name = "Lap6";
+            this.Lap6.Width = 80;
+            // 
+            // TimeDifferential
+            // 
+            this.TimeDifferential.DataPropertyName = "TimeDifferential";
+            this.TimeDifferential.HeaderText = "Time Diff";
+            this.TimeDifferential.Name = "TimeDifferential";
+            // 
+            // BestLapTime
+            // 
+            this.BestLapTime.DataPropertyName = "BestLapTimeString";
+            this.BestLapTime.HeaderText = "Best Lap";
+            this.BestLapTime.Name = "BestLapTime";
+            this.BestLapTime.ReadOnly = true;
+            this.BestLapTime.Width = 80;
+            // 
+            // AvgLapTime
+            // 
+            this.AvgLapTime.DataPropertyName = "AvgLapTimeString";
+            this.AvgLapTime.HeaderText = "Average";
+            this.AvgLapTime.Name = "AvgLapTime";
+            this.AvgLapTime.ReadOnly = true;
+            this.AvgLapTime.Width = 80;
+            // 
+            // AverageSpeed
+            // 
+            this.AverageSpeed.DataPropertyName = "AvgSpeedString";
+            this.AverageSpeed.HeaderText = "Avg Speed, km/h";
+            this.AverageSpeed.Name = "AverageSpeed";
+            this.AverageSpeed.ReadOnly = true;
+            // 
+            // RegisteredLapsCount
+            // 
+            this.RegisteredLapsCount.DataPropertyName = "RegisteredLapsCount";
+            this.RegisteredLapsCount.HeaderText = "Laps";
+            this.RegisteredLapsCount.Name = "RegisteredLapsCount";
+            this.RegisteredLapsCount.ReadOnly = true;
+            this.RegisteredLapsCount.Width = 50;
+            // 
+            // Distance
+            // 
+            this.Distance.DataPropertyName = "Distance";
+            this.Distance.HeaderText = "Distance";
+            this.Distance.Name = "Distance";
+            this.Distance.Width = 80;
+            // 
+            // Penalty
+            // 
+            this.Penalty.DataPropertyName = "Penalty";
+            this.Penalty.HeaderText = "Penalty";
+            this.Penalty.Name = "Penalty";
+            this.Penalty.Width = 70;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -10541,14 +10631,12 @@
             this.groupBox27.ResumeLayout(false);
             this.groupBox28.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gvPilots)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourcePilots1)).EndInit();
             this.tabRounds.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
             this.tableLayoutPanel12.ResumeLayout(false);
             this.tabControl6.ResumeLayout(false);
             this.tabPage22.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gvRace1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourcePilots)).EndInit();
             this.tabPage23.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gvRace2)).EndInit();
             this.tabPage24.ResumeLayout(false);
@@ -10646,11 +10734,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.gvSemi2)).EndInit();
             this.tabRace.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gvRace)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceRace)).EndInit();
             this.groupBox35.ResumeLayout(false);
             this.groupBox35.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvRanking)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceRanking)).EndInit();
             this.groupBox31.ResumeLayout(false);
             this.groupBox31.PerformLayout();
             this.tableLayoutPanel6.ResumeLayout(false);
@@ -10755,6 +10841,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.lxLedControl16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lxLedControl17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lxLedControl18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourcePilots1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourcePilots)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceRace)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceRanking)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -11413,7 +11503,7 @@
         private CustomControl.LogRichTextBox lrtxtLog;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
         private System.Windows.Forms.GroupBox groupBox38;
-        private System.Windows.Forms.Button btnAddPilotsToGroupsF;
+        private System.Windows.Forms.Button btnAddPilotsToF;
         private System.Windows.Forms.TabControl tabControl5;
         private System.Windows.Forms.TabPage tabPage9;
         private System.Windows.Forms.DataGridView gvSmallFinal;
@@ -11489,25 +11579,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn teamDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn tagDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn OrderNumber;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PilotName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Epc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IdentCount;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn155;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn156;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Lap1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Lap2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Lap3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Lap4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Lap5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Lap6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TimeDifferential;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BestLapTime;
-        private System.Windows.Forms.DataGridViewTextBoxColumn AvgLapTime;
-        private System.Windows.Forms.DataGridViewTextBoxColumn AverageSpeed;
-        private System.Windows.Forms.DataGridViewTextBoxColumn RegisteredLapsCount;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Distance;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Penalty;
         private System.Windows.Forms.GroupBox gbMimicRace;
         private System.Windows.Forms.TextBox tbMimicName;
         private System.Windows.Forms.TextBox tbMimicLocation;
@@ -11656,6 +11727,29 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn250;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn251;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn252;
+        private System.Windows.Forms.Button btnManAddPilotsTo18F;
+        private System.Windows.Forms.Button btnManAddPilotsToF;
+        private System.Windows.Forms.Button btnManAddPilotsToQF;
+        private System.Windows.Forms.Button btnManAddPilotsToSF;
+        private System.Windows.Forms.DataGridViewTextBoxColumn OrderNumber;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PilotName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Epc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdentCount;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn155;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn156;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Lap1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Lap2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Lap3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Lap4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Lap5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Lap6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TimeDifferential;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BestLapTime;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AvgLapTime;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AverageSpeed;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RegisteredLapsCount;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Distance;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Penalty;
     }
 }
 
