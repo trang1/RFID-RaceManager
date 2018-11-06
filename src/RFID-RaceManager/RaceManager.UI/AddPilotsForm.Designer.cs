@@ -72,7 +72,7 @@
             this.gvPilots.Name = "gvPilots";
             this.gvPilots.RowTemplate.Height = 24;
             this.gvPilots.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gvPilots.Size = new System.Drawing.Size(930, 421);
+            this.gvPilots.Size = new System.Drawing.Size(930, 432);
             this.gvPilots.TabIndex = 1;
             // 
             // nameDataGridViewTextBoxColumn
@@ -123,7 +123,7 @@
             this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnClose.Location = new System.Drawing.Point(695, 3);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(153, 23);
+            this.btnClose.Size = new System.Drawing.Size(153, 27);
             this.btnClose.TabIndex = 2;
             this.btnClose.Text = "Cancel";
             this.btnClose.UseVisualStyleBackColor = true;
@@ -132,7 +132,7 @@
             // 
             this.btnAddPilots.Location = new System.Drawing.Point(536, 3);
             this.btnAddPilots.Name = "btnAddPilots";
-            this.btnAddPilots.Size = new System.Drawing.Size(153, 23);
+            this.btnAddPilots.Size = new System.Drawing.Size(153, 27);
             this.btnAddPilots.TabIndex = 3;
             this.btnAddPilots.Text = "Add Pilots to List";
             this.btnAddPilots.UseVisualStyleBackColor = true;
@@ -142,7 +142,7 @@
             // 
             this.btnSaveChanges.Location = new System.Drawing.Point(377, 3);
             this.btnSaveChanges.Name = "btnSaveChanges";
-            this.btnSaveChanges.Size = new System.Drawing.Size(153, 23);
+            this.btnSaveChanges.Size = new System.Drawing.Size(153, 27);
             this.btnSaveChanges.TabIndex = 4;
             this.btnSaveChanges.Text = "Save Changes to Database";
             this.btnSaveChanges.UseVisualStyleBackColor = true;
@@ -152,7 +152,7 @@
             // 
             this.btnRefresh.Location = new System.Drawing.Point(218, 3);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(153, 23);
+            this.btnRefresh.Size = new System.Drawing.Size(153, 27);
             this.btnRefresh.TabIndex = 5;
             this.btnRefresh.Text = "Refresh List from Database";
             this.btnRefresh.UseVisualStyleBackColor = true;
@@ -170,7 +170,7 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 91.6129F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.387096F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(934, 465);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(934, 477);
             this.tableLayoutPanel1.TabIndex = 6;
             // 
             // panel1
@@ -181,16 +181,16 @@
             this.panel1.Controls.Add(this.btnRefresh);
             this.panel1.Controls.Add(this.btnAddPilots);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(75, 428);
+            this.panel1.Location = new System.Drawing.Point(75, 439);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(856, 34);
+            this.panel1.Size = new System.Drawing.Size(856, 35);
             this.panel1.TabIndex = 7;
             // 
             // btnAddPilot
             // 
             this.btnAddPilot.Location = new System.Drawing.Point(59, 3);
             this.btnAddPilot.Name = "btnAddPilot";
-            this.btnAddPilot.Size = new System.Drawing.Size(153, 23);
+            this.btnAddPilot.Size = new System.Drawing.Size(153, 27);
             this.btnAddPilot.TabIndex = 6;
             this.btnAddPilot.Text = "Add New Pilot";
             this.btnAddPilot.UseVisualStyleBackColor = true;
@@ -200,7 +200,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(934, 465);
+            this.ClientSize = new System.Drawing.Size(934, 477);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "AddPilotsForm";
             this.Text = "Add Pilots from DB";

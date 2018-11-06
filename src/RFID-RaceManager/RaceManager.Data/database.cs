@@ -18,5 +18,17 @@ namespace RaceManager.Data
             myConnection.Open();
             return myConnection;
         }
+
+        public int getLastInsertedId(SQLiteCommand cmd)
+        {
+            //database objDatabase = new database();
+            //SQLiteCommand cmd;
+            string lastRowIdQuery;
+            lastRowIdQuery = @"select last_insert_rowid()";
+            //cmd = new SQLiteCommand(objDatabase.get_SQLiteConnection());
+            cmd.CommandText = lastRowIdQuery;
+            return Convert.ToInt32(cmd.ExecuteScalar());
+        }
+
     }
 }

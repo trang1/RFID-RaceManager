@@ -5560,29 +5560,26 @@ namespace RaceManager.UI
 
         List<RacePilot> RacePilots = new List<RacePilot>();
 
-        private void btnAddPilot_Click(object sender, EventArgs e) // Add Pilot
-        {
-            var pilot = new RacePilot();
-  
-           
+        //private void btnAddPilot_Click(object sender, EventArgs e) // Add Pilot
+        //{
+        //    var pilot = new RacePilot();
+        //    RacePilots.Add(pilot);
+        //    pilot.OrderNumber = RacePilots.IndexOf(pilot) + 1;
 
-     
-            RacePilots.Add(pilot);
-            pilot.OrderNumber = RacePilots.IndexOf(pilot) + 1;
+        //    database objDatabase = new database();
+        //    string sqlQuery = "insert into Pilots (Name, NickName, Team, Email, Confirmation, TagID) values ('" + pilot.Name + "','" + pilot.Nickname + "','" + pilot.Team + "','" + pilot.Email + "','" + pilot.IsChecked + "', '" + pilot.Tag + "' )";
+        //    SQLiteCommand cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+        //    cmd.ExecuteNonQuery();
+        //    pilot.Id = Convert.ToInt32(getLastInsertedId(cmd));
 
-            database objDatabase = new database();
-            string sqlQuery = "insert into Pilots (Name, NickName, Team, Email, Confirmation, TagID) values ('" + pilot.Name + "','" + pilot.Nickname + "','" + pilot.Team + "','" + pilot.Email + "','" + pilot.IsChecked + "', '" + pilot.Tag + "' )";
-            SQLiteCommand cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
-            cmd.ExecuteNonQuery();
-            pilot.Id = Convert.ToInt32(getLastInsertedId(cmd));
-
-            bindingSourcePilots1.DataSource = RacePilots;
-            bindingSourcePilots1.ResetBindings(false);
-        }
+        //    bindingSourcePilots1.DataSource = RacePilots;
+        //    bindingSourcePilots1.ResetBindings(false);
+        //}
 
         private void btnAddPilotFromDb_Click(object sender, EventArgs e) // Add From DB
         {
             var form = new AddPilotsForm();
+            form.CloseFormAfterSave = true;
 
             if (form.ShowDialog(this) == DialogResult.OK)
             {
@@ -5644,36 +5641,33 @@ namespace RaceManager.UI
 
         public void clearFormText()
         {
-         
-           
-         
         }
 
         private void gvPilots_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0)
-            {
-                int Id, Conf;
-                string Name, Nickname, Team, Email, TagID;
-                Id = Convert.ToInt32(gvPilots.Rows[e.RowIndex].Cells[1].Value);
-                Name = Convert.ToString(gvPilots.Rows[e.RowIndex].Cells[2].Value);
-                Nickname = Convert.ToString(gvPilots.Rows[e.RowIndex].Cells[3].Value);
-                Team = Convert.ToString(gvPilots.Rows[e.RowIndex].Cells[4].Value);
-                TagID = Convert.ToString(gvPilots.Rows[e.RowIndex].Cells[5].Value);
-                Email = Convert.ToString(gvPilots.Rows[e.RowIndex].Cells[6].Value);
-                Conf = Convert.ToString(gvPilots.Rows[e.RowIndex].Cells[7].Value) == "Yes" ? 1 : 0;
-                database objDatabase = new database();
-                string sqlQuery = "Update Pilots set Name = @Name, Nickname = @Nickname, Team = @Team, TagID = @TagID, Email = @Email, Confirmation = @Confirmation where Id = @Id";
-                SQLiteCommand cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
-                cmd.Parameters.AddWithValue("@Id", Id);
-                cmd.Parameters.AddWithValue("@Name", Name);
-                cmd.Parameters.AddWithValue("@Nickname", Nickname);
-                cmd.Parameters.AddWithValue("@Team", Team);
-                cmd.Parameters.AddWithValue("@TagID", TagID);
-                cmd.Parameters.AddWithValue("@Email", Email);
-                cmd.Parameters.AddWithValue("@Confirmation", Conf);
-                cmd.ExecuteNonQuery();
-            }
+            //if (e.RowIndex >= 0)
+            //{
+            //    int Id, Conf;
+            //    string Name, Nickname, Team, Email, TagID;
+            //    Id = Convert.ToInt32(gvPilots.Rows[e.RowIndex].Cells[1].Value);
+            //    Name = Convert.ToString(gvPilots.Rows[e.RowIndex].Cells[2].Value);
+            //    Nickname = Convert.ToString(gvPilots.Rows[e.RowIndex].Cells[3].Value);
+            //    Team = Convert.ToString(gvPilots.Rows[e.RowIndex].Cells[4].Value);
+            //    TagID = Convert.ToString(gvPilots.Rows[e.RowIndex].Cells[5].Value);
+            //    Email = Convert.ToString(gvPilots.Rows[e.RowIndex].Cells[6].Value);
+            //    Conf = Convert.ToString(gvPilots.Rows[e.RowIndex].Cells[7].Value) == "Yes" ? 1 : 0;
+            //    database objDatabase = new database();
+            //    string sqlQuery = "Update Pilots set Name = @Name, Nickname = @Nickname, Team = @Team, TagID = @TagID, Email = @Email, Confirmation = @Confirmation where Id = @Id";
+            //    SQLiteCommand cmd = new SQLiteCommand(sqlQuery, objDatabase.get_SQLiteConnection());
+            //    cmd.Parameters.AddWithValue("@Id", Id);
+            //    cmd.Parameters.AddWithValue("@Name", Name);
+            //    cmd.Parameters.AddWithValue("@Nickname", Nickname);
+            //    cmd.Parameters.AddWithValue("@Team", Team);
+            //    cmd.Parameters.AddWithValue("@TagID", TagID);
+            //    cmd.Parameters.AddWithValue("@Email", Email);
+            //    cmd.Parameters.AddWithValue("@Confirmation", Conf);
+            //    cmd.ExecuteNonQuery();
+            //}
         }
 
         #endregion
@@ -6614,23 +6608,46 @@ namespace RaceManager.UI
 
         private void btnManAddPilotsTo18F_Click(object sender, EventArgs e)
         {
-
+            AddPilotsManually(tabControl6);
         }
-
+        
         private void btnManAddPilotsToQF_Click(object sender, EventArgs e)
         {
-
+            AddPilotsManually(tabControl3);
         }
 
         private void btnManAddPilotsToSF_Click(object sender, EventArgs e)
         {
-
+            AddPilotsManually(tabControl4);
         }
 
         private void btnManAddPilotsToF_Click(object sender, EventArgs e)
         {
-
+            AddPilotsManually(tabControl5);
         }
+
+        private void AddPilotsManually(TabControl tabControl)
+        {
+            var form = new AddPilotsForm();
+            form.Save += (o, args) =>
+            {
+                var selectedGroup = tabControl.SelectedTab;
+                var gridView = selectedGroup?.Controls[0] as DataGridView;
+                if (gridView?.DataSource is List<RacePilot>)
+                {
+                    var ds = (List<RacePilot>)gridView.DataSource;
+                    ds.AddRange(form.SelectedPilots.Where(rp => ds.FirstOrDefault(r => r?.Tag == rp.Tag) == null)
+                            .Select(p => new RacePilot(p)));
+
+                    // nice refresh (https://stackoverflow.com/a/253945)
+                    gridView.DataSource = typeof(Array);
+                    gridView.DataSource = ds;
+                }
+            };
+
+            form.ShowDialog(this);
+        }
+
         #endregion
 
         #region Ranking
@@ -6724,17 +6741,6 @@ namespace RaceManager.UI
             }
         }
         #endregion
-
-        public int getLastInsertedId(SQLiteCommand cmd)
-        {
-            //database objDatabase = new database();
-            //SQLiteCommand cmd;
-            string lastRowIdQuery;
-            lastRowIdQuery = @"select last_insert_rowid()";
-            //cmd = new SQLiteCommand(objDatabase.get_SQLiteConnection());
-            cmd.CommandText = lastRowIdQuery;
-            return Convert.ToInt32(cmd.ExecuteScalar());
-        }
         
         #region Track management
         private void btTrack_Click(object sender, EventArgs e)
@@ -6788,7 +6794,6 @@ namespace RaceManager.UI
         }
 
         #endregion
-
        
     }
 }

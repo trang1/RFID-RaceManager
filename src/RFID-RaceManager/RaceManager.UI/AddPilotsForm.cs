@@ -11,6 +11,8 @@ namespace RaceManager.UI
     public partial class AddPilotsForm : Form
     {
         private ApplicationContext _db;
+        public event EventHandler Save;
+        public bool CloseFormAfterSave { get; set; }
 
         public AddPilotsForm()
         {
@@ -42,7 +44,10 @@ namespace RaceManager.UI
                     .OrderBy(p => p.Tag)
                     .ToList();
             
-            DialogResult = DialogResult.OK;
+            Save?.Invoke(this, new EventArgs());
+
+            if(CloseFormAfterSave)
+                DialogResult = DialogResult.OK;
         }
 
         private void btnSaveChanges_Click(object sender, EventArgs e)
