@@ -6019,112 +6019,191 @@ namespace RaceManager.UI
             var group = new Group
             {
                 Name = "Race 1",
-                Pilots = new List<RacePilot>
-                {
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(0)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(8)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(16)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(14)?.Epc),
-                }
+                Pilots = new List<RacePilot>()
             };
+            var pilot1 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(0)?.Epc);
+            if (pilot1 != null)
+                group.Pilots.Add(pilot1);
+
+            var pilot2 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(8)?.Epc);
+            if (pilot2 != null)
+                group.Pilots.Add(pilot2);
+
+            var pilot3 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(16)?.Epc);
+            if (pilot3 != null)
+                group.Pilots.Add(pilot3);
+
+            var pilot4 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(24)?.Epc);
+            if (pilot4 != null)
+                group.Pilots.Add(pilot4);
+                
             gvRace1.DataSource = group.Pilots;
             _race.Groups.Add(group);
 
             group = new Group
             {
                 Name = "Race 2",
-                Pilots = new List<RacePilot>
-                {
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(7)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(15)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(23)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(31)?.Epc),
-                }
+                Pilots = new List<RacePilot>()
             };
+            pilot1 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(7)?.Epc);
+            if (pilot1 != null)
+                group.Pilots.Add(pilot1);
+
+            pilot2 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(15)?.Epc);
+            if (pilot2 != null)
+                group.Pilots.Add(pilot2);
+
+            pilot3 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(23)?.Epc);
+            if (pilot3 != null)
+                group.Pilots.Add(pilot3);
+
+            pilot4 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(31)?.Epc);
+            if (pilot4 != null)
+                group.Pilots.Add(pilot4);
+
             gvRace2.DataSource = group.Pilots;
             _race.Groups.Add(group);
 
             group = new Group
             {
                 Name = "Race 3",
-                Pilots = new List<RacePilot>
-                {
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(5)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(13)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(21)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(29)?.Epc),
-                }
+                Pilots = new List<RacePilot>()
             };
+            pilot1 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(5)?.Epc);
+            if (pilot1 != null)
+                group.Pilots.Add(pilot1);
+
+            pilot2 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(13)?.Epc);
+            if (pilot2 != null)
+                group.Pilots.Add(pilot2);
+
+            pilot3 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(21)?.Epc);
+            if (pilot3 != null)
+                group.Pilots.Add(pilot3);
+
+            pilot4 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(29)?.Epc);
+            if (pilot4 != null)
+                group.Pilots.Add(pilot4);
+
             gvRace3.DataSource = group.Pilots;
             _race.Groups.Add(group);
 
             group = new Group
             {
                 Name = "Race 4",
-                Pilots = new List<RacePilot>
-                {
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(3)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(11)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(19)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(27)?.Epc),
-                }
+                Pilots = new List<RacePilot>()
             };
+            pilot1 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(3)?.Epc);
+            if (pilot1 != null)
+                group.Pilots.Add(pilot1);
+
+            pilot2 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(11)?.Epc);
+            if (pilot2 != null)
+                group.Pilots.Add(pilot2);
+
+            pilot3 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(19)?.Epc);
+            if (pilot3 != null)
+                group.Pilots.Add(pilot3);
+
+            pilot4 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(27)?.Epc);
+            if (pilot4 != null)
+                group.Pilots.Add(pilot4);
+
             gvRace4.DataSource = group.Pilots;
             _race.Groups.Add(group);
 
             group = new Group
             {
                 Name = "Race 5",
-                Pilots = new List<RacePilot>
-                {
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(2)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(10)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(18)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(26)?.Epc),
-                }
+                Pilots = new List<RacePilot>()
             };
+            pilot1 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(2)?.Epc);
+            if (pilot1 != null)
+                group.Pilots.Add(pilot1);
+
+            pilot2 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(10)?.Epc);
+            if (pilot2 != null)
+                group.Pilots.Add(pilot2);
+
+            pilot3 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(18)?.Epc);
+            if (pilot3 != null)
+                group.Pilots.Add(pilot3);
+
+            pilot4 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(26)?.Epc);
+            if (pilot4 != null)
+                group.Pilots.Add(pilot4);
+
             gvRace5.DataSource = group.Pilots;
             _race.Groups.Add(group);
 
             group = new Group
             {
                 Name = "Race 6",
-                Pilots = new List<RacePilot>
-                {
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(4)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(12)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(20)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(28)?.Epc),
-                }
+                Pilots = new List<RacePilot>()
             };
+            pilot1 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(4)?.Epc);
+            if (pilot1 != null)
+                group.Pilots.Add(pilot1);
+
+            pilot2 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(12)?.Epc);
+            if (pilot2 != null)
+                group.Pilots.Add(pilot2);
+
+            pilot3 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(20)?.Epc);
+            if (pilot3 != null)
+                group.Pilots.Add(pilot3);
+
+            pilot4 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(28)?.Epc);
+            if (pilot4 != null)
+                group.Pilots.Add(pilot4);
             gvRace6.DataSource = group.Pilots;
             _race.Groups.Add(group);
 
             group = new Group
             {
                 Name = "Race 7",
-                Pilots = new List<RacePilot>
-                {
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(6)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(12)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(22)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(30)?.Epc),
-                }
+                Pilots = new List<RacePilot>()
             };
+            pilot1 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(6)?.Epc);
+            if (pilot1 != null)
+                group.Pilots.Add(pilot1);
+
+            pilot2 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(14)?.Epc);
+            if (pilot2 != null)
+                group.Pilots.Add(pilot2);
+
+            pilot3 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(22)?.Epc);
+            if (pilot3 != null)
+                group.Pilots.Add(pilot3);
+
+            pilot4 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(30)?.Epc);
+            if (pilot4 != null)
+                group.Pilots.Add(pilot4);
+
             gvRace7.DataSource = group.Pilots;
             _race.Groups.Add(group);
 
             group = new Group
             {
                 Name = "Race 8",
-                Pilots = new List<RacePilot>
-                {
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(1)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(9)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(17)?.Epc),
-                    RacePilots.FirstOrDefault(p=>p.Tag == _bestQualificationResuls.ElementAtOrDefault(25)?.Epc),
-                }
+                Pilots = new List<RacePilot>()
             };
+            pilot1 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(1)?.Epc);
+            if (pilot1 != null)
+                group.Pilots.Add(pilot1);
+
+            pilot2 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(9)?.Epc);
+            if (pilot2 != null)
+                group.Pilots.Add(pilot2);
+
+            pilot3 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(17)?.Epc);
+            if (pilot3 != null)
+                group.Pilots.Add(pilot3);
+
+            pilot4 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(25)?.Epc);
+            if (pilot4 != null)
+                group.Pilots.Add(pilot4);
+
             gvRace8.DataSource = group.Pilots;
             _race.Groups.Add(group);
             #region Groups Insertion
@@ -6219,56 +6298,96 @@ namespace RaceManager.UI
                 var group = new Group
                 {
                     Name = "Race 13",
-                    Pilots = new List<RacePilot>
-                    {
-                        RacePilots.FirstOrDefault(p => p.Tag == race1Results.ElementAtOrDefault(1)?.Epc),
-                        RacePilots.FirstOrDefault(p => p.Tag == race1Results.ElementAtOrDefault(0)?.Epc),
-                        RacePilots.FirstOrDefault(p => p.Tag == race2Results.ElementAtOrDefault(0)?.Epc),
-                        RacePilots.FirstOrDefault(p => p.Tag == race2Results.ElementAtOrDefault(1)?.Epc),
-                    }
+                    Pilots = new List<RacePilot>()
                 };
+                var pilot1 = RacePilots.FirstOrDefault(p => p.Tag == race1Results.ElementAtOrDefault(1)?.Epc);
+                if (pilot1 != null)
+                    group.Pilots.Add(pilot1);
+
+                var pilot2 = RacePilots.FirstOrDefault(p => p.Tag == race1Results.ElementAtOrDefault(0)?.Epc);
+                if (pilot2 != null)
+                    group.Pilots.Add(pilot2);
+
+                var pilot3 = RacePilots.FirstOrDefault(p => p.Tag == race2Results.ElementAtOrDefault(0)?.Epc);
+                if (pilot3 != null)
+                    group.Pilots.Add(pilot3);
+
+                var pilot4 = RacePilots.FirstOrDefault(p => p.Tag == race2Results.ElementAtOrDefault(1)?.Epc);
+                if (pilot4 != null)
+                    group.Pilots.Add(pilot4);
+
                 gvRace13.DataSource = group.Pilots;
                 _race.Groups.Add(group);
 
                 group = new Group
                 {
                     Name = "Race 14",
-                    Pilots = new List<RacePilot>
-                    {
-                        RacePilots.FirstOrDefault(p => p.Tag == race3Results.ElementAtOrDefault(1)?.Epc),
-                        RacePilots.FirstOrDefault(p => p.Tag == race3Results.ElementAtOrDefault(0)?.Epc),
-                        RacePilots.FirstOrDefault(p => p.Tag == race4Results.ElementAtOrDefault(0)?.Epc),
-                        RacePilots.FirstOrDefault(p => p.Tag == race4Results.ElementAtOrDefault(1)?.Epc),
-                    }
+                    Pilots = new List<RacePilot>()
                 };
+                pilot1 = RacePilots.FirstOrDefault(p => p.Tag == race3Results.ElementAtOrDefault(1)?.Epc);
+                if (pilot1 != null)
+                    group.Pilots.Add(pilot1);
+
+                pilot2 = RacePilots.FirstOrDefault(p => p.Tag == race3Results.ElementAtOrDefault(0)?.Epc);
+                if (pilot2 != null)
+                    group.Pilots.Add(pilot2);
+
+                pilot3 = RacePilots.FirstOrDefault(p => p.Tag == race4Results.ElementAtOrDefault(0)?.Epc);
+                if (pilot3 != null)
+                    group.Pilots.Add(pilot3);
+
+                pilot4 = RacePilots.FirstOrDefault(p => p.Tag == race4Results.ElementAtOrDefault(1)?.Epc);
+                if (pilot4 != null)
+                    group.Pilots.Add(pilot4);
+
                 gvRace14.DataSource = group.Pilots;
                 _race.Groups.Add(group);
 
                 group = new Group
                 {
                     Name = "Race 15",
-                    Pilots = new List<RacePilot>
-                    {
-                        RacePilots.FirstOrDefault(p => p.Tag == race5Results.ElementAtOrDefault(1)?.Epc),
-                        RacePilots.FirstOrDefault(p => p.Tag == race5Results.ElementAtOrDefault(0)?.Epc),
-                        RacePilots.FirstOrDefault(p => p.Tag == race6Results.ElementAtOrDefault(0)?.Epc),
-                        RacePilots.FirstOrDefault(p => p.Tag == race6Results.ElementAtOrDefault(1)?.Epc),
-                    }
+                    Pilots = new List<RacePilot>()
                 };
+                pilot1 = RacePilots.FirstOrDefault(p => p.Tag == race5Results.ElementAtOrDefault(1)?.Epc);
+                if (pilot1 != null)
+                    group.Pilots.Add(pilot1);
+
+                pilot2 = RacePilots.FirstOrDefault(p => p.Tag == race5Results.ElementAtOrDefault(0)?.Epc);
+                if (pilot2 != null)
+                    group.Pilots.Add(pilot2);
+
+                pilot3 = RacePilots.FirstOrDefault(p => p.Tag == race6Results.ElementAtOrDefault(0)?.Epc);
+                if (pilot3 != null)
+                    group.Pilots.Add(pilot3);
+
+                pilot4 = RacePilots.FirstOrDefault(p => p.Tag == race6Results.ElementAtOrDefault(1)?.Epc);
+                if (pilot4 != null)
+                    group.Pilots.Add(pilot4);
+
                 gvRace15.DataSource = group.Pilots;
                 _race.Groups.Add(group);
 
                 group = new Group
                 {
                     Name = "Race 16",
-                    Pilots = new List<RacePilot>
-                    {
-                        RacePilots.FirstOrDefault(p => p.Tag == race7Results.ElementAtOrDefault(1)?.Epc),
-                        RacePilots.FirstOrDefault(p => p.Tag == race7Results.ElementAtOrDefault(0)?.Epc),
-                        RacePilots.FirstOrDefault(p => p.Tag == race8Results.ElementAtOrDefault(0)?.Epc),
-                        RacePilots.FirstOrDefault(p => p.Tag == race8Results.ElementAtOrDefault(1)?.Epc),
-                    }
+                    Pilots = new List<RacePilot>()
                 };
+                pilot1 = RacePilots.FirstOrDefault(p => p.Tag == race7Results.ElementAtOrDefault(1)?.Epc);
+                if (pilot1 != null)
+                    group.Pilots.Add(pilot1);
+
+                pilot2 = RacePilots.FirstOrDefault(p => p.Tag == race7Results.ElementAtOrDefault(0)?.Epc);
+                if (pilot2 != null)
+                    group.Pilots.Add(pilot2);
+
+                pilot3 = RacePilots.FirstOrDefault(p => p.Tag == race8Results.ElementAtOrDefault(0)?.Epc);
+                if (pilot3 != null)
+                    group.Pilots.Add(pilot3);
+
+                pilot4 = RacePilots.FirstOrDefault(p => p.Tag == race8Results.ElementAtOrDefault(1)?.Epc);
+                if (pilot4 != null)
+                    group.Pilots.Add(pilot4);
+
                 gvRace16.DataSource = group.Pilots;
                 _race.Groups.Add(group);
 
@@ -6326,56 +6445,96 @@ namespace RaceManager.UI
                 var group = new Group
                 {
                     Name = "Race 1",
-                    Pilots = new List<RacePilot>
-                    {
-                        RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(0)?.Epc),
-                        RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(4)?.Epc),
-                        RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(8)?.Epc),
-                        RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(12)?.Epc),
-                    }
+                    Pilots = new List<RacePilot>()
                 };
+                var pilot1 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(0)?.Epc);
+                if (pilot1 != null)
+                    group.Pilots.Add(pilot1);
+
+                var pilot2 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(4)?.Epc);
+                if (pilot2 != null)
+                    group.Pilots.Add(pilot2);
+
+                var pilot3 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(8)?.Epc);
+                if (pilot3 != null)
+                    group.Pilots.Add(pilot3);
+
+                var pilot4 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(12)?.Epc);
+                if (pilot4 != null)
+                    group.Pilots.Add(pilot4);
+
                 gvRace13.DataSource = group.Pilots;
                 _race.Groups.Add(group);
 
                 group = new Group
                 {
                     Name = "Race 2",
-                    Pilots = new List<RacePilot>
-                    {
-                        RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(3)?.Epc),
-                        RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(7)?.Epc),
-                        RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(11)?.Epc),
-                        RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(15)?.Epc),
-                    }
+                    Pilots = new List<RacePilot>()
                 };
+                pilot1 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(3)?.Epc);
+                if (pilot1 != null)
+                    group.Pilots.Add(pilot1);
+
+                pilot2 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(7)?.Epc);
+                if (pilot2 != null)
+                    group.Pilots.Add(pilot2);
+
+                pilot3 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(11)?.Epc);
+                if (pilot3 != null)
+                    group.Pilots.Add(pilot3);
+
+                pilot4 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(15)?.Epc);
+                if (pilot4 != null)
+                    group.Pilots.Add(pilot4);
+
                 gvRace14.DataSource = group.Pilots;
                 _race.Groups.Add(group);
 
                 group = new Group
                 {
                     Name = "Race 3",
-                    Pilots = new List<RacePilot>
-                    {
-                        RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(2)?.Epc),
-                        RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(6)?.Epc),
-                        RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(10)?.Epc),
-                        RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(14)?.Epc),
-                    }
+                    Pilots = new List<RacePilot>()
                 };
+                pilot1 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(2)?.Epc);
+                if (pilot1 != null)
+                    group.Pilots.Add(pilot1);
+
+                pilot2 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(6)?.Epc);
+                if (pilot2 != null)
+                    group.Pilots.Add(pilot2);
+
+                pilot3 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(10)?.Epc);
+                if (pilot3 != null)
+                    group.Pilots.Add(pilot3);
+
+                pilot4 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(14)?.Epc);
+                if (pilot4 != null)
+                    group.Pilots.Add(pilot4);
+
                 gvRace15.DataSource = group.Pilots;
                 _race.Groups.Add(group);
 
                 group = new Group
                 {
                     Name = "Race 4",
-                    Pilots = new List<RacePilot>
-                    {
-                        RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(1)?.Epc),
-                        RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(5)?.Epc),
-                        RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(9)?.Epc),
-                        RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(13)?.Epc),
-                    }
+                    Pilots = new List<RacePilot>()
                 };
+                pilot1 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(1)?.Epc);
+                if (pilot1 != null)
+                    group.Pilots.Add(pilot1);
+
+                pilot2 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(5)?.Epc);
+                if (pilot2 != null)
+                    group.Pilots.Add(pilot2);
+
+                pilot3 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(9)?.Epc);
+                if (pilot3 != null)
+                    group.Pilots.Add(pilot3);
+
+                pilot4 = RacePilots.FirstOrDefault(p => p.Tag == _bestQualificationResuls.ElementAtOrDefault(13)?.Epc);
+                if (pilot4 != null)
+                    group.Pilots.Add(pilot4);
+
                 gvRace16.DataSource = group.Pilots;
                 _race.Groups.Add(group);
 
@@ -6448,6 +6607,7 @@ namespace RaceManager.UI
             var race4Results = race4.Laps.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
             race4Results.AddRange(race4.Laps.Where(s => !s.AvgLapTime.HasValue).ToList());
 
+            // I hope we will have at least 8 pilots at the time of SEMI-FINALS, so no null-checking is needed here
             var group = new Group
             {
                 Name = "Semi 1",
