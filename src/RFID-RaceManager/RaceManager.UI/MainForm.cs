@@ -5047,16 +5047,7 @@ namespace RaceManager.UI
             }
 
             FillRaceInfo(_race);
-            
-            try
-            {
-                _db.SaveChanges();
-
-            }
-            catch (Exception exception)
-            {
-                MessageBox.Show("Database error. " + exception.Message);
-            }
+            SaveRace();
 
             _timer.Start();
 
@@ -5289,6 +5280,14 @@ namespace RaceManager.UI
             UpdateRanking();
             bindingSourceRanking.ResetBindings(false);
 
+            SaveRace();
+        }
+
+        /// <summary>
+        /// Save all race information to the database
+        /// </summary>
+        private void SaveRace()
+        {
             try
             {
                 _db.SaveChanges();
@@ -5349,6 +5348,21 @@ namespace RaceManager.UI
                 ShowRaceTime();
             }
         }
+
+        private void btnReflight_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Do you really want to re-flight the round?", "Question", MessageBoxButtons.YesNo) ==
+                DialogResult.Yes)
+            {
+                _raceTime = TimeSpan.Zero;
+                ShowRaceTime();
+                _selectedRaceEvent.Finished = false;
+                _selectedRaceEvent.Laps.ForEach(l=>l.ClearLapTimes());
+                bindingSourceRace.ResetBindings(false);
+                SaveRace();
+            }
+        }
+
         private void FillRaceInfo(Race race)
         {
             race.Name = tbRaceName.Text;
@@ -5357,6 +5371,7 @@ namespace RaceManager.UI
             race.Length = tbRaceLength.Text.TryToDoubleNull();
             race.NumberOfLaps = Convert.ToInt32(nudNumOfLaps.Value);
             race.NumberOfQualRounds = Convert.ToInt32(nudNumberOfQualRounds.Value);
+            race.UseSecondChance = cbSecondChance.Checked ? 1 : 0;
 
             foreach (var raceEvent in race.RaceEvents)
             {
@@ -5381,6 +5396,7 @@ namespace RaceManager.UI
             btnRaceStart.Enabled = enable;
             btnRaceStop.Enabled = !enable;
             btnRaceSave.Enabled = enable;
+            btnReflight.Enabled = enable;
 
             groupBox9.Enabled = enable;
             groupBox12.Enabled = enable;
@@ -5453,28 +5469,14 @@ namespace RaceManager.UI
         private void gvRace_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
             UpdateRanking();
-            try
-            {
-                _db.SaveChanges();
-            }
-            catch (Exception exception)
-            {
-                MessageBox.Show("Database error. " + exception.Message);
-            }
+            SaveRace();
+            bindingSourceRace.ResetBindings(false);
         }
 
         private void btnRaceSave_Click(object sender, EventArgs e) // Confirm And Save Button
         {
-            try
-            {
-                _db.SaveChanges();
-                _selectedRaceEvent.Finished = true;
-                MessageBox.Show("Successfully saved.");
-            }
-            catch (Exception exception)
-            {
-                MessageBox.Show("Database error. " + exception.Message);
-            }
+            _selectedRaceEvent.Finished = true;
+            SaveRace();
             /*database objDatabase = new database();
             //string sqlQuery;
             //SQLiteCommand cmd;
@@ -6853,15 +6855,27 @@ namespace RaceManager.UI
 
             var bestOrderedList = bestSource.Where(s => s.BestLapTime.HasValue).OrderBy(s => s.BestLapTime).ToList();
             bestOrderedList.AddRange(bestSource.Where(s => !s.BestLapTime.HasValue).ToList());
+            bestOrderedList.ForEach(l => l.RankNumber = bestOrderedList.IndexOf(l) + 1);
 
             var avgOrderedList = avgSource.Where(s => s.AvgLapTime.HasValue).OrderBy(s => s.AvgLapTime).ToList();
             avgOrderedList.AddRange(avgSource.Where(s => !s.AvgLapTime.HasValue).ToList());
+            avgOrderedList.ForEach(l => l.RankNumber = avgOrderedList.IndexOf(l) + 1);
+
+            // Fill column Position (RankNumber) - order by number of laps then by sum of lap times
+            var lapsForPositionField = _selectedRaceEvent.Laps.Where(l=>l.RegisteredLapsCount > 0).OrderByDescending(l => l.RegisteredLapsCount)
+                    .ThenBy(l => l.GetLapsTime().Select(t => t.TotalMilliseconds).Sum()).ToList();
+
+            foreach (var lap in _selectedRaceEvent.Laps)
+            {
+                var orderedItem = lapsForPositionField.FirstOrDefault(a => a.Epc == lap.Epc);
+                lap.CurrentPosition = orderedItem == null ? (int?) null : lapsForPositionField.IndexOf(orderedItem) + 1;
+            }
+
             _bestQualificationResuls = avgOrderedList;
 
             // Best lap ranking
             if (cmbDisplayRanking.SelectedIndex == 0)
             {
-                bestOrderedList.ForEach(l => l.RankNumber = bestOrderedList.IndexOf(l) + 1);
                 bindingSourceRanking.DataSource = bestOrderedList;
 
                 avgLapTimeStringDataGridViewTextBoxColumn.Visible = false;
@@ -6872,7 +6886,6 @@ namespace RaceManager.UI
             // Average lap ranking
             if (cmbDisplayRanking.SelectedIndex == 1)
             {
-                avgOrderedList.ForEach(l => l.RankNumber = avgOrderedList.IndexOf(l) + 1);
                 bindingSourceRanking.DataSource = avgOrderedList;
 
                 avgLapTimeStringDataGridViewTextBoxColumn.Visible = true;
@@ -6954,6 +6967,5 @@ namespace RaceManager.UI
         }
 
         #endregion
-       
     }
 }

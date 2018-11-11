@@ -22,6 +22,7 @@ namespace RaceManager.Data
         public double? Length { get; set; }
         public DateTime Date { get; set; }
         public int NumberOfLaps { get; set; }
+        public int UseSecondChance { get; set; }
 
         /// <summary>
         /// Number of qualification rounds
@@ -129,7 +130,7 @@ namespace RaceManager.Data
         public string PilotName { get; set; }
         public int RaceEventId { get; set; }
         public int OrderNumber { get; set; }
-        public int RankNumber { get; set; }
+        public int? RankNumber { get; set; }
         public string Epc { get; set; }
         public string Pc { get; set; }
         public int IdCount { get; set; }
@@ -139,7 +140,7 @@ namespace RaceManager.Data
         [NotMapped]
         public TimeSpan? StartTime { get; set; }
 
-        private readonly TimeSpan?[] _lapsTime = { null, null, null, null, null, null };
+        private TimeSpan?[] _lapsTime = { null, null, null, null, null, null };
 
         public List<TimeSpan> GetLapsTime()
         {
@@ -147,7 +148,11 @@ namespace RaceManager.Data
         }
 
         public int LapsCount => _lapsTime.Count(l => l.HasValue);
-        public int RegisteredLapsCount => _lapsTime.Count(l => l.HasValue && l != TimeSpan.Zero && l != DNS && l != DNF);
+        public int RegisteredLapsCount
+        {
+            get { return _lapsTime.Count(l => l.HasValue && l != TimeSpan.Zero && l != DNS && l != DNF); }
+            set { }
+        }
 
         public string Lap1
         {
@@ -306,6 +311,7 @@ namespace RaceManager.Data
         
         public double? Distance { get; set; }
         public string Penalty { get; set; }
+        public int? CurrentPosition { get; set; }
 
         // Length from the race properties
         [NotMapped]
@@ -356,6 +362,12 @@ namespace RaceManager.Data
 
             _prevRaceTime = raceTime;
             return true;
+        }
+
+        public void ClearLapTimes()
+        {
+            _lapsTime = new TimeSpan?[] { null, null, null, null, null, null };
+            RankNumber = null;
         }
     }
 

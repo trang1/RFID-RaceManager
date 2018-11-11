@@ -162,7 +162,7 @@
             this.groupBox26 = new System.Windows.Forms.GroupBox();
             this.label123 = new System.Windows.Forms.Label();
             this.cmbRoundType = new System.Windows.Forms.ComboBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.cbSecondChance = new System.Windows.Forms.CheckBox();
             this.label122 = new System.Windows.Forms.Label();
             this.btTrack = new System.Windows.Forms.Button();
             this.nudPilotsPerGroup = new System.Windows.Forms.NumericUpDown();
@@ -315,6 +315,7 @@
             this.groupBox33 = new System.Windows.Forms.GroupBox();
             this.groupBox32 = new System.Windows.Forms.GroupBox();
             this.groupBox31 = new System.Windows.Forms.GroupBox();
+            this.btnReflight = new System.Windows.Forms.Button();
             this.btnRaceSave = new System.Windows.Forms.Button();
             this.tbCurEvGroup = new System.Windows.Forms.TextBox();
             this.tbCurEvRound = new System.Windows.Forms.TextBox();
@@ -880,6 +881,7 @@
             this.AvgLapTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AverageSpeed = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RegisteredLapsCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn253 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Distance = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Penalty = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabCtrMain.SuspendLayout();
@@ -2584,7 +2586,7 @@
             this.groupBox26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.groupBox26.Controls.Add(this.label123);
             this.groupBox26.Controls.Add(this.cmbRoundType);
-            this.groupBox26.Controls.Add(this.checkBox1);
+            this.groupBox26.Controls.Add(this.cbSecondChance);
             this.groupBox26.Controls.Add(this.label122);
             this.groupBox26.Controls.Add(this.btTrack);
             this.groupBox26.Controls.Add(this.nudPilotsPerGroup);
@@ -2637,14 +2639,14 @@
             this.cmbRoundType.TabIndex = 23;
             this.cmbRoundType.SelectedIndexChanged += new System.EventHandler(this.cmbRoundType_SelectedIndexChanged);
             // 
-            // checkBox1
+            // cbSecondChance
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(168, 357);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(15, 14);
-            this.checkBox1.TabIndex = 22;
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.cbSecondChance.AutoSize = true;
+            this.cbSecondChance.Location = new System.Drawing.Point(168, 357);
+            this.cbSecondChance.Name = "cbSecondChance";
+            this.cbSecondChance.Size = new System.Drawing.Size(15, 14);
+            this.cbSecondChance.TabIndex = 22;
+            this.cbSecondChance.UseVisualStyleBackColor = true;
             // 
             // label122
             // 
@@ -4829,6 +4831,7 @@
             this.AvgLapTime,
             this.AverageSpeed,
             this.RegisteredLapsCount,
+            this.dataGridViewTextBoxColumn253,
             this.Distance,
             this.Penalty});
             this.gvRace.DataSource = this.bindingSourceRace;
@@ -4939,6 +4942,7 @@
             // 
             // groupBox31
             // 
+            this.groupBox31.Controls.Add(this.btnReflight);
             this.groupBox31.Controls.Add(this.btnRaceSave);
             this.groupBox31.Controls.Add(this.tbCurEvGroup);
             this.groupBox31.Controls.Add(this.tbCurEvRound);
@@ -4948,6 +4952,18 @@
             this.groupBox31.TabIndex = 2;
             this.groupBox31.TabStop = false;
             this.groupBox31.Text = "Current Event";
+            // 
+            // btnReflight
+            // 
+            this.btnReflight.Enabled = false;
+            this.btnReflight.Location = new System.Drawing.Point(709, 38);
+            this.btnReflight.Margin = new System.Windows.Forms.Padding(2);
+            this.btnReflight.Name = "btnReflight";
+            this.btnReflight.Size = new System.Drawing.Size(187, 35);
+            this.btnReflight.TabIndex = 3;
+            this.btnReflight.Text = "Re-flight";
+            this.btnReflight.UseVisualStyleBackColor = true;
+            this.btnReflight.Click += new System.EventHandler(this.btnReflight_Click);
             // 
             // btnRaceSave
             // 
@@ -6020,7 +6036,7 @@
             this.tableLayoutPanel4.ColumnCount = 3;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.22422F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.77578F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 518F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 530F));
             this.tableLayoutPanel4.Controls.Add(this.panel9, 2, 0);
             this.tableLayoutPanel4.Controls.Add(this.panel10, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.panel8, 1, 0);
@@ -6039,9 +6055,9 @@
             this.panel9.Controls.Add(this.btGetClearBuffer);
             this.panel9.Controls.Add(this.btGetBuffer);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel9.Location = new System.Drawing.Point(814, 4);
+            this.panel9.Location = new System.Drawing.Point(802, 4);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(513, 81);
+            this.panel9.Size = new System.Drawing.Size(525, 81);
             this.panel9.TabIndex = 1;
             // 
             // btClearBuffer
@@ -6100,7 +6116,7 @@
             this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel10.Location = new System.Drawing.Point(4, 4);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(400, 81);
+            this.panel10.Size = new System.Drawing.Size(394, 81);
             this.panel10.TabIndex = 0;
             // 
             // btBufferInventory
@@ -6142,9 +6158,9 @@
             this.panel8.Controls.Add(this.cbBufferWorkant2);
             this.panel8.Controls.Add(this.cbBufferWorkant3);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(411, 4);
+            this.panel8.Location = new System.Drawing.Point(405, 4);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(396, 81);
+            this.panel8.Size = new System.Drawing.Size(390, 81);
             this.panel8.TabIndex = 0;
             // 
             // cbBufferWorkant1
@@ -6741,7 +6757,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.20588F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.79412F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 540F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 558F));
             this.tableLayoutPanel2.Controls.Add(this.panel2, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel3, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel4, 2, 0);
@@ -6773,9 +6789,9 @@
             this.panel2.Controls.Add(this.label59);
             this.panel2.Controls.Add(this.label48);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(218, 5);
+            this.panel2.Location = new System.Drawing.Point(213, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(559, 75);
+            this.panel2.Size = new System.Drawing.Size(546, 75);
             this.panel2.TabIndex = 0;
             // 
             // txtDStay
@@ -6977,7 +6993,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(5, 5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(205, 75);
+            this.panel3.Size = new System.Drawing.Size(200, 75);
             this.panel3.TabIndex = 1;
             // 
             // btFastInventory
@@ -6999,9 +7015,9 @@
             this.panel4.Controls.Add(this.label73);
             this.panel4.Controls.Add(this.label72);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(785, 5);
+            this.panel4.Location = new System.Drawing.Point(767, 5);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(535, 75);
+            this.panel4.Size = new System.Drawing.Size(553, 75);
             this.panel4.TabIndex = 2;
             // 
             // txtRepeat
@@ -10540,6 +10556,13 @@
             this.RegisteredLapsCount.ReadOnly = true;
             this.RegisteredLapsCount.Width = 50;
             // 
+            // dataGridViewTextBoxColumn253
+            // 
+            this.dataGridViewTextBoxColumn253.DataPropertyName = "CurrentPosition";
+            this.dataGridViewTextBoxColumn253.HeaderText = "Position";
+            this.dataGridViewTextBoxColumn253.Name = "dataGridViewTextBoxColumn253";
+            this.dataGridViewTextBoxColumn253.Width = 60;
+            // 
             // Distance
             // 
             this.Distance.DataPropertyName = "Distance";
@@ -11585,7 +11608,7 @@
         private System.Windows.Forms.Button btTrack;
         private System.Windows.Forms.Label label120;
         private System.Windows.Forms.Label label121;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox cbSecondChance;
         private System.Windows.Forms.Label label123;
         private System.Windows.Forms.ComboBox cmbRoundType;
         private System.Windows.Forms.Label label122;
@@ -11731,6 +11754,7 @@
         private System.Windows.Forms.Button btnManAddPilotsToF;
         private System.Windows.Forms.Button btnManAddPilotsToQF;
         private System.Windows.Forms.Button btnManAddPilotsToSF;
+        private System.Windows.Forms.Button btnReflight;
         private System.Windows.Forms.DataGridViewTextBoxColumn OrderNumber;
         private System.Windows.Forms.DataGridViewTextBoxColumn PilotName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Epc;
@@ -11748,6 +11772,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn AvgLapTime;
         private System.Windows.Forms.DataGridViewTextBoxColumn AverageSpeed;
         private System.Windows.Forms.DataGridViewTextBoxColumn RegisteredLapsCount;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn253;
         private System.Windows.Forms.DataGridViewTextBoxColumn Distance;
         private System.Windows.Forms.DataGridViewTextBoxColumn Penalty;
     }
