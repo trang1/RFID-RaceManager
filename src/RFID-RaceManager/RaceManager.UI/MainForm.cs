@@ -6810,6 +6810,29 @@ namespace RaceManager.UI
             form.ShowDialog(this);
         }
 
+        /// <summary>
+        /// Deleting pilots by pressing DEL key (standard function is not relevant)
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void gvRace_KeyUp(object sender, KeyEventArgs e)
+        {
+            var gridView = sender as DataGridView;
+            if(gridView == null) return;
+
+            if (e.KeyCode == Keys.Delete && gridView.SelectedRows.Count > 0)
+            {
+                var obj = gridView.SelectedRows[0].DataBoundItem as RacePilot;
+                var source = gridView.DataSource as List<RacePilot>;
+                if (obj != null && source != null)
+                {
+                    source.Remove(source.First(r => r.Tag == obj.Tag));
+                    gridView.DataSource = typeof(Array);
+                    gridView.DataSource = source;
+                }
+            }
+        }
+
         #endregion
 
         #region Ranking
@@ -6967,5 +6990,7 @@ namespace RaceManager.UI
         }
 
         #endregion
+
+      
     }
 }
