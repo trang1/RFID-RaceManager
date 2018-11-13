@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Diagnostics;
 using System.Globalization;
 using System.Linq;
+using Newtonsoft.Json;
 
 namespace RaceManager.Data
 {
@@ -42,10 +43,13 @@ namespace RaceManager.Data
         }
     }
 
+    [JsonObject(MemberSerialization.OptIn)]
     public class Group
     {
         public int Id { get; set; }
         public int RaceId { get; set; }
+
+        [JsonProperty]
         public string Name { get; set; }
         public List<RacePilot> Pilots { get; set; }
 
@@ -55,13 +59,20 @@ namespace RaceManager.Data
         }
     }
 
+    [JsonObject(MemberSerialization.OptIn)]
     public class RaceEvent
     {
         public int Id { get; set; }
         public int GroupId { get; set; }
         public int RaceId { get; set; }
+
+        [JsonProperty]
         public string Round { get; set; }
+
+        [JsonProperty]
         public Group Group { get; set; }
+
+        [JsonProperty]
         public List<LapsInfo> Laps { get; set; }
 
         public RaceEvent()
@@ -120,6 +131,7 @@ namespace RaceManager.Data
         }
     }
 
+    [JsonObject(MemberSerialization.OptIn)]
     public class LapsInfo
     {
         readonly TimeSpan DNS = TimeSpan.FromMilliseconds(1);
@@ -127,8 +139,12 @@ namespace RaceManager.Data
 
         public int Id { get; set; }
         public int PilotId { get; set; }
+
+        [JsonProperty]
         public string PilotName { get; set; }
         public int RaceEventId { get; set; }
+
+        [JsonProperty]
         public int OrderNumber { get; set; }
         public int? RankNumber { get; set; }
         public string Epc { get; set; }
@@ -148,6 +164,8 @@ namespace RaceManager.Data
         }
 
         public int LapsCount => _lapsTime.Count(l => l.HasValue);
+
+        [JsonProperty]
         public int RegisteredLapsCount
         {
             get { return _lapsTime.Count(l => l.HasValue && l != TimeSpan.Zero && l != DNS && l != DNF); }
@@ -249,6 +267,7 @@ namespace RaceManager.Data
             }
         }
 
+        [JsonProperty]
         public string BestLapTimeString => BestLapTime?.ToString(@"mm\:ss\,fff");
 
         public TimeSpan? AvgLapTime
@@ -311,6 +330,8 @@ namespace RaceManager.Data
         
         public double? Distance { get; set; }
         public string Penalty { get; set; }
+
+        [JsonProperty]
         public int? CurrentPosition { get; set; }
 
         // Length from the race properties

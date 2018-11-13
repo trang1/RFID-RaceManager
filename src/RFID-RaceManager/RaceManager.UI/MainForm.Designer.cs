@@ -1329,7 +1329,6 @@
             this.rdbGpio4Low.TabStop = true;
             this.rdbGpio4Low.Text = "Low";
             this.rdbGpio4Low.UseVisualStyleBackColor = true;
-            this.rdbGpio4Low.CheckedChanged += new System.EventHandler(this.rdbGpio4Low_CheckedChanged);
             // 
             // btnWriteGpio4Value
             // 

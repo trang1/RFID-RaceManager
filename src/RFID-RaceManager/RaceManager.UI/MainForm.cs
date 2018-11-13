@@ -8,7 +8,6 @@ using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Media;
 using System.Text;
 using System.Windows.Forms;
 using System.Net;
@@ -18,6 +17,7 @@ using RaceManager.Data;
 using ApplicationContext = RaceManager.Data.ApplicationContext;
 using Color = System.Drawing.Color;
 using System.Data.SQLite;
+using System.Media;
 
 namespace RaceManager.UI
 {
@@ -182,6 +182,7 @@ namespace RaceManager.UI
             }
         }
 
+        #region Service functions
         private void ReceiveData(byte[] btAryReceiveData)
         {
             if (m_bDisplayLog)
@@ -5017,10 +5018,7 @@ namespace RaceManager.UI
             }
         }
 
-        private void rdbGpio4Low_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
+        #endregion
 
         #region Race !!!
 
@@ -5053,16 +5051,7 @@ namespace RaceManager.UI
 
             var file = ConfigurationManager.AppSettings["StartSoundFile"];
             var path = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), file);
-            if (File.Exists(path))
-            {
-                var player = new SoundPlayer();
-                player.SoundLocation = file;
-                player.Play();
-            }
-            else
-            {
-                SystemSounds.Exclamation.Play();
-            }
+            SoundHelper.PlaySound(path, SystemSounds.Exclamation);
 
             EnableDisableRaceControls(false);
 
@@ -5264,23 +5253,27 @@ namespace RaceManager.UI
 
             if (!success) return;
 
+            ExportRace();
+
             var file = ConfigurationManager.AppSettings["TagReadSoundFile"];
             var path = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), file);
-            if (File.Exists(path))
-            {
-                var player = new SoundPlayer();
-                player.SoundLocation = file;
-                player.Play();
-            }
-            else
-            {
-                SystemSounds.Asterisk.Play();
-            }
+            SoundHelper.PlaySound(path, SystemSounds.Asterisk);
 
             UpdateRanking();
             bindingSourceRanking.ResetBindings(false);
-
+            
             SaveRace();
+        }
+
+        /// <summary>
+        /// Export current race event to JSON file
+        /// </summary>
+        private void ExportRace()
+        {
+            bool isExportEnabled;
+            if (bool.TryParse(ConfigurationManager.AppSettings["ExportToJsonEnabled"], out isExportEnabled) && isExportEnabled)
+                new TaskFactory().StartNew(() =>
+                    JsonHelper.SaveToFile(_selectedRaceEvent, ConfigurationManager.AppSettings["ExportToJsonFilePath"]));
         }
 
         /// <summary>
@@ -5470,6 +5463,7 @@ namespace RaceManager.UI
         {
             UpdateRanking();
             SaveRace();
+            ExportRace();
             bindingSourceRace.ResetBindings(false);
         }
 
@@ -6924,16 +6918,7 @@ namespace RaceManager.UI
                 _bestLapTime = currentBestLapTime.BestLapTime.Value;
                 var file = ConfigurationManager.AppSettings["BestLapSoundFile"];
                 var path = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), file);
-                if (File.Exists(path))
-                {
-                    var player = new SoundPlayer();
-                    player.SoundLocation = file;
-                    player.Play();
-                }
-                else
-                {
-                    SystemSounds.Question.Play();
-                }
+                SoundHelper.PlaySound(path, SystemSounds.Question);
             }
         }
         #endregion
