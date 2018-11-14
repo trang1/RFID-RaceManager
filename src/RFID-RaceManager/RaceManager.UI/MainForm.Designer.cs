@@ -210,56 +210,22 @@
             this.dataGridViewTextBoxColumn215 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn216 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn217 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDelRace1 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.bindingSourcePilots = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage23 = new System.Windows.Forms.TabPage();
             this.gvRace2 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn218 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn219 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn220 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn221 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn222 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage24 = new System.Windows.Forms.TabPage();
             this.gvRace3 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn223 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn224 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn225 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn226 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn227 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage25 = new System.Windows.Forms.TabPage();
             this.gvRace4 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn228 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn229 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn230 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn231 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn232 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage26 = new System.Windows.Forms.TabPage();
             this.gvRace5 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn233 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn234 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn235 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn236 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn237 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage27 = new System.Windows.Forms.TabPage();
             this.gvRace6 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn238 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn239 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn240 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn241 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn242 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage28 = new System.Windows.Forms.TabPage();
             this.gvRace7 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn243 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn244 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn245 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn246 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn247 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage29 = new System.Windows.Forms.TabPage();
             this.gvRace8 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn248 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn249 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn250 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn251 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn252 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox30 = new System.Windows.Forms.GroupBox();
             this.btnManAddPilotsTo18F = new System.Windows.Forms.Button();
             this.btnAddPilotsTo18F = new System.Windows.Forms.Button();
@@ -456,18 +422,8 @@
             this.tabControl5 = new System.Windows.Forms.TabControl();
             this.tabPage9 = new System.Windows.Forms.TabPage();
             this.gvSmallFinal = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn142 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn143 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn144 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn145 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn146 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage10 = new System.Windows.Forms.TabPage();
             this.gvFinal = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn149 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn150 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn151 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn152 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn153 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox36 = new System.Windows.Forms.GroupBox();
             this.btnManAddPilotsToQF = new System.Windows.Forms.Button();
@@ -475,32 +431,12 @@
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.gvRace13 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn100 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn101 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn102 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn103 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn104 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.gvRace14 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn107 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn108 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn109 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn110 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn111 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.gvRace15 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn114 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn115 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn116 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn117 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn118 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.gvRace16 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn121 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn122 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn123 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn124 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn125 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox37 = new System.Windows.Forms.GroupBox();
             this.btnManAddPilotsToSF = new System.Windows.Forms.Button();
@@ -508,18 +444,8 @@
             this.tabControl4 = new System.Windows.Forms.TabControl();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.gvSemi1 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn128 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn129 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn130 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn131 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn132 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.gvSemi2 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn135 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn136 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn137 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn138 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn139 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabRace = new System.Windows.Forms.TabPage();
             this.gvRace = new System.Windows.Forms.DataGridView();
             this.OrderNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -884,6 +810,96 @@
             this.lxLedControl16 = new LxControl.LxLedControl();
             this.lxLedControl17 = new LxControl.LxLedControl();
             this.lxLedControl18 = new LxControl.LxLedControl();
+            this.dataGridViewTextBoxColumn233 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn234 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn235 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn236 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn237 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDel_Race5 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.dataGridViewTextBoxColumn228 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn229 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn230 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn231 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn232 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDel_Race4 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.dataGridViewTextBoxColumn223 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn224 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn225 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn226 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn227 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDel_Race3 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.dataGridViewTextBoxColumn218 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn219 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn220 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn221 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn222 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDel_Race2 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.dataGridViewTextBoxColumn238 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn239 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn240 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn241 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn242 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDel_Race6 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.dataGridViewTextBoxColumn243 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn244 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn245 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn246 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn247 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDel_Race7 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.dataGridViewTextBoxColumn248 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn249 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn250 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn251 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn252 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDel_Race8 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.dataGridViewTextBoxColumn100 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn101 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn102 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn103 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn104 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDel_Race13 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.dataGridViewTextBoxColumn107 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn108 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn109 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn110 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn111 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDel_Race14 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.dataGridViewTextBoxColumn114 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn115 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn116 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn117 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn118 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDel_Race15 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.dataGridViewTextBoxColumn121 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn122 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn123 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn124 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn125 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDel_Race16 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.dataGridViewTextBoxColumn128 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn129 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn130 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn131 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn132 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDel_Semi1 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.dataGridViewTextBoxColumn135 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn136 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn137 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn138 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn139 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDel_Semi2 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.dataGridViewTextBoxColumn142 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn143 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn144 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn145 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn146 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDel_SFinal = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.dataGridViewTextBoxColumn149 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn150 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn151 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn152 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn153 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDel_Final = new System.Windows.Forms.DataGridViewButtonColumn();
             this.tabCtrMain.SuspendLayout();
             this.PagReaderSetting.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -3131,7 +3147,8 @@
             this.dataGridViewTextBoxColumn214,
             this.dataGridViewTextBoxColumn215,
             this.dataGridViewTextBoxColumn216,
-            this.dataGridViewTextBoxColumn217});
+            this.dataGridViewTextBoxColumn217,
+            this.colDelRace1});
             this.gvRace1.DataSource = this.bindingSourcePilots;
             this.gvRace1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gvRace1.Location = new System.Drawing.Point(2, 2);
@@ -3140,6 +3157,7 @@
             this.gvRace1.RowTemplate.Height = 24;
             this.gvRace1.Size = new System.Drawing.Size(1006, 120);
             this.gvRace1.TabIndex = 0;
+            this.gvRace1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvRace_CellClick);
             this.gvRace1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.gvRace_KeyUp);
             // 
             // dataGridViewTextBoxColumn213
@@ -3166,7 +3184,7 @@
             this.dataGridViewTextBoxColumn216.DataPropertyName = "Tag";
             this.dataGridViewTextBoxColumn216.HeaderText = "TAG ID";
             this.dataGridViewTextBoxColumn216.Name = "dataGridViewTextBoxColumn216";
-            this.dataGridViewTextBoxColumn216.Width = 300;
+            this.dataGridViewTextBoxColumn216.Width = 250;
             // 
             // dataGridViewTextBoxColumn217
             // 
@@ -3174,6 +3192,15 @@
             this.dataGridViewTextBoxColumn217.HeaderText = "E-Mail";
             this.dataGridViewTextBoxColumn217.Name = "dataGridViewTextBoxColumn217";
             this.dataGridViewTextBoxColumn217.Width = 250;
+            // 
+            // colDelRace1
+            // 
+            this.colDelRace1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.colDelRace1.HeaderText = "Delete";
+            this.colDelRace1.Name = "colDelRace1";
+            this.colDelRace1.Text = "X";
+            this.colDelRace1.UseColumnTextForButtonValue = true;
+            this.colDelRace1.Width = 45;
             // 
             // bindingSourcePilots
             // 
@@ -3202,7 +3229,8 @@
             this.dataGridViewTextBoxColumn219,
             this.dataGridViewTextBoxColumn220,
             this.dataGridViewTextBoxColumn221,
-            this.dataGridViewTextBoxColumn222});
+            this.dataGridViewTextBoxColumn222,
+            this.colDel_Race2});
             this.gvRace2.DataSource = this.bindingSourcePilots;
             this.gvRace2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gvRace2.Location = new System.Drawing.Point(2, 2);
@@ -3211,40 +3239,8 @@
             this.gvRace2.RowTemplate.Height = 24;
             this.gvRace2.Size = new System.Drawing.Size(1006, 120);
             this.gvRace2.TabIndex = 1;
+            this.gvRace2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvRace_CellClick);
             this.gvRace2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.gvRace_KeyUp);
-            // 
-            // dataGridViewTextBoxColumn218
-            // 
-            this.dataGridViewTextBoxColumn218.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn218.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn218.Name = "dataGridViewTextBoxColumn218";
-            this.dataGridViewTextBoxColumn218.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn219
-            // 
-            this.dataGridViewTextBoxColumn219.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn219.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn219.Name = "dataGridViewTextBoxColumn219";
-            // 
-            // dataGridViewTextBoxColumn220
-            // 
-            this.dataGridViewTextBoxColumn220.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn220.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn220.Name = "dataGridViewTextBoxColumn220";
-            // 
-            // dataGridViewTextBoxColumn221
-            // 
-            this.dataGridViewTextBoxColumn221.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn221.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn221.Name = "dataGridViewTextBoxColumn221";
-            this.dataGridViewTextBoxColumn221.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn222
-            // 
-            this.dataGridViewTextBoxColumn222.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn222.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn222.Name = "dataGridViewTextBoxColumn222";
-            this.dataGridViewTextBoxColumn222.Width = 250;
             // 
             // tabPage24
             // 
@@ -3261,7 +3257,6 @@
             // gvRace3
             // 
             this.gvRace3.AllowUserToAddRows = false;
-            this.gvRace3.AllowUserToDeleteRows = true;
             this.gvRace3.AutoGenerateColumns = false;
             this.gvRace3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvRace3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -3269,7 +3264,8 @@
             this.dataGridViewTextBoxColumn224,
             this.dataGridViewTextBoxColumn225,
             this.dataGridViewTextBoxColumn226,
-            this.dataGridViewTextBoxColumn227});
+            this.dataGridViewTextBoxColumn227,
+            this.colDel_Race3});
             this.gvRace3.DataSource = this.bindingSourcePilots;
             this.gvRace3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gvRace3.Location = new System.Drawing.Point(2, 2);
@@ -3278,45 +3274,8 @@
             this.gvRace3.RowTemplate.Height = 24;
             this.gvRace3.Size = new System.Drawing.Size(1006, 120);
             this.gvRace3.TabIndex = 1;
+            this.gvRace3.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvRace_CellClick);
             this.gvRace3.KeyUp += new System.Windows.Forms.KeyEventHandler(this.gvRace_KeyUp);
-            // 
-            // dataGridViewTextBoxColumn223
-            // 
-            this.dataGridViewTextBoxColumn223.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn223.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn223.Name = "dataGridViewTextBoxColumn223";
-            this.dataGridViewTextBoxColumn223.ReadOnly = true;
-            this.dataGridViewTextBoxColumn223.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn224
-            // 
-            this.dataGridViewTextBoxColumn224.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn224.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn224.Name = "dataGridViewTextBoxColumn224";
-            this.dataGridViewTextBoxColumn224.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn225
-            // 
-            this.dataGridViewTextBoxColumn225.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn225.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn225.Name = "dataGridViewTextBoxColumn225";
-            this.dataGridViewTextBoxColumn225.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn226
-            // 
-            this.dataGridViewTextBoxColumn226.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn226.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn226.Name = "dataGridViewTextBoxColumn226";
-            this.dataGridViewTextBoxColumn226.ReadOnly = true;
-            this.dataGridViewTextBoxColumn226.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn227
-            // 
-            this.dataGridViewTextBoxColumn227.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn227.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn227.Name = "dataGridViewTextBoxColumn227";
-            this.dataGridViewTextBoxColumn227.ReadOnly = true;
-            this.dataGridViewTextBoxColumn227.Width = 250;
             // 
             // tabPage25
             // 
@@ -3333,7 +3292,6 @@
             // gvRace4
             // 
             this.gvRace4.AllowUserToAddRows = false;
-            this.gvRace4.AllowUserToDeleteRows = true;
             this.gvRace4.AutoGenerateColumns = false;
             this.gvRace4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvRace4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -3341,7 +3299,8 @@
             this.dataGridViewTextBoxColumn229,
             this.dataGridViewTextBoxColumn230,
             this.dataGridViewTextBoxColumn231,
-            this.dataGridViewTextBoxColumn232});
+            this.dataGridViewTextBoxColumn232,
+            this.colDel_Race4});
             this.gvRace4.DataSource = this.bindingSourcePilots;
             this.gvRace4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gvRace4.Location = new System.Drawing.Point(2, 2);
@@ -3350,45 +3309,8 @@
             this.gvRace4.RowTemplate.Height = 24;
             this.gvRace4.Size = new System.Drawing.Size(1006, 120);
             this.gvRace4.TabIndex = 1;
+            this.gvRace4.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvRace_CellClick);
             this.gvRace4.KeyUp += new System.Windows.Forms.KeyEventHandler(this.gvRace_KeyUp);
-            // 
-            // dataGridViewTextBoxColumn228
-            // 
-            this.dataGridViewTextBoxColumn228.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn228.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn228.Name = "dataGridViewTextBoxColumn228";
-            this.dataGridViewTextBoxColumn228.ReadOnly = true;
-            this.dataGridViewTextBoxColumn228.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn229
-            // 
-            this.dataGridViewTextBoxColumn229.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn229.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn229.Name = "dataGridViewTextBoxColumn229";
-            this.dataGridViewTextBoxColumn229.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn230
-            // 
-            this.dataGridViewTextBoxColumn230.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn230.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn230.Name = "dataGridViewTextBoxColumn230";
-            this.dataGridViewTextBoxColumn230.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn231
-            // 
-            this.dataGridViewTextBoxColumn231.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn231.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn231.Name = "dataGridViewTextBoxColumn231";
-            this.dataGridViewTextBoxColumn231.ReadOnly = true;
-            this.dataGridViewTextBoxColumn231.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn232
-            // 
-            this.dataGridViewTextBoxColumn232.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn232.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn232.Name = "dataGridViewTextBoxColumn232";
-            this.dataGridViewTextBoxColumn232.ReadOnly = true;
-            this.dataGridViewTextBoxColumn232.Width = 250;
             // 
             // tabPage26
             // 
@@ -3404,7 +3326,6 @@
             // gvRace5
             // 
             this.gvRace5.AllowUserToAddRows = false;
-            this.gvRace5.AllowUserToDeleteRows = true;
             this.gvRace5.AutoGenerateColumns = false;
             this.gvRace5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvRace5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -3412,7 +3333,8 @@
             this.dataGridViewTextBoxColumn234,
             this.dataGridViewTextBoxColumn235,
             this.dataGridViewTextBoxColumn236,
-            this.dataGridViewTextBoxColumn237});
+            this.dataGridViewTextBoxColumn237,
+            this.colDel_Race5});
             this.gvRace5.DataSource = this.bindingSourcePilots;
             this.gvRace5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gvRace5.Location = new System.Drawing.Point(3, 3);
@@ -3421,45 +3343,8 @@
             this.gvRace5.RowTemplate.Height = 24;
             this.gvRace5.Size = new System.Drawing.Size(1004, 118);
             this.gvRace5.TabIndex = 2;
+            this.gvRace5.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvRace_CellClick);
             this.gvRace5.KeyUp += new System.Windows.Forms.KeyEventHandler(this.gvRace_KeyUp);
-            // 
-            // dataGridViewTextBoxColumn233
-            // 
-            this.dataGridViewTextBoxColumn233.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn233.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn233.Name = "dataGridViewTextBoxColumn233";
-            this.dataGridViewTextBoxColumn233.ReadOnly = true;
-            this.dataGridViewTextBoxColumn233.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn234
-            // 
-            this.dataGridViewTextBoxColumn234.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn234.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn234.Name = "dataGridViewTextBoxColumn234";
-            this.dataGridViewTextBoxColumn234.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn235
-            // 
-            this.dataGridViewTextBoxColumn235.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn235.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn235.Name = "dataGridViewTextBoxColumn235";
-            this.dataGridViewTextBoxColumn235.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn236
-            // 
-            this.dataGridViewTextBoxColumn236.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn236.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn236.Name = "dataGridViewTextBoxColumn236";
-            this.dataGridViewTextBoxColumn236.ReadOnly = true;
-            this.dataGridViewTextBoxColumn236.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn237
-            // 
-            this.dataGridViewTextBoxColumn237.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn237.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn237.Name = "dataGridViewTextBoxColumn237";
-            this.dataGridViewTextBoxColumn237.ReadOnly = true;
-            this.dataGridViewTextBoxColumn237.Width = 250;
             // 
             // tabPage27
             // 
@@ -3475,7 +3360,6 @@
             // gvRace6
             // 
             this.gvRace6.AllowUserToAddRows = false;
-            this.gvRace6.AllowUserToDeleteRows = true;
             this.gvRace6.AutoGenerateColumns = false;
             this.gvRace6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvRace6.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -3483,7 +3367,8 @@
             this.dataGridViewTextBoxColumn239,
             this.dataGridViewTextBoxColumn240,
             this.dataGridViewTextBoxColumn241,
-            this.dataGridViewTextBoxColumn242});
+            this.dataGridViewTextBoxColumn242,
+            this.colDel_Race6});
             this.gvRace6.DataSource = this.bindingSourcePilots;
             this.gvRace6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gvRace6.Location = new System.Drawing.Point(3, 3);
@@ -3493,45 +3378,8 @@
             this.gvRace6.RowTemplate.Height = 24;
             this.gvRace6.Size = new System.Drawing.Size(1004, 118);
             this.gvRace6.TabIndex = 2;
+            this.gvRace6.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvRace_CellClick);
             this.gvRace6.KeyUp += new System.Windows.Forms.KeyEventHandler(this.gvRace_KeyUp);
-            // 
-            // dataGridViewTextBoxColumn238
-            // 
-            this.dataGridViewTextBoxColumn238.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn238.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn238.Name = "dataGridViewTextBoxColumn238";
-            this.dataGridViewTextBoxColumn238.ReadOnly = true;
-            this.dataGridViewTextBoxColumn238.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn239
-            // 
-            this.dataGridViewTextBoxColumn239.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn239.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn239.Name = "dataGridViewTextBoxColumn239";
-            this.dataGridViewTextBoxColumn239.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn240
-            // 
-            this.dataGridViewTextBoxColumn240.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn240.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn240.Name = "dataGridViewTextBoxColumn240";
-            this.dataGridViewTextBoxColumn240.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn241
-            // 
-            this.dataGridViewTextBoxColumn241.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn241.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn241.Name = "dataGridViewTextBoxColumn241";
-            this.dataGridViewTextBoxColumn241.ReadOnly = true;
-            this.dataGridViewTextBoxColumn241.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn242
-            // 
-            this.dataGridViewTextBoxColumn242.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn242.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn242.Name = "dataGridViewTextBoxColumn242";
-            this.dataGridViewTextBoxColumn242.ReadOnly = true;
-            this.dataGridViewTextBoxColumn242.Width = 250;
             // 
             // tabPage28
             // 
@@ -3547,7 +3395,6 @@
             // gvRace7
             // 
             this.gvRace7.AllowUserToAddRows = false;
-            this.gvRace7.AllowUserToDeleteRows = true;
             this.gvRace7.AutoGenerateColumns = false;
             this.gvRace7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvRace7.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -3555,7 +3402,8 @@
             this.dataGridViewTextBoxColumn244,
             this.dataGridViewTextBoxColumn245,
             this.dataGridViewTextBoxColumn246,
-            this.dataGridViewTextBoxColumn247});
+            this.dataGridViewTextBoxColumn247,
+            this.colDel_Race7});
             this.gvRace7.DataSource = this.bindingSourcePilots;
             this.gvRace7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gvRace7.Location = new System.Drawing.Point(3, 3);
@@ -3564,45 +3412,8 @@
             this.gvRace7.RowTemplate.Height = 24;
             this.gvRace7.Size = new System.Drawing.Size(1004, 118);
             this.gvRace7.TabIndex = 2;
+            this.gvRace7.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvRace_CellClick);
             this.gvRace7.KeyUp += new System.Windows.Forms.KeyEventHandler(this.gvRace_KeyUp);
-            // 
-            // dataGridViewTextBoxColumn243
-            // 
-            this.dataGridViewTextBoxColumn243.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn243.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn243.Name = "dataGridViewTextBoxColumn243";
-            this.dataGridViewTextBoxColumn243.ReadOnly = true;
-            this.dataGridViewTextBoxColumn243.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn244
-            // 
-            this.dataGridViewTextBoxColumn244.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn244.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn244.Name = "dataGridViewTextBoxColumn244";
-            this.dataGridViewTextBoxColumn244.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn245
-            // 
-            this.dataGridViewTextBoxColumn245.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn245.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn245.Name = "dataGridViewTextBoxColumn245";
-            this.dataGridViewTextBoxColumn245.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn246
-            // 
-            this.dataGridViewTextBoxColumn246.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn246.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn246.Name = "dataGridViewTextBoxColumn246";
-            this.dataGridViewTextBoxColumn246.ReadOnly = true;
-            this.dataGridViewTextBoxColumn246.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn247
-            // 
-            this.dataGridViewTextBoxColumn247.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn247.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn247.Name = "dataGridViewTextBoxColumn247";
-            this.dataGridViewTextBoxColumn247.ReadOnly = true;
-            this.dataGridViewTextBoxColumn247.Width = 250;
             // 
             // tabPage29
             // 
@@ -3618,7 +3429,6 @@
             // gvRace8
             // 
             this.gvRace8.AllowUserToAddRows = false;
-            this.gvRace8.AllowUserToDeleteRows = true;
             this.gvRace8.AutoGenerateColumns = false;
             this.gvRace8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvRace8.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -3626,7 +3436,8 @@
             this.dataGridViewTextBoxColumn249,
             this.dataGridViewTextBoxColumn250,
             this.dataGridViewTextBoxColumn251,
-            this.dataGridViewTextBoxColumn252});
+            this.dataGridViewTextBoxColumn252,
+            this.colDel_Race8});
             this.gvRace8.DataSource = this.bindingSourcePilots;
             this.gvRace8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gvRace8.Location = new System.Drawing.Point(3, 3);
@@ -3635,45 +3446,8 @@
             this.gvRace8.RowTemplate.Height = 24;
             this.gvRace8.Size = new System.Drawing.Size(1004, 118);
             this.gvRace8.TabIndex = 2;
+            this.gvRace8.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvRace_CellClick);
             this.gvRace8.KeyUp += new System.Windows.Forms.KeyEventHandler(this.gvRace_KeyUp);
-            // 
-            // dataGridViewTextBoxColumn248
-            // 
-            this.dataGridViewTextBoxColumn248.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn248.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn248.Name = "dataGridViewTextBoxColumn248";
-            this.dataGridViewTextBoxColumn248.ReadOnly = true;
-            this.dataGridViewTextBoxColumn248.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn249
-            // 
-            this.dataGridViewTextBoxColumn249.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn249.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn249.Name = "dataGridViewTextBoxColumn249";
-            this.dataGridViewTextBoxColumn249.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn250
-            // 
-            this.dataGridViewTextBoxColumn250.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn250.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn250.Name = "dataGridViewTextBoxColumn250";
-            this.dataGridViewTextBoxColumn250.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn251
-            // 
-            this.dataGridViewTextBoxColumn251.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn251.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn251.Name = "dataGridViewTextBoxColumn251";
-            this.dataGridViewTextBoxColumn251.ReadOnly = true;
-            this.dataGridViewTextBoxColumn251.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn252
-            // 
-            this.dataGridViewTextBoxColumn252.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn252.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn252.Name = "dataGridViewTextBoxColumn252";
-            this.dataGridViewTextBoxColumn252.ReadOnly = true;
-            this.dataGridViewTextBoxColumn252.Width = 250;
             // 
             // groupBox30
             // 
@@ -3847,7 +3621,7 @@
             this.tagDataGridViewTextBoxColumn1.HeaderText = "TAG ID";
             this.tagDataGridViewTextBoxColumn1.Name = "tagDataGridViewTextBoxColumn1";
             this.tagDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.tagDataGridViewTextBoxColumn1.Width = 300;
+            this.tagDataGridViewTextBoxColumn1.Width = 290;
             // 
             // emailDataGridViewTextBoxColumn1
             // 
@@ -5723,7 +5497,6 @@
             // gvSmallFinal
             // 
             this.gvSmallFinal.AllowUserToAddRows = false;
-            this.gvSmallFinal.AllowUserToDeleteRows = true;
             this.gvSmallFinal.AutoGenerateColumns = false;
             this.gvSmallFinal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvSmallFinal.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -5731,7 +5504,8 @@
             this.dataGridViewTextBoxColumn143,
             this.dataGridViewTextBoxColumn144,
             this.dataGridViewTextBoxColumn145,
-            this.dataGridViewTextBoxColumn146});
+            this.dataGridViewTextBoxColumn146,
+            this.colDel_SFinal});
             this.gvSmallFinal.DataSource = this.bindingSourcePilots;
             this.gvSmallFinal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gvSmallFinal.Location = new System.Drawing.Point(2, 2);
@@ -5740,45 +5514,8 @@
             this.gvSmallFinal.RowTemplate.Height = 24;
             this.gvSmallFinal.Size = new System.Drawing.Size(1006, 120);
             this.gvSmallFinal.TabIndex = 0;
+            this.gvSmallFinal.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvRace_CellClick);
             this.gvSmallFinal.KeyUp += new System.Windows.Forms.KeyEventHandler(this.gvRace_KeyUp);
-            // 
-            // dataGridViewTextBoxColumn142
-            // 
-            this.dataGridViewTextBoxColumn142.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn142.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn142.Name = "dataGridViewTextBoxColumn142";
-            this.dataGridViewTextBoxColumn142.ReadOnly = true;
-            this.dataGridViewTextBoxColumn142.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn143
-            // 
-            this.dataGridViewTextBoxColumn143.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn143.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn143.Name = "dataGridViewTextBoxColumn143";
-            this.dataGridViewTextBoxColumn143.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn144
-            // 
-            this.dataGridViewTextBoxColumn144.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn144.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn144.Name = "dataGridViewTextBoxColumn144";
-            this.dataGridViewTextBoxColumn144.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn145
-            // 
-            this.dataGridViewTextBoxColumn145.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn145.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn145.Name = "dataGridViewTextBoxColumn145";
-            this.dataGridViewTextBoxColumn145.ReadOnly = true;
-            this.dataGridViewTextBoxColumn145.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn146
-            // 
-            this.dataGridViewTextBoxColumn146.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn146.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn146.Name = "dataGridViewTextBoxColumn146";
-            this.dataGridViewTextBoxColumn146.ReadOnly = true;
-            this.dataGridViewTextBoxColumn146.Width = 250;
             // 
             // tabPage10
             // 
@@ -5795,7 +5532,6 @@
             // gvFinal
             // 
             this.gvFinal.AllowUserToAddRows = false;
-            this.gvFinal.AllowUserToDeleteRows = true;
             this.gvFinal.AutoGenerateColumns = false;
             this.gvFinal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvFinal.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -5803,7 +5539,8 @@
             this.dataGridViewTextBoxColumn150,
             this.dataGridViewTextBoxColumn151,
             this.dataGridViewTextBoxColumn152,
-            this.dataGridViewTextBoxColumn153});
+            this.dataGridViewTextBoxColumn153,
+            this.colDel_Final});
             this.gvFinal.DataSource = this.bindingSourcePilots;
             this.gvFinal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gvFinal.Location = new System.Drawing.Point(2, 2);
@@ -5812,45 +5549,8 @@
             this.gvFinal.RowTemplate.Height = 24;
             this.gvFinal.Size = new System.Drawing.Size(1006, 120);
             this.gvFinal.TabIndex = 1;
+            this.gvFinal.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvRace_CellClick);
             this.gvFinal.KeyUp += new System.Windows.Forms.KeyEventHandler(this.gvRace_KeyUp);
-            // 
-            // dataGridViewTextBoxColumn149
-            // 
-            this.dataGridViewTextBoxColumn149.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn149.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn149.Name = "dataGridViewTextBoxColumn149";
-            this.dataGridViewTextBoxColumn149.ReadOnly = true;
-            this.dataGridViewTextBoxColumn149.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn150
-            // 
-            this.dataGridViewTextBoxColumn150.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn150.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn150.Name = "dataGridViewTextBoxColumn150";
-            this.dataGridViewTextBoxColumn150.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn151
-            // 
-            this.dataGridViewTextBoxColumn151.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn151.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn151.Name = "dataGridViewTextBoxColumn151";
-            this.dataGridViewTextBoxColumn151.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn152
-            // 
-            this.dataGridViewTextBoxColumn152.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn152.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn152.Name = "dataGridViewTextBoxColumn152";
-            this.dataGridViewTextBoxColumn152.ReadOnly = true;
-            this.dataGridViewTextBoxColumn152.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn153
-            // 
-            this.dataGridViewTextBoxColumn153.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn153.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn153.Name = "dataGridViewTextBoxColumn153";
-            this.dataGridViewTextBoxColumn153.ReadOnly = true;
-            this.dataGridViewTextBoxColumn153.Width = 250;
             // 
             // tableLayoutPanel9
             // 
@@ -5933,7 +5633,6 @@
             // gvRace13
             // 
             this.gvRace13.AllowUserToAddRows = false;
-            this.gvRace13.AllowUserToDeleteRows = true;
             this.gvRace13.AutoGenerateColumns = false;
             this.gvRace13.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvRace13.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -5941,7 +5640,8 @@
             this.dataGridViewTextBoxColumn101,
             this.dataGridViewTextBoxColumn102,
             this.dataGridViewTextBoxColumn103,
-            this.dataGridViewTextBoxColumn104});
+            this.dataGridViewTextBoxColumn104,
+            this.colDel_Race13});
             this.gvRace13.DataSource = this.bindingSourcePilots;
             this.gvRace13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gvRace13.Location = new System.Drawing.Point(2, 2);
@@ -5950,45 +5650,8 @@
             this.gvRace13.RowTemplate.Height = 24;
             this.gvRace13.Size = new System.Drawing.Size(1006, 120);
             this.gvRace13.TabIndex = 0;
+            this.gvRace13.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvRace_CellClick);
             this.gvRace13.KeyUp += new System.Windows.Forms.KeyEventHandler(this.gvRace_KeyUp);
-            // 
-            // dataGridViewTextBoxColumn100
-            // 
-            this.dataGridViewTextBoxColumn100.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn100.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn100.Name = "dataGridViewTextBoxColumn100";
-            this.dataGridViewTextBoxColumn100.ReadOnly = true;
-            this.dataGridViewTextBoxColumn100.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn101
-            // 
-            this.dataGridViewTextBoxColumn101.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn101.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn101.Name = "dataGridViewTextBoxColumn101";
-            this.dataGridViewTextBoxColumn101.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn102
-            // 
-            this.dataGridViewTextBoxColumn102.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn102.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn102.Name = "dataGridViewTextBoxColumn102";
-            this.dataGridViewTextBoxColumn102.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn103
-            // 
-            this.dataGridViewTextBoxColumn103.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn103.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn103.Name = "dataGridViewTextBoxColumn103";
-            this.dataGridViewTextBoxColumn103.ReadOnly = true;
-            this.dataGridViewTextBoxColumn103.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn104
-            // 
-            this.dataGridViewTextBoxColumn104.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn104.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn104.Name = "dataGridViewTextBoxColumn104";
-            this.dataGridViewTextBoxColumn104.ReadOnly = true;
-            this.dataGridViewTextBoxColumn104.Width = 250;
             // 
             // tabPage4
             // 
@@ -6005,7 +5668,6 @@
             // gvRace14
             // 
             this.gvRace14.AllowUserToAddRows = false;
-            this.gvRace14.AllowUserToDeleteRows = true;
             this.gvRace14.AutoGenerateColumns = false;
             this.gvRace14.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvRace14.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -6013,7 +5675,8 @@
             this.dataGridViewTextBoxColumn108,
             this.dataGridViewTextBoxColumn109,
             this.dataGridViewTextBoxColumn110,
-            this.dataGridViewTextBoxColumn111});
+            this.dataGridViewTextBoxColumn111,
+            this.colDel_Race14});
             this.gvRace14.DataSource = this.bindingSourcePilots;
             this.gvRace14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gvRace14.Location = new System.Drawing.Point(2, 2);
@@ -6022,45 +5685,8 @@
             this.gvRace14.RowTemplate.Height = 24;
             this.gvRace14.Size = new System.Drawing.Size(1006, 120);
             this.gvRace14.TabIndex = 1;
+            this.gvRace14.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvRace_CellClick);
             this.gvRace14.KeyUp += new System.Windows.Forms.KeyEventHandler(this.gvRace_KeyUp);
-            // 
-            // dataGridViewTextBoxColumn107
-            // 
-            this.dataGridViewTextBoxColumn107.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn107.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn107.Name = "dataGridViewTextBoxColumn107";
-            this.dataGridViewTextBoxColumn107.ReadOnly = true;
-            this.dataGridViewTextBoxColumn107.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn108
-            // 
-            this.dataGridViewTextBoxColumn108.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn108.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn108.Name = "dataGridViewTextBoxColumn108";
-            this.dataGridViewTextBoxColumn108.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn109
-            // 
-            this.dataGridViewTextBoxColumn109.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn109.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn109.Name = "dataGridViewTextBoxColumn109";
-            this.dataGridViewTextBoxColumn109.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn110
-            // 
-            this.dataGridViewTextBoxColumn110.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn110.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn110.Name = "dataGridViewTextBoxColumn110";
-            this.dataGridViewTextBoxColumn110.ReadOnly = true;
-            this.dataGridViewTextBoxColumn110.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn111
-            // 
-            this.dataGridViewTextBoxColumn111.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn111.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn111.Name = "dataGridViewTextBoxColumn111";
-            this.dataGridViewTextBoxColumn111.ReadOnly = true;
-            this.dataGridViewTextBoxColumn111.Width = 250;
             // 
             // tabPage5
             // 
@@ -6077,7 +5703,6 @@
             // gvRace15
             // 
             this.gvRace15.AllowUserToAddRows = false;
-            this.gvRace15.AllowUserToDeleteRows = true;
             this.gvRace15.AutoGenerateColumns = false;
             this.gvRace15.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvRace15.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -6085,7 +5710,8 @@
             this.dataGridViewTextBoxColumn115,
             this.dataGridViewTextBoxColumn116,
             this.dataGridViewTextBoxColumn117,
-            this.dataGridViewTextBoxColumn118});
+            this.dataGridViewTextBoxColumn118,
+            this.colDel_Race15});
             this.gvRace15.DataSource = this.bindingSourcePilots;
             this.gvRace15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gvRace15.Location = new System.Drawing.Point(2, 2);
@@ -6094,45 +5720,8 @@
             this.gvRace15.RowTemplate.Height = 24;
             this.gvRace15.Size = new System.Drawing.Size(1006, 120);
             this.gvRace15.TabIndex = 1;
+            this.gvRace15.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvRace_CellClick);
             this.gvRace15.KeyUp += new System.Windows.Forms.KeyEventHandler(this.gvRace_KeyUp);
-            // 
-            // dataGridViewTextBoxColumn114
-            // 
-            this.dataGridViewTextBoxColumn114.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn114.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn114.Name = "dataGridViewTextBoxColumn114";
-            this.dataGridViewTextBoxColumn114.ReadOnly = true;
-            this.dataGridViewTextBoxColumn114.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn115
-            // 
-            this.dataGridViewTextBoxColumn115.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn115.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn115.Name = "dataGridViewTextBoxColumn115";
-            this.dataGridViewTextBoxColumn115.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn116
-            // 
-            this.dataGridViewTextBoxColumn116.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn116.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn116.Name = "dataGridViewTextBoxColumn116";
-            this.dataGridViewTextBoxColumn116.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn117
-            // 
-            this.dataGridViewTextBoxColumn117.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn117.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn117.Name = "dataGridViewTextBoxColumn117";
-            this.dataGridViewTextBoxColumn117.ReadOnly = true;
-            this.dataGridViewTextBoxColumn117.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn118
-            // 
-            this.dataGridViewTextBoxColumn118.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn118.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn118.Name = "dataGridViewTextBoxColumn118";
-            this.dataGridViewTextBoxColumn118.ReadOnly = true;
-            this.dataGridViewTextBoxColumn118.Width = 250;
             // 
             // tabPage6
             // 
@@ -6149,7 +5738,6 @@
             // gvRace16
             // 
             this.gvRace16.AllowUserToAddRows = false;
-            this.gvRace16.AllowUserToDeleteRows = true;
             this.gvRace16.AutoGenerateColumns = false;
             this.gvRace16.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvRace16.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -6157,7 +5745,8 @@
             this.dataGridViewTextBoxColumn122,
             this.dataGridViewTextBoxColumn123,
             this.dataGridViewTextBoxColumn124,
-            this.dataGridViewTextBoxColumn125});
+            this.dataGridViewTextBoxColumn125,
+            this.colDel_Race16});
             this.gvRace16.DataSource = this.bindingSourcePilots;
             this.gvRace16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gvRace16.Location = new System.Drawing.Point(2, 2);
@@ -6166,45 +5755,8 @@
             this.gvRace16.RowTemplate.Height = 24;
             this.gvRace16.Size = new System.Drawing.Size(1006, 120);
             this.gvRace16.TabIndex = 1;
+            this.gvRace16.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvRace_CellClick);
             this.gvRace16.KeyUp += new System.Windows.Forms.KeyEventHandler(this.gvRace_KeyUp);
-            // 
-            // dataGridViewTextBoxColumn121
-            // 
-            this.dataGridViewTextBoxColumn121.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn121.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn121.Name = "dataGridViewTextBoxColumn121";
-            this.dataGridViewTextBoxColumn121.ReadOnly = true;
-            this.dataGridViewTextBoxColumn121.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn122
-            // 
-            this.dataGridViewTextBoxColumn122.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn122.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn122.Name = "dataGridViewTextBoxColumn122";
-            this.dataGridViewTextBoxColumn122.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn123
-            // 
-            this.dataGridViewTextBoxColumn123.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn123.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn123.Name = "dataGridViewTextBoxColumn123";
-            this.dataGridViewTextBoxColumn123.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn124
-            // 
-            this.dataGridViewTextBoxColumn124.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn124.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn124.Name = "dataGridViewTextBoxColumn124";
-            this.dataGridViewTextBoxColumn124.ReadOnly = true;
-            this.dataGridViewTextBoxColumn124.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn125
-            // 
-            this.dataGridViewTextBoxColumn125.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn125.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn125.Name = "dataGridViewTextBoxColumn125";
-            this.dataGridViewTextBoxColumn125.ReadOnly = true;
-            this.dataGridViewTextBoxColumn125.Width = 250;
             // 
             // tableLayoutPanel10
             // 
@@ -6285,7 +5837,6 @@
             // gvSemi1
             // 
             this.gvSemi1.AllowUserToAddRows = false;
-            this.gvSemi1.AllowUserToDeleteRows = true;
             this.gvSemi1.AutoGenerateColumns = false;
             this.gvSemi1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvSemi1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -6293,7 +5844,8 @@
             this.dataGridViewTextBoxColumn129,
             this.dataGridViewTextBoxColumn130,
             this.dataGridViewTextBoxColumn131,
-            this.dataGridViewTextBoxColumn132});
+            this.dataGridViewTextBoxColumn132,
+            this.colDel_Semi1});
             this.gvSemi1.DataSource = this.bindingSourcePilots;
             this.gvSemi1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gvSemi1.Location = new System.Drawing.Point(2, 2);
@@ -6302,45 +5854,8 @@
             this.gvSemi1.RowTemplate.Height = 24;
             this.gvSemi1.Size = new System.Drawing.Size(1006, 120);
             this.gvSemi1.TabIndex = 0;
+            this.gvSemi1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvRace_CellClick);
             this.gvSemi1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.gvRace_KeyUp);
-            // 
-            // dataGridViewTextBoxColumn128
-            // 
-            this.dataGridViewTextBoxColumn128.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn128.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn128.Name = "dataGridViewTextBoxColumn128";
-            this.dataGridViewTextBoxColumn128.ReadOnly = true;
-            this.dataGridViewTextBoxColumn128.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn129
-            // 
-            this.dataGridViewTextBoxColumn129.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn129.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn129.Name = "dataGridViewTextBoxColumn129";
-            this.dataGridViewTextBoxColumn129.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn130
-            // 
-            this.dataGridViewTextBoxColumn130.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn130.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn130.Name = "dataGridViewTextBoxColumn130";
-            this.dataGridViewTextBoxColumn130.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn131
-            // 
-            this.dataGridViewTextBoxColumn131.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn131.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn131.Name = "dataGridViewTextBoxColumn131";
-            this.dataGridViewTextBoxColumn131.ReadOnly = true;
-            this.dataGridViewTextBoxColumn131.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn132
-            // 
-            this.dataGridViewTextBoxColumn132.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn132.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn132.Name = "dataGridViewTextBoxColumn132";
-            this.dataGridViewTextBoxColumn132.ReadOnly = true;
-            this.dataGridViewTextBoxColumn132.Width = 250;
             // 
             // tabPage8
             // 
@@ -6357,7 +5872,6 @@
             // gvSemi2
             // 
             this.gvSemi2.AllowUserToAddRows = false;
-            this.gvSemi2.AllowUserToDeleteRows = true;
             this.gvSemi2.AutoGenerateColumns = false;
             this.gvSemi2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvSemi2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -6365,7 +5879,8 @@
             this.dataGridViewTextBoxColumn136,
             this.dataGridViewTextBoxColumn137,
             this.dataGridViewTextBoxColumn138,
-            this.dataGridViewTextBoxColumn139});
+            this.dataGridViewTextBoxColumn139,
+            this.colDel_Semi2});
             this.gvSemi2.DataSource = this.bindingSourcePilots;
             this.gvSemi2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gvSemi2.Location = new System.Drawing.Point(2, 2);
@@ -6374,45 +5889,8 @@
             this.gvSemi2.RowTemplate.Height = 24;
             this.gvSemi2.Size = new System.Drawing.Size(1006, 120);
             this.gvSemi2.TabIndex = 1;
+            this.gvSemi2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvRace_CellClick);
             this.gvSemi2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.gvRace_KeyUp);
-            // 
-            // dataGridViewTextBoxColumn135
-            // 
-            this.dataGridViewTextBoxColumn135.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn135.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn135.Name = "dataGridViewTextBoxColumn135";
-            this.dataGridViewTextBoxColumn135.ReadOnly = true;
-            this.dataGridViewTextBoxColumn135.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn136
-            // 
-            this.dataGridViewTextBoxColumn136.DataPropertyName = "Nickname";
-            this.dataGridViewTextBoxColumn136.HeaderText = "Nickname";
-            this.dataGridViewTextBoxColumn136.Name = "dataGridViewTextBoxColumn136";
-            this.dataGridViewTextBoxColumn136.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn137
-            // 
-            this.dataGridViewTextBoxColumn137.DataPropertyName = "Team";
-            this.dataGridViewTextBoxColumn137.HeaderText = "Team";
-            this.dataGridViewTextBoxColumn137.Name = "dataGridViewTextBoxColumn137";
-            this.dataGridViewTextBoxColumn137.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn138
-            // 
-            this.dataGridViewTextBoxColumn138.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn138.HeaderText = "TAG ID";
-            this.dataGridViewTextBoxColumn138.Name = "dataGridViewTextBoxColumn138";
-            this.dataGridViewTextBoxColumn138.ReadOnly = true;
-            this.dataGridViewTextBoxColumn138.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn139
-            // 
-            this.dataGridViewTextBoxColumn139.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn139.HeaderText = "E-Mail";
-            this.dataGridViewTextBoxColumn139.Name = "dataGridViewTextBoxColumn139";
-            this.dataGridViewTextBoxColumn139.ReadOnly = true;
-            this.dataGridViewTextBoxColumn139.Width = 250;
             // 
             // tabRace
             // 
@@ -7837,7 +7315,7 @@
             this.tableLayoutPanel4.ColumnCount = 3;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.22422F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.77578F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 532F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 538F));
             this.tableLayoutPanel4.Controls.Add(this.panel9, 2, 0);
             this.tableLayoutPanel4.Controls.Add(this.panel10, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.panel8, 1, 0);
@@ -7856,9 +7334,9 @@
             this.panel9.Controls.Add(this.btGetClearBuffer);
             this.panel9.Controls.Add(this.btGetBuffer);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel9.Location = new System.Drawing.Point(800, 4);
+            this.panel9.Location = new System.Drawing.Point(794, 4);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(527, 81);
+            this.panel9.Size = new System.Drawing.Size(533, 81);
             this.panel9.TabIndex = 1;
             // 
             // btClearBuffer
@@ -7917,7 +7395,7 @@
             this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel10.Location = new System.Drawing.Point(4, 4);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(393, 81);
+            this.panel10.Size = new System.Drawing.Size(390, 81);
             this.panel10.TabIndex = 0;
             // 
             // btBufferInventory
@@ -7959,9 +7437,9 @@
             this.panel8.Controls.Add(this.cbBufferWorkant2);
             this.panel8.Controls.Add(this.cbBufferWorkant3);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(404, 4);
+            this.panel8.Location = new System.Drawing.Point(401, 4);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(389, 81);
+            this.panel8.Size = new System.Drawing.Size(386, 81);
             this.panel8.TabIndex = 0;
             // 
             // cbBufferWorkant1
@@ -8558,7 +8036,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.20588F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.79412F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 561F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 570F));
             this.tableLayoutPanel2.Controls.Add(this.panel2, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel3, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel4, 2, 0);
@@ -8590,9 +8068,9 @@
             this.panel2.Controls.Add(this.label59);
             this.panel2.Controls.Add(this.label48);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(212, 5);
+            this.panel2.Location = new System.Drawing.Point(210, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(544, 75);
+            this.panel2.Size = new System.Drawing.Size(537, 75);
             this.panel2.TabIndex = 0;
             // 
             // txtDStay
@@ -8794,7 +8272,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(5, 5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(199, 75);
+            this.panel3.Size = new System.Drawing.Size(197, 75);
             this.panel3.TabIndex = 1;
             // 
             // btFastInventory
@@ -8816,9 +8294,9 @@
             this.panel4.Controls.Add(this.label73);
             this.panel4.Controls.Add(this.label72);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(764, 5);
+            this.panel4.Location = new System.Drawing.Point(755, 5);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(556, 75);
+            this.panel4.Size = new System.Drawing.Size(565, 75);
             this.panel4.TabIndex = 2;
             // 
             // txtRepeat
@@ -10567,6 +10045,709 @@
             this.lxLedControl18.Text = "0";
             this.lxLedControl18.TextAlignment = LxControl.LxLedControl.Alignment.Right;
             // 
+            // dataGridViewTextBoxColumn233
+            // 
+            this.dataGridViewTextBoxColumn233.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn233.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn233.Name = "dataGridViewTextBoxColumn233";
+            this.dataGridViewTextBoxColumn233.ReadOnly = true;
+            this.dataGridViewTextBoxColumn233.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn234
+            // 
+            this.dataGridViewTextBoxColumn234.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn234.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn234.Name = "dataGridViewTextBoxColumn234";
+            this.dataGridViewTextBoxColumn234.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn235
+            // 
+            this.dataGridViewTextBoxColumn235.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn235.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn235.Name = "dataGridViewTextBoxColumn235";
+            this.dataGridViewTextBoxColumn235.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn236
+            // 
+            this.dataGridViewTextBoxColumn236.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn236.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn236.Name = "dataGridViewTextBoxColumn236";
+            this.dataGridViewTextBoxColumn236.ReadOnly = true;
+            this.dataGridViewTextBoxColumn236.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn237
+            // 
+            this.dataGridViewTextBoxColumn237.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn237.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn237.Name = "dataGridViewTextBoxColumn237";
+            this.dataGridViewTextBoxColumn237.ReadOnly = true;
+            this.dataGridViewTextBoxColumn237.Width = 250;
+            // 
+            // colDel_Race5
+            // 
+            this.colDel_Race5.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.colDel_Race5.HeaderText = "Delete";
+            this.colDel_Race5.Name = "colDel_Race5";
+            this.colDel_Race5.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.colDel_Race5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.colDel_Race5.Text = "X";
+            this.colDel_Race5.UseColumnTextForButtonValue = true;
+            this.colDel_Race5.Width = 45;
+            // 
+            // dataGridViewTextBoxColumn228
+            // 
+            this.dataGridViewTextBoxColumn228.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn228.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn228.Name = "dataGridViewTextBoxColumn228";
+            this.dataGridViewTextBoxColumn228.ReadOnly = true;
+            this.dataGridViewTextBoxColumn228.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn229
+            // 
+            this.dataGridViewTextBoxColumn229.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn229.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn229.Name = "dataGridViewTextBoxColumn229";
+            this.dataGridViewTextBoxColumn229.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn230
+            // 
+            this.dataGridViewTextBoxColumn230.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn230.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn230.Name = "dataGridViewTextBoxColumn230";
+            this.dataGridViewTextBoxColumn230.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn231
+            // 
+            this.dataGridViewTextBoxColumn231.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn231.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn231.Name = "dataGridViewTextBoxColumn231";
+            this.dataGridViewTextBoxColumn231.ReadOnly = true;
+            this.dataGridViewTextBoxColumn231.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn232
+            // 
+            this.dataGridViewTextBoxColumn232.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn232.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn232.Name = "dataGridViewTextBoxColumn232";
+            this.dataGridViewTextBoxColumn232.ReadOnly = true;
+            this.dataGridViewTextBoxColumn232.Width = 250;
+            // 
+            // colDel_Race4
+            // 
+            this.colDel_Race4.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.colDel_Race4.HeaderText = "Delete";
+            this.colDel_Race4.Name = "colDel_Race4";
+            this.colDel_Race4.Text = "X";
+            this.colDel_Race4.UseColumnTextForButtonValue = true;
+            this.colDel_Race4.Width = 45;
+            // 
+            // dataGridViewTextBoxColumn223
+            // 
+            this.dataGridViewTextBoxColumn223.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn223.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn223.Name = "dataGridViewTextBoxColumn223";
+            this.dataGridViewTextBoxColumn223.ReadOnly = true;
+            this.dataGridViewTextBoxColumn223.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn224
+            // 
+            this.dataGridViewTextBoxColumn224.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn224.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn224.Name = "dataGridViewTextBoxColumn224";
+            this.dataGridViewTextBoxColumn224.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn225
+            // 
+            this.dataGridViewTextBoxColumn225.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn225.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn225.Name = "dataGridViewTextBoxColumn225";
+            this.dataGridViewTextBoxColumn225.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn226
+            // 
+            this.dataGridViewTextBoxColumn226.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn226.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn226.Name = "dataGridViewTextBoxColumn226";
+            this.dataGridViewTextBoxColumn226.ReadOnly = true;
+            this.dataGridViewTextBoxColumn226.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn227
+            // 
+            this.dataGridViewTextBoxColumn227.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn227.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn227.Name = "dataGridViewTextBoxColumn227";
+            this.dataGridViewTextBoxColumn227.ReadOnly = true;
+            this.dataGridViewTextBoxColumn227.Width = 250;
+            // 
+            // colDel_Race3
+            // 
+            this.colDel_Race3.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.colDel_Race3.HeaderText = "Delete";
+            this.colDel_Race3.Name = "colDel_Race3";
+            this.colDel_Race3.Text = "X";
+            this.colDel_Race3.UseColumnTextForButtonValue = true;
+            this.colDel_Race3.Width = 45;
+            // 
+            // dataGridViewTextBoxColumn218
+            // 
+            this.dataGridViewTextBoxColumn218.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn218.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn218.Name = "dataGridViewTextBoxColumn218";
+            this.dataGridViewTextBoxColumn218.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn219
+            // 
+            this.dataGridViewTextBoxColumn219.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn219.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn219.Name = "dataGridViewTextBoxColumn219";
+            // 
+            // dataGridViewTextBoxColumn220
+            // 
+            this.dataGridViewTextBoxColumn220.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn220.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn220.Name = "dataGridViewTextBoxColumn220";
+            // 
+            // dataGridViewTextBoxColumn221
+            // 
+            this.dataGridViewTextBoxColumn221.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn221.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn221.Name = "dataGridViewTextBoxColumn221";
+            this.dataGridViewTextBoxColumn221.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn222
+            // 
+            this.dataGridViewTextBoxColumn222.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn222.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn222.Name = "dataGridViewTextBoxColumn222";
+            this.dataGridViewTextBoxColumn222.Width = 250;
+            // 
+            // colDel_Race2
+            // 
+            this.colDel_Race2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.colDel_Race2.HeaderText = "Delete";
+            this.colDel_Race2.Name = "colDel_Race2";
+            this.colDel_Race2.Text = "X";
+            this.colDel_Race2.UseColumnTextForButtonValue = true;
+            this.colDel_Race2.Width = 45;
+            // 
+            // dataGridViewTextBoxColumn238
+            // 
+            this.dataGridViewTextBoxColumn238.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn238.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn238.Name = "dataGridViewTextBoxColumn238";
+            this.dataGridViewTextBoxColumn238.ReadOnly = true;
+            this.dataGridViewTextBoxColumn238.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn239
+            // 
+            this.dataGridViewTextBoxColumn239.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn239.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn239.Name = "dataGridViewTextBoxColumn239";
+            this.dataGridViewTextBoxColumn239.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn240
+            // 
+            this.dataGridViewTextBoxColumn240.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn240.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn240.Name = "dataGridViewTextBoxColumn240";
+            this.dataGridViewTextBoxColumn240.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn241
+            // 
+            this.dataGridViewTextBoxColumn241.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn241.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn241.Name = "dataGridViewTextBoxColumn241";
+            this.dataGridViewTextBoxColumn241.ReadOnly = true;
+            this.dataGridViewTextBoxColumn241.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn242
+            // 
+            this.dataGridViewTextBoxColumn242.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn242.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn242.Name = "dataGridViewTextBoxColumn242";
+            this.dataGridViewTextBoxColumn242.ReadOnly = true;
+            this.dataGridViewTextBoxColumn242.Width = 250;
+            // 
+            // colDel_Race6
+            // 
+            this.colDel_Race6.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.colDel_Race6.HeaderText = "Delete";
+            this.colDel_Race6.Name = "colDel_Race6";
+            this.colDel_Race6.ReadOnly = true;
+            this.colDel_Race6.Text = "X";
+            this.colDel_Race6.UseColumnTextForButtonValue = true;
+            this.colDel_Race6.Width = 45;
+            // 
+            // dataGridViewTextBoxColumn243
+            // 
+            this.dataGridViewTextBoxColumn243.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn243.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn243.Name = "dataGridViewTextBoxColumn243";
+            this.dataGridViewTextBoxColumn243.ReadOnly = true;
+            this.dataGridViewTextBoxColumn243.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn244
+            // 
+            this.dataGridViewTextBoxColumn244.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn244.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn244.Name = "dataGridViewTextBoxColumn244";
+            this.dataGridViewTextBoxColumn244.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn245
+            // 
+            this.dataGridViewTextBoxColumn245.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn245.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn245.Name = "dataGridViewTextBoxColumn245";
+            this.dataGridViewTextBoxColumn245.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn246
+            // 
+            this.dataGridViewTextBoxColumn246.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn246.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn246.Name = "dataGridViewTextBoxColumn246";
+            this.dataGridViewTextBoxColumn246.ReadOnly = true;
+            this.dataGridViewTextBoxColumn246.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn247
+            // 
+            this.dataGridViewTextBoxColumn247.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn247.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn247.Name = "dataGridViewTextBoxColumn247";
+            this.dataGridViewTextBoxColumn247.ReadOnly = true;
+            this.dataGridViewTextBoxColumn247.Width = 250;
+            // 
+            // colDel_Race7
+            // 
+            this.colDel_Race7.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.colDel_Race7.HeaderText = "Delete";
+            this.colDel_Race7.Name = "colDel_Race7";
+            this.colDel_Race7.Text = "X";
+            this.colDel_Race7.UseColumnTextForButtonValue = true;
+            this.colDel_Race7.Width = 45;
+            // 
+            // dataGridViewTextBoxColumn248
+            // 
+            this.dataGridViewTextBoxColumn248.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn248.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn248.Name = "dataGridViewTextBoxColumn248";
+            this.dataGridViewTextBoxColumn248.ReadOnly = true;
+            this.dataGridViewTextBoxColumn248.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn249
+            // 
+            this.dataGridViewTextBoxColumn249.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn249.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn249.Name = "dataGridViewTextBoxColumn249";
+            this.dataGridViewTextBoxColumn249.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn250
+            // 
+            this.dataGridViewTextBoxColumn250.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn250.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn250.Name = "dataGridViewTextBoxColumn250";
+            this.dataGridViewTextBoxColumn250.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn251
+            // 
+            this.dataGridViewTextBoxColumn251.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn251.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn251.Name = "dataGridViewTextBoxColumn251";
+            this.dataGridViewTextBoxColumn251.ReadOnly = true;
+            this.dataGridViewTextBoxColumn251.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn252
+            // 
+            this.dataGridViewTextBoxColumn252.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn252.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn252.Name = "dataGridViewTextBoxColumn252";
+            this.dataGridViewTextBoxColumn252.ReadOnly = true;
+            this.dataGridViewTextBoxColumn252.Width = 250;
+            // 
+            // colDel_Race8
+            // 
+            this.colDel_Race8.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.colDel_Race8.HeaderText = "Delete";
+            this.colDel_Race8.Name = "colDel_Race8";
+            this.colDel_Race8.Text = "X";
+            this.colDel_Race8.UseColumnTextForButtonValue = true;
+            this.colDel_Race8.Width = 45;
+            // 
+            // dataGridViewTextBoxColumn100
+            // 
+            this.dataGridViewTextBoxColumn100.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn100.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn100.Name = "dataGridViewTextBoxColumn100";
+            this.dataGridViewTextBoxColumn100.ReadOnly = true;
+            this.dataGridViewTextBoxColumn100.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn101
+            // 
+            this.dataGridViewTextBoxColumn101.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn101.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn101.Name = "dataGridViewTextBoxColumn101";
+            this.dataGridViewTextBoxColumn101.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn102
+            // 
+            this.dataGridViewTextBoxColumn102.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn102.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn102.Name = "dataGridViewTextBoxColumn102";
+            this.dataGridViewTextBoxColumn102.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn103
+            // 
+            this.dataGridViewTextBoxColumn103.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn103.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn103.Name = "dataGridViewTextBoxColumn103";
+            this.dataGridViewTextBoxColumn103.ReadOnly = true;
+            this.dataGridViewTextBoxColumn103.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn104
+            // 
+            this.dataGridViewTextBoxColumn104.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn104.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn104.Name = "dataGridViewTextBoxColumn104";
+            this.dataGridViewTextBoxColumn104.ReadOnly = true;
+            this.dataGridViewTextBoxColumn104.Width = 250;
+            // 
+            // colDel_Race13
+            // 
+            this.colDel_Race13.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.colDel_Race13.HeaderText = "Delete";
+            this.colDel_Race13.Name = "colDel_Race13";
+            this.colDel_Race13.Text = "X";
+            this.colDel_Race13.UseColumnTextForButtonValue = true;
+            this.colDel_Race13.Width = 45;
+            // 
+            // dataGridViewTextBoxColumn107
+            // 
+            this.dataGridViewTextBoxColumn107.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn107.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn107.Name = "dataGridViewTextBoxColumn107";
+            this.dataGridViewTextBoxColumn107.ReadOnly = true;
+            this.dataGridViewTextBoxColumn107.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn108
+            // 
+            this.dataGridViewTextBoxColumn108.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn108.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn108.Name = "dataGridViewTextBoxColumn108";
+            this.dataGridViewTextBoxColumn108.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn109
+            // 
+            this.dataGridViewTextBoxColumn109.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn109.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn109.Name = "dataGridViewTextBoxColumn109";
+            this.dataGridViewTextBoxColumn109.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn110
+            // 
+            this.dataGridViewTextBoxColumn110.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn110.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn110.Name = "dataGridViewTextBoxColumn110";
+            this.dataGridViewTextBoxColumn110.ReadOnly = true;
+            this.dataGridViewTextBoxColumn110.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn111
+            // 
+            this.dataGridViewTextBoxColumn111.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn111.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn111.Name = "dataGridViewTextBoxColumn111";
+            this.dataGridViewTextBoxColumn111.ReadOnly = true;
+            this.dataGridViewTextBoxColumn111.Width = 250;
+            // 
+            // colDel_Race14
+            // 
+            this.colDel_Race14.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.colDel_Race14.HeaderText = "Delete";
+            this.colDel_Race14.Name = "colDel_Race14";
+            this.colDel_Race14.Text = "X";
+            this.colDel_Race14.UseColumnTextForButtonValue = true;
+            this.colDel_Race14.Width = 45;
+            // 
+            // dataGridViewTextBoxColumn114
+            // 
+            this.dataGridViewTextBoxColumn114.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn114.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn114.Name = "dataGridViewTextBoxColumn114";
+            this.dataGridViewTextBoxColumn114.ReadOnly = true;
+            this.dataGridViewTextBoxColumn114.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn115
+            // 
+            this.dataGridViewTextBoxColumn115.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn115.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn115.Name = "dataGridViewTextBoxColumn115";
+            this.dataGridViewTextBoxColumn115.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn116
+            // 
+            this.dataGridViewTextBoxColumn116.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn116.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn116.Name = "dataGridViewTextBoxColumn116";
+            this.dataGridViewTextBoxColumn116.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn117
+            // 
+            this.dataGridViewTextBoxColumn117.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn117.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn117.Name = "dataGridViewTextBoxColumn117";
+            this.dataGridViewTextBoxColumn117.ReadOnly = true;
+            this.dataGridViewTextBoxColumn117.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn118
+            // 
+            this.dataGridViewTextBoxColumn118.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn118.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn118.Name = "dataGridViewTextBoxColumn118";
+            this.dataGridViewTextBoxColumn118.ReadOnly = true;
+            this.dataGridViewTextBoxColumn118.Width = 250;
+            // 
+            // colDel_Race15
+            // 
+            this.colDel_Race15.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.colDel_Race15.HeaderText = "Delete";
+            this.colDel_Race15.Name = "colDel_Race15";
+            this.colDel_Race15.Text = "X";
+            this.colDel_Race15.UseColumnTextForButtonValue = true;
+            this.colDel_Race15.Width = 45;
+            // 
+            // dataGridViewTextBoxColumn121
+            // 
+            this.dataGridViewTextBoxColumn121.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn121.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn121.Name = "dataGridViewTextBoxColumn121";
+            this.dataGridViewTextBoxColumn121.ReadOnly = true;
+            this.dataGridViewTextBoxColumn121.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn122
+            // 
+            this.dataGridViewTextBoxColumn122.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn122.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn122.Name = "dataGridViewTextBoxColumn122";
+            this.dataGridViewTextBoxColumn122.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn123
+            // 
+            this.dataGridViewTextBoxColumn123.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn123.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn123.Name = "dataGridViewTextBoxColumn123";
+            this.dataGridViewTextBoxColumn123.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn124
+            // 
+            this.dataGridViewTextBoxColumn124.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn124.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn124.Name = "dataGridViewTextBoxColumn124";
+            this.dataGridViewTextBoxColumn124.ReadOnly = true;
+            this.dataGridViewTextBoxColumn124.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn125
+            // 
+            this.dataGridViewTextBoxColumn125.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn125.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn125.Name = "dataGridViewTextBoxColumn125";
+            this.dataGridViewTextBoxColumn125.ReadOnly = true;
+            this.dataGridViewTextBoxColumn125.Width = 250;
+            // 
+            // colDel_Race16
+            // 
+            this.colDel_Race16.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.colDel_Race16.HeaderText = "Delete";
+            this.colDel_Race16.Name = "colDel_Race16";
+            this.colDel_Race16.Text = "X";
+            this.colDel_Race16.UseColumnTextForButtonValue = true;
+            this.colDel_Race16.Width = 45;
+            // 
+            // dataGridViewTextBoxColumn128
+            // 
+            this.dataGridViewTextBoxColumn128.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn128.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn128.Name = "dataGridViewTextBoxColumn128";
+            this.dataGridViewTextBoxColumn128.ReadOnly = true;
+            this.dataGridViewTextBoxColumn128.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn129
+            // 
+            this.dataGridViewTextBoxColumn129.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn129.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn129.Name = "dataGridViewTextBoxColumn129";
+            this.dataGridViewTextBoxColumn129.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn130
+            // 
+            this.dataGridViewTextBoxColumn130.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn130.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn130.Name = "dataGridViewTextBoxColumn130";
+            this.dataGridViewTextBoxColumn130.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn131
+            // 
+            this.dataGridViewTextBoxColumn131.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn131.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn131.Name = "dataGridViewTextBoxColumn131";
+            this.dataGridViewTextBoxColumn131.ReadOnly = true;
+            this.dataGridViewTextBoxColumn131.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn132
+            // 
+            this.dataGridViewTextBoxColumn132.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn132.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn132.Name = "dataGridViewTextBoxColumn132";
+            this.dataGridViewTextBoxColumn132.ReadOnly = true;
+            this.dataGridViewTextBoxColumn132.Width = 250;
+            // 
+            // colDel_Semi1
+            // 
+            this.colDel_Semi1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.colDel_Semi1.HeaderText = "Delete";
+            this.colDel_Semi1.Name = "colDel_Semi1";
+            this.colDel_Semi1.Text = "X";
+            this.colDel_Semi1.UseColumnTextForButtonValue = true;
+            this.colDel_Semi1.Width = 45;
+            // 
+            // dataGridViewTextBoxColumn135
+            // 
+            this.dataGridViewTextBoxColumn135.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn135.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn135.Name = "dataGridViewTextBoxColumn135";
+            this.dataGridViewTextBoxColumn135.ReadOnly = true;
+            this.dataGridViewTextBoxColumn135.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn136
+            // 
+            this.dataGridViewTextBoxColumn136.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn136.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn136.Name = "dataGridViewTextBoxColumn136";
+            this.dataGridViewTextBoxColumn136.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn137
+            // 
+            this.dataGridViewTextBoxColumn137.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn137.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn137.Name = "dataGridViewTextBoxColumn137";
+            this.dataGridViewTextBoxColumn137.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn138
+            // 
+            this.dataGridViewTextBoxColumn138.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn138.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn138.Name = "dataGridViewTextBoxColumn138";
+            this.dataGridViewTextBoxColumn138.ReadOnly = true;
+            this.dataGridViewTextBoxColumn138.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn139
+            // 
+            this.dataGridViewTextBoxColumn139.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn139.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn139.Name = "dataGridViewTextBoxColumn139";
+            this.dataGridViewTextBoxColumn139.ReadOnly = true;
+            this.dataGridViewTextBoxColumn139.Width = 250;
+            // 
+            // colDel_Semi2
+            // 
+            this.colDel_Semi2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.colDel_Semi2.HeaderText = "Delete";
+            this.colDel_Semi2.Name = "colDel_Semi2";
+            this.colDel_Semi2.Text = "X";
+            this.colDel_Semi2.UseColumnTextForButtonValue = true;
+            this.colDel_Semi2.Width = 45;
+            // 
+            // dataGridViewTextBoxColumn142
+            // 
+            this.dataGridViewTextBoxColumn142.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn142.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn142.Name = "dataGridViewTextBoxColumn142";
+            this.dataGridViewTextBoxColumn142.ReadOnly = true;
+            this.dataGridViewTextBoxColumn142.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn143
+            // 
+            this.dataGridViewTextBoxColumn143.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn143.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn143.Name = "dataGridViewTextBoxColumn143";
+            this.dataGridViewTextBoxColumn143.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn144
+            // 
+            this.dataGridViewTextBoxColumn144.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn144.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn144.Name = "dataGridViewTextBoxColumn144";
+            this.dataGridViewTextBoxColumn144.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn145
+            // 
+            this.dataGridViewTextBoxColumn145.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn145.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn145.Name = "dataGridViewTextBoxColumn145";
+            this.dataGridViewTextBoxColumn145.ReadOnly = true;
+            this.dataGridViewTextBoxColumn145.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn146
+            // 
+            this.dataGridViewTextBoxColumn146.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn146.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn146.Name = "dataGridViewTextBoxColumn146";
+            this.dataGridViewTextBoxColumn146.ReadOnly = true;
+            this.dataGridViewTextBoxColumn146.Width = 250;
+            // 
+            // colDel_SFinal
+            // 
+            this.colDel_SFinal.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.colDel_SFinal.HeaderText = "Delete";
+            this.colDel_SFinal.Name = "colDel_SFinal";
+            this.colDel_SFinal.Text = "X";
+            this.colDel_SFinal.UseColumnTextForButtonValue = true;
+            this.colDel_SFinal.Width = 45;
+            // 
+            // dataGridViewTextBoxColumn149
+            // 
+            this.dataGridViewTextBoxColumn149.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn149.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn149.Name = "dataGridViewTextBoxColumn149";
+            this.dataGridViewTextBoxColumn149.ReadOnly = true;
+            this.dataGridViewTextBoxColumn149.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn150
+            // 
+            this.dataGridViewTextBoxColumn150.DataPropertyName = "Nickname";
+            this.dataGridViewTextBoxColumn150.HeaderText = "Nickname";
+            this.dataGridViewTextBoxColumn150.Name = "dataGridViewTextBoxColumn150";
+            this.dataGridViewTextBoxColumn150.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn151
+            // 
+            this.dataGridViewTextBoxColumn151.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn151.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn151.Name = "dataGridViewTextBoxColumn151";
+            this.dataGridViewTextBoxColumn151.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn152
+            // 
+            this.dataGridViewTextBoxColumn152.DataPropertyName = "Tag";
+            this.dataGridViewTextBoxColumn152.HeaderText = "TAG ID";
+            this.dataGridViewTextBoxColumn152.Name = "dataGridViewTextBoxColumn152";
+            this.dataGridViewTextBoxColumn152.ReadOnly = true;
+            this.dataGridViewTextBoxColumn152.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn153
+            // 
+            this.dataGridViewTextBoxColumn153.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn153.HeaderText = "E-Mail";
+            this.dataGridViewTextBoxColumn153.Name = "dataGridViewTextBoxColumn153";
+            this.dataGridViewTextBoxColumn153.ReadOnly = true;
+            this.dataGridViewTextBoxColumn153.Width = 250;
+            // 
+            // colDel_Final
+            // 
+            this.colDel_Final.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.colDel_Final.HeaderText = "Delete";
+            this.colDel_Final.Name = "colDel_Final";
+            this.colDel_Final.Text = "X";
+            this.colDel_Final.UseColumnTextForButtonValue = true;
+            this.colDel_Final.Width = 45;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -11335,29 +11516,14 @@
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.DataGridView gvRace14;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn106;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn107;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn108;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn109;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn110;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn111;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn112;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.DataGridView gvRace15;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn113;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn114;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn115;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn116;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn117;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn118;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn119;
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.DataGridView gvRace16;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn120;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn121;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn122;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn123;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn124;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn125;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn126;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.GroupBox groupBox29;
@@ -11504,11 +11670,6 @@
         private System.Windows.Forms.TabPage tabPage8;
         private System.Windows.Forms.DataGridView gvSemi2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn134;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn135;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn136;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn137;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn138;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn139;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn140;
         private System.Windows.Forms.CheckBox ckClearOperationRec;
         private System.Windows.Forms.CheckBox ckDisplayLog;
@@ -11525,11 +11686,6 @@
         private System.Windows.Forms.TabPage tabPage10;
         private System.Windows.Forms.DataGridView gvFinal;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn148;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn149;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn150;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn151;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn152;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn153;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn154;
         private System.Windows.Forms.Button btnRaceSave;
         private System.Windows.Forms.DataGridViewTextBoxColumn RankNumber;
@@ -11572,26 +11728,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn Email;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn142;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn143;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn144;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn145;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn146;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn128;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn129;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn130;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn131;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn132;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn100;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn101;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn102;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn103;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn104;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nicknameDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn teamDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tagDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn1;
         private System.Windows.Forms.GroupBox gbMimicRace;
         private System.Windows.Forms.TextBox tbMimicName;
         private System.Windows.Forms.TextBox tbMimicLocation;
@@ -11684,62 +11820,22 @@
         private System.Windows.Forms.TabControl tabControl6;
         private System.Windows.Forms.TabPage tabPage22;
         private System.Windows.Forms.DataGridView gvRace1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn213;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn214;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn215;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn216;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn217;
         private System.Windows.Forms.TabPage tabPage23;
         private System.Windows.Forms.DataGridView gvRace2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn218;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn219;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn220;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn221;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn222;
         private System.Windows.Forms.TabPage tabPage24;
         private System.Windows.Forms.DataGridView gvRace3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn223;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn224;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn225;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn226;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn227;
         private System.Windows.Forms.TabPage tabPage25;
         private System.Windows.Forms.DataGridView gvRace4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn228;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn229;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn230;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn231;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn232;
         private System.Windows.Forms.GroupBox groupBox30;
         private System.Windows.Forms.Button btnAddPilotsTo18F;
         private System.Windows.Forms.TabPage tabPage26;
         private System.Windows.Forms.DataGridView gvRace5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn233;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn234;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn235;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn236;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn237;
         private System.Windows.Forms.TabPage tabPage27;
         private System.Windows.Forms.DataGridView gvRace6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn238;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn239;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn240;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn241;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn242;
         private System.Windows.Forms.TabPage tabPage28;
         private System.Windows.Forms.DataGridView gvRace7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn243;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn244;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn245;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn246;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn247;
         private System.Windows.Forms.TabPage tabPage29;
         private System.Windows.Forms.DataGridView gvRace8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn248;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn249;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn250;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn251;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn252;
         private System.Windows.Forms.Button btnManAddPilotsTo18F;
         private System.Windows.Forms.Button btnManAddPilotsToF;
         private System.Windows.Forms.Button btnManAddPilotsToQF;
@@ -11765,6 +11861,107 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn253;
         private System.Windows.Forms.DataGridViewTextBoxColumn Distance;
         private System.Windows.Forms.DataGridViewTextBoxColumn Penalty;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn213;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn214;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn215;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn216;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn217;
+        private System.Windows.Forms.DataGridViewButtonColumn colDelRace1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nicknameDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn teamDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tagDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn218;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn219;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn220;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn221;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn222;
+        private System.Windows.Forms.DataGridViewButtonColumn colDel_Race2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn223;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn224;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn225;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn226;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn227;
+        private System.Windows.Forms.DataGridViewButtonColumn colDel_Race3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn228;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn229;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn230;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn231;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn232;
+        private System.Windows.Forms.DataGridViewButtonColumn colDel_Race4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn233;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn234;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn235;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn236;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn237;
+        private System.Windows.Forms.DataGridViewButtonColumn colDel_Race5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn238;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn239;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn240;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn241;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn242;
+        private System.Windows.Forms.DataGridViewButtonColumn colDel_Race6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn243;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn244;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn245;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn246;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn247;
+        private System.Windows.Forms.DataGridViewButtonColumn colDel_Race7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn248;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn249;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn250;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn251;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn252;
+        private System.Windows.Forms.DataGridViewButtonColumn colDel_Race8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn142;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn143;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn144;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn145;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn146;
+        private System.Windows.Forms.DataGridViewButtonColumn colDel_SFinal;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn149;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn150;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn151;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn152;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn153;
+        private System.Windows.Forms.DataGridViewButtonColumn colDel_Final;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn100;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn101;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn102;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn103;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn104;
+        private System.Windows.Forms.DataGridViewButtonColumn colDel_Race13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn107;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn108;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn109;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn110;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn111;
+        private System.Windows.Forms.DataGridViewButtonColumn colDel_Race14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn114;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn115;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn116;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn117;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn118;
+        private System.Windows.Forms.DataGridViewButtonColumn colDel_Race15;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn121;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn122;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn123;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn124;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn125;
+        private System.Windows.Forms.DataGridViewButtonColumn colDel_Race16;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn128;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn129;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn130;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn131;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn132;
+        private System.Windows.Forms.DataGridViewButtonColumn colDel_Semi1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn135;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn136;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn137;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn138;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn139;
+        private System.Windows.Forms.DataGridViewButtonColumn colDel_Semi2;
     }
 }
 
