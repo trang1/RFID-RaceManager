@@ -6827,6 +6827,33 @@ namespace RaceManager.UI
             }
         }
 
+        /// <summary>
+        /// Delete pilot by click on a corresponding button in the grid
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void gvRace_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var gridView = sender as DataGridView;
+
+            //if click is on new row or header row
+            if (e.RowIndex < 0 || gridView == null)
+                return;
+
+            // check if the cell contains button
+            var column = gridView.Columns[e.ColumnIndex];
+            if (column is DataGridViewButtonColumn)
+            {
+                var obj = gridView.Rows[e.RowIndex].DataBoundItem as RacePilot;
+                var source = gridView.DataSource as List<RacePilot>;
+                if (obj != null && source != null)
+                {
+                    source.Remove(source.First(r => r.Tag == obj.Tag));
+                    gridView.DataSource = typeof(Array);
+                    gridView.DataSource = source;
+                }
+            }
+        }
         #endregion
 
         #region Ranking
@@ -6974,8 +7001,8 @@ namespace RaceManager.UI
             }
         }
 
+
         #endregion
 
-      
     }
 }
