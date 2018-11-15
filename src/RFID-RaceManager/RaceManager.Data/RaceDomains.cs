@@ -389,6 +389,11 @@ namespace RaceManager.Data
         {
             _lapsTime = new TimeSpan?[] { null, null, null, null, null, null };
             RankNumber = null;
+            _prevRaceTime = TimeSpan.Zero;
+            IdCount = 0;
+            Rssi = string.Empty;
+            CarrFrequency = string.Empty;
+            CurrentPosition = null;
         }
     }
 
