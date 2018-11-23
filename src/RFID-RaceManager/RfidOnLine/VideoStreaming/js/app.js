@@ -2,12 +2,12 @@ var app = (function () {
 
 	var start = function() {
 		getPrice();
-		
+		$.ajaxSettings.cache = false;
 		setInterval(getPrice, 1000);
 	}
 	
 	var getPrice = function () {
-	    $.getJSON("http://localhost:8081/race.json", function (data) {
+	    $.getJSON("http://localhost:8090/race.json", function (data) {
 	        $("title").text("Round " + data.Round + ", " + data.Group.Name);
 
 	        $("#pilot1").text(data.Laps[0].PilotName);
