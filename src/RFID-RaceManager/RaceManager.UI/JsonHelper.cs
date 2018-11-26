@@ -10,7 +10,7 @@ namespace RaceManager.UI
 {
     public class JsonHelper
     {
-        private static string Serialize(object obj)
+        public static string Serialize(object obj)
         {
             var json = JsonConvert.SerializeObject(obj);
             return json;

@@ -78,48 +78,7 @@ namespace RaceManager.UI
             cmbRaceMode.SelectedIndex = 0;
             cmbRoundType.SelectedIndex = 1;
         }
-
-        private void BtnRaceExport_Click(object sender, EventArgs e)
-        {
-            if (_selectedRaceEvent == null) return;
-
-            string filename = "";
-            SaveFileDialog sfd = new SaveFileDialog();
-            sfd.Filter = "CSV (*.csv)|*.csv";
-            sfd.FileName = $"{_selectedRaceEvent.Group.Name}({_selectedRaceEvent.Round}).csv";
-            if (sfd.ShowDialog() == DialogResult.OK)
-            {
-                if (File.Exists(filename))
-                {
-                    try
-                    {
-                        File.Delete(filename);
-                    }
-                    catch (IOException ex)
-                    {
-                        MessageBox.Show("It wasn't possible to write the data to the disk." + ex.Message);
-                    }
-                }
-                int columnCount = gvRace.ColumnCount;
-                string columnNames = "";
-                string[] output = new string[gvRace.RowCount + 1];
-                for (int i = 0; i < columnCount; i++)
-                {
-                    columnNames += $"{gvRace.Columns[i].Name},";
-                }
-                output[0] += columnNames;
-                for (int i = 1; (i - 1) < gvRace.RowCount; i++)
-                {
-                    for (int j = 0; j < columnCount; j++)
-                    {
-                        output[i] += $"{gvRace.Rows[i - 1].Cells[j].Value},";
-                    }
-                }
-                File.WriteAllLines(sfd.FileName, output, Encoding.UTF8);
-                MessageBox.Show("Your file was generated and it's ready for use.");
-            }
-        }
-
+        
         private void MainForm_Load(object sender, EventArgs e)
         {
             //The real example of accessing reader initialization.
@@ -180,7 +139,60 @@ namespace RaceManager.UI
             {
                 MessageBox.Show("Database error. " + exception.Message);
             }
+
+            StartListening();
         }
+
+        private async void StartListening()
+        {
+
+            var url = ConfigurationManager.AppSettings["HttpUrl"];
+            if (string.IsNullOrEmpty(url)) return;
+
+            HttpListener listener = new HttpListener();
+            listener.Prefixes.Add(url);
+            listener.Start();
+
+            while (true)
+            {
+                try
+                {
+                    var context = await listener.GetContextAsync();
+                    var response = context.Response;
+
+                    string responseString = default(string);
+                    if (context.Request.Url.AbsolutePath == "/race.json")
+                    {
+                        responseString = JsonHelper.Serialize(_selectedRaceEvent ?? new RaceEvent());
+                    }
+                    else
+                    {
+                        var path = ConfigurationManager.AppSettings["HttpFolder"];
+                        var filename = Path.Combine(path, context.Request.Url.AbsolutePath.Substring(1));
+                        if (File.Exists(filename))
+                        {
+                            responseString = File.ReadAllText(filename);
+                        }
+                    }
+                    if (!string.IsNullOrEmpty(responseString))
+                    {
+                        var buffer = Encoding.UTF8.GetBytes(responseString);
+
+                        response.ContentLength64 = buffer.Length;
+                        var output = response.OutputStream;
+                        // required header for localhost connections
+                        response.AppendHeader("Access-Control-Allow-Origin", "*");
+                        output.Write(buffer, 0, buffer.Length);
+                        output.Close();
+                    }
+                }
+                catch (Exception exception)
+                {
+                    MessageBox.Show("Http listener error. " + exception.Message);
+                }
+            }
+        }
+
 
         #region Service functions
         private void ReceiveData(byte[] btAryReceiveData)
@@ -5265,6 +5277,47 @@ namespace RaceManager.UI
             SaveRace();
         }
 
+        private void BtnRaceExport_Click(object sender, EventArgs e)
+        {
+            if (_selectedRaceEvent == null) return;
+
+            string filename = "";
+            SaveFileDialog sfd = new SaveFileDialog();
+            sfd.Filter = "CSV (*.csv)|*.csv";
+            sfd.FileName = $"{_selectedRaceEvent.Group.Name}({_selectedRaceEvent.Round}).csv";
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+                if (File.Exists(filename))
+                {
+                    try
+                    {
+                        File.Delete(filename);
+                    }
+                    catch (IOException ex)
+                    {
+                        MessageBox.Show("It wasn't possible to write the data to the disk." + ex.Message);
+                    }
+                }
+                int columnCount = gvRace.ColumnCount;
+                string columnNames = "";
+                string[] output = new string[gvRace.RowCount + 1];
+                for (int i = 0; i < columnCount; i++)
+                {
+                    columnNames += $"{gvRace.Columns[i].Name},";
+                }
+                output[0] += columnNames;
+                for (int i = 1; (i - 1) < gvRace.RowCount; i++)
+                {
+                    for (int j = 0; j < columnCount; j++)
+                    {
+                        output[i] += $"{gvRace.Rows[i - 1].Cells[j].Value},";
+                    }
+                }
+                File.WriteAllLines(sfd.FileName, output, Encoding.UTF8);
+                MessageBox.Show("Your file was generated and it's ready for use.");
+            }
+        }
+        
         /// <summary>
         /// Export current race event to JSON file
         /// </summary>

@@ -7,7 +7,7 @@ var app = (function () {
 	}
 	
 	var getPrice = function () {
-	    $.getJSON("http://localhost:8090/race.json", function (data) {
+	    $.getJSON("http://localhost:8888/race.json", function (data) {
 	        $("title").text("Round " + data.Round + ", " + data.Group.Name);
 
 	        $("#pilot1").text(data.Laps[0].PilotName);
