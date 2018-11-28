@@ -142,6 +142,8 @@ namespace RaceManager.Data
 
         [JsonProperty]
         public string PilotName { get; set; }
+        [JsonProperty]
+        public string PilotNickname { get; set; }
         public int RaceEventId { get; set; }
 
         [JsonProperty]

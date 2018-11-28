@@ -5486,6 +5486,7 @@ namespace RaceManager.UI
                             Epc = pilot.Tag,
                             RaceEventId = raceEvent.Id,
                             PilotName = pilot.Name,
+                            PilotNickname = pilot.Nickname,
                             OrderNumber = pilot.OrderNumber
                         };
                         raceEvent.Laps.Add(lapsInfo);
